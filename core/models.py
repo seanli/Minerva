@@ -31,9 +31,6 @@ class Institute(models.Model):
     
     name = models.CharField(max_length=100)
     CATEGORY = (
-        ('E', 'Elementary School'),
-        ('M', 'Middle School'),
-        ('H', 'High School'),
         ('C', 'College'),
         ('U', 'University'),
     )
@@ -48,28 +45,6 @@ class Institute(models.Model):
     
     class Meta:
         db_table = 'mva_institute'
-
-class Faculty(models.Model):
-    
-    name = models.CharField(max_length=100)
-    institute = models.ForeignKey(Institute)
-    
-    def __unicode__(self):
-        return self.name
-    
-    class Meta:
-        db_table = 'mva_faculty'
-        verbose_name_plural = "faculties"
-        
-class Specification(models.Model):
-    
-    name = models.CharField(max_length=100)
-    
-    def __unicode__(self):
-        return self.name
-    
-    class Meta:
-        db_table = 'mva_specification'
         
 # Extends the Django User
 class Profile(models.Model):
@@ -84,9 +59,9 @@ class Profile(models.Model):
     middle_name = models.CharField(max_length=100, null=True, blank=True)
     birthday = models.DateField(null=True, blank=True)
     tagline = models.TextField(null=True, blank=True)
-    instutute = models.ForeignKey(Institute)
-    faculty = models.ForeignKey(Faculty, null=True, blank=True)
-    specification = models.ForeignKey(Specification, null=True, blank=True)
+    institute = models.ForeignKey(Institute, null=True, blank=True)
+    degree = models.CharField(max_length=100, null=True, blank=True)
+    influence = models.IntegerField(default=0)
     
     def __unicode__(self):
         return "%s %s" % (self.user.first_name, self.user.last_name)
@@ -102,6 +77,57 @@ def create_user_profile(sender, instance, created, **kwargs):
         
 post_save.connect(create_user_profile, sender=User)
 
+class Faculty(models.Model):
+    
+    name = models.CharField(max_length=100)
+    profile = models.ManyToManyField(Profile, through='FacultyAssign')
+    
+    def __unicode__(self):
+        return self.name
+    
+    class Meta:
+        db_table = 'mva_faculty'
+        verbose_name_plural = "faculties"
+        
+class FacultyAssign(models.Model):
+    
+    profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
+    faculty = models.ForeignKey(Faculty, related_name="%(class)s_faculty")
+    
+    def __unicode__(self):
+        return "%s : %s" % (self.profile, self.faculty)
+    
+    class Meta:
+        db_table = 'mva_faculty_assign'
+        verbose_name = 'faculty assignment'
+        verbose_name_plural = 'faculty assignments'
+        unique_together = ("profile", "faculty")
+
+class Specialization(models.Model):
+    
+    name = models.CharField(max_length=100)
+    profile = models.ManyToManyField(Profile, through='SpecializationAssign')
+    
+    def __unicode__(self):
+        return self.name
+    
+    class Meta:
+        db_table = 'mva_specialization'
+
+class SpecializationAssign(models.Model):
+    
+    profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
+    specialization = models.ForeignKey(Specialization, related_name="%(class)s_specialization")
+    
+    def __unicode__(self):
+        return "%s : %s" % (self.profile, self.specialization)
+    
+    class Meta:
+        db_table = 'mva_specialization_assign'
+        verbose_name = 'specialization assignment'
+        verbose_name_plural = 'specialization assignments'
+        unique_together = ("profile", "specialization")
+        
 class Contact(models.Model):
     
     label = models.CharField(max_length=100)
@@ -118,4 +144,76 @@ class Contact(models.Model):
     
     class Meta:
         db_table = 'mva_contact'
+
+class Badge(models.Model):
+
+    label = models.CharField(max_length=100)
+    prev_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_prev_lvl", verbose_name='previous level')
+    next_exp = models.PositiveIntegerField(null=True, blank=True, verbose_name='next level EXP')
+    next_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_next_lvl", verbose_name='next level')
+    profile = models.ManyToManyField(Profile, through='BadgeAssign')
+    # picture = models.ImageField(null=True, blank=True)
     
+    def __unicode__(self):
+        return self.label
+    
+    class Meta:
+        db_table = 'mva_badge'
+
+class BadgeAssign(models.Model):
+    
+    profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
+    badge = models.ForeignKey(Badge, related_name="%(class)s_badge")
+    exp = models.PositiveIntegerField(default=0, verbose_name='EXP')
+    
+    def __unicode__(self):
+        return "%s : %s" % (self.profile, self.badge)
+    
+    class Meta:
+        db_table = 'mva_badge_assign'
+        verbose_name = 'badge assignment'
+        verbose_name_plural = 'badge assignments'
+        unique_together = ("profile", "badge")
+
+class Course(models.Model):
+    
+    name = models.CharField(max_length=100)
+    abbrev = models.CharField(max_length=10, verbose_name='abbreviation')
+    institute = models.ForeignKey(Institute)
+    description = models.TextField(null=True, blank=True)
+    
+    def __unicode__(self):
+        return "%s (%s)" % (self.name, self.abbrev)
+    
+    class Meta:
+        db_table = 'mva_course'
+        unique_together = ("name", "abbrev", "institute")
+    
+class Section(models.Model):
+    
+    course = models.ForeignKey(Course)
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    professor = models.ForeignKey(Profile, related_name="%(class)s_professor")
+    profile = models.ManyToManyField(Profile, through='SectionAssign')
+    
+    def __unicode__(self):
+        return "%s (%s)" % (self.course, unicode(self.start_time))
+    
+    class Meta:
+        db_table = 'mva_section'
+        unique_together = ("course", "start_time", "end_time")
+
+class SectionAssign(models.Model):
+    
+    profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
+    section = models.ForeignKey(Section, related_name="%(class)s_section")
+    
+    def __unicode__(self):
+        return "%s : %s" % (self.profile, self.section)
+    
+    class Meta:
+        db_table = 'mva_section_assign'
+        verbose_name = 'section assignment'
+        verbose_name_plural = 'section assignments'
+        unique_together = ("profile", "section")

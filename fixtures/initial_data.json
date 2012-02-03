@@ -36,6 +36,15 @@
         }
     }, 
     {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "facultyassign", 
+            "name": "faculty assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
         "pk": 2, 
         "model": "contenttypes.contenttype", 
         "fields": {
@@ -126,11 +135,20 @@
         }
     }, 
     {
-        "pk": 16, 
+        "pk": 18, 
         "model": "contenttypes.contenttype", 
         "fields": {
-            "model": "specification", 
-            "name": "specification", 
+            "model": "specialization", 
+            "name": "specialization", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "specializationassign", 
+            "name": "specialization assignment", 
             "app_label": "core"
         }
     }, 
@@ -205,6 +223,15 @@
         }
     }, 
     {
+        "pk": 6, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-01-30 08:01:31", 
+            "app_name": "core", 
+            "migration": "0006_auto__del_specification__add_specializationassign__add_specialization_"
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "core.country", 
         "fields": {
@@ -238,12 +265,24 @@
         "fields": {
             "middle_name": "", 
             "tagline": "", 
-            "specification": null, 
             "birthday": "1990-10-06", 
             "role": "S", 
             "user": 4, 
-            "faculty": null, 
-            "instutute": 1
+            "institute": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.faculty", 
+        "fields": {
+            "name": "Faculty of Engineering"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Software Engineering"
         }
     }, 
     {
@@ -258,6 +297,70 @@
             "label": "Common", 
             "address": "321 Lester St.", 
             "email": "lishang106@gmail.com"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-01-30 02:02:55", 
+            "object_repr": "Software Engineering", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-01-30 02:02:46", 
+            "object_repr": "Faculty of Engineering", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": [
+                "core", 
+                "faculty"
+            ]
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-01-28 22:39:51", 
+            "object_repr": "Sean Li", 
+            "object_id": "2", 
+            "change_message": "Changed faculty and specification.", 
+            "user": 4, 
+            "content_type": [
+                "core", 
+                "profile"
+            ]
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-01-28 22:39:21", 
+            "object_repr": "Faculty of Engineering", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 4, 
+            "content_type": [
+                "core", 
+                "faculty"
+            ]
         }
     }, 
     {
@@ -713,6 +816,42 @@
         }
     }, 
     {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_facultyassign", 
+            "name": "Can add faculty assignment", 
+            "content_type": [
+                "core", 
+                "facultyassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_facultyassign", 
+            "name": "Can change faculty assignment", 
+            "content_type": [
+                "core", 
+                "facultyassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_facultyassign", 
+            "name": "Can delete faculty assignment", 
+            "content_type": [
+                "core", 
+                "facultyassign"
+            ]
+        }
+    }, 
+    {
         "pk": 34, 
         "model": "auth.permission", 
         "fields": {
@@ -821,38 +960,74 @@
         }
     }, 
     {
-        "pk": 46, 
+        "pk": 52, 
         "model": "auth.permission", 
         "fields": {
-            "codename": "add_specification", 
-            "name": "Can add specification", 
+            "codename": "add_specialization", 
+            "name": "Can add specialization", 
             "content_type": [
                 "core", 
-                "specification"
+                "specialization"
             ]
         }
     }, 
     {
-        "pk": 47, 
+        "pk": 53, 
         "model": "auth.permission", 
         "fields": {
-            "codename": "change_specification", 
-            "name": "Can change specification", 
+            "codename": "change_specialization", 
+            "name": "Can change specialization", 
             "content_type": [
                 "core", 
-                "specification"
+                "specialization"
             ]
         }
     }, 
     {
-        "pk": 48, 
+        "pk": 54, 
         "model": "auth.permission", 
         "fields": {
-            "codename": "delete_specification", 
-            "name": "Can delete specification", 
+            "codename": "delete_specialization", 
+            "name": "Can delete specialization", 
             "content_type": [
                 "core", 
-                "specification"
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_specializationassign", 
+            "name": "Can add specialization assignment", 
+            "content_type": [
+                "core", 
+                "specializationassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_specializationassign", 
+            "name": "Can change specialization assignment", 
+            "content_type": [
+                "core", 
+                "specializationassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_specializationassign", 
+            "name": "Can delete specialization assignment", 
+            "content_type": [
+                "core", 
+                "specializationassign"
             ]
         }
     }, 
