@@ -8,20 +8,80 @@ class Migration(SchemaMigration):
 
     def forwards(self, orm):
         
-        # Deleting field 'Profile.institute'
-        db.delete_column('mva_profile', 'institute_id')
+        # Removing unique constraint on 'Section', fields ['course', 'start_time', 'end_time']
+        db.delete_unique('mva_section', ['course_id', 'start_time', 'end_time'])
 
-        # Adding field 'Profile.institute'
-        db.add_column('mva_profile', 'institute', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['core.Institute'], null=True, blank=True), keep_default=False)
+        # Adding field 'Section.first_day'
+        db.add_column('mva_section', 'first_day', self.gf('django.db.models.fields.DateField')(default=datetime.date(2012, 2, 3)), keep_default=False)
+
+        # Adding field 'Section.last_day'
+        db.add_column('mva_section', 'last_day', self.gf('django.db.models.fields.DateField')(default=datetime.date(2012, 2, 3)), keep_default=False)
+
+        # Adding field 'Section.on_mon'
+        db.add_column('mva_section', 'on_mon', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Adding field 'Section.on_tues'
+        db.add_column('mva_section', 'on_tues', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Adding field 'Section.on_wed'
+        db.add_column('mva_section', 'on_wed', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Adding field 'Section.on_thurs'
+        db.add_column('mva_section', 'on_thurs', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Adding field 'Section.on_fri'
+        db.add_column('mva_section', 'on_fri', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Adding field 'Section.on_sat'
+        db.add_column('mva_section', 'on_sat', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Adding field 'Section.on_sun'
+        db.add_column('mva_section', 'on_sun', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
+
+        # Changing field 'Section.start_time'
+        db.alter_column('mva_section', 'start_time', self.gf('django.db.models.fields.TimeField')())
+
+        # Changing field 'Section.end_time'
+        db.alter_column('mva_section', 'end_time', self.gf('django.db.models.fields.TimeField')())
 
 
     def backwards(self, orm):
         
-        # Adding field 'Profile.institute'
-        db.add_column('mva_profile', 'institute', self.gf('django.db.models.fields.related.ForeignKey')(default=1, to=orm['core.Institute']), keep_default=False)
+        # Deleting field 'Section.first_day'
+        db.delete_column('mva_section', 'first_day')
 
-        # Deleting field 'Profile.institute'
-        db.delete_column('mva_profile', 'institute_id')
+        # Deleting field 'Section.last_day'
+        db.delete_column('mva_section', 'last_day')
+
+        # Deleting field 'Section.on_mon'
+        db.delete_column('mva_section', 'on_mon')
+
+        # Deleting field 'Section.on_tues'
+        db.delete_column('mva_section', 'on_tues')
+
+        # Deleting field 'Section.on_wed'
+        db.delete_column('mva_section', 'on_wed')
+
+        # Deleting field 'Section.on_thurs'
+        db.delete_column('mva_section', 'on_thurs')
+
+        # Deleting field 'Section.on_fri'
+        db.delete_column('mva_section', 'on_fri')
+
+        # Deleting field 'Section.on_sat'
+        db.delete_column('mva_section', 'on_sat')
+
+        # Deleting field 'Section.on_sun'
+        db.delete_column('mva_section', 'on_sun')
+
+        # Changing field 'Section.start_time'
+        db.alter_column('mva_section', 'start_time', self.gf('django.db.models.fields.DateTimeField')())
+
+        # Changing field 'Section.end_time'
+        db.alter_column('mva_section', 'end_time', self.gf('django.db.models.fields.DateTimeField')())
+
+        # Adding unique constraint on 'Section', fields ['course', 'start_time', 'end_time']
+        db.create_unique('mva_section', ['course_id', 'start_time', 'end_time'])
 
 
     models = {
@@ -98,9 +158,19 @@ class Migration(SchemaMigration):
             'Meta': {'unique_together': "(('name', 'abbrev', 'institute'),)", 'object_name': 'Course', 'db_table': "'mva_course'"},
             'abbrev': ('django.db.models.fields.CharField', [], {'max_length': '10'}),
             'description': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
+            'difficulty': ('django.db.models.fields.PositiveIntegerField', [], {'null': 'True', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'institute': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['core.Institute']"}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
+        },
+        'core.encouragement': {
+            'Meta': {'object_name': 'Encouragement', 'db_table': "'mva_encouragement'"},
+            'anonymous': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'message': ('django.db.models.fields.TextField', [], {}),
+            'person_from': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'encouragement_person_from'", 'to': "orm['core.Profile']"}),
+            'person_to': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'encouragement_person_to'", 'to': "orm['core.Profile']"}),
+            'sent_time': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime(2012, 2, 3, 17, 27, 3, 943142)'})
         },
         'core.faculty': {
             'Meta': {'object_name': 'Faculty', 'db_table': "'mva_faculty'"},
@@ -113,6 +183,15 @@ class Migration(SchemaMigration):
             'faculty': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'facultyassign_faculty'", 'to': "orm['core.Faculty']"}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'profile': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'facultyassign_profile'", 'to': "orm['core.Profile']"})
+        },
+        'core.feedback': {
+            'Meta': {'object_name': 'Feedback', 'db_table': "'mva_feedback'"},
+            'anonymous': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'instructor': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['core.Profile']"}),
+            'message': ('django.db.models.fields.TextField', [], {}),
+            'person_from': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'feedback_person_from'", 'to': "orm['core.Profile']"}),
+            'sent_time': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime(2012, 2, 3, 17, 27, 3, 944095)'})
         },
         'core.institute': {
             'Meta': {'object_name': 'Institute', 'db_table': "'mva_institute'"},
@@ -143,12 +222,30 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
+        'core.review': {
+            'Meta': {'object_name': 'Review', 'db_table': "'mva_review'"},
+            'anonymous': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'course': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['core.Course']"}),
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'message': ('django.db.models.fields.TextField', [], {}),
+            'person_from': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'review_person_from'", 'to': "orm['core.Profile']"}),
+            'sent_time': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime(2012, 2, 3, 17, 27, 3, 943628)'})
+        },
         'core.section': {
-            'Meta': {'unique_together': "(('course', 'start_time', 'end_time'),)", 'object_name': 'Section', 'db_table': "'mva_section'"},
+            'Meta': {'object_name': 'Section', 'db_table': "'mva_section'"},
             'course': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['core.Course']"}),
             'end_time': ('django.db.models.fields.TimeField', [], {}),
+            'first_day': ('django.db.models.fields.DateField', [], {}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'professor': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'section_professor'", 'to': "orm['core.Profile']"}),
+            'instructor': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'section_instructor'", 'to': "orm['core.Profile']"}),
+            'last_day': ('django.db.models.fields.DateField', [], {}),
+            'on_fri': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'on_mon': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'on_sat': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'on_sun': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'on_thurs': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'on_tues': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'on_wed': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'profile': ('django.db.models.fields.related.ManyToManyField', [], {'to': "orm['core.Profile']", 'through': "orm['core.SectionAssign']", 'symmetrical': 'False'}),
             'start_time': ('django.db.models.fields.TimeField', [], {})
         },

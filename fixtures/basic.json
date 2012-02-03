@@ -1,6 +1,24 @@
 [
     {
-        "pk": 14, 
+        "pk": 19, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "badge", 
+            "name": "badge", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "badgeassign", 
+            "name": "badge assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 18, 
         "model": "contenttypes.contenttype", 
         "fields": {
             "model": "contact", 
@@ -27,7 +45,25 @@
         }
     }, 
     {
-        "pk": 15, 
+        "pk": 21, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "course", 
+            "name": "course", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "encouragement", 
+            "name": "encouragement", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 14, 
         "model": "contenttypes.contenttype", 
         "fields": {
             "model": "faculty", 
@@ -36,7 +72,7 @@
         }
     }, 
     {
-        "pk": 17, 
+        "pk": 15, 
         "model": "contenttypes.contenttype", 
         "fields": {
             "model": "facultyassign", 
@@ -117,6 +153,33 @@
         }
     }, 
     {
+        "pk": 25, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "review", 
+            "name": "review", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "section", 
+            "name": "section", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "sectionassign", 
+            "name": "section assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
         "pk": 6, 
         "model": "contenttypes.contenttype", 
         "fields": {
@@ -135,7 +198,7 @@
         }
     }, 
     {
-        "pk": 18, 
+        "pk": 16, 
         "model": "contenttypes.contenttype", 
         "fields": {
             "model": "specialization", 
@@ -144,7 +207,7 @@
         }
     }, 
     {
-        "pk": 19, 
+        "pk": 17, 
         "model": "contenttypes.contenttype", 
         "fields": {
             "model": "specializationassign", 
@@ -162,11 +225,11 @@
         }
     }, 
     {
-        "pk": "6e1db47765090a4a46490fa4af2d8635", 
+        "pk": "0a0bc75b1085ced07dc44866cdb917c3", 
         "model": "sessions.session", 
         "fields": {
-            "expire_date": "2012-02-11 22:19:39", 
-            "session_data": "NWY1OGMxY2QxNWM4Y2E3NjcxNDMwYTA1ODlhZDRhZGIwOGFiNTY0YjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLBHUu\n"
+            "expire_date": "2012-02-17 16:56:58", 
+            "session_data": "NGVmMGE4NzM5YmMzMDI3NjU0YzRjZDZkM2IwNmYxZGU5MzJkMzhjMTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
         }
     }, 
     {
@@ -178,57 +241,12 @@
         }
     }, 
     {
-        "pk": 2, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-01-29 03:47:21", 
-            "app_name": "core", 
-            "migration": "0002_auto__add_contact"
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-01-29 03:50:34", 
-            "app_name": "core", 
-            "migration": "0003_auto__add_field_contact_telephone"
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-01-29 03:54:57", 
-            "app_name": "core", 
-            "migration": "0004_auto__add_field_contact_label"
-        }
-    }, 
-    {
         "pk": 1, 
         "model": "south.migrationhistory", 
         "fields": {
-            "applied": "2012-01-29 03:26:21", 
+            "applied": "2012-02-03 22:55:23", 
             "app_name": "core", 
             "migration": "0001_initial"
-        }
-    }, 
-    {
-        "pk": 5, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-01-29 04:38:32", 
-            "app_name": "core", 
-            "migration": "0005_auto__add_faculty__add_specification__add_field_profile_faculty__add_f"
-        }
-    }, 
-    {
-        "pk": 6, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-01-30 08:01:31", 
-            "app_name": "core", 
-            "migration": "0006_auto__del_specification__add_specializationassign__add_specialization_"
         }
     }, 
     {
@@ -253,22 +271,24 @@
         "fields": {
             "category": "U", 
             "city": "Waterloo", 
-            "description": "In just half a century, the University of Waterloo, located at the heart of Canada's Technology Triangle, has become one of Canada\u2019s leading comprehensive universities with more than 30,000 full- and part-time students in undergraduate and graduate programs.", 
+            "description": "", 
             "province_state": 1, 
-            "address": "200 University Ave. W.  Waterloo", 
+            "address": "200 University Ave W.", 
             "name": "University of Waterloo"
         }
     }, 
     {
-        "pk": 2, 
+        "pk": 1, 
         "model": "core.profile", 
         "fields": {
             "middle_name": "", 
+            "degree": "", 
+            "institute": 1, 
             "tagline": "", 
+            "influence": 0, 
             "birthday": "1990-10-06", 
             "role": "S", 
-            "user": 4, 
-            "institute": 1
+            "user": 1
         }
     }, 
     {
@@ -280,6 +300,14 @@
     }, 
     {
         "pk": 1, 
+        "model": "core.facultyassign", 
+        "fields": {
+            "profile": 1, 
+            "faculty": 1
+        }
+    }, 
+    {
+        "pk": 1, 
         "model": "core.specialization", 
         "fields": {
             "name": "Software Engineering"
@@ -287,80 +315,10 @@
     }, 
     {
         "pk": 1, 
-        "model": "core.contact", 
+        "model": "core.specializationassign", 
         "fields": {
-            "profile": 2, 
-            "city": "Waterloo", 
-            "mobile": "519-897-1947", 
-            "province_state": 1, 
-            "telephone": "519-897-1947", 
-            "label": "Common", 
-            "address": "321 Lester St.", 
-            "email": "lishang106@gmail.com"
-        }
-    }, 
-    {
-        "pk": 13, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-01-30 02:02:55", 
-            "object_repr": "Software Engineering", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 4, 
-            "content_type": [
-                "core", 
-                "specialization"
-            ]
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-01-30 02:02:46", 
-            "object_repr": "Faculty of Engineering", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 4, 
-            "content_type": [
-                "core", 
-                "faculty"
-            ]
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-01-28 22:39:51", 
-            "object_repr": "Sean Li", 
-            "object_id": "2", 
-            "change_message": "Changed faculty and specification.", 
-            "user": 4, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-01-28 22:39:21", 
-            "object_repr": "Faculty of Engineering", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 4, 
-            "content_type": [
-                "core", 
-                "faculty"
-            ]
+            "profile": 1, 
+            "specialization": 1
         }
     }, 
     {
@@ -368,11 +326,11 @@
         "model": "admin.logentry", 
         "fields": {
             "action_flag": 2, 
-            "action_time": "2012-01-28 21:55:11", 
-            "object_repr": "Sean Li", 
-            "object_id": "2", 
-            "change_message": "Changed label for contact \"Common\".", 
-            "user": 4, 
+            "action_time": "2012-02-03 17:00:52", 
+            "object_repr": "Shang Li", 
+            "object_id": "1", 
+            "change_message": "Changed birthday and institute. Added faculty assignment \"Shang Li : Faculty of Engineering\". Added specialization assignment \"Shang Li : Software Engineering\".", 
+            "user": 1, 
             "content_type": [
                 "core", 
                 "profile"
@@ -383,15 +341,15 @@
         "pk": 7, 
         "model": "admin.logentry", 
         "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-01-28 21:50:55", 
-            "object_repr": "Sean Li", 
+            "action_flag": 1, 
+            "action_time": "2012-02-03 17:00:32", 
+            "object_repr": "Software Engineering", 
             "object_id": "1", 
-            "change_message": "Changed telephone.", 
-            "user": 4, 
+            "change_message": "", 
+            "user": 1, 
             "content_type": [
                 "core", 
-                "contact"
+                "specialization"
             ]
         }
     }, 
@@ -400,14 +358,14 @@
         "model": "admin.logentry", 
         "fields": {
             "action_flag": 1, 
-            "action_time": "2012-01-28 21:50:44", 
-            "object_repr": "Sean Li", 
+            "action_time": "2012-02-03 17:00:23", 
+            "object_repr": "Faculty of Engineering", 
             "object_id": "1", 
             "change_message": "", 
-            "user": 4, 
+            "user": 1, 
             "content_type": [
                 "core", 
-                "contact"
+                "faculty"
             ]
         }
     }, 
@@ -416,14 +374,14 @@
         "model": "admin.logentry", 
         "fields": {
             "action_flag": 1, 
-            "action_time": "2012-01-28 21:36:55", 
-            "object_repr": "Sean Li", 
-            "object_id": "2", 
+            "action_time": "2012-02-03 17:00:07", 
+            "object_repr": "University of Waterloo", 
+            "object_id": "1", 
             "change_message": "", 
-            "user": 4, 
+            "user": 1, 
             "content_type": [
                 "core", 
-                "profile"
+                "institute"
             ]
         }
     }, 
@@ -432,14 +390,14 @@
         "model": "admin.logentry", 
         "fields": {
             "action_flag": 1, 
-            "action_time": "2012-01-28 21:34:25", 
-            "object_repr": "University of Waterloo", 
+            "action_time": "2012-02-03 17:00:06", 
+            "object_repr": "Ontario", 
             "object_id": "1", 
             "change_message": "", 
-            "user": 4, 
+            "user": 1, 
             "content_type": [
                 "core", 
-                "institute"
+                "provincestate"
             ]
         }
     }, 
@@ -448,14 +406,14 @@
         "model": "admin.logentry", 
         "fields": {
             "action_flag": 1, 
-            "action_time": "2012-01-28 21:32:24", 
-            "object_repr": "Ontario", 
+            "action_time": "2012-02-03 17:00:04", 
+            "object_repr": "Canada", 
             "object_id": "1", 
             "change_message": "", 
-            "user": 4, 
+            "user": 1, 
             "content_type": [
                 "core", 
-                "provincestate"
+                "country"
             ]
         }
     }, 
@@ -463,15 +421,15 @@
         "pk": 2, 
         "model": "admin.logentry", 
         "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-01-28 21:31:52", 
-            "object_repr": "Canada", 
+            "action_flag": 2, 
+            "action_time": "2012-02-03 16:57:55", 
+            "object_repr": "Shang Li", 
             "object_id": "1", 
-            "change_message": "", 
-            "user": 4, 
+            "change_message": "Changed role.", 
+            "user": 1, 
             "content_type": [
                 "core", 
-                "country"
+                "profile"
             ]
         }
     }, 
@@ -480,11 +438,11 @@
         "model": "admin.logentry", 
         "fields": {
             "action_flag": 2, 
-            "action_time": "2012-01-28 21:31:43", 
+            "action_time": "2012-02-03 16:57:29", 
             "object_repr": "Elesant", 
-            "object_id": "4", 
-            "change_message": "Changed first_name, last_name, last_login and date_joined.", 
-            "user": 4, 
+            "object_id": "1", 
+            "change_message": "Changed first_name and last_name.", 
+            "user": 1, 
             "content_type": [
                 "auth", 
                 "user"
@@ -708,7 +666,79 @@
         }
     }, 
     {
-        "pk": 40, 
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_badge", 
+            "name": "Can add badge", 
+            "content_type": [
+                "core", 
+                "badge"
+            ]
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_badge", 
+            "name": "Can change badge", 
+            "content_type": [
+                "core", 
+                "badge"
+            ]
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_badge", 
+            "name": "Can delete badge", 
+            "content_type": [
+                "core", 
+                "badge"
+            ]
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_badgeassign", 
+            "name": "Can add badge assignment", 
+            "content_type": [
+                "core", 
+                "badgeassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_badgeassign", 
+            "name": "Can change badge assignment", 
+            "content_type": [
+                "core", 
+                "badgeassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_badgeassign", 
+            "name": "Can delete badge assignment", 
+            "content_type": [
+                "core", 
+                "badgeassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 52, 
         "model": "auth.permission", 
         "fields": {
             "codename": "add_contact", 
@@ -720,7 +750,7 @@
         }
     }, 
     {
-        "pk": 41, 
+        "pk": 53, 
         "model": "auth.permission", 
         "fields": {
             "codename": "change_contact", 
@@ -732,7 +762,7 @@
         }
     }, 
     {
-        "pk": 42, 
+        "pk": 54, 
         "model": "auth.permission", 
         "fields": {
             "codename": "delete_contact", 
@@ -780,7 +810,79 @@
         }
     }, 
     {
-        "pk": 43, 
+        "pk": 61, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_course", 
+            "name": "Can add course", 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_course", 
+            "name": "Can change course", 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_course", 
+            "name": "Can delete course", 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_encouragement", 
+            "name": "Can add encouragement", 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_encouragement", 
+            "name": "Can change encouragement", 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_encouragement", 
+            "name": "Can delete encouragement", 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
+        }
+    }, 
+    {
+        "pk": 40, 
         "model": "auth.permission", 
         "fields": {
             "codename": "add_faculty", 
@@ -792,7 +894,7 @@
         }
     }, 
     {
-        "pk": 44, 
+        "pk": 41, 
         "model": "auth.permission", 
         "fields": {
             "codename": "change_faculty", 
@@ -804,7 +906,7 @@
         }
     }, 
     {
-        "pk": 45, 
+        "pk": 42, 
         "model": "auth.permission", 
         "fields": {
             "codename": "delete_faculty", 
@@ -816,7 +918,7 @@
         }
     }, 
     {
-        "pk": 49, 
+        "pk": 43, 
         "model": "auth.permission", 
         "fields": {
             "codename": "add_facultyassign", 
@@ -828,7 +930,7 @@
         }
     }, 
     {
-        "pk": 50, 
+        "pk": 44, 
         "model": "auth.permission", 
         "fields": {
             "codename": "change_facultyassign", 
@@ -840,7 +942,7 @@
         }
     }, 
     {
-        "pk": 51, 
+        "pk": 45, 
         "model": "auth.permission", 
         "fields": {
             "codename": "delete_facultyassign", 
@@ -960,7 +1062,115 @@
         }
     }, 
     {
-        "pk": 52, 
+        "pk": 73, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_review", 
+            "name": "Can add review", 
+            "content_type": [
+                "core", 
+                "review"
+            ]
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_review", 
+            "name": "Can change review", 
+            "content_type": [
+                "core", 
+                "review"
+            ]
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_review", 
+            "name": "Can delete review", 
+            "content_type": [
+                "core", 
+                "review"
+            ]
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_section", 
+            "name": "Can add section", 
+            "content_type": [
+                "core", 
+                "section"
+            ]
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_section", 
+            "name": "Can change section", 
+            "content_type": [
+                "core", 
+                "section"
+            ]
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_section", 
+            "name": "Can delete section", 
+            "content_type": [
+                "core", 
+                "section"
+            ]
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_sectionassign", 
+            "name": "Can add section assignment", 
+            "content_type": [
+                "core", 
+                "sectionassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_sectionassign", 
+            "name": "Can change section assignment", 
+            "content_type": [
+                "core", 
+                "sectionassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_sectionassign", 
+            "name": "Can delete section assignment", 
+            "content_type": [
+                "core", 
+                "sectionassign"
+            ]
+        }
+    }, 
+    {
+        "pk": 46, 
         "model": "auth.permission", 
         "fields": {
             "codename": "add_specialization", 
@@ -972,7 +1182,7 @@
         }
     }, 
     {
-        "pk": 53, 
+        "pk": 47, 
         "model": "auth.permission", 
         "fields": {
             "codename": "change_specialization", 
@@ -984,7 +1194,7 @@
         }
     }, 
     {
-        "pk": 54, 
+        "pk": 48, 
         "model": "auth.permission", 
         "fields": {
             "codename": "delete_specialization", 
@@ -996,7 +1206,7 @@
         }
     }, 
     {
-        "pk": 55, 
+        "pk": 49, 
         "model": "auth.permission", 
         "fields": {
             "codename": "add_specializationassign", 
@@ -1008,7 +1218,7 @@
         }
     }, 
     {
-        "pk": 56, 
+        "pk": 50, 
         "model": "auth.permission", 
         "fields": {
             "codename": "change_specializationassign", 
@@ -1020,7 +1230,7 @@
         }
     }, 
     {
-        "pk": 57, 
+        "pk": 51, 
         "model": "auth.permission", 
         "fields": {
             "codename": "delete_specializationassign", 
@@ -1140,21 +1350,21 @@
         }
     }, 
     {
-        "pk": 4, 
+        "pk": 1, 
         "model": "auth.user", 
         "fields": {
             "username": "Elesant", 
-            "first_name": "Sean", 
+            "first_name": "Shang", 
             "last_name": "Li", 
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-01-28 22:19:39", 
+            "last_login": "2012-02-03 16:56:58", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$1b70e$be8789bbd6128b94501cc6e2559729c1149e398d", 
+            "password": "sha1$4bdad$8e18a0f29c287976c105df27cf325c3b3f63e7a1", 
             "email": "lishang106@gmail.com", 
-            "date_joined": "2012-01-28 19:31:39"
+            "date_joined": "2012-02-03 16:56:49"
         }
     }
 ]

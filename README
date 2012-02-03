@@ -1,0 +1,8 @@
+Required Python Modules:
+
+- Psycopg2 (PostgreSQL Driver)
+- South (Database Migration)
+
+Front-End Components:
+
+- Bootstrap From Twitter

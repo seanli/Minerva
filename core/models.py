@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
+from datetime import datetime
 
 class Country(models.Model):
     
@@ -52,7 +53,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User)
     ROLE = (
         ('S', 'Student'),
-        ('P', 'Professor'),
+        ('I', 'Instructor'),
         ('T', 'Tutor'),
     )
     role = models.CharField(max_length=1, choices=ROLE)
@@ -60,11 +61,17 @@ class Profile(models.Model):
     birthday = models.DateField(null=True, blank=True)
     tagline = models.TextField(null=True, blank=True)
     institute = models.ForeignKey(Institute, null=True, blank=True)
-    degree = models.CharField(max_length=100, null=True, blank=True)
+    DEGREE = (
+        ('UG', 'Undergraduate'),
+        ('BA', 'Bachelor'),
+        ('MA', 'Master'),
+        ('DC', 'Doctor'),
+    )
+    degree = models.CharField(max_length=2, choices=DEGREE, default='UG')
     influence = models.IntegerField(default=0)
     
     def __unicode__(self):
-        return "%s %s" % (self.user.first_name, self.user.last_name)
+        return "%s %s (%s)" % (self.user.first_name, self.user.last_name, self.user.username)
     
     class Meta:
         db_table = 'mva_profile'
@@ -181,6 +188,7 @@ class Course(models.Model):
     abbrev = models.CharField(max_length=10, verbose_name='abbreviation')
     institute = models.ForeignKey(Institute)
     description = models.TextField(null=True, blank=True)
+    difficulty = models.PositiveIntegerField(null=True, blank=True)
     
     def __unicode__(self):
         return "%s (%s)" % (self.name, self.abbrev)
@@ -192,17 +200,16 @@ class Course(models.Model):
 class Section(models.Model):
     
     course = models.ForeignKey(Course)
-    start_time = models.TimeField()
-    end_time = models.TimeField()
-    professor = models.ForeignKey(Profile, related_name="%(class)s_professor")
+    first_day = models.DateField()
+    last_day = models.DateField()
+    instructor = models.ForeignKey(Profile, related_name="%(class)s_instructor")
     profile = models.ManyToManyField(Profile, through='SectionAssign')
     
     def __unicode__(self):
-        return "%s (%s)" % (self.course, unicode(self.start_time))
+        return "%s [%s, %s]" % (self.course, unicode(self.first_day), unicode(self.instructor))
     
     class Meta:
         db_table = 'mva_section'
-        unique_together = ("course", "start_time", "end_time")
 
 class SectionAssign(models.Model):
     
@@ -217,3 +224,45 @@ class SectionAssign(models.Model):
         verbose_name = 'section assignment'
         verbose_name_plural = 'section assignments'
         unique_together = ("profile", "section")
+
+class Encouragement(models.Model):
+    
+    person_to = models.ForeignKey(Profile, related_name="%(class)s_person_to", verbose_name='to')
+    message = models.TextField()
+    person_from = models.ForeignKey(Profile, related_name="%(class)s_person_from", verbose_name='from')
+    sent_time = models.DateTimeField(default=datetime.now())
+    anonymous = models.BooleanField(default=False)
+    
+    def __unicode__(self):
+        return "To %s: %s..." % (self.person_to, self.message[:10])
+    
+    class Meta:
+        db_table = 'mva_encouragement'
+        
+class Review(models.Model):
+    
+    course = models.ForeignKey(Course)
+    message = models.TextField()
+    person_from = models.ForeignKey(Profile, related_name="%(class)s_person_from", verbose_name='from')
+    sent_time = models.DateTimeField(default=datetime.now())
+    anonymous = models.BooleanField(default=False)
+    
+    def __unicode__(self):
+        return "To %s: %s..." % (self.course, self.message[:10])
+    
+    class Meta:
+        db_table = 'mva_review'
+        
+class Feedback(models.Model):
+    
+    instructor = models.ForeignKey(Profile)
+    message = models.TextField()
+    person_from = models.ForeignKey(Profile, related_name="%(class)s_person_from", verbose_name='from')
+    sent_time = models.DateTimeField(default=datetime.now())
+    anonymous = models.BooleanField(default=True)
+    
+    def __unicode__(self):
+        return "To %s: %s..." % (self.instructor, self.message[:10])
+    
+    class Meta:
+        db_table = 'mva_feedback'
