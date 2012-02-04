@@ -12,14 +12,14 @@
 <form action="" method="post" class="form-horizontal">
   {% csrf_token %}
   {% for field in form %}
-    <div class="control-group{% if field.errors %} error{% endif %}">
-      {{ field.label_tag }} <div class="controls">{{ field }}<span class="help-inline">{{ field.errors|safe }}</span></div>
-    </div>
+  <div class="control-group{% if field.errors %} error{% endif %}">
+  {{ field.label_tag }} <div class="controls">{{ field }}<span class="help-inline">{{ field.errors|safe }}</span></div>
+  </div>
   {% endfor %}
   {% if form.non_field_errors %}
-    <div class="alert alert-error">
-    {{ form.non_field_errors|safe }}
-    </div>
+  <div class="alert alert-error">
+  {{ form.non_field_errors|safe }}
+  </div>
   {% endif %}
   <div class="form-actions">
     <button type="submit" class="btn btn-primary">Login</button>

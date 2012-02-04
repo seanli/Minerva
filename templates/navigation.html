@@ -8,17 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="#">Project name</a>
+      <a class="brand" href="{% url home %}">Minerva</a>
       <div class="nav-collapse">
         <ul class="nav">
+          {% if user.is_authenticated %}
           <li class="{% active request 'home' %}"><a href="{% url home %}">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {% endif %}
         </ul>
         <ul class="nav pull-right">
           <li class="divider-vertical"></li>
           {% if not user.is_authenticated %}
           <li class="{% active request 'login' %}"><a href="{% url login %}"><i class="icon-user icon-white"></i> Login</a></li>
+          <li class="divider-vertical"></li>
+          <li class="{% active request 'home' %}"><a href="{% url home %}"><i class="icon-plus icon-white"></i> Signup</a></li>
           {% else %}
           <li><p class="navbar-text">Logged in as <a href="#">{{ user.username }}</a></p></li>
           <li class="divider-vertical"></li>
