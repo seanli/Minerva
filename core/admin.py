@@ -34,6 +34,10 @@ class BadgeAssignInline(admin.TabularInline):
     model = BadgeAssign
     extra = 2
 
+class SectionInline(admin.TabularInline):
+    model = Section
+    extra = 2
+    
 class SectionAssignInline(admin.TabularInline):
     model = SectionAssign
     
@@ -41,7 +45,7 @@ class ProfileAdmin(admin.ModelAdmin):
     inlines = [ContactInline, FacultyAssignInline, SpecializationAssignInline, SectionAssignInline, BadgeAssignInline, EncouragementInline, FeedbackInline]
 
 class CourseAdmin(admin.ModelAdmin):
-    inlines = [ReviewInline]
+    inlines = [SectionInline, ReviewInline]
     
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Country)

@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.signals import post_save
+from django.db.models.signals import post_save, pre_save
+from django.dispatch import receiver
+from django.core.exceptions import ValidationError
 from datetime import datetime
 
 class Country(models.Model):
@@ -46,9 +48,22 @@ class Institute(models.Model):
     
     class Meta:
         db_table = 'mva_institute'
-        
-# Extends the Django User
+
+@receiver(pre_save, sender=User)
+def user_pre_save(sender, **kwargs):
+    
+    ''' Ensures Django User's e-mail is unique '''
+    
+    email = kwargs['instance'].email
+    username = kwargs['instance'].username
+    if not email: 
+        raise ValidationError('User email is required')
+    if sender.objects.filter(email=email).exclude(username=username).count(): 
+        raise ValidationError('User email needs to be unique')
+
 class Profile(models.Model):
+    
+    ''' Extends the Django User '''
     
     user = models.OneToOneField(User)
     ROLE = (
@@ -76,12 +91,12 @@ class Profile(models.Model):
     class Meta:
         db_table = 'mva_profile'
 
-# Handler for connecting Profile to Django User
 def create_user_profile(sender, instance, created, **kwargs):
+    
+    ''' Handler for connecting Profile to Django User '''
     
     if created:
         Profile.objects.create(user=instance)
-        
 post_save.connect(create_user_profile, sender=User)
 
 class Faculty(models.Model):
