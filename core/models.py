@@ -4,6 +4,7 @@ from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
 from datetime import datetime
+from core.references import ROLE, DEGREE, CATEGORY
 
 class Country(models.Model):
     
@@ -33,10 +34,6 @@ class ProvinceState(models.Model):
 class Institute(models.Model):
     
     name = models.CharField(max_length=100)
-    CATEGORY = (
-        ('C', 'College'),
-        ('U', 'University'),
-    )
     category = models.CharField(max_length=1, choices=CATEGORY)
     address = models.CharField(max_length=200)
     city = models.CharField(max_length=100)
@@ -56,9 +53,7 @@ def user_pre_save(sender, **kwargs):
     
     email = kwargs['instance'].email
     username = kwargs['instance'].username
-    if not email: 
-        raise ValidationError('User email is required')
-    if sender.objects.filter(email=email).exclude(username=username).count(): 
+    if sender.objects.filter(email=email).exclude(username=username).count() and email: 
         raise ValidationError('User email needs to be unique')
 
 class Profile(models.Model):
@@ -66,22 +61,11 @@ class Profile(models.Model):
     ''' Extends the Django User '''
     
     user = models.OneToOneField(User)
-    ROLE = (
-        ('S', 'Student'),
-        ('I', 'Instructor'),
-        ('T', 'Tutor'),
-    )
     role = models.CharField(max_length=1, choices=ROLE)
     middle_name = models.CharField(max_length=100, null=True, blank=True)
     birthday = models.DateField(null=True, blank=True)
     tagline = models.TextField(null=True, blank=True)
     institute = models.ForeignKey(Institute, null=True, blank=True)
-    DEGREE = (
-        ('UG', 'Undergraduate'),
-        ('BA', 'Bachelor'),
-        ('MA', 'Master'),
-        ('DC', 'Doctor'),
-    )
     degree = models.CharField(max_length=2, choices=DEGREE, default='UG')
     influence = models.IntegerField(default=0)
     

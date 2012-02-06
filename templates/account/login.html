@@ -11,6 +11,11 @@
 <div class="row-fluid">
 <form action="" method="post" class="form-horizontal">
   {% csrf_token %}
+  {% if referrer == "signup" %}
+  <div class="alert alert-success">
+    <strong>Congratulations!</strong> You are signed up. Now you can login here.
+  </div>
+  {% endif %}
   {% for field in form %}
   <div class="control-group{% if field.errors %} error{% endif %}">
   {{ field.label_tag }} <div class="controls">{{ field }}<span class="help-inline">{{ field.errors|safe }}</span></div>

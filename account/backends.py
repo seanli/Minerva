@@ -6,16 +6,20 @@ class EmailAuthBackend(object):
 
     def authenticate(self, username=None, password=None):
         if '@' in username:
-            kwargs = {'email': username}
+            try:
+                user = User.objects.get(email__iexact=username)
+                if user.check_password(password):
+                    return user
+            except User.DoesNotExist:
+                return None
         else:
-            kwargs = {'username': username}
-        try:
-            user = User.objects.get(**kwargs)
-            if user.check_password(password):
-                return user
-        except User.DoesNotExist:
-            return None
-
+            try:
+                user = User.objects.get(username__iexact=username)
+                if user.check_password(password):
+                    return user
+            except User.DoesNotExist:
+                return None
+        
     def get_user(self, user_id):
         try:
             return User.objects.get(pk=user_id)
