@@ -5,12 +5,10 @@
     <title>{% block title %}{% endblock %}</title>
     <meta name="description" content="">
     <meta name="author" content="Shang (Sean) Li">
-
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!-- Le styles -->
     <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
@@ -24,59 +22,18 @@
     </style>
     <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet">
     <link href="{{ STATIC_URL }}css/minerva.css" rel="stylesheet">
-
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
     <link rel="apple-touch-icon" href="{{ STATIC_URL }}ico/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}ico/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}ico/apple-touch-icon-114x114.png">
   </head>
-
   <body>
-
     {% include "navigation.html" %}
-
-	<div class="container-fluid">
-	  <div class="row-fluid">
-	    <div class="span3">
-	      <div class="well sidebar">
-	      	{% if user.is_authenticated %}
-	      	<span class="sidebar-header">Academic Profile</span>
-	      	<h4>Full Name: {{ user.first_name }} {{ user.last_name }}</h4>
-	      	<h4>Role: {{ user.get_profile.get_role_display }}</h4>
-	      	<h4>Institute: {{ user.get_profile.institute }}</h4>
-	      	<h4>Faculty: {{ user.get_profile.faculty_set.all }}</h4>
-	      	<h4>Specialization: {{ user.get_profile.specialization_set.all }}</h4>
-			{% endif %}
-	        <!--ul class="nav nav-list">
-	          <li class="nav-header">Sidebar</li>
-	          <li class="active"><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li class="nav-header">Sidebar</li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li class="nav-header">Sidebar</li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	          <li><a href="#">Link</a></li>
-	        </ul>-->
-	      </div><!--/.well -->
-	    </div><!--/span-->
-	    <div class="span9">
-	      {% block content %}{% endblock %}
-	    </div><!--/span-->
-	  </div><!--/row-->
-	  
-	  {% include "footer.html" %}
-	  
-	</div><!--/.fluid-container-->
-  
+    <div class="container-fluid">
+      {% block content %}{% endblock %}
+      {% include "footer.html" %}
+    </div><!--/container-->
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -84,15 +41,15 @@
     <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-dropdown.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-scrollspy.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-tab.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-tooltip.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-popover.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-button.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-collapse.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-carousel.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap-typeahead.js"></script>
-
+    <script src="{{ STATIC_URL }}js/bootstrap-dropdown.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-scrollspy.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-tab.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-tooltip.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-popover.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-button.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-collapse.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-carousel.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
+    <script src="{{ STATIC_URL }}js/application.js"></script>
   </body>
 </html>

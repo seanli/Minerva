@@ -155,7 +155,8 @@ class Badge(models.Model):
 
     label = models.CharField(max_length=100)
     prev_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_prev_lvl", verbose_name='previous level')
-    next_exp = models.PositiveIntegerField(null=True, blank=True, verbose_name='next level EXP')
+    req_exp = models.PositiveIntegerField(default=0, verbose_name='requirement EXP')
+    next_exp = models.PositiveIntegerField(default=0, verbose_name='next level EXP')
     next_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_next_lvl", verbose_name='next level')
     profile = models.ManyToManyField(Profile, through='BadgeAssign')
     # picture = models.ImageField(null=True, blank=True)
@@ -170,6 +171,7 @@ class BadgeAssign(models.Model):
     
     profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
     badge = models.ForeignKey(Badge, related_name="%(class)s_badge")
+    obtained = models.BooleanField(default=False)
     exp = models.PositiveIntegerField(default=0, verbose_name='EXP')
     
     def __unicode__(self):
