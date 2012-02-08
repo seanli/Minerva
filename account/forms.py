@@ -1,10 +1,10 @@
 from django import forms
 from django.contrib import auth
 from django.contrib.auth.models import User
-from core.forms import DivErrorList
-from core.utilities import titlecase
-from core.models import Institute
-from core.references import ROLE
+from Minerva.core.forms import DivErrorList
+from Minerva.core.utilities import titlecase
+from Minerva.core.models import Institute
+from Minerva.core.references import ROLE
 
 class LoginForm(forms.Form):
     

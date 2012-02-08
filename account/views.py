@@ -4,8 +4,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
-from account.forms import LoginForm, SignupForm
-from core.utilities import unique_username, get_referrer, set_referrer
+from Minerva.account.forms import LoginForm, SignupForm
+from Minerva.core.utilities import unique_username, get_referrer, set_referrer
 
 def login(request):
     if request.method == 'POST':

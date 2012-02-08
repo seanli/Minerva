@@ -4,7 +4,7 @@ from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
 from datetime import datetime
-from core.references import ROLE, DEGREE, CATEGORY
+from Minerva.core.references import ROLE, DEGREE, CATEGORY
 
 class Country(models.Model):
     
