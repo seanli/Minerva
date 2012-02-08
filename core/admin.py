@@ -1,8 +1,9 @@
 from django.contrib import admin
 from Minerva.core.models import Profile, Country, ProvinceState, \
-    Institute, Contact, Faculty, Specialization, FacultyAssign, \
-    SpecializationAssign, Badge, BadgeAssign, Course, Section, \
-    SectionAssign, Encouragement, Review, Feedback
+    Institute, Contact, Specialization, SpecializationAssign, \
+    Badge, BadgeAssign, Course, Section, \
+    SectionAssign, Encouragement, Review, Feedback, \
+    Skill, SkillAssign
 
 class ContactInline(admin.StackedInline):
     model = Contact
@@ -21,14 +22,14 @@ class FeedbackInline(admin.StackedInline):
 class ReviewInline(admin.StackedInline):
     model = Review
     extra = 1
-    
-class FacultyAssignInline(admin.TabularInline):
-    model = FacultyAssign
-    extra = 0
 
 class SpecializationAssignInline(admin.TabularInline):
     model = SpecializationAssign
     extra = 0
+
+class SkillAssignInline(admin.TabularInline):
+    model = SkillAssign
+    extra = 2
 
 class BadgeAssignInline(admin.TabularInline):
     model = BadgeAssign
@@ -42,7 +43,7 @@ class SectionAssignInline(admin.TabularInline):
     model = SectionAssign
     
 class ProfileAdmin(admin.ModelAdmin):
-    inlines = [ContactInline, FacultyAssignInline, SpecializationAssignInline, SectionAssignInline, BadgeAssignInline, EncouragementInline, FeedbackInline]
+    inlines = [ContactInline, SpecializationAssignInline, SkillAssignInline, SectionAssignInline, BadgeAssignInline, EncouragementInline, FeedbackInline]
 
 class CourseAdmin(admin.ModelAdmin):
     inlines = [SectionInline, ReviewInline]
@@ -52,7 +53,6 @@ admin.site.register(Country)
 admin.site.register(ProvinceState)
 admin.site.register(Institute)
 admin.site.register(Contact)
-admin.site.register(Faculty)
 admin.site.register(Specialization)
 admin.site.register(Badge)
 admin.site.register(Course, CourseAdmin)
@@ -60,3 +60,4 @@ admin.site.register(Section)
 admin.site.register(Encouragement)
 admin.site.register(Review)
 admin.site.register(Feedback)
+admin.site.register(Skill)

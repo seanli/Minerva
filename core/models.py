@@ -83,32 +83,6 @@ def create_user_profile(sender, instance, created, **kwargs):
         Profile.objects.create(user=instance)
 post_save.connect(create_user_profile, sender=User)
 
-class Faculty(models.Model):
-    
-    name = models.CharField(max_length=100)
-    profile = models.ManyToManyField(Profile, through='FacultyAssign')
-    
-    def __unicode__(self):
-        return self.name
-    
-    class Meta:
-        db_table = 'mva_faculty'
-        verbose_name_plural = "faculties"
-        
-class FacultyAssign(models.Model):
-    
-    profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
-    faculty = models.ForeignKey(Faculty, related_name="%(class)s_faculty")
-    
-    def __unicode__(self):
-        return "%s : %s" % (self.profile, self.faculty)
-    
-    class Meta:
-        db_table = 'mva_faculty_assign'
-        verbose_name = 'faculty assignment'
-        verbose_name_plural = 'faculty assignments'
-        unique_together = ("profile", "faculty")
-
 class Specialization(models.Model):
     
     name = models.CharField(max_length=100)
@@ -133,6 +107,31 @@ class SpecializationAssign(models.Model):
         verbose_name = 'specialization assignment'
         verbose_name_plural = 'specialization assignments'
         unique_together = ("profile", "specialization")
+
+class Skill(models.Model):
+    
+    name = models.CharField(max_length=100)
+    profile = models.ManyToManyField(Profile, through='SkillAssign')
+    
+    def __unicode__(self):
+        return self.name
+    
+    class Meta:
+        db_table = 'mva_skill'
+
+class SkillAssign(models.Model):
+    
+    profile = models.ForeignKey(Profile, related_name="%(class)s_profile")
+    skill = models.ForeignKey(Skill, related_name="%(class)s_skill")
+    
+    def __unicode__(self):
+        return "%s : %s" % (self.profile, self.skill)
+    
+    class Meta:
+        db_table = 'mva_skill_assign'
+        verbose_name = 'skill assignment'
+        verbose_name_plural = 'skill assignments'
+        unique_together = ("profile", "skill")
         
 class Contact(models.Model):
     
