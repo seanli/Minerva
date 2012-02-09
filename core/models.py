@@ -75,13 +75,10 @@ class Profile(models.Model):
     class Meta:
         db_table = 'mva_profile'
 
-def create_user_profile(sender, instance, created, **kwargs):
-    
-    ''' Handler for connecting Profile to Django User '''
-    
+'''def create_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
-post_save.connect(create_user_profile, sender=User)
+post_save.connect(create_user_profile, sender=User)'''
 
 class Specialization(models.Model):
     
