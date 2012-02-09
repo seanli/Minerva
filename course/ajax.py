@@ -16,7 +16,8 @@ def form_add_course(request, form_data, form_id):
         course.abbrev = data['abbrev']
         course.institute = data['institute']
         course.save()
-        dajax.add_data({'status': 'OK'}, 'form_add_course_callback')
+        # TODO: Adding new item will not update data-source
+        dajax.add_data({'status': 'OK', 'new_item': course.name}, 'form_add_course_callback')
     else:
         clear_validation(dajax, form, form_id)
         show_validation(dajax, form, form_id)

@@ -14,13 +14,18 @@
 		var form_id = 'form-add-course';
 		form_data = $('#' + form_id).serializeObject(true);
 		Dajaxice.Minerva.course.form_add_course(Dajax.process, {
-			'form_data' : form_data,
-			'form_id' : form_id
+			'form_data': form_data,
+			'form_id': form_id
 		});
 	}
 	
 	function form_add_course_callback(data) {
 		if(data.status == 'OK') {
+			var name_source = $('#form-add-course input[name="name"]').attr('data-source');
+			name_source = name_source.substring(0, name_source.length - 1) + ',"' + data.new_item + '"]';
+			$('#form-add-course input[name="name"]').attr('data-source', name_source);
+			$('#form-add-course input[type="text"]').attr('value', '');
+			$('#form-add-course input[name="name"]').typeahead({source: name_source});
 			$('#add-course').modal('hide');
 		}
 	}
@@ -51,7 +56,9 @@
         <h6>{{ user.get_profile.institute }}</h6>
         <div class="vertical-space"></div>
         <h6>Specialization: {{ user.get_profile.specialization_set.all }}</h6>
+        <div class="vertical-space"></div>
         <h6>Skills: {{ user.get_profile.skill_set.all }}</h6>
+        <div class="vertical-space"></div>
         <div class="tooltip-demo well">
           <p class="muted" style="margin-bottom: 0;">
             Tight pants next level keffiyeh <a href="#" rel="tooltip" data-original-title="first tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel="tooltip" data-original-title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A <a href="#" rel="tooltip" title="Another one here too">really ironic</a> artisan whatever keytar, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
