@@ -1,0 +1,2297 @@
+[
+    {
+        "pk": 14, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "badge", 
+            "name": "badge", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "badgeassign", 
+            "name": "badge assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contact", 
+            "name": "contact", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "country", 
+            "name": "country", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "course", 
+            "name": "course", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "encouragement", 
+            "name": "encouragement", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "feedback", 
+            "name": "feedback", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "institute", 
+            "name": "institute", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "migrationhistory", 
+            "name": "migration history", 
+            "app_label": "south"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "profile", 
+            "name": "profile", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "provincestate", 
+            "name": "province/state", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "review", 
+            "name": "review", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "section", 
+            "name": "section", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "sectionassign", 
+            "name": "section assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "skill", 
+            "name": "skill", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "skillassign", 
+            "name": "skill assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "specialization", 
+            "name": "specialization", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "specializationassign", 
+            "name": "specialization assignment", 
+            "app_label": "core"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": "3300c82c959ceac17733d636cf96de26", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-23 04:07:35", 
+            "session_data": "Nzg2MTg2Y2M4NjM1MTMzZmIzOWRmNGNiZDkzOTVjODQ5MmI1YmIyMzqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLA3Uu\n"
+        }
+    }, 
+    {
+        "pk": "da25a870768f3d260ea96cc99f936dc3", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-22 00:23:39", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
+        "pk": "1bcf286580dfc4fd34c0b95bddd5aa81", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-22 00:09:17", 
+            "session_data": "ZjVkMDhjZDE5MzY2NTlmY2UyZWY5OTQwMGQ2YjFhZjdhYWQxODUwMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "1626243a9d6c354d085304db91783a0b", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-22 00:32:37", 
+            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
+        }
+    }, 
+    {
+        "pk": "3a4526e3e3b544943bb5d122f6e0eadc", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-23 16:23:14", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
+        "pk": "25889993471f19b6ae9ba143736fe1ae", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-22 15:00:34", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
+        "pk": "87ad364097d3361616de26be45efff0a", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-23 04:09:05", 
+            "session_data": "NjUwMTY0MjlmZDRiN2E4YTc3ZmFmYTdhMjVkZTBkNDA5MGJmOWFkNzqAAn1xAVUKdGVzdGNvb2tp\nZXECVQZ3b3JrZWRxA3Mu\n"
+        }
+    }, 
+    {
+        "pk": "f33a5e9f2386dd244cde72113cf0f2f1", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-22 21:53:15", 
+            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
+        }
+    }, 
+    {
+        "pk": "17985ce2d2a21cb731f401e84d508ff1", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-22 21:55:35", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
+        "pk": "3f35b75252c0f178bffd3837441a7818", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-23 04:12:13", 
+            "session_data": "NjUwMTY0MjlmZDRiN2E4YTc3ZmFmYTdhMjVkZTBkNDA5MGJmOWFkNzqAAn1xAVUKdGVzdGNvb2tp\nZXECVQZ3b3JrZWRxA3Mu\n"
+        }
+    }, 
+    {
+        "pk": "33904416dba819620235e3cc0c3816f7", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-23 04:51:10", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "www.mynodo.com", 
+            "name": "Mynodo"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 05:06:46", 
+            "app_name": "core", 
+            "migration": "0001_initial"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 05:06:47", 
+            "app_name": "core", 
+            "migration": "0002_auto__add_feedback"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 05:06:47", 
+            "app_name": "core", 
+            "migration": "0003_auto__add_field_section_first_day__add_field_section_last_day__add_fie"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 05:06:47", 
+            "app_name": "core", 
+            "migration": "0004_auto__del_field_section_on_thurs__del_field_section_on_sat__del_field_"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 05:06:47", 
+            "app_name": "core", 
+            "migration": "0005_auto__chg_field_profile_degree"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 05:06:47", 
+            "app_name": "core", 
+            "migration": "0006_auto__add_field_badge_req_exp__chg_field_badge_next_exp__add_field_bad"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 21:29:10", 
+            "app_name": "core", 
+            "migration": "0007_auto__del_faculty__del_facultyassign__del_unique_facultyassign_profile"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-08 21:29:10", 
+            "app_name": "core", 
+            "migration": "0008_auto__add_skill__add_skillassign__add_unique_skillassign_profile_skill"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-09 07:12:49", 
+            "app_name": "core", 
+            "migration": "0009_auto__chg_field_profile_degree"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-02-09 07:12:49", 
+            "app_name": "core", 
+            "migration": "0010_auto__del_unique_course_institute_abbrev_name__add_unique_course_insti"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.country", 
+        "fields": {
+            "name": "Canada"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.country", 
+        "fields": {
+            "name": "United States"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "ON", 
+            "name": "Ontario"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "AB", 
+            "name": "Alberta"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "BC", 
+            "name": "British Columbia"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "MB", 
+            "name": "Manitoba"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "NB", 
+            "name": "New Brunswick"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "NL", 
+            "name": "Newfoundland and Labrador"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "NT", 
+            "name": "Northwest Territories"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "NS", 
+            "name": "Nova Scotia"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "NU", 
+            "name": "Nunavut"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "PE", 
+            "name": "Prince Edward Island"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "QC", 
+            "name": "Quebec"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "SK", 
+            "name": "Saskachewan"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "core.provincestate", 
+        "fields": {
+            "country": 1, 
+            "abbrev": "YT", 
+            "name": "Yukon"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.institute", 
+        "fields": {
+            "category": "U", 
+            "city": "Waterloo", 
+            "description": "", 
+            "province_state": 1, 
+            "address": "200 University Ave. W.", 
+            "name": "University of Waterloo"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.institute", 
+        "fields": {
+            "category": "U", 
+            "city": "Vancouver", 
+            "description": "", 
+            "province_state": 3, 
+            "address": "2329 West Mall", 
+            "name": "University of British Columbia"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.institute", 
+        "fields": {
+            "category": "U", 
+            "city": "Vancouver", 
+            "description": "", 
+            "province_state": 3, 
+            "address": "515 West Hastings Street", 
+            "name": "Simon Fraser University"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.institute", 
+        "fields": {
+            "category": "U", 
+            "city": "Toronto", 
+            "description": "", 
+            "province_state": 1, 
+            "address": "27 King's College Circle", 
+            "name": "University of Toronto"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": null, 
+            "tagline": "", 
+            "influence": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "birthday": "1990-10-06", 
+            "role": "S", 
+            "user": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "DC", 
+            "institute": 1, 
+            "tagline": "Super Hero Zero ", 
+            "influence": 0, 
+            "birthday": "2012-02-09", 
+            "role": "S", 
+            "user": 3
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 2, 
+            "tagline": null, 
+            "influence": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Software Engineering"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Computer Science"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.specializationassign", 
+        "fields": {
+            "profile": 2, 
+            "specialization": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.specializationassign", 
+        "fields": {
+            "profile": 2, 
+            "specialization": 2
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.skill", 
+        "fields": {
+            "name": "Django"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.skill", 
+        "fields": {
+            "name": "Python"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.skill", 
+        "fields": {
+            "name": "PHP"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.skill", 
+        "fields": {
+            "name": "Porn watching"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.skillassign", 
+        "fields": {
+            "profile": 2, 
+            "skill": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.skillassign", 
+        "fields": {
+            "profile": 2, 
+            "skill": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.skillassign", 
+        "fields": {
+            "profile": 2, 
+            "skill": 3
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.skillassign", 
+        "fields": {
+            "profile": 3, 
+            "skill": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.badge", 
+        "fields": {
+            "next_lvl": null, 
+            "req_exp": 10, 
+            "prev_lvl": null, 
+            "next_exp": 0, 
+            "label": "True Identity"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.badgeassign", 
+        "fields": {
+            "profile": 2, 
+            "obtained": true, 
+            "badge": 1, 
+            "exp": 0
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.badgeassign", 
+        "fields": {
+            "profile": 3, 
+            "obtained": true, 
+            "badge": 1, 
+            "exp": 0
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CS 454", 
+            "name": "Distributed Systems", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "ECE 358", 
+            "name": "Computer Networks", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SE 464", 
+            "name": "Software Design & Architectures", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SPCOM 223", 
+            "name": "Public Speaking", 
+            "description": null
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CS 343", 
+            "name": "Concurrent & Parallel Programming", 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CS 348", 
+            "name": "Introduction to Database Management", 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CS 486", 
+            "name": "Introduction to Artificial Intelligence", 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "PSYCH 101", 
+            "name": "Introductory Psychology", 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SE 463", 
+            "name": "Software Requirements Specification & Analysis", 
+            "description": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.encouragement", 
+        "fields": {
+            "person_to": 3, 
+            "message": "dsgsdfgdf", 
+            "person_from": 3, 
+            "anonymous": false, 
+            "sent_time": "2012-02-09 03:56:39"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.feedback", 
+        "fields": {
+            "message": "gsdgsdgdsgf", 
+            "instructor": 3, 
+            "person_from": 3, 
+            "anonymous": true, 
+            "sent_time": "2012-02-09 03:56:39"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:22:19", 
+            "object_repr": "University of Toronto", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:18:47", 
+            "object_repr": "Simon Fraser University", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 16:15:54", 
+            "object_repr": "mc", 
+            "object_id": "3", 
+            "change_message": "Changed first_name.", 
+            "user": 2, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:13:49", 
+            "object_repr": "University of British Columbia", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 16:12:10", 
+            "object_repr": "University of Waterloo", 
+            "object_id": "1", 
+            "change_message": "Changed address.", 
+            "user": 2, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:10:26", 
+            "object_repr": "Yukon", 
+            "object_id": "13", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:10:13", 
+            "object_repr": "Saskachewan", 
+            "object_id": "12", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:10:04", 
+            "object_repr": "Quebec", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:09:57", 
+            "object_repr": "Prince Edward Island", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:09:45", 
+            "object_repr": "Nunavut", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:09:28", 
+            "object_repr": "Nova Scotia", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:09:18", 
+            "object_repr": "Northwest Territories", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:08:54", 
+            "object_repr": "Newfoundland and Labrador", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:08:43", 
+            "object_repr": "New Brunswick", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:08:08", 
+            "object_repr": "Manitoba", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:08:01", 
+            "object_repr": "British Columbia", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:07:51", 
+            "object_repr": "Alberta", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 16:07:00", 
+            "object_repr": "United States", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 14:47:03", 
+            "object_repr": "mc", 
+            "object_id": "3", 
+            "change_message": "Changed last_name.", 
+            "user": 2, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-02-09 04:25:10", 
+            "object_repr": "Introduction To Database Management (IN)", 
+            "object_id": "12", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 04:17:27", 
+            "object_repr": "Mike C (mc)", 
+            "object_id": "3", 
+            "change_message": "Added badge assignment \"Mike C (mc) : True Identity\".", 
+            "user": 2, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 04:14:12", 
+            "object_repr": "Mike C (mc)", 
+            "object_id": "3", 
+            "change_message": "Changed birthday, tagline and degree. Added skill assignment \"Mike C (mc) : Porn watching\". Added encouragement \"To Mike C (mc): dsgsdfgdf...\". Added feedback \"To Mike C (mc): gsdgsdgdsg...\".", 
+            "user": 3, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 04:09:30", 
+            "object_repr": "Porn watching", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 3, 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 04:08:38", 
+            "object_repr": "mc", 
+            "object_id": "3", 
+            "change_message": "Changed is_staff and is_superuser.", 
+            "user": 2, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 04:03:29", 
+            "object_repr": "Software Requirements Specification & Analysis (SE 463)", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 04:02:45", 
+            "object_repr": "Introductory Psychology (PSYCH 101)", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 04:02:22", 
+            "object_repr": "Introduction to Artificial Intelligence (CS 486)", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 04:01:47", 
+            "object_repr": "Introduction to Database Management (CS 348)", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-09 04:01:25", 
+            "object_repr": "Concurrent & Parallel Programming (CS 343)", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-02-09 03:57:24", 
+            "object_repr": "Distributed Systems (CS 101)", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-02-09 03:57:24", 
+            "object_repr": "My Life (LIFE 101)", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 15:33:36", 
+            "object_repr": "Sean Li (sli)", 
+            "object_id": "2", 
+            "change_message": "Added skill assignment \"Sean Li (sli) : PHP\".", 
+            "user": 2, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 15:33:22", 
+            "object_repr": "Sean Li (sli)", 
+            "object_id": "2", 
+            "change_message": "Added skill assignment \"Sean Li (sli) : Django\". Added skill assignment \"Sean Li (sli) : Python\".", 
+            "user": 2, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 15:32:23", 
+            "object_repr": "PHP", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 15:31:11", 
+            "object_repr": "Python", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 15:31:05", 
+            "object_repr": "Django", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 15:04:57", 
+            "object_repr": "www.mynodo.com", 
+            "object_id": "1", 
+            "change_message": "Changed domain and name.", 
+            "user": 2, 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 14:35:07", 
+            "object_repr": "Sean Li (sli)", 
+            "object_id": "2", 
+            "change_message": "Added faculty assignment \"Sean Li (sli) : Faculty of Mathematics\". Added specialization assignment \"Sean Li (sli) : Computer Science\".", 
+            "user": 2, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 14:34:10", 
+            "object_repr": "Computer Science", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 00:21:25", 
+            "object_repr": "Sean Li (sli)", 
+            "object_id": "2", 
+            "change_message": "Changed birthday. Added faculty assignment \"Sean Li (sli) : Faculty of Engineering\". Added specialization assignment \"Sean Li (sli) : Software Engineering\". Added badge assignment \"Sean Li (sli) : True Identity\".", 
+            "user": 2, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:21:14", 
+            "object_repr": "True Identity", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:20:26", 
+            "object_repr": "Software Engineering", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 00:19:07", 
+            "object_repr": "sli", 
+            "object_id": "2", 
+            "change_message": "Changed is_staff and is_superuser.", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:12:04", 
+            "object_repr": "University of Waterloo", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:11:57", 
+            "object_repr": "Ontario", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:11:56", 
+            "object_repr": "Canada", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:06:09", 
+            "object_repr": "Sean Li (lisean)", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-08 00:04:15", 
+            "object_repr": "lisean", 
+            "object_id": "1", 
+            "change_message": "Changed first_name and last_name.", 
+            "user": 1, 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 26
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 26
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 26
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 22
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_badge", 
+            "name": "Can add badge", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_badge", 
+            "name": "Can change badge", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_badge", 
+            "name": "Can delete badge", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_badgeassign", 
+            "name": "Can add badge assignment", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_badgeassign", 
+            "name": "Can change badge assignment", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_badgeassign", 
+            "name": "Can delete badge assignment", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contact", 
+            "name": "Can add contact", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contact", 
+            "name": "Can change contact", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contact", 
+            "name": "Can delete contact", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_country", 
+            "name": "Can add country", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_country", 
+            "name": "Can change country", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_country", 
+            "name": "Can delete country", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_course", 
+            "name": "Can add course", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_course", 
+            "name": "Can change course", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_course", 
+            "name": "Can delete course", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_encouragement", 
+            "name": "Can add encouragement", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_encouragement", 
+            "name": "Can change encouragement", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_encouragement", 
+            "name": "Can delete encouragement", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_feedback", 
+            "name": "Can add feedback", 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_feedback", 
+            "name": "Can change feedback", 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_feedback", 
+            "name": "Can delete feedback", 
+            "content_type": 21
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_institute", 
+            "name": "Can add institute", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_institute", 
+            "name": "Can change institute", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_institute", 
+            "name": "Can delete institute", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_profile", 
+            "name": "Can add profile", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_profile", 
+            "name": "Can change profile", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_profile", 
+            "name": "Can delete profile", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_provincestate", 
+            "name": "Can add province/state", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_provincestate", 
+            "name": "Can change province/state", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_provincestate", 
+            "name": "Can delete province/state", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_review", 
+            "name": "Can add review", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_review", 
+            "name": "Can change review", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_review", 
+            "name": "Can delete review", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_section", 
+            "name": "Can add section", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_section", 
+            "name": "Can change section", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_section", 
+            "name": "Can delete section", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_sectionassign", 
+            "name": "Can add section assignment", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_sectionassign", 
+            "name": "Can change section assignment", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_sectionassign", 
+            "name": "Can delete section assignment", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_skill", 
+            "name": "Can add skill", 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_skill", 
+            "name": "Can change skill", 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_skill", 
+            "name": "Can delete skill", 
+            "content_type": 27
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_skillassign", 
+            "name": "Can add skill assignment", 
+            "content_type": 28
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_skillassign", 
+            "name": "Can change skill assignment", 
+            "content_type": 28
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_skillassign", 
+            "name": "Can delete skill assignment", 
+            "content_type": 28
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_specialization", 
+            "name": "Can add specialization", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_specialization", 
+            "name": "Can change specialization", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_specialization", 
+            "name": "Can delete specialization", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_specializationassign", 
+            "name": "Can add specialization assignment", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_specializationassign", 
+            "name": "Can change specialization assignment", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_specializationassign", 
+            "name": "Can delete specialization assignment", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 23
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 23
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 23
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": 24
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_migrationhistory", 
+            "name": "Can add migration history", 
+            "content_type": 25
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_migrationhistory", 
+            "name": "Can change migration history", 
+            "content_type": 25
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_migrationhistory", 
+            "name": "Can delete migration history", 
+            "content_type": 25
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "lisean", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-08 00:18:55", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$6498e$8b614b7b4e5dc98350014b9bb42f8c29d89aaf0f", 
+            "email": "lishang106@gmail.com", 
+            "date_joined": "2012-02-07 23:06:37"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "tforce", 
+            "first_name": "Trinity", 
+            "last_name": "Force", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-09 16:14:42", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$9e617$36091b5b220e3e7986fcfa360bc998e7c3831b6d", 
+            "email": "tesla@ubc.com", 
+            "date_joined": "2012-02-09 16:14:29"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "mc", 
+            "first_name": "Michael", 
+            "last_name": "Chiang", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-09 04:07:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$3908e$cf5dcf596fb9711b8eed65355225fe3c9b240c0e", 
+            "email": "michaelcutedoggy@hotmail.com", 
+            "date_joined": "2012-02-09 04:07:26"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sli", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-09 16:23:14", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08 00:12:47"
+        }
+    }
+]
