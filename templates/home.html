@@ -5,6 +5,26 @@
 {% block title %}Mynodo - Home{% endblock %}
 
 {% block content %}
+<script type="text/javascript" charset="utf-8">
+	function my_js_callback(data) {
+		alert(data.message);
+	}
+
+	function form_add_course() {
+		var form_id = 'form-add-course';
+		form_data = $('#' + form_id).serializeObject(true);
+		Dajaxice.Minerva.course.form_add_course(Dajax.process, {
+			'form_data' : form_data,
+			'form_id' : form_id
+		});
+	}
+	
+	function form_add_course_callback(data) {
+		if(data.status == 'OK') {
+			$('#add-course').modal('hide');
+		}
+	}
+</script>
 <div class="row-fluid">
   <div class="span3">
     <div class="row-fluid">
@@ -21,9 +41,6 @@
             {% for b in badges %}
             <li>
               <a class="thumbnail" rel="popover" data-content="Obtained: {{ b.obtained }}<br />EXP: {{ b.exp }}<br />" data-original-title="{{ b.badge }}"> <img src="http://placehold.it/60x60" alt="" /> </a>
-              <!--<p>{{ b.badge }}</p>
-              <p>{{ b.obtained }}</p>
-              <p>{{ b.exp }} / {{ b.badge.next_exp }}</p>-->
             </li>
             {% endfor %}
           </ul>
@@ -46,21 +63,50 @@
   </div><!--/span-->
   <div class="span3">
     <div class="row-fluid">
-      {% if user.is_authenticated %} <span class="sidebar-header">Spotlight</span>
+      {% if user.is_authenticated %} <h2>Spotlight</h2>
       {% lorem 5 p %}
       {% endif %}
     </div>
   </div><!--/span-->
   <div class="span3">
     <div class="row-fluid">
-      {% if user.is_authenticated %} <span class="sidebar-header">Courses</span>
-      {% lorem 5 p %}
+      {% if user.is_authenticated %} <h2>Courses</h2>
+      <div class="vertical-space"></div>
+      <h4>Currently Taking</h4>
+      <div class="vertical-space"></div>
+      {% for s in sections %} <h6>{{ s.section.course.name }}</h6>
+      {% endfor %} <div class="vertical-space"></div>
+      <div id="add-course" class="modal hide fade" style="display: none; ">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h3>Add Course</h3>
+        </div>
+        <div class="modal-body">
+          <form id="form-add-course" action="" method="post" class="form-horizontal">
+            {% csrf_token %}
+            {% for field in form %}
+            <div id="form-add-course-{{ field.html_name }}" class="control-group">
+              {{ field.label_tag }}
+              <div class="controls">
+                {{ field }}<span class="help-inline"></span>
+              </div>
+            </div>
+            {% endfor %} <div id="form-add-course-error"></div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-primary" onclick="form_add_course();">Add</a>
+          <a href="#" class="btn" data-dismiss="modal">Close</a>
+        </div>
+      </div>
+      <a data-toggle="modal" href="#add-course" class="btn btn-primary">Add Course</a>
       {% endif %}
     </div>
   </div><!--/span-->
   <div class="span3">
     <div class="row-fluid">
-      {% if user.is_authenticated %} <span class="sidebar-header">Instructors</span>
+      {% if user.is_authenticated %} <h2>Instructors</h2>
+      <a class="btn btn-primary" onclick="Dajaxice.Minerva.core.helloworld(my_js_callback);"> AJAX Test </a>
       {% lorem 5 p %}
       {% endif %}
     </div>

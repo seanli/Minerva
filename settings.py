@@ -16,11 +16,11 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'lisean_minerva',                      # Or path to database file if using sqlite3.
-        'USER': 'lisean_minerva',                      # Not used with sqlite3.
+        'NAME': 'minerva',                      # Or path to database file if using sqlite3.
+        'USER': 'minerva_admin',                      # Not used with sqlite3.
         'PASSWORD': '1990106',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
@@ -94,7 +94,6 @@ SECRET_KEY = '(@7*5s+@kqh*-^622sg2=5^l&y#0kl()72%!dp*om###jlkmdl'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -126,8 +125,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'south',
+    'dajaxice',
+    'dajax',
     'Minerva.core',
     'Minerva.core.templatetags',
+    'Minerva.course',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -139,6 +141,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.static',
     'django.core.context_processors.request',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.contrib.messages.context_processors.messages',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -167,3 +173,7 @@ LOGGING = {
 AUTH_PROFILE_MODULE = 'core.Profile'
 AUTHENTICATION_BACKENDS = ('Minerva.account.backends.EmailAuthBackend',)
 LOGIN_URL = '/login/'
+
+DAJAXICE_MEDIA_PREFIX= 'dajaxice'
+DAJAXICE_DEBUG = True
+DAJAXICE_JS_DOCSTRINGS = True

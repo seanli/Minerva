@@ -3,6 +3,7 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 ! function($) {
+
 	$(function() {
 		// tooltip demo
 		$('.tooltip-demo.well').tooltip({
@@ -11,4 +12,5 @@
 		// Popover
 		$("a[rel=popover]").popover()
 	})
+	
 }(window.jQuery)

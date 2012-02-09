@@ -29,18 +29,19 @@ class SpecializationAssignInline(admin.TabularInline):
 
 class SkillAssignInline(admin.TabularInline):
     model = SkillAssign
-    extra = 2
+    extra = 1
 
 class BadgeAssignInline(admin.TabularInline):
     model = BadgeAssign
-    extra = 2
+    extra = 1
 
 class SectionInline(admin.TabularInline):
     model = Section
-    extra = 2
+    extra = 1
     
 class SectionAssignInline(admin.TabularInline):
     model = SectionAssign
+    extra = 1
     
 class ProfileAdmin(admin.ModelAdmin):
     inlines = [ContactInline, SpecializationAssignInline, SkillAssignInline, SectionAssignInline, BadgeAssignInline, EncouragementInline, FeedbackInline]

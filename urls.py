@@ -1,8 +1,11 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
 from django.contrib import admin
+from dajaxice.core import dajaxice_autodiscover
+
 admin.autodiscover()
+dajaxice_autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
@@ -15,6 +18,7 @@ urlpatterns = patterns('',
     url(r'^$', 'Minerva.core.views.home', name='home'),
     url(r'', include('Minerva.account.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^%s/' % settings.DAJAXICE_MEDIA_PREFIX, include('dajaxice.urls')),
 )
 
 urlpatterns += staticfiles_urlpatterns()

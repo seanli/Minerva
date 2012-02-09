@@ -66,7 +66,7 @@ class Profile(models.Model):
     birthday = models.DateField(null=True, blank=True)
     tagline = models.TextField(null=True, blank=True)
     institute = models.ForeignKey(Institute, null=True, blank=True)
-    degree = models.CharField(max_length=2, choices=DEGREE, default='UG')
+    degree = models.CharField(max_length=2, choices=DEGREE, null=True, blank=True)
     influence = models.IntegerField(default=0)
     
     def __unicode__(self):
@@ -195,7 +195,7 @@ class Course(models.Model):
     
     class Meta:
         db_table = 'mva_course'
-        unique_together = ("name", "abbrev", "institute")
+        unique_together = ("name", "institute")
     
 class Section(models.Model):
     

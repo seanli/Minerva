@@ -1,3 +1,5 @@
+{% load dajaxice_templatetags %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,7 +39,10 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    {% dajaxice_js_import %}
     <script src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.dajax.core.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.serialize-object.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>

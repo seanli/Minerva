@@ -10,6 +10,7 @@
       </a>
       <a class="brand" href="{% url home %}">Mynodo</a>
       <div class="nav-collapse">
+      	{{ breadcrumbs }}
         <ul class="nav">
           {% if user.is_authenticated %}
           <li class="{% active request 'home' %}">
