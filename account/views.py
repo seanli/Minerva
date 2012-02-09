@@ -5,6 +5,7 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
 from Minerva.account.forms import LoginForm, SignupForm
+from Minerva.core.models import Profile
 from Minerva.core.utilities import unique_username, get_referrer, set_referrer
 
 def login(request):
@@ -37,7 +38,8 @@ def signup(request):
             user.first_name = data['first_name']
             user.last_name = data['last_name']
             user.save()
-            profile = user.get_profile()
+            profile = Profile()
+            profile.user = user
             profile.institute = data['institute']
             profile.role = data['role']
             profile.save()
