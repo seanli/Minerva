@@ -1,5 +1,77 @@
 [
     {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "lisean", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-08 00:18:55", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$6498e$8b614b7b4e5dc98350014b9bb42f8c29d89aaf0f", 
+            "email": "lishang106@gmail.com", 
+            "date_joined": "2012-02-07 23:06:37"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "tforce", 
+            "first_name": "Trinity", 
+            "last_name": "Force", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-09 16:14:42", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$9e617$36091b5b220e3e7986fcfa360bc998e7c3831b6d", 
+            "email": "tesla@ubc.com", 
+            "date_joined": "2012-02-09 16:14:29"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "mc", 
+            "first_name": "Michael", 
+            "last_name": "Chiang", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-09 04:07:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$3908e$cf5dcf596fb9711b8eed65355225fe3c9b240c0e", 
+            "email": "michaelcutedoggy@hotmail.com", 
+            "date_joined": "2012-02-09 04:07:26"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sli", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-09 16:23:14", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08 00:12:47"
+        }
+    }, 
+    {
         "pk": "3300c82c959ceac17733d636cf96de26", 
         "model": "sessions.session", 
         "fields": {
