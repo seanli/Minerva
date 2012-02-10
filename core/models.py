@@ -20,7 +20,7 @@ class Country(models.Model):
 class ProvinceState(models.Model):
     
     name = models.CharField(max_length=100)
-    abbrev = models.CharField(max_length=5, verbose_name='abbreviation')
+    abbrev = models.CharField(max_length=5, verbose_name='abbreviation', null=True, blank=True)
     country = models.ForeignKey(Country)
     
     def __unicode__(self):
@@ -182,7 +182,7 @@ class BadgeAssign(models.Model):
 class Course(models.Model):
     
     name = models.CharField(max_length=100)
-    abbrev = models.CharField(max_length=10, verbose_name='abbreviation')
+    abbrev = models.CharField(max_length=10, verbose_name='abbreviation', null=True, blank=True)
     institute = models.ForeignKey(Institute)
     description = models.TextField(null=True, blank=True)
     difficulty = models.PositiveIntegerField(null=True, blank=True)

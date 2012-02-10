@@ -1,3 +1,6 @@
 .vertical-space {
   height: 0.6em;
 }
+input[readonly] {
+  background-color: white;
+}
