@@ -45,11 +45,15 @@ class SectionAssignInline(admin.TabularInline):
     
 class ProfileAdmin(admin.ModelAdmin):
     inlines = [ContactInline, SpecializationAssignInline, SkillAssignInline, SectionAssignInline, BadgeAssignInline, EncouragementInline, FeedbackInline]
+    list_display = ('__unicode__', 'user_link', 'institute',)
+    list_filter = ('institute',)
+    search_fields = ['user__first_name', 'user__last_name', 'user__username']
 
 class CourseAdmin(admin.ModelAdmin):
     inlines = [SectionInline, ReviewInline]
     list_display = ('name', 'abbrev', 'institute',)
     list_filter = ('institute',)
+    search_fields = ['name', 'abbrev']
     
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Country)

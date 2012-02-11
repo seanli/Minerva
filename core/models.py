@@ -70,7 +70,13 @@ class Profile(models.Model):
     influence = models.IntegerField(default=0)
     
     def __unicode__(self):
-        return "%s %s (%s)" % (self.user.first_name, self.user.last_name, self.user.username)
+        return "%s %s" % (self.user.first_name, self.user.last_name)
+    
+    # For Admin Panel
+    def user_link(self):
+        return '<a href="/admin/auth/user/%s/">%s</a>' % (self.user.id, self.user.username)
+    user_link.allow_tags = True
+    user_link.short_description = 'User'
     
     class Meta:
         db_table = 'mva_profile'
