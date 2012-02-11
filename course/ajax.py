@@ -29,6 +29,7 @@ def form_add_course(request, form_data, form_id):
         else:
             clear_validation(dajax, form, form_id)
             show_validation(dajax, form, form_id)
+            dajax.add_data({'status': 'INVALID'}, 'form_add_course_callback')
         return dajax.json()
     except Exception, e:
         print e

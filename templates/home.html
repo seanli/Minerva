@@ -13,6 +13,7 @@
 	function form_add_course() {
 		var form_id = 'form-add-course';
 		form_data = $('#' + form_id).serializeObject(true);
+		$('#add-course-button').button('loading');
 		Dajaxice.Minerva.course.form_add_course(Dajax.process, {
 			'form_data' : form_data,
 			'form_id' : form_id
@@ -20,6 +21,7 @@
 	}
 
 	function form_add_course_callback(data) {
+		$('#add-course-button').button('reset');
 		if(data.status == 'OK') {
 			//$('#form-add-course input[type="text"]').attr('value', '');
 			$('#add-course').modal('hide');
@@ -103,7 +105,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <a class="btn btn-primary" onclick="form_add_course();">Add</a>
+          <a id="add-course-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_course();">Add Course</a>
           <a href="#" class="btn" data-dismiss="modal">Close</a>
         </div>
       </div>
