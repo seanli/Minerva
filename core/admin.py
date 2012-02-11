@@ -3,7 +3,7 @@ from Minerva.core.models import Profile, Country, ProvinceState, \
     Institute, Contact, Specialization, SpecializationAssign, \
     Badge, BadgeAssign, Course, Section, \
     SectionAssign, Encouragement, Review, Feedback, \
-    Skill, SkillAssign
+    Skill, SkillAssign, Report
 
 class ContactInline(admin.StackedInline):
     model = Contact
@@ -68,3 +68,4 @@ admin.site.register(Encouragement)
 admin.site.register(Review)
 admin.site.register(Feedback)
 admin.site.register(Skill)
+admin.site.register(Report)

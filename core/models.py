@@ -270,3 +270,15 @@ class Feedback(models.Model):
     
     class Meta:
         db_table = 'mva_feedback'
+
+class Report(models.Model):
+    
+    message = models.TextField()
+    reporter = models.ForeignKey(Profile, related_name="%(class)s_reporter", null=True, blank=True)
+    sent_time = models.DateTimeField(default=datetime.now())
+    
+    def __unicode__(self):
+        return "%s: %s..." % (self.reporter, self.message[:10])
+    
+    class Meta:
+        db_table = 'mva_report'

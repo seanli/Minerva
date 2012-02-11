@@ -117,6 +117,7 @@ INSTALLED_APPS = (
     'Minerva.core',
     'Minerva.core.templatetags',
     'Minerva.course',
+    'Minerva.account',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
