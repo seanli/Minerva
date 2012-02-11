@@ -21,13 +21,7 @@
 
 	function form_add_course_callback(data) {
 		if(data.status == 'OK') {
-			var name_source = $('#form-add-course input[name="name"]').attr('data-source');
-			name_source = name_source.substring(0, name_source.length - 1) + ',"' + data.new_item + '"]';
-			$('#form-add-course input[name="name"]').attr('data-source', name_source);
-			$('#form-add-course input[type="text"]').attr('value', '');
-			$('#form-add-course input[name="name"]').typeahead({
-				source : name_source
-			});
+			//$('#form-add-course input[type="text"]').attr('value', '');
 			$('#add-course').modal('hide');
 		}
 	}

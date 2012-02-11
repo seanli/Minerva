@@ -11,7 +11,7 @@ class AddCourseForm(StandardForm):
         def label_from_instance(self, obj):
             return obj.user.get_full_name()
     
-    name = forms.CharField(max_length=100, label='Course Name', widget=forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'4', 'autocomplete':'off', 'data-source':"[]"}))
+    name = forms.CharField(max_length=100, label='Course Name')
     first_day = forms.DateField(label='First Day', initial=datetime.datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
     last_day = forms.DateField(label='Last Day', initial=datetime.datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
     instructor = InstructorChoiceField(label='Instructor', queryset=None)

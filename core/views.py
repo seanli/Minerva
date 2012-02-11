@@ -17,9 +17,9 @@ def home(request):
     index = 0
     for course in courses:
         if (index != last):
-            source += '"%s",' % course.name
+            source += '"%s",' % (course.name)
         else:
-            source += '"%s"' % course.name
+            source += '"%s"' % (course.name)
         index += 1
     source = '[' + source + ']'
     

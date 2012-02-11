@@ -25,7 +25,7 @@ def form_add_course(request, form_data, form_id):
             assign.profile = request.user.get_profile()
             assign.save()
             # TODO: Adding new item will not update data-source
-            dajax.add_data({'status': 'OK', 'new_item': 'lol'}, 'form_add_course_callback')
+            dajax.add_data({'status': 'OK'}, 'form_add_course_callback')
         else:
             clear_validation(dajax, form, form_id)
             show_validation(dajax, form, form_id)
