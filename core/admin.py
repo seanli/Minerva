@@ -48,6 +48,8 @@ class ProfileAdmin(admin.ModelAdmin):
 
 class CourseAdmin(admin.ModelAdmin):
     inlines = [SectionInline, ReviewInline]
+    list_display = ('name', 'abbrev', 'institute',)
+    list_filter = ('institute',)
     
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Country)

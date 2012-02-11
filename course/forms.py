@@ -23,7 +23,7 @@ class AddCourseForm(StandardForm):
             source = "[]"
         super(AddCourseForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
-        self.fields["name"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'4', 'autocomplete':'off', 'data-source':source})
+        self.fields["name"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
         self.fields["instructor"].queryset = Profile.objects.filter(role='I', institute=self.profile.institute)
         
     def clean_name(self):

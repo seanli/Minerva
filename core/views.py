@@ -12,7 +12,7 @@ def home(request):
     sections = SectionAssign.objects.filter(profile=profile, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
     
     source = ''
-    courses = Course.objects.filter(institute=profile.institute)
+    courses = Course.objects.filter(institute=profile.institute).order_by('name')
     last = len(courses) - 1
     index = 0
     for course in courses:
