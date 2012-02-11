@@ -12,16 +12,16 @@ class ContactInline(admin.StackedInline):
 class EncouragementInline(admin.StackedInline):
     model = Encouragement
     fk_name = 'person_to'
-    extra = 1
+    extra = 0
 
 class FeedbackInline(admin.StackedInline):
     model = Feedback
     fk_name = 'instructor'
-    extra = 1
+    extra = 0
     
 class ReviewInline(admin.StackedInline):
     model = Review
-    extra = 1
+    extra = 0
 
 class SpecializationAssignInline(admin.TabularInline):
     model = SpecializationAssign
