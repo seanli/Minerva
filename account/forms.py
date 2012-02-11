@@ -1,25 +1,23 @@
 from django import forms
 from django.contrib import auth
 from django.contrib.auth.models import User
-from Minerva.core.forms import DivErrorList
+from Minerva.core.forms import StandardForm
 from Minerva.core.utilities import titlecase
 from Minerva.core.models import Institute
 from Minerva.core.references import ROLE
 
-class LoginForm(forms.Form):
+class LoginForm(StandardForm):
     
     emailname = forms.CharField(max_length=75, label='Email', error_messages={'required': 'Please put your email!'})
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password', error_messages={'required': 'Please put your password!'})
     
-    def __init__(self, *args, **kwargs):
-        super(LoginForm, self).__init__(*args, **kwargs)
-        self.error_class = DivErrorList
-    
     def clean(self):
         data = self.cleaned_data
-        username = data.get('emailname', '').strip()
-        password = data.get('password', '')
-        if username is not '' and password is not '':
+        if self._errors:
+            return data
+        else:
+            username = data['emailname'].strip()
+            password = data['password']
             user = auth.authenticate(username=username, password=password)
             if user is None or not user.is_active:
                 raise forms.ValidationError('Email or password is invalid!')
@@ -27,7 +25,7 @@ class LoginForm(forms.Form):
                 data['user'] = user
             return data
 
-class SignupForm(forms.Form):
+class SignupForm(StandardForm):
     
     email = forms.EmailField(max_length=75, label='Email')
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')
@@ -36,10 +34,6 @@ class SignupForm(forms.Form):
     last_name = forms.CharField(max_length=30, label='Last Name')
     institute = forms.ModelChoiceField(queryset=Institute.objects, empty_label=None, label='Institute')
     role = forms.ChoiceField(choices=ROLE, label='Who are you?')
-    
-    def __init__(self, *args, **kwargs):
-        super(SignupForm, self).__init__(*args, **kwargs)
-        self.error_class = DivErrorList
         
     def clean_email(self):
         email = self.cleaned_data["email"].lower().strip()

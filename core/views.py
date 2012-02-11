@@ -12,7 +12,7 @@ def home(request):
     sections = SectionAssign.objects.filter(profile=profile, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
     
     source = ''
-    courses = Course.objects.all()
+    courses = Course.objects.filter(institute=profile.institute)
     last = len(courses) - 1
     index = 0
     for course in courses:
@@ -23,7 +23,7 @@ def home(request):
         index += 1
     source = '[' + source + ']'
     
-    form = AddCourseForm(source=source)
+    form = AddCourseForm(request=request, source=source)
     
     data = {
         'badges': badges,

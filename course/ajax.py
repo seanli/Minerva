@@ -8,16 +8,18 @@ from Minerva.core.ajax import clear_validation, show_validation
 def form_add_course(request, form_data, form_id):
     try:
         dajax = Dajax()
-        form = AddCourseForm(form_data)
+        form = AddCourseForm(form_data, request=request)
         if form.is_valid():
             clear_validation(dajax, form, form_id)
             data = form.cleaned_data
-            section = Section()
-            section.course = data['course']
-            section.first_day = data['first_day']
-            section.last_day = data['last_day']
-            section.instructor = data['instructor']
-            section.save()
+            section = data.get('section', '')
+            if section == '':
+                section = Section()
+                section.course = data['course']
+                section.first_day = data['first_day']
+                section.last_day = data['last_day']
+                section.instructor = data['instructor']
+                section.save()
             assign = SectionAssign()
             assign.section = section
             assign.profile = request.user.get_profile()

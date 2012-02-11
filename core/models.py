@@ -74,7 +74,7 @@ class Profile(models.Model):
     
     class Meta:
         db_table = 'mva_profile'
-
+  
 '''def create_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
@@ -207,6 +207,7 @@ class Section(models.Model):
     
     class Meta:
         db_table = 'mva_section'
+        unique_together = ("course", "first_day", "last_day", "instructor")
 
 class SectionAssign(models.Model):
     

@@ -1,4 +1,5 @@
 from django.forms.util import ErrorList
+from django import forms
 
 class DivErrorList(ErrorList):
     
@@ -9,3 +10,16 @@ class DivErrorList(ErrorList):
         if not self: 
             return u''
         return u'<div class="errorlist">%s</div>' % u''.join([u'<div class="error">%s</div>' % e for e in self])
+    
+class StandardForm(forms.Form):
+    
+    def __init__(self, *args, **kwargs):
+        try:
+            # A request parameter can be passed
+            self.request = kwargs.pop('request')
+        except:
+            self.request = None 
+        super(StandardForm, self).__init__(*args, **kwargs)
+        # Set default error list display
+        self.error_class = DivErrorList
+        
