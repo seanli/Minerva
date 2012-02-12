@@ -1,12 +1,29 @@
 {% extends "base.html" %}
 
+{% load webdesign %}
+
 {% block title %}Mynodo - People{% endblock %}
 
 {% block content %}
 <div class="page-header">
-  <h1>People {{ username }}</h1>
+  <h1>{{ user.get_full_name }}</h1>
 </div>
 <div class="row-fluid">
-  This is the profile page.
+  <div class="span6">
+    <div class="row-fluid">
+      {% lorem 3 p %}
+    </div>
+  </div><!--/span-->
+  <div class="span6">
+    <div class="row-fluid">
+      <form class="form-search">
+        <input type="text" class="input-xlarge">
+        <button type="submit" class="btn">
+          Search Anyone
+        </button>
+      </form>
+      {% lorem 3 p %}
+    </div>
+  </div><!--/span-->
 </div>
 {% endblock %}

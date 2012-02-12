@@ -1,4 +1,5 @@
 from django.contrib import auth
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
@@ -49,9 +50,15 @@ def signup(request):
         form = SignupForm()
     return render_to_response('account/signup.html',
         {'form': form}, context_instance=RequestContext(request))
-    
+
+@login_required
 def people(request, username):
-    data = {
-        'username': username,
-    }
+    try:
+        user = User.objects.get(username=username)
+        data = {
+            'user': user,
+            'profile': user.get_profile(),
+        }
+    except User.DoesNotExist:
+        return HttpResponse("NOT FOUND!")
     return render_to_response('account/people.html', data, context_instance=RequestContext(request))
