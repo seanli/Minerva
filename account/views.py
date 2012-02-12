@@ -52,13 +52,19 @@ def signup(request):
         {'form': form}, context_instance=RequestContext(request))
 
 @login_required
-def people(request, username):
-    try:
-        user = User.objects.get(username=username)
+def people(request, username=None):
+    if username == None:
         data = {
-            'user': user,
-            'profile': user.get_profile(),
+            'user': request.user,
+            'profile': request.user.get_profile(),
         }
-    except User.DoesNotExist:
-        return HttpResponse("NOT FOUND!")
+    else:
+        try:
+            user = User.objects.get(username=username)
+            data = {
+                'user': user,
+                'profile': user.get_profile(),
+            }
+        except User.DoesNotExist:
+            return HttpResponse("NOT FOUND!")
     return render_to_response('account/people.html', data, context_instance=RequestContext(request))

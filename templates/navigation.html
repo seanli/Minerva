@@ -11,7 +11,7 @@
             <a href="{% url bulletin %}"><i class="icon-list-alt icon-white"></i> Bulletin</a>
           </li>
           <li class="{% active request 'people' %}">
-            <a href="{% url people user.username %}"><i class="icon-user icon-white"></i> People</a>
+            <a href="{% url people %}"><i class="icon-user icon-white"></i> People</a>
           </li>
           {% if user.is_staff %} <li class="divider-vertical"></li>
           <li>
