@@ -15,7 +15,7 @@ def login(request):
             data = form.cleaned_data
             user = data['user']
             auth.login(request, user)
-            return HttpResponseRedirect(reverse('home'))
+            return HttpResponseRedirect(reverse('bulletin'))
     else:
         form = LoginForm()
     referrer = get_referrer(request)
@@ -49,3 +49,9 @@ def signup(request):
         form = SignupForm()
     return render_to_response('account/signup.html',
         {'form': form}, context_instance=RequestContext(request))
+    
+def people(request, username):
+    data = {
+        'username': username,
+    }
+    return render_to_response('account/people.html', data, context_instance=RequestContext(request))

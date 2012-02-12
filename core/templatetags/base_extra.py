@@ -6,8 +6,8 @@ from Minerva.account.forms import ReportForm
 register = template.Library()
 
 @register.simple_tag
-def active(request, urls):
-    if request.path in (reverse(url) for url in urls.split()):
+def active(request, sub_url):
+    if sub_url in request.path or (sub_url == 'bulletin' and request.path == '/'):
         return "active"
     return ""
 

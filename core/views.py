@@ -6,7 +6,7 @@ from datetime import datetime
 from Minerva.course.forms import AddCourseForm
 
 @login_required
-def home(request):
+def bulletin(request):
     profile = request.user.get_profile()
     badges = BadgeAssign.objects.filter(profile=profile)
     sections = SectionAssign.objects.filter(profile=profile, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
@@ -31,4 +31,4 @@ def home(request):
         'courses': courses,
         'form': form,
     }
-    return render_to_response('home.html', data, context_instance=RequestContext(request))
+    return render_to_response('bulletin.html', data, context_instance=RequestContext(request))

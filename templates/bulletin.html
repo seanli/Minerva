@@ -27,6 +27,15 @@
 			$('#add-course').modal('hide');
 		}
 	}
+	
+	var barval = 0;
+	function update_bar() {
+		if (barval < 100)
+			barval += 10;
+		else
+			barval = 0;
+		$('.progress .bar').attr("style", "width:" + barval + "%");
+	}
 </script>
 <div class="row-fluid">
   <div class="span3">
@@ -52,6 +61,11 @@
       <div class="span7">
         <h2>{{ user.first_name }} {{ user.last_name }}</h2>
         <h6>{{ user.get_profile.institute }}</h6>
+        <div class="vertical-space"></div>
+        <div class="progress">
+          <div class="bar" style="width: 0%;"></div>
+        </div>
+        <a class="btn btn-small btn-success" onclick="update_bar()"><i class="icon-arrow-up icon-white"></i> Progress Bar Demo</a>
         <div class="vertical-space"></div>
         <h5>Specialization:</h5>
         {% for specialization in user.get_profile.specialization_set.all %} <h6>{{ specialization.name }}</h6>
