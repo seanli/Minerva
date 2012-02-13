@@ -1,7 +1,7 @@
 from django import forms
 from django.forms import ModelChoiceField
-from Minerva.core.forms import DivErrorList, StandardForm
-from Minerva.core.models import Institute, Course, Profile, Section, SectionAssign
+from Minerva.core.forms import StandardForm
+from Minerva.core.models import Course, Profile, Section, SectionAssign
 from Minerva.core.utilities import titlecase
 import datetime
 

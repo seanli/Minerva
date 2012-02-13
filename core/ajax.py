@@ -1,5 +1,4 @@
 from django.utils import simplejson
-from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 
 def clear_validation(dajax, form, form_id):

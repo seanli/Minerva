@@ -1,5 +1,4 @@
 from django import template
-from django.core.urlresolvers import reverse
 from datetime import datetime
 from Minerva.account.forms import ReportForm, EncouragementForm
 

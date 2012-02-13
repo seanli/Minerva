@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from Minerva.core.models import BadgeAssign, Section, SectionAssign, Course
+from Minerva.core.models import SectionAssign, Course
 from datetime import datetime
 from Minerva.course.forms import AddCourseForm
 
