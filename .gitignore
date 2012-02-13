@@ -5,3 +5,9 @@
 
 # Compiled Files #
 *.pyc
+
+# Log Files #
+*.log
+
+# Mac Files #
+.DS_STORE

@@ -143,15 +143,33 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+    },
     'handlers': {
-        'mail_admins': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(PROJECT_ROOT, 'logs/minerva.log'),
+            'maxBytes': '16777216', # 16MB
+            'formatter': 'verbose',
         }
     },
     'loggers': {
         'django.request': {
-            'handlers': ['mail_admins'],
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'minerva': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'dajaxice': {
+            'handlers': ['file'],
             'level': 'ERROR',
             'propagate': True,
         },
@@ -162,6 +180,6 @@ AUTH_PROFILE_MODULE = 'core.Profile'
 AUTHENTICATION_BACKENDS = ('Minerva.account.backends.EmailAuthBackend',)
 LOGIN_URL = '/login/'
 
-DAJAXICE_MEDIA_PREFIX= 'dajaxice'
+DAJAXICE_MEDIA_PREFIX = 'dajaxice'
 DAJAXICE_DEBUG = True
 DAJAXICE_JS_DOCSTRINGS = True
