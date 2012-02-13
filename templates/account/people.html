@@ -6,12 +6,63 @@
 
 {% block content %}
 <div class="page-header">
-  <h1>{{ user.get_full_name }}</h1>
+  <div class="row-fluid">
+    <div class="span1">
+      <div class="thumbnail"><img src="http://placehold.it/100x100" alt="" />
+      </div>
+    </div>
+    <div class="span11">
+      <h1>{{ current_user.get_full_name }}</h1>
+      {% if profile.degree %} <h6>{{ profile.get_degree_display }} {{ profile.get_role_display }} from {{ profile.institute }}</h6>
+      {% else %} <h6>{{ profile.get_role_display }} from {{ profile.institute }}</h6>
+      {% endif %} <div class="vertical-space"></div>
+      <div class="row-fluid">
+        <ul class="thumbnails">
+          {% for b in badges %}
+          <li>
+            <a class="thumbnail" rel="popover" data-content="Obtained: {{ b.obtained }}<br />EXP: {{ b.exp }}<br />" data-original-title="{{ b.badge }}"> <img src="http://placehold.it/30x30" alt="" /> </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="row-fluid">
   <div class="span6">
     <div class="row-fluid">
-      {% lorem 3 p %}
+      <div class="span6">
+        {% with specializations=profile.specialization_set %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
+        {% if specializations.count == 0 %} <h6>You Have Not Added A Specialization Yet!</h6>
+        {% endif %}
+        {% for specialization in specializations.all %} <h6>{{ specialization.name }}</h6>
+        {% endfor %} <a href="#"><strong>Add Specialization</strong></a>
+        {% endwith %}
+      </div>
+      <div class="span6">
+        {% with skills=profile.skill_set %} <h3>Skill{{ skills.count|pluralize }}:</h3>
+        {% if skills.count == 0 %} <h6>You Have Not Added A Skill Yet!</h6>
+        {% endif %}
+        {% for skill in skills.all %} <h6>{{ skill.name }}</h6>
+        {% endfor %} <a href="#"><strong>Add Skill</strong></a>
+        {% endwith %}
+      </div>
+    </div>
+    <div class="vertical-space"></div>
+    <div class="row-fluid">
+      {% if profile.role = 'S' %} <h3>Encouragement{{ encouragements.count|pluralize }}:</h3>
+      <div class="vertical-space"></div>
+      {% if encouragements.count == 0 %} <h6>No Encouragement Yet!</h6>
+      {% endif %}
+      {% for encouragement in encouragements %}
+      <div class="well">
+        <h6><i>{{ encouragement.sent_time }}</i></h6>
+        <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {{ encouragement.person_from }} </h6>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% if current_user != user %} <a href="#"><strong>Give Encouragement</strong></a>
+      {% endif %}
     </div>
   </div><!--/span-->
   <div class="span6">
@@ -22,7 +73,13 @@
           Search Anyone
         </button>
       </form>
-      {% lorem 3 p %}
+      <h3>Related:</h3>
+      <div class="vertical-space"></div>
+      {% for p in related %}
+      <div class="well">
+        <h5>{{ p }}</h5>
+      </div>
+      {% endfor %}
     </div>
   </div><!--/span-->
 </div>

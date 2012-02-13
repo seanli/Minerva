@@ -8,7 +8,6 @@ from Minerva.course.forms import AddCourseForm
 @login_required
 def bulletin(request):
     profile = request.user.get_profile()
-    badges = BadgeAssign.objects.filter(profile=profile)
     sections = SectionAssign.objects.filter(profile=profile, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
     
     source = ''
@@ -26,7 +25,6 @@ def bulletin(request):
     form = AddCourseForm(request=request, source=source)
     
     data = {
-        'badges': badges,
         'sections': sections,
         'courses': courses,
         'form': form,

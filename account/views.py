@@ -6,7 +6,7 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
 from Minerva.account.forms import LoginForm, SignupForm
-from Minerva.core.models import Profile
+from Minerva.core.models import Profile, BadgeAssign, Encouragement
 from Minerva.core.utilities import unique_username, get_referrer, set_referrer
 
 def login(request):
@@ -54,17 +54,21 @@ def signup(request):
 @login_required
 def people(request, username=None):
     if username == None:
-        data = {
-            'user': request.user,
-            'profile': request.user.get_profile(),
-        }
+        user = request.user
     else:
         try:
             user = User.objects.get(username=username)
-            data = {
-                'user': user,
-                'profile': user.get_profile(),
-            }
         except User.DoesNotExist:
-            return HttpResponse("NOT FOUND!")
-    return render_to_response('account/people.html', data, context_instance=RequestContext(request))
+            user = None
+    if user is not None:
+        profile = user.get_profile()
+        data = {
+            'current_user': user,
+            'profile': profile,
+            'badges': BadgeAssign.objects.filter(profile=profile),
+            'encouragements': Encouragement.objects.filter(person_to=profile),
+            'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=profile.id)
+        }
+        return render_to_response('account/people.html', data, context_instance=RequestContext(request))
+    else:
+        return HttpResponse('User Not Found!')

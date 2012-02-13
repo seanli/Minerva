@@ -27,10 +27,10 @@
 			$('#add-course').modal('hide');
 		}
 	}
-	
+
 	var barval = 0;
 	function update_bar() {
-		if (barval < 100)
+		if(barval < 100)
 			barval += 10;
 		else
 			barval = 0;
@@ -38,46 +38,7 @@
 	}
 </script>
 <div class="row-fluid">
-  <div class="span3">
-    <div class="row-fluid">
-      {% if user.is_authenticated %}
-      <div class="span5">
-        <div class="thumbnail">
-          <img src="http://placehold.it/200x200" alt="" />
-        </div>
-        <div class="vertical-space"></div>
-        <div class="well">
-          <h6>Badges</h6>
-          <div class="vertical-space"></div>
-          <ul class="thumbnails">
-            {% for b in badges %}
-            <li>
-              <a class="thumbnail" rel="popover" data-content="Obtained: {{ b.obtained }}<br />EXP: {{ b.exp }}<br />" data-original-title="{{ b.badge }}"> <img src="http://placehold.it/60x60" alt="" /> </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <div class="span7">
-        <h2>{{ user.first_name }} {{ user.last_name }}</h2>
-        <h6>{{ user.get_profile.institute }}</h6>
-        <div class="vertical-space"></div>
-        <div class="progress">
-          <div class="bar" style="width: 0%;"></div>
-        </div>
-        <a class="btn btn-small btn-success" onclick="update_bar()"><i class="icon-arrow-up icon-white"></i> Progress Bar Demo</a>
-        <div class="vertical-space"></div>
-        <h5>Specialization:</h5>
-        {% for specialization in user.get_profile.specialization_set.all %} <h6>{{ specialization.name }}</h6>
-        {% endfor %} <div class="vertical-space"></div>
-        <h5>Skills:</h5>
-        {% for skill in user.get_profile.skill_set.all %} <h6>{{ skill.name }}</h6>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
-  </div><!--/span-->
-  <div class="span3">
+  <div class="span4">
     <div class="row-fluid">
       {% if user.is_authenticated %} <h2>Spotlight</h2>
       {% lorem 1 p %} <div class="vertical-space"></div>
@@ -89,7 +50,7 @@
       {% endif %}
     </div>
   </div><!--/span-->
-  <div class="span3">
+  <div class="span4">
     <div class="row-fluid">
       {% if user.is_authenticated %} <h2>Courses</h2>
       <div class="vertical-space"></div>
@@ -127,10 +88,15 @@
       {% endif %}
     </div>
   </div><!--/span-->
-  <div class="span3">
+  <div class="span4">
     <div class="row-fluid">
       {% if user.is_authenticated %} <h2>Instructors</h2>
       <a class="btn btn-primary" onclick="Dajaxice.Minerva.core.helloworld(my_js_callback);"> AJAX Test </a>
+      <div class="vertical-space"></div>
+      <div class="progress">
+        <div class="bar" style="width: 0%;"></div>
+      </div>
+      <a class="btn btn-small btn-success" onclick="update_bar()"><i class="icon-arrow-up icon-white"></i> Progress Bar Demo</a>
       <div class="vertical-space"></div>
       {% lorem 5 p %}
       {% endif %}

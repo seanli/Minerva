@@ -70,7 +70,7 @@ class Profile(models.Model):
     influence = models.IntegerField(default=0)
     
     def __unicode__(self):
-        return "%s %s" % (self.user.first_name, self.user.last_name)
+        return "%s" % (self.user.get_full_name())
     
     # For Admin Panel
     def user_link(self):
