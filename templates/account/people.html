@@ -57,13 +57,15 @@
       {% endif %}
       {% if current_user != user %}
       <div class="vertical-space"></div>
-      <a data-toggle="modal" href="#encouragement" class="btn btn-warning"><i class="icon-pencil icon-white"></i> Write Encouragement </a><div class="vertical-space"></div>
+      <a data-toggle="modal" href="#encouragement" class="btn btn-warning"><i class="icon-pencil icon-white"></i> Write Encouragement </a>
+      <div class="vertical-space"></div>
+      <div class="vertical-space"></div>
       {% endif %}
       {% for encouragement in encouragements %}
-      <div class="well">
-        <h6><i>{{ encouragement.sent_time }}</i></h6>
-        <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</h6>
-      </div>
+      <blockquote>
+        <h6>{{ encouragement.sent_time }}</h6>
+        <p><i>"{{ encouragement.message }}"</i></p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</small>
+      </blockquote>
       {% endfor %}
       {% endif %}
     </div>
