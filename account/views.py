@@ -67,7 +67,7 @@ def people(request, username=None):
             'profile': profile,
             'badges': BadgeAssign.objects.filter(profile=profile),
             'encouragements': Encouragement.objects.filter(person_to=profile),
-            'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=profile.id)
+            'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id)
         }
         return render_to_response('account/people.html', data, context_instance=RequestContext(request))
     else:
