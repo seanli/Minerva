@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from Minerva.account.forms import ReportForm, EncouragementForm
 from Minerva.core.models import Report, Encouragement
 from Minerva.core.ajax import clear_validation, show_validation
+from datetime import datetime
 
 @dajaxice_register
 def form_report(request, form_data, form_id):
@@ -44,6 +45,7 @@ def form_encouragement(request, form_data, form_id):
             encouragement.person_to = person_to
             encouragement.person_from = request.user.get_profile()
             encouragement.anonymous = anonymous
+            encouragement.sent_time = datetime.now()
             encouragement.save()
             dajax.add_data({'status': 'OK'}, 'form_encouragement_callback')
         else:
