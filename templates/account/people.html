@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% load base_extra %}
 {% load webdesign %}
 
 {% block title %}Mynodo - People{% endblock %}
@@ -33,7 +34,7 @@
     <div class="row-fluid">
       <div class="span6">
         {% with specializations=profile.specialization_set %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
-        {% if specializations.count == 0 %} <h6>You Have Not Added A Specialization Yet!</h6>
+        {% if specializations.count == 0 %} <h6>No Specialization Yet!</h6>
         {% endif %}
         {% for specialization in specializations.all %} <h6>{{ specialization.name }}</h6>
         {% endfor %} <a href="#"><strong>Add Specialization</strong></a>
@@ -41,7 +42,7 @@
       </div>
       <div class="span6">
         {% with skills=profile.skill_set %} <h3>Skill{{ skills.count|pluralize }}:</h3>
-        {% if skills.count == 0 %} <h6>You Have Not Added A Skill Yet!</h6>
+        {% if skills.count == 0 %} <h6>No Skill Yet!</h6>
         {% endif %}
         {% for skill in skills.all %} <h6>{{ skill.name }}</h6>
         {% endfor %} <a href="#"><strong>Add Skill</strong></a>
@@ -54,33 +55,80 @@
       <div class="vertical-space"></div>
       {% if encouragements.count == 0 %} <h6>No Encouragement Yet!</h6>
       {% endif %}
+      {% if current_user != user %}
+      <div class="vertical-space"></div>
+      <a data-toggle="modal" href="#encouragement" class="btn btn-warning"><i class="icon-pencil icon-white"></i> Write Encouragement </a><div class="vertical-space"></div>
+      {% endif %}
       {% for encouragement in encouragements %}
       <div class="well">
         <h6><i>{{ encouragement.sent_time }}</i></h6>
         <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</h6>
-        </div>
-        {% endfor %}
-        {% endif %}
-        {% if current_user != user %} <a href="#"><strong>Give Encouragement</strong></a>
-        {% endif %}
-        </div>
-        </div><!--/span-->
-        <div class="span6">
-        <div class="row-fluid">
-        <form class="form-search">
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+  </div><!--/span-->
+  <div class="span6">
+    <div class="row-fluid">
+      <form class="form-search">
         <input type="text" class="input-large">
         <button type="submit" class="btn">
-        Search Anyone
+          Search Anyone
         </button>
-        </form>
-        <h3>Related:</h3>
-        <div class="vertical-space"></div>
-        {% for p in related %}
-        <div class="well">
+      </form>
+      <h3>Related:</h3>
+      <div class="vertical-space"></div>
+      {% for p in related %}
+      <div class="well">
         <h5><a href="{% url people %}{{ p.user.username }}">{{ p }}</a></h5>
+      </div>
+      {% endfor %}
+    </div>
+  </div><!--/span-->
+</div>
+<div id="encouragement" class="modal hide fade" style="display: none; ">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3>Write An Encouragement</h3>
+  </div>
+  <div class="modal-body">
+    <form id="form-encouragement" action="" method="post" class="form-vertical">
+      {% csrf_token %}
+      {% encouragement_form %}
+      {% for field in encouragement_form %}
+      <div id="form-encouragement-{{ field.html_name }}" class="control-group">
+        {{ field.label_tag }}
+        <div class="controls">
+          {{ field }}<span class="help-inline"></span>
         </div>
-        {% endfor %}
-        </div>
-        </div><!--/span-->
-        </div>
-        {% endblock %}
+      </div>
+      {% endfor %} <div id="form-encouragement-error"></div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a id="post-encouragement-button" class="btn btn-primary" data-loading-text="Posting..." onclick="form_encouragement();">Post</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+	function form_encouragement() {
+		var form_id = 'form-encouragement';
+		// Set hidden field
+		$('#form-encouragement input[name="person_to"]').attr('value', '{{ current_user.id }}');
+		form_data = $('#' + form_id).serializeObject(true);
+		$('#post-encouragement-button').button('loading');
+		Dajaxice.Minerva.account.form_encouragement(Dajax.process, {
+			'form_data' : form_data,
+			'form_id' : form_id
+		});
+	}
+
+	function form_encouragement_callback(data) {
+		$('#post-encouragement-button').button('reset');
+		if(data.status == 'OK') {
+			$('#encouragement').modal('hide');
+			window.location.reload();
+		}
+	}
+</script>
+{% endblock %} 

@@ -3,7 +3,7 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from Minerva.core.forms import StandardForm
 from Minerva.core.utilities import titlecase
-from Minerva.core.models import Institute
+from Minerva.core.models import Institute, Profile
 from Minerva.core.references import ROLE
 
 class LoginForm(StandardForm):
@@ -62,6 +62,16 @@ class ReportForm(StandardForm):
     
     message = forms.CharField(label='Please Write Your Report Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
     
+    def clean_message(self):
+        message = self.cleaned_data["message"].strip()
+        return message
+
+class EncouragementForm(StandardForm):
+    
+    message = forms.CharField(label='Please Write Your Encouragement Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
+    anonymous = forms.BooleanField(label='Anonymous?', required=False, initial=False)
+    person_to = forms.ModelChoiceField(label='', queryset=Profile.objects, widget=forms.HiddenInput())
+        
     def clean_message(self):
         message = self.cleaned_data["message"].strip()
         return message

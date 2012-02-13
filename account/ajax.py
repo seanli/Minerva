@@ -1,7 +1,8 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
-from Minerva.account.forms import ReportForm
-from Minerva.core.models import Report
+from django.contrib.auth.decorators import login_required
+from Minerva.account.forms import ReportForm, EncouragementForm
+from Minerva.core.models import Report, Encouragement
 from Minerva.core.ajax import clear_validation, show_validation
 
 @dajaxice_register
@@ -25,6 +26,38 @@ def form_report(request, form_data, form_id):
             clear_validation(dajax, form, form_id)
             show_validation(dajax, form, form_id)
             dajax.add_data({'status': 'INVALID'}, 'form_report_callback')
+        return dajax.json()
+    except Exception, e:
+        print e
+
+@dajaxice_register
+@login_required
+def form_encouragement(request, form_data, form_id):
+    try:
+        dajax = Dajax()
+        form = EncouragementForm(form_data)
+        if form.is_valid():
+            clear_validation(dajax, form, form_id)
+            data = form.cleaned_data
+            message = data['message']
+            person_to = data['person_to']
+            anonymous = data['anonymous']
+            if person_to != request.user.get_profile():
+                encouragement = Encouragement()
+                encouragement.message = message
+                encouragement.person_to = person_to
+                encouragement.person_from = request.user.get_profile()
+                encouragement.anonymous = anonymous
+                encouragement.save()
+                dajax.add_data({'status': 'OK'}, 'form_encouragement_callback')
+            else:
+                clear_validation(dajax, form, form_id)
+                show_validation(dajax, form, form_id)
+                dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
+        else:
+            clear_validation(dajax, form, form_id)
+            show_validation(dajax, form, form_id)
+            dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
         return dajax.json()
     except Exception, e:
         print e

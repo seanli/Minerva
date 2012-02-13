@@ -66,7 +66,7 @@ def people(request, username=None):
             'current_user': user,
             'profile': profile,
             'badges': BadgeAssign.objects.filter(profile=profile),
-            'encouragements': Encouragement.objects.filter(person_to=profile),
+            'encouragements': Encouragement.objects.filter(person_to=profile).order_by('-sent_time'),
             'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id)
         }
         return render_to_response('account/people.html', data, context_instance=RequestContext(request))

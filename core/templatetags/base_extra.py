@@ -1,7 +1,7 @@
 from django import template
 from django.core.urlresolvers import reverse
 from datetime import datetime
-from Minerva.account.forms import ReportForm
+from Minerva.account.forms import ReportForm, EncouragementForm
 
 register = template.Library()
 
@@ -22,4 +22,13 @@ def report_form(parser, token):
 class ReportFormNode(template.Node):
     def render(self, context):
         context['report_form'] = ReportForm()
+        return ''
+
+@register.tag
+def encouragement_form(parser, token):
+    return EncouragementFormNode()
+    
+class EncouragementFormNode(template.Node):
+    def render(self, context):
+        context['encouragement_form'] = EncouragementForm()
         return ''
