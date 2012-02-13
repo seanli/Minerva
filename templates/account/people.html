@@ -57,30 +57,30 @@
       {% for encouragement in encouragements %}
       <div class="well">
         <h6><i>{{ encouragement.sent_time }}</i></h6>
-        <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {% if encouragement.anonymous %} {{ encouragement.person_from }} {% else %} Anonymous {% endif %}</h6>
-      </div>
-      {% endfor %}
-      {% endif %}
-      {% if current_user != user %} <a href="#"><strong>Give Encouragement</strong></a>
-      {% endif %}
-    </div>
-  </div><!--/span-->
-  <div class="span6">
-    <div class="row-fluid">
-      <form class="form-search">
+        <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</h6>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% if current_user != user %} <a href="#"><strong>Give Encouragement</strong></a>
+        {% endif %}
+        </div>
+        </div><!--/span-->
+        <div class="span6">
+        <div class="row-fluid">
+        <form class="form-search">
         <input type="text" class="input-large">
         <button type="submit" class="btn">
-          Search Anyone
+        Search Anyone
         </button>
-      </form>
-      <h3>Related:</h3>
-      <div class="vertical-space"></div>
-      {% for p in related %}
-      <div class="well">
+        </form>
+        <h3>Related:</h3>
+        <div class="vertical-space"></div>
+        {% for p in related %}
+        <div class="well">
         <h5><a href="{% url people %}{{ p.user.username }}">{{ p }}</a></h5>
-      </div>
-      {% endfor %}
-    </div>
-  </div><!--/span-->
-</div>
-{% endblock %}
+        </div>
+        {% endfor %}
+        </div>
+        </div><!--/span-->
+        </div>
+        {% endblock %}
