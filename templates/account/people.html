@@ -57,7 +57,7 @@
       {% for encouragement in encouragements %}
       <div class="well">
         <h6><i>{{ encouragement.sent_time }}</i></h6>
-        <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {{ encouragement.person_from }} </h6>
+        <h5><i>"{{ encouragement.message }}"</i></h5><h6>- {% if encouragement.anonymous %} {{ encouragement.person_from }} {% else %} Anonymous {% endif %}</h6>
       </div>
       {% endfor %}
       {% endif %}
