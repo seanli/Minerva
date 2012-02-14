@@ -1,0 +1,1033 @@
+{
+	"response": {
+		"meta": {
+			"Requests": "0",
+			"Timestamp": "2012-02-13T23:11:56-05:00",
+			"Status": "200",
+			"Message": "OK",
+			"Version": "1.4b4"
+		},
+		"data": {
+			"result": [
+				{
+					"ID": "1",
+					"Name": "Aboriginal Studies"
+				}, {
+					"ID": "2",
+					"Name": "Accounting"
+				}, {
+					"ID": "3",
+					"Name": "Acting"
+				}, {
+					"ID": "4",
+					"Name": "Advertising"
+				}, {
+					"ID": "5",
+					"Name": "African Studies"
+				}, {
+					"ID": "6",
+					"Name": "Agriculture"
+				}, {
+					"ID": "7",
+					"Name": "American Studies"
+				}, {
+					"ID": "8",
+					"Name": "Anatomy"
+				}, {
+					"ID": "9",
+					"Name": "Animal Science"
+				}, {
+					"ID": "13",
+					"Name": "Anthropology"
+				}, {
+					"ID": "10",
+					"Name": "Anthropology - Biological"
+				}, {
+					"ID": "11",
+					"Name": "Anthropology - Cultural"
+				}, {
+					"ID": "12",
+					"Name": "Anthropology - Linguistic"
+				}, {
+					"ID": "14",
+					"Name": "Arab Studies"
+				}, {
+					"ID": "15",
+					"Name": "Archaeology"
+				}, {
+					"ID": "18",
+					"Name": "Architecture"
+				}, {
+					"ID": "16",
+					"Name": "Architecture - Conservation"
+				}, {
+					"ID": "17",
+					"Name": "Architecture - Urban Design"
+				}, {
+					"ID": "19",
+					"Name": "Art History"
+				}, {
+					"ID": "20",
+					"Name": "Artificial Intelligence"
+				}, {
+					"ID": "21",
+					"Name": "Arts Administration (Music, Theatre)"
+				}, {
+					"ID": "22",
+					"Name": "Arts\/General Arts"
+				}, {
+					"ID": "23",
+					"Name": "Astronomy"
+				}, {
+					"ID": "24",
+					"Name": "Atmospheric Sciences"
+				}, {
+					"ID": "25",
+					"Name": "Aviation"
+				}, {
+					"ID": "26",
+					"Name": "Behavioural Science"
+				}, {
+					"ID": "27",
+					"Name": "Biochemistry"
+				}, {
+					"ID": "28",
+					"Name": "Bioinformatics"
+				}, {
+					"ID": "38",
+					"Name": "Biology"
+				}, {
+					"ID": "29",
+					"Name": "Biology - Cell"
+				}, {
+					"ID": "30",
+					"Name": "Biology - Computational"
+				}, {
+					"ID": "31",
+					"Name": "Biology - Conservation"
+				}, {
+					"ID": "32",
+					"Name": "Biology - Developmental"
+				}, {
+					"ID": "33",
+					"Name": "Biology - Evolutionary"
+				}, {
+					"ID": "34",
+					"Name": "Biology - Human"
+				}, {
+					"ID": "35",
+					"Name": "Biology - Marine\/Freshwater"
+				}, {
+					"ID": "36",
+					"Name": "Biology - Microbiology"
+				}, {
+					"ID": "37",
+					"Name": "Biology - Molecular"
+				}, {
+					"ID": "39",
+					"Name": "Biotechnology"
+				}, {
+					"ID": "40",
+					"Name": "Botany"
+				}, {
+					"ID": "41",
+					"Name": "Buddhism"
+				}, {
+					"ID": "44",
+					"Name": "Business"
+				}, {
+					"ID": "42",
+					"Name": "Business Informatics"
+				}, {
+					"ID": "43",
+					"Name": "Business Languages (French\/German\/Spanish)"
+				}, {
+					"ID": "45",
+					"Name": "Canadian Studies"
+				}, {
+					"ID": "46",
+					"Name": "Caribbean Studies"
+				}, {
+					"ID": "47",
+					"Name": "Celtic Studies"
+				}, {
+					"ID": "50",
+					"Name": "Chemistry"
+				}, {
+					"ID": "48",
+					"Name": "Chemistry - Computational"
+				}, {
+					"ID": "49",
+					"Name": "Chemistry - Geochemistry"
+				}, {
+					"ID": "51",
+					"Name": "Child\/Youth Studies"
+				}, {
+					"ID": "52",
+					"Name": "Chinese Studies"
+				}, {
+					"ID": "53",
+					"Name": "Christianity"
+				}, {
+					"ID": "54",
+					"Name": "Classics"
+				}, {
+					"ID": "55",
+					"Name": "Cognitive Science"
+				}, {
+					"ID": "56",
+					"Name": "Combinatorics"
+				}, {
+					"ID": "57",
+					"Name": "Commerce"
+				}, {
+					"ID": "58",
+					"Name": "Communication"
+				}, {
+					"ID": "59",
+					"Name": "Computational Finance"
+				}, {
+					"ID": "60",
+					"Name": "Computational Science"
+				}, {
+					"ID": "61",
+					"Name": "Computer Communications (Networks)"
+				}, {
+					"ID": "62",
+					"Name": "Computer Game Development"
+				}, {
+					"ID": "63",
+					"Name": "Computer Graphics"
+				}, {
+					"ID": "64",
+					"Name": "Computer Science"
+				}, {
+					"ID": "65",
+					"Name": "Computer Security"
+				}, {
+					"ID": "66",
+					"Name": "Computers & Society"
+				}, {
+					"ID": "67",
+					"Name": "Computing"
+				}, {
+					"ID": "68",
+					"Name": "Concurrent Education \/ Arts Programs"
+				}, {
+					"ID": "69",
+					"Name": "Concurrent Education \/ Physical Education & Health Programs"
+				}, {
+					"ID": "70",
+					"Name": "Concurrent Education \/ Science Programs"
+				}, {
+					"ID": "71",
+					"Name": "Creative Arts"
+				}, {
+					"ID": "72",
+					"Name": "Creative Writing"
+				}, {
+					"ID": "73",
+					"Name": "Criminal Justice"
+				}, {
+					"ID": "74",
+					"Name": "Criminology"
+				}, {
+					"ID": "75",
+					"Name": "Croatian\/Serbian Studies"
+				}, {
+					"ID": "76",
+					"Name": "Cultural Studies"
+				}, {
+					"ID": "77",
+					"Name": "Curatorial Studies\/Museum Studies"
+				}, {
+					"ID": "78",
+					"Name": "Dance"
+				}, {
+					"ID": "79",
+					"Name": "Design - Environmental"
+				}, {
+					"ID": "80",
+					"Name": "Design - Fashion"
+				}, {
+					"ID": "81",
+					"Name": "Design - Graphic"
+				}, {
+					"ID": "82",
+					"Name": "Design - Industrial"
+				}, {
+					"ID": "83",
+					"Name": "Design - Interior"
+				}, {
+					"ID": "84",
+					"Name": "Design - Textile"
+				}, {
+					"ID": "85",
+					"Name": "Development Studies"
+				}, {
+					"ID": "86",
+					"Name": "Drama"
+				}, {
+					"ID": "87",
+					"Name": "Drawing"
+				}, {
+					"ID": "88",
+					"Name": "Early Childhood Education"
+				}, {
+					"ID": "89",
+					"Name": "Earth Sciences"
+				}, {
+					"ID": "90",
+					"Name": "East Asian Studies"
+				}, {
+					"ID": "91",
+					"Name": "East European Studies"
+				}, {
+					"ID": "92",
+					"Name": "Ecology"
+				}, {
+					"ID": "101",
+					"Name": "Economics"
+				}, {
+					"ID": "93",
+					"Name": "Economics - Agricultural"
+				}, {
+					"ID": "94",
+					"Name": "Economics - Development"
+				}, {
+					"ID": "95",
+					"Name": "Economics - Entrepreneurial"
+				}, {
+					"ID": "96",
+					"Name": "Economics - Environmental"
+				}, {
+					"ID": "97",
+					"Name": "Economics - Financial"
+				}, {
+					"ID": "98",
+					"Name": "Economics - International"
+				}, {
+					"ID": "99",
+					"Name": "Economics - Managerial"
+				}, {
+					"ID": "100",
+					"Name": "Economics - Mathematical"
+				}, {
+					"ID": "102",
+					"Name": "Emergency Management"
+				}, {
+					"ID": "103",
+					"Name": "Engineering - Aerospace\/Aeronautical"
+				}, {
+					"ID": "104",
+					"Name": "Engineering - Architectural"
+				}, {
+					"ID": "105",
+					"Name": "Engineering - Automotive Systems"
+				}, {
+					"ID": "106",
+					"Name": "Engineering - Bioengineering"
+				}, {
+					"ID": "107",
+					"Name": "Engineering - Chemical"
+				}, {
+					"ID": "108",
+					"Name": "Engineering - Civil"
+				}, {
+					"ID": "109",
+					"Name": "Engineering - Communication"
+				}, {
+					"ID": "110",
+					"Name": "Engineering - Computer"
+				}, {
+					"ID": "111",
+					"Name": "Engineering - Electrical"
+				}, {
+					"ID": "112",
+					"Name": "Engineering - Electronic"
+				}, {
+					"ID": "113",
+					"Name": "Engineering - Environmental"
+				}, {
+					"ID": "114",
+					"Name": "Engineering - Geological\/Mining"
+				}, {
+					"ID": "115",
+					"Name": "Engineering - Industrial"
+				}, {
+					"ID": "116",
+					"Name": "Engineering - Integrated"
+				}, {
+					"ID": "117",
+					"Name": "Engineering - Management"
+				}, {
+					"ID": "118",
+					"Name": "Engineering - Materials"
+				}, {
+					"ID": "119",
+					"Name": "Engineering - Mechanical"
+				}, {
+					"ID": "120",
+					"Name": "Engineering - Mechatronics"
+				}, {
+					"ID": "121",
+					"Name": "Engineering - Network"
+				}, {
+					"ID": "122",
+					"Name": "Engineering - Nuclear"
+				}, {
+					"ID": "123",
+					"Name": "Engineering - Process"
+				}, {
+					"ID": "124",
+					"Name": "Engineering - Software"
+				}, {
+					"ID": "125",
+					"Name": "Engineering - Structural"
+				}, {
+					"ID": "126",
+					"Name": "Engineering - Systems"
+				}, {
+					"ID": "127",
+					"Name": "Engineering Physics"
+				}, {
+					"ID": "129",
+					"Name": "English as a Second Language"
+				}, {
+					"ID": "128",
+					"Name": "English Language\/Literature"
+				}, {
+					"ID": "130",
+					"Name": "Entrepreneurship"
+				}, {
+					"ID": "131",
+					"Name": "Environmental Ethics"
+				}, {
+					"ID": "132",
+					"Name": "Environmental Management"
+				}, {
+					"ID": "133",
+					"Name": "Environmental Science\/Environmental Studies"
+				}, {
+					"ID": "134",
+					"Name": "Estonian Studies"
+				}, {
+					"ID": "135",
+					"Name": "Ethics"
+				}, {
+					"ID": "136",
+					"Name": "European Studies"
+				}, {
+					"ID": "137",
+					"Name": "Family & Consumer Science"
+				}, {
+					"ID": "138",
+					"Name": "Family & Social Services"
+				}, {
+					"ID": "139",
+					"Name": "Film"
+				}, {
+					"ID": "140",
+					"Name": "Finance"
+				}, {
+					"ID": "141",
+					"Name": "Fine Arts"
+				}, {
+					"ID": "142",
+					"Name": "Finnish Studies"
+				}, {
+					"ID": "143",
+					"Name": "First Nations Studies"
+				}, {
+					"ID": "144",
+					"Name": "Food Science"
+				}, {
+					"ID": "145",
+					"Name": "Forensics"
+				}, {
+					"ID": "146",
+					"Name": "Forestry"
+				}, {
+					"ID": "147",
+					"Name": "French Language\/Literature"
+				}, {
+					"ID": "148",
+					"Name": "French Studies"
+				}, {
+					"ID": "149",
+					"Name": "Genetics"
+				}, {
+					"ID": "150",
+					"Name": "Geographic Information Systems \/ Geoinformatics"
+				}, {
+					"ID": "157",
+					"Name": "Geography"
+				}, {
+					"ID": "151",
+					"Name": "Geography - Economic"
+				}, {
+					"ID": "152",
+					"Name": "Geography - Environmental"
+				}, {
+					"ID": "153",
+					"Name": "Geography - Human"
+				}, {
+					"ID": "154",
+					"Name": "Geography - Physical"
+				}, {
+					"ID": "155",
+					"Name": "Geography - Regional"
+				}, {
+					"ID": "156",
+					"Name": "Geography - Urban"
+				}, {
+					"ID": "158",
+					"Name": "Geology"
+				}, {
+					"ID": "159",
+					"Name": "Geomatics"
+				}, {
+					"ID": "160",
+					"Name": "Geosciences"
+				}, {
+					"ID": "161",
+					"Name": "German Studies"
+				}, {
+					"ID": "162",
+					"Name": "Gerontology"
+				}, {
+					"ID": "163",
+					"Name": "Globalization Studies"
+				}, {
+					"ID": "164",
+					"Name": "Greek Studies"
+				}, {
+					"ID": "165",
+					"Name": "Health Informatics"
+				}, {
+					"ID": "166",
+					"Name": "Health Sciences \/ Studies"
+				}, {
+					"ID": "169",
+					"Name": "History"
+				}, {
+					"ID": "167",
+					"Name": "History - Economic"
+				}, {
+					"ID": "168",
+					"Name": "History of Science & Technology"
+				}, {
+					"ID": "170",
+					"Name": "Horticulture"
+				}, {
+					"ID": "171",
+					"Name": "Hospitality Management"
+				}, {
+					"ID": "172",
+					"Name": "Housing"
+				}, {
+					"ID": "173",
+					"Name": "Human Resources"
+				}, {
+					"ID": "174",
+					"Name": "Human Services Management"
+				}, {
+					"ID": "175",
+					"Name": "Human-Computer Interaction"
+				}, {
+					"ID": "176",
+					"Name": "Humanities"
+				}, {
+					"ID": "177",
+					"Name": "Hungarian Studies"
+				}, {
+					"ID": "178",
+					"Name": "Hydrology"
+				}, {
+					"ID": "179",
+					"Name": "Illustration"
+				}, {
+					"ID": "180",
+					"Name": "Immunology"
+				}, {
+					"ID": "181",
+					"Name": "Indigenous Studies"
+				}, {
+					"ID": "182",
+					"Name": "Individualized Studies"
+				}, {
+					"ID": "183",
+					"Name": "Industrial & Labour Relations"
+				}, {
+					"ID": "184",
+					"Name": "Information Science"
+				}, {
+					"ID": "185",
+					"Name": "Information Security"
+				}, {
+					"ID": "186",
+					"Name": "Information Systems"
+				}, {
+					"ID": "187",
+					"Name": "Information Technology"
+				}, {
+					"ID": "188",
+					"Name": "Interdisciplinary Studies"
+				}, {
+					"ID": "189",
+					"Name": "International Affairs"
+				}, {
+					"ID": "190",
+					"Name": "International Relations"
+				}, {
+					"ID": "191",
+					"Name": "International Studies"
+				}, {
+					"ID": "192",
+					"Name": "Italian Studies"
+				}, {
+					"ID": "193",
+					"Name": "Japanese Studies"
+				}, {
+					"ID": "194",
+					"Name": "Jewellery"
+				}, {
+					"ID": "195",
+					"Name": "Jewish Studies"
+				}, {
+					"ID": "196",
+					"Name": "Journalism"
+				}, {
+					"ID": "197",
+					"Name": "Kinesiology\/Human Kinetics"
+				}, {
+					"ID": "198",
+					"Name": "Landscape Architecture"
+				}, {
+					"ID": "199",
+					"Name": "Language Studies"
+				}, {
+					"ID": "201",
+					"Name": "Latin"
+				}, {
+					"ID": "200",
+					"Name": "Latin American Studies"
+				}, {
+					"ID": "202",
+					"Name": "Law"
+				}, {
+					"ID": "203",
+					"Name": "Leadership"
+				}, {
+					"ID": "204",
+					"Name": "Life Science"
+				}, {
+					"ID": "205",
+					"Name": "Linguistics"
+				}, {
+					"ID": "206",
+					"Name": "Literary Theory"
+				}, {
+					"ID": "207",
+					"Name": "Logic"
+				}, {
+					"ID": "209",
+					"Name": "Management"
+				}, {
+					"ID": "208",
+					"Name": "Management Information Systems"
+				}, {
+					"ID": "210",
+					"Name": "Manufacturing"
+				}, {
+					"ID": "211",
+					"Name": "Marketing"
+				}, {
+					"ID": "212",
+					"Name": "Mass Media"
+				}, {
+					"ID": "213",
+					"Name": "Materials Science"
+				}, {
+					"ID": "216",
+					"Name": "Mathematics"
+				}, {
+					"ID": "214",
+					"Name": "Mathematics - Applied"
+				}, {
+					"ID": "215",
+					"Name": "Mathematics - Computational"
+				}, {
+					"ID": "217",
+					"Name": "Media Studies"
+				}, {
+					"ID": "218",
+					"Name": "Medical Sciences"
+				}, {
+					"ID": "219",
+					"Name": "Medical Technology"
+				}, {
+					"ID": "220",
+					"Name": "Medieval Studies"
+				}, {
+					"ID": "221",
+					"Name": "Mediterranean Studies"
+				}, {
+					"ID": "222",
+					"Name": "Mental Health"
+				}, {
+					"ID": "223",
+					"Name": "Middle Eastern Studies"
+				}, {
+					"ID": "224",
+					"Name": "Midwifery"
+				}, {
+					"ID": "225",
+					"Name": "Military Leadership"
+				}, {
+					"ID": "226",
+					"Name": "Military Strategy"
+				}, {
+					"ID": "227",
+					"Name": "Modern Languages"
+				}, {
+					"ID": "235",
+					"Name": "Music"
+				}, {
+					"ID": "228",
+					"Name": "Music Composition"
+				}, {
+					"ID": "229",
+					"Name": "Music Education"
+				}, {
+					"ID": "230",
+					"Name": "Music History"
+				}, {
+					"ID": "231",
+					"Name": "Music Performance"
+				}, {
+					"ID": "232",
+					"Name": "Music Theory"
+				}, {
+					"ID": "233",
+					"Name": "Music Therapy"
+				}, {
+					"ID": "234",
+					"Name": "Musicology"
+				}, {
+					"ID": "236",
+					"Name": "Nanoscience\/Nanotechnology"
+				}, {
+					"ID": "237",
+					"Name": "Native Language\/Anishinaabemowin"
+				}, {
+					"ID": "238",
+					"Name": "Native Studies"
+				}, {
+					"ID": "239",
+					"Name": "Natural Resource Management"
+				}, {
+					"ID": "240",
+					"Name": "Natural Sciences"
+				}, {
+					"ID": "241",
+					"Name": "Near Eastern Studies"
+				}, {
+					"ID": "242",
+					"Name": "Neuroscience"
+				}, {
+					"ID": "243",
+					"Name": "North American Studies"
+				}, {
+					"ID": "244",
+					"Name": "Northern Studies\/Polar Studies"
+				}, {
+					"ID": "245",
+					"Name": "Nursing"
+				}, {
+					"ID": "246",
+					"Name": "Nutrition"
+				}, {
+					"ID": "247",
+					"Name": "Oenology & Viticulture"
+				}, {
+					"ID": "248",
+					"Name": "Ophthalmology"
+				}, {
+					"ID": "249",
+					"Name": "Organizational Studies"
+				}, {
+					"ID": "250",
+					"Name": "Painting"
+				}, {
+					"ID": "251",
+					"Name": "Palaeontology"
+				}, {
+					"ID": "252",
+					"Name": "Parks & Recreation Management"
+				}, {
+					"ID": "253",
+					"Name": "Pathology"
+				}, {
+					"ID": "254",
+					"Name": "Peace\/Conflict Studies"
+				}, {
+					"ID": "255",
+					"Name": "Pharmacy\/Pharmacology"
+				}, {
+					"ID": "256",
+					"Name": "Philosophy"
+				}, {
+					"ID": "257",
+					"Name": "Photography"
+				}, {
+					"ID": "258",
+					"Name": "Physical Education"
+				}, {
+					"ID": "269",
+					"Name": "Physics"
+				}, {
+					"ID": "259",
+					"Name": "Physics - Applied"
+				}, {
+					"ID": "260",
+					"Name": "Physics - Astrophysics"
+				}, {
+					"ID": "261",
+					"Name": "Physics - Biophysics"
+				}, {
+					"ID": "262",
+					"Name": "Physics - Chemical"
+				}, {
+					"ID": "263",
+					"Name": "Physics - Computational"
+				}, {
+					"ID": "264",
+					"Name": "Physics - Geophysics"
+				}, {
+					"ID": "265",
+					"Name": "Physics - Mathematical"
+				}, {
+					"ID": "266",
+					"Name": "Physics - Medical"
+				}, {
+					"ID": "267",
+					"Name": "Physics - Quantum"
+				}, {
+					"ID": "268",
+					"Name": "Physics - Theoretical"
+				}, {
+					"ID": "270",
+					"Name": "Physiology"
+				}, {
+					"ID": "271",
+					"Name": "Planetary Sciences"
+				}, {
+					"ID": "272",
+					"Name": "Plant Science"
+				}, {
+					"ID": "273",
+					"Name": "Police Science"
+				}, {
+					"ID": "274",
+					"Name": "Policy Studies \/ Policy Analysis"
+				}, {
+					"ID": "275",
+					"Name": "Polish Studies"
+				}, {
+					"ID": "276",
+					"Name": "Political Economy"
+				}, {
+					"ID": "277",
+					"Name": "Political Science"
+				}, {
+					"ID": "278",
+					"Name": "Portuguese Studies"
+				}, {
+					"ID": "279",
+					"Name": "Printmaking"
+				}, {
+					"ID": "286",
+					"Name": "Psychology"
+				}, {
+					"ID": "280",
+					"Name": "Psychology - Applied"
+				}, {
+					"ID": "281",
+					"Name": "Psychology - Cognitive"
+				}, {
+					"ID": "282",
+					"Name": "Psychology - Developmental"
+				}, {
+					"ID": "283",
+					"Name": "Psychology - Evolutionary"
+				}, {
+					"ID": "284",
+					"Name": "Psychology - Neuropsychology"
+				}, {
+					"ID": "285",
+					"Name": "Psychology - Sport"
+				}, {
+					"ID": "287",
+					"Name": "Public Administration"
+				}, {
+					"ID": "288",
+					"Name": "Public Affairs"
+				}, {
+					"ID": "289",
+					"Name": "Public Health"
+				}, {
+					"ID": "290",
+					"Name": "Public Policy"
+				}, {
+					"ID": "291",
+					"Name": "Public Relations"
+				}, {
+					"ID": "293",
+					"Name": "Radio"
+				}, {
+					"ID": "292",
+					"Name": "Radiology"
+				}, {
+					"ID": "294",
+					"Name": "Real Estate"
+				}, {
+					"ID": "295",
+					"Name": "Rehabilitation Medicine"
+				}, {
+					"ID": "296",
+					"Name": "Religion"
+				}, {
+					"ID": "297",
+					"Name": "Retail Management"
+				}, {
+					"ID": "298",
+					"Name": "Risk Management"
+				}, {
+					"ID": "299",
+					"Name": "Roman Studies"
+				}, {
+					"ID": "300",
+					"Name": "Russian Studies"
+				}, {
+					"ID": "301",
+					"Name": "Science & Technology Studies"
+				}, {
+					"ID": "302",
+					"Name": "Science\/General Science"
+				}, {
+					"ID": "303",
+					"Name": "Scientific Computing"
+				}, {
+					"ID": "304",
+					"Name": "Sculpture"
+				}, {
+					"ID": "305",
+					"Name": "Second-Language Teaching"
+				}, {
+					"ID": "306",
+					"Name": "Semiotics"
+				}, {
+					"ID": "307",
+					"Name": "Sexuality Studies"
+				}, {
+					"ID": "308",
+					"Name": "Slavic Studies"
+				}, {
+					"ID": "309",
+					"Name": "Social Demography"
+				}, {
+					"ID": "310",
+					"Name": "Social Inequality"
+				}, {
+					"ID": "311",
+					"Name": "Social Policy"
+				}, {
+					"ID": "312",
+					"Name": "Social Sciences"
+				}, {
+					"ID": "313",
+					"Name": "Social Work"
+				}, {
+					"ID": "315",
+					"Name": "Sociology"
+				}, {
+					"ID": "314",
+					"Name": "Sociology - Rural\/Urban"
+				}, {
+					"ID": "316",
+					"Name": "South Asian Studies"
+				}, {
+					"ID": "317",
+					"Name": "Space Sciences"
+				}, {
+					"ID": "318",
+					"Name": "Spanish Studies"
+				}, {
+					"ID": "319",
+					"Name": "Speech Communications"
+				}, {
+					"ID": "320",
+					"Name": "Sport Studies"
+				}, {
+					"ID": "321",
+					"Name": "Sports Administration\/Sports Management"
+				}, {
+					"ID": "322",
+					"Name": "Sports Medicine"
+				}, {
+					"ID": "323",
+					"Name": "Statistics"
+				}, {
+					"ID": "324",
+					"Name": "Studio Art"
+				}, {
+					"ID": "325",
+					"Name": "Sustainable Development"
+				}, {
+					"ID": "326",
+					"Name": "Television"
+				}, {
+					"ID": "327",
+					"Name": "Theatre"
+				}, {
+					"ID": "328",
+					"Name": "Theology"
+				}, {
+					"ID": "329",
+					"Name": "Toxicology"
+				}, {
+					"ID": "330",
+					"Name": "Translation"
+				}, {
+					"ID": "331",
+					"Name": "Travel & Tourism"
+				}, {
+					"ID": "332",
+					"Name": "Ukrainian Studies"
+				}, {
+					"ID": "333",
+					"Name": "Urban Planning"
+				}, {
+					"ID": "334",
+					"Name": "Urban Studies"
+				}, {
+					"ID": "335",
+					"Name": "Visual Arts"
+				}, {
+					"ID": "336",
+					"Name": "Visual Communication"
+				}, {
+					"ID": "337",
+					"Name": "Women's Studies"
+				}, {
+					"ID": "338",
+					"Name": "Yiddish"
+				}, {
+					"ID": "339",
+					"Name": "Zoology"
+				}
+			]
+		}
+	}
+}

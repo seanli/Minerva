@@ -116,6 +116,8 @@ INSTALLED_APPS = (
     'dajax',
     'Minerva.core',
     'Minerva.core.templatetags',
+    'Minerva.core.management',
+    'Minerva.core.management.commands',
     'Minerva.course',
     'Minerva.account',
     # Uncomment the next line to enable the admin:
@@ -183,3 +185,5 @@ LOGIN_URL = '/login/'
 DAJAXICE_MEDIA_PREFIX = 'dajaxice'
 DAJAXICE_DEBUG = True
 DAJAXICE_JS_DOCSTRINGS = True
+
+COMMANDS_ROOT = os.path.join(PROJECT_ROOT, 'core/management/commands/'),

@@ -54,13 +54,16 @@ class CourseAdmin(admin.ModelAdmin):
     list_display = ('name', 'abbrev', 'institute',)
     list_filter = ('institute',)
     search_fields = ['name', 'abbrev']
+
+class SpecializationAdmin(admin.ModelAdmin):
+    search_fields = ['name']
     
 admin.site.register(Profile, ProfileAdmin)
 admin.site.register(Country)
 admin.site.register(ProvinceState)
 admin.site.register(Institute)
 admin.site.register(Contact)
-admin.site.register(Specialization)
+admin.site.register(Specialization, SpecializationAdmin)
 admin.site.register(Badge)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Section)

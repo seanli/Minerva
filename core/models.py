@@ -88,7 +88,7 @@ post_save.connect(create_user_profile, sender=User)'''
 
 class Specialization(models.Model):
     
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     profile = models.ManyToManyField(Profile, through='SpecializationAssign')
     
     def __unicode__(self):
