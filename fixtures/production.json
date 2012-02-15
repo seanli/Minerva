@@ -17231,17 +17231,6 @@
         }
     }, 
     {
-        "pk": 1288, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "SPAN 451W", 
-            "description": "This course will develop writing skills in Spanish by exploring various stylistic procedures of writing. It will focus on a number of features essential in effective writing to help students develop the organizational skills and linguistic abilities needed to communicate successfully. Special attention is given to the role of stylistics in creative writing, journal writing, magazine pieces, and advertising. ", 
-            "title": "Stylistics and Professional Writing(WLU)"
-        }
-    }, 
-    {
         "pk": 1289, 
         "model": "core.course", 
         "fields": {
@@ -17602,17 +17591,6 @@
             "abbrev": "SPAN 222W", 
             "description": "This course will study some of the most salient literary texts produced from the 18th century up to the present time. The course also aims to introduce the student to literary analysis and, therefore, particular attention will be paid to the question of genre, terminology, literary movements and textual analysis. ", 
             "title": "Modern Spanish Literature (WLU)"
-        }
-    }, 
-    {
-        "pk": 1322, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "SPAN 220W", 
-            "description": "This course is designed to provide students with the opportunity to explore and develop their knowledge of Spanish culture. The course will offer a wide-ranging survey of cultural topics. It will take a broad view of the country by covering aspects of daily life, history, and social, economic and political changes. ", 
-            "title": "Topics in Spanish Culture(WLU)"
         }
     }, 
     {
@@ -48372,17 +48350,6 @@
         }
     }, 
     {
-        "pk": 4153, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "OPTOM 624B", 
-            "description": "Attendance within clincial areas agreed upon by the student, supervisor and Clinic Director and approved by the Clinic Director. The aim of the course is to broaden and develop advanced clinical skills and knowledge. Any two terms of clinical activity (or its equivalent) and the presentation of one seminar (case report) a term will fulfill this requirement. Recognition of participation in this course can only be given once in the progression through the PhD degree.", 
-            "title": "Clinical Optometry Part 2-PhD"
-        }
-    }, 
-    {
         "pk": 4154, 
         "model": "core.course", 
         "fields": {
@@ -49351,6 +49318,39 @@
         }
     }, 
     {
+        "pk": 1322, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SPAN 220W", 
+            "description": "This course is designed to provide students with the opportunity to explore and develop their knowledge of Spanish culture. The course will offer a wide-ranging survey of cultural topics. It will take a broad view of the country by covering aspects of daily life, history, and social, economic and political changes. ", 
+            "title": "Topics in Spanish Culture (WLU)"
+        }
+    }, 
+    {
+        "pk": 4153, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "OPTOM 624B", 
+            "description": "Attendance within clincial areas agreed upon by the student, supervisor and Clinic Director and approved by the Clinic Director. The aim of the course is to broaden and develop advanced clinical skills and knowledge. Any two terms of clinical activity (or its equivalent) and the presentation of one seminar (case report) a term will fulfill this requirement. Recognition of participation in this course can only be given once in the progression through the PhD degree.", 
+            "title": "Clinical Optometry Part 2 - PhD"
+        }
+    }, 
+    {
+        "pk": 1288, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SPAN 451W", 
+            "description": "This course will develop writing skills in Spanish by exploring various stylistic procedures of writing. It will focus on a number of features essential in effective writing to help students develop the organizational skills and linguistic abilities needed to communicate successfully. Special attention is given to the role of stylistics in creative writing, journal writing, magazine pieces, and advertising. ", 
+            "title": "Stylistics and Professional Writing (WLU)"
+        }
+    }, 
+    {
         "pk": 17, 
         "model": "core.section", 
         "fields": {
@@ -49640,6 +49640,54 @@
             "message": "Reportish.", 
             "sent_time": "2012-02-14 20:12:41", 
             "reporter": 2
+        }
+    }, 
+    {
+        "pk": 178, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:03:37", 
+            "object_repr": "Stylistics and Professional Writing (WLU) (SPAN 451W)", 
+            "object_id": "1288", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 177, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:01:01", 
+            "object_repr": "Clinical Optometry Part 2 - PhD (OPTOM 624B)", 
+            "object_id": "4153", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 176, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:00:50", 
+            "object_repr": "Topics in Spanish Culture (WLU) (SPAN 220W)", 
+            "object_id": "1322", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
         }
     }, 
     {
