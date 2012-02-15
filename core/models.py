@@ -187,18 +187,18 @@ class BadgeAssign(models.Model):
 
 class Course(models.Model):
     
-    name = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
     abbrev = models.CharField(max_length=10, verbose_name='abbreviation', null=True, blank=True)
     institute = models.ForeignKey(Institute)
     description = models.TextField(null=True, blank=True)
     difficulty = models.PositiveIntegerField(null=True, blank=True)
     
     def __unicode__(self):
-        return "%s (%s)" % (self.name, self.abbrev)
+        return "%s (%s)" % (self.title, self.abbrev)
     
     class Meta:
         db_table = 'mva_course'
-        unique_together = ("name", "institute")
+        unique_together = ("title", "institute")
     
 class Section(models.Model):
     

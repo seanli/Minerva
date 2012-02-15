@@ -1,0 +1,45 @@
+{
+	"response": {
+		"meta": {
+			"Requests": "7",
+			"Timestamp": "2012-02-14T01:15:09-05:00",
+			"Status": "200",
+			"Message": "OK",
+			"Version": "1.4b4"
+		},
+		"data": {
+			"Current": "1121",
+			"result": [
+				{
+					"ID": "1109",
+					"Name": "Fall",
+					"Year": "2010"
+				}, {
+					"ID": "1111",
+					"Name": "Winter",
+					"Year": "2011"
+				}, {
+					"ID": "1115",
+					"Name": "Spring",
+					"Year": "2011"
+				}, {
+					"ID": "1119",
+					"Name": "Fall",
+					"Year": "2011"
+				}, {
+					"ID": "1121",
+					"Name": "Winter",
+					"Year": "2012"
+				}, {
+					"ID": "1125",
+					"Name": "Spring",
+					"Year": "2012"
+				}, {
+					"ID": "1129",
+					"Name": "Fall",
+					"Year": "2012"
+				}
+			]
+		}
+	}
+}

@@ -9,16 +9,15 @@ from Minerva.course.forms import AddCourseForm
 def bulletin(request):
     profile = request.user.get_profile()
     sections = SectionAssign.objects.filter(profile=profile, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
-    
     source = ''
-    courses = Course.objects.filter(institute=profile.institute).order_by('name')
+    courses = Course.objects.filter(institute=profile.institute).order_by('title')
     last = len(courses) - 1
     index = 0
     for course in courses:
         if (index != last):
-            source += '"%s",' % (course.name)
+            source += '"%s",' % (course.title)
         else:
-            source += '"%s"' % (course.name)
+            source += '"%s"' % (course.title)
         index += 1
     source = '[' + source + ']'
     

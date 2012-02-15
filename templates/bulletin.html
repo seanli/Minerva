@@ -57,7 +57,7 @@
       <div class="vertical-space"></div>
       <h4>Currently Taking</h4>
       <div class="vertical-space"></div>
-      {% for s in sections %} <h5>{{ s.section.course.name }}</h5>
+      {% for s in sections %} <h5>{{ s.section.course.title }}</h5>
       <h6>{{ s.section.first_day }} to {{ s.section.last_day }}</h6>
       <h6>{{ s.section.instructor.user.first_name }} {{ s.section.instructor.user.last_name }}</h6>
       <div class="vertical-space"></div>

@@ -1,0 +1,76 @@
+{
+	"response": {
+		"meta": {
+			"Requests": "5",
+			"Timestamp": "2012-02-14T00:50:46-05:00",
+			"Status": "200",
+			"Message": "OK",
+			"Version": "1.4b4"
+		},
+		"data": {
+			"result": [
+				{
+					"Name": "Applied Health Sciences",
+					"FacultyURL": "http:\/\/ugradcalendar.uwaterloo.ca\/group\/uWaterloo-Faculty-of-Applied-Health-Sciences",
+					"Acronym": "AHS",
+					"Type": "UGRAD"
+				}, {
+					"Name": "Arts",
+					"FacultyURL": "http:\/\/ugradcalendar.uwaterloo.ca\/group\/uWaterloo-Faculty-of-Arts",
+					"Acronym": "ART",
+					"Type": "UGRAD"
+				}, {
+					"Name": "Engineering",
+					"FacultyURL": "http:\/\/ugradcalendar.uwaterloo.ca\/group\/uWaterloo-Faculty-of-Engineering",
+					"Acronym": "ENG",
+					"Type": "UGRAD"
+				}, {
+					"Name": "Environment",
+					"FacultyURL": "http:\/\/ugradcalendar.uwaterloo.ca\/group\/uWaterloo-Faculty-of-Environment",
+					"Acronym": "ENV",
+					"Type": "UGRAD"
+				}, {
+					"Name": "Mathematics",
+					"FacultyURL": "http:\/\/ugradcalendar.uwaterloo.ca\/group\/u-Waterloo-Faculty-of-Mathematics",
+					"Acronym": "MAT",
+					"Type": "UGRAD"
+				}, {
+					"Name": "Science",
+					"FacultyURL": "http:\/\/ugradcalendar.uwaterloo.ca\/group\/uWaterloo-Faculty-of-Science",
+					"Acronym": "SCI",
+					"Type": "UGRAD"
+				}, {
+					"Name": "Applied Health Sciences",
+					"FacultyURL": "http:\/\/gradcalendar.uwaterloo.ca\/group\/Faculty-of-Applied-Health-Sciences",
+					"Acronym": "AHS",
+					"Type": "GRAD"
+				}, {
+					"Name": "Arts",
+					"FacultyURL": "http:\/\/gradcalendar.uwaterloo.ca\/group\/Faculty-of-Arts",
+					"Acronym": "ART",
+					"Type": "GRAD"
+				}, {
+					"Name": "Engineering",
+					"FacultyURL": "http:\/\/gradcalendar.uwaterloo.ca\/group\/Faculty-of-Engineering",
+					"Acronym": "ENG",
+					"Type": "GRAD"
+				}, {
+					"Name": "Environment",
+					"FacultyURL": "http:\/\/gradcalendar.uwaterloo.ca\/group\/Faculty-of-Environmental-Science",
+					"Acronym": "ENV",
+					"Type": "GRAD"
+				}, {
+					"Name": "Mathematics",
+					"FacultyURL": "http:\/\/gradcalendar.uwaterloo.ca\/group\/Faculty-of-Mathematics",
+					"Acronym": "MAT",
+					"Type": "GRAD"
+				}, {
+					"Name": "Science",
+					"FacultyURL": "http:\/\/gradcalendar.uwaterloo.ca\/group\/Faculty-of-Science",
+					"Acronym": "SCI",
+					"Type": "GRAD"
+				}
+			]
+		}
+	}
+}

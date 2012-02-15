@@ -51,9 +51,9 @@ class ProfileAdmin(admin.ModelAdmin):
 
 class CourseAdmin(admin.ModelAdmin):
     inlines = [SectionInline, ReviewInline]
-    list_display = ('name', 'abbrev', 'institute',)
+    list_display = ('title', 'abbrev', 'institute',)
     list_filter = ('institute',)
-    search_fields = ['name', 'abbrev']
+    search_fields = ['title', 'abbrev']
 
 class SpecializationAdmin(admin.ModelAdmin):
     search_fields = ['name']
