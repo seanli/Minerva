@@ -54,21 +54,21 @@
         }
     }, 
     {
-        "pk": 2, 
+        "pk": 6, 
         "model": "auth.user", 
         "fields": {
-            "username": "sli", 
-            "first_name": "Shang", 
+            "username": "yli", 
+            "first_name": "Yao", 
             "last_name": "Li", 
             "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-02-15 12:40:47", 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-10 01:13:29", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
-            "email": "s67li@uwaterloo.ca", 
-            "date_joined": "2012-02-08 00:12:47"
+            "password": "sha1$e364d$cf14e938beaab821e6bdebb2198157cdc122cbe1", 
+            "email": "yao68li@gmail.com", 
+            "date_joined": "2012-02-10 01:13:18"
         }
     }, 
     {
@@ -79,8 +79,8 @@
             "first_name": "Michael", 
             "last_name": "Chiang", 
             "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
             "last_login": "2012-02-09 04:07:35", 
             "groups": [], 
             "user_permissions": [], 
@@ -90,21 +90,39 @@
         }
     }, 
     {
-        "pk": 6, 
+        "pk": 10, 
         "model": "auth.user", 
         "fields": {
-            "username": "yli", 
-            "first_name": "Yao", 
+            "username": "jthistle", 
+            "first_name": "John", 
+            "last_name": "Thistle", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": true, 
+            "last_login": "2012-02-15 13:12:55", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$b86c8$418a12b583f86d65b64161fef8b9a02b4f406b5b", 
+            "email": "jthistle@uwaterloo.ca", 
+            "date_joined": "2012-02-15 13:12:09"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sli", 
+            "first_name": "Shang", 
             "last_name": "Li", 
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-02-10 01:13:29", 
+            "last_login": "2012-02-15 13:13:18", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$e364d$cf14e938beaab821e6bdebb2198157cdc122cbe1", 
-            "email": "yao68li@gmail.com", 
-            "date_joined": "2012-02-10 01:13:18"
+            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08 00:12:47"
         }
     }, 
     {
@@ -113,10 +131,10 @@
         "fields": {
             "username": "sz", 
             "first_name": "Stefan", 
-            "last_name": "Z", 
+            "last_name": "Zinke-Allmang", 
             "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
             "last_login": "2012-02-10 13:21:05", 
             "groups": [], 
             "user_permissions": [], 
@@ -174,14 +192,6 @@
         }
     }, 
     {
-        "pk": "891e5c7737b1247c6258b18b80d03864", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-29 12:40:47", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
         "pk": "1626243a9d6c354d085304db91783a0b", 
         "model": "sessions.session", 
         "fields": {
@@ -195,6 +205,14 @@
         "fields": {
             "expire_date": "2012-02-24 22:23:18", 
             "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
+        }
+    }, 
+    {
+        "pk": "0ec76839658d1ca9fa92d021a930d353", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-29 13:13:18", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -679,6 +697,20 @@
             "birthday": null, 
             "role": "S", 
             "user": 9
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "birthday": null, 
+            "role": "I", 
+            "user": 10
         }
     }, 
     {
@@ -49351,295 +49383,499 @@
         }
     }, 
     {
-        "pk": 17, 
-        "model": "core.section", 
+        "pk": 209, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 1642, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-14"
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:15:21", 
+            "object_repr": "sz", 
+            "object_id": "7", 
+            "change_message": "Changed last_name.", 
+            "user": 2, 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
         }
     }, 
     {
-        "pk": 18, 
-        "model": "core.section", 
+        "pk": 208, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 1502, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-14"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:14:13", 
+            "object_repr": "Shang Li: THIS IS SP...", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "report"
+            ]
         }
     }, 
     {
-        "pk": 19, 
-        "model": "core.section", 
+        "pk": 207, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 1905, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-14"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:14:13", 
+            "object_repr": "Shang Li: Send Messa...", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "report"
+            ]
         }
     }, 
     {
-        "pk": 20, 
-        "model": "core.section", 
+        "pk": 206, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 1512, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-15"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:14:13", 
+            "object_repr": "Shang Li: LOL...", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "report"
+            ]
         }
     }, 
     {
-        "pk": 21, 
-        "model": "core.section", 
+        "pk": 205, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 2848, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-14"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:14:13", 
+            "object_repr": "Shang Li: MMM...", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "report"
+            ]
         }
     }, 
     {
-        "pk": 22, 
-        "model": "core.section", 
+        "pk": 204, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 1542, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-14"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:14:13", 
+            "object_repr": "Shang Li: Reportish....", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "report"
+            ]
         }
     }, 
     {
-        "pk": 23, 
-        "model": "core.section", 
+        "pk": 203, 
+        "model": "admin.logentry", 
         "fields": {
-            "course": 3849, 
-            "instructor": 5, 
-            "first_day": "2012-02-14", 
-            "last_day": "2012-02-15"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Stefan Z: One of the...", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 17, 
-        "model": "core.sectionassign", 
+        "pk": 202, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 17
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Shang Li: The develo...", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 18, 
-        "model": "core.sectionassign", 
+        "pk": 201, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 18
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Stefan Z: Code Monst...", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 19, 
-        "model": "core.sectionassign", 
+        "pk": 200, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 19
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Yao Li: I give goo...", 
+            "object_id": "19", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 20, 
-        "model": "core.sectionassign", 
+        "pk": 199, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 20
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Stefan Z: Very smart...", 
+            "object_id": "20", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 21, 
-        "model": "core.sectionassign", 
+        "pk": 198, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 21
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Stefan Z: sup kid!...", 
+            "object_id": "21", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 22, 
-        "model": "core.sectionassign", 
+        "pk": 197, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 22
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Sam Ling: Sam is the...", 
+            "object_id": "22", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 23, 
-        "model": "core.sectionassign", 
+        "pk": 196, 
+        "model": "admin.logentry", 
         "fields": {
-            "profile": 2, 
-            "section": 23
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Sam Ling: Hello Sam!...", 
+            "object_id": "23", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 3, 
-        "model": "core.encouragement", 
+        "pk": 195, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 7, 
-            "message": "One of the smartest person in class!", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 03:01:11"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Stephen Chen: What a bea...", 
+            "object_id": "24", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 5, 
-        "model": "core.encouragement", 
+        "pk": 194, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 2, 
-            "message": "The developer can give himself encouragements!", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 03:07:27"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Stephen Chen: LOL...", 
+            "object_id": "25", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 6, 
-        "model": "core.encouragement", 
+        "pk": 193, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 7, 
-            "message": "Code Monster.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 04:49:16"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:45", 
+            "object_repr": "To Sam Ling: 1234567890...", 
+            "object_id": "26", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "encouragement"
+            ]
         }
     }, 
     {
-        "pk": 19, 
-        "model": "core.encouragement", 
+        "pk": 192, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 6, 
-            "message": "I give good encouragements.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 05:30:28"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Database Management Systems (MSCI 646) [2012-02-14, John Thistle]", 
+            "object_id": "26", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 20, 
-        "model": "core.encouragement", 
+        "pk": 191, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 7, 
-            "message": "Very smart.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 21:21:25"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Europe: 410-1303 (HIST 260) [2012-02-14, Michael Eden]", 
+            "object_id": "25", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 21, 
-        "model": "core.encouragement", 
+        "pk": 190, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 7, 
-            "message": "sup kid!", 
-            "person_from": 8, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 21:34:03"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Introduction to Artificial Intelligence (CS 486) [2012-02-14, Michael Eden]", 
+            "object_id": "24", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 22, 
-        "model": "core.encouragement", 
+        "pk": 189, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 8, 
-            "message": "Sam is the beast.", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 21:35:57"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Machine Learning: Statistical and Computational Foundations (CS 685) [2012-02-14, Michael Eden]", 
+            "object_id": "23", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 23, 
-        "model": "core.encouragement", 
+        "pk": 188, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 8, 
-            "message": "Hello Sam!", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 23:41:18"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Sacred Places (RS 222) [2012-02-14, Michael Eden]", 
+            "object_id": "22", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 24, 
-        "model": "core.encouragement", 
+        "pk": 187, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 9, 
-            "message": "What a beast.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-14 14:01:34"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Health and Risk Communication in Public Health (PHS 608) [2012-02-14, Michael Eden]", 
+            "object_id": "21", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 25, 
-        "model": "core.encouragement", 
+        "pk": 186, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 9, 
-            "message": "LOL", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-15 02:56:01"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Zen and Now: History and Influence of Zen (RS 304) [2012-02-14, Michael Eden]", 
+            "object_id": "20", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 26, 
-        "model": "core.encouragement", 
+        "pk": 185, 
+        "model": "admin.logentry", 
         "fields": {
-            "person_to": 8, 
-            "message": "1234567890", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-15 03:01:14"
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Japanese for Business 1 (JAPAN 111R) [2012-02-14, Michael Eden]", 
+            "object_id": "19", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 1, 
-        "model": "core.report", 
+        "pk": 184, 
+        "model": "admin.logentry", 
         "fields": {
-            "message": "THIS IS SPARTA!", 
-            "sent_time": "2012-02-11 01:02:27", 
-            "reporter": 2
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Buddhism in North America (RS 327) [2012-02-14, Michael Eden]", 
+            "object_id": "18", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 2, 
-        "model": "core.report", 
+        "pk": 183, 
+        "model": "admin.logentry", 
         "fields": {
-            "message": "Send Message.", 
-            "sent_time": "2012-02-11 01:02:26", 
-            "reporter": 2
+            "action_flag": 3, 
+            "action_time": "2012-02-15 13:13:34", 
+            "object_repr": "Special Honours Essay (PSCI 499B) [2012-02-14, Michael Eden]", 
+            "object_id": "17", 
+            "change_message": "", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "section"
+            ]
         }
     }, 
     {
-        "pk": 3, 
-        "model": "core.report", 
+        "pk": 182, 
+        "model": "admin.logentry", 
         "fields": {
-            "message": "LOL", 
-            "sent_time": "2012-02-11 01:33:28", 
-            "reporter": 2
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:12:28", 
+            "object_repr": "jthistle", 
+            "object_id": "10", 
+            "change_message": "Changed is_staff.", 
+            "user": 2, 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
         }
     }, 
     {
-        "pk": 4, 
-        "model": "core.report", 
+        "pk": 181, 
+        "model": "admin.logentry", 
         "fields": {
-            "message": "MMM", 
-            "sent_time": "2012-02-11 01:33:28", 
-            "reporter": 2
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:10:11", 
+            "object_repr": "mc", 
+            "object_id": "3", 
+            "change_message": "Changed is_staff and is_superuser.", 
+            "user": 2, 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
         }
     }, 
     {
-        "pk": 5, 
-        "model": "core.report", 
+        "pk": 180, 
+        "model": "admin.logentry", 
         "fields": {
-            "message": "Reportish.", 
-            "sent_time": "2012-02-14 20:12:41", 
-            "reporter": 2
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:10:02", 
+            "object_repr": "sz", 
+            "object_id": "7", 
+            "change_message": "Changed is_staff and is_superuser.", 
+            "user": 2, 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
+        }
+    }, 
+    {
+        "pk": 179, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 13:09:51", 
+            "object_repr": "yli", 
+            "object_id": "6", 
+            "change_message": "Changed is_staff and is_superuser.", 
+            "user": 2, 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
         }
     }, 
     {
