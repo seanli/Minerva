@@ -63,7 +63,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-02-14 16:09:40", 
+            "last_login": "2012-02-15 12:40:47", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
@@ -126,6 +126,14 @@
         }
     }, 
     {
+        "pk": "9d9d71a99f2a76a7df82450e860e0d4b", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-29 03:08:01", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
         "pk": "3300c82c959ceac17733d636cf96de26", 
         "model": "sessions.session", 
         "fields": {
@@ -163,6 +171,14 @@
         "fields": {
             "expire_date": "2012-02-22 00:09:17", 
             "session_data": "ZjVkMDhjZDE5MzY2NTlmY2UyZWY5OTQwMGQ2YjFhZjdhYWQxODUwMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": "891e5c7737b1247c6258b18b80d03864", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-29 12:40:47", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -235,14 +251,6 @@
         "fields": {
             "expire_date": "2012-02-24 01:13:29", 
             "session_data": "Nzc2ZWU1ZjhkNjYzNTdhODk0MzBkNjRiNzhmMDJkZjE2ZTcxOTQ5NjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLBnUu\n"
-        }
-    }, 
-    {
-        "pk": "6658567e59fe2db2d2b2830b29fe75bc", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-28 16:09:40", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -821,13 +829,6 @@
         }
     }, 
     {
-        "pk": 24, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Arts/General Arts"
-        }
-    }, 
-    {
         "pk": 25, 
         "model": "core.specialization", 
         "fields": {
@@ -1203,13 +1204,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Cultural Studies"
-        }
-    }, 
-    {
-        "pk": 79, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Curatorial Studies/Museum Studies"
         }
     }, 
     {
@@ -1598,13 +1592,6 @@
         }
     }, 
     {
-        "pk": 135, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Environmental Science/Environmental Studies"
-        }
-    }, 
-    {
         "pk": 136, 
         "model": "core.specialization", 
         "fields": {
@@ -1686,6 +1673,27 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Forensics"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "(General) Arts"
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Environmental Science/Studies"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Curatorial/Museum Studies"
         }
     }, 
     {
@@ -1826,13 +1834,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Health Informatics"
-        }
-    }, 
-    {
-        "pk": 168, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Health Sciences / Studies"
         }
     }, 
     {
@@ -2043,13 +2044,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Journalism"
-        }
-    }, 
-    {
-        "pk": 199, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Kinesiology/Human Kinetics"
         }
     }, 
     {
@@ -2319,20 +2313,6 @@
         }
     }, 
     {
-        "pk": 238, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Nanoscience/Nanotechnology"
-        }
-    }, 
-    {
-        "pk": 239, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Native Language/Anishinaabemowin"
-        }
-    }, 
-    {
         "pk": 240, 
         "model": "core.specialization", 
         "fields": {
@@ -2372,13 +2352,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "North American Studies"
-        }
-    }, 
-    {
-        "pk": 246, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Northern Studies/Polar Studies"
         }
     }, 
     {
@@ -2585,13 +2558,6 @@
         }
     }, 
     {
-        "pk": 276, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Policy Studies / Policy Analysis"
-        }
-    }, 
-    {
         "pk": 277, 
         "model": "core.specialization", 
         "fields": {
@@ -2760,6 +2726,41 @@
         }
     }, 
     {
+        "pk": 246, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Northern/Polar Studies"
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Health Sciences/Studies"
+        }
+    }, 
+    {
+        "pk": 239, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Native Language / Anishinaabemowin"
+        }
+    }, 
+    {
+        "pk": 199, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Kinesiology / Human Kinetics"
+        }
+    }, 
+    {
+        "pk": 238, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Nanoscience / Nanotechnology"
+        }
+    }, 
+    {
         "pk": 301, 
         "model": "core.specialization", 
         "fields": {
@@ -2778,13 +2779,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Science & Technology Studies"
-        }
-    }, 
-    {
-        "pk": 304, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Science/General Science"
         }
     }, 
     {
@@ -2914,13 +2908,6 @@
         }
     }, 
     {
-        "pk": 323, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Sports Administration/Sports Management"
-        }
-    }, 
-    {
         "pk": 324, 
         "model": "core.specialization", 
         "fields": {
@@ -3044,6 +3031,27 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Zoology"
+        }
+    }, 
+    {
+        "pk": 276, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Policy Studies/Analysis"
+        }
+    }, 
+    {
+        "pk": 304, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "(General) Science"
+        }
+    }, 
+    {
+        "pk": 323, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Sports Administration/Management"
         }
     }, 
     {
@@ -10466,17 +10474,6 @@
             "abbrev": "GEOG 391", 
             "description": "Field research course in which a specific area will be analyzed from a geographic point of view. Individual or group analysis of specific field problems. ", 
             "title": "Field Research"
-        }
-    }, 
-    {
-        "pk": 695, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "GEOG 372", 
-            "description": "Study abroad for academic transfer credit under an Environmental Studies Exchange Program during a fall term.", 
-            "title": "Waterloo in Switzerland -- Lausanne"
         }
     }, 
     {
@@ -32788,17 +32785,6 @@
         }
     }, 
     {
-        "pk": 2716, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "KIN 492B", 
-            "description": "Practical experience with cardiac patients in a rehabilitation setting; major emphasis is placed on the cardio-respiratory implications of exercise and behaviour modification.", 
-            "title": "Clinical Kinesiology -- Cardiac Rehabilitation Practicum"
-        }
-    }, 
-    {
         "pk": 2717, 
         "model": "core.course", 
         "fields": {
@@ -32807,17 +32793,6 @@
             "abbrev": "KIN 493", 
             "description": "Practical experience in movement assessment of persons from various special populations such as the normal elderly and those with neurological, degenerative or developmental disorders. Motor functions involving gait, posture and balance or upper limb movements will typically be examined in these assessments.", 
             "title": "Clinical Kinesiology: Movement Assessment Practicum"
-        }
-    }, 
-    {
-        "pk": 2718, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "KIN 491", 
-            "description": "Practical experience in the examination, diagnosis, and treatment of sports injuries under the supervision of a physician. Case presentations are discussed in a group setting.", 
-            "title": "Clinical Kinesiology -- Sports Injuries Assessment"
         }
     }, 
     {
@@ -32917,6 +32892,17 @@
             "abbrev": "KIN 433", 
             "description": "An extensive critical review of the literature on an approved topic. The topics will be broader in scope than those associated with specific research proposals.", 
             "title": "Senior Essay"
+        }
+    }, 
+    {
+        "pk": 2716, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "KIN 492B", 
+            "description": "Practical experience with cardiac patients in a rehabilitation setting; major emphasis is placed on the cardio-respiratory implications of exercise and behaviour modification.", 
+            "title": "Clinical Kinesiology - Cardiac Rehabilitation Practicum"
         }
     }, 
     {
@@ -35139,17 +35125,6 @@
             "abbrev": "CLAS 632", 
             "description": "This course will explore the theme of cultural interaction in Greco-Roman literature, from the archaic period through the era of Roman dominance in the Mediterranean.  Attention will be given throughout to how literature reflects the changing realities of cultural interaction in the Greek and Roman worlds.", 
             "title": "Greco-Roman Literature and Cultural Interaction"
-        }
-    }, 
-    {
-        "pk": 2929, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "CLAS 633", 
-            "description": "This course will examine the representation of identity in ancient drama, and in ancient society.  Greek and Roman plays, both tragic and comic, changed substantially in form and subject matter as they made their way from Athens in the fifth century BCE, across the immense Hellenistic kingdoms, and into the republic of Rome in the third century BCE.  Broadly speaking, fifth century Greek tragedies and comedies strongly focused upon Athenian political events, and explicitly engaged the historical figures, and socio-political issues of their day.  In contrast, comedies written in the Hellenistic period have been interpreted as a depiction of the domestic trials of a Greek household, a situation that makes no reference to contemporary events or characters.  In short, the comedies of the Hellenistic period are bereft of political commentary.  In the second half of the course, we will consider the response of Greek drama to Macedonian domination.  In traditional historical narratives of the early Hellenistic period, Macedonian hegemony and the rise of large autocratic empires are linked to the decline of Athenian democracy and the rise of 'individualism'.  Do the late plays of Aristophanes, and the dramas of Menander and Plautus, all devoid of socio-political content, suggest a civic body that is disengaged politically? How did the Hellenistic and Roman audience receive and read the dramatic characters?  To whom, and how, were these plays speaking?  Did the plays implicitly engage civic issues, or were they merely understood as light relief from the world of resettlements, economic risks, and ever-present war?  How do the Hellenistic dramas of Menander and Plautus shape identity, if at all?", 
-            "title": "Ancient Drama / Ancient Identites"
         }
     }, 
     {
@@ -45251,17 +45226,6 @@
         }
     }, 
     {
-        "pk": 3857, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "CS 758", 
-            "description": "Cryptographic protocols and their application to secure communication, especially in a network setting. Identification and entity authentication; protocols for key establishment, transport, agreement and maintenance; secret sharing, broadcast encryption, tracing schemes; certificates, public-key infrastructure, PGP.", 
-            "title": "Cryptography/Network Security"
-        }
-    }, 
-    {
         "pk": 3858, 
         "model": "core.course", 
         "fields": {
@@ -49090,17 +49054,6 @@
         }
     }, 
     {
-        "pk": 4217, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "PHYS 475", 
-            "description": "Galaxies, quasars, dark matter, observational cosmology, big-bang nucleosynthesis, cosmic microwave background. [Offered: F]", 
-            "title": "Astrophysics 3 -- Galaxies and Cosmology"
-        }
-    }, 
-    {
         "pk": 4218, 
         "model": "core.course", 
         "fields": {
@@ -49343,6 +49296,187 @@
         }
     }, 
     {
+        "pk": 4217, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "PHYS 475", 
+            "description": "Galaxies, quasars, dark matter, observational cosmology, big-bang nucleosynthesis, cosmic microwave background. [Offered: F]", 
+            "title": "Astrophysics 3 - Galaxies and Cosmology"
+        }
+    }, 
+    {
+        "pk": 2718, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "KIN 491", 
+            "description": "Practical experience in the examination, diagnosis, and treatment of sports injuries under the supervision of a physician. Case presentations are discussed in a group setting.", 
+            "title": "Clinical Kinesiology - Sports Injuries Assessment"
+        }
+    }, 
+    {
+        "pk": 695, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "GEOG 372", 
+            "description": "Study abroad for academic transfer credit under an Environmental Studies Exchange Program during a fall term.", 
+            "title": "Waterloo in Switzerland - Lausanne"
+        }
+    }, 
+    {
+        "pk": 3857, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CS 758", 
+            "description": "Cryptographic protocols and their application to secure communication, especially in a network setting. Identification and entity authentication; protocols for key establishment, transport, agreement and maintenance; secret sharing, broadcast encryption, tracing schemes; certificates, public-key infrastructure, PGP.", 
+            "title": "Cryptography/Network Security"
+        }
+    }, 
+    {
+        "pk": 2929, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CLAS 633", 
+            "description": "This course will examine the representation of identity in ancient drama, and in ancient society.  Greek and Roman plays, both tragic and comic, changed substantially in form and subject matter as they made their way from Athens in the fifth century BCE, across the immense Hellenistic kingdoms, and into the republic of Rome in the third century BCE.  Broadly speaking, fifth century Greek tragedies and comedies strongly focused upon Athenian political events, and explicitly engaged the historical figures, and socio-political issues of their day.  In contrast, comedies written in the Hellenistic period have been interpreted as a depiction of the domestic trials of a Greek household, a situation that makes no reference to contemporary events or characters.  In short, the comedies of the Hellenistic period are bereft of political commentary.  In the second half of the course, we will consider the response of Greek drama to Macedonian domination.  In traditional historical narratives of the early Hellenistic period, Macedonian hegemony and the rise of large autocratic empires are linked to the decline of Athenian democracy and the rise of 'individualism'.  Do the late plays of Aristophanes, and the dramas of Menander and Plautus, all devoid of socio-political content, suggest a civic body that is disengaged politically? How did the Hellenistic and Roman audience receive and read the dramatic characters?  To whom, and how, were these plays speaking?  Did the plays implicitly engage civic issues, or were they merely understood as light relief from the world of resettlements, economic risks, and ever-present war?  How do the Hellenistic dramas of Menander and Plautus shape identity, if at all?", 
+            "title": "Ancient Drama/Identites"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "core.section", 
+        "fields": {
+            "course": 1642, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-14"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "core.section", 
+        "fields": {
+            "course": 1502, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-14"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "core.section", 
+        "fields": {
+            "course": 1905, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-14"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "core.section", 
+        "fields": {
+            "course": 1512, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-15"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "core.section", 
+        "fields": {
+            "course": 2848, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-14"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "core.section", 
+        "fields": {
+            "course": 1542, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-14"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "core.section", 
+        "fields": {
+            "course": 3849, 
+            "instructor": 5, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-15"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 17
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 18
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 19
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 20
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 21
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 22
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 23
+        }
+    }, 
+    {
         "pk": 3, 
         "model": "core.encouragement", 
         "fields": {
@@ -49442,6 +49576,28 @@
         }
     }, 
     {
+        "pk": 25, 
+        "model": "core.encouragement", 
+        "fields": {
+            "person_to": 9, 
+            "message": "LOL", 
+            "person_from": 2, 
+            "anonymous": false, 
+            "sent_time": "2012-02-15 02:56:01"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "core.encouragement", 
+        "fields": {
+            "person_to": 8, 
+            "message": "1234567890", 
+            "person_from": 2, 
+            "anonymous": true, 
+            "sent_time": "2012-02-15 03:01:14"
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "core.report", 
         "fields": {
@@ -49475,6 +49631,303 @@
             "message": "MMM", 
             "sent_time": "2012-02-11 01:33:28", 
             "reporter": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "core.report", 
+        "fields": {
+            "message": "Reportish.", 
+            "sent_time": "2012-02-14 20:12:41", 
+            "reporter": 2
+        }
+    }, 
+    {
+        "pk": 175, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:51:15", 
+            "object_repr": "Curatorial/Museum Studies", 
+            "object_id": "79", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 174, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:50:56", 
+            "object_repr": "Environmental Science/Studies", 
+            "object_id": "135", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 173, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:50:17", 
+            "object_repr": "Nanoscience / Nanotechnology", 
+            "object_id": "238", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 172, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:50:06", 
+            "object_repr": "Kinesiology / Human Kinetics", 
+            "object_id": "199", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 171, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:49:46", 
+            "object_repr": "Native Language / Anishinaabemowin", 
+            "object_id": "239", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 170, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:49:36", 
+            "object_repr": "Health Sciences/Studies", 
+            "object_id": "168", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 169, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:49:21", 
+            "object_repr": "(General) Arts", 
+            "object_id": "24", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:49:08", 
+            "object_repr": "Sports Administration/Management", 
+            "object_id": "323", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:48:41", 
+            "object_repr": "Northern/Polar Studies", 
+            "object_id": "246", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:48:21", 
+            "object_repr": "(General) Science", 
+            "object_id": "304", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:47:45", 
+            "object_repr": "Policy Studies/Analysis", 
+            "object_id": "276", 
+            "change_message": "Changed name.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "specialization"
+            ]
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:46:49", 
+            "object_repr": "Ancient Drama/Identites (CLAS 633)", 
+            "object_id": "2929", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:46:07", 
+            "object_repr": "Cryptography/Network Security (CS 758)", 
+            "object_id": "3857", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:45:46", 
+            "object_repr": "Cryptography / Network Security (CS 758)", 
+            "object_id": "3857", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:45:12", 
+            "object_repr": "Waterloo in Switzerland - Lausanne (GEOG 372)", 
+            "object_id": "695", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:45:01", 
+            "object_repr": "Clinical Kinesiology - Cardiac Rehabilitation Practicum (KIN 492B)", 
+            "object_id": "2716", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:44:51", 
+            "object_repr": "Clinical Kinesiology - Sports Injuries Assessment (KIN 491)", 
+            "object_id": "2718", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-15 12:44:39", 
+            "object_repr": "Astrophysics 3 - Galaxies and Cosmology (PHYS 475)", 
+            "object_id": "4217", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
         }
     }, 
     {
