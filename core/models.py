@@ -198,7 +198,7 @@ class Course(models.Model):
     
     class Meta:
         db_table = 'mva_course'
-        unique_together = ("title", "institute")
+        unique_together = ("title", "abbrev", "institute")
     
 class Section(models.Model):
     
