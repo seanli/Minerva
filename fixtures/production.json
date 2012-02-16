@@ -54,21 +54,21 @@
         }
     }, 
     {
-        "pk": 2, 
+        "pk": 6, 
         "model": "auth.user", 
         "fields": {
-            "username": "sli", 
-            "first_name": "Shang", 
+            "username": "yli", 
+            "first_name": "Yao", 
             "last_name": "Li", 
             "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-02-14 16:09:40", 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-10 01:13:29", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
-            "email": "s67li@uwaterloo.ca", 
-            "date_joined": "2012-02-08 00:12:47"
+            "password": "sha1$e364d$cf14e938beaab821e6bdebb2198157cdc122cbe1", 
+            "email": "yao68li@gmail.com", 
+            "date_joined": "2012-02-10 01:13:18"
         }
     }, 
     {
@@ -79,8 +79,8 @@
             "first_name": "Michael", 
             "last_name": "Chiang", 
             "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
             "last_login": "2012-02-09 04:07:35", 
             "groups": [], 
             "user_permissions": [], 
@@ -90,39 +90,65 @@
         }
     }, 
     {
-        "pk": 6, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "yli", 
-            "first_name": "Yao", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-02-10 01:13:29", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$e364d$cf14e938beaab821e6bdebb2198157cdc122cbe1", 
-            "email": "yao68li@gmail.com", 
-            "date_joined": "2012-02-10 01:13:18"
-        }
-    }, 
-    {
         "pk": 7, 
         "model": "auth.user", 
         "fields": {
             "username": "sz", 
             "first_name": "Stefan", 
-            "last_name": "Z", 
+            "last_name": "Zinke-Allmang", 
             "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
+            "is_superuser": false, 
+            "is_staff": false, 
             "last_login": "2012-02-10 13:21:05", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$788f2$7e01dcf313bf9387aee12bfb1e6c0cf5cf34641e", 
             "email": "yoda_sz@hotmail.com", 
             "date_joined": "2012-02-10 13:20:52"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "jthistle", 
+            "first_name": "John", 
+            "last_name": "Thistle", 
+            "is_active": true, 
+            "is_superuser": false, 
+            "is_staff": true, 
+            "last_login": "2012-02-15 13:19:49", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$b86c8$418a12b583f86d65b64161fef8b9a02b4f406b5b", 
+            "email": "jthistle@uwaterloo.ca", 
+            "date_joined": "2012-02-15 13:12:09"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sli", 
+            "first_name": "Shang", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-15 13:38:56", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08 00:12:47"
+        }
+    }, 
+    {
+        "pk": "9d9d71a99f2a76a7df82450e860e0d4b", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-29 03:08:01", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -214,6 +240,14 @@
         }
     }, 
     {
+        "pk": "2f535a2c85ff6163cb407753213e0c85", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-29 13:38:56", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
         "pk": "3f35b75252c0f178bffd3837441a7818", 
         "model": "sessions.session", 
         "fields": {
@@ -235,14 +269,6 @@
         "fields": {
             "expire_date": "2012-02-24 01:13:29", 
             "session_data": "Nzc2ZWU1ZjhkNjYzNTdhODk0MzBkNjRiNzhmMDJkZjE2ZTcxOTQ5NjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLBnUu\n"
-        }
-    }, 
-    {
-        "pk": "6658567e59fe2db2d2b2830b29fe75bc", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-28 16:09:40", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -674,6 +700,20 @@
         }
     }, 
     {
+        "pk": 10, 
+        "model": "core.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "birthday": null, 
+            "role": "I", 
+            "user": 10
+        }
+    }, 
+    {
         "pk": 3, 
         "model": "core.specialization", 
         "fields": {
@@ -818,13 +858,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Arts Administration (Music, Theatre)"
-        }
-    }, 
-    {
-        "pk": 24, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Arts/General Arts"
         }
     }, 
     {
@@ -1203,13 +1236,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Cultural Studies"
-        }
-    }, 
-    {
-        "pk": 79, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Curatorial Studies/Museum Studies"
         }
     }, 
     {
@@ -1598,13 +1624,6 @@
         }
     }, 
     {
-        "pk": 135, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Environmental Science/Environmental Studies"
-        }
-    }, 
-    {
         "pk": 136, 
         "model": "core.specialization", 
         "fields": {
@@ -1686,6 +1705,27 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Forensics"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "(General) Arts"
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Environmental Science/Studies"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Curatorial/Museum Studies"
         }
     }, 
     {
@@ -1826,13 +1866,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Health Informatics"
-        }
-    }, 
-    {
-        "pk": 168, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Health Sciences / Studies"
         }
     }, 
     {
@@ -2043,13 +2076,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Journalism"
-        }
-    }, 
-    {
-        "pk": 199, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Kinesiology/Human Kinetics"
         }
     }, 
     {
@@ -2319,20 +2345,6 @@
         }
     }, 
     {
-        "pk": 238, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Nanoscience/Nanotechnology"
-        }
-    }, 
-    {
-        "pk": 239, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Native Language/Anishinaabemowin"
-        }
-    }, 
-    {
         "pk": 240, 
         "model": "core.specialization", 
         "fields": {
@@ -2372,13 +2384,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "North American Studies"
-        }
-    }, 
-    {
-        "pk": 246, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Northern Studies/Polar Studies"
         }
     }, 
     {
@@ -2585,13 +2590,6 @@
         }
     }, 
     {
-        "pk": 276, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Policy Studies / Policy Analysis"
-        }
-    }, 
-    {
         "pk": 277, 
         "model": "core.specialization", 
         "fields": {
@@ -2760,6 +2758,41 @@
         }
     }, 
     {
+        "pk": 246, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Northern/Polar Studies"
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Health Sciences/Studies"
+        }
+    }, 
+    {
+        "pk": 239, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Native Language / Anishinaabemowin"
+        }
+    }, 
+    {
+        "pk": 199, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Kinesiology / Human Kinetics"
+        }
+    }, 
+    {
+        "pk": 238, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Nanoscience / Nanotechnology"
+        }
+    }, 
+    {
         "pk": 301, 
         "model": "core.specialization", 
         "fields": {
@@ -2778,13 +2811,6 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Science & Technology Studies"
-        }
-    }, 
-    {
-        "pk": 304, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Science/General Science"
         }
     }, 
     {
@@ -2914,13 +2940,6 @@
         }
     }, 
     {
-        "pk": 323, 
-        "model": "core.specialization", 
-        "fields": {
-            "name": "Sports Administration/Sports Management"
-        }
-    }, 
-    {
         "pk": 324, 
         "model": "core.specialization", 
         "fields": {
@@ -3044,6 +3063,27 @@
         "model": "core.specialization", 
         "fields": {
             "name": "Zoology"
+        }
+    }, 
+    {
+        "pk": 276, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Policy Studies/Analysis"
+        }
+    }, 
+    {
+        "pk": 304, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "(General) Science"
+        }
+    }, 
+    {
+        "pk": 323, 
+        "model": "core.specialization", 
+        "fields": {
+            "name": "Sports Administration/Management"
         }
     }, 
     {
@@ -10469,17 +10509,6 @@
         }
     }, 
     {
-        "pk": 695, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "GEOG 372", 
-            "description": "Study abroad for academic transfer credit under an Environmental Studies Exchange Program during a fall term.", 
-            "title": "Waterloo in Switzerland -- Lausanne"
-        }
-    }, 
-    {
         "pk": 696, 
         "model": "core.course", 
         "fields": {
@@ -17234,17 +17263,6 @@
         }
     }, 
     {
-        "pk": 1288, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "SPAN 451W", 
-            "description": "This course will develop writing skills in Spanish by exploring various stylistic procedures of writing. It will focus on a number of features essential in effective writing to help students develop the organizational skills and linguistic abilities needed to communicate successfully. Special attention is given to the role of stylistics in creative writing, journal writing, magazine pieces, and advertising. ", 
-            "title": "Stylistics and Professional Writing(WLU)"
-        }
-    }, 
-    {
         "pk": 1289, 
         "model": "core.course", 
         "fields": {
@@ -17605,17 +17623,6 @@
             "abbrev": "SPAN 222W", 
             "description": "This course will study some of the most salient literary texts produced from the 18th century up to the present time. The course also aims to introduce the student to literary analysis and, therefore, particular attention will be paid to the question of genre, terminology, literary movements and textual analysis. ", 
             "title": "Modern Spanish Literature (WLU)"
-        }
-    }, 
-    {
-        "pk": 1322, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "SPAN 220W", 
-            "description": "This course is designed to provide students with the opportunity to explore and develop their knowledge of Spanish culture. The course will offer a wide-ranging survey of cultural topics. It will take a broad view of the country by covering aspects of daily life, history, and social, economic and political changes. ", 
-            "title": "Topics in Spanish Culture(WLU)"
         }
     }, 
     {
@@ -32788,17 +32795,6 @@
         }
     }, 
     {
-        "pk": 2716, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "KIN 492B", 
-            "description": "Practical experience with cardiac patients in a rehabilitation setting; major emphasis is placed on the cardio-respiratory implications of exercise and behaviour modification.", 
-            "title": "Clinical Kinesiology -- Cardiac Rehabilitation Practicum"
-        }
-    }, 
-    {
         "pk": 2717, 
         "model": "core.course", 
         "fields": {
@@ -32807,17 +32803,6 @@
             "abbrev": "KIN 493", 
             "description": "Practical experience in movement assessment of persons from various special populations such as the normal elderly and those with neurological, degenerative or developmental disorders. Motor functions involving gait, posture and balance or upper limb movements will typically be examined in these assessments.", 
             "title": "Clinical Kinesiology: Movement Assessment Practicum"
-        }
-    }, 
-    {
-        "pk": 2718, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "KIN 491", 
-            "description": "Practical experience in the examination, diagnosis, and treatment of sports injuries under the supervision of a physician. Case presentations are discussed in a group setting.", 
-            "title": "Clinical Kinesiology -- Sports Injuries Assessment"
         }
     }, 
     {
@@ -32917,6 +32902,17 @@
             "abbrev": "KIN 433", 
             "description": "An extensive critical review of the literature on an approved topic. The topics will be broader in scope than those associated with specific research proposals.", 
             "title": "Senior Essay"
+        }
+    }, 
+    {
+        "pk": 2716, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "KIN 492B", 
+            "description": "Practical experience with cardiac patients in a rehabilitation setting; major emphasis is placed on the cardio-respiratory implications of exercise and behaviour modification.", 
+            "title": "Clinical Kinesiology - Cardiac Rehabilitation Practicum"
         }
     }, 
     {
@@ -35139,17 +35135,6 @@
             "abbrev": "CLAS 632", 
             "description": "This course will explore the theme of cultural interaction in Greco-Roman literature, from the archaic period through the era of Roman dominance in the Mediterranean.  Attention will be given throughout to how literature reflects the changing realities of cultural interaction in the Greek and Roman worlds.", 
             "title": "Greco-Roman Literature and Cultural Interaction"
-        }
-    }, 
-    {
-        "pk": 2929, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "CLAS 633", 
-            "description": "This course will examine the representation of identity in ancient drama, and in ancient society.  Greek and Roman plays, both tragic and comic, changed substantially in form and subject matter as they made their way from Athens in the fifth century BCE, across the immense Hellenistic kingdoms, and into the republic of Rome in the third century BCE.  Broadly speaking, fifth century Greek tragedies and comedies strongly focused upon Athenian political events, and explicitly engaged the historical figures, and socio-political issues of their day.  In contrast, comedies written in the Hellenistic period have been interpreted as a depiction of the domestic trials of a Greek household, a situation that makes no reference to contemporary events or characters.  In short, the comedies of the Hellenistic period are bereft of political commentary.  In the second half of the course, we will consider the response of Greek drama to Macedonian domination.  In traditional historical narratives of the early Hellenistic period, Macedonian hegemony and the rise of large autocratic empires are linked to the decline of Athenian democracy and the rise of 'individualism'.  Do the late plays of Aristophanes, and the dramas of Menander and Plautus, all devoid of socio-political content, suggest a civic body that is disengaged politically? How did the Hellenistic and Roman audience receive and read the dramatic characters?  To whom, and how, were these plays speaking?  Did the plays implicitly engage civic issues, or were they merely understood as light relief from the world of resettlements, economic risks, and ever-present war?  How do the Hellenistic dramas of Menander and Plautus shape identity, if at all?", 
-            "title": "Ancient Drama / Ancient Identites"
         }
     }, 
     {
@@ -45251,17 +45236,6 @@
         }
     }, 
     {
-        "pk": 3857, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "CS 758", 
-            "description": "Cryptographic protocols and their application to secure communication, especially in a network setting. Identification and entity authentication; protocols for key establishment, transport, agreement and maintenance; secret sharing, broadcast encryption, tracing schemes; certificates, public-key infrastructure, PGP.", 
-            "title": "Cryptography/Network Security"
-        }
-    }, 
-    {
         "pk": 3858, 
         "model": "core.course", 
         "fields": {
@@ -48408,17 +48382,6 @@
         }
     }, 
     {
-        "pk": 4153, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "OPTOM 624B", 
-            "description": "Attendance within clincial areas agreed upon by the student, supervisor and Clinic Director and approved by the Clinic Director. The aim of the course is to broaden and develop advanced clinical skills and knowledge. Any two terms of clinical activity (or its equivalent) and the presentation of one seminar (case report) a term will fulfill this requirement. Recognition of participation in this course can only be given once in the progression through the PhD degree.", 
-            "title": "Clinical Optometry Part 2-PhD"
-        }
-    }, 
-    {
         "pk": 4154, 
         "model": "core.course", 
         "fields": {
@@ -49090,17 +49053,6 @@
         }
     }, 
     {
-        "pk": 4217, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "PHYS 475", 
-            "description": "Galaxies, quasars, dark matter, observational cosmology, big-bang nucleosynthesis, cosmic microwave background. [Offered: F]", 
-            "title": "Astrophysics 3 -- Galaxies and Cosmology"
-        }
-    }, 
-    {
         "pk": 4218, 
         "model": "core.course", 
         "fields": {
@@ -49343,2522 +49295,91 @@
         }
     }, 
     {
-        "pk": 3, 
-        "model": "core.encouragement", 
+        "pk": 4217, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 7, 
-            "message": "One of the smartest person in class!", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 03:01:11"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "PHYS 475", 
+            "description": "Galaxies, quasars, dark matter, observational cosmology, big-bang nucleosynthesis, cosmic microwave background. [Offered: F]", 
+            "title": "Astrophysics 3 - Galaxies and Cosmology"
         }
     }, 
     {
-        "pk": 5, 
-        "model": "core.encouragement", 
+        "pk": 2718, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 2, 
-            "message": "The developer can give himself encouragements!", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 03:07:27"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "KIN 491", 
+            "description": "Practical experience in the examination, diagnosis, and treatment of sports injuries under the supervision of a physician. Case presentations are discussed in a group setting.", 
+            "title": "Clinical Kinesiology - Sports Injuries Assessment"
         }
     }, 
     {
-        "pk": 6, 
-        "model": "core.encouragement", 
+        "pk": 695, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 7, 
-            "message": "Code Monster.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 04:49:16"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "GEOG 372", 
+            "description": "Study abroad for academic transfer credit under an Environmental Studies Exchange Program during a fall term.", 
+            "title": "Waterloo in Switzerland - Lausanne"
         }
     }, 
     {
-        "pk": 19, 
-        "model": "core.encouragement", 
+        "pk": 3857, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 6, 
-            "message": "I give good encouragements.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 05:30:28"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CS 758", 
+            "description": "Cryptographic protocols and their application to secure communication, especially in a network setting. Identification and entity authentication; protocols for key establishment, transport, agreement and maintenance; secret sharing, broadcast encryption, tracing schemes; certificates, public-key infrastructure, PGP.", 
+            "title": "Cryptography/Network Security"
         }
     }, 
     {
-        "pk": 20, 
-        "model": "core.encouragement", 
+        "pk": 2929, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 7, 
-            "message": "Very smart.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 21:21:25"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "CLAS 633", 
+            "description": "This course will examine the representation of identity in ancient drama, and in ancient society.  Greek and Roman plays, both tragic and comic, changed substantially in form and subject matter as they made their way from Athens in the fifth century BCE, across the immense Hellenistic kingdoms, and into the republic of Rome in the third century BCE.  Broadly speaking, fifth century Greek tragedies and comedies strongly focused upon Athenian political events, and explicitly engaged the historical figures, and socio-political issues of their day.  In contrast, comedies written in the Hellenistic period have been interpreted as a depiction of the domestic trials of a Greek household, a situation that makes no reference to contemporary events or characters.  In short, the comedies of the Hellenistic period are bereft of political commentary.  In the second half of the course, we will consider the response of Greek drama to Macedonian domination.  In traditional historical narratives of the early Hellenistic period, Macedonian hegemony and the rise of large autocratic empires are linked to the decline of Athenian democracy and the rise of 'individualism'.  Do the late plays of Aristophanes, and the dramas of Menander and Plautus, all devoid of socio-political content, suggest a civic body that is disengaged politically? How did the Hellenistic and Roman audience receive and read the dramatic characters?  To whom, and how, were these plays speaking?  Did the plays implicitly engage civic issues, or were they merely understood as light relief from the world of resettlements, economic risks, and ever-present war?  How do the Hellenistic dramas of Menander and Plautus shape identity, if at all?", 
+            "title": "Ancient Drama/Identites"
         }
     }, 
     {
-        "pk": 21, 
-        "model": "core.encouragement", 
+        "pk": 1322, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 7, 
-            "message": "sup kid!", 
-            "person_from": 8, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 21:34:03"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SPAN 220W", 
+            "description": "This course is designed to provide students with the opportunity to explore and develop their knowledge of Spanish culture. The course will offer a wide-ranging survey of cultural topics. It will take a broad view of the country by covering aspects of daily life, history, and social, economic and political changes. ", 
+            "title": "Topics in Spanish Culture (WLU)"
         }
     }, 
     {
-        "pk": 22, 
-        "model": "core.encouragement", 
+        "pk": 4153, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 8, 
-            "message": "Sam is the beast.", 
-            "person_from": 2, 
-            "anonymous": false, 
-            "sent_time": "2012-02-13 21:35:57"
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "OPTOM 624B", 
+            "description": "Attendance within clincial areas agreed upon by the student, supervisor and Clinic Director and approved by the Clinic Director. The aim of the course is to broaden and develop advanced clinical skills and knowledge. Any two terms of clinical activity (or its equivalent) and the presentation of one seminar (case report) a term will fulfill this requirement. Recognition of participation in this course can only be given once in the progression through the PhD degree.", 
+            "title": "Clinical Optometry Part 2 - PhD"
         }
     }, 
     {
-        "pk": 23, 
-        "model": "core.encouragement", 
+        "pk": 1288, 
+        "model": "core.course", 
         "fields": {
-            "person_to": 8, 
-            "message": "Hello Sam!", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-13 23:41:18"
-        }
-    }, 
-    {
-        "pk": 24, 
-        "model": "core.encouragement", 
-        "fields": {
-            "person_to": 9, 
-            "message": "What a beast.", 
-            "person_from": 2, 
-            "anonymous": true, 
-            "sent_time": "2012-02-14 14:01:34"
-        }
-    }, 
-    {
-        "pk": 1, 
-        "model": "core.report", 
-        "fields": {
-            "message": "THIS IS SPARTA!", 
-            "sent_time": "2012-02-11 01:02:27", 
-            "reporter": 2
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "core.report", 
-        "fields": {
-            "message": "Send Message.", 
-            "sent_time": "2012-02-11 01:02:26", 
-            "reporter": 2
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "core.report", 
-        "fields": {
-            "message": "LOL", 
-            "sent_time": "2012-02-11 01:33:28", 
-            "reporter": 2
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "core.report", 
-        "fields": {
-            "message": "MMM", 
-            "sent_time": "2012-02-11 01:33:28", 
-            "reporter": 2
-        }
-    }, 
-    {
-        "pk": 157, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-14 20:13:11", 
-            "object_repr": "Irish Literature and the \\\"Troubles\\\" (ENGL 260)", 
-            "object_id": "2303", 
-            "change_message": "Changed title.", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 156, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Distributed Systems (CS 454)", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 155, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Computer Networks (ECE 358)", 
-            "object_id": "4", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 154, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Software Design & Architectures (SE 464)", 
-            "object_id": "5", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 153, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Public Speaking (SPCOM 223)", 
-            "object_id": "6", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 152, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Concurrent & Parallel Programming (CS 343)", 
-            "object_id": "7", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 151, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Database Management (CS 348)", 
-            "object_id": "8", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 150, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Artificial Intelligence (CS 486)", 
-            "object_id": "9", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 149, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introductory Psychology (PSYCH 101)", 
-            "object_id": "10", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 148, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Software Requirements Specification & Analysis (SE 463)", 
-            "object_id": "11", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 147, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Algorithms (CS 341)", 
-            "object_id": "13", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 146, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Operating Systems (SE 350)", 
-            "object_id": "14", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 145, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Feedback Control (SE 380)", 
-            "object_id": "15", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 144, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Human-Computer Interaction (SE 382)", 
-            "object_id": "16", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 143, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Cybernetics & Society (STV 205)", 
-            "object_id": "17", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 142, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Genetics (BIOL 139)", 
-            "object_id": "18", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 141, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Data Structures & Data Management (CS 240)", 
-            "object_id": "19", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 140, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Software Abstraction & Specification (CS 246)", 
-            "object_id": "20", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 139, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Advanced Mathematics for Software Engineers (MATH 213)", 
-            "object_id": "21", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 138, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Combinatorics (MATH 239)", 
-            "object_id": "22", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 137, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Foundations of Sequential Programs (CS 241)", 
-            "object_id": "23", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 136, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Electrostatics, Magnetism & Electronics (ECE 126)", 
-            "object_id": "24", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 135, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Digital Computers (ECE 222)", 
-            "object_id": "25", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 134, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Logic & Computation (SE 112)", 
-            "object_id": "26", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 133, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Statistics for Software Engineering (STAT 206)", 
-            "object_id": "27", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 132, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Functional Programming & Data Abstraction (CS 138)", 
-            "object_id": "28", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 131, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Macroeconomics (ECON 102)", 
-            "object_id": "29", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 130, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Calculus 2 for Engineering (MATH 119)", 
-            "object_id": "30", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 129, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Algebra for Honours Mathematics (MATH 135)", 
-            "object_id": "31", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 128, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Engineering Economics: Financial Management for Engineers (MSCI 261)", 
-            "object_id": "32", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 127, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Digital Circuits and Systems (SE 141)", 
-            "object_id": "33", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 126, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Chemistry for Engineers (CHE 102)", 
-            "object_id": "34", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 125, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Programming Principles (CS 137)", 
-            "object_id": "35", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 124, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Linear Algebra for Engineering (MATH 115)", 
-            "object_id": "36", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 123, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Calculus 1 for Engineering (MATH 117)", 
-            "object_id": "37", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 122, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Mechanics (PHYS 115)", 
-            "object_id": "38", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 121, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 20:11:24", 
-            "object_repr": "Introduction to Methods of Software Engineering (SE 101)", 
-            "object_id": "39", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 120, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-14 13:40:00", 
-            "object_repr": "schen", 
-            "object_id": "9", 
-            "change_message": "Changed is_staff and is_superuser.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 119, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Digital Circuits and Systems (SE 141) [2011-12-28, Michael Eden]", 
-            "object_id": "6", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 118, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Public Speaking (SPCOM 223) [2012-02-11, Michael Eden]", 
-            "object_id": "7", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 117, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Calculus 2 for Engineering (MATH 119) [2012-02-11, Michael Eden]", 
-            "object_id": "8", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 116, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Mechanics (PHYS 115) [2012-02-11, Michael Eden]", 
-            "object_id": "9", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 115, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Advanced Mathematics for Software Engineers (MATH 213) [2012-02-11, Michael Eden]", 
-            "object_id": "10", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 114, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Algebra for Honours Mathematics (MATH 135) [2012-02-11, Michael Eden]", 
-            "object_id": "11", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 113, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Algorithms (CS 341) [2012-02-12, Michael Eden]", 
-            "object_id": "12", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 112, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Chemistry for Engineers (CHE 102) [2012-02-12, Michael Eden]", 
-            "object_id": "13", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 111, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Computer Networks (ECE 358) [2012-02-13, Michael Eden]", 
-            "object_id": "14", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 110, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Functional Programming & Data Abstraction (CS 138) [2012-02-13, Michael Eden]", 
-            "object_id": "15", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 109, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-14 00:49:06", 
-            "object_repr": "Introduction to Artificial Intelligence (CS 486) [2012-02-13, Michael Eden]", 
-            "object_id": "16", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 108, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-14 00:46:30", 
-            "object_repr": "Shang Li", 
-            "object_id": "2", 
-            "change_message": "Deleted section assignment \"Shang Li : Digital Circuits and Systems (SE 141) [2011-12-28, Michael Eden]\". Deleted section assignment \"Shang Li : Public Speaking (SPCOM 223) [2012-02-11, Michael Eden]\". Deleted section assignment \"Shang Li : Calculus 2 for Engineering (MATH 119) [2012-02-11, Michael Eden]\". Deleted section assignment \"Shang Li : Mechanics (PHYS 115) [2012-02-11, Michael Eden]\". Deleted section assignment \"Shang Li : Advanced Mathematics for Software Engineers (MATH 213) [2012-02-11, Michael Eden]\". Deleted section assignment \"Shang Li : Algebra for Honours Mathematics (MATH 135) [2012-02-11, Michael Eden]\". Deleted section assignment \"Shang Li : Algorithms (CS 341) [2012-02-12, Michael Eden]\". Deleted section assignment \"Shang Li : Chemistry for Engineers (CHE 102) [2012-02-12, Michael Eden]\". Deleted section assignment \"Shang Li : Computer Networks (ECE 358) [2012-02-13, Michael Eden]\". Deleted section assignment \"Shang Li : Functional Programming & Data Abstraction (CS 138) [2012-02-13, Michael Eden]\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 107, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 23:40:56", 
-            "object_repr": "Shang Li", 
-            "object_id": "2", 
-            "change_message": "Added specialization assignment \"Shang Li : Computational Science\". Added specialization assignment \"Shang Li : Engineering - Software\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 106, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-13 23:38:46", 
-            "object_repr": "Software Engineering", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "specialization"
-            ]
-        }
-    }, 
-    {
-        "pk": 105, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-13 23:38:46", 
-            "object_repr": "Computer Science", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "specialization"
-            ]
-        }
-    }, 
-    {
-        "pk": 104, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 23:38:33", 
-            "object_repr": "Shang Li", 
-            "object_id": "2", 
-            "change_message": "Deleted specialization assignment \"Shang Li : Software Engineering\". Deleted specialization assignment \"Shang Li : Computer Science\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 103, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 21:34:11", 
-            "object_repr": "sling", 
-            "object_id": "8", 
-            "change_message": "Changed is_staff and is_superuser.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 102, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 05:27:33", 
-            "object_repr": "Yao Li", 
-            "object_id": "6", 
-            "change_message": "Deleted encouragement \"To Yao Li: First enco...\". Deleted encouragement \"To Yao Li: Second....\". Deleted encouragement \"To Yao Li: Third Fun....\". Deleted encouragement \"To Yao Li: 4th fast...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 101, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 05:20:06", 
-            "object_repr": "Yao Li", 
-            "object_id": "6", 
-            "change_message": "Deleted encouragement \"To Yao Li: I give you...\". Deleted encouragement \"To Yao Li: Very cool ...\". Deleted encouragement \"To Yao Li: Wow!...\". Deleted encouragement \"To Yao Li: What?!...\". Deleted encouragement \"To Yao Li: What is th...\". Deleted encouragement \"To Yao Li: Testing....\". Deleted encouragement \"To Yao Li: What is th...\". Deleted encouragement \"To Yao Li: LOL...\". Deleted encouragement \"To Yao Li: Interestin...\". Deleted encouragement \"To Yao Li: 1...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 100, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 03:10:25", 
-            "object_repr": "Shang Li", 
-            "object_id": "2", 
-            "change_message": "Added encouragement \"To Shang Li: The develo...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 99, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 03:07:56", 
-            "object_repr": "Michael Chiang", 
-            "object_id": "3", 
-            "change_message": "Deleted encouragement \"To Michael Chiang: dsgsdfgdf...\". Deleted feedback \"To Michael Chiang: gsdgsdgdsg...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 98, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 01:07:55", 
-            "object_repr": "Yao Li", 
-            "object_id": "6", 
-            "change_message": "Changed anonymous for encouragement \"To Yao Li: I give you...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 97, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 01:03:40", 
-            "object_repr": "Yao Li", 
-            "object_id": "6", 
-            "change_message": "Changed anonymous for encouragement \"To Yao Li: I give you...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 96, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-13 00:53:56", 
-            "object_repr": "Yao Li", 
-            "object_id": "6", 
-            "change_message": "Added encouragement \"To Yao Li: I give you...\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 95, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-11 01:03:58", 
-            "object_repr": "Distributed Systems (CS 454) [2012-02-10, Michael Eden]", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 94, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-11 01:03:58", 
-            "object_repr": "Introduction to Methods of Software Engineering (SE 101) [2012-02-10, Michael Eden]", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 93, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-11 01:03:58", 
-            "object_repr": "Introduction to Combinatorics (MATH 239) [2012-02-10, Michael Eden]", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 92, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-11 01:03:58", 
-            "object_repr": "Software Requirements Specification & Analysis (SE 463) [2012-02-10, Michael Eden]", 
-            "object_id": "4", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 91, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-11 01:03:58", 
-            "object_repr": "Computer Networks (ECE 358) [2012-02-11, Michael Eden]", 
-            "object_id": "5", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "section"
-            ]
-        }
-    }, 
-    {
-        "pk": 90, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-10 19:59:33", 
-            "object_repr": "sli", 
-            "object_id": "2", 
-            "change_message": "Changed first_name.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 89, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:12:22", 
-            "object_repr": "Introduction to Methods of Software Engineering (SE 101)", 
-            "object_id": "39", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 88, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:12:05", 
-            "object_repr": "Mechanics (PHYS 115)", 
-            "object_id": "38", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 87, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:11:51", 
-            "object_repr": "Calculus 1 for Engineering (MATH 117)", 
-            "object_id": "37", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 86, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:11:39", 
-            "object_repr": "Linear Algebra for Engineering (MATH 115)", 
-            "object_id": "36", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 85, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:11:22", 
-            "object_repr": "Programming Principles (CS 137)", 
-            "object_id": "35", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 84, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:11:01", 
-            "object_repr": "Chemistry for Engineers (CHE 102)", 
-            "object_id": "34", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 83, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:10:28", 
-            "object_repr": "Digital Circuits and Systems (SE 141)", 
-            "object_id": "33", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 82, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:10:17", 
-            "object_repr": "Engineering Economics: Financial Management for Engineers (MSCI 261)", 
-            "object_id": "32", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 81, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:08:46", 
-            "object_repr": "Algebra for Honours Mathematics (MATH 135)", 
-            "object_id": "31", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 80, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:07:58", 
-            "object_repr": "Calculus 2 for Engineering (MATH 119)", 
-            "object_id": "30", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 79, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:03:21", 
-            "object_repr": "Introduction to Macroeconomics (ECON 102)", 
-            "object_id": "29", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 78, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:01:06", 
-            "object_repr": "Functional Programming & Data Abstraction (CS 138)", 
-            "object_id": "28", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 77, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:00:22", 
-            "object_repr": "Statistics for Software Engineering (STAT 206)", 
-            "object_id": "27", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 76, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 19:00:00", 
-            "object_repr": "Logic & Computation (SE 112)", 
-            "object_id": "26", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 75, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:59:40", 
-            "object_repr": "Digital Computers (ECE 222)", 
-            "object_id": "25", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 74, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:58:49", 
-            "object_repr": "Introduction to Electrostatics, Magnetism & Electronics (ECE 126)", 
-            "object_id": "24", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 73, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:58:16", 
-            "object_repr": "Foundations of Sequential Programs (CS 241)", 
-            "object_id": "23", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 72, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:56:13", 
-            "object_repr": "Introduction to Combinatorics (MATH 239)", 
-            "object_id": "22", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 71, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:55:55", 
-            "object_repr": "Advanced Mathematics for Software Engineers (MATH 213)", 
-            "object_id": "21", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 70, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:55:33", 
-            "object_repr": "Software Abstraction & Specification (CS 246)", 
-            "object_id": "20", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 69, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:55:09", 
-            "object_repr": "Data Structures & Data Management (CS 240)", 
-            "object_id": "19", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 68, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:54:35", 
-            "object_repr": "Genetics (BIOL 139)", 
-            "object_id": "18", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 67, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-10 18:52:45", 
-            "object_repr": "Cybernetics & Society (STV 205)", 
-            "object_id": "17", 
-            "change_message": "Changed name.", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 66, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:52:04", 
-            "object_repr": "Cybernetics and Society (STV 205)", 
-            "object_id": "17", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 65, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:51:33", 
-            "object_repr": "Human-Computer Interaction (SE 382)", 
-            "object_id": "16", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 64, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:51:18", 
-            "object_repr": "Introduction to Feedback Control (SE 380)", 
-            "object_id": "15", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 63, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:50:57", 
-            "object_repr": "Operating Systems (SE 350)", 
-            "object_id": "14", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 62, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-10 18:50:01", 
-            "object_repr": "Algorithms (CS 341)", 
-            "object_id": "13", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 61, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-10 13:31:51", 
-            "object_repr": "sz", 
-            "object_id": "7", 
-            "change_message": "Changed is_staff and is_superuser.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 60, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-10 01:13:49", 
-            "object_repr": "yli", 
-            "object_id": "6", 
-            "change_message": "Changed is_staff and is_superuser.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 59, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 19:15:12", 
-            "object_repr": "Hardware", 
-            "object_id": "4", 
-            "change_message": "Changed name.", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "skill"
-            ]
-        }
-    }, 
-    {
-        "pk": 58, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 19:14:48", 
-            "object_repr": "tforce", 
-            "object_id": "4", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 57, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 19:14:34", 
-            "object_repr": "lisean", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 56, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 19:14:18", 
-            "object_repr": "Trivial", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "group"
-            ]
-        }
-    }, 
-    {
-        "pk": 55, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 19:14:18", 
-            "object_repr": "Administrators", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "group"
-            ]
-        }
-    }, 
-    {
-        "pk": 54, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 18:30:55", 
-            "object_repr": "lisean", 
-            "object_id": "1", 
-            "change_message": "Changed groups.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 53, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 18:30:40", 
-            "object_repr": "Trivial", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "group"
-            ]
-        }
-    }, 
-    {
-        "pk": 52, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 18:30:14", 
-            "object_repr": "mc", 
-            "object_id": "3", 
-            "change_message": "Changed groups.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 51, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 18:29:47", 
-            "object_repr": "Administrators", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "group"
-            ]
-        }
-    }, 
-    {
-        "pk": 50, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:22:19", 
-            "object_repr": "University of Toronto", 
-            "object_id": "4", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "institute"
-            ]
-        }
-    }, 
-    {
-        "pk": 49, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:18:47", 
-            "object_repr": "Simon Fraser University", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "institute"
-            ]
-        }
-    }, 
-    {
-        "pk": 48, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 16:15:54", 
-            "object_repr": "mc", 
-            "object_id": "3", 
-            "change_message": "Changed first_name.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 47, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:13:49", 
-            "object_repr": "University of British Columbia", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "institute"
-            ]
-        }
-    }, 
-    {
-        "pk": 46, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 16:12:10", 
-            "object_repr": "University of Waterloo", 
-            "object_id": "1", 
-            "change_message": "Changed address.", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "institute"
-            ]
-        }
-    }, 
-    {
-        "pk": 45, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:10:26", 
-            "object_repr": "Yukon", 
-            "object_id": "13", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 44, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:10:13", 
-            "object_repr": "Saskachewan", 
-            "object_id": "12", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 43, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:10:04", 
-            "object_repr": "Quebec", 
-            "object_id": "11", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 42, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:09:57", 
-            "object_repr": "Prince Edward Island", 
-            "object_id": "10", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 41, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:09:45", 
-            "object_repr": "Nunavut", 
-            "object_id": "9", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 40, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:09:28", 
-            "object_repr": "Nova Scotia", 
-            "object_id": "8", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 39, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:09:18", 
-            "object_repr": "Northwest Territories", 
-            "object_id": "7", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 38, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:08:54", 
-            "object_repr": "Newfoundland and Labrador", 
-            "object_id": "6", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 37, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:08:43", 
-            "object_repr": "New Brunswick", 
-            "object_id": "5", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 36, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:08:08", 
-            "object_repr": "Manitoba", 
-            "object_id": "4", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 35, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:08:01", 
-            "object_repr": "British Columbia", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 34, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:07:51", 
-            "object_repr": "Alberta", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "provincestate"
-            ]
-        }
-    }, 
-    {
-        "pk": 33, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 16:07:00", 
-            "object_repr": "United States", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "country"
-            ]
-        }
-    }, 
-    {
-        "pk": 32, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 14:47:03", 
-            "object_repr": "mc", 
-            "object_id": "3", 
-            "change_message": "Changed last_name.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 31, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 04:25:10", 
-            "object_repr": "Introduction To Database Management (IN)", 
-            "object_id": "12", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 30, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 04:17:27", 
-            "object_repr": "Mike C (mc)", 
-            "object_id": "3", 
-            "change_message": "Added badge assignment \"Mike C (mc) : True Identity\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 29, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 04:14:12", 
-            "object_repr": "Mike C (mc)", 
-            "object_id": "3", 
-            "change_message": "Changed birthday, tagline and degree. Added skill assignment \"Mike C (mc) : Porn watching\". Added encouragement \"To Mike C (mc): dsgsdfgdf...\". Added feedback \"To Mike C (mc): gsdgsdgdsg...\".", 
-            "user": 3, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 28, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 04:09:30", 
-            "object_repr": "Porn watching", 
-            "object_id": "4", 
-            "change_message": "", 
-            "user": 3, 
-            "content_type": [
-                "core", 
-                "skill"
-            ]
-        }
-    }, 
-    {
-        "pk": 27, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-09 04:08:38", 
-            "object_repr": "mc", 
-            "object_id": "3", 
-            "change_message": "Changed is_staff and is_superuser.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 26, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 04:03:29", 
-            "object_repr": "Software Requirements Specification & Analysis (SE 463)", 
-            "object_id": "11", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 25, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 04:02:45", 
-            "object_repr": "Introductory Psychology (PSYCH 101)", 
-            "object_id": "10", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 24, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 04:02:22", 
-            "object_repr": "Introduction to Artificial Intelligence (CS 486)", 
-            "object_id": "9", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 23, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 04:01:47", 
-            "object_repr": "Introduction to Database Management (CS 348)", 
-            "object_id": "8", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 22, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-09 04:01:25", 
-            "object_repr": "Concurrent & Parallel Programming (CS 343)", 
-            "object_id": "7", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 21, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 03:57:24", 
-            "object_repr": "Distributed Systems (CS 101)", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 20, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 3, 
-            "action_time": "2012-02-09 03:57:24", 
-            "object_repr": "My Life (LIFE 101)", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "course"
-            ]
-        }
-    }, 
-    {
-        "pk": 19, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-08 15:33:36", 
-            "object_repr": "Sean Li (sli)", 
-            "object_id": "2", 
-            "change_message": "Added skill assignment \"Sean Li (sli) : PHP\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 18, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-08 15:33:22", 
-            "object_repr": "Sean Li (sli)", 
-            "object_id": "2", 
-            "change_message": "Added skill assignment \"Sean Li (sli) : Django\". Added skill assignment \"Sean Li (sli) : Python\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 17, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-08 15:32:23", 
-            "object_repr": "PHP", 
-            "object_id": "3", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "skill"
-            ]
-        }
-    }, 
-    {
-        "pk": 16, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-08 15:31:11", 
-            "object_repr": "Python", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "skill"
-            ]
-        }
-    }, 
-    {
-        "pk": 15, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-08 15:31:05", 
-            "object_repr": "Django", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "skill"
-            ]
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-08 15:04:57", 
-            "object_repr": "www.mynodo.com", 
-            "object_id": "1", 
-            "change_message": "Changed domain and name.", 
-            "user": 2, 
-            "content_type": [
-                "sites", 
-                "site"
-            ]
-        }
-    }, 
-    {
-        "pk": 13, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-08 14:35:07", 
-            "object_repr": "Sean Li (sli)", 
-            "object_id": "2", 
-            "change_message": "Added faculty assignment \"Sean Li (sli) : Faculty of Mathematics\". Added specialization assignment \"Sean Li (sli) : Computer Science\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-08 14:34:10", 
-            "object_repr": "Computer Science", 
-            "object_id": "2", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "specialization"
-            ]
-        }
-    }, 
-    {
-        "pk": 10, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-02-08 00:21:25", 
-            "object_repr": "Sean Li (sli)", 
-            "object_id": "2", 
-            "change_message": "Changed birthday. Added faculty assignment \"Sean Li (sli) : Faculty of Engineering\". Added specialization assignment \"Sean Li (sli) : Software Engineering\". Added badge assignment \"Sean Li (sli) : True Identity\".", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "profile"
-            ]
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-08 00:21:14", 
-            "object_repr": "True Identity", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "badge"
-            ]
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 1, 
-            "action_time": "2012-02-08 00:20:26", 
-            "object_repr": "Software Engineering", 
-            "object_id": "1", 
-            "change_message": "", 
-            "user": 2, 
-            "content_type": [
-                "core", 
-                "specialization"
-            ]
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SPAN 451W", 
+            "description": "This course will develop writing skills in Spanish by exploring various stylistic procedures of writing. It will focus on a number of features essential in effective writing to help students develop the organizational skills and linguistic abilities needed to communicate successfully. Special attention is given to the role of stylistics in creative writing, journal writing, magazine pieces, and advertising. ", 
+            "title": "Stylistics and Professional Writing (WLU)"
         }
     }
 ]
