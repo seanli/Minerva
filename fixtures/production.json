@@ -135,7 +135,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-02-15 13:38:56", 
+            "last_login": "2012-02-16 01:58:27", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
@@ -176,14 +176,6 @@
         }
     }, 
     {
-        "pk": "ef21c74c494d0229ff92f87854c7e2e6", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-27 21:55:38", 
-            "session_data": "ODE3ZmYyYzIwZTc0OTc4N2EyMzQ2ZjE0YTdhMWI0NDc3NmFiODhmZTqAAn1xAShVCnRlc3Rjb29r\naWVVBndvcmtlZFUSX2F1dGhfdXNlcl9iYWNrZW5kcQJVKU1pbmVydmEuYWNjb3VudC5iYWNrZW5k\ncy5FbWFpbEF1dGhCYWNrZW5kcQNVDV9hdXRoX3VzZXJfaWRxBEsCdS4=\n"
-        }
-    }, 
-    {
         "pk": "1bcf286580dfc4fd34c0b95bddd5aa81", 
         "model": "sessions.session", 
         "fields": {
@@ -216,6 +208,14 @@
         }
     }, 
     {
+        "pk": "ee26bba88d6b3b458e6f2b8b9e66bf85", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-29 17:29:32", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
+        }
+    }, 
+    {
         "pk": "25889993471f19b6ae9ba143736fe1ae", 
         "model": "sessions.session", 
         "fields": {
@@ -240,19 +240,19 @@
         }
     }, 
     {
-        "pk": "2f535a2c85ff6163cb407753213e0c85", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-29 13:38:56", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
         "pk": "3f35b75252c0f178bffd3837441a7818", 
         "model": "sessions.session", 
         "fields": {
             "expire_date": "2012-02-23 04:12:13", 
             "session_data": "NjUwMTY0MjlmZDRiN2E4YTc3ZmFmYTdhMjVkZTBkNDA5MGJmOWFkNzqAAn1xAVUKdGVzdGNvb2tp\nZXECVQZ3b3JrZWRxA3Mu\n"
+        }
+    }, 
+    {
+        "pk": "0fa653268e4f2ec02eee6835135b55cd", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-03-01 01:58:27", 
+            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -44675,17 +44675,6 @@
         }
     }, 
     {
-        "pk": 3804, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "PHYS 784", 
-            "description": "Review of elementary general relativity.  Timelike and null geodesic congruences.  Hypersurfaces and junction conditions.  Lagrangian and Hamiltonian formulations of general relativity.  Mass and angular momentum of a gravitating body.  The laws of black-hole mechanics.", 
-            "title": "Advanced techniques in General Relativity and Applications to Black Holes"
-        }
-    }, 
-    {
         "pk": 3805, 
         "model": "core.course", 
         "fields": {
@@ -48316,17 +48305,6 @@
         }
     }, 
     {
-        "pk": 4147, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "OPTOM 614A", 
-            "description": "Attendance within clinical areas agreed upon by the student, supervisor and Clinic Director and approved by the Clinic Director. The aim of the course is to broaden and develop advanced clinical skills and knowledge. Credit will be given for completion of each term of clinical activity (or its equivalent) and the presentation of one seminar (case report) a term.  Credit towards a degree may only be earned once in the progression through the MSc degree.", 
-            "title": "Clinical OptometryPart 1-MSc"
-        }
-    }, 
-    {
         "pk": 4148, 
         "model": "core.course", 
         "fields": {
@@ -48445,6 +48423,17 @@
             "abbrev": "PHYS 226", 
             "description": "Fermat's principle, reflection and refraction at plane and spherical surfaces, thin and thick lenses, optical instruments such as magnifiers, microscopes, telescopes, spectrometers, normal magnification. [Offered: F]", 
             "title": "Geometrical Optics"
+        }
+    }, 
+    {
+        "pk": 4147, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "OPTOM 614A", 
+            "description": "Attendance within clinical areas agreed upon by the student, supervisor and Clinic Director and approved by the Clinic Director. The aim of the course is to broaden and develop advanced clinical skills and knowledge. Credit will be given for completion of each term of clinical activity (or its equivalent) and the presentation of one seminar (case report) a term.  Credit towards a degree may only be earned once in the progression through the MSc degree.", 
+            "title": "Clinical Optometry Part 1 - MSc"
         }
     }, 
     {
@@ -48855,17 +48844,6 @@
         }
     }, 
     {
-        "pk": 4199, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "PHYS 356L", 
-            "description": "For students who have taken or are taking PHYS 356. ", 
-            "title": "Introduction to Communication and Optical communication Physics Laboratory"
-        }
-    }, 
-    {
         "pk": 4200, 
         "model": "core.course", 
         "fields": {
@@ -48940,6 +48918,17 @@
             "abbrev": "PHYS 380", 
             "description": "Cell structure and molecular composition; intermolecular interactions and hydration; protein structure and function; cytoskeletal filaments; DNA structure, packing and chromosomes; rate equations and biological dynamics (e.g., cytoskeletal polymerization); self-assembly; cell membranes; action potentials and biological electricity; molecular motors; cell motility. [Recommended PHYS 280/BIOL 280. Offered: F, S]", 
             "title": "Molecular and Cellular Biophysics"
+        }
+    }, 
+    {
+        "pk": 4199, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "PHYS 356L", 
+            "description": "For students who have taken or are taking PHYS 356. ", 
+            "title": "Introduction to Communication and Optical Communication Physics Laboratory"
         }
     }, 
     {
@@ -49218,17 +49207,6 @@
         }
     }, 
     {
-        "pk": 4233, 
-        "model": "core.course", 
-        "fields": {
-            "institute": 1, 
-            "difficulty": null, 
-            "abbrev": "SCBUS 223", 
-            "description": "This workshop aims to improve each student's skills in gathering information about a specific science/technology topic, analysis of the science and business issues associated with it, and then organizing an oral presentation of the results of the study, while working as a member of a team. [Offered: F]", 
-            "title": "Science and Business Workshop 2"
-        }
-    }, 
-    {
         "pk": 4234, 
         "model": "core.course", 
         "fields": {
@@ -49380,6 +49358,173 @@
             "abbrev": "SPAN 451W", 
             "description": "This course will develop writing skills in Spanish by exploring various stylistic procedures of writing. It will focus on a number of features essential in effective writing to help students develop the organizational skills and linguistic abilities needed to communicate successfully. Special attention is given to the role of stylistics in creative writing, journal writing, magazine pieces, and advertising. ", 
             "title": "Stylistics and Professional Writing (WLU)"
+        }
+    }, 
+    {
+        "pk": 4233, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "SCBUS 223", 
+            "description": "This workshop aims to improve each student's skills in gathering information about a specific science/technology topic, analysis of the science and business issues associated with it, and then organizing an oral presentation of the results of the study, while working as a member of a team. [Offered: F]", 
+            "title": "Science & Business Workshop 2"
+        }
+    }, 
+    {
+        "pk": 3804, 
+        "model": "core.course", 
+        "fields": {
+            "institute": 1, 
+            "difficulty": null, 
+            "abbrev": "PHYS 784", 
+            "description": "Review of elementary general relativity.  Timelike and null geodesic congruences.  Hypersurfaces and junction conditions.  Lagrangian and Hamiltonian formulations of general relativity.  Mass and angular momentum of a gravitating body.  The laws of black-hole mechanics.", 
+            "title": "Advanced Techniques in General Relativity and Applications to Black Holes"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "core.section", 
+        "fields": {
+            "course": 40, 
+            "instructor": 10, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-17"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "core.section", 
+        "fields": {
+            "course": 2680, 
+            "instructor": 10, 
+            "first_day": "2012-02-14", 
+            "last_day": "2012-02-14"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "core.section", 
+        "fields": {
+            "course": 564, 
+            "instructor": 10, 
+            "first_day": "2012-02-15", 
+            "last_day": "2012-02-16"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 27
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 28
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "profile": 2, 
+            "section": 29
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "core.encouragement", 
+        "fields": {
+            "person_to": 7, 
+            "message": "Best Coder Alive.", 
+            "person_from": 2, 
+            "anonymous": true, 
+            "sent_time": "2012-02-16 00:19:05"
+        }
+    }, 
+    {
+        "pk": 214, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-16 02:05:01", 
+            "object_repr": "Advanced Techniques in General Relativity and Applications to Black Holes (PHYS 784)", 
+            "object_id": "3804", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 213, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-16 01:59:32", 
+            "object_repr": "Introduction to Communication and Optical Communication Physics Laboratory (PHYS 356L)", 
+            "object_id": "4199", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 212, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-16 00:36:10", 
+            "object_repr": "Science & Business Workshop 2 (SCBUS 223)", 
+            "object_id": "4233", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 211, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-16 00:35:41", 
+            "object_repr": "Clinical Optometry Part 1 - MSc (OPTOM 614A)", 
+            "object_id": "4147", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
+        }
+    }, 
+    {
+        "pk": 210, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-16 00:35:12", 
+            "object_repr": "Clinical Optometry Part 1-MSc (OPTOM 614A)", 
+            "object_id": "4147", 
+            "change_message": "Changed title.", 
+            "user": 2, 
+            "content_type": [
+                "core", 
+                "course"
+            ]
         }
     }
 ]
