@@ -1,5 +1,5 @@
 from django.contrib import admin
-from Minerva.core.models import Profile, Country, ProvinceState, \
+from core.models import Profile, Country, ProvinceState, \
     Institute, Contact, Specialization, SpecializationAssign, \
     Badge, BadgeAssign, Course, Section, \
     SectionAssign, Encouragement, Review, Feedback, \
