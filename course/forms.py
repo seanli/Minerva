@@ -36,10 +36,10 @@ class AddCourseForm(StandardForm):
             return data
         else:
             institute = self.profile.institute
-            if Course.objects.filter(title__icontains=data['title'], institute=institute).count() == 0:
+            if Course.objects.filter(title=data['title'], institute=institute).count() == 0:
                 raise forms.ValidationError('<strong>%s</strong> for <strong>%s</strong> is not a registered course!' % (data['title'], institute))
             else:
-                data['course'] = Course.objects.filter(title__icontains=data['title'], institute=institute)[0]
+                data['course'] = Course.objects.filter(title=data['title'], institute=institute)[0]
                 try:
                     section = Section.objects.get(course=data['course'], first_day=data['first_day'], last_day=data['last_day'], instructor=data['instructor'])
                     data['section'] = section

@@ -90,6 +90,7 @@ class Specialization(models.Model):
     
     name = models.CharField(max_length=100, unique=True)
     profile = models.ManyToManyField(Profile, through='SpecializationAssign')
+    modified_time = models.DateTimeField(default=datetime.now(), auto_now=True)
     
     def __unicode__(self):
         return self.name
@@ -115,6 +116,7 @@ class Skill(models.Model):
     
     name = models.CharField(max_length=100)
     profile = models.ManyToManyField(Profile, through='SkillAssign')
+    modified_time = models.DateTimeField(default=datetime.now(), auto_now=True)
     
     def __unicode__(self):
         return self.name
@@ -192,6 +194,7 @@ class Course(models.Model):
     institute = models.ForeignKey(Institute)
     description = models.TextField(null=True, blank=True)
     difficulty = models.PositiveIntegerField(null=True, blank=True)
+    modified_time = models.DateTimeField(default=datetime.now(), auto_now=True)
     
     def __unicode__(self):
         return "%s (%s)" % (self.title, self.abbrev)

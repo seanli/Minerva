@@ -51,11 +51,18 @@ class ProfileAdmin(admin.ModelAdmin):
 
 class CourseAdmin(admin.ModelAdmin):
     inlines = [SectionInline, ReviewInline]
-    list_display = ('title', 'abbrev', 'institute',)
-    list_filter = ('institute',)
+    list_display = ('title', 'abbrev', 'institute', 'modified_time',)
+    list_filter = ('institute', 'modified_time',)
     search_fields = ['title', 'abbrev']
 
 class SpecializationAdmin(admin.ModelAdmin):
+    list_display = ('name', 'modified_time',)
+    list_filter = ('modified_time',)
+    search_fields = ['name']
+    
+class SkillAdmin(admin.ModelAdmin):
+    list_display = ('name', 'modified_time',)
+    list_filter = ('modified_time',)
     search_fields = ['name']
     
 admin.site.register(Profile, ProfileAdmin)
@@ -70,5 +77,5 @@ admin.site.register(Section)
 admin.site.register(Encouragement)
 admin.site.register(Review)
 admin.site.register(Feedback)
-admin.site.register(Skill)
+admin.site.register(Skill, SkillAdmin)
 admin.site.register(Report)
