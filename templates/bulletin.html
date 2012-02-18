@@ -9,26 +9,7 @@
 	function my_js_callback(data) {
 		alert(data.message);
 	}
-
-	function form_add_course() {
-		var form_id = 'form-add-course';
-		form_data = $('#' + form_id).serializeObject(true);
-		$('#add-course-button').button('loading');
-		Dajaxice.Minerva.course.form_add_course(Dajax.process, {
-			'form_data' : form_data,
-			'form_id' : form_id
-		});
-	}
-
-	function form_add_course_callback(data) {
-		$('#add-course-button').button('reset');
-		if(data.status == 'OK') {
-			//$('#form-add-course input[type="text"]').attr('value', '');
-			$('#add-course').modal('hide');
-			window.location.reload();
-		}
-	}
-
+        
 	var barval = 0;
 	function update_bar() {
 		if(barval < 100)
@@ -62,29 +43,7 @@
       <h6>{{ s.section.instructor.user.first_name }} {{ s.section.instructor.user.last_name }}</h6>
       <div class="vertical-space"></div>
       {% endfor %}
-      <div id="add-course" class="modal hide fade" style="display: none; ">
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">×</a>
-          <h3>Add Course</h3>
-        </div>
-        <div class="modal-body">
-          <form id="form-add-course" action="" method="post" class="form-horizontal">
-            {% csrf_token %}
-            {% for field in form %}
-            <div id="form-add-course-{{ field.html_name }}" class="control-group">
-              {{ field.label_tag }}
-              <div class="controls">
-                {{ field }}<span class="help-inline"></span>
-              </div>
-            </div>
-            {% endfor %} <div id="form-add-course-error"></div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a id="add-course-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_course();">Add Course</a>
-          <a href="#" class="btn" data-dismiss="modal">Close</a>
-        </div>
-      </div>
+      {% include "modal/add-course.html" with form=form %}
       <a data-toggle="modal" href="#add-course" class="btn btn-primary">Add Course</a>
       {% endif %}
     </div>

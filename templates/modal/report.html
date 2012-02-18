@@ -1,0 +1,48 @@
+{% load base_extra %}
+
+<div id="report" class="modal hide fade" style="display: none; ">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    {% if user.is_authenticated %} <h3>Thank You, {{ user.first_name }}!</h3>
+    {% else %} <h3>Thank You!</h3>
+    {% endif %}
+  </div>
+  <div class="modal-body">
+    <form id="form-report" action="" method="post" class="form-vertical">
+      {% csrf_token %}
+      {% report_form %}
+      {% for field in report_form %}
+      <div id="form-report-{{ field.html_name }}" class="control-group">
+        {{ field.label_tag }}
+        <div class="controls">
+          {{ field }}<span class="help-inline"></span>
+        </div>
+      </div>
+      {% endfor %} <div id="form-report-error"></div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a id="send-report-button" class="btn btn-danger" data-loading-text="Sending..." onclick="form_report();">Send Report</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	function form_report() {
+		var form_id = 'form-report';
+		form_data = $('#' + form_id).serializeObject(true);
+		$('#send-report-button').button('loading');
+		Dajaxice.Minerva.account.form_report(Dajax.process, {
+			'form_data' : form_data,
+			'form_id' : form_id
+		});
+	}
+
+	function form_report_callback(data) {
+		$('#send-report-button').button('reset');
+		if(data.status == 'OK') {
+			$('#form-report textarea').attr('value', '');
+			$('#report').modal('hide');
+		}
+	}
+</script>
