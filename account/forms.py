@@ -98,7 +98,7 @@ class AddSpecializationForm(StandardForm):
         if self._errors:
             return data
         else:
-            specialization = Specialization.get_by_name(data['name'])
+            specialization = Specialization.get(data['name'])
             if specialization is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed specialization!' % data['name'])
             else:
@@ -130,7 +130,7 @@ class AddSkillForm(StandardForm):
         if self._errors:
             return data
         else:
-            skill = Skill.get_by_name(data['name'])
+            skill = Skill.get(data['name'])
             if skill is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed skill!' % data['name'])
             else:

@@ -96,6 +96,15 @@ class Profile(models.Model):
     def has_skill(self, skill):
         return SkillAssign.objects.filter(skill=skill, profile=self).count() > 0
     
+    def add_section(self, section):
+        assign = SectionAssign()
+        assign.section = section
+        assign.profile = self
+        assign.save()
+        
+    def has_section(self, section):
+        return SectionAssign.objects.filter(section=section, profile=self).count() > 0
+    
     class Meta:
         db_table = 'mva_profile'
   
@@ -118,7 +127,7 @@ class Specialization(models.Model):
         return Specialization.objects.filter(name=name).count() > 0
     
     @staticmethod
-    def get_by_name(name):
+    def get(name):
         if Specialization.exist(name):
             return Specialization.objects.filter(name=name)[0]
         else:
@@ -155,7 +164,7 @@ class Skill(models.Model):
         return Skill.objects.filter(name=name).count() > 0
     
     @staticmethod
-    def get_by_name(name):
+    def get(name):
         if Skill.exist(name):
             return Skill.objects.filter(name=name)[0]
         else:
@@ -238,6 +247,17 @@ class Course(models.Model):
     
     def __unicode__(self):
         return "%s (%s)" % (self.title, self.abbrev)
+    
+    @staticmethod
+    def exist(title, institute):
+        return Course.objects.filter(title=title, institute=institute).count() > 0
+    
+    @staticmethod
+    def get(title, institute):
+        if Course.exist(title, institute):
+            return Course.objects.filter(title=title, institute=institute)[0]
+        else:
+            return None
     
     class Meta:
         db_table = 'mva_course'
