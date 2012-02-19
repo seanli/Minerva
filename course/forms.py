@@ -3,7 +3,7 @@ from django.forms import ModelChoiceField
 from Minerva.core.forms import StandardForm
 from Minerva.core.models import Course, Profile, Section, SectionAssign
 from Minerva.core.utilities import titlecase
-import datetime
+from datetime import datetime, timedelta
 
 class AddCourseForm(StandardForm):
     
@@ -12,8 +12,8 @@ class AddCourseForm(StandardForm):
             return obj.user.get_full_name()
     
     title = forms.CharField(max_length=100, label='Course Title')
-    first_day = forms.DateField(label='First Day', initial=datetime.datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
-    last_day = forms.DateField(label='Last Day', initial=datetime.datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
+    first_day = forms.DateField(label='First Day', initial=datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
+    last_day = forms.DateField(label='Last Day', initial=(datetime.today() + timedelta(days=1)).strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
     instructor = InstructorChoiceField(label='Instructor', queryset=None)
     
     def __init__(self, *args, **kwargs):
@@ -29,6 +29,13 @@ class AddCourseForm(StandardForm):
     def clean_title(self):
         title = self.cleaned_data["title"].strip()
         return title
+    
+    def clean_last_day(self):
+        first_day = self.cleaned_data['first_day']
+        last_day = self.cleaned_data['last_day']
+        if last_day <= first_day:
+            raise forms.ValidationError('Invalid date range')
+        return last_day
     
     def clean(self):
         data = self.cleaned_data
