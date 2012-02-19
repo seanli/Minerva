@@ -38,9 +38,8 @@
         {% endif %}
         {% for specialization in specializations.all %} <h6>{{ specialization.name }}</h6>
         {% endfor %}
-        {% if current_user == user %}
-	<div class="vertical-space"></div>
-	<a data-toggle="modal" href="#add-specialization" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Specialization </a>
+        {% if current_user == user %} <div class="vertical-space"></div>
+        <a data-toggle="modal" href="#add-specialization" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Specialization </a>
         {% endif %}
         {% endwith %}
       </div>
@@ -49,7 +48,10 @@
         {% if skills.count == 0 %} <h6>No Skill Yet!</h6>
         {% endif %}
         {% for skill in skills.all %} <h6>{{ skill.name }}</h6>
-        {% endfor %} <a href="#"><strong>Add Skill</strong></a>
+        {% endfor %}
+        {% if current_user == user %} <div class="vertical-space"></div>
+        <a data-toggle="modal" href="#add-skill" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Skill </a>
+        {% endif %}
         {% endwith %}
       </div>
     </div>
@@ -59,8 +61,7 @@
       <div class="vertical-space"></div>
       {% if encouragements.count == 0 %} <h6>No Encouragement Yet!</h6>
       {% endif %}
-      {% if current_user != user %}
-      <div class="vertical-space"></div>
+      {% if current_user != user %} <div class="vertical-space"></div>
       <a data-toggle="modal" href="#encouragement" class="btn btn-small btn-warning"><i class="icon-pencil icon-white"></i> Write Encouragement </a>
       <div class="vertical-space"></div>
       <div class="vertical-space"></div>
@@ -68,7 +69,9 @@
       {% for encouragement in encouragements %}
       <blockquote>
         <h6>{{ encouragement.sent_time }}</h6>
-        <p><i>"{{ encouragement.message }}"</i></p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</small>
+        <p>
+          <i>"{{ encouragement.message }}"</i>
+        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</small>
       </blockquote>
       {% endfor %}
       {% endif %}
@@ -94,6 +97,7 @@
 </div>
 
 {% include "modal/add-specialization.html" %}
+{% include "modal/add-skill.html" %}
 {% include "modal/encouragement.html" %}
 
 {% endblock %} 

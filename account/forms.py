@@ -3,7 +3,7 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from Minerva.core.forms import StandardForm
 from Minerva.core.utilities import titlecase
-from Minerva.core.models import Institute, Profile, Specialization
+from Minerva.core.models import Institute, Profile, Specialization, Skill, SpecializationAssign, SkillAssign
 from Minerva.core.references import ROLE
 
 class LoginForm(StandardForm):
@@ -36,7 +36,7 @@ class SignupForm(StandardForm):
     role = forms.ChoiceField(choices=ROLE, label='Who are you?')
         
     def clean_email(self):
-        email = self.cleaned_data["email"].lower().strip()
+        email = self.cleaned_data['email'].lower().strip()
         try:
             User.objects.get(email=email)
         except User.DoesNotExist:
@@ -44,18 +44,18 @@ class SignupForm(StandardForm):
         raise forms.ValidationError('This email address is already taken!')
 
     def clean_password_conf(self):
-        password = self.cleaned_data["password"]
-        password_conf = self.cleaned_data["password_conf"]
+        password = self.cleaned_data['password']
+        password_conf = self.cleaned_data['password_conf']
         if password != password_conf:
             raise forms.ValidationError('Passwords do not match!')
         return password
     
     def clean_first_name(self):
-        first_name = titlecase(self.cleaned_data["first_name"].strip())
+        first_name = titlecase(self.cleaned_data['first_name'].strip())
         return first_name
     
     def clean_last_name(self):
-        last_name = titlecase(self.cleaned_data["last_name"].strip())
+        last_name = titlecase(self.cleaned_data['last_name'].strip())
         return last_name
 
 class ReportForm(StandardForm):
@@ -63,7 +63,7 @@ class ReportForm(StandardForm):
     message = forms.CharField(label='Please Write Your Report Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
     
     def clean_message(self):
-        message = self.cleaned_data["message"].strip()
+        message = self.cleaned_data['message'].strip()
         return message
 
 class EncouragementForm(StandardForm):
@@ -73,7 +73,7 @@ class EncouragementForm(StandardForm):
     person_to = forms.ModelChoiceField(label='', queryset=Profile.objects, widget=forms.HiddenInput())
         
     def clean_message(self):
-        message = self.cleaned_data["message"].strip()
+        message = self.cleaned_data['message'].strip()
         return message
     
 class AddSpecializationForm(StandardForm):
@@ -86,10 +86,11 @@ class AddSpecializationForm(StandardForm):
         except:
             source = "[]"
         super(AddSpecializationForm, self).__init__(*args, **kwargs)
+        self.profile = self.request.user.get_profile()
         self.fields["name"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
     
     def clean_name(self):
-        name = self.cleaned_data["name"].strip()
+        name = self.cleaned_data['name'].strip()
         return name
     
     def clean(self):
@@ -97,9 +98,45 @@ class AddSpecializationForm(StandardForm):
         if self._errors:
             return data
         else:
-            if Specialization.objects.filter(name=data['name']).count() == 0:
+            specialization = Specialization.get_by_name(data['name'])
+            if specialization is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed specialization!' % data['name'])
             else:
-                data['specialization'] = Specialization.objects.filter(name=data['name'])[0]
+                if self.profile.has_specialization(specialization):
+                    raise forms.ValidationError('You have already added this specialization!')
+                else:
+                    data['specialization'] = specialization
+                return data
+            
+class AddSkillForm(StandardForm):
+    
+    name = forms.CharField(max_length=100, label='Skill')
+    
+    def __init__(self, *args, **kwargs):
+        try:
+            source = kwargs.pop('source')
+        except:
+            source = "[]"
+        super(AddSkillForm, self).__init__(*args, **kwargs)
+        self.profile = self.request.user.get_profile()
+        self.fields['name'].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
+    
+    def clean_name(self):
+        name = self.cleaned_data['name'].strip()
+        return name
+    
+    def clean(self):
+        data = self.cleaned_data
+        if self._errors:
+            return data
+        else:
+            skill = Skill.get_by_name(data['name'])
+            if skill is None:
+                raise forms.ValidationError('<strong>%s</strong> is not a listed skill!' % data['name'])
+            else:
+                if self.profile.has_skill(skill):
+                    raise forms.ValidationError('You have already added this skill!')
+                else:
+                    data['skill'] = skill
                 return data
     

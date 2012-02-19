@@ -78,6 +78,24 @@ class Profile(models.Model):
     user_link.allow_tags = True
     user_link.short_description = 'User'
     
+    def add_specialization(self, specialization):
+        assign = SpecializationAssign()
+        assign.specialization = specialization
+        assign.profile = self
+        assign.save()
+        
+    def has_specialization(self, specialization):
+        return SpecializationAssign.objects.filter(specialization=specialization, profile=self).count() > 0
+        
+    def add_skill(self, skill):
+        assign = SkillAssign()
+        assign.skill = skill
+        assign.profile = self
+        assign.save()
+    
+    def has_skill(self, skill):
+        return SkillAssign.objects.filter(skill=skill, profile=self).count() > 0
+    
     class Meta:
         db_table = 'mva_profile'
   
@@ -94,6 +112,17 @@ class Specialization(models.Model):
     
     def __unicode__(self):
         return self.name
+    
+    @staticmethod
+    def exist(name):
+        return Specialization.objects.filter(name=name).count() > 0
+    
+    @staticmethod
+    def get_by_name(name):
+        if Specialization.exist(name):
+            return Specialization.objects.filter(name=name)[0]
+        else:
+            return None
     
     class Meta:
         db_table = 'mva_specialization'
@@ -120,6 +149,17 @@ class Skill(models.Model):
     
     def __unicode__(self):
         return self.name
+    
+    @staticmethod
+    def exist(name):
+        return Skill.objects.filter(name=name).count() > 0
+    
+    @staticmethod
+    def get_by_name(name):
+        if Skill.exist(name):
+            return Skill.objects.filter(name=name)[0]
+        else:
+            return None
     
     class Meta:
         db_table = 'mva_skill'

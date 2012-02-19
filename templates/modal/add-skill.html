@@ -1,0 +1,45 @@
+{% load base_extra %}
+
+<div id="add-skill" class="modal hide fade" style="display: none; ">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h3>Add Skill</h3>
+  </div>
+  <div class="modal-body">
+    <form id="form-add-skill" action="" method="post" class="form-vertical">
+      {% csrf_token %}
+      {% for field in add_skill_form %}
+      <div id="form-add-skill-{{ field.html_name }}" class="control-group">
+        {{ field.label_tag }}
+        <div class="controls">
+          {{ field }}<span class="help-inline"></span>
+        </div>
+      </div>
+      {% endfor %} <div id="form-add-skill-error"></div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a id="add-skill-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_skill();">Add</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	function form_add_skill() {
+		var form_id = 'form-add-skill';
+		form_data = $('#' + form_id).serializeObject(true);
+		$('#add-skill-button').button('loading');
+		Dajaxice.Minerva.account.form_add_skill(Dajax.process, {
+			'form_data' : form_data,
+			'form_id' : form_id
+		});
+	}
+
+	function form_add_skill_callback(data) {
+		$('#add-skill-button').button('reset');
+		if(data.status == 'OK') {
+			$('#add-skill').modal('hide');
+			window.location.reload();
+		}
+	}
+</script>
