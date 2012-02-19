@@ -23,9 +23,9 @@ def bulletin(request):
     
     form = AddCourseForm(request=request, source=source)
     
-    data = {
+    context = {
         'sections': sections,
         'courses': courses,
         'form': form,
     }
-    return render_to_response('bulletin.html', data, context_instance=RequestContext(request))
+    return render_to_response('bulletin.html', context, context_instance=RequestContext(request))

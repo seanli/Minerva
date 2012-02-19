@@ -5,8 +5,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
-from Minerva.account.forms import LoginForm, SignupForm
-from Minerva.core.models import Profile, BadgeAssign, Encouragement
+from Minerva.account.forms import LoginForm, SignupForm, AddSpecializationForm
+from Minerva.core.models import Profile, BadgeAssign, Encouragement, Specialization
 from Minerva.core.utilities import unique_username, get_referrer, set_referrer
 
 def login(request):
@@ -62,13 +62,28 @@ def people(request, username=None):
             user = None
     if user is not None:
         profile = user.get_profile()
-        data = {
+        
+        source = ''
+        specializations = Specialization.objects.all()
+        last = len(specializations) - 1
+        index = 0
+        for specialization in specializations:
+            if (index != last):
+                source += '"%s",' % (specialization.name)
+            else:
+                source += '"%s"' % (specialization.name)
+            index += 1
+        source = '[' + source + ']'
+        add_specialization_form = AddSpecializationForm(request=request, source=source)
+        
+        context = {
             'current_user': user,
             'profile': profile,
             'badges': BadgeAssign.objects.filter(profile=profile),
             'encouragements': Encouragement.objects.filter(person_to=profile).order_by('-sent_time'),
-            'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id)
+            'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id),
+            'add_specialization_form': add_specialization_form
         }
-        return render_to_response('account/people.html', data, context_instance=RequestContext(request))
+        return render_to_response('account/people.html', context, context_instance=RequestContext(request))
     else:
         return HttpResponse('User Not Found!')

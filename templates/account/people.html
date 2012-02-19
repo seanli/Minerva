@@ -39,8 +39,8 @@
         {% for specialization in specializations.all %} <h6>{{ specialization.name }}</h6>
         {% endfor %}
         {% if current_user == user %}
-				<div class="vertical-space"></div>
-				<a data-toggle="modal" href="#add-specialization" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Specialization </a>
+	<div class="vertical-space"></div>
+	<a data-toggle="modal" href="#add-specialization" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Specialization </a>
         {% endif %}
         {% endwith %}
       </div>

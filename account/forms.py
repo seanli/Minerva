@@ -3,7 +3,7 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from Minerva.core.forms import StandardForm
 from Minerva.core.utilities import titlecase
-from Minerva.core.models import Institute, Profile
+from Minerva.core.models import Institute, Profile, Specialization
 from Minerva.core.references import ROLE
 
 class LoginForm(StandardForm):
@@ -75,4 +75,31 @@ class EncouragementForm(StandardForm):
     def clean_message(self):
         message = self.cleaned_data["message"].strip()
         return message
+    
+class AddSpecializationForm(StandardForm):
+    
+    name = forms.CharField(max_length=100, label='Specialization')
+    
+    def __init__(self, *args, **kwargs):
+        try:
+            source = kwargs.pop('source')
+        except:
+            source = "[]"
+        super(AddSpecializationForm, self).__init__(*args, **kwargs)
+        self.fields["name"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
+    
+    def clean_name(self):
+        name = self.cleaned_data["name"].strip()
+        return name
+    
+    def clean(self):
+        data = self.cleaned_data
+        if self._errors:
+            return data
+        else:
+            if Specialization.objects.filter(name=data['name']).count() == 0:
+                raise forms.ValidationError('<strong>%s</strong> is not a listed specialization!' % data['name'])
+            else:
+                data['specialization'] = Specialization.objects.filter(name=data['name'])[0]
+                return data
     

@@ -26,9 +26,9 @@ class AddCourseForm(StandardForm):
         self.fields["title"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
         self.fields["instructor"].queryset = Profile.objects.filter(role='I', institute=self.profile.institute)
         
-    '''def clean_title(self):
-        title = titlecase(self.cleaned_data["title"].strip())
-        return title'''
+    def clean_title(self):
+        title = self.cleaned_data["title"].strip()
+        return title
     
     def clean(self):
         data = self.cleaned_data
