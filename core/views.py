@@ -8,10 +8,10 @@ from Minerva.course.forms import AddCourseForm
 
 @login_required
 def bulletin(request):
-    profile = request.user.get_profile()
-    sections = SectionAssign.objects.filter(profile=profile, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
+    user = request.user
+    sections = SectionAssign.objects.filter(user=user, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
     source = ''
-    courses = Course.objects.filter(institute=profile.institute).order_by('title')
+    courses = Course.objects.filter(institute=user.get_profile().institute).order_by('title')
     last = len(courses) - 1
     index = 0
     for course in courses:

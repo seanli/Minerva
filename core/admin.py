@@ -1,9 +1,16 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth.models import User
 from Minerva.core.models import (Profile, Country, ProvinceState,
     Institute, Contact, Specialization, SpecializationAssign,
     Badge, BadgeAssign, Course, Section,
     SectionAssign, Encouragement, Review, Feedback,
     Skill, SkillAssign, Report)
+
+
+class ProfileInline(admin.StackedInline):
+    model = Profile
+    extra = 0
 
 
 class ContactInline(admin.StackedInline):
@@ -53,11 +60,10 @@ class SectionAssignInline(admin.TabularInline):
     extra = 1
 
 
-class ProfileAdmin(admin.ModelAdmin):
-    inlines = [ContactInline, SpecializationAssignInline, SkillAssignInline, SectionAssignInline, BadgeAssignInline, EncouragementInline, FeedbackInline]
-    list_display = ('__unicode__', 'user_link', 'institute',)
-    list_filter = ('institute',)
-    search_fields = ['user__first_name', 'user__last_name', 'user__username']
+class CustomUserAdmin(UserAdmin):
+    inlines = [ProfileInline, ContactInline, SpecializationAssignInline, SkillAssignInline, BadgeAssignInline, SectionAssignInline, EncouragementInline, FeedbackInline]
+    list_display = ('username', 'email', 'first_name', 'last_name', 'user_role', 'user_institute', 'last_login')
+    list_filter = ('is_staff', 'is_superuser', 'is_active', 'profile__role', 'profile__institute', 'last_login')
 
 
 class CourseAdmin(admin.ModelAdmin):
@@ -79,7 +85,8 @@ class SkillAdmin(admin.ModelAdmin):
     search_fields = ['name']
 
 
-admin.site.register(Profile, ProfileAdmin)
+admin.site.unregister(User)
+admin.site.register(User, CustomUserAdmin)
 admin.site.register(Country)
 admin.site.register(ProvinceState)
 admin.site.register(Institute)

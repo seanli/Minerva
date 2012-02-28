@@ -18,7 +18,7 @@ def form_report(request, form_data, form_id):
         report = Report()
         report.message = message
         if request.user.is_authenticated():
-            report.reporter = request.user.get_profile()
+            report.reporter = request.user
         else:
             report.reporter = None
         report.save()
@@ -41,11 +41,11 @@ def form_encouragement(request, form_data, form_id):
         message = data['message']
         person_to = data['person_to']
         anonymous = data['anonymous']
-        if person_to != request.user.get_profile():
+        if person_to != request.user:
             encouragement = Encouragement()
             encouragement.message = message
             encouragement.person_to = person_to
-            encouragement.person_from = request.user.get_profile()
+            encouragement.person_from = request.user
             encouragement.anonymous = anonymous
             encouragement.sent_time = datetime.now()
             encouragement.save()
@@ -70,8 +70,8 @@ def form_add_specialization(request, form_data, form_id):
         clear_validation(dajax, form, form_id)
         data = form.cleaned_data
         specialization = data['specialization']
-        profile = request.user.get_profile()
-        profile.add_specialization(specialization)
+        user = request.user
+        user.get_profile().add_specialization(specialization)
         dajax.add_data({'status': 'OK'}, 'form_add_specialization_callback')
     else:
         clear_validation(dajax, form, form_id)
@@ -89,8 +89,8 @@ def form_add_skill(request, form_data, form_id):
         clear_validation(dajax, form, form_id)
         data = form.cleaned_data
         skill = data['skill']
-        profile = request.user.get_profile()
-        profile.add_skill(skill)
+        user = request.user
+        user.get_profile().add_skill(skill)
         dajax.add_data({'status': 'OK'}, 'form_add_skill_callback')
     else:
         clear_validation(dajax, form, form_id)

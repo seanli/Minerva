@@ -96,8 +96,8 @@ def people(request, username=None):
         context = {
             'current_user': user,
             'profile': profile,
-            'badges': BadgeAssign.objects.filter(profile=profile),
-            'encouragements': Encouragement.objects.filter(person_to=profile).order_by('-sent_time'),
+            'badges': BadgeAssign.objects.filter(user=user),
+            'encouragements': Encouragement.objects.filter(person_to=user).order_by('-sent_time'),
             'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id),
             'add_specialization_form': add_specialization_form,
             'add_skill_form': add_skill_form

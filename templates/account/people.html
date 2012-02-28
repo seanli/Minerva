@@ -33,7 +33,7 @@
   <div class="span6">
     <div class="row-fluid">
       <div class="span6">
-        {% with specializations=profile.specialization_set %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
+        {% with specializations=user.specialization_set %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
         {% if specializations.count == 0 %} <h6>No Specialization Yet!</h6>
         {% endif %}
         {% for specialization in specializations.all %} <h6>{{ specialization.name }}</h6>
@@ -44,7 +44,7 @@
         {% endwith %}
       </div>
       <div class="span6">
-        {% with skills=profile.skill_set %} <h3>Skill{{ skills.count|pluralize }}:</h3>
+        {% with skills=user.skill_set %} <h3>Skill{{ skills.count|pluralize }}:</h3>
         {% if skills.count == 0 %} <h6>No Skill Yet!</h6>
         {% endif %}
         {% for skill in skills.all %} <h6>{{ skill.name }}</h6>
@@ -71,7 +71,7 @@
         <h6>{{ encouragement.sent_time }}</h6>
         <p>
           <i>"{{ encouragement.message }}"</i>
-        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from }}</a>{% endif %}</small>
+        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
       </blockquote>
       {% endfor %}
       {% endif %}
