@@ -4,8 +4,9 @@ from django.conf import settings
 from Minerva.core.models import Specialization
 from django.core.management.base import NoArgsCommand
 
+
 class Command(NoArgsCommand):
-    
+
     help = "Populates database with specializations."
 
     def handle_noargs(self, **options):

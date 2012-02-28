@@ -3,14 +3,15 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from Minerva.core.forms import StandardForm
 from Minerva.core.utilities import titlecase
-from Minerva.core.models import Institute, Profile, Specialization, Skill, SpecializationAssign, SkillAssign
+from Minerva.core.models import (Institute, Profile, Specialization, Skill)
 from Minerva.core.references import ROLE
 
+
 class LoginForm(StandardForm):
-    
+
     emailname = forms.CharField(max_length=75, label='Email', error_messages={'required': 'Please put your email!'})
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password', error_messages={'required': 'Please put your password!'})
-    
+
     def clean(self):
         data = self.cleaned_data
         if self._errors:
@@ -25,8 +26,9 @@ class LoginForm(StandardForm):
                 data['user'] = user
             return data
 
+
 class SignupForm(StandardForm):
-    
+
     email = forms.EmailField(max_length=75, label='Email')
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')
     password_conf = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Confirm Password')
@@ -34,7 +36,7 @@ class SignupForm(StandardForm):
     last_name = forms.CharField(max_length=30, label='Last Name')
     institute = forms.ModelChoiceField(queryset=Institute.objects, empty_label=None, label='Institute')
     role = forms.ChoiceField(choices=ROLE, label='Who are you?')
-        
+
     def clean_email(self):
         email = self.cleaned_data['email'].lower().strip()
         try:
@@ -49,37 +51,40 @@ class SignupForm(StandardForm):
         if password != password_conf:
             raise forms.ValidationError('Passwords do not match!')
         return password
-    
+
     def clean_first_name(self):
         first_name = titlecase(self.cleaned_data['first_name'].strip())
         return first_name
-    
+
     def clean_last_name(self):
         last_name = titlecase(self.cleaned_data['last_name'].strip())
         return last_name
 
+
 class ReportForm(StandardForm):
-    
+
     message = forms.CharField(label='Please Write Your Report Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
-    
+
     def clean_message(self):
         message = self.cleaned_data['message'].strip()
         return message
 
+
 class EncouragementForm(StandardForm):
-    
+
     message = forms.CharField(label='Please Write Your Encouragement Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
     anonymous = forms.BooleanField(label='Anonymous?', required=False, initial=False)
     person_to = forms.ModelChoiceField(label='', queryset=Profile.objects, widget=forms.HiddenInput())
-        
+
     def clean_message(self):
         message = self.cleaned_data['message'].strip()
         return message
-    
+
+
 class AddSpecializationForm(StandardForm):
-    
+
     name = forms.CharField(max_length=100, label='Specialization')
-    
+
     def __init__(self, *args, **kwargs):
         try:
             source = kwargs.pop('source')
@@ -88,11 +93,11 @@ class AddSpecializationForm(StandardForm):
         super(AddSpecializationForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
         self.fields["name"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
-    
+
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
         return name
-    
+
     def clean(self):
         data = self.cleaned_data
         if self._errors:
@@ -107,11 +112,12 @@ class AddSpecializationForm(StandardForm):
                 else:
                     data['specialization'] = specialization
                 return data
-            
+
+
 class AddSkillForm(StandardForm):
-    
+
     name = forms.CharField(max_length=100, label='Skill')
-    
+
     def __init__(self, *args, **kwargs):
         try:
             source = kwargs.pop('source')
@@ -120,11 +126,11 @@ class AddSkillForm(StandardForm):
         super(AddSkillForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
         self.fields['name'].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
-    
+
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
         return name
-    
+
     def clean(self):
         data = self.cleaned_data
         if self._errors:
@@ -139,4 +145,3 @@ class AddSkillForm(StandardForm):
                 else:
                     data['skill'] = skill
                 return data
-    

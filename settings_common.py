@@ -155,24 +155,24 @@ LOGGING = {
             'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(PROJECT_ROOT, 'logs/minerva.log'),
-            'maxBytes': '16777216', # 16MB
+            'maxBytes': '16777216',
             'formatter': 'verbose',
         }
     },
     'loggers': {
         'django.request': {
             'handlers': ['file'],
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'propagate': True,
         },
         'minerva': {
             'handlers': ['file'],
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'propagate': True,
         },
         'dajaxice': {
             'handlers': ['file'],
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'propagate': True,
         },
     }

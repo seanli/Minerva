@@ -5,6 +5,7 @@ from Minerva.core.models import SectionAssign, Course
 from datetime import datetime
 from Minerva.course.forms import AddCourseForm
 
+
 @login_required
 def bulletin(request):
     profile = request.user.get_profile()
@@ -20,9 +21,9 @@ def bulletin(request):
             source += '"%s"' % (course.title)
         index += 1
     source = '[' + source + ']'
-    
+
     form = AddCourseForm(request=request, source=source)
-    
+
     context = {
         'sections': sections,
         'courses': courses,
