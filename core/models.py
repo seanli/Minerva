@@ -5,6 +5,7 @@ from django.dispatch import receiver
 from django.core.exceptions import ValidationError
 from datetime import datetime
 from Minerva.core.references import ROLE, DEGREE, CATEGORY
+from Minerva.core.utilities import unique_username
 
 
 class Country(models.Model):
@@ -76,6 +77,21 @@ class Profile(models.Model):
 
     def __unicode__(self):
         return "%s" % (self.user.get_full_name())
+
+    @staticmethod
+    def register_user(email, password, first_name, last_name, institute, role):
+        user = User()
+        user.username = unique_username(first_name, last_name)
+        user.email = email
+        user.set_password(password)
+        user.first_name = first_name
+        user.last_name = last_name
+        user.save()
+        profile = Profile()
+        profile.user = user
+        profile.institute = institute
+        profile.role = role
+        profile.save()
 
     def add_specialization(self, specialization):
         assign = SpecializationAssign()

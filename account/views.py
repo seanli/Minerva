@@ -7,7 +7,7 @@ from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
 from Minerva.account.forms import LoginForm, SignupForm, AddSpecializationForm, AddSkillForm
 from Minerva.core.models import Profile, BadgeAssign, Encouragement, Specialization, Skill
-from Minerva.core.utilities import unique_username, get_referrer, set_referrer
+from Minerva.core.utilities import get_referrer, set_referrer
 
 
 def login(request):
@@ -35,18 +35,8 @@ def signup(request):
         form = SignupForm(request.POST)
         if form.is_valid():
             data = form.cleaned_data
-            user = User()
-            user.username = unique_username(data['first_name'], data['last_name'])
-            user.email = data['email']
-            user.set_password(data['password'])
-            user.first_name = data['first_name']
-            user.last_name = data['last_name']
-            user.save()
-            profile = Profile()
-            profile.user = user
-            profile.institute = data['institute']
-            profile.role = data['role']
-            profile.save()
+            Profile.register_user(email=data['email'], password=data['password'], first_name=data['first_name'],
+                last_name=data['last_name'], institute=data['institute'], role=data['role'])
             set_referrer(request, 'signup')
             return HttpResponseRedirect(reverse('login'))
     else:
