@@ -4,6 +4,7 @@ Required Python Modules:
 - South (Database Migration)
 - Dajaxice (AJAX)
 - Dajax (AJAX)
+- Pylint (Python Style Check)
 
 Front-End Components:
 

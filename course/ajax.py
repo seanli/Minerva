@@ -1,8 +1,9 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from Minerva.course.forms import AddCourseForm
-from Minerva.core.models import Section, SectionAssign
+from Minerva.core.models import Section
 from Minerva.core.ajax import clear_validation, show_validation
+
 
 @dajaxice_register
 def form_add_course(request, form_data, form_id):

@@ -9,6 +9,7 @@ from Minerva.account.forms import LoginForm, SignupForm, AddSpecializationForm, 
 from Minerva.core.models import Profile, BadgeAssign, Encouragement, Specialization, Skill
 from Minerva.core.utilities import unique_username, get_referrer, set_referrer
 
+
 def login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
@@ -23,9 +24,11 @@ def login(request):
     return render_to_response('account/login.html',
         {'form': form, 'referrer': referrer}, context_instance=RequestContext(request))
 
+
 def logout(request):
     auth.logout(request)
     return HttpResponseRedirect(reverse('login'))
+
 
 def signup(request):
     if request.method == 'POST':
@@ -51,6 +54,7 @@ def signup(request):
     return render_to_response('account/signup.html',
         {'form': form}, context_instance=RequestContext(request))
 
+
 @login_required
 def people(request, username=None):
     if username == None:
@@ -62,7 +66,7 @@ def people(request, username=None):
             user = None
     if user is not None:
         profile = user.get_profile()
-        
+
         source = ''
         specializations = Specialization.objects.all()
         last = len(specializations) - 1
@@ -75,7 +79,7 @@ def people(request, username=None):
             index += 1
         source = '[' + source + ']'
         add_specialization_form = AddSpecializationForm(request=request, source=source)
-        
+
         source = ''
         skills = Skill.objects.all()
         last = len(skills) - 1
@@ -88,7 +92,7 @@ def people(request, username=None):
             index += 1
         source = '[' + source + ']'
         add_skill_form = AddSkillForm(request=request, source=source)
-        
+
         context = {
             'current_user': user,
             'profile': profile,

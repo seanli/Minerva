@@ -2,9 +2,10 @@ from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.contrib.auth.decorators import login_required
 from Minerva.account.forms import ReportForm, EncouragementForm, AddSpecializationForm, AddSkillForm
-from Minerva.core.models import Report, Encouragement, SpecializationAssign, SkillAssign
+from Minerva.core.models import Report, Encouragement
 from Minerva.core.ajax import clear_validation, show_validation
 from datetime import datetime
+
 
 @dajaxice_register
 def form_report(request, form_data, form_id):
@@ -27,6 +28,7 @@ def form_report(request, form_data, form_id):
         show_validation(dajax, form, form_id)
         dajax.add_data({'status': 'INVALID'}, 'form_report_callback')
     return dajax.json()
+
 
 @dajaxice_register
 @login_required
@@ -58,6 +60,7 @@ def form_encouragement(request, form_data, form_id):
         dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
     return dajax.json()
 
+
 @dajaxice_register
 @login_required
 def form_add_specialization(request, form_data, form_id):
@@ -75,6 +78,7 @@ def form_add_specialization(request, form_data, form_id):
         show_validation(dajax, form, form_id)
         dajax.add_data({'status': 'INVALID'}, 'form_add_specialization_callback')
     return dajax.json()
+
 
 @dajaxice_register
 @login_required

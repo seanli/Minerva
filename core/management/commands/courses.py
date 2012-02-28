@@ -4,8 +4,9 @@ from django.conf import settings
 from Minerva.core.models import Course, Institute
 from django.core.management.base import NoArgsCommand
 
+
 class Command(NoArgsCommand):
-    
+
     help = "Populates database with courses."
 
     def handle_noargs(self, **options):
@@ -26,4 +27,3 @@ class Command(NoArgsCommand):
                 c.description = description
                 c.save()
                 print 'Added: %s' % c.abbrev
-            

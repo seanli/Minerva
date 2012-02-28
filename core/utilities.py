@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 
+
 def titlecase(text):
     words = text.split(' ')
     capitalized_words = []
@@ -8,6 +9,7 @@ def titlecase(text):
         capitalized_words.append(title_case_word)
     merged = ' '.join(capitalized_words)
     return merged
+
 
 def unique_username(first_name, last_name):
     counter = 1
@@ -19,8 +21,10 @@ def unique_username(first_name, last_name):
         counter += 1
     return combined
 
+
 def set_referrer(request, referrer):
     request.session['referrer'] = referrer
+
 
 def get_referrer(request):
     referrer = request.session.get('referrer', '')
