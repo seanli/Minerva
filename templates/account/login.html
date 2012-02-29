@@ -16,7 +16,7 @@
     {% endif %}
     {% for field in form %}
     <div class="control-group{% if field.errors %} error{% endif %}">
-      {{ field.label_tag }}
+      <label for="id_{{ field.name }}" class="control-label"> {{ field.label }} </label>
       <div class="controls">
         {{ field }}<span class="help-inline">{{ field.errors|safe }}</span>
       </div>
