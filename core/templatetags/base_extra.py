@@ -1,8 +1,15 @@
 from django import template
 from datetime import datetime
+from django.conf import settings
 from Minerva.account.forms import ReportForm, EncouragementForm
 
+
 register = template.Library()
+
+
+@register.simple_tag
+def brand_name():
+    return settings.BRAND_NAME
 
 
 @register.simple_tag

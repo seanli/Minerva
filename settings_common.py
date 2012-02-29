@@ -187,3 +187,5 @@ DAJAXICE_DEBUG = True
 DAJAXICE_JS_DOCSTRINGS = True
 
 COMMANDS_ROOT = os.path.join(PROJECT_ROOT, 'core/management/commands/'),
+
+BRAND_NAME = 'Mynodo'
