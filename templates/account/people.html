@@ -39,7 +39,7 @@
         {% for specialization in specializations.all %} <h6>{{ specialization.name }}</h6>
         {% endfor %}
         {% if current_user == user %} <div class="vertical-space"></div>
-        <a data-toggle="modal" href="#add-specialization" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Specialization </a>
+        <a data-toggle="modal" href="#add-specialization" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Specialization </a>
         {% endif %}
         {% endwith %}
       </div>
@@ -50,7 +50,7 @@
         {% for skill in skills.all %} <h6>{{ skill.name }}</h6>
         {% endfor %}
         {% if current_user == user %} <div class="vertical-space"></div>
-        <a data-toggle="modal" href="#add-skill" class="btn btn-small btn-info"><i class="icon-plus icon-white"></i> Add Skill </a>
+        <a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
         {% endif %}
         {% endwith %}
       </div>
@@ -62,7 +62,7 @@
       {% if encouragements.count == 0 %} <h6>No Encouragement Yet!</h6>
       {% endif %}
       {% if current_user != user %} <div class="vertical-space"></div>
-      <a data-toggle="modal" href="#encouragement" class="btn btn-small btn-warning"><i class="icon-pencil icon-white"></i> Write Encouragement </a>
+      <a data-toggle="modal" href="#encouragement" class="btn btn-mini btn-warning"><i class="icon-pencil icon-white"></i> Encouragement </a>
       <div class="vertical-space"></div>
       <div class="vertical-space"></div>
       {% endif %}
