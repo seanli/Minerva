@@ -1,0 +1,132 @@
+.datepicker {
+  background-color: #ffffff;
+  border-color: #999;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  display: none;
+  position: absolute;
+  z-index: 900;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 18px;
+  padding-bottom: 4px;
+  width: 218px;
+  
+  .nav {
+    font-weight: bold;
+    width: 100%;
+    padding: 4px 0;
+    background-color: #f5f5f5;
+    color: #808080;
+    border-bottom: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 1px 0 #ffffff;
+    -moz-box-shadow: inset 0 1px 0 #ffffff;
+    box-shadow: inset 0 1px 0 #ffffff;
+    zoom: 1;
+  }
+  .nav:before, .nav:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    // * For IE6
+    // display: inline;
+  }
+  .nav:after {
+    clear: both;
+  }
+  .nav span {
+    display: block;
+    float: left;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+  }
+  .nav .bg {
+    width: 100%;
+    background-color: #fdf5d9;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .nav .fg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .button {
+    cursor: pointer;
+    padding: 0 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .button:hover {
+    background-color: #808080;
+    color: #ffffff;
+  }
+  .months {
+    float: left;
+    margin-left: 4px;
+  }
+  .months .name {
+    width: 72px;
+    padding: 0;
+  }
+  .years {
+    float: right;
+    margin-right: 4px;
+  }
+  .years .name {
+    width: 36px;
+    padding: 0;
+  }
+  .dow, .days div {
+    float: left;
+    width: 30px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .dow {
+    font-weight: bold;
+    color: #808080;
+  }
+  .calendar {
+    padding: 4px;
+  }
+  .days div {
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .days div:hover {
+    background-color: #0064cd;
+    color: #ffffff;
+  }
+  .overlap {
+    color: #bfbfbf;
+  }
+  .today {
+    background-color: #fee9cc;
+  }
+  .selected {
+    background-color: #bfbfbf;
+    color: #ffffff;
+  }
+}
