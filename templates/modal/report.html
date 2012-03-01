@@ -32,7 +32,7 @@
 		var form_id = 'form-report';
 		form_data = $('#' + form_id).serializeObject(true);
 		$('#send-report-button').button('loading');
-		Dajaxice.Minerva.account.form_report(Dajax.process, {
+		Dajaxice.Minerva.backstage.form_report(Dajax.process, {
 			'form_data' : form_data,
 			'form_id' : form_id
 		});

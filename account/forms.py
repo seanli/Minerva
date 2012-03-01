@@ -3,8 +3,9 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from Minerva.core.forms import StandardForm
 from Minerva.core.utilities import titlecase
-from Minerva.core.models import (Institute, Specialization, Skill)
-from Minerva.core.references import ROLE
+from Minerva.core.models import Institute
+from Minerva.core.constants import ROLE
+from Minerva.account.models import Specialization, Skill
 
 
 class LoginForm(StandardForm):
@@ -59,15 +60,6 @@ class SignupForm(StandardForm):
     def clean_last_name(self):
         last_name = titlecase(self.cleaned_data['last_name'].strip())
         return last_name
-
-
-class ReportForm(StandardForm):
-
-    message = forms.CharField(label='Please Write Your Report Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
-
-    def clean_message(self):
-        message = self.cleaned_data['message'].strip()
-        return message
 
 
 class EncouragementForm(StandardForm):

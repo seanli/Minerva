@@ -1,7 +1,8 @@
 from django import template
 from datetime import datetime
 from django.conf import settings
-from Minerva.account.forms import ReportForm, EncouragementForm
+from Minerva.account.forms import EncouragementForm
+from Minerva.backstage.forms import ReportForm
 
 
 register = template.Library()

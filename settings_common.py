@@ -111,6 +111,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Uncomment the next line to enable the admin:
+    'django.contrib.admin',
+    # Uncomment the next line to enable admin documentation:
+    # 'django.contrib.admindocs',
+    'django.contrib.webdesign',
     'south',
     'dajaxice',
     'dajax',
@@ -118,13 +123,9 @@ INSTALLED_APPS = (
     'Minerva.core.templatetags',
     'Minerva.core.management',
     'Minerva.core.management.commands',
+    'Minerva.backstage',
     'Minerva.course',
     'Minerva.account',
-    # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
-    'django.contrib.webdesign',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -178,7 +179,7 @@ LOGGING = {
     }
 }
 
-AUTH_PROFILE_MODULE = 'core.Profile'
+AUTH_PROFILE_MODULE = 'account.Profile'
 AUTHENTICATION_BACKENDS = ('Minerva.account.backends.EmailAuthBackend',)
 LOGIN_URL = '/login/'
 
