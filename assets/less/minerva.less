@@ -13,10 +13,16 @@
   color: white;
 }
 
-// Reposition Body
+// Page Frame
 body {
-  padding-top: @navbarHeight + 20px;
-  padding-bottom: 20px;
+  padding-top: @navbarHeight;
+  background-image: url("../img/paper.png");
+}
+body #main.container {
+  padding: @gridGutterWidth;
+  //.border-radius(10px);
+  .box-shadow(0 5px 15px fade(@grayLight, 50%));
+  background-color: @white;
 }
 
 // Responsive UI (Last Line)
