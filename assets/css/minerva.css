@@ -44,3 +44,5 @@ table.table thead .sorting_desc_disabled { background: url('../img/sort_desc_dis
 table.dataTable th:active {
 	outline: none;
 }
+
+table.table .dataTables_empty { text-align: center; }
