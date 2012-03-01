@@ -17,6 +17,7 @@ urlpatterns = patterns('',
 
     url(r'^$', 'Minerva.core.views.bulletin', name='bulletin'),
     url(r'', include('Minerva.account.urls')),
+    url(r'', include('Minerva.backstage.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^%s/' % settings.DAJAXICE_MEDIA_PREFIX, include('dajaxice.urls')),
 )

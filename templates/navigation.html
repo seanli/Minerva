@@ -15,8 +15,8 @@
             <a href="{% url people %}"><i class="icon-user icon-white"></i> People</a>
           </li>
           {% if user.is_staff %} <li class="divider-vertical"></li>
-          <li>
-            <a href="{% url bulletin %}admin" target="_blank"><i class="icon-edit icon-white"></i> Admin Panel</a>
+          <li class="{% active request 'backstage' %}">
+            <a href="{% url backstage %}"><i class="icon-leaf icon-white"></i> Backstage</a>
           </li>
           {% endif %}
           {% endif %}

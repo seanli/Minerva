@@ -1,0 +1,37 @@
+// Label Colors
+
+@priority_base: #E60000;
+@priority_step: 13;
+
+.label-highest        { background-color: @priority_base; }
+.label-highest:hover  { background-color: darken(@priority_base, 10%); }
+
+.label-high        { background-color: spin(@priority_base, @priority_step); }
+.label-high:hover  { background-color: darken(spin(@priority_base, @priority_step), 10%); }
+
+.label-normal        { background-color: spin(@priority_base, @priority_step * 2); }
+.label-normal:hover  { background-color: darken(spin(@priority_base, @priority_step * 2), 10%); }
+
+.label-low        { background-color: spin(@priority_base, @priority_step * 3); }
+.label-low:hover  { background-color: darken(spin(@priority_base, @priority_step * 3), 10%); }
+
+.label-lowest        { background-color: spin(@priority_base, @priority_step * 4); }
+.label-lowest:hover  { background-color: darken(spin(@priority_base, @priority_step * 4), 10%); }
+
+.label-bug        { background-color: @red; }
+.label-bug:hover  { background-color: darken(@red, 10%); }
+
+.label-enhancement        { background-color: @blue; }
+.label-enhancement:hover  { background-color: darken(@blue, 10%); }
+
+.label-feature        { background-color: @green; }
+.label-feature:hover  { background-color: darken(@green, 10%); }
+
+.label-task        { background-color: @orange; }
+.label-task:hover  { background-color: darken(@orange, 10%); }
+
+.label-cosmetic        { background-color: @purple; }
+.label-cosmetic:hover  { background-color: darken(@purple, 10%); }
+
+.label-none        { background-color: @grayLight; }
+.label-none:hover  { background-color: darken(@grayLight, 10%); }
