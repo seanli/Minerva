@@ -101,7 +101,7 @@ $(document).ready(function() {
 		"sPaginationType": "bootstrap",
 		"oLanguage": {
 			"sLengthMenu": "_MENU_ records per page",
-			"sEmptyTable": "No tickets...",
+			"sEmptyTable": '<span style="text-align:center">No tickets...</span>',
 			"sInfo": "Showing _START_ to _END_ of _TOTAL_ tickets",
 		},
 		'bLengthChange': false,
