@@ -1,0 +1,53 @@
+// DATATABLE
+// ---------
+
+
+div.dataTables_length {
+  label {
+    float: left;
+    text-align: left;
+  }
+  select {
+    width: 75px;
+  }
+}
+
+div.dataTables_filter label {
+  float: right;
+}
+
+div.dataTables_info {
+  padding-top: 0px;
+}
+
+div.dataTables_paginate {
+  float: right;
+  margin: 0;
+}
+
+table.table {
+  clear: both;
+  margin-bottom: 6px !important;
+  thead {
+    .sorting,
+    .sorting_asc,
+    .sorting_desc,
+    .sorting_asc_disabled,
+    .sorting_desc_disabled {
+      cursor: pointer;
+      *cursor: hand;
+    }
+    .sorting { background: url('../img/sort_both.png') no-repeat center right; }
+    .sorting_asc { background: url('../img/sort_asc.png') no-repeat center right; }
+    .sorting_desc { background: url('../img/sort_desc.png') no-repeat center right; }
+    .sorting_asc_disabled { background: url('../img/sort_asc_disabled.png') no-repeat center right; }
+    .sorting_desc_disabled { background: url('../img/sort_desc_disabled.png') no-repeat center right; }
+  }
+}
+
+table.dataTable th:active {
+  outline: none;
+}
+
+table.table .dataTables_empty { text-align: center; }
+
