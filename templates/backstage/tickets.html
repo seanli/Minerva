@@ -29,7 +29,7 @@
       <tbody>
       	{% for t in tickets %}
         <tr>
-          <td>{{ t.summary }}</td>
+          <td><a href="#" rel="popover" data-content="{{ t.summary }}" data-original-title="Ticket #{{ t.id }}"> #{{ t.id }} </a></td>
           <td><span class="label label-{{ t.get_priority_display|lower }}">{{ t.get_priority_display|upper }}</span></td>
           <td><span class="label label-{{ t.get_type_display|lower }}">{{ t.get_type_display|upper }}</span></td>
           <td><span class="label label-{{ t.get_status_display|lower }}">{{ t.get_status_display|upper }}</span></td>
