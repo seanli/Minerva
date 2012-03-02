@@ -1,0 +1,21 @@
+{% load base_extra %}
+
+<div class="well sidebar-nav">
+  <ul class="nav nav-list">
+    <li class="nav-header">
+      Backstage
+    </li>
+    <li class="{% active request 'backstage|backstage/dashboard' %}">
+      <a href="{% url backstage_dashboard %}"><i class="icon-home"></i> Dashboard</a>
+    </li>
+    <li class="{% active request 'backstage/tickets' %}">
+      <a href="{% url backstage_tickets %}"><i class="icon-tag"></i> Tickets</a>
+    </li>
+    <li>
+      <a href="#"><i class="icon-file"></i> Documents</a>
+    </li>
+    <li>
+      <a href="/admin" target="_blank"><i class="icon-th-list"></i> Admin Panel</a>
+    </li>
+  </ul>
+</div>

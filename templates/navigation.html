@@ -4,18 +4,18 @@
   <div class="navbar-inner">
     <div class="container-fluid">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-      <a class="brand" href="{% url bulletin %}">{% brand_name %}</a>
+      <a class="brand" href="{% url home %}">{% brand_name %}</a>
       <div class="nav-collapse">
         <ul class="nav">
           {% if user.is_authenticated %}
           <li class="{% active request 'bulletin' %}">
             <a href="{% url bulletin %}"><i class="icon-list-alt icon-white"></i> Bulletin</a>
           </li>
-          <li class="{% active request 'people' %}">
+          <li class="{% active request '(people)' %}">
             <a href="{% url people %}"><i class="icon-user icon-white"></i> People</a>
           </li>
           {% if user.is_staff %} <li class="divider-vertical"></li>
-          <li class="{% active request 'backstage' %}">
+          <li class="{% active request '(backstage)' %}">
             <a href="{% url backstage %}"><i class="icon-leaf icon-white"></i> Backstage</a>
           </li>
           {% endif %}

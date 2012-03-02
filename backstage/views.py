@@ -7,9 +7,15 @@ from Minerva.core.decorators import staff_required
 
 @login_required
 @staff_required
-def home(request):
+def dashboard(request):
+    return render_to_response('backstage/dashboard.html', context_instance=RequestContext(request))
+
+
+@login_required
+@staff_required
+def tickets(request):
     tickets = Ticket.objects.all()
     context = {
         'tickets': tickets,
     }
-    return render_to_response('backstage/home.html', context, context_instance=RequestContext(request))
+    return render_to_response('backstage/tickets.html', context, context_instance=RequestContext(request))

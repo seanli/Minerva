@@ -8,31 +8,13 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Backstage</h1>
+  <h1>Tickets</h1>
 </div>
 <div class="row-fluid">
-  <div class="span2">
-    <div class="well sidebar-nav">
-      <ul class="nav nav-list">
-        <li class="nav-header">
-          Backstage
-        </li>
-        <li class="active">
-          <a href="#"><i class="icon-home"></i> Home</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-tag"></i> Tickets</a>
-        </li>
-        <li>
-          <a href="#"><i class="icon-file"></i> Docs</a>
-        </li>
-        <li>
-          <a href="/admin" target="_blank"><i class="icon-cog"></i> Admin</a>
-        </li>
-      </ul>
-    </div><!--/.well -->
-  </div><!--/span-->
-  <div class="span10">
+  <div class="span3">
+    {% include "backstage/sidebar.html" %}
+  </div>
+  <div class="span9">
     <table id="datatable-ticket" class="table table-bordered">
       <thead>
         <tr>
@@ -41,8 +23,6 @@
           <th>Type</th>
           <th>Reporter</th>
           <th>Owner</th>
-          <th>Created Time</th>
-          <th>Modified Time</th>
         </tr>
       </thead>
       <tbody>
@@ -53,8 +33,6 @@
           <td><span class="label label-{{ t.get_type_display|lower }}">{{ t.get_type_display|upper }}</span></td>
           <td>{{ t.reporter.get_full_name }}</td>
           <td>{{ t.owner.get_full_name }}</td>
-          <td>{{ t.created_time }}</td>
-          <td>{{ t.modified_time }}</td>
         </tr>
         {% endfor %}
       </tbody>
