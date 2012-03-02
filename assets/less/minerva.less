@@ -5,6 +5,19 @@
 @import "datepicker.less";
 @import "backstage.less";
 
+// Zoom
+// --------
+// For scaling a HTML component
+.scale(@scale: 1) {
+  zoom: @scale;
+  -moz-transform: scale(@scale);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(@scale);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(@scale);
+  -webkit-transform-origin: 0 0;
+}
+
 .vertical-space {
   height: @gridGutterWidth / 4;
 }
@@ -41,6 +54,9 @@ body #main.container-fluid {
   font-weight: bold;
   text-shadow: 0px 0px 5px @white;
 }
+
+// IFrame
+iframe#admin { width: 110%; height: 700px; border: 1px solid @grayLighter; .scale(0.91); }
 
 // Responsive UI (Last Line)
 @import "responsive.less";

@@ -5,6 +5,7 @@ Required Python Modules:
 - Dajaxice (AJAX)
 - Dajax (AJAX)
 - Pylint (Python Style Check)
+- Docutils (Documentation)
 
 Front-End Components:
 

@@ -14,8 +14,8 @@
     <li>
       <a href="#"><i class="icon-file"></i> Documents</a>
     </li>
-    <li>
-      <a href="/admin" target="_blank"><i class="icon-th-list"></i> Admin Panel</a>
+    <li class="{% active request 'backstage/cms' %}">
+      <a href="{% url backstage_cms %}"><i class="icon-th-list"></i> C.M.S.</a>
     </li>
   </ul>
 </div>

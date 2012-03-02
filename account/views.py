@@ -17,7 +17,8 @@ def login(request):
             data = form.cleaned_data
             user = data['user']
             auth.login(request, user)
-            return HttpResponseRedirect(reverse('bulletin'))
+            redirect_to = request.REQUEST.get('next', reverse('home'))
+            return HttpResponseRedirect(redirect_to)
     else:
         form = LoginForm()
     referrer = get_referrer(request)
