@@ -35,7 +35,9 @@
 		
 		$("#admin").load(function() {
 			frame_location = $(this).contents().get(0).location.href;
-            $.cookie('admin_frame_location', frame_location);
+            		$.cookie('admin_frame_location', frame_location);
+			frame_height = $(this).contents().find("html").height();
+			$(this).height(frame_height * 1.3);
         });
         
         function toggle_admin_view() {
