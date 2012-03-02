@@ -16,15 +16,45 @@
   </div>
   <div class="span9">
 	<iframe id="admin" src="{{ admin_frame_location|safe }}"></iframe>
+	<div id="admin-new-window" class="hero-unit">
+      <h1>Viewport Too Small!</h1>
+      <p>
+        Please click on the button below to open the Content Management System in a new window.
+      </p>
+      <p>
+        <a href="/admin" class="btn btn-large btn-info" target="_blank">Open in New Window</a>
+      </p>
+    </div>
   </div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function() {
+		
+		$('#admin-new-window').hide();
+		
 		$("#admin").load(function() {
 			frame_location = $(this).contents().get(0).location.href;
             $.cookie('admin_frame_location', frame_location);
         });
+        
+        function toggle_admin_view() {
+			if ($(window).width() <= 979) {
+				$('#admin').hide();
+				$('#admin-new-window').show();
+			}
+			else {
+				$('#admin').show();
+				$('#admin-new-window').hide();
+			}
+		}
+		
+        toggle_admin_view();
+		
+        $(window).resize(function() {
+		  toggle_admin_view();
+		});
+		
 	});
 </script>
 
