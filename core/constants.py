@@ -18,7 +18,7 @@ CATEGORY = (
     ('U', 'University'),
 )
 
-# Management
+# Backstage
 
 TICKET_PRIORITY = (
     (0, 'Highest'),
@@ -34,4 +34,12 @@ TICKET_TYPE = (
     ('F', 'Feature'),
     ('T', 'Task'),
     ('C', 'Cosmetic'),
+)
+
+TICKET_STATUS = (
+    ('L', 'Client'),
+    ('N', 'New'),
+    ('A', 'Assigned'),
+    ('C', 'Closed'),
+    ('R', 'Reopened'),
 )
