@@ -15,15 +15,21 @@
 
 // Page Frame
 body {
-  padding-top: @navbarHeight;
+  padding-top: @navbarHeight * 2;
   background-image: url("../img/paper.png");
   background-color: @white;
 }
-body #main.container {
+body #main.container-fluid {
+  margin: 0px auto;
+  max-width: @gridRowWidth;
   padding: @gridGutterWidth;
   .box-shadow(0 25px 50px fade(@grayLight, 50%));
   background-image: url("../img/bg.png");
   background-color: @white;
+}
+.navbar .container-fluid{
+  max-width: @gridRowWidth;
+  margin: 0 auto;
 }
 
 // Typography
@@ -36,4 +42,4 @@ body #main.container {
 }
 
 // Responsive UI (Last Line)
-// @import "responsive.less";
+@import "responsive.less";
