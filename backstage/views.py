@@ -27,9 +27,10 @@ def cms(request):
     admin_frame_location = request.COOKIES.get('admin_frame_location', None)
     # Process iframe URL
     if admin_frame_location is not None:
-        split_location = str(admin_frame_location).replace("%2F", "/").split('/')
+        split_location = str(admin_frame_location).replace("%2F", "/").replace("%3F", "?").replace("%3D", "=").split('/')
         new_location = '/' + ('/').join(split_location[3:])
-        new_location = new_location
+        if '%' in new_location:
+			new_location = '/admin'
     else:
         new_location = '/admin'
     context = {
