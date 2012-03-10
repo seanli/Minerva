@@ -2,6 +2,7 @@ from django.contrib import admin
 from core.models import (Country, ProvinceState,
     Institute, Course, Section, SectionAssign, Review)
 
+
 class ReviewInline(admin.StackedInline):
     model = Review
     extra = 0

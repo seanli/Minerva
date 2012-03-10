@@ -1,8 +1,8 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from Minerva.backstage.models import Ticket
-from Minerva.core.decorators import staff_required
+from backstage.models import Ticket
+from core.decorators import staff_required
 
 
 @login_required
@@ -30,7 +30,7 @@ def cms(request):
         split_location = str(admin_frame_location).replace("%2F", "/").replace("%3F", "?").replace("%3D", "=").split('/')
         new_location = '/' + ('/').join(split_location[3:])
         if '%' in new_location:
-			new_location = '/admin'
+            new_location = '/admin'
     else:
         new_location = '/admin'
     context = {

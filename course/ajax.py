@@ -2,7 +2,7 @@ from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from course.forms import AddCourseForm
 from core.models import Section
-from Minerva.core.ajax import clear_validation, show_validation
+from core.ajax import clear_validation, show_validation
 
 
 @dajaxice_register

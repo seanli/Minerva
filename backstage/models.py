@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from Minerva.core.constants import (TICKET_PRIORITY, TICKET_TYPE, TICKET_STATUS)
+from core.constants import (TICKET_PRIORITY, TICKET_CATEGORY, TICKET_STATUS)
 
 
 class Ticket(models.Model):
@@ -11,7 +11,7 @@ class Ticket(models.Model):
     description = models.TextField(null=True, blank=True)
     status = models.CharField(max_length=1, choices=TICKET_STATUS, default='L')
     priority = models.PositiveIntegerField(choices=TICKET_PRIORITY, null=True, blank=True)
-    type = models.CharField(max_length=1, choices=TICKET_TYPE, null=True, blank=True)
+    category = models.CharField(max_length=1, choices=TICKET_CATEGORY, null=True, blank=True)
     modified_time = models.DateTimeField(auto_now=True)
     created_time = models.DateTimeField(auto_now_add=True)
 

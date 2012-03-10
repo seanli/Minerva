@@ -5,9 +5,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
-from Minerva.account.forms import LoginForm, SignupForm, AddSpecializationForm, AddSkillForm
-from Minerva.account.models import Profile, BadgeAssign, Encouragement, Specialization, Skill
-from Minerva.core.utilities import get_referrer, set_referrer
+from account.forms import LoginForm, SignupForm, AddSpecializationForm, AddSkillForm
+from account.models import Profile, BadgeAssign, Encouragement, Specialization, Skill
+from core.utilities import get_referrer, set_referrer
 
 
 def login(request):

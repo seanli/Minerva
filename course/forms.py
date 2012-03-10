@@ -1,8 +1,8 @@
 from django import forms
 from django.forms import ModelChoiceField
-from Minerva.core.forms import StandardForm
+from core.forms import StandardForm
 from django.contrib.auth.models import User
-from Minerva.core.models import Course, Section
+from core.models import Course, Section
 from datetime import datetime, timedelta
 
 
@@ -13,8 +13,8 @@ class AddCourseForm(StandardForm):
             return obj.get_full_name()
 
     title = forms.CharField(max_length=100, label='Course Title')
-    first_day = forms.DateField(label='First Day', initial=datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
-    last_day = forms.DateField(label='Last Day', initial=(datetime.today() + timedelta(days=1)).strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker':'datepicker'}))
+    first_day = forms.DateField(label='First Day', initial=datetime.today().strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker': 'datepicker'}))
+    last_day = forms.DateField(label='Last Day', initial=(datetime.today() + timedelta(days=1)).strftime('%m/%d/%Y'), widget=forms.DateInput(attrs={'data-datepicker': 'datepicker'}))
     instructor = InstructorChoiceField(label='Instructor', queryset=None)
 
     def __init__(self, *args, **kwargs):
@@ -24,7 +24,7 @@ class AddCourseForm(StandardForm):
             source = "[]"
         super(AddCourseForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
-        self.fields["title"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
+        self.fields["title"].widget = forms.TextInput(attrs={'data-provide': 'typeahead', 'data-items': '7', 'autocomplete': 'off', 'data-source': source})
         self.fields["instructor"].queryset = User.objects.filter(profile__role='I', profile__institute=self.profile.institute)
 
     def clean_title(self):

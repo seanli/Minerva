@@ -1,11 +1,11 @@
 from django import forms
 from django.contrib import auth
 from django.contrib.auth.models import User
-from Minerva.core.forms import StandardForm
-from Minerva.core.utilities import titlecase
-from Minerva.core.models import Institute
-from Minerva.core.constants import ROLE
-from Minerva.account.models import Specialization, Skill
+from core.forms import StandardForm
+from core.utilities import titlecase
+from core.models import Institute
+from core.constants import ROLE
+from account.models import Specialization, Skill
 
 
 class LoginForm(StandardForm):
@@ -64,7 +64,7 @@ class SignupForm(StandardForm):
 
 class EncouragementForm(StandardForm):
 
-    message = forms.CharField(label='Please Write Your Encouragement Below...', widget=forms.Textarea(attrs={'style':'width:98%;resize:vertical'}))
+    message = forms.CharField(label='Please Write Your Encouragement Below...', widget=forms.Textarea(attrs={'style': 'width:98%;resize:vertical'}))
     anonymous = forms.BooleanField(label='Anonymous?', required=False, initial=False)
     person_to = forms.ModelChoiceField(label='', queryset=User.objects, widget=forms.HiddenInput())
 
@@ -84,7 +84,7 @@ class AddSpecializationForm(StandardForm):
             source = "[]"
         super(AddSpecializationForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
-        self.fields["name"].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
+        self.fields["name"].widget = forms.TextInput(attrs={'data-provide': 'typeahead', 'data-items': '7', 'autocomplete': 'off', 'data-source': source})
 
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
@@ -117,7 +117,7 @@ class AddSkillForm(StandardForm):
             source = "[]"
         super(AddSkillForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
-        self.fields['name'].widget = forms.TextInput(attrs={'data-provide':'typeahead', 'data-items':'7', 'autocomplete':'off', 'data-source':source})
+        self.fields['name'].widget = forms.TextInput(attrs={'data-provide': 'typeahead', 'data-items': '7', 'autocomplete': 'off', 'data-source': source})
 
     def clean_name(self):
         name = self.cleaned_data['name'].strip()

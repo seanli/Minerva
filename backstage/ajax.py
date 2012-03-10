@@ -1,8 +1,8 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
-from Minerva.backstage.forms import ReportForm
-from Minerva.backstage.models import Ticket
-from Minerva.core.ajax import clear_validation, show_validation
+from backstage.forms import ReportForm
+from backstage.models import Ticket
+from core.ajax import clear_validation, show_validation
 
 
 @dajaxice_register

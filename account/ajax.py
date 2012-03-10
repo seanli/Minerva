@@ -1,9 +1,9 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.contrib.auth.decorators import login_required
-from Minerva.account.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
-from Minerva.account.models import Encouragement
-from Minerva.core.ajax import clear_validation, show_validation
+from account.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
+from account.models import Encouragement
+from core.ajax import clear_validation, show_validation
 from datetime import datetime
 
 

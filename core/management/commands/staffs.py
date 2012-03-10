@@ -2,8 +2,9 @@ import os
 from django.utils import simplejson
 from django.conf import settings
 from django.contrib.auth.models import User
-from Minerva.core.models import Profile, Institute
-from Minerva.core.utilities import unique_username
+from account.models import Profile
+from core.models import Institute
+from core.utilities import unique_username
 from django.core.management.base import NoArgsCommand
 
 

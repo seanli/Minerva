@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
-from Minerva.account.models import (Profile, Contact, Specialization,
+from account.models import (Profile, Contact, Specialization,
     SpecializationAssign, Badge, BadgeAssign,
     Encouragement, Feedback, Skill, SkillAssign)
-from Minerva.core.models import Section, SectionAssign
+from core.models import Section, SectionAssign
 
 
 class ProfileInline(admin.StackedInline):

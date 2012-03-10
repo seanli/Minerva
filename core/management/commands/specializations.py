@@ -1,7 +1,7 @@
 import os
 from django.utils import simplejson
 from django.conf import settings
-from Minerva.core.models import Specialization
+from account.models import Specialization
 from django.core.management.base import NoArgsCommand
 
 

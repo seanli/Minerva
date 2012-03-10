@@ -4,9 +4,9 @@ from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
 from datetime import datetime
-from Minerva.core.models import Institute, SectionAssign, ProvinceState
-from Minerva.core.constants import ROLE, DEGREE
-from Minerva.core.utilities import unique_username
+from core.models import Institute, SectionAssign, ProvinceState
+from core.constants import ROLE, DEGREE
+from core.utilities import unique_username
 
 
 @receiver(pre_save, sender=User)

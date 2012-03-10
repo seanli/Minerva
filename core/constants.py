@@ -28,7 +28,7 @@ TICKET_PRIORITY = (
     (4, 'Lowest'),
 )
 
-TICKET_TYPE = (
+TICKET_CATEGORY = (
     ('B', 'Bug'),
     ('E', 'Enhancement'),
     ('F', 'Feature'),
