@@ -22,24 +22,41 @@
           <th>Priority</th>
           <th>Category</th>
           <th>Status</th>
-          <th>Reporter</th>
-          <th>Owner</th>
         </tr>
       </thead>
       <tbody>
       	{% for t in tickets %}
         <tr>
-          <td><a href="#" rel="popover" data-content="{{ t.summary }}" data-original-title="Ticket #{{ t.id }}"> #{{ t.id }} </a></td>
+          <td><a href="#"> #{{ t.id }} - {{ t.summary }}</a></td>
           <td><span class="label label-{{ t.get_priority_display|lower }}">{{ t.get_priority_display|upper }}</span></td>
           <td><span class="label label-{{ t.get_category_display|lower }}">{{ t.get_category_display|upper }}</span></td>
           <td><span class="label label-{{ t.get_status_display|lower }}">{{ t.get_status_display|upper }}</span></td>
-          <td>{{ t.reporter.get_full_name }}</td>
-          <td>{{ t.owner.get_full_name }}</td>
         </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	/* Table initialisation */
+	$('#datatable-ticket').dataTable( {
+		"sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
+		"sPaginationType": "bootstrap",
+		"oLanguage": {
+			"sLengthMenu": "_MENU_ tickets per page",
+			"sEmptyTable": 'No tickets...',
+			"sInfo": "Showing _START_ to _END_ of _TOTAL_ tickets",
+			"sInfoEmpty": "Showing 0 to 0 of 0 tickets",
+			"sInfoFiltered": "(filtered from _MAX_ total tickets)",
+			"sZeroRecords": "No matching tickets...",
+		},
+		'bLengthChange': false,
+		'bFilter': false,
+		'iDisplayLength': 10,
+	});
+});
+</script>
 
 {% endblock %}

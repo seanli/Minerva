@@ -93,22 +93,3 @@ $.extend( $.fn.dataTableExt.oPagination, {
 		}
 	}
 } );
-
-$(document).ready(function() {
-	/* Table initialisation */
-	$('#datatable-ticket').dataTable( {
-		"sDom": "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
-		"sPaginationType": "bootstrap",
-		"oLanguage": {
-			"sLengthMenu": "_MENU_ tickets per page",
-			"sEmptyTable": 'No tickets...',
-			"sInfo": "Showing _START_ to _END_ of _TOTAL_ tickets",
-			"sInfoEmpty": "Showing 0 to 0 of 0 tickets",
-			"sInfoFiltered": "(filtered from _MAX_ total tickets)",
-			"sZeroRecords": "No matching tickets...",
-		},
-		'bLengthChange': false,
-		'bFilter': false,
-		'iDisplayLength': 10,
-	});
-});
