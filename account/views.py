@@ -47,7 +47,7 @@ def signup(request):
 
 
 @login_required
-def people(request, username=None):
+def crowd(request, username=None):
     if username == None:
         user = request.user
     else:
@@ -93,6 +93,6 @@ def people(request, username=None):
             'add_specialization_form': add_specialization_form,
             'add_skill_form': add_skill_form
         }
-        return render_to_response('account/people.html', context, context_instance=RequestContext(request))
+        return render_to_response('account/crowd.html', context, context_instance=RequestContext(request))
     else:
         return HttpResponse('User Not Found!')

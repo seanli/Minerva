@@ -11,8 +11,8 @@
           <li class="{% active request 'bulletin' %}">
             <a href="{% url bulletin %}"><i class="icon-list-alt icon-white"></i> Bulletin</a>
           </li>
-          <li class="{% active request '(people)' %}">
-            <a href="{% url people %}"><i class="icon-user icon-white"></i> People</a>
+          <li class="{% active request '(crowd)' %}">
+            <a href="{% url crowd %}"><i class="icon-user icon-white"></i> Crowd</a>
           </li>
           {% if user.is_staff %} <li class="divider-vertical"></li>
           <li class="{% active request '(backstage)' %}">

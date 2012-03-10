@@ -67,7 +67,7 @@
 				<h6>{{ encouragement.sent_time }}</h6>
 				<p>
 					<i>"{{ encouragement.message }}"</i>
-				</p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url people %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
+				</p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url crowd %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
 			</blockquote>
 			{% empty %}
 			<h6>No Encouragement Yet!</h6>
@@ -87,7 +87,7 @@
 			<div class="vertical-space"></div>
 			{% for p in related %}
 			<div class="well">
-				<h5><a href="{% url people %}{{ p.user.username }}">{{ p }}</a></h5>
+				<h5><a href="{% url crowd %}{{ p.user.username }}">{{ p }}</a></h5>
 			</div>
 			{% endfor %}
 		</div>
