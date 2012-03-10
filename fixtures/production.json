@@ -44,24 +44,6 @@
         }
     }, 
     {
-        "pk": 8, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "sling", 
-            "first_name": "Sam", 
-            "last_name": "Ling", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-02-13 21:32:52", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$726ff$f07ee13bc5f11d3e3656a5a943165800700fd901", 
-            "email": "mail@thling.com", 
-            "date_joined": "2012-02-13 21:32:45"
-        }
-    }, 
-    {
         "pk": 7, 
         "model": "auth.user", 
         "fields": {
@@ -107,7 +89,7 @@
             "is_active": true, 
             "is_superuser": false, 
             "is_staff": false, 
-            "last_login": "2012-02-29 23:12:45", 
+            "last_login": "2012-03-01 02:55:01", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$c102b$83819b2f4521f69cf75c61ea7198f53fecf042f1", 
@@ -116,181 +98,39 @@
         }
     }, 
     {
+        "pk": 8, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sling", 
+            "first_name": "Sam", 
+            "last_name": "Ling", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-03-08 22:58:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$726ff$f07ee13bc5f11d3e3656a5a943165800700fd901", 
+            "email": "mail@thling.com", 
+            "date_joined": "2012-02-13 21:32:45"
+        }
+    }, 
+    {
         "pk": 2, 
         "model": "auth.user", 
         "fields": {
             "username": "sli", 
-            "first_name": "Shang", 
+            "first_name": "Sean", 
             "last_name": "Li", 
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-02-29 23:14:15", 
+            "last_login": "2012-03-09 20:10:12", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
             "email": "s67li@uwaterloo.ca", 
             "date_joined": "2012-02-08 00:12:47"
-        }
-    }, 
-    {
-        "pk": "9d9d71a99f2a76a7df82450e860e0d4b", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-29 03:08:01", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "3300c82c959ceac17733d636cf96de26", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-23 04:07:35", 
-            "session_data": "Nzg2MTg2Y2M4NjM1MTMzZmIzOWRmNGNiZDkzOTVjODQ5MmI1YmIyMzqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLA3Uu\n"
-        }
-    }, 
-    {
-        "pk": "824ba9f78e48785d43d88913db0f4be4", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-24 13:21:05", 
-            "session_data": "OWJiNTAyMmRlZjU4ZGNkMTZiY2YwOGIzNWJlNGM5NzZjNDRhZDI4OTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLB3Uu\n"
-        }
-    }, 
-    {
-        "pk": "da25a870768f3d260ea96cc99f936dc3", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-22 00:23:39", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "1bcf286580dfc4fd34c0b95bddd5aa81", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-22 00:09:17", 
-            "session_data": "ZjVkMDhjZDE5MzY2NTlmY2UyZWY5OTQwMGQ2YjFhZjdhYWQxODUwMjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
-        }
-    }, 
-    {
-        "pk": "1626243a9d6c354d085304db91783a0b", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-22 00:32:37", 
-            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
-        }
-    }, 
-    {
-        "pk": "475e9658dc34425b03a46517be4f94fd", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-24 22:23:18", 
-            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
-        }
-    }, 
-    {
-        "pk": "e362389c99b2f7034947320a6cc06cc7", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-24 19:26:02", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "ee26bba88d6b3b458e6f2b8b9e66bf85", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-29 17:29:32", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "25889993471f19b6ae9ba143736fe1ae", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-22 15:00:34", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "87ad364097d3361616de26be45efff0a", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-23 04:09:05", 
-            "session_data": "NjUwMTY0MjlmZDRiN2E4YTc3ZmFmYTdhMjVkZTBkNDA5MGJmOWFkNzqAAn1xAVUKdGVzdGNvb2tp\nZXECVQZ3b3JrZWRxA3Mu\n"
-        }
-    }, 
-    {
-        "pk": "17985ce2d2a21cb731f401e84d508ff1", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-22 21:55:35", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "3f35b75252c0f178bffd3837441a7818", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-23 04:12:13", 
-            "session_data": "NjUwMTY0MjlmZDRiN2E4YTc3ZmFmYTdhMjVkZTBkNDA5MGJmOWFkNzqAAn1xAVUKdGVzdGNvb2tp\nZXECVQZ3b3JrZWRxA3Mu\n"
-        }
-    }, 
-    {
-        "pk": "0fa653268e4f2ec02eee6835135b55cd", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-03-01 01:58:27", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "7a303a78527530742d991eacccfa47c6", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-28 13:39:36", 
-            "session_data": "NmVhYzRiOGNkZGZmMGUzOWYzZjg1ZjgyMzRlN2ZiZTRhMjgzODMwZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLCXUu\n"
-        }
-    }, 
-    {
-        "pk": "2615c4d9f251ebd71705765d438f94ae", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-24 01:13:29", 
-            "session_data": "Nzc2ZWU1ZjhkNjYzNTdhODk0MzBkNjRiNzhmMDJkZjE2ZTcxOTQ5NjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLBnUu\n"
-        }
-    }, 
-    {
-        "pk": "01f890fd26e10fd68e797b75a0fd1e11", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-02-27 21:32:52", 
-            "session_data": "OTJiMmZhMWIxOWMyYjVkZmEzMDE3OTNlYzJhODQxYjM5YjllNDIwZjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLCHUu\n"
-        }
-    }, 
-    {
-        "pk": "b1d5a9e5a02a263309dd8aca7a4ac7a9", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-03-06 17:15:33", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "82e6ce820cb8ac7530cc5c3a7df91b0f", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-03-13 03:28:24", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
-        }
-    }, 
-    {
-        "pk": "2c705c64cd7eb06bb87e9d07b473b29b", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-03-14 23:14:15", 
-            "session_data": "NTQ0ZmYzN2JiYmMwMzEwMmUwMDdiNTE4NzEzMzAxN2IyYTU1ODI3MDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlNaW5lcnZhLmFjY291bnQuYmFja2VuZHMuRW1haWxBdXRoQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAnUu\n"
         }
     }, 
     {
@@ -524,6 +364,24 @@
             "applied": "2012-02-28 07:33:29", 
             "app_name": "core", 
             "migration": "0019_auto__del_field_specializationassign_profile__add_field_specialization"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-02 10:26:25", 
+            "app_name": "backstage", 
+            "migration": "0004_auto__add_field_ticket_status"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-10 05:52:24", 
+            "app_name": "backstage", 
+            "migration": "0005_auto__del_field_ticket_type__add_field_ticket_category__chg_field_tick"
         }
     }, 
     {
@@ -2554,6 +2412,18 @@
         }
     }, 
     {
+        "pk": 136, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An introduction to colour perception, colorimetry and colour discrimination. Characteristics of congenital and acquired colour vision deficiencies, colour vision test design and patient management.", 
+            "title": "Visual Perception 3:Colour Vision", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "OPTOM 339"
+        }
+    }, 
+    {
         "pk": 3627, 
         "model": "core.course", 
         "fields": {
@@ -3019,6 +2889,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PHARM 466"
+        }
+    }, 
+    {
+        "pk": 219, 
+        "model": "core.course", 
+        "fields": {
+            "description": "For a current list of offerings see the Undergraduate Officer. ", 
+            "title": "Special Topics in Biochemistry", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 430"
+        }
+    }, 
+    {
+        "pk": 2988, 
+        "model": "core.course", 
+        "fields": {
+            "description": "", 
+            "title": "Studies in 19th Century American Literature", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 755"
         }
     }, 
     {
@@ -3514,6 +3408,30 @@
         }
     }, 
     {
+        "pk": 221, 
+        "model": "core.course", 
+        "fields": {
+            "description": "For a current list of offerings see the Undergraduate Officer. ", 
+            "title": "Special Topics in Inorganic Chemistry", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 410"
+        }
+    }, 
+    {
+        "pk": 223, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Only for exchange students.", 
+            "title": "Research Project 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 392B"
+        }
+    }, 
+    {
         "pk": 81, 
         "model": "core.course", 
         "fields": {
@@ -3691,6 +3609,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PHARM 141"
+        }
+    }, 
+    {
+        "pk": 222, 
+        "model": "core.course", 
+        "fields": {
+            "description": "For a current list of offerings see the Undergraduate Officer. [Formerly CHEM 425. Offered: F,W.]", 
+            "title": "Special Topics in Analytical Chem", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 420"
         }
     }, 
     {
@@ -3907,6 +3837,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PDPHRM 3"
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Spectacle frame materials. Fitting and adjusting techniques. Selection of lens design. Lenses for high myopia. Dispensing of eye protectors. Optics of low vision aids. Patient counselling and management of dispensing problems. Laboratories provide experience in practical aspects of ophthalmic dispensing.", 
+            "title": "Ophthalmic Optics 3", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "OPTOM 346"
+        }
+    }, 
+    {
+        "pk": 1393, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The sociological analysis of the behaviour of crowds, mobs, publics and related phenomena and their relationships to social organization and social change.", 
+            "title": "Collective Behaviour", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SOC 237"
         }
     }, 
     {
@@ -4162,30 +4116,6 @@
         }
     }, 
     {
-        "pk": 134, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Spectacle frame materials. Fitting and adjusting techniques. Selection of lens design. Lenses for high myopia. Dispensing of eye protectors. Optics of low vision aids. Patient counselling and management of dispensing problems. Laboratories provide experience in practical aspects of ophthalmic dispensing.", 
-            "title": "Ophthalmic Optics 3", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "OPTOM 346"
-        }
-    }, 
-    {
-        "pk": 1393, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The sociological analysis of the behaviour of crowds, mobs, publics and related phenomena and their relationships to social organization and social change.", 
-            "title": "Collective Behaviour", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SOC 237"
-        }
-    }, 
-    {
         "pk": 135, 
         "model": "core.course", 
         "fields": {
@@ -4195,18 +4125,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "OPTOM 342B"
-        }
-    }, 
-    {
-        "pk": 136, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An introduction to colour perception, colorimetry and colour discrimination. Characteristics of congenital and acquired colour vision deficiencies, colour vision test design and patient management.", 
-            "title": "Visual Perception 3:Colour Vision", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "OPTOM 339"
         }
     }, 
     {
@@ -4510,6 +4428,18 @@
         }
     }, 
     {
+        "pk": 217, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Nitrogen fixation. Assimilation of nitrogen. Amino acid metabolism. Metabolic regulation. Proteolytic enzymes, ubiquitin. Blood coagulation. Signal transduction and amplification. Biochemistry of nitric oxide. Biochemistry of vision. [Offered: W]", 
+            "title": "Advanced Biochemistry", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 433"
+        }
+    }, 
+    {
         "pk": 160, 
         "model": "core.course", 
         "fields": {
@@ -4738,30 +4668,6 @@
         }
     }, 
     {
-        "pk": 219, 
-        "model": "core.course", 
-        "fields": {
-            "description": "For a current list of offerings see the Undergraduate Officer. ", 
-            "title": "Special Topics in Biochemistry", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 430"
-        }
-    }, 
-    {
-        "pk": 2988, 
-        "model": "core.course", 
-        "fields": {
-            "description": "", 
-            "title": "Studies in 19th Century American Literature", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 755"
-        }
-    }, 
-    {
         "pk": 178, 
         "model": "core.course", 
         "fields": {
@@ -4963,6 +4869,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "EARTH 270"
+        }
+    }, 
+    {
+        "pk": 220, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Properties and metabolism of porphyrins, purines, pyrimidines and biogenic amines. Biosynthesis and mode of action of selected cofactors. Structure-function relationships of enzymes. Regulation of enzyme activity. [Offered: F]", 
+            "title": "Metabolism 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 432"
         }
     }, 
     {
@@ -5203,66 +5121,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "CHEM 460"
-        }
-    }, 
-    {
-        "pk": 217, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Nitrogen fixation. Assimilation of nitrogen. Amino acid metabolism. Metabolic regulation. Proteolytic enzymes, ubiquitin. Blood coagulation. Signal transduction and amplification. Biochemistry of nitric oxide. Biochemistry of vision. [Offered: W]", 
-            "title": "Advanced Biochemistry", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 433"
-        }
-    }, 
-    {
-        "pk": 220, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Properties and metabolism of porphyrins, purines, pyrimidines and biogenic amines. Biosynthesis and mode of action of selected cofactors. Structure-function relationships of enzymes. Regulation of enzyme activity. [Offered: F]", 
-            "title": "Metabolism 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 432"
-        }
-    }, 
-    {
-        "pk": 221, 
-        "model": "core.course", 
-        "fields": {
-            "description": "For a current list of offerings see the Undergraduate Officer. ", 
-            "title": "Special Topics in Inorganic Chemistry", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 410"
-        }
-    }, 
-    {
-        "pk": 222, 
-        "model": "core.course", 
-        "fields": {
-            "description": "For a current list of offerings see the Undergraduate Officer. [Formerly CHEM 425. Offered: F,W.]", 
-            "title": "Special Topics in Analytical Chem", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 420"
-        }
-    }, 
-    {
-        "pk": 223, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Only for exchange students.", 
-            "title": "Research Project 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 392B"
         }
     }, 
     {
@@ -5551,6 +5409,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "EARTH 305"
+        }
+    }, 
+    {
+        "pk": 1149, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Reinforced concrete members and structures. Torsion. Slender columns, walls, continuous beams, floor systems. Prestressed concrete. [Offered: S]", 
+            "title": "Structural Concrete Design 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CIVE 414"
         }
     }, 
     {
@@ -5875,6 +5745,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "CHEM 120L"
+        }
+    }, 
+    {
+        "pk": 2137, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An advanced level course intended to continue intensive oral and aural skill development.", 
+            "title": "Advanced Spoken French 3", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FR 300A"
         }
     }, 
     {
@@ -6310,6 +6192,30 @@
         }
     }, 
     {
+        "pk": 333, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course provides an overview of the dynamic interactions among microbes, plants, animals and their physical environment with emphasis on ecosystem structure and function. Topics include the hydrological cycle, biogeochemical cycling, ecological energetics, roles of population and community interactions, paleoecology and current topics in ecosystem science. [Offered: F]", 
+            "title": "Ecosystem Ecology", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "BIOL 350"
+        }
+    }, 
+    {
+        "pk": 2174, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Special topics will be announced from year to year. ", 
+            "title": "Special Topics in Film", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FINE 357R"
+        }
+    }, 
+    {
         "pk": 310, 
         "model": "core.course", 
         "fields": {
@@ -6574,15 +6480,27 @@
         }
     }, 
     {
-        "pk": 333, 
+        "pk": 383, 
         "model": "core.course", 
         "fields": {
-            "description": "This course provides an overview of the dynamic interactions among microbes, plants, animals and their physical environment with emphasis on ecosystem structure and function. Topics include the hydrological cycle, biogeochemical cycling, ecological energetics, roles of population and community interactions, paleoecology and current topics in ecosystem science. [Offered: F]", 
-            "title": "Ecosystem Ecology", 
+            "description": "Review of basic probability. Generating functions. Theory of recurrent events. Markov chains, Markov processes, and their applications. [Offered: F,W,S]", 
+            "title": "Applied Probability", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "BIOL 350"
+            "abbrev": "STAT 333"
+        }
+    }, 
+    {
+        "pk": 2175, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Selected topics in German film. ", 
+            "title": "Topics in German Film", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GER 359"
         }
     }, 
     {
@@ -7162,18 +7080,6 @@
         }
     }, 
     {
-        "pk": 383, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Review of basic probability. Generating functions. Theory of recurrent events. Markov chains, Markov processes, and their applications. [Offered: F,W,S]", 
-            "title": "Applied Probability", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "STAT 333"
-        }
-    }, 
-    {
         "pk": 384, 
         "model": "core.course", 
         "fields": {
@@ -7459,6 +7365,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PMATH 440"
+        }
+    }, 
+    {
+        "pk": 537, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An in-depth examination of the origins of mathematics, beginning with examples of Babylonian mathematics. Topics may include Pythagorean triples, solution of equations, estimation of pi, duplication of the cube, trisection of an angle, the Fibonacci sequence, the origins of calculus. ", 
+            "title": "History of Mathematics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CO 480"
         }
     }, 
     {
@@ -8266,6 +8184,18 @@
         }
     }, 
     {
+        "pk": 560, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A first course in computational optimization. Linear optimization, the simplex method, implementation issues, duality theory. Introduction to computational discrete and continuous optimization. [Offered: F,S]", 
+            "title": "Computational Optimization", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CO 352"
+        }
+    }, 
+    {
         "pk": 473, 
         "model": "core.course", 
         "fields": {
@@ -8950,18 +8880,6 @@
         }
     }, 
     {
-        "pk": 537, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An in-depth examination of the origins of mathematics, beginning with examples of Babylonian mathematics. Topics may include Pythagorean triples, solution of equations, estimation of pi, duplication of the cube, trisection of an angle, the Fibonacci sequence, the origins of calculus. ", 
-            "title": "History of Mathematics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CO 480"
-        }
-    }, 
-    {
         "pk": 538, 
         "model": "core.course", 
         "fields": {
@@ -9202,18 +9120,6 @@
         }
     }, 
     {
-        "pk": 560, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A first course in computational optimization. Linear optimization, the simplex method, implementation issues, duality theory. Introduction to computational discrete and continuous optimization. [Offered: F,S]", 
-            "title": "Computational Optimization", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CO 352"
-        }
-    }, 
-    {
         "pk": 561, 
         "model": "core.course", 
         "fields": {
@@ -9442,6 +9348,18 @@
         }
     }, 
     {
+        "pk": 620, 
+        "model": "core.course", 
+        "fields": {
+            "description": "These courses allow for additions to the program on a short-term basis, and for the development of future permanent courses.", 
+            "title": "Special Topics in Planning", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PLAN 474"
+        }
+    }, 
+    {
         "pk": 578, 
         "model": "core.course", 
         "fields": {
@@ -9655,6 +9573,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "AMATH 250"
+        }
+    }, 
+    {
+        "pk": 677, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Individual study of specific topics not covered in other courses. Students must not register for this course until a faculty member has agreed to supervise the study and the student has developed a brief outline to be filed with the Associate Chair, Undergraduate Studies. ", 
+            "title": "Independent Study of Selected Topics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GEOG 475"
         }
     }, 
     {
@@ -9946,18 +9876,6 @@
         }
     }, 
     {
-        "pk": 620, 
-        "model": "core.course", 
-        "fields": {
-            "description": "These courses allow for additions to the program on a short-term basis, and for the development of future permanent courses.", 
-            "title": "Special Topics in Planning", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PLAN 474"
-        }
-    }, 
-    {
         "pk": 621, 
         "model": "core.course", 
         "fields": {
@@ -10159,6 +10077,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PLAN 300"
+        }
+    }, 
+    {
+        "pk": 1151, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Structural steel members. Limit states design, loads, materials. Design of tension and compression members, beams and beam-columns. Plate girders. Connections. Fatigue. [Offered: S]", 
+            "title": "Structural Steel Design", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CIVE 413"
         }
     }, 
     {
@@ -10618,18 +10548,6 @@
         }
     }, 
     {
-        "pk": 677, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Individual study of specific topics not covered in other courses. Students must not register for this course until a faculty member has agreed to supervise the study and the student has developed a brief outline to be filed with the Associate Chair, Undergraduate Studies. ", 
-            "title": "Independent Study of Selected Topics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GEOG 475"
-        }
-    }, 
-    {
         "pk": 678, 
         "model": "core.course", 
         "fields": {
@@ -10867,6 +10785,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "GEOG 360"
+        }
+    }, 
+    {
+        "pk": 1152, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Advanced structural analysis; linear and nonlinear behaviour. Computer applications. [Offered: S]", 
+            "title": "Structural Analysis 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CIVE 403"
         }
     }, 
     {
@@ -11590,6 +11520,18 @@
         }
     }, 
     {
+        "pk": 854, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Introduces students to the requirements definition phase of software development: Models, notations, and processes for software requirements identification, representation, analysis, and validation. Cost estimation from early documents and specifications. ", 
+            "title": "Software Requirements Specification and Analysis", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SE 463"
+        }
+    }, 
+    {
         "pk": 764, 
         "model": "core.course", 
         "fields": {
@@ -12190,6 +12132,18 @@
         }
     }, 
     {
+        "pk": 1445, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course introduces students to special topics in the history of sexuality such as homosexuality, family, or erotica and pornography. ", 
+            "title": "History of Sexuality: Special Topics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SMF 319"
+        }
+    }, 
+    {
         "pk": 811, 
         "model": "core.course", 
         "fields": {
@@ -12403,6 +12357,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SYDE 281"
+        }
+    }, 
+    {
+        "pk": 903, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Gradient, Divergence and Curl: Applications. Line and Surface Integrals. Green's, Gauss', and Stokes' Theorems: Applications to electromagnetism and fluid mechanics. Numerical solution of partial differential equations. [Offered: S]", 
+            "title": "Advanced Calculus 2 for Nanotechnology Engineering", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MATH 212N"
         }
     }, 
     {
@@ -12658,18 +12624,6 @@
         }
     }, 
     {
-        "pk": 854, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Introduces students to the requirements definition phase of software development: Models, notations, and processes for software requirements identification, representation, analysis, and validation. Cost estimation from early documents and specifications. ", 
-            "title": "Software Requirements Specification and Analysis", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SE 463"
-        }
-    }, 
-    {
         "pk": 855, 
         "model": "core.course", 
         "fields": {
@@ -12835,6 +12789,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "NE 489"
+        }
+    }, 
+    {
+        "pk": 1736, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A detailed discussion of contemporary theories.", 
+            "title": "Political Philosophy 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 423"
         }
     }, 
     {
@@ -13234,18 +13200,6 @@
         }
     }, 
     {
-        "pk": 903, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Gradient, Divergence and Curl: Applications. Line and Surface Integrals. Green's, Gauss', and Stokes' Theorems: Applications to electromagnetism and fluid mechanics. Numerical solution of partial differential equations. [Offered: S]", 
-            "title": "Advanced Calculus 2 for Nanotechnology Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MATH 212N"
-        }
-    }, 
-    {
         "pk": 904, 
         "model": "core.course", 
         "fields": {
@@ -13462,6 +13416,18 @@
         }
     }, 
     {
+        "pk": 978, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course will present state-of-the-art practice and research in the storage, extraction, manipulation and analysis of data, with a view to using these processes for making better management decisions. Topics include: extracting, cleaning, and organizing data from transactional databases, discovering and validating patterns and relationships using statistical techniques, and using the extracted patterns for making improved management decisions. [Offered: F, first offered Fall 2010]", 
+            "title": "Data Warehousing and Mining", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MSCI 446"
+        }
+    }, 
+    {
         "pk": 920, 
         "model": "core.course", 
         "fields": {
@@ -13642,6 +13608,18 @@
         }
     }, 
     {
+        "pk": 1150, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Dynamics of continuous and discretized structures. Free and forced vibrations of single and multidegree of freedom systems. Impact, earthquake loads, wind loads. Vibration of beams, frames, structural systems. [Offered: W]", 
+            "title": "Structural Dynamics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CIVE 405"
+        }
+    }, 
+    {
         "pk": 936, 
         "model": "core.course", 
         "fields": {
@@ -13807,6 +13785,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "REES 320"
+        }
+    }, 
+    {
+        "pk": 1009, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The course introduces fundamental concepts in two main areas: The first is work analysis and design where work methods design, motion and time study, and work sampling are covered. The second covers basic concepts in facilities planning such as process analysis, flow design, facility location and layout, and material handling systems. Students will apply these concepts in design activities in labs and projects. [Offered: W]", 
+            "title": "Work Design and Facilities Planning", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MSCI 131"
         }
     }, 
     {
@@ -14194,18 +14184,6 @@
         }
     }, 
     {
-        "pk": 978, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course will present state-of-the-art practice and research in the storage, extraction, manipulation and analysis of data, with a view to using these processes for making better management decisions. Topics include: extracting, cleaning, and organizing data from transactional databases, discovering and validating patterns and relationships using statistical techniques, and using the extracted patterns for making improved management decisions. [Offered: F, first offered Fall 2010]", 
-            "title": "Data Warehousing and Mining", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MSCI 446"
-        }
-    }, 
-    {
         "pk": 979, 
         "model": "core.course", 
         "fields": {
@@ -14383,6 +14361,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 354"
+        }
+    }, 
+    {
+        "pk": 1024, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Courses taken at foreign universities by University of Waterloo engineering students while enrolled in an international exchange institution, and reserved for courses without equivalents at the University of Waterloo. These courses are treated as list B complementary studies electives in the student's program. Such courses are reported on the student's transcript with their original titles in English showing as the topic. The grades for these courses will be either CR or NCR.", 
+            "title": "Topics for List B Complementary Studies Courses Taken on Exchange by Engineering Students", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GENE 22B"
         }
     }, 
     {
@@ -14566,18 +14556,6 @@
         }
     }, 
     {
-        "pk": 1009, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The course introduces fundamental concepts in two main areas: The first is work analysis and design where work methods design, motion and time study, and work sampling are covered. The second covers basic concepts in facilities planning such as process analysis, flow design, facility location and layout, and material handling systems. Students will apply these concepts in design activities in labs and projects. [Offered: W]", 
-            "title": "Work Design and Facilities Planning", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MSCI 131"
-        }
-    }, 
-    {
         "pk": 1010, 
         "model": "core.course", 
         "fields": {
@@ -14758,15 +14736,15 @@
         }
     }, 
     {
-        "pk": 1024, 
+        "pk": 1109, 
         "model": "core.course", 
         "fields": {
-            "description": "Courses taken at foreign universities by University of Waterloo engineering students while enrolled in an international exchange institution, and reserved for courses without equivalents at the University of Waterloo. These courses are treated as list B complementary studies electives in the student's program. Such courses are reported on the student's transcript with their original titles in English showing as the topic. The grades for these courses will be either CR or NCR.", 
-            "title": "Topics for List B Complementary Studies Courses Taken on Exchange by Engineering Students", 
+            "description": "Programming paradigms, compilation, interpretation, virtual machines. Lexical analysis, regular expressions and finite automata. Parsing, context-free grammars and push-down automata. Semantic analysis, scope and name analysis, type checking. Intermediate representations. Control flow. Data types and storage management. Code generation. [Offered: W, S, first offered Winter 2012]", 
+            "title": "Compilers", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "GENE 22B"
+            "abbrev": "ECE 351"
         }
     }, 
     {
@@ -14935,6 +14913,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENVE 577"
+        }
+    }, 
+    {
+        "pk": 2493, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Production participation and the study of selected problems of theatrical production.", 
+            "title": "Spec Studies: Theatre Prod 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "DRAMA 307"
         }
     }, 
     {
@@ -15514,6 +15504,30 @@
         }
     }, 
     {
+        "pk": 1110, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Amplifier biasing networks; small-signal equivalent circuits; single and multi-stage small-signal amplifiers; high and low frequency response; negative feedback amplifiers; oscillators; noise in electronic circuits; introduction to large-signal amplifiers, overview of digital circuits. [Offered: F, W, last offered Winter 2012]", 
+            "title": "Electronic Circuits", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECE 332"
+        }
+    }, 
+    {
+        "pk": 1731, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An interdisciplinary discussion of central issues concerned with mind and intelligence, such as representation, meaning, inference and consciousness.", 
+            "title": "Seminar in Cognitive Science", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 447"
+        }
+    }, 
+    {
         "pk": 1088, 
         "model": "core.course", 
         "fields": {
@@ -15715,30 +15729,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 362"
-        }
-    }, 
-    {
-        "pk": 1109, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Programming paradigms, compilation, interpretation, virtual machines. Lexical analysis, regular expressions and finite automata. Parsing, context-free grammars and push-down automata. Semantic analysis, scope and name analysis, type checking. Intermediate representations. Control flow. Data types and storage management. Code generation. [Offered: W, S, first offered Winter 2012]", 
-            "title": "Compilers", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECE 351"
-        }
-    }, 
-    {
-        "pk": 1110, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Amplifier biasing networks; small-signal equivalent circuits; single and multi-stage small-signal amplifiers; high and low frequency response; negative feedback amplifiers; oscillators; noise in electronic circuits; introduction to large-signal amplifiers, overview of digital circuits. [Offered: F, W, last offered Winter 2012]", 
-            "title": "Electronic Circuits", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECE 332"
         }
     }, 
     {
@@ -15967,6 +15957,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "MATH 212"
+        }
+    }, 
+    {
+        "pk": 1732, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The second part of PHIL 440.", 
+            "title": "Logical Theory", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 440B"
         }
     }, 
     {
@@ -16207,54 +16209,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PLAN 478"
-        }
-    }, 
-    {
-        "pk": 1149, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Reinforced concrete members and structures. Torsion. Slender columns, walls, continuous beams, floor systems. Prestressed concrete. [Offered: S]", 
-            "title": "Structural Concrete Design 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CIVE 414"
-        }
-    }, 
-    {
-        "pk": 1150, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Dynamics of continuous and discretized structures. Free and forced vibrations of single and multidegree of freedom systems. Impact, earthquake loads, wind loads. Vibration of beams, frames, structural systems. [Offered: W]", 
-            "title": "Structural Dynamics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CIVE 405"
-        }
-    }, 
-    {
-        "pk": 1151, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Structural steel members. Limit states design, loads, materials. Design of tension and compression members, beams and beam-columns. Plate girders. Connections. Fatigue. [Offered: S]", 
-            "title": "Structural Steel Design", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CIVE 413"
-        }
-    }, 
-    {
-        "pk": 1152, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Advanced structural analysis; linear and nonlinear behaviour. Computer applications. [Offered: S]", 
-            "title": "Structural Analysis 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CIVE 403"
         }
     }, 
     {
@@ -16678,6 +16632,18 @@
         }
     }, 
     {
+        "pk": 1254, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A reading course permitting a student to work with any member of the faculty participating in Women's Studies at UW. To be arranged with the Women's Studies Director and the respective Women's Studies faculty member.", 
+            "title": "Special Topics in Women's Studies", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "WS 365"
+        }
+    }, 
+    {
         "pk": 1188, 
         "model": "core.course", 
         "fields": {
@@ -16903,6 +16869,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "CHE 231"
+        }
+    }, 
+    {
+        "pk": 1324, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A survey of the cultural manifestations and endemic historical and socioeconomic struggles of Latin America from pre-Columbian times to the wars of independence (nineteenth century). ", 
+            "title": "Latin American Civilization 1", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SPAN 217"
         }
     }, 
     {
@@ -17494,15 +17472,15 @@
         }
     }, 
     {
-        "pk": 1254, 
+        "pk": 1699, 
         "model": "core.course", 
         "fields": {
-            "description": "A reading course permitting a student to work with any member of the faculty participating in Women's Studies at UW. To be arranged with the Women's Studies Director and the respective Women's Studies faculty member.", 
-            "title": "Special Topics in Women's Studies", 
+            "description": "A basic introduction to the political and social thought of Karl Marx from the early writings to Das Kapital.", 
+            "title": "Marxist Theory", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "WS 365"
+            "abbrev": "PSCI 321"
         }
     }, 
     {
@@ -18010,6 +17988,18 @@
         }
     }, 
     {
+        "pk": 1392, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Introduction to social psychology through selected topics in the study of the self, social interaction, groups and intergroup relations, and social organization.", 
+            "title": "Individual and Society", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SOC 235"
+        }
+    }, 
+    {
         "pk": 1299, 
         "model": "core.course", 
         "fields": {
@@ -18274,30 +18264,6 @@
         }
     }, 
     {
-        "pk": 1324, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A survey of the cultural manifestations and endemic historical and socioeconomic struggles of Latin America from pre-Columbian times to the wars of independence (nineteenth century). ", 
-            "title": "Latin American Civilization 1", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SPAN 217"
-        }
-    }, 
-    {
-        "pk": 1699, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A basic introduction to the political and social thought of Karl Marx from the early writings to Das Kapital.", 
-            "title": "Marxist Theory", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSCI 321"
-        }
-    }, 
-    {
         "pk": 1325, 
         "model": "core.course", 
         "fields": {
@@ -18535,18 +18501,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SOC 410"
-        }
-    }, 
-    {
-        "pk": 1392, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Introduction to social psychology through selected topics in the study of the self, social interaction, groups and intergroup relations, and social organization.", 
-            "title": "Individual and Society", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SOC 235"
         }
     }, 
     {
@@ -19666,30 +19620,6 @@
         }
     }, 
     {
-        "pk": 1445, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course introduces students to special topics in the history of sexuality such as homosexuality, family, or erotica and pornography. ", 
-            "title": "History of Sexuality: Special Topics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SMF 319"
-        }
-    }, 
-    {
-        "pk": 1736, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A detailed discussion of contemporary theories.", 
-            "title": "Political Philosophy 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 423"
-        }
-    }, 
-    {
         "pk": 1446, 
         "model": "core.course", 
         "fields": {
@@ -20014,6 +19944,18 @@
         }
     }, 
     {
+        "pk": 1739, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Special topics in ancient philosophy, as announced by the department.", 
+            "title": "Studies in Ancient Philosophy", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 403"
+        }
+    }, 
+    {
         "pk": 1480, 
         "model": "core.course", 
         "fields": {
@@ -20302,18 +20244,6 @@
         }
     }, 
     {
-        "pk": 2493, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Production participation and the study of selected problems of theatrical production.", 
-            "title": "Spec Studies: Theatre Prod 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "DRAMA 307"
-        }
-    }, 
-    {
         "pk": 1505, 
         "model": "core.course", 
         "fields": {
@@ -20599,6 +20529,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "RS 258"
+        }
+    }, 
+    {
+        "pk": 1740, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Special topics in medieval philosophy, as announced by the department.", 
+            "title": "Studies in Medieval Philosophy", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 404"
         }
     }, 
     {
@@ -21394,54 +21336,6 @@
         }
     }, 
     {
-        "pk": 1731, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An interdisciplinary discussion of central issues concerned with mind and intelligence, such as representation, meaning, inference and consciousness.", 
-            "title": "Seminar in Cognitive Science", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 447"
-        }
-    }, 
-    {
-        "pk": 1732, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The second part of PHIL 440.", 
-            "title": "Logical Theory", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 440B"
-        }
-    }, 
-    {
-        "pk": 1739, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Special topics in ancient philosophy, as announced by the department.", 
-            "title": "Studies in Ancient Philosophy", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 403"
-        }
-    }, 
-    {
-        "pk": 1740, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Special topics in medieval philosophy, as announced by the department.", 
-            "title": "Studies in Medieval Philosophy", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 404"
-        }
-    }, 
-    {
         "pk": 1598, 
         "model": "core.course", 
         "fields": {
@@ -21703,6 +21597,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 312R"
+        }
+    }, 
+    {
+        "pk": 1645, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course examines the major schools of international relations theory with attention paid to both positivist and post-positivist approaches.", 
+            "title": "International Relations Theory", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSCI 487"
+        }
+    }, 
+    {
+        "pk": 1733, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A study of a particular philosopher or problem, as announced by the Department.", 
+            "title": "Studies in Philosophy of Religion", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 435"
         }
     }, 
     {
@@ -21979,30 +21897,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSCI 486"
-        }
-    }, 
-    {
-        "pk": 1645, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course examines the major schools of international relations theory with attention paid to both positivist and post-positivist approaches.", 
-            "title": "International Relations Theory", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSCI 487"
-        }
-    }, 
-    {
-        "pk": 1733, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A study of a particular philosopher or problem, as announced by the Department.", 
-            "title": "Studies in Philosophy of Religion", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 435"
         }
     }, 
     {
@@ -22942,6 +22836,18 @@
         }
     }, 
     {
+        "pk": 2273, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A study of short poems by such writers as Wyatt, Gascoigne, Whitney, Ralegh, Spenser, the Sidneys, Shakespeare, and Donne.", 
+            "title": "Sixteenth-Century Literature 1", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 330A"
+        }
+    }, 
+    {
         "pk": 1728, 
         "model": "core.course", 
         "fields": {
@@ -23299,6 +23205,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PHIL 312"
+        }
+    }, 
+    {
+        "pk": 2274, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A study of selected genres, topics, and works from Tudor literature.", 
+            "title": "Sixteenth-Century Literature 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 330B"
         }
     }, 
     {
@@ -23866,6 +23784,18 @@
         }
     }, 
     {
+        "pk": 1844, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The music of the 19th century in all its principal forms by its great composers: Beethoven, Schubert, Schumann, Liszt, Chopin, Wagner, Verdi, Brahms, Bruckner and others.", 
+            "title": "The Romantic Century: Beethoven and Beyond", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MUSIC 255"
+        }
+    }, 
+    {
         "pk": 1815, 
         "model": "core.course", 
         "fields": {
@@ -24202,18 +24132,6 @@
         }
     }, 
     {
-        "pk": 1844, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The music of the 19th century in all its principal forms by its great composers: Beethoven, Schubert, Schumann, Liszt, Chopin, Wagner, Verdi, Brahms, Bruckner and others.", 
-            "title": "The Romantic Century: Beethoven and Beyond", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MUSIC 255"
-        }
-    }, 
-    {
         "pk": 1875, 
         "model": "core.course", 
         "fields": {
@@ -24526,6 +24444,18 @@
         }
     }, 
     {
+        "pk": 1997, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A focus on social and economic determinants of Irish History from the Penal Era to the 19th century struggle for Catholic emancipation and the Great Famine. ", 
+            "title": "Ireland Before the Famine", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HIST 371"
+        }
+    }, 
+    {
         "pk": 1870, 
         "model": "core.course", 
         "fields": {
@@ -24799,6 +24729,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "RS 112"
+        }
+    }, 
+    {
+        "pk": 1923, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Through lectures, class discussions, and compositions in Italian, this course studies diverse aspects of contemporary Italian society including politics, history, the arts, and popular culture.", 
+            "title": "Issues in Contemporary Italian Society", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ITAL 251"
+        }
+    }, 
+    {
+        "pk": 2021, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Western Europe since the end of World War II. Focus will be on the Cold War, political and social movements.", 
+            "title": "Western Europe Since 1945", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HIST 264"
         }
     }, 
     {
@@ -25102,18 +25056,6 @@
         }
     }, 
     {
-        "pk": 1923, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Through lectures, class discussions, and compositions in Italian, this course studies diverse aspects of contemporary Italian society including politics, history, the arts, and popular culture.", 
-            "title": "Issues in Contemporary Italian Society", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ITAL 251"
-        }
-    }, 
-    {
         "pk": 1924, 
         "model": "core.course", 
         "fields": {
@@ -25351,6 +25293,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ISS 150R"
+        }
+    }, 
+    {
+        "pk": 2135, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A detailed study of one or more aspects of the Enlightenment. ", 
+            "title": "18th-Century French Literature", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FR 343A"
         }
     }, 
     {
@@ -25642,6 +25596,18 @@
         }
     }, 
     {
+        "pk": 1995, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An exploration of the political, social and cultural history of Ireland from the Famine to the end of the 20th century including the formation of the Irish State, the Republic and the \"Troubles\". ", 
+            "title": "Ireland After the Famine", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HIST 372"
+        }
+    }, 
+    {
         "pk": 1970, 
         "model": "core.course", 
         "fields": {
@@ -25930,18 +25896,6 @@
         }
     }, 
     {
-        "pk": 1995, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An exploration of the political, social and cultural history of Ireland from the Famine to the end of the 20th century including the formation of the Irish State, the Republic and the \"Troubles\". ", 
-            "title": "Ireland After the Famine", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "HIST 372"
-        }
-    }, 
-    {
         "pk": 1996, 
         "model": "core.course", 
         "fields": {
@@ -25951,18 +25905,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HIST 363W"
-        }
-    }, 
-    {
-        "pk": 1997, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A focus on social and economic determinants of Irish History from the Penal Era to the 19th century struggle for Catholic emancipation and the Great Famine. ", 
-            "title": "Ireland Before the Famine", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "HIST 371"
         }
     }, 
     {
@@ -26242,15 +26184,15 @@
         }
     }, 
     {
-        "pk": 2021, 
+        "pk": 2136, 
         "model": "core.course", 
         "fields": {
-            "description": "Western Europe since the end of World War II. Focus will be on the Cold War, political and social movements.", 
-            "title": "Western Europe Since 1945", 
+            "description": "A detailed study of selected aspects of 17th-century French literature. ", 
+            "title": "17th-Century French Literature", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "HIST 264"
+            "abbrev": "FR 332A"
         }
     }, 
     {
@@ -27610,42 +27552,6 @@
         }
     }, 
     {
-        "pk": 2135, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A detailed study of one or more aspects of the Enlightenment. ", 
-            "title": "18th-Century French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FR 343A"
-        }
-    }, 
-    {
-        "pk": 2136, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A detailed study of selected aspects of 17th-century French literature. ", 
-            "title": "17th-Century French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FR 332A"
-        }
-    }, 
-    {
-        "pk": 2137, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An advanced level course intended to continue intensive oral and aural skill development.", 
-            "title": "Advanced Spoken French 3", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FR 300A"
-        }
-    }, 
-    {
         "pk": 2138, 
         "model": "core.course", 
         "fields": {
@@ -28063,30 +27969,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "FINE 380"
-        }
-    }, 
-    {
-        "pk": 2174, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Special topics will be announced from year to year. ", 
-            "title": "Special Topics in Film", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FINE 357R"
-        }
-    }, 
-    {
-        "pk": 2175, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Selected topics in German film. ", 
-            "title": "Topics in German Film", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GER 359"
         }
     }, 
     {
@@ -28954,6 +28836,18 @@
         }
     }, 
     {
+        "pk": 2272, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Designed to assist advanced creative writers to develop their skills in various genres by means of workshop processes, supervised practice, and critical discussion of one or more major projects. ", 
+            "title": "Creative Writing 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 336"
+        }
+    }, 
+    {
         "pk": 2249, 
         "model": "core.course", 
         "fields": {
@@ -29239,42 +29133,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENGL 335"
-        }
-    }, 
-    {
-        "pk": 2272, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Designed to assist advanced creative writers to develop their skills in various genres by means of workshop processes, supervised practice, and critical discussion of one or more major projects. ", 
-            "title": "Creative Writing 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 336"
-        }
-    }, 
-    {
-        "pk": 2273, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A study of short poems by such writers as Wyatt, Gascoigne, Whitney, Ralegh, Spenser, the Sidneys, Shakespeare, and Donne.", 
-            "title": "Sixteenth-Century Literature 1", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 330A"
-        }
-    }, 
-    {
-        "pk": 2274, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A study of selected genres, topics, and works from Tudor literature.", 
-            "title": "Sixteenth-Century Literature 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 330B"
         }
     }, 
     {
@@ -29578,6 +29436,18 @@
         }
     }, 
     {
+        "pk": 2358, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A study of novels and poetry to determine how the shape of a literary work contributes to its meaning.", 
+            "title": "The Major Forms of Literature: Novels and Poetry", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 102B"
+        }
+    }, 
+    {
         "pk": 2301, 
         "model": "core.course", 
         "fields": {
@@ -29863,6 +29733,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENGL 208B"
+        }
+    }, 
+    {
+        "pk": 2357, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Introduction to the study of varieties of the English language - regional, social, temporal, functional, and stylistic. The relations of languages and literature and of speech and writing will be discussed.", 
+            "title": "Varieties of English", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 103B"
         }
     }, 
     {
@@ -30187,30 +30069,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENGL 103A"
-        }
-    }, 
-    {
-        "pk": 2357, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Introduction to the study of varieties of the English language - regional, social, temporal, functional, and stylistic. The relations of languages and literature and of speech and writing will be discussed.", 
-            "title": "Varieties of English", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 103B"
-        }
-    }, 
-    {
-        "pk": 2358, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A study of novels and poetry to determine how the shape of a literary work contributes to its meaning.", 
-            "title": "The Major Forms of Literature: Novels and Poetry", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 102B"
         }
     }, 
     {
@@ -32830,6 +32688,18 @@
         }
     }, 
     {
+        "pk": 2635, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course will cover various topics in advanced Corporate Finance, including real options, inventory models and management, corporate governance, asymmetric information and signalling, agency theory and corporate incentives.", 
+            "title": "Advanced Corporate Finance", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 471"
+        }
+    }, 
+    {
         "pk": 2588, 
         "model": "core.course", 
         "fields": {
@@ -33370,18 +33240,6 @@
         }
     }, 
     {
-        "pk": 2635, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course will cover various topics in advanced Corporate Finance, including real options, inventory models and management, corporate governance, asymmetric information and signalling, agency theory and corporate incentives.", 
-            "title": "Advanced Corporate Finance", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 471"
-        }
-    }, 
-    {
         "pk": 2636, 
         "model": "core.course", 
         "fields": {
@@ -33691,6 +33549,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "AFM 332"
+        }
+    }, 
+    {
+        "pk": 2798, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An introduction to the study of human population, with a focus on mortality, fertility, migration and spatial distribution in Canada. Methods and measures used in demographic research, sources of demographic data, and the health and social implications of the major demographic trends are discussed.", 
+            "title": "Demographic Change in Canada", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SOC 253"
         }
     }, 
     {
@@ -34162,6 +34032,18 @@
         }
     }, 
     {
+        "pk": 2818, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An investigation of the epidemiology of selected non-infectious diseases with emphasis on the identification of risk factors and on the methodology of epidemiological investigations.", 
+            "title": "Epidemiological Methods", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HSG 606"
+        }
+    }, 
+    {
         "pk": 2698, 
         "model": "core.course", 
         "fields": {
@@ -34390,6 +34272,18 @@
         }
     }, 
     {
+        "pk": 4062, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Course credit may be given for special studies related to the research interest of a student and a member of the faculty by special arrangement.", 
+            "title": "Special Studies for PhD Students", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "EARTH 692"
+        }
+    }, 
+    {
         "pk": 2717, 
         "model": "core.course", 
         "fields": {
@@ -34603,6 +34497,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "KIN 425"
+        }
+    }, 
+    {
+        "pk": 2819, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The focus of the course is on basic physiological and immunological mechanisms involved in major contemporary health problems, including those which are contributed to by behavioural factors.", 
+            "title": "Mechanisms of Disease Processes", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HSG 607"
         }
     }, 
     {
@@ -35074,6 +34980,18 @@
         }
     }, 
     {
+        "pk": 2820, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course introduces concepts, theories and methods pertinent to the conduct of research for population intervention, especially as it relates to chronic disease prevention.  Modules introduce ecological, utilitarian and social justice frameworks, ethical challenges, the importance of integrated knowledge translation and new methodologies for informing the development of population interventions.  Students gain experience writing and critically reviewing grant proposals.", 
+            "title": "Population Intervention Research for Chronic Disease Prevention", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HSG 609"
+        }
+    }, 
+    {
         "pk": 2770, 
         "model": "core.course", 
         "fields": {
@@ -35251,6 +35169,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HLTH 432A"
+        }
+    }, 
+    {
+        "pk": 2833, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An in-depth analysis of specific topics of interest. Representative topics may include advanced epidemiological and statistical methods for health research, cancer prevention and control, advanced health program evluation, psychoneuroimmunology, addictions, caregiver issues, etc. The form of the study may include a literature review or the planning and execution of and execution of an independent study leading to a mamor paper for possible publication.", 
+            "title": "Advanced Topics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HSG 720"
         }
     }, 
     {
@@ -35467,18 +35397,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HLTH 260"
-        }
-    }, 
-    {
-        "pk": 2798, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An introduction to the study of human population, with a focus on mortality, fertility, migration and spatial distribution in Canada. Methods and measures used in demographic research, sources of demographic data, and the health and social implications of the major demographic trends are discussed.", 
-            "title": "Demographic Change in Canada", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SOC 253"
         }
     }, 
     {
@@ -35710,42 +35628,6 @@
         }
     }, 
     {
-        "pk": 2818, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An investigation of the epidemiology of selected non-infectious diseases with emphasis on the identification of risk factors and on the methodology of epidemiological investigations.", 
-            "title": "Epidemiological Methods", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "HSG 606"
-        }
-    }, 
-    {
-        "pk": 2819, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The focus of the course is on basic physiological and immunological mechanisms involved in major contemporary health problems, including those which are contributed to by behavioural factors.", 
-            "title": "Mechanisms of Disease Processes", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "HSG 607"
-        }
-    }, 
-    {
-        "pk": 2820, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course introduces concepts, theories and methods pertinent to the conduct of research for population intervention, especially as it relates to chronic disease prevention.  Modules introduce ecological, utilitarian and social justice frameworks, ethical challenges, the importance of integrated knowledge translation and new methodologies for informing the development of population interventions.  Students gain experience writing and critically reviewing grant proposals.", 
-            "title": "Population Intervention Research for Chronic Disease Prevention", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "HSG 609"
-        }
-    }, 
-    {
         "pk": 2821, 
         "model": "core.course", 
         "fields": {
@@ -35914,15 +35796,15 @@
         }
     }, 
     {
-        "pk": 2833, 
+        "pk": 3392, 
         "model": "core.course", 
         "fields": {
-            "description": "An in-depth analysis of specific topics of interest. Representative topics may include advanced epidemiological and statistical methods for health research, cancer prevention and control, advanced health program evluation, psychoneuroimmunology, addictions, caregiver issues, etc. The form of the study may include a literature review or the planning and execution of and execution of an independent study leading to a mamor paper for possible publication.", 
-            "title": "Advanced Topics", 
+            "description": "Various courses dealing with selected topics in biochemical engineering, biotechnology, tissue engineering, food engineering, waste treatment technology and microbial engineering.", 
+            "title": "Special Topics in Biochemical Engineering", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "HSG 720"
+            "abbrev": "CHE 760"
         }
     }, 
     {
@@ -36079,6 +35961,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PHS 607"
+        }
+    }, 
+    {
+        "pk": 2902, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Social and psychological research on leisure and the interrelationships among leisure and other domains of contemporary life will be examined. Current issues relating to leisure as a dimension of lifestyle, human development and quality of life will also be explored, as will the relevance of this research to recreation practice.", 
+            "title": "Social and Psychological Analysis of Leisure", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "REC 605"
         }
     }, 
     {
@@ -36247,6 +36141,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PHS 661"
+        }
+    }, 
+    {
+        "pk": 3393, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Various special research topics will be offered in the area of biochemical engineering to support independent and individual research by instructor consent.", 
+            "title": "Research Topics in Biochemical Engineering", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHE 765"
         }
     }, 
     {
@@ -36439,6 +36345,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "KIN 654"
+        }
+    }, 
+    {
+        "pk": 3255, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Examines major topics and issues regarding the psychology of training in work organizations. Areas typically covered include task analysis, training objectives, curriculum development, instructional techniques, and training evaluation.", 
+            "title": "Psychology of Training", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 886"
         }
     }, 
     {
@@ -36682,15 +36600,15 @@
         }
     }, 
     {
-        "pk": 2902, 
+        "pk": 3394, 
         "model": "core.course", 
         "fields": {
-            "description": "Social and psychological research on leisure and the interrelationships among leisure and other domains of contemporary life will be examined. Current issues relating to leisure as a dimension of lifestyle, human development and quality of life will also be explored, as will the relevance of this research to recreation practice.", 
-            "title": "Social and Psychological Analysis of Leisure", 
+            "description": "Various courses dealing with advanced methods of controlling air, water and solid waste pollution. Systems analysis and applications.", 
+            "title": "Special Topics in Environmental Engineering and Pollution Control", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "REC 605"
+            "abbrev": "CHE 770"
         }
     }, 
     {
@@ -37126,6 +37044,30 @@
         }
     }, 
     {
+        "pk": 2947, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course investigates the representation of Greek (and other) culture in the Odes of Horace.  We shall examine how the Roman perception of earlier and contemporary Greek cultural values is manipulated in Horace's poetry in order to articulate the nature of his lyric poetry, as well as social, political, and aesthetic values.  By careful consideration of a wide range of poems, and by comparing them to the Greek models of Pindar, Sappho, Alcaeus, and Archilochus, we shall determine Horace's representation of the unique as well as derivative characteristic of Augustan society and literature.", 
+            "title": "Greek and Roman Identities in the Lyric Poetry of Horace", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "LAT 633"
+        }
+    }, 
+    {
+        "pk": 4063, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Canonical quantization of fields, perturbation theory, derivation of Feynman diagrams, applications in particle and condensed matter theory, renormalization in phi^4.", 
+            "title": "Perimeter Scholars International Quantum Field Theory 1", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHYS 601"
+        }
+    }, 
+    {
         "pk": 2937, 
         "model": "core.course", 
         "fields": {
@@ -37255,18 +37197,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "GRK 632"
-        }
-    }, 
-    {
-        "pk": 2947, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course investigates the representation of Greek (and other) culture in the Odes of Horace.  We shall examine how the Roman perception of earlier and contemporary Greek cultural values is manipulated in Horace's poetry in order to articulate the nature of his lyric poetry, as well as social, political, and aesthetic values.  By careful consideration of a wide range of poems, and by comparing them to the Greek models of Pindar, Sappho, Alcaeus, and Archilochus, we shall determine Horace's representation of the unique as well as derivative characteristic of Augustan society and literature.", 
-            "title": "Greek and Roman Identities in the Lyric Poetry of Horace", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "LAT 633"
         }
     }, 
     {
@@ -37519,6 +37449,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECON 623"
+        }
+    }, 
+    {
+        "pk": 3005, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course consists of directed individual studio work in the student's chosen area of concentration, as indicated in their original statement of intention.  Regular critiques and discussions will be shcedule by the Graduate Committee.  Open to Fine Arts part-time graduate students only.", 
+            "title": "Graduate Studio 3 (Part-time)", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FINE 674"
+        }
+    }, 
+    {
+        "pk": 3304, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course deals with stochastic interest rate models in both discrete time and continuous time. It also covers the theory and practice of instruments such as options, futures, derivative securities and other complex financial instruments.", 
+            "title": "Finance 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 971"
         }
     }, 
     {
@@ -37807,18 +37761,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "FINE 673"
-        }
-    }, 
-    {
-        "pk": 3005, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course consists of directed individual studio work in the student's chosen area of concentration, as indicated in their original statement of intention.  Regular critiques and discussions will be shcedule by the Graduate Committee.  Open to Fine Arts part-time graduate students only.", 
-            "title": "Graduate Studio 3 (Part-time)", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FINE 674"
         }
     }, 
     {
@@ -38122,6 +38064,18 @@
         }
     }, 
     {
+        "pk": 3083, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This field will attract those who are interested in the impact of miltary conflict, in conventional and non-conventional forms, on civil society.  It will focus in particular on the two World Wars and the \"small wars\"  that developed in the last part of the twentieth century, and be flexible enough to include a range of related topics across time and place that reflect the interests of faculty and students.", 
+            "title": "War and Society Major Field", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "HIST 719"
+        }
+    }, 
+    {
         "pk": 3057, 
         "model": "core.course", 
         "fields": {
@@ -38419,18 +38373,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HIST 710"
-        }
-    }, 
-    {
-        "pk": 3083, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This field will attract those who are interested in the impact of miltary conflict, in conventional and non-conventional forms, on civil society.  It will focus in particular on the two World Wars and the \"small wars\"  that developed in the last part of the twentieth century, and be flexible enough to include a range of related topics across time and place that reflect the interests of faculty and students.", 
-            "title": "War and Society Major Field", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "HIST 719"
         }
     }, 
     {
@@ -39358,6 +39300,18 @@
         }
     }, 
     {
+        "pk": 3205, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The course will cover a number of currently active areas of research in early social development in some depth. The treatment of the various topics will emphasize methodological as well as substantive issues.", 
+            "title": "Social Development", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 712"
+        }
+    }, 
+    {
         "pk": 3170, 
         "model": "core.course", 
         "fields": {
@@ -39511,6 +39465,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 632"
+        }
+    }, 
+    {
+        "pk": 3256, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Topics will include experimental and non-experimental research design; internal, external, and construct validity; psychometrics including reliability and factorial structure; statistical inference; and practical considerations in measurement and evaluation in I/O Psychology.", 
+            "title": "Research Methods in Industrial/Organizational", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 887"
         }
     }, 
     {
@@ -39718,15 +39684,15 @@
         }
     }, 
     {
-        "pk": 3205, 
+        "pk": 3305, 
         "model": "core.course", 
         "fields": {
-            "description": "The course will cover a number of currently active areas of research in early social development in some depth. The treatment of the various topics will emphasize methodological as well as substantive issues.", 
-            "title": "Social Development", 
+            "description": "This course covers topics in the pricing and valuation of derivative securities. It focuses on the underlying theoretical models and examines applications to contemporary finance problems.", 
+            "title": "Finance 3", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "PSYCH 712"
+            "abbrev": "ACTSC 972"
         }
     }, 
     {
@@ -39955,6 +39921,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 783"
+        }
+    }, 
+    {
+        "pk": 3254, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A seminar including both student an faculty presentations of current research and student proposals for MASc/MA or PhD work. The seminar is held weekly or biweekly depending on availability of speakers, and the format may vary, depending on the research topics of members of the group. Graded on a Cr/NCr basis", 
+            "title": "Research Seminar in Industrial & Organizational Psychology", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 885"
+        }
+    }, 
+    {
+        "pk": 4064, 
+        "model": "core.course", 
+        "fields": {
+            "description": "A brief review of ensembles and quantum gases, Ising model, Landau theory of phase transitions, order parameters, topology, classical solutions.", 
+            "title": "Perimeter Scholars International Statistical Physics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHYS 602"
         }
     }, 
     {
@@ -40303,42 +40293,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 884"
-        }
-    }, 
-    {
-        "pk": 3254, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A seminar including both student an faculty presentations of current research and student proposals for MASc/MA or PhD work. The seminar is held weekly or biweekly depending on availability of speakers, and the format may vary, depending on the research topics of members of the group. Graded on a Cr/NCr basis", 
-            "title": "Research Seminar in Industrial & Organizational Psychology", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 885"
-        }
-    }, 
-    {
-        "pk": 3255, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Examines major topics and issues regarding the psychology of training in work organizations. Areas typically covered include task analysis, training objectives, curriculum development, instructional techniques, and training evaluation.", 
-            "title": "Psychology of Training", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 886"
-        }
-    }, 
-    {
-        "pk": 3256, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Topics will include experimental and non-experimental research design; internal, external, and construct validity; psychometrics including reliability and factorial structure; statistical inference; and practical considerations in measurement and evaluation in I/O Psychology.", 
-            "title": "Research Methods in Industrial/Organizational", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 887"
         }
     }, 
     {
@@ -40774,30 +40728,6 @@
         }
     }, 
     {
-        "pk": 3304, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course deals with stochastic interest rate models in both discrete time and continuous time. It also covers the theory and practice of instruments such as options, futures, derivative securities and other complex financial instruments.", 
-            "title": "Finance 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 971"
-        }
-    }, 
-    {
-        "pk": 3305, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course covers topics in the pricing and valuation of derivative securities. It focuses on the underlying theoretical models and examines applications to contemporary finance problems.", 
-            "title": "Finance 3", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 972"
-        }
-    }, 
-    {
         "pk": 3306, 
         "model": "core.course", 
         "fields": {
@@ -40963,6 +40893,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "TAX 629"
+        }
+    }, 
+    {
+        "pk": 3395, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Various special research topics will be offered in the area of environmental engineering and pollution control to support independent and individual research by instructor consent.", 
+            "title": "Research Topics in Environmental Engineering and Pollution Control", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHE 775"
         }
     }, 
     {
@@ -41362,6 +41304,18 @@
         }
     }, 
     {
+        "pk": 3369, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course looks at how organizations develop a market orientation and examines the development of marketing strategy in relation to target markets selected, competitive advantages created and exploited and market positioning.  The marketing mix of product, price promotion and distribution and the new product development process are also covered. This course is only open to employees of the Abu Dhabi Water and Electricity Authority.", 
+            "title": "Marketing Management", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ADMGT 604"
+        }
+    }, 
+    {
         "pk": 3356, 
         "model": "core.course", 
         "fields": {
@@ -41515,18 +41469,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ADMGT 603"
-        }
-    }, 
-    {
-        "pk": 3369, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course looks at how organizations develop a market orientation and examines the development of marketing strategy in relation to target markets selected, competitive advantages created and exploited and market positioning.  The marketing mix of product, price promotion and distribution and the new product development process are also covered. This course is only open to employees of the Abu Dhabi Water and Electricity Authority.", 
-            "title": "Marketing Management", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ADMGT 604"
         }
     }, 
     {
@@ -41767,54 +41709,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "CHE 755"
-        }
-    }, 
-    {
-        "pk": 3392, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Various courses dealing with selected topics in biochemical engineering, biotechnology, tissue engineering, food engineering, waste treatment technology and microbial engineering.", 
-            "title": "Special Topics in Biochemical Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 760"
-        }
-    }, 
-    {
-        "pk": 3393, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Various special research topics will be offered in the area of biochemical engineering to support independent and individual research by instructor consent.", 
-            "title": "Research Topics in Biochemical Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 765"
-        }
-    }, 
-    {
-        "pk": 3394, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Various courses dealing with advanced methods of controlling air, water and solid waste pollution. Systems analysis and applications.", 
-            "title": "Special Topics in Environmental Engineering and Pollution Control", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 770"
-        }
-    }, 
-    {
-        "pk": 3395, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Various special research topics will be offered in the area of environmental engineering and pollution control to support independent and individual research by instructor consent.", 
-            "title": "Research Topics in Environmental Engineering and Pollution Control", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 775"
         }
     }, 
     {
@@ -42478,6 +42372,18 @@
         }
     }, 
     {
+        "pk": 3468, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course is concerned with the fundamentals of broadband communication networks including network architecture, Switch fabrics, design methodology; traffic management, connection admission control (CAC), usage parameter control (UPC), flow and congestion control; capacity and buffer allocation, service scheduling, performance measures, performance modeling and queueing analysis.", 
+            "title": "Broadband  Communication Networks", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECE 610"
+        }
+    }, 
+    {
         "pk": 3453, 
         "model": "core.course", 
         "fields": {
@@ -42631,18 +42537,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 605"
-        }
-    }, 
-    {
-        "pk": 3468, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course is concerned with the fundamentals of broadband communication networks including network architecture, Switch fabrics, design methodology; traffic management, connection admission control (CAC), usage parameter control (UPC), flow and congestion control; capacity and buffer allocation, service scheduling, performance measures, performance modeling and queueing analysis.", 
-            "title": "Broadband  Communication Networks", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECE 610"
         }
     }, 
     {
@@ -42826,6 +42720,18 @@
         }
     }, 
     {
+        "pk": 3550, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course includes: integrating technology and business strategy; design and evolution of technology strategy; development of the firm's innovative capabilities; creating and implementing systems for innovation; innovation challenges in established firms. In addition to a textbook, cases are used to add realism and context to this course.  Priority may be given to Management Sciences students.", 
+            "title": "Strategic Management of Technological Innovation", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MSCI 602"
+        }
+    }, 
+    {
         "pk": 3485, 
         "model": "core.course", 
         "fields": {
@@ -42979,6 +42885,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 664"
+        }
+    }, 
+    {
+        "pk": 3582, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Advanced fatigue analysis including strain-based and stress-based approaches. Applications will include machine and welded components. Specific topics to include cyclic stress-strain behaviour, notch analysis, damage accumulations, multi-axial and variable amplitude loading. Probabilistic approaches and interpretation of finite element results will be addressed.", 
+            "title": "Fatigue Analysis and Design", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ME 627"
         }
     }, 
     {
@@ -43342,6 +43260,18 @@
         }
     }, 
     {
+        "pk": 3683, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Renewable and non-renewable energy supply systems are compared using economic and environmental measures.  Consumption trends, conservation options and choices are considered at the household, community and global scales.  Projects are used to demonstrate the economic and environmental challenges in the design of sustainable energy systems. *eligible for MES.", 
+            "title": "Energy Sustainability", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GEOG 669"
+        }
+    }, 
+    {
         "pk": 3530, 
         "model": "core.course", 
         "fields": {
@@ -43447,6 +43377,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 6607PD"
+        }
+    }, 
+    {
+        "pk": 3551, 
+        "model": "core.course", 
+        "fields": {
+            "description": "This course surveys a spectrum of models and techniques in Operations Research, with emphasis on applications. It focuses on the development of modeling skills, the interpretation of results, sensitivity analysis and computer implementations of decision support systems. Topics include linear, integer and network optimization models. Simulation analysis and other topics in stochastic processes may also be covered. The use of quantitative models in different levels of the decision making hierarchy are illustrated through case studies and readings from the Management Sciences literature.  Priority may be given to Management Sciences students.", 
+            "title": "Principles of Operations Research", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MSCI 603"
+        }
+    }, 
+    {
+        "pk": 3911, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Isomorphism theorems, classical structures theorems for finite groups, nilpotent and solvable groups, free groups, presentation modules over Principal Ideal Domains (PIDs), Hilbert Basis Theorem, Groebner bases, Artin-Wedderbury Theorem, field extensions, decompositions, claculation of Galois groups.", 
+            "title": "Graduate Algebra", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PMATH 701"
         }
     }, 
     {
@@ -43591,30 +43545,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "MSCI 601"
-        }
-    }, 
-    {
-        "pk": 3550, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course includes: integrating technology and business strategy; design and evolution of technology strategy; development of the firm's innovative capabilities; creating and implementing systems for innovation; innovation challenges in established firms. In addition to a textbook, cases are used to add realism and context to this course.  Priority may be given to Management Sciences students.", 
-            "title": "Strategic Management of Technological Innovation", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MSCI 602"
-        }
-    }, 
-    {
-        "pk": 3551, 
-        "model": "core.course", 
-        "fields": {
-            "description": "This course surveys a spectrum of models and techniques in Operations Research, with emphasis on applications. It focuses on the development of modeling skills, the interpretation of results, sensitivity analysis and computer implementations of decision support systems. Topics include linear, integer and network optimization models. Simulation analysis and other topics in stochastic processes may also be covered. The use of quantitative models in different levels of the decision making hierarchy are illustrated through case studies and readings from the Management Sciences literature.  Priority may be given to Management Sciences students.", 
-            "title": "Principles of Operations Research", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MSCI 603"
         }
     }, 
     {
@@ -43771,6 +43701,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "MSCI 712"
+        }
+    }, 
+    {
+        "pk": 3935, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Frequency and severity models; compound distributions, calculation of moments and probabilities using recursion; Bayesian estimation and credibility; claims reserving for non-life insurance using run-off triangle methods, introductory ruin theory.", 
+            "title": "Casualty and Health Insurance Mathematics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 625"
         }
     }, 
     {
@@ -43951,18 +43893,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ME 620"
-        }
-    }, 
-    {
-        "pk": 3582, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Advanced fatigue analysis including strain-based and stress-based approaches. Applications will include machine and welded components. Specific topics to include cyclic stress-strain behaviour, notch analysis, damage accumulations, multi-axial and variable amplitude loading. Probabilistic approaches and interpretation of finite element results will be addressed.", 
-            "title": "Fatigue Analysis and Design", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ME 627"
         }
     }, 
     {
@@ -44167,6 +44097,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ME 710"
+        }
+    }, 
+    {
+        "pk": 3936, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Risk measures, Binomial and lattice models for option pricing, Black-Scholes option pricing; term structure models.  Credit risk; types of models and types of derivatives.", 
+            "title": "Financial Mathematics III", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 631"
         }
     }, 
     {
@@ -44602,6 +44544,18 @@
         }
     }, 
     {
+        "pk": 3651, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Innovative structures - frames, fabrics and shells -  give architects design options that have not previously existed, especially with long spans and large, single building volumes. The course deals with the applications, analysis, economics, design and fabrication of modern lightweight structures.  Consent of instructor required for those outside of the M.Arch program. \r\nUniversity of Waterloo BES pre-prefessional Architecture Degree", 
+            "title": "Lightweight Structures", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ARCH 676"
+        }
+    }, 
+    {
         "pk": 3639, 
         "model": "core.course", 
         "fields": {
@@ -44758,15 +44712,15 @@
         }
     }, 
     {
-        "pk": 3651, 
+        "pk": 3685, 
         "model": "core.course", 
         "fields": {
-            "description": "Innovative structures - frames, fabrics and shells -  give architects design options that have not previously existed, especially with long spans and large, single building volumes. The course deals with the applications, analysis, economics, design and fabrication of modern lightweight structures.  Consent of instructor required for those outside of the M.Arch program. \r\nUniversity of Waterloo BES pre-prefessional Architecture Degree", 
-            "title": "Lightweight Structures", 
+            "description": "A team project to demonstrate problem definition, analysis and interdisciplinary research methods in environmental studies. The course will provide an examination of different modes and methods of anlaysis to be used in projects and thesis-based research. Students will also learn how to prepare and write proposals to granting agencies.", 
+            "title": "Team Research Project", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ARCH 676"
+            "abbrev": "ERS 669"
         }
     }, 
     {
@@ -44923,6 +44877,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SYDE 632"
+        }
+    }, 
+    {
+        "pk": 3681, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Community Economic Development is a field of theory, process and practice that is concerned with understanding the forces shaping communities and finding sustainable local solutions to economic needs.  This seminar course will examine topics such as capacity-building, asset-based strategies, social capital, poverty-alleviation, social enterprises and co-operatives, and comprehensive community initiatives, using international and local examples and case studies.", 
+            "title": "Community Economic Development", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PLAN 615"
         }
     }, 
     {
@@ -45166,18 +45132,6 @@
         }
     }, 
     {
-        "pk": 3681, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Community Economic Development is a field of theory, process and practice that is concerned with understanding the forces shaping communities and finding sustainable local solutions to economic needs.  This seminar course will examine topics such as capacity-building, asset-based strategies, social capital, poverty-alleviation, social enterprises and co-operatives, and comprehensive community initiatives, using international and local examples and case studies.", 
-            "title": "Community Economic Development", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PLAN 615"
-        }
-    }, 
-    {
         "pk": 3682, 
         "model": "core.course", 
         "fields": {
@@ -45187,30 +45141,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ERS 618"
-        }
-    }, 
-    {
-        "pk": 3683, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Renewable and non-renewable energy supply systems are compared using economic and environmental measures.  Consumption trends, conservation options and choices are considered at the household, community and global scales.  Projects are used to demonstrate the economic and environmental challenges in the design of sustainable energy systems. *eligible for MES.", 
-            "title": "Energy Sustainability", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GEOG 669"
-        }
-    }, 
-    {
-        "pk": 3685, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A team project to demonstrate problem definition, analysis and interdisciplinary research methods in environmental studies. The course will provide an examination of different modes and methods of anlaysis to be used in projects and thesis-based research. Students will also learn how to prepare and write proposals to granting agencies.", 
-            "title": "Team Research Project", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ERS 669"
         }
     }, 
     {
@@ -45415,6 +45345,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PLAN 613"
+        }
+    }, 
+    {
+        "pk": 3937, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Estimation for lifetime models; estimation for multiple state modes.  Graduation.  Mortality projection using the Lee Carter model. MLE for Markov multiple state models.", 
+            "title": "Life Insurance Mathematics III", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 632"
         }
     }, 
     {
@@ -45934,6 +45876,18 @@
         }
     }, 
     {
+        "pk": 3938, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The Actuarial Profession.  The Actuarial Control Cycle  Impact of Regulation. Consumer needs. Assessing risk. Modeling. Monitoring Experience. Pricing and reserving in life and non-life insurance.", 
+            "title": "Actuarial Practice I", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 633"
+        }
+    }, 
+    {
         "pk": 3747, 
         "model": "core.course", 
         "fields": {
@@ -46114,6 +46068,30 @@
         }
     }, 
     {
+        "pk": 3789, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Basic concepts of functional analysis. Topics include: theory of linear operators, nonlinear operators and the Frechet derivative, fixed point theorems, approximate solution of operator equations, Hilbert space, spectral theory. Applications from various areas will be used to motivate and illustrate the theory. A previous undergraduate course in real analysis is strongly recommended.", 
+            "title": "Applied Functional Analysis", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "AMATH 731"
+        }
+    }, 
+    {
+        "pk": 3939, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Enterprise Risk management. Pricing and valuation. Economic and regulatory capital. Solvency. Investment management.", 
+            "title": "Actuarial Practice II", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 634"
+        }
+    }, 
+    {
         "pk": 3761, 
         "model": "core.course", 
         "fields": {
@@ -46219,6 +46197,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENBUS 642"
+        }
+    }, 
+    {
+        "pk": 3790, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Elements of asymptotic analysis. Techniques of perturbation theory such as Poincare-Lindstedt, matched asymptotic expansions and multiple scales. Applications to various areas form an essential aspect of the course. Previous courses in real analysis and differential equations at the undergraduate level are strongly recommended.", 
+            "title": "Asymptotic Analysis and Perturbation Theory", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "AMATH 732"
+        }
+    }, 
+    {
+        "pk": 3791, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Introduction to basic algorithms and techniques for numerical computing.  Error analysis, interpolation (including splines), numerical differentiation and integration, numerical linear algebra (including methods for linear systems, eigenvalue problems, and the singular value decomposition), root finding for nonlinear equations and systems, numerical ordinary differential equations, and approximation methods (including least squares, orthogonal polynomials, and Fourier transforms).", 
+            "title": "Numerical Analysis", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CS 670"
         }
     }, 
     {
@@ -46402,39 +46404,15 @@
         }
     }, 
     {
-        "pk": 3789, 
+        "pk": 3940, 
         "model": "core.course", 
         "fields": {
-            "description": "Basic concepts of functional analysis. Topics include: theory of linear operators, nonlinear operators and the Frechet derivative, fixed point theorems, approximate solution of operator equations, Hilbert space, spectral theory. Applications from various areas will be used to motivate and illustrate the theory. A previous undergraduate course in real analysis is strongly recommended.", 
-            "title": "Applied Functional Analysis", 
+            "description": "Elements of writing. Written project on an advanced topic, with a communications focus. Presentations: preparation and delivery.", 
+            "title": "Profession Communications in Actuarial Science", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "AMATH 731"
-        }
-    }, 
-    {
-        "pk": 3790, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Elements of asymptotic analysis. Techniques of perturbation theory such as Poincare-Lindstedt, matched asymptotic expansions and multiple scales. Applications to various areas form an essential aspect of the course. Previous courses in real analysis and differential equations at the undergraduate level are strongly recommended.", 
-            "title": "Asymptotic Analysis and Perturbation Theory", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "AMATH 732"
-        }
-    }, 
-    {
-        "pk": 3791, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Introduction to basic algorithms and techniques for numerical computing.  Error analysis, interpolation (including splines), numerical differentiation and integration, numerical linear algebra (including methods for linear systems, eigenvalue problems, and the singular value decomposition), root finding for nonlinear equations and systems, numerical ordinary differential equations, and approximation methods (including least squares, orthogonal polynomials, and Fourier transforms).", 
-            "title": "Numerical Analysis", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CS 670"
+            "abbrev": "ACTSC 635"
         }
     }, 
     {
@@ -46627,18 +46605,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "AMATH 882"
-        }
-    }, 
-    {
-        "pk": 3911, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Isomorphism theorems, classical structures theorems for finite groups, nilpotent and solvable groups, free groups, presentation modules over Principal Ideal Domains (PIDs), Hilbert Basis Theorem, Groebner bases, Artin-Wedderbury Theorem, field extensions, decompositions, claculation of Galois groups.", 
-            "title": "Graduate Algebra", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PMATH 701"
         }
     }, 
     {
@@ -47014,6 +46980,18 @@
         }
     }, 
     {
+        "pk": 3941, 
+        "model": "core.course", 
+        "fields": {
+            "description": "The Mathematics of Survival Models, some examples of parametric survival models. Tabular survival models, estimates from complete and incomplete data samples. Parametric survival models, determining the optimal parameters. Maximum likelihood estimators, derivation and properties. Product limit estimators, Kaplan-Meier and Nelson Aalen. Practical aspects.", 
+            "title": "Analysis of Mortality Data", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 833"
+        }
+    }, 
+    {
         "pk": 3851, 
         "model": "core.course", 
         "fields": {
@@ -47203,6 +47181,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PMATH 763"
+        }
+    }, 
+    {
+        "pk": 3942, 
+        "model": "core.course", 
+        "fields": {
+            "description": "An introduction to property/casualty loss reserving techniques.  Claim payment process. Chain-ladder methods, Stochastic models.", 
+            "title": "Introduction fo Property and Casuality Loss Reserving", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 863"
+        }
+    }, 
+    {
+        "pk": 4065, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Feynman Path Integral, abelian and nonabelian guage theories and their quantization, spontaneous symmetry breaking, nonperturbative techniques: \r\nlatticef ield theory, Wilsonian renormalization.", 
+            "title": "Perimeter Scholars International Quantum Field Theory 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHYS 603"
         }
     }, 
     {
@@ -47494,6 +47496,18 @@
         }
     }, 
     {
+        "pk": 3963, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Multiple time series modeling including transfer function and intervention analysis. Various special topics in time series such as outliers, robustness, order determination methods, Kalman filtering, sampling and aggregation, seasonal adjustments.", 
+            "title": "Time Series 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "STAT 930"
+        }
+    }, 
+    {
         "pk": 3896, 
         "model": "core.course", 
         "fields": {
@@ -47650,99 +47664,15 @@
         }
     }, 
     {
-        "pk": 3935, 
+        "pk": 4066, 
         "model": "core.course", 
         "fields": {
-            "description": "Frequency and severity models; compound distributions, calculation of moments and probabilities using recursion; Bayesian estimation and credibility; claims reserving for non-life insurance using run-off triangle methods, introductory ruin theory.", 
-            "title": "Casualty and Health Insurance Mathematics", 
+            "description": "Special relativity, foundations of general relativity, Riemannian geometry, Einstein's equations, FRW and Schwarzschild geometries and their properties", 
+            "title": "Perimeter Scholars International Relativity", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ACTSC 625"
-        }
-    }, 
-    {
-        "pk": 3936, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Risk measures, Binomial and lattice models for option pricing, Black-Scholes option pricing; term structure models.  Credit risk; types of models and types of derivatives.", 
-            "title": "Financial Mathematics III", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 631"
-        }
-    }, 
-    {
-        "pk": 3937, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Estimation for lifetime models; estimation for multiple state modes.  Graduation.  Mortality projection using the Lee Carter model. MLE for Markov multiple state models.", 
-            "title": "Life Insurance Mathematics III", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 632"
-        }
-    }, 
-    {
-        "pk": 3938, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The Actuarial Profession.  The Actuarial Control Cycle  Impact of Regulation. Consumer needs. Assessing risk. Modeling. Monitoring Experience. Pricing and reserving in life and non-life insurance.", 
-            "title": "Actuarial Practice I", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 633"
-        }
-    }, 
-    {
-        "pk": 3939, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Enterprise Risk management. Pricing and valuation. Economic and regulatory capital. Solvency. Investment management.", 
-            "title": "Actuarial Practice II", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 634"
-        }
-    }, 
-    {
-        "pk": 3940, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Elements of writing. Written project on an advanced topic, with a communications focus. Presentations: preparation and delivery.", 
-            "title": "Profession Communications in Actuarial Science", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 635"
-        }
-    }, 
-    {
-        "pk": 3941, 
-        "model": "core.course", 
-        "fields": {
-            "description": "The Mathematics of Survival Models, some examples of parametric survival models. Tabular survival models, estimates from complete and incomplete data samples. Parametric survival models, determining the optimal parameters. Maximum likelihood estimators, derivation and properties. Product limit estimators, Kaplan-Meier and Nelson Aalen. Practical aspects.", 
-            "title": "Analysis of Mortality Data", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 833"
-        }
-    }, 
-    {
-        "pk": 3942, 
-        "model": "core.course", 
-        "fields": {
-            "description": "An introduction to property/casualty loss reserving techniques.  Claim payment process. Chain-ladder methods, Stochastic models.", 
-            "title": "Introduction fo Property and Casuality Loss Reserving", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 863"
+            "abbrev": "PHYS 604"
         }
     }, 
     {
@@ -47986,18 +47916,6 @@
         }
     }, 
     {
-        "pk": 3963, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Multiple time series modeling including transfer function and intervention analysis. Various special topics in time series such as outliers, robustness, order determination methods, Kalman filtering, sampling and aggregation, seasonal adjustments.", 
-            "title": "Time Series 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "STAT 930"
-        }
-    }, 
-    {
         "pk": 3964, 
         "model": "core.course", 
         "fields": {
@@ -48214,6 +48132,30 @@
         }
     }, 
     {
+        "pk": 4019, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Empirical analysis. Kinetic theory of gases. Potential energy surfaces. Unimolecular rates. Relaxation and steady state methods. Diffusion rates. Rates between polar molecules. Energy transfer.", 
+            "title": "Kinetics - Dynamics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 755"
+        }
+    }, 
+    {
+        "pk": 4020, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Aspects of electronic vibrational and rotational spectroscopy of atoms, molecules, and the solid state. Relevant aspects of quantum mechanics, Dirac notation, and angular momentum will be discussed. Group Theory will be presented and its implications for spectroscopy introduced.", 
+            "title": "Spectroscopy", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 756"
+        }
+    }, 
+    {
         "pk": 3983, 
         "model": "core.course", 
         "fields": {
@@ -48415,6 +48357,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "BIOL 680"
+        }
+    }, 
+    {
+        "pk": 4021, 
+        "model": "core.course", 
+        "fields": {
+            "description": "Two or three topics from a range including: bio-organic chemistry; environmental organic chemistry; free radicals; heterocyclic molecules; molecular rearrangements; organometallic chemistry; photochemistry; natural products.", 
+            "title": "Selected Topics in Organic Chemistry", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHEM 760"
         }
     }, 
     {
@@ -48643,42 +48597,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "CHEM 750"
-        }
-    }, 
-    {
-        "pk": 4019, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Empirical analysis. Kinetic theory of gases. Potential energy surfaces. Unimolecular rates. Relaxation and steady state methods. Diffusion rates. Rates between polar molecules. Energy transfer.", 
-            "title": "Kinetics - Dynamics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 755"
-        }
-    }, 
-    {
-        "pk": 4020, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Aspects of electronic vibrational and rotational spectroscopy of atoms, molecules, and the solid state. Relevant aspects of quantum mechanics, Dirac notation, and angular momentum will be discussed. Group Theory will be presented and its implications for spectroscopy introduced.", 
-            "title": "Spectroscopy", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 756"
-        }
-    }, 
-    {
-        "pk": 4021, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Two or three topics from a range including: bio-organic chemistry; environmental organic chemistry; free radicals; heterocyclic molecules; molecular rearrangements; organometallic chemistry; photochemistry; natural products.", 
-            "title": "Selected Topics in Organic Chemistry", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHEM 760"
         }
     }, 
     {
@@ -49183,66 +49101,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "EARTH 691"
-        }
-    }, 
-    {
-        "pk": 4062, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Course credit may be given for special studies related to the research interest of a student and a member of the faculty by special arrangement.", 
-            "title": "Special Studies for PhD Students", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "EARTH 692"
-        }
-    }, 
-    {
-        "pk": 4063, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Canonical quantization of fields, perturbation theory, derivation of Feynman diagrams, applications in particle and condensed matter theory, renormalization in phi^4.", 
-            "title": "Perimeter Scholars International Quantum Field Theory 1", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHYS 601"
-        }
-    }, 
-    {
-        "pk": 4064, 
-        "model": "core.course", 
-        "fields": {
-            "description": "A brief review of ensembles and quantum gases, Ising model, Landau theory of phase transitions, order parameters, topology, classical solutions.", 
-            "title": "Perimeter Scholars International Statistical Physics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHYS 602"
-        }
-    }, 
-    {
-        "pk": 4065, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Feynman Path Integral, abelian and nonabelian guage theories and their quantization, spontaneous symmetry breaking, nonperturbative techniques: \r\nlatticef ield theory, Wilsonian renormalization.", 
-            "title": "Perimeter Scholars International Quantum Field Theory 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHYS 603"
-        }
-    }, 
-    {
-        "pk": 4066, 
-        "model": "core.course", 
-        "fields": {
-            "description": "Special relativity, foundations of general relativity, Riemannian geometry, Einstein's equations, FRW and Schwarzschild geometries and their properties", 
-            "title": "Perimeter Scholars International Relativity", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHYS 604"
         }
     }, 
     {
@@ -51089,6 +50947,219 @@
             "instructor": 10, 
             "first_day": "2012-02-29", 
             "last_day": "2012-03-01"
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "core.section", 
+        "fields": {
+            "course": 852, 
+            "instructor": 10, 
+            "first_day": "2012-03-02", 
+            "last_day": "2012-03-03"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.sectionassign", 
+        "fields": {
+            "section": 45, 
+            "user": 2
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "C", 
+            "description": "Rename badge to emblem.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:27", 
+            "summary": "Emblem", 
+            "priority": 4, 
+            "created_time": "2012-03-02 13:23:42", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "F", 
+            "description": "Implement the Documents feature in Backstage.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:34", 
+            "summary": "Backstage Documents", 
+            "priority": 0, 
+            "created_time": "2012-03-02 04:41:41", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "R", 
+            "category": "C", 
+            "description": "Please improve the mobile version of the website.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:40", 
+            "summary": "Mobile Version", 
+            "priority": 1, 
+            "created_time": "2012-03-01 18:29:56", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "C", 
+            "category": "F", 
+            "description": "Add feature to indicate a ticket's status.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:48", 
+            "summary": "Ticket Status", 
+            "priority": 1, 
+            "created_time": "2012-03-01 17:48:30", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "C", 
+            "description": "Rename people to crowd.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:32", 
+            "summary": "Crowd", 
+            "priority": 3, 
+            "created_time": "2012-03-09 18:34:55", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "C", 
+            "description": "Re-brand Django CMS with current site's styles.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:41", 
+            "summary": "Re-brand Django CMS", 
+            "priority": 4, 
+            "created_time": "2012-03-09 17:49:52", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "F", 
+            "description": "1. Resolution\r\n2. Action Log\r\n3. Issue Linking\r\n4. Projects\r\n5. Milestones?\r\n6. Reassign\r\n7. Comments\r\n8. Attachments", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:47", 
+            "summary": "Ticket System Features", 
+            "priority": 0, 
+            "created_time": "2012-03-09 17:44:07", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "Refactor for loops in templates in the following format:\r\n\r\n{% for ... %}\r\n...\r\n{% empty %}\r\n...\r\n{% endfor %}", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:54", 
+            "summary": "Refactor For Loops", 
+            "priority": 1, 
+            "created_time": "2012-03-09 17:36:25", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "E", 
+            "description": "Using Python modules such as Haystack for searching larger sets of data.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:01", 
+            "summary": "Incorporate Search Engine", 
+            "priority": 4, 
+            "created_time": "2012-03-09 15:34:25", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "F", 
+            "description": "Allow logging to database, and if cannot log into database, log to a log file instead.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:05", 
+            "summary": "Logging to Database", 
+            "priority": 3, 
+            "created_time": "2012-03-07 17:11:13", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "E", 
+            "description": "Make Typeahead and Datatable components bind to AJAX responses.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:09", 
+            "summary": "AJAX'ify", 
+            "priority": 2, 
+            "created_time": "2012-03-06 15:44:39", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "Encapsulate AJAX Form", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:16", 
+            "summary": "Encapsulate AJAX Form", 
+            "priority": 1, 
+            "created_time": "2012-03-06 15:43:33", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "C", 
+            "description": "Change the name and label color of priorities.\r\n\r\nBlocker\r\nCritical\r\nMajor\r\nNormal\r\nMinor\r\nTrivial", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:22", 
+            "summary": "Priority Name Change", 
+            "priority": 1, 
+            "created_time": "2012-03-04 06:43:16", 
+            "owner": null
         }
     }, 
     {
@@ -53903,6 +53974,22 @@
     }, 
     {
         "pk": 1, 
+        "model": "account.specializationassign", 
+        "fields": {
+            "user": 8, 
+            "specialization": 126
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "account.specializationassign", 
+        "fields": {
+            "user": 8, 
+            "specialization": 231
+        }
+    }, 
+    {
+        "pk": 1, 
         "model": "account.skill", 
         "fields": {
             "name": "Django", 
@@ -53955,6 +54042,30 @@
         "fields": {
             "name": "Guitar", 
             "modified_time": "2012-02-19 01:34:57"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "account.skillassign", 
+        "fields": {
+            "skill": 3, 
+            "user": 8
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "account.skillassign", 
+        "fields": {
+            "skill": 5, 
+            "user": 8
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "account.skillassign", 
+        "fields": {
+            "skill": 4, 
+            "user": 8
         }
     }, 
     {
