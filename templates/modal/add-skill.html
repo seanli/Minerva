@@ -29,7 +29,7 @@
 		var form_id = 'form-add-skill';
 		form_data = $('#' + form_id).serializeObject(true);
 		$('#add-skill-button').button('loading');
-		Dajaxice.Minerva.account.form_add_skill(Dajax.process, {
+		Dajaxice.account.form_add_skill(Dajax.process, {
 			'form_data' : form_data,
 			'form_id' : form_id
 		});

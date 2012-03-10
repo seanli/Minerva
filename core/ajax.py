@@ -22,4 +22,4 @@ def show_validation(dajax, form, form_id):
 
 @dajaxice_register
 def helloworld(request):
-    return simplejson.dumps({'message':'Hello World'})
+    return simplejson.dumps({'message': 'Hello World'})

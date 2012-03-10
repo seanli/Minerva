@@ -29,7 +29,7 @@
 		var form_id = 'form-add-specialization';
 		form_data = $('#' + form_id).serializeObject(true);
 		$('#add-specialization-button').button('loading');
-		Dajaxice.Minerva.account.form_add_specialization(Dajax.process, {
+		Dajaxice.account.form_add_specialization(Dajax.process, {
 			'form_data' : form_data,
 			'form_id' : form_id
 		});

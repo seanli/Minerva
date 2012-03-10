@@ -32,7 +32,7 @@
 		$('#form-encouragement input[name="person_to"]').attr('value', '{{ current_user.id }}');
 		form_data = $('#' + form_id).serializeObject(true);
 		$('#post-encouragement-button').button('loading');
-		Dajaxice.Minerva.account.form_encouragement(Dajax.process, {
+		Dajaxice.account.form_encouragement(Dajax.process, {
 			'form_data' : form_data,
 			'form_id' : form_id
 		});
