@@ -1,7 +1,7 @@
-easy_install django
-easy_install psycopg2
-easy_install south
-easy_install django-dajaxice
-easy_install django-dajax
-easy_install pylint
-easy_install docutils
+django
+psycopg2
+south
+django-dajaxice
+django-dajax
+pylint
+docutils
