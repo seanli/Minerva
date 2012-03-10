@@ -15,7 +15,7 @@ while not valid:
     if alphnum:
         valid = True
 
-result = os.system("%s %smanage.py dumpdata --indent=4 --natural --exclude=contenttypes --exclude=auth.Permission > %sfixtures/%s.json" % (executable, directory, directory, fixture_name))
+result = os.system("%s ../%smanage.py dumpdata --indent=4 --natural --exclude=contenttypes --exclude=auth.Permission > ../%sfixtures/%s.json" % (executable, directory, directory, fixture_name))
 
 if result == 0:
     print "Fixture: %s.json is generated." % fixture_name
