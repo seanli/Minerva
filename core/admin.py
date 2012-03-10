@@ -1,7 +1,6 @@
 from django.contrib import admin
-from Minerva.core.models import (Country, ProvinceState,
+from core.models import (Country, ProvinceState,
     Institute, Course, Section, SectionAssign, Review)
-
 
 class ReviewInline(admin.StackedInline):
     model = Review
