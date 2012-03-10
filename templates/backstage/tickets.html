@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% load base_extra %}
-{% load webdesign %}
 
 {% block title %}{% brand_name %} - Tickets{% endblock %}
 
@@ -27,7 +26,7 @@
       <tbody>
       	{% for t in tickets %}
         <tr>
-          <td><a href="#"> #{{ t.id }} - {{ t.summary }}</a></td>
+          <td><a href="{% url backstage_tickets %}{{ t.id }}"> #{{ t.id }} - {{ t.summary }}</a></td>
           <td><span class="label label-{{ t.get_priority_display|lower }}">{{ t.get_priority_display|upper }}</span></td>
           <td><span class="label label-{{ t.get_category_display|lower }}">{{ t.get_category_display|upper }}</span></td>
           <td><span class="label label-{{ t.get_status_display|lower }}">{{ t.get_status_display|upper }}</span></td>
