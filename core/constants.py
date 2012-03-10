@@ -21,11 +21,12 @@ CATEGORY = (
 # Backstage
 
 TICKET_PRIORITY = (
-    (0, 'Highest'),
-    (1, 'High'),
-    (2, 'Normal'),
-    (3, 'Low'),
-    (4, 'Lowest'),
+    (0, 'Blocker'),
+    (1, 'Critical'),
+    (2, 'Major'),
+    (3, 'Normal'),
+    (4, 'Minor'),
+    (5, 'Trivial'),
 )
 
 TICKET_CATEGORY = (
