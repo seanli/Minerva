@@ -5,6 +5,9 @@ from course.models import SectionAssign, Course
 from datetime import datetime
 from course.forms import AddCourseForm
 
+def error_403(request):
+    return render_to_response('403.html', RequestContext(request))
+
 def error_404(request):
     return render_to_response('404.html', RequestContext(request))
 

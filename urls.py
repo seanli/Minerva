@@ -7,6 +7,7 @@ from dajaxice.core import dajaxice_autodiscover
 admin.autodiscover()
 dajaxice_autodiscover()
 
+handler403 = 'core.views.error_403'
 handler404 = 'core.views.error_404'
 handler500 = 'core.views.error_500'
 
