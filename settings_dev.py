@@ -15,6 +15,8 @@ DATABASES = {
     }
 }
 
+STATIC_URL = '/static/'
+
 # Django Debug Toolbar
 
 ENABLE_TOOLBAR = False
