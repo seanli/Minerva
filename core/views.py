@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.template import RequestContext
-from core.models import SectionAssign, Course
+from course.models import SectionAssign, Course
 from datetime import datetime
 from course.forms import AddCourseForm
 

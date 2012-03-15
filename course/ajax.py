@@ -1,7 +1,7 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from course.forms import AddCourseForm
-from core.models import Section
+from course.models import Section
 from core.ajax import clear_validation, show_validation
 
 

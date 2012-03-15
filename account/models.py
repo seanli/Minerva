@@ -4,7 +4,8 @@ from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
 from datetime import datetime
-from core.models import Institute, SectionAssign, ProvinceState
+from core.models import Institute, ProvinceState
+from course.models import SectionAssign
 from core.constants import ROLE, DEGREE
 from core.utilities import unique_username
 

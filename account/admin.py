@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 from account.models import (Profile, Contact, Specialization,
     SpecializationAssign, Badge, BadgeAssign,
     Encouragement, Feedback, Skill, SkillAssign)
-from core.models import Section, SectionAssign
+from course.models import Section, SectionAssign
 
 
 class ProfileInline(admin.StackedInline):

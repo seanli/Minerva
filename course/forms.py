@@ -2,7 +2,7 @@ from django import forms
 from django.forms import ModelChoiceField
 from core.forms import StandardForm
 from django.contrib.auth.models import User
-from core.models import Course, Section
+from course.models import Course, Section
 from datetime import datetime, timedelta
 
 
