@@ -1,12 +1,12 @@
-from settings_common import *
+import socket
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'minerva',
-        'USER': 'minerva_admin',
-        'PASSWORD': '1990106',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+PROD_HOSTS = (
+    'web330.webfaction.com',
+)
+
+HOST_NAME = socket.gethostname()
+
+if HOST_NAME in PROD_HOSTS:
+    from settings_prod import *
+else:
+    from settings_dev import *
