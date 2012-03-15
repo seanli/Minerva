@@ -41,21 +41,3 @@ def tickets(request, ticket_id=None):
             return render_to_response('backstage/tickets_detail.html', context, context_instance=RequestContext(request))
         else:
             return HttpResponse('Ticket Not Found!')
-
-
-@login_required
-@staff_required
-def cms(request):
-    admin_frame_location = request.COOKIES.get('admin_frame_location', None)
-    # Process iframe URL
-    if admin_frame_location is not None:
-        split_location = str(admin_frame_location).replace("%2F", "/").replace("%3F", "?").replace("%3D", "=").split('/')
-        new_location = '/' + ('/').join(split_location[3:])
-        if '%' in new_location:
-            new_location = '/admin'
-    else:
-        new_location = '/admin'
-    context = {
-        'admin_frame_location': new_location,
-    }
-    return render_to_response('backstage/cms.html', context, context_instance=RequestContext(request))
