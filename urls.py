@@ -7,6 +7,9 @@ from dajaxice.core import dajaxice_autodiscover
 admin.autodiscover()
 dajaxice_autodiscover()
 
+handler404 = 'core.views.page_404'
+handler500 = 'core.views.page_500'
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'views.home', name='home'),
@@ -20,4 +23,5 @@ urlpatterns = patterns('',
     url(r'^%s/' % settings.DAJAXICE_MEDIA_PREFIX, include('dajaxice.urls')),
 )
 
-urlpatterns += staticfiles_urlpatterns()
+if settings.DEBUG:
+    urlpatterns += staticfiles_urlpatterns()

@@ -2,6 +2,7 @@ from settings_base import *
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
+DAJAXICE_DEBUG = DEBUG
 
 DATABASES = {
     'default': {

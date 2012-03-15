@@ -7,6 +7,7 @@ Required Python Modules:
 - Dajax (AJAX)
 - Pylint (Python Style Check)
 - Docutils (Documentation)
+- Django Debug Toolbar (Debugging)
 
 Front-End Components:
 

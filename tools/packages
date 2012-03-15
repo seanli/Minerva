@@ -5,3 +5,4 @@ django-dajaxice
 django-dajax
 pylint
 docutils
+django-debug-toolbar
