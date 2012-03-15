@@ -4,6 +4,9 @@
 .settings
 *.komodoproject
 
+# Static Files #
+static/
+
 # Compiled Files #
 *.pyc
 

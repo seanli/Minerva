@@ -23,5 +23,4 @@ urlpatterns = patterns('',
     url(r'^%s/' % settings.DAJAXICE_MEDIA_PREFIX, include('dajaxice.urls')),
 )
 
-if settings.DEBUG:
-    urlpatterns += staticfiles_urlpatterns()
+urlpatterns += staticfiles_urlpatterns()
