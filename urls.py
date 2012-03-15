@@ -7,8 +7,8 @@ from dajaxice.core import dajaxice_autodiscover
 admin.autodiscover()
 dajaxice_autodiscover()
 
-handler404 = 'core.views.page_404'
-handler500 = 'core.views.page_500'
+handler404 = 'core.views.error_400'
+handler500 = 'core.views.error_500'
 
 urlpatterns = patterns('',
     # Examples:
