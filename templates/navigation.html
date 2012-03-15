@@ -14,6 +14,9 @@
           <li class="{% active request '(crowd)' %}">
             <a href="{% url crowd %}"><i class="icon-user icon-white"></i> Crowd</a>
           </li>
+          <li class="{% active request '(homeroom)' %}">
+            <a href="{% url homeroom %}"><i class="icon-home icon-white"></i> Homeroom</a>
+          </li>
           {% if user.is_staff %} <li class="divider-vertical"></li>
           <li class="{% active request '(backstage)' %}">
             <a href="{% url backstage %}"><i class="icon-leaf icon-white"></i> Backstage</a>
