@@ -16,4 +16,4 @@ DATABASES = {
 }
 
 STATIC_ROOT = '/home/lisean/webapps/static/'
-STATIC_URL = 'http://mynodo/static/'
+STATIC_URL = 'http://mynodo.com/static/'
