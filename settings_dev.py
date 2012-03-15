@@ -15,6 +15,8 @@ DATABASES = {
     }
 }
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 
