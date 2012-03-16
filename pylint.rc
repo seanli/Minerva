@@ -17,6 +17,7 @@ disable=C0111,W0232,R0201,W0613,W0702,W0102,F0401,E0611
 
 [REPORTS]
 output-format=parseable
+files-output=no
 include-ids=yes
 reports=no
 
