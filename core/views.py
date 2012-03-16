@@ -17,7 +17,7 @@ def error_500(request):
 @login_required
 def bulletin(request):
     user = request.user
-    sections = SectionAssign.objects.filter(user=user, section__first_day__lte=datetime.today(), section__last_day__gte=datetime.today())
+    sections = SectionAssign.objects.filter(user=user)
     source = ''
     courses = Course.objects.filter(institute=user.get_profile().institute).order_by('title')
     last = len(courses) - 1

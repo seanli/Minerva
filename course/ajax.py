@@ -16,9 +16,8 @@ def form_add_course(request, form_data, form_id):
         if section == '':
             section = Section()
             section.course = data['course']
-            section.first_day = data['first_day']
-            section.last_day = data['last_day']
-            section.instructor = data['instructor']
+            section.start_date = data['start_date']
+            section.duration = data['duration']
             section.save()
         profile = request.user.get_profile()
         profile.add_section(section)

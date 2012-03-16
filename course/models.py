@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime
 from core.models import Institute
+from core.constants import DURATION
 
 
 class Course(models.Model):
@@ -35,17 +36,16 @@ class Course(models.Model):
 class Section(models.Model):
 
     course = models.ForeignKey(Course)
-    first_day = models.DateField()
-    last_day = models.DateField()
-    instructor = models.ForeignKey(User, related_name="%(class)s_instructor")
+    start_date = models.DateField()
+    duration = models.CharField(max_length=1, choices=DURATION, default='T')
     user = models.ManyToManyField(User, through='SectionAssign')
 
     def __unicode__(self):
-        return "%s [%s, %s]" % (self.course, unicode(self.first_day), unicode(self.instructor))
+        return "%s [%s, %s]" % (self.course, unicode(self.start_date), unicode(self.instructor))
 
     class Meta:
         db_table = 'mva_section'
-        unique_together = ("course", "first_day", "last_day", "instructor")
+        unique_together = ("course", "start_date", "duration")
 
 
 class SectionAssign(models.Model):
