@@ -75,16 +75,12 @@ class EncouragementForm(StandardForm):
 
 class AddSpecializationForm(StandardForm):
 
-    name = forms.CharField(max_length=100, label='Specialization')
+    name = forms.CharField(max_length=100, label='Specialization', widget=forms.TextInput(attrs={'autocomplete': 'off'}))
+    specialization_id = forms.ModelChoiceField(label='', queryset=Specialization.objects, widget=forms.HiddenInput(), required=False)
 
     def __init__(self, *args, **kwargs):
-        try:
-            source = kwargs.pop('source')
-        except:
-            source = "[]"
         super(AddSpecializationForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
-        self.fields["name"].widget = forms.TextInput(attrs={'data-provide': 'typeahead', 'data-items': '7', 'autocomplete': 'off', 'data-source': source})
 
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
@@ -95,7 +91,7 @@ class AddSpecializationForm(StandardForm):
         if self._errors:
             return data
         else:
-            specialization = Specialization.get(data['name'])
+            specialization = Specialization.get(data['specialization_id'])
             if specialization is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed specialization!' % data['name'])
             else:

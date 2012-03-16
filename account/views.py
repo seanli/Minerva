@@ -8,6 +8,7 @@ from django.core.urlresolvers import reverse
 from account.forms import LoginForm, SignupForm, AddSpecializationForm, AddSkillForm
 from account.models import Profile, BadgeAssign, Encouragement, Specialization, Skill
 from core.utilities import get_referrer, set_referrer
+from django.utils import simplejson
 
 
 def login(request):
@@ -58,18 +59,7 @@ def crowd(request, username=None):
     if user is not None:
         profile = user.get_profile()
 
-        source = ''
-        specializations = Specialization.objects.all()
-        last = len(specializations) - 1
-        index = 0
-        for specialization in specializations:
-            if (index != last):
-                source += '"%s",' % (specialization.name)
-            else:
-                source += '"%s"' % (specialization.name)
-            index += 1
-        source = '[' + source + ']'
-        add_specialization_form = AddSpecializationForm(request=request, source=source)
+        add_specialization_form = AddSpecializationForm(request=request)
 
         source = ''
         skills = Skill.objects.all()
@@ -96,3 +86,17 @@ def crowd(request, username=None):
         return render_to_response('crowd/main.html', context, context_instance=RequestContext(request))
     else:
         return HttpResponse('User Not Found!')
+
+
+@login_required
+def source_specialization(request):
+    json = []
+    if 'term' in request.GET:
+        term = request.GET['term']
+        specializations = Specialization.objects.filter(name__icontains=term)
+        for specialization in specializations:
+            datum = {}
+            datum['label'] = specialization.name
+            datum['value'] = specialization.id
+            json.append(datum)
+    return HttpResponse(simplejson.dumps(json))

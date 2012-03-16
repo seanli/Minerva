@@ -22,7 +22,7 @@ STATIC_URL = '/static/'
 
 # Django Debug Toolbar
 
-ENABLE_TOOLBAR = True
+ENABLE_TOOLBAR = False
 
 if ENABLE_TOOLBAR:
 

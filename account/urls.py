@@ -7,4 +7,5 @@ urlpatterns = patterns('account.views',
     url(r'^signup/$', 'signup', name='signup'),
     url(r'^crowd/$', 'crowd', name='crowd'),
     url(r'^crowd/(?P<username>\w+)/$', 'crowd'),
+    url(r'^source_specialization/', 'source_specialization'),
 )
