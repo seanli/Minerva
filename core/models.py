@@ -1,6 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
-from datetime import datetime
 from core.constants import CATEGORY
 
 

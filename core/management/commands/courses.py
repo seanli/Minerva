@@ -1,7 +1,8 @@
 import os
 from django.utils import simplejson
 from django.conf import settings
-from core.models import Course, Institute
+from course.models import Course
+from core.models import Institute
 from django.core.management.base import NoArgsCommand
 
 

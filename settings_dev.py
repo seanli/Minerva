@@ -22,18 +22,18 @@ STATIC_URL = '/static/'
 
 # Django Debug Toolbar
 
-ENABLE_TOOLBAR = False
+ENABLE_TOOLBAR = True
 
 if ENABLE_TOOLBAR:
-    
+
     MIDDLEWARE_CLASSES += (
         'debug_toolbar.middleware.DebugToolbarMiddleware',
     )
-    
+
     INSTALLED_APPS += (
         'debug_toolbar',
     )
-    
+
     DEBUG_TOOLBAR_PANELS = (
         'debug_toolbar.panels.version.VersionDebugPanel',
         'debug_toolbar.panels.timer.TimerDebugPanel',
@@ -47,12 +47,12 @@ if ENABLE_TOOLBAR:
         'debug_toolbar.panels.signals.SignalDebugPanel',
         'debug_toolbar.panels.logger.LoggingPanel',
     )
-    
+
     def toolbar_callback(request):
         return ENABLE_TOOLBAR
-    
+
     DEBUG_TOOLBAR_CONFIG = {
         'INTERCEPT_REDIRECTS': True,
         'SHOW_TOOLBAR_CALLBACK': toolbar_callback,
-        'ENABLE_STACKTRACES' : True,
+        'ENABLE_STACKTRACES': True,
     }

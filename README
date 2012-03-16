@@ -9,6 +9,14 @@ Required Python Modules:
 - Docutils (Documentation)
 - Django Debug Toolbar (Debugging)
 
+Python Module Installers:
+
+- Easy Install
+- Pip
+	- pip install -r requirements.txt
+	- pip install --upgrade ... 
+	- pip uninstall ...
+
 Front-End Components:
 
 - Bootstrap From Twitter
@@ -17,6 +25,7 @@ Less Compilers:
 
 - WinLess (For Windows)
 - Crunch (For Mac)
+- SimpLess (Cross-Platform)
 
 UW API Key:
 

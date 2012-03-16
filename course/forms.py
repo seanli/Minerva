@@ -1,9 +1,7 @@
 from django import forms
-from django.forms import ModelChoiceField
 from core.forms import StandardForm
-from django.contrib.auth.models import User
 from course.models import Course, Section
-from datetime import datetime, timedelta, date
+from datetime import datetime, date
 from core.constants import MONTH, YEAR, DURATION
 
 
