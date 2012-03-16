@@ -105,6 +105,7 @@ INSTALLED_APPS = (
     'south',
     'dajaxice',
     'dajax',
+    'creoleparser',
     'core',
     'core.templatetags',
     'core.management',

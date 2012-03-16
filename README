@@ -5,6 +5,7 @@ Required Python Modules:
 - South (Database Migration)
 - Dajaxice (AJAX)
 - Dajax (AJAX)
+- CreoleParser (Wiki Markup)
 - Pylint (Python Style Check)
 	- pylint --rcfile=pylint.rc .
 - Docutils (Documentation)

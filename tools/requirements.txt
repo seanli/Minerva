@@ -3,6 +3,7 @@ psycopg2
 south
 django-dajaxice
 django-dajax
+creoleparser
 pylint
 docutils
 django-debug-toolbar
