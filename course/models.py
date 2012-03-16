@@ -41,7 +41,7 @@ class Section(models.Model):
     user = models.ManyToManyField(User, through='SectionAssign')
 
     def __unicode__(self):
-        return "%s [%s, %s]" % (self.course, unicode(self.start_date), unicode(self.instructor))
+        return "%s [%s, %s]" % (self.course, unicode(self.start_date), self.get_duration_display())
 
     class Meta:
         db_table = 'mva_section'
