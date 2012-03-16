@@ -47,15 +47,12 @@
 			source: '/source_specialization/',
 			minLength: 3,
 			autoFocus: true,
-			focus: function(event, ui) {
-        $(this).val(ui.item.label);
-        $('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
-        return false;
-      },
-      select: function(event, ui) {
-        $('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
-        return false;
-      },
+			delay: 100,
+            select: function(event, ui) {
+                $(this).val(ui.item.label);
+                $('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
+                return false;
+            },
 		});
 	});
 

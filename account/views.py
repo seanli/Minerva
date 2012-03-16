@@ -75,7 +75,7 @@ def crowd(request, username=None):
         add_skill_form = AddSkillForm(request=request, source=source)
 
         context = {
-            'current_user': user,
+            'viewing_user': user,
             'profile': profile,
             'badges': BadgeAssign.objects.filter(user=user),
             'encouragements': Encouragement.objects.filter(person_to=user).order_by('-sent_time'),

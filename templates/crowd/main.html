@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div class="span11">
-			<h1>{{ current_user.get_full_name }}</h1>
+			<h1>{{ viewing_user.get_full_name }}</h1>
 			{% if profile.degree %} <h6>{{ profile.get_degree_display }} {{ profile.get_role_display }} from {{ profile.institute }}</h6>
 			{% else %} <h6>{{ profile.get_role_display }} from {{ profile.institute }}</h6>
 			{% endif %} <div class="vertical-space"></div>
@@ -33,21 +33,21 @@
 	<div class="span6">
 		<div class="row-fluid">
 			<div class="span6">
-				{% with specializations=user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
+				{% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
 				{% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
 				{% empty %} <h6>No Specialization Yet!</h6>
 				{% endfor %}
-				{% if current_user == user %} <div class="vertical-space"></div>
+				{% if viewing_user == user %} <div class="vertical-space"></div>
 				<a data-toggle="modal" href="#add-specialization" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Specialization </a>
 				{% endif %}
 				{% endwith %}
 			</div>
 			<div class="span6">
-				{% with skills=user.skill_set.all %} <h3>Skill{{ skills.count|pluralize }}:</h3>
+				{% with skills=viewing_user.skill_set.all %} <h3>Skill{{ skills.count|pluralize }}:</h3>
 				{% for skill in skills %} <h6>{{ skill.name }}</h6>
 				{% empty %} <h6>No Skill Yet!</h6>
 				{% endfor %}
-				{% if current_user == user %} <div class="vertical-space"></div>
+				{% if viewing_user == user %} <div class="vertical-space"></div>
 				<a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
 				{% endif %}
 				{% endwith %}
@@ -57,7 +57,7 @@
 		<div class="row-fluid">
 			{% if profile.role = 'S' %} <h3>Encouragement{{ encouragements.count|pluralize }}:</h3>
 			<div class="vertical-space"></div>
-			{% if current_user != user %} <div class="vertical-space"></div>
+			{% if viewing_user != user %} <div class="vertical-space"></div>
 			<a data-toggle="modal" href="#encouragement" class="btn btn-mini btn-warning"><i class="icon-pencil icon-white"></i> Encouragement </a>
 			<div class="vertical-space"></div>
 			<div class="vertical-space"></div>
