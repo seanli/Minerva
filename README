@@ -6,6 +6,7 @@ Required Python Modules:
 - Dajaxice (AJAX)
 - Dajax (AJAX)
 - Pylint (Python Style Check)
+	- pylint --rcfile=pylint.rc .
 - Docutils (Documentation)
 - Django Debug Toolbar (Debugging)
 

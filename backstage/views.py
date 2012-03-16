@@ -17,9 +17,9 @@ def dashboard(request):
 @staff_required
 def tickets(request, ticket_id=None):
     if ticket_id is None:
-        tickets = Ticket.objects.all()
+        ticket_list = Ticket.objects.all()
         context = {
-            'tickets': tickets,
+            'tickets': ticket_list,
         }
         return render_to_response('backstage/tickets.html', context, context_instance=RequestContext(request))
     else:

@@ -12,7 +12,7 @@ class Command(NoArgsCommand):
     def handle_noargs(self, **options):
         programs = simplejson.load(open(os.path.join(settings.COMMANDS_ROOT[0], 'programs.json')))
         for program in programs['response']['data']['result']:
-            sp = Specialization()
-            sp.name = program['Name']
-            sp.save()
+            new_specialization = Specialization()
+            new_specialization.name = program['Name']
+            new_specialization.save()
             print 'Added: %s' % program['Name']

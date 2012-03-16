@@ -21,10 +21,10 @@ class Command(NoArgsCommand):
             try:
                 Course.objects.get(title=title)
             except Course.DoesNotExist:
-                c = Course()
-                c.title = title
-                c.abbrev = abbrev
-                c.institute = institute
-                c.description = description
-                c.save()
-                print 'Added: %s' % c.abbrev
+                new_course = Course()
+                new_course.title = title
+                new_course.abbrev = abbrev
+                new_course.institute = institute
+                new_course.description = description
+                new_course.save()
+                print 'Added: %s' % new_course.abbrev
