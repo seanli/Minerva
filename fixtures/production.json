@@ -125,7 +125,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-03-09 20:10:12", 
+            "last_login": "2012-03-15 19:40:25", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
@@ -139,6 +139,24 @@
         "fields": {
             "domain": "www.mynodo.com", 
             "name": "Mynodo"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-15 18:30:53", 
+            "app_name": "core", 
+            "migration": "0022_auto__del_sectionassign__del_unique_sectionassign_user_section__del_re"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-15 18:30:53", 
+            "app_name": "course", 
+            "migration": "0001_initial"
         }
     }, 
     {
@@ -385,6 +403,24 @@
         }
     }, 
     {
+        "pk": 30, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-16 00:35:18", 
+            "app_name": "course", 
+            "migration": "0002_auto__del_field_section_last_day__del_field_section_instructor__del_fi"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-16 00:37:48", 
+            "app_name": "course", 
+            "migration": "0003_auto__chg_field_section_duration"
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "core.country", 
         "fields": {
@@ -561,6 +597,216 @@
             "province_state": 1, 
             "address": "27 King's College Circle", 
             "name": "University of Toronto"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "L", 
+            "category": null, 
+            "description": "Homeroom", 
+            "reporter": 2, 
+            "modified_time": "2012-03-14 17:39:46", 
+            "summary": "Homeroom", 
+            "priority": null, 
+            "created_time": "2012-03-14 17:39:46", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "C", 
+            "description": "Rename badge to emblem.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:27", 
+            "summary": "Emblem", 
+            "priority": 4, 
+            "created_time": "2012-03-02 13:23:42", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "F", 
+            "description": "Implement the Documents feature in Backstage.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:34", 
+            "summary": "Backstage Documents", 
+            "priority": 0, 
+            "created_time": "2012-03-02 04:41:41", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "R", 
+            "category": "C", 
+            "description": "Please improve the mobile version of the website.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:40", 
+            "summary": "Mobile Version", 
+            "priority": 1, 
+            "created_time": "2012-03-01 18:29:56", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "C", 
+            "category": "F", 
+            "description": "Add feature to indicate a ticket's status.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:48", 
+            "summary": "Ticket Status", 
+            "priority": 1, 
+            "created_time": "2012-03-01 17:48:30", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "C", 
+            "description": "Rename people to crowd.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:32", 
+            "summary": "Crowd", 
+            "priority": 3, 
+            "created_time": "2012-03-09 18:34:55", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "C", 
+            "description": "Re-brand Django CMS with current site's styles.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:41", 
+            "summary": "Re-brand Django CMS", 
+            "priority": 4, 
+            "created_time": "2012-03-09 17:49:52", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "F", 
+            "description": "1. Resolution\r\n2. Action Log\r\n3. Issue Linking\r\n4. Projects\r\n5. Milestones?\r\n6. Reassign\r\n7. Comments\r\n8. Attachments", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:47", 
+            "summary": "Ticket System Features", 
+            "priority": 0, 
+            "created_time": "2012-03-09 17:44:07", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "Refactor for loops in templates in the following format:\r\n\r\n{% for ... %}\r\n...\r\n{% empty %}\r\n...\r\n{% endfor %}", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:53:54", 
+            "summary": "Refactor For Loops", 
+            "priority": 1, 
+            "created_time": "2012-03-09 17:36:25", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "E", 
+            "description": "Using Python modules such as Haystack for searching larger sets of data.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:01", 
+            "summary": "Incorporate Search Engine", 
+            "priority": 4, 
+            "created_time": "2012-03-09 15:34:25", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "F", 
+            "description": "Allow logging to database, and if cannot log into database, log to a log file instead.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:05", 
+            "summary": "Logging to Database", 
+            "priority": 3, 
+            "created_time": "2012-03-07 17:11:13", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "E", 
+            "description": "Make Typeahead and Datatable components bind to AJAX responses.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:09", 
+            "summary": "AJAX'ify", 
+            "priority": 2, 
+            "created_time": "2012-03-06 15:44:39", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "Encapsulate AJAX Form", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:16", 
+            "summary": "Encapsulate AJAX Form", 
+            "priority": 1, 
+            "created_time": "2012-03-06 15:43:33", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "C", 
+            "description": "Change the name and label color of priorities.\r\n\r\nBlocker\r\nCritical\r\nMajor\r\nNormal\r\nMinor\r\nTrivial", 
+            "reporter": 2, 
+            "modified_time": "2012-03-09 23:54:22", 
+            "summary": "Priority Name Change", 
+            "priority": 1, 
+            "created_time": "2012-03-04 06:43:16", 
+            "owner": null
         }
     }, 
     {
@@ -6780,6 +7026,18 @@
         }
     }, 
     {
+        "pk": 2223, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An introduction to the fundamental principles and concepts of visual art through a series of exercises using a variety of materials.", 
+            "title": "Fundamentals of Visual Art 1", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FINE 120"
+        }
+    }, 
+    {
         "pk": 357, 
         "model": "course.course", 
         "fields": {
@@ -7077,6 +7335,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "STAT 372"
+        }
+    }, 
+    {
+        "pk": 3723, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course is a continuation of GEOG 661A/PLAN661A. *eligible for MES.", 
+            "title": "Applied Studies in Hydrology and the Environment 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PLAN 661B"
         }
     }, 
     {
@@ -7677,6 +7947,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "MATH 245"
+        }
+    }, 
+    {
+        "pk": 3745, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Special Topics in Conflict and Security", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GGOV 638"
+        }
+    }, 
+    {
+        "pk": 3746, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Readings in Conflict and Security", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GGOV 639"
         }
     }, 
     {
@@ -13416,6 +13710,18 @@
         }
     }, 
     {
+        "pk": 935, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Combustion thermodynamics, introduction to chemical kinetics of combustion, combustion properties of fuels, flammability of combustible mixtures. Flame propagation mechanisms, pre-mixed and diffusional; stability of flames; introduction to combustion aerodynamics, jet flames; atomization; droplet and spray combustion. Elementary ignition concepts and theory. Basic detonation theory. [Offered: W]", 
+            "title": "Combustion 1", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ME 557"
+        }
+    }, 
+    {
         "pk": 978, 
         "model": "course.course", 
         "fields": {
@@ -13596,15 +13902,15 @@
         }
     }, 
     {
-        "pk": 935, 
+        "pk": 1319, 
         "model": "course.course", 
         "fields": {
-            "description": "Combustion thermodynamics, introduction to chemical kinetics of combustion, combustion properties of fuels, flammability of combustible mixtures. Flame propagation mechanisms, pre-mixed and diffusional; stability of flames; introduction to combustion aerodynamics, jet flames; atomization; droplet and spray combustion. Elementary ignition concepts and theory. Basic detonation theory. [Offered: W]", 
-            "title": "Combustion 1", 
+            "description": "This course will study some of the most significant texts from medieval time to the 18th century. Special emphasis is placed on textual analysis. ", 
+            "title": "Early Spanish Literature (WLU)", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ME 557"
+            "abbrev": "SPAN 223W"
         }
     }, 
     {
@@ -13956,6 +14262,18 @@
         }
     }, 
     {
+        "pk": 1495, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An analysis of the context and rich documentary tradition of the second Vatican Council, the course will explore, in particular, the global dynamics of these teachings. ", 
+            "title": "Vatican II", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "RS 348"
+        }
+    }, 
+    {
         "pk": 958, 
         "model": "course.course", 
         "fields": {
@@ -14160,6 +14478,18 @@
         }
     }, 
     {
+        "pk": 1008, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Introduction to the concepts of learning, person perception, attitudes and motivation in an organization. Consideration of communication, roles, norms and decision making within a group. Discussion of power, control, leadership and management in light of the above concepts. [Offered: F, S]", 
+            "title": "Organizational Behaviour", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "MSCI 211"
+        }
+    }, 
+    {
         "pk": 977, 
         "model": "course.course", 
         "fields": {
@@ -14340,18 +14670,6 @@
         }
     }, 
     {
-        "pk": 1008, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Introduction to the concepts of learning, person perception, attitudes and motivation in an organization. Consideration of communication, roles, norms and decision making within a group. Discussion of power, control, leadership and management in light of the above concepts. [Offered: F, S]", 
-            "title": "Organizational Behaviour", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "MSCI 211"
-        }
-    }, 
-    {
         "pk": 1107, 
         "model": "course.course", 
         "fields": {
@@ -14517,6 +14835,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "MSCI 262"
+        }
+    }, 
+    {
+        "pk": 1639, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science. ", 
+            "title": "Introductory Psychology", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 121R"
         }
     }, 
     {
@@ -14712,6 +15042,18 @@
         }
     }, 
     {
+        "pk": 1049, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Aqueous inorganic chemistry. Structure and nomenclature of organic compounds. Physical properties of nonaqueous phase organics. Chemical reactions. Chemistry of surface and groundwater. Labs alternate weeks. [Offered: W]", 
+            "title": "Environmental Chemistry", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENVE 275"
+        }
+    }, 
+    {
         "pk": 1023, 
         "model": "course.course", 
         "fields": {
@@ -14877,6 +15219,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "GENE 21D"
+        }
+    }, 
+    {
+        "pk": 1050, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An introduction to ordinary differential equations with applications to physical and environmental engineering problems. Standard methods of solution of first and second order linear equations with constant co-efficients. Systems of differential equations. Introduction to the Laplace Transform method. [Offered: F, S]", 
+            "title": "Differential Equations", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENVE 223"
         }
     }, 
     {
@@ -15057,30 +15411,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENVE 276"
-        }
-    }, 
-    {
-        "pk": 1049, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Aqueous inorganic chemistry. Structure and nomenclature of organic compounds. Physical properties of nonaqueous phase organics. Chemical reactions. Chemistry of surface and groundwater. Labs alternate weeks. [Offered: W]", 
-            "title": "Environmental Chemistry", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENVE 275"
-        }
-    }, 
-    {
-        "pk": 1050, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An introduction to ordinary differential equations with applications to physical and environmental engineering problems. Standard methods of solution of first and second order linear equations with constant co-efficients. Systems of differential equations. Introduction to the Laplace Transform method. [Offered: F, S]", 
-            "title": "Differential Equations", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENVE 223"
         }
     }, 
     {
@@ -15288,6 +15618,18 @@
         }
     }, 
     {
+        "pk": 1087, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Thin film fabrication technology. Fundamentals of emerging amorphous, polycrystalline silicon, transparent oxide electronics, organic electronics, and silicon nanowires. [Offered: W]", 
+            "title": "Semiconductor Device Technology", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECE 433"
+        }
+    }, 
+    {
         "pk": 1069, 
         "model": "course.course", 
         "fields": {
@@ -15480,18 +15822,6 @@
         }
     }, 
     {
-        "pk": 1087, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Thin film fabrication technology. Fundamentals of emerging amorphous, polycrystalline silicon, transparent oxide electronics, organic electronics, and silicon nanowires. [Offered: W]", 
-            "title": "Semiconductor Device Technology", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECE 433"
-        }
-    }, 
-    {
         "pk": 1105, 
         "model": "course.course", 
         "fields": {
@@ -15681,6 +16011,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 390"
+        }
+    }, 
+    {
+        "pk": 1124, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Review of wave-particle duality, basic quantum mechanics, Schrodinger equation, energy bands in crystals, basic properties of semiconductors, intrinsic and doped semiconductor, electrons and holes, metals and alloys, superconductivity, phonons and heat capacity, dielectric materials, optical properties, dielectric properties and magnetic properties of materials. [Offered: F, S]", 
+            "title": "Electronic and Electrical Properties of Materials", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECE 209"
         }
     }, 
     {
@@ -15897,18 +16239,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 240"
-        }
-    }, 
-    {
-        "pk": 1124, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Review of wave-particle duality, basic quantum mechanics, Schrodinger equation, energy bands in crystals, basic properties of semiconductors, intrinsic and doped semiconductor, electrons and holes, metals and alloys, superconductivity, phonons and heat capacity, dielectric materials, optical properties, dielectric properties and magnetic properties of materials. [Offered: F, S]", 
-            "title": "Electronic and Electrical Properties of Materials", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECE 209"
         }
     }, 
     {
@@ -16824,6 +17154,18 @@
         }
     }, 
     {
+        "pk": 1217, 
+        "model": "course.course", 
+        "fields": {
+            "description": "History of settlement and building in Rome and the surrounding area from antiquity to the present. Acts of design in architecture, urban form and landscape related to political, cultural and spiritual authority of Rome. Comparison drawn between the image of the city, represented in literature and art, and the material facts of the place. Field trips, lecture. ", 
+            "title": "Rome and the Campagna (Rome)", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ARCH 448"
+        }
+    }, 
+    {
         "pk": 1200, 
         "model": "course.course", 
         "fields": {
@@ -17040,15 +17382,15 @@
         }
     }, 
     {
-        "pk": 1217, 
+        "pk": 1274, 
         "model": "course.course", 
         "fields": {
-            "description": "History of settlement and building in Rome and the surrounding area from antiquity to the present. Acts of design in architecture, urban form and landscape related to political, cultural and spiritual authority of Rome. Comparison drawn between the image of the city, represented in literature and art, and the material facts of the place. Field trips, lecture. ", 
-            "title": "Rome and the Campagna (Rome)", 
+            "description": "A workshop course which works from theory to develop the skills to work in groups effectively. The principles of group dynamics, leadership, and conflict resolution will be studied and implemented in small group meetings and presentations.", 
+            "title": "Small Group Communication", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ARCH 448"
+            "abbrev": "SPCOM 324"
         }
     }, 
     {
@@ -17676,18 +18018,6 @@
         }
     }, 
     {
-        "pk": 1274, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A workshop course which works from theory to develop the skills to work in groups effectively. The principles of group dynamics, leadership, and conflict resolution will be studied and implemented in small group meetings and presentations.", 
-            "title": "Small Group Communication", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SPCOM 324"
-        }
-    }, 
-    {
         "pk": 1275, 
         "model": "course.course", 
         "fields": {
@@ -18216,18 +18546,6 @@
         }
     }, 
     {
-        "pk": 1319, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will study some of the most significant texts from medieval time to the 18th century. Special emphasis is placed on textual analysis. ", 
-            "title": "Early Spanish Literature (WLU)", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SPAN 223W"
-        }
-    }, 
-    {
         "pk": 1320, 
         "model": "course.course", 
         "fields": {
@@ -18465,6 +18783,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SOC 415"
+        }
+    }, 
+    {
+        "pk": 1724, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The fundamentals of Polish grammar are taught with emphasis on oral practice and pronunciation. An introduction to Polish culture is given as well. \r\n", 
+            "title": "Elementary Polish I", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "POLSH 101"
         }
     }, 
     {
@@ -18717,6 +19047,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SOC 366"
+        }
+    }, 
+    {
+        "pk": 1725, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Various problems in metaphysics, as announced by the Department.", 
+            "title": "Problems in Metaphysics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 456"
         }
     }, 
     {
@@ -19548,6 +19890,18 @@
         }
     }, 
     {
+        "pk": 1496, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course explores the theme of wisdom in the Bible and related literature in the period from ancient Israel to the first century CE. It examines the varied cultural influences on biblical wisdom traditions. ", 
+            "title": "Seeking Wisdom in the Bible", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "RS 338"
+        }
+    }, 
+    {
         "pk": 1438, 
         "model": "course.course", 
         "fields": {
@@ -19833,6 +20187,30 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "REES 310"
+        }
+    }, 
+    {
+        "pk": 1497, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An examination of diverse biblical views of peace in relation to war, justice, and salvation with attention to their relevance for the contemporary quest for peace. ", 
+            "title": "The Bible and Peace", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "RS 337"
+        }
+    }, 
+    {
+        "pk": 1498, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A study of both distinctive and shared ways authors of the New Testament view Jesus, law, ministry, authority, worship, and Jewish and Gentile traditions. ", 
+            "title": "Unity and Diversity in the New Testament", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "RS 335"
         }
     }, 
     {
@@ -20145,54 +20523,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "RS 350"
-        }
-    }, 
-    {
-        "pk": 1495, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An analysis of the context and rich documentary tradition of the second Vatican Council, the course will explore, in particular, the global dynamics of these teachings. ", 
-            "title": "Vatican II", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "RS 348"
-        }
-    }, 
-    {
-        "pk": 1496, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course explores the theme of wisdom in the Bible and related literature in the period from ancient Israel to the first century CE. It examines the varied cultural influences on biblical wisdom traditions. ", 
-            "title": "Seeking Wisdom in the Bible", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "RS 338"
-        }
-    }, 
-    {
-        "pk": 1497, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An examination of diverse biblical views of peace in relation to war, justice, and salvation with attention to their relevance for the contemporary quest for peace. ", 
-            "title": "The Bible and Peace", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "RS 337"
-        }
-    }, 
-    {
-        "pk": 1498, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A study of both distinctive and shared ways authors of the New Testament view Jesus, law, ministry, authority, worship, and Jewish and Gentile traditions. ", 
-            "title": "Unity and Diversity in the New Testament", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "RS 335"
         }
     }, 
     {
@@ -21288,6 +21618,18 @@
         }
     }, 
     {
+        "pk": 1616, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A study of the psychological processes in the second decade of human development. Consideration is given to such areas as intellectual, emotional and social growth, and identity formation. Current concepts, issues, and research are stressed.", 
+            "title": "Psychology of Adolescence", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 315"
+        }
+    }, 
+    {
         "pk": 1594, 
         "model": "course.course", 
         "fields": {
@@ -21549,18 +21891,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 317"
-        }
-    }, 
-    {
-        "pk": 1616, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A study of the psychological processes in the second decade of human development. Consideration is given to such areas as intellectual, emotional and social growth, and identity formation. Current concepts, issues, and research are stressed.", 
-            "title": "Psychology of Adolescence", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 315"
         }
     }, 
     {
@@ -21837,18 +22167,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 211"
-        }
-    }, 
-    {
-        "pk": 1639, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A general survey course designed to provide the student with an understanding of the basic concepts and techniques of modern psychology as a behavioural science. ", 
-            "title": "Introductory Psychology", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 121R"
         }
     }, 
     {
@@ -22152,6 +22470,18 @@
         }
     }, 
     {
+        "pk": 1726, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An in depth study of the thoughts of a major figure such as Kierkegaard, Unamuno, Nietzsche, Heidegger, Sartre, Camus, Marcel, Jaspers, Ortega y Gasset.", 
+            "title": "Existential Philosophy", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PHIL 465"
+        }
+    }, 
+    {
         "pk": 1668, 
         "model": "course.course", 
         "fields": {
@@ -22437,6 +22767,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSCI 355"
+        }
+    }, 
+    {
+        "pk": 2125, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A continuation of FR 393A. ", 
+            "title": "French Civilization, 20th-Century French History", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FR 393B"
         }
     }, 
     {
@@ -22773,42 +23115,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PHIL 498"
-        }
-    }, 
-    {
-        "pk": 1724, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The fundamentals of Polish grammar are taught with emphasis on oral practice and pronunciation. An introduction to Polish culture is given as well. \r\n", 
-            "title": "Elementary Polish I", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "POLSH 101"
-        }
-    }, 
-    {
-        "pk": 1725, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Various problems in metaphysics, as announced by the Department.", 
-            "title": "Problems in Metaphysics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 456"
-        }
-    }, 
-    {
-        "pk": 1726, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An in depth study of the thoughts of a major figure such as Kierkegaard, Unamuno, Nietzsche, Heidegger, Sartre, Camus, Marcel, Jaspers, Ortega y Gasset.", 
-            "title": "Existential Philosophy", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PHIL 465"
         }
     }, 
     {
@@ -23460,6 +23766,18 @@
         }
     }, 
     {
+        "pk": 2126, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A study of selected texts by modern French-Canadian authors.", 
+            "title": "Contemporary French-Canadian Novel", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FR 375"
+        }
+    }, 
+    {
         "pk": 1789, 
         "model": "course.course", 
         "fields": {
@@ -23757,6 +24075,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PACS 323"
+        }
+    }, 
+    {
+        "pk": 2121, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Introduction to the early development of French.", 
+            "title": "Medieval French Language", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FR 409"
         }
     }, 
     {
@@ -25248,6 +25578,18 @@
         }
     }, 
     {
+        "pk": 2169, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Students will explore a variety of research tools such as stylistic analyses, iconographical interpretations, provenance studies, and readings in art historiography. ", 
+            "title": "Methods in the History of Art", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FINE 396"
+        }
+    }, 
+    {
         "pk": 1940, 
         "model": "course.course", 
         "fields": {
@@ -25836,6 +26178,18 @@
         }
     }, 
     {
+        "pk": 2192, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A survey of contemporary international art movements with emphasis on work since 1970. Readings in contemporary criticism and gallery visits are an integral part of the course. ", 
+            "title": "Contemporary Art", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FINE 319"
+        }
+    }, 
+    {
         "pk": 1990, 
         "model": "course.course", 
         "fields": {
@@ -26121,6 +26475,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HIST 300"
+        }
+    }, 
+    {
+        "pk": 2193, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A seminar course that examines the Neoclassic and Romantic currents of art between 1750 and 1850. ", 
+            "title": "Special Topics in 18th- and 19th-Century Art", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "FINE 313"
         }
     }, 
     {
@@ -26421,30 +26787,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HIST 227"
-        }
-    }, 
-    {
-        "pk": 2125, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of FR 393A. ", 
-            "title": "French Civilization, 20th-Century French History", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FR 393B"
-        }
-    }, 
-    {
-        "pk": 2126, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A study of selected texts by modern French-Canadian authors.", 
-            "title": "Contemporary French-Canadian Novel", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FR 375"
         }
     }, 
     {
@@ -27444,18 +27786,6 @@
         }
     }, 
     {
-        "pk": 2121, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Introduction to the early development of French.", 
-            "title": "Medieval French Language", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FR 409"
-        }
-    }, 
-    {
         "pk": 2127, 
         "model": "course.course", 
         "fields": {
@@ -27912,18 +28242,6 @@
         }
     }, 
     {
-        "pk": 2169, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Students will explore a variety of research tools such as stylistic analyses, iconographical interpretations, provenance studies, and readings in art historiography. ", 
-            "title": "Methods in the History of Art", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FINE 396"
-        }
-    }, 
-    {
         "pk": 2170, 
         "model": "course.course", 
         "fields": {
@@ -28173,30 +28491,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "FINE 319A"
-        }
-    }, 
-    {
-        "pk": 2192, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A survey of contemporary international art movements with emphasis on work since 1970. Readings in contemporary criticism and gallery visits are an integral part of the course. ", 
-            "title": "Contemporary Art", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FINE 319"
-        }
-    }, 
-    {
-        "pk": 2193, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A seminar course that examines the Neoclassic and Romantic currents of art between 1750 and 1850. ", 
-            "title": "Special Topics in 18th- and 19th-Century Art", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FINE 313"
         }
     }, 
     {
@@ -28512,18 +28806,6 @@
         }
     }, 
     {
-        "pk": 2223, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An introduction to the fundamental principles and concepts of visual art through a series of exercises using a variety of materials.", 
-            "title": "Fundamentals of Visual Art 1", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "FINE 120"
-        }
-    }, 
-    {
         "pk": 2224, 
         "model": "course.course", 
         "fields": {
@@ -28812,6 +29094,18 @@
         }
     }, 
     {
+        "pk": 2327, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The story of Arthur and his knights of the Round Table will be discussed as it is treated at various times in various works and genres. Such matters will be considered as the character of Arthur, the concept of Camelot, and the Fellowship of the Round Table.", 
+            "title": "Arthurian Legend", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ENGL 208H"
+        }
+    }, 
+    {
         "pk": 2247, 
         "model": "course.course", 
         "fields": {
@@ -29097,6 +29391,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ENGL 345"
+        }
+    }, 
+    {
+        "pk": 2424, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A continuation of DUTCH 101. ", 
+            "title": "Elementary Dutch II", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "DUTCH 102"
         }
     }, 
     {
@@ -29400,6 +29706,18 @@
         }
     }, 
     {
+        "pk": 2425, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Seminars in special areas of drama and theatre.", 
+            "title": "Selected Seminars in Drama & Theatre Arts", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "DRAMA 491"
+        }
+    }, 
+    {
         "pk": 2298, 
         "model": "course.course", 
         "fields": {
@@ -29697,18 +30015,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "WS 208E"
-        }
-    }, 
-    {
-        "pk": 2327, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The story of Arthur and his knights of the Round Table will be discussed as it is treated at various times in various works and genres. Such matters will be considered as the character of Arthur, the concept of Camelot, and the Fellowship of the Round Table.", 
-            "title": "Arthurian Legend", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ENGL 208H"
         }
     }, 
     {
@@ -30849,30 +31155,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "DUTCH 101"
-        }
-    }, 
-    {
-        "pk": 2424, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of DUTCH 101. ", 
-            "title": "Elementary Dutch II", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "DUTCH 102"
-        }
-    }, 
-    {
-        "pk": 2425, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Seminars in special areas of drama and theatre.", 
-            "title": "Selected Seminars in Drama & Theatre Arts", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "DRAMA 491"
         }
     }, 
     {
@@ -33216,6 +33498,18 @@
         }
     }, 
     {
+        "pk": 2654, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course examines the opportunities, risks, and challenges faced by businesses in international markets, as well as the preparation required to operate them.", 
+            "title": "International Business", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ARBUS 301"
+        }
+    }, 
+    {
         "pk": 2633, 
         "model": "course.course", 
         "fields": {
@@ -33525,18 +33819,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "AFM 341"
-        }
-    }, 
-    {
-        "pk": 2654, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course examines the opportunities, risks, and challenges faced by businesses in international markets, as well as the preparation required to operate them.", 
-            "title": "International Business", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ARBUS 301"
         }
     }, 
     {
@@ -34476,6 +34758,18 @@
         }
     }, 
     {
+        "pk": 2748, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course covers the mechanisms, pathology, management and prevention of catastrophic injuries encountered in sport and work. Topics include trauma to the head, face, vertebral column, and knee, thermal injury, legal liability and others as requested by the students.", 
+            "title": "Selected Topics in Sport and Work Injuries", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "KIN 341"
+        }
+    }, 
+    {
         "pk": 2732, 
         "model": "course.course", 
         "fields": {
@@ -34689,18 +34983,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "KIN 354"
-        }
-    }, 
-    {
-        "pk": 2748, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course covers the mechanisms, pathology, management and prevention of catastrophic injuries encountered in sport and work. Topics include trauma to the head, face, vertebral column, and knee, thermal injury, legal liability and others as requested by the students.", 
-            "title": "Selected Topics in Sport and Work Injuries", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "KIN 341"
         }
     }, 
     {
@@ -35148,6 +35430,18 @@
         }
     }, 
     {
+        "pk": 3133, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course focuses on some of the methodological and theoretical problems involved in the conduct of comparative political inquiry.", 
+            "title": "Approaches to the Study of Comparative Politics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSCI 650"
+        }
+    }, 
+    {
         "pk": 2781, 
         "model": "course.course", 
         "fields": {
@@ -35361,6 +35655,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HLTH 330"
+        }
+    }, 
+    {
+        "pk": 3384, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Various courses dealing with selected special topics such as advanced statistics, mathematical analysis, modelling, optimization and/or control of chemical processes.", 
+            "title": "Special Topics in Analysis of Chemical Processes", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHE 720"
         }
     }, 
     {
@@ -36120,6 +36426,18 @@
         }
     }, 
     {
+        "pk": 2897, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An advanced graduate course that synthesizes the multidisciplinary issues (psychosicial, behavioural, physiological, biomechanical and legislative) related to low back disorders.  A solid scientific foundation is developed from the study of anatomy, normal function and injury mechanics.  This foundation is used to substantiate the best strategies for injury prevention, rehabilitation and performance training.\r\nHeldwith KIN 427.", 
+            "title": "Low Back Disorders: Optimizing Prevention, Rehabilitation and Performance", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "KIN 727"
+        }
+    }, 
+    {
         "pk": 2862, 
         "model": "course.course", 
         "fields": {
@@ -36285,6 +36603,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "KIN 616"
+        }
+    }, 
+    {
+        "pk": 2917, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The study of leisure studies as a multidisciplinary field including an examination of its development, dominant paradigms, and theories. The integrative nature of leisure studies will be explored through the analysis of current theory and research that focus on the interplay of leisure behaviour, resources and policies. Graded on a Cr/NCr basis.", 
+            "title": "The Interplay of Behaviour, Resources, and Policy in Leisure Studies", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "REC 700"
         }
     }, 
     {
@@ -36540,18 +36870,6 @@
         }
     }, 
     {
-        "pk": 2897, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An advanced graduate course that synthesizes the multidisciplinary issues (psychosicial, behavioural, physiological, biomechanical and legislative) related to low back disorders.  A solid scientific foundation is developed from the study of anatomy, normal function and injury mechanics.  This foundation is used to substantiate the best strategies for injury prevention, rehabilitation and performance training.\r\nHeldwith KIN 427.", 
-            "title": "Low Back Disorders: Optimizing Prevention, Rehabilitation and Performance", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "KIN 727"
-        }
-    }, 
-    {
         "pk": 2898, 
         "model": "course.course", 
         "fields": {
@@ -36792,18 +37110,6 @@
         }
     }, 
     {
-        "pk": 2917, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The study of leisure studies as a multidisciplinary field including an examination of its development, dominant paradigms, and theories. The integrative nature of leisure studies will be explored through the analysis of current theory and research that focus on the interplay of leisure behaviour, resources and policies. Graded on a Cr/NCr basis.", 
-            "title": "The Interplay of Behaviour, Resources, and Policy in Leisure Studies", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "REC 700"
-        }
-    }, 
-    {
         "pk": 2918, 
         "model": "course.course", 
         "fields": {
@@ -37020,6 +37326,30 @@
         }
     }, 
     {
+        "pk": 2975, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course reviews identification strategies used in the analysis of cross-sectional and longitudinal microdata.  Techniques primarily come from applications in labour economics, health economics and industrial organization.  These may include fixed and random effects models, duration analysis, instrumental variables estimators, nonparametric and semi-parametric analysis, decomposition techniques, quantile regression, difference-in-difference estimators, propensity score matching and regression discontinuity design.  The primary objectives of the course are to familiarize students with current methods used in microeconometric research and provide them with hands-on experience applying these methods using an appropriate statistical software package.", 
+            "title": "Applied Micro-econometrics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECON 722"
+        }
+    }, 
+    {
+        "pk": 3154, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A survey of the theoretical and public policy debates relating to regulation of the global economy, examined through case studies ranging from international banking an intellectual property rights, to labour and environmental standards and the control of illicit economic activity.", 
+            "title": "Governance of Global Economy", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GGOV 610"
+        }
+    }, 
+    {
         "pk": 2935, 
         "model": "course.course", 
         "fields": {
@@ -37152,15 +37482,15 @@
         }
     }, 
     {
-        "pk": 2975, 
+        "pk": 3385, 
         "model": "course.course", 
         "fields": {
-            "description": "This course reviews identification strategies used in the analysis of cross-sectional and longitudinal microdata.  Techniques primarily come from applications in labour economics, health economics and industrial organization.  These may include fixed and random effects models, duration analysis, instrumental variables estimators, nonparametric and semi-parametric analysis, decomposition techniques, quantile regression, difference-in-difference estimators, propensity score matching and regression discontinuity design.  The primary objectives of the course are to familiarize students with current methods used in microeconometric research and provide them with hands-on experience applying these methods using an appropriate statistical software package.", 
-            "title": "Applied Micro-econometrics", 
+            "description": "Various special research topics will be offered in the area of analysis of chemical processes to support independent and individual research by instructor consent.", 
+            "title": "Research Topics in Analysis of Chemical Processes", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ECON 722"
+            "abbrev": "CHE 725"
         }
     }, 
     {
@@ -37392,6 +37722,30 @@
         }
     }, 
     {
+        "pk": 2974, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The course provides a rigorous treatment of more advanced topics in econometrics.  They include system of equations, simultaneous equations, generalized method of moments, empirical likelihood, vector autoregression and dynamic models, time series models and methods, discrete dependent variables, and limited dependent variables.", 
+            "title": "Econometrics II", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECON 721"
+        }
+    }, 
+    {
+        "pk": 3026, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A course designed to foster an understanding of the fundamental notions of critical inquiry and to provide training in intellectual and practical skills common to research in the areas of applied linguistics, film and literary studies.", 
+            "title": "Methods of Research", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "GER 600"
+        }
+    }, 
+    {
         "pk": 2961, 
         "model": "course.course", 
         "fields": {
@@ -37581,30 +37935,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECON 702"
-        }
-    }, 
-    {
-        "pk": 2974, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The course provides a rigorous treatment of more advanced topics in econometrics.  They include system of equations, simultaneous equations, generalized method of moments, empirical likelihood, vector autoregression and dynamic models, time series models and methods, discrete dependent variables, and limited dependent variables.", 
-            "title": "Econometrics II", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECON 721"
-        }
-    }, 
-    {
-        "pk": 3026, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A course designed to foster an understanding of the fundamental notions of critical inquiry and to provide training in intellectual and practical skills common to research in the areas of applied linguistics, film and literary studies.", 
-            "title": "Methods of Research", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GER 600"
         }
     }, 
     {
@@ -38028,6 +38358,30 @@
         }
     }, 
     {
+        "pk": 3126, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A research seminar in public administration or policy problems growing out of the interests of the participants, especially the research interests of the faculty and students.", 
+            "title": "Public Administration and Policy 2", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSCI 630B"
+        }
+    }, 
+    {
+        "pk": 3128, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Directed Readings in Public Policy and Administration", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSCI 635"
+        }
+    }, 
+    {
         "pk": 3054, 
         "model": "course.course", 
         "fields": {
@@ -38181,30 +38535,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "HIST 621"
-        }
-    }, 
-    {
-        "pk": 3126, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A research seminar in public administration or policy problems growing out of the interests of the participants, especially the research interests of the faculty and students.", 
-            "title": "Public Administration and Policy 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSCI 630B"
-        }
-    }, 
-    {
-        "pk": 3128, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Directed Readings in Public Policy and Administration", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSCI 635"
         }
     }, 
     {
@@ -38652,6 +38982,18 @@
         }
     }, 
     {
+        "pk": 3388, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Special Topics in Polymer Science and Engineering", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHE 740"
+        }
+    }, 
+    {
         "pk": 3110, 
         "model": "course.course", 
         "fields": {
@@ -38829,18 +39171,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSCI 643"
-        }
-    }, 
-    {
-        "pk": 3133, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course focuses on some of the methodological and theoretical problems involved in the conduct of comparative political inquiry.", 
-            "title": "Approaches to the Study of Comparative Politics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSCI 650"
         }
     }, 
     {
@@ -39093,18 +39423,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSCI 687"
-        }
-    }, 
-    {
-        "pk": 3154, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A survey of the theoretical and public policy debates relating to regulation of the global economy, examined through case studies ranging from international banking an intellectual property rights, to labour and environmental standards and the control of illicit economic activity.", 
-            "title": "Governance of Global Economy", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GGOV 610"
         }
     }, 
     {
@@ -39648,6 +39966,18 @@
         }
     }, 
     {
+        "pk": 3223, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A seminar dealing with current research in human neuropsychology. May include such topics as acquired dyslexia, aphasia, blindsight, frontal lobe function, memory dysfunction, visual neglect, and the neural correlates of human cognitive functions.", 
+            "title": "Cognitive Neuropsychology II", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 779B"
+        }
+    }, 
+    {
         "pk": 3200, 
         "model": "course.course", 
         "fields": {
@@ -39876,18 +40206,6 @@
         }
     }, 
     {
-        "pk": 3223, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A seminar dealing with current research in human neuropsychology. May include such topics as acquired dyslexia, aphasia, blindsight, frontal lobe function, memory dysfunction, visual neglect, and the neural correlates of human cognitive functions.", 
-            "title": "Cognitive Neuropsychology II", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 779B"
-        }
-    }, 
-    {
         "pk": 3224, 
         "model": "course.course", 
         "fields": {
@@ -40053,6 +40371,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PSYCH 852"
+        }
+    }, 
+    {
+        "pk": 3350, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Family and kinship are viewed as the rudimentary structures of society from which other structures differentiate. They are shown to persist in modern society as a reinforcement structure beneath the specialized institutions.", 
+            "title": "Family and Kinship", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SOC 774"
         }
     }, 
     {
@@ -40413,6 +40743,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ACC 680"
+        }
+    }, 
+    {
+        "pk": 3382, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Various courses dealing with particle-fluid dynamics, non-Newtonian flows, flow through porous media, heat and mass transfer in two-phase systems, and the use of transient and frequency response to measure physical quantities.", 
+            "title": "Special Topics in Transport Phenomena", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CHE 710"
         }
     }, 
     {
@@ -40848,6 +41190,18 @@
         }
     }, 
     {
+        "pk": 3329, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A survey of the field of social psychology. Major theoretical approaches are examined and compared in the context of course readings, discussion and student presentations. Topics address the processes of socialization, communication, attribution, social influence, identity, group structure, cognition, deviance, the life cycle, and social structure and personality.", 
+            "title": "Theory and Research in Social Psychology", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SOC 706"
+        }
+    }, 
+    {
         "pk": 3315, 
         "model": "course.course", 
         "fields": {
@@ -41004,15 +41358,15 @@
         }
     }, 
     {
-        "pk": 3329, 
+        "pk": 3383, 
         "model": "course.course", 
         "fields": {
-            "description": "A survey of the field of social psychology. Major theoretical approaches are examined and compared in the context of course readings, discussion and student presentations. Topics address the processes of socialization, communication, attribution, social influence, identity, group structure, cognition, deviance, the life cycle, and social structure and personality.", 
-            "title": "Theory and Research in Social Psychology", 
+            "description": "Various special research topics will be offered in the area of transport phenomena to support independent and individual research by instructor consent.", 
+            "title": "Research Topics in Transport Phenomena", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "SOC 706"
+            "abbrev": "CHE 715"
         }
     }, 
     {
@@ -41241,18 +41595,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SOC 770"
-        }
-    }, 
-    {
-        "pk": 3350, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Family and kinship are viewed as the rudimentary structures of society from which other structures differentiate. They are shown to persist in modern society as a reinforcement structure beneath the specialized institutions.", 
-            "title": "Family and Kinship", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SOC 774"
         }
     }, 
     {
@@ -41613,66 +41955,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "CHE 674"
-        }
-    }, 
-    {
-        "pk": 3382, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Various courses dealing with particle-fluid dynamics, non-Newtonian flows, flow through porous media, heat and mass transfer in two-phase systems, and the use of transient and frequency response to measure physical quantities.", 
-            "title": "Special Topics in Transport Phenomena", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 710"
-        }
-    }, 
-    {
-        "pk": 3383, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Various special research topics will be offered in the area of transport phenomena to support independent and individual research by instructor consent.", 
-            "title": "Research Topics in Transport Phenomena", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 715"
-        }
-    }, 
-    {
-        "pk": 3384, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Various courses dealing with selected special topics such as advanced statistics, mathematical analysis, modelling, optimization and/or control of chemical processes.", 
-            "title": "Special Topics in Analysis of Chemical Processes", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 720"
-        }
-    }, 
-    {
-        "pk": 3385, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Various special research topics will be offered in the area of analysis of chemical processes to support independent and individual research by instructor consent.", 
-            "title": "Research Topics in Analysis of Chemical Processes", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 725"
-        }
-    }, 
-    {
-        "pk": 3388, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Special Topics in Polymer Science and Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CHE 740"
         }
     }, 
     {
@@ -42060,6 +42342,18 @@
         }
     }, 
     {
+        "pk": 3483, 
+        "model": "course.course", 
+        "fields": {
+            "description": "DC and AC characteristics of MOSFETs for VLSI. Scaling effects. MOSFETs in digital circuit design; static and dynamic circuits. NMOS and CMOS. DC and transient analysis. Memory cells. MOSFETs in analog circuit design. Differential stages. Digital and analog circuit applications.", 
+            "title": "Design of VLSI MOS Integrated Circuits", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ECE 637"
+        }
+    }, 
+    {
         "pk": 3429, 
         "model": "course.course", 
         "fields": {
@@ -42360,6 +42654,18 @@
         }
     }, 
     {
+        "pk": 3938, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The Actuarial Profession.  The Actuarial Control Cycle  Impact of Regulation. Consumer needs. Assessing risk. Modeling. Monitoring Experience. Pricing and reserving in life and non-life insurance.", 
+            "title": "Actuarial Practice I", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ACTSC 633"
+        }
+    }, 
+    {
         "pk": 3452, 
         "model": "course.course", 
         "fields": {
@@ -42501,6 +42807,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "UN 802"
+        }
+    }, 
+    {
+        "pk": 3511, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Application of formal methods to the verification of computer-based systems. Algebraic and automata preliminaries. Temporal logic and model checking. Decision procedures. Mechanized theorem proving. Advanced topics chosen by the instructor.", 
+            "title": "Computer-Aided Verification", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CS 745"
         }
     }, 
     {
@@ -42696,15 +43014,15 @@
         }
     }, 
     {
-        "pk": 3483, 
+        "pk": 3512, 
         "model": "course.course", 
         "fields": {
-            "description": "DC and AC characteristics of MOSFETs for VLSI. Scaling effects. MOSFETs in digital circuit design; static and dynamic circuits. NMOS and CMOS. DC and transient analysis. Memory cells. MOSFETs in analog circuit design. Differential stages. Digital and analog circuit applications.", 
-            "title": "Design of VLSI MOS Integrated Circuits", 
+            "description": "", 
+            "title": "Special Topics in Solid State Devices", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ECE 637"
+            "abbrev": "ECE 730"
         }
     }, 
     {
@@ -42861,6 +43179,42 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 662"
+        }
+    }, 
+    {
+        "pk": 3619, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Topics in Surface Modelling", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ME 748"
+        }
+    }, 
+    {
+        "pk": 3620, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Special Topics in Machining", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ME 749"
+        }
+    }, 
+    {
+        "pk": 3596, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Various courses dealing with selected aspects of friction, lubrication and wear, including contact phenomena, lubricant behaviour under concentrated contact conditions, and lubrication in special environments. Subject to approval of instructor.", 
+            "title": "Special Topics in Tribology", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ME 705"
         }
     }, 
     {
@@ -43044,30 +43398,6 @@
         }
     }, 
     {
-        "pk": 3511, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Application of formal methods to the verification of computer-based systems. Algebraic and automata preliminaries. Temporal logic and model checking. Decision procedures. Mechanized theorem proving. Advanced topics chosen by the instructor.", 
-            "title": "Computer-Aided Verification", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CS 745"
-        }
-    }, 
-    {
-        "pk": 3512, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Special Topics in Solid State Devices", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ECE 730"
-        }
-    }, 
-    {
         "pk": 3513, 
         "model": "course.course", 
         "fields": {
@@ -43248,6 +43578,18 @@
         }
     }, 
     {
+        "pk": 3660, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The course outlines fundamentals of intelligent systems design using tools of computational intelligence and soft computing. These include fuzzy logic, neural networks, genetic algorithms and other hybrid techniques such as neuro fuzzy systems and fuzzy-generated algorithms.", 
+            "title": "Tools of Intelligent Systems Design", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SYDE 625"
+        }
+    }, 
+    {
         "pk": 3527, 
         "model": "course.course", 
         "fields": {
@@ -43368,6 +43710,18 @@
         }
     }, 
     {
+        "pk": 3892, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Advanced Topics in Symbolic Computation", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "CS 887"
+        }
+    }, 
+    {
         "pk": 3537, 
         "model": "course.course", 
         "fields": {
@@ -43485,30 +43839,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ECE 6616PD"
-        }
-    }, 
-    {
-        "pk": 3619, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Topics in Surface Modelling", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ME 748"
-        }
-    }, 
-    {
-        "pk": 3620, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Special Topics in Machining", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ME 749"
         }
     }, 
     {
@@ -43665,6 +43995,42 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "MSCI 702"
+        }
+    }, 
+    {
+        "pk": 3674, 
+        "model": "course.course", 
+        "fields": {
+            "description": "See full course description posted outside DC-2641", 
+            "title": "Topics in Systems Modelling", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SYDE 750"
+        }
+    }, 
+    {
+        "pk": 3675, 
+        "model": "course.course", 
+        "fields": {
+            "description": "See full course description posted outside DC-2641", 
+            "title": "Topics in Engineering Design", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SYDE 760"
+        }
+    }, 
+    {
+        "pk": 3676, 
+        "model": "course.course", 
+        "fields": {
+            "description": "See full course description posted outside DC-2641", 
+            "title": "Selected Topics in Communication and Information Systems", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SYDE 770"
         }
     }, 
     {
@@ -43860,6 +44226,18 @@
         }
     }, 
     {
+        "pk": 3594, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Stochastic concepts, averages, correlation coefficients, auto-correlation functions, spectra. Space and time scales of turbulent fluctuations, energy dissipation in turbulence. Correlation and spectral tensors in three dimensions, isotropic forms. Equations of motion, spectral equation for isotropic turbulence. Universal equilibrium theory, the Kolmogoroff spectrum. Turbulence transport modelling for engineering calculation of turbulent shear flows.", 
+            "title": "Turbulent Flow", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ME 664"
+        }
+    }, 
+    {
         "pk": 3578, 
         "model": "course.course", 
         "fields": {
@@ -44016,18 +44394,6 @@
         }
     }, 
     {
-        "pk": 3594, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Stochastic concepts, averages, correlation coefficients, auto-correlation functions, spectra. Space and time scales of turbulent fluctuations, energy dissipation in turbulence. Correlation and spectral tensors in three dimensions, isotropic forms. Equations of motion, spectral equation for isotropic turbulence. Universal equilibrium theory, the Kolmogoroff spectrum. Turbulence transport modelling for engineering calculation of turbulent shear flows.", 
-            "title": "Turbulent Flow", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ME 664"
-        }
-    }, 
-    {
         "pk": 3595, 
         "model": "course.course", 
         "fields": {
@@ -44040,15 +44406,15 @@
         }
     }, 
     {
-        "pk": 3596, 
+        "pk": 3677, 
         "model": "course.course", 
         "fields": {
-            "description": "Various courses dealing with selected aspects of friction, lubrication and wear, including contact phenomena, lubricant behaviour under concentrated contact conditions, and lubrication in special environments. Subject to approval of instructor.", 
-            "title": "Special Topics in Tribology", 
+            "description": "See full course description posted outside DC-2641", 
+            "title": "Selected Topics in Engineering Sciences", 
             "institute": 1, 
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
-            "abbrev": "ME 705"
+            "abbrev": "SYDE 780"
         }
     }, 
     {
@@ -44328,6 +44694,18 @@
         }
     }, 
     {
+        "pk": 3678, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Review of recent theoretical and applied studies of ecosystems. Critical examination of the use of ecosystem concepts in ideologically-based calls for significant alternatives in the organization of societies, institutions, individual lifestyles and philosophical beliefs.", 
+            "title": "Ecosystem Perspectives and Analysis", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "ERS 605"
+        }
+    }, 
+    {
         "pk": 3622, 
         "model": "course.course", 
         "fields": {
@@ -44520,6 +44898,18 @@
         }
     }, 
     {
+        "pk": 3702, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Examination of industrial location theory, and themes concerning the role of manufacturing in the space-economy. Factors of location will be considered as will the way that manufacturing has led to spatial disparity on international, regional and local levels.", 
+            "title": "Industrial Location Theory and Concepts", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "PLAN 611"
+        }
+    }, 
+    {
         "pk": 3637, 
         "model": "course.course", 
         "fields": {
@@ -44649,6 +45039,18 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "ARCH 654"
+        }
+    }, 
+    {
+        "pk": 3659, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Review of continuous (time driven) and discrete (event driven) system simulation methods using digital computers. Simulation languages and their design; man-machine interface considerations; object-oriented methods; visual data representations; front-end and back-end processors; computer animation of simulation output. Developments in systems simulation due to parallel and high-speed computer architectures. Applications of systems simulation in engineering analysis and design.", 
+            "title": "System Simulation: Advanced Topics", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "SYDE 624"
         }
     }, 
     {
@@ -44817,42 +45219,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SYDE 621"
-        }
-    }, 
-    {
-        "pk": 3659, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Review of continuous (time driven) and discrete (event driven) system simulation methods using digital computers. Simulation languages and their design; man-machine interface considerations; object-oriented methods; visual data representations; front-end and back-end processors; computer animation of simulation output. Developments in systems simulation due to parallel and high-speed computer architectures. Applications of systems simulation in engineering analysis and design.", 
-            "title": "System Simulation: Advanced Topics", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SYDE 624"
-        }
-    }, 
-    {
-        "pk": 3660, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The course outlines fundamentals of intelligent systems design using tools of computational intelligence and soft computing. These include fuzzy logic, neural networks, genetic algorithms and other hybrid techniques such as neuro fuzzy systems and fuzzy-generated algorithms.", 
-            "title": "Tools of Intelligent Systems Design", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SYDE 625"
-        }
-    }, 
-    {
-        "pk": 3892, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Advanced Topics in Symbolic Computation", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "CS 887"
         }
     }, 
     {
@@ -45045,66 +45411,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "SYDE 740"
-        }
-    }, 
-    {
-        "pk": 3674, 
-        "model": "course.course", 
-        "fields": {
-            "description": "See full course description posted outside DC-2641", 
-            "title": "Topics in Systems Modelling", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SYDE 750"
-        }
-    }, 
-    {
-        "pk": 3675, 
-        "model": "course.course", 
-        "fields": {
-            "description": "See full course description posted outside DC-2641", 
-            "title": "Topics in Engineering Design", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SYDE 760"
-        }
-    }, 
-    {
-        "pk": 3676, 
-        "model": "course.course", 
-        "fields": {
-            "description": "See full course description posted outside DC-2641", 
-            "title": "Selected Topics in Communication and Information Systems", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SYDE 770"
-        }
-    }, 
-    {
-        "pk": 3677, 
-        "model": "course.course", 
-        "fields": {
-            "description": "See full course description posted outside DC-2641", 
-            "title": "Selected Topics in Engineering Sciences", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "SYDE 780"
-        }
-    }, 
-    {
-        "pk": 3678, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Review of recent theoretical and applied studies of ecosystems. Critical examination of the use of ecosystem concepts in ideologically-based calls for significant alternatives in the organization of societies, institutions, individual lifestyles and philosophical beliefs.", 
-            "title": "Ecosystem Perspectives and Analysis", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ERS 605"
         }
     }, 
     {
@@ -45321,18 +45627,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PLAN 657"
-        }
-    }, 
-    {
-        "pk": 3702, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Examination of industrial location theory, and themes concerning the role of manufacturing in the space-economy. Factors of location will be considered as will the way that manufacturing has led to spatial disparity on international, regional and local levels.", 
-            "title": "Industrial Location Theory and Concepts", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PLAN 611"
         }
     }, 
     {
@@ -45573,18 +45867,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PLAN 661A"
-        }
-    }, 
-    {
-        "pk": 3723, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course is a continuation of GEOG 661A/PLAN661A. *eligible for MES.", 
-            "title": "Applied Studies in Hydrology and the Environment 2", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "PLAN 661B"
         }
     }, 
     {
@@ -45849,42 +46131,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "GGOV 629"
-        }
-    }, 
-    {
-        "pk": 3745, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Special Topics in Conflict and Security", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GGOV 638"
-        }
-    }, 
-    {
-        "pk": 3746, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Readings in Conflict and Security", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "GGOV 639"
-        }
-    }, 
-    {
-        "pk": 3938, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The Actuarial Profession.  The Actuarial Control Cycle  Impact of Regulation. Consumer needs. Assessing risk. Modeling. Monitoring Experience. Pricing and reserving in life and non-life insurance.", 
-            "title": "Actuarial Practice I", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "ACTSC 633"
         }
     }, 
     {
@@ -46212,6 +46458,30 @@
         }
     }, 
     {
+        "pk": 3787, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Flat space-time and Lorentz transformations. Relativistic mechanics. Maxwell's equations. Curved space-time and the Einstein field equations. The Schwarzschild solution and some experimental tests of general relativity. The weak-field limit. Introduction to black holes and cosmology. (Heldwith AMATH 675)", 
+            "title": "General Relativity", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "AMATH 675"
+        }
+    }, 
+    {
+        "pk": 3788, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Literature & Research Studies", 
+            "institute": 1, 
+            "modified_time": "2012-02-16 02:37:36", 
+            "difficulty": null, 
+            "abbrev": "AMATH 690"
+        }
+    }, 
+    {
         "pk": 3791, 
         "model": "course.course", 
         "fields": {
@@ -46377,30 +46647,6 @@
             "modified_time": "2012-02-16 02:37:36", 
             "difficulty": null, 
             "abbrev": "PLAN 703"
-        }
-    }, 
-    {
-        "pk": 3787, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Flat space-time and Lorentz transformations. Relativistic mechanics. Maxwell's equations. Curved space-time and the Einstein field equations. The Schwarzschild solution and some experimental tests of general relativity. The weak-field limit. Introduction to black holes and cosmology. (Heldwith AMATH 675)", 
-            "title": "General Relativity", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "AMATH 675"
-        }
-    }, 
-    {
-        "pk": 3788, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Literature & Research Studies", 
-            "institute": 1, 
-            "modified_time": "2012-02-16 02:37:36", 
-            "difficulty": null, 
-            "abbrev": "AMATH 690"
         }
     }, 
     {
@@ -50937,229 +51183,6 @@
             "modified_time": "2012-02-16 02:56:52", 
             "difficulty": null, 
             "abbrev": "SCBUS 425"
-        }
-    }, 
-    {
-        "pk": 44, 
-        "model": "course.section", 
-        "fields": {
-            "course": 3240, 
-            "instructor": 10, 
-            "first_day": "2012-02-29", 
-            "last_day": "2012-03-01"
-        }
-    }, 
-    {
-        "pk": 45, 
-        "model": "course.section", 
-        "fields": {
-            "course": 852, 
-            "instructor": 10, 
-            "first_day": "2012-03-02", 
-            "last_day": "2012-03-03"
-        }
-    }, 
-    {
-        "pk": 1, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 45, 
-            "user": 2
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "C", 
-            "description": "Rename badge to emblem.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:27", 
-            "summary": "Emblem", 
-            "priority": 4, 
-            "created_time": "2012-03-02 13:23:42", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "N", 
-            "category": "F", 
-            "description": "Implement the Documents feature in Backstage.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:34", 
-            "summary": "Backstage Documents", 
-            "priority": 0, 
-            "created_time": "2012-03-02 04:41:41", 
-            "owner": null
-        }
-    }, 
-    {
-        "pk": 5, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "R", 
-            "category": "C", 
-            "description": "Please improve the mobile version of the website.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:40", 
-            "summary": "Mobile Version", 
-            "priority": 1, 
-            "created_time": "2012-03-01 18:29:56", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "C", 
-            "category": "F", 
-            "description": "Add feature to indicate a ticket's status.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:48", 
-            "summary": "Ticket Status", 
-            "priority": 1, 
-            "created_time": "2012-03-01 17:48:30", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 18, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "C", 
-            "description": "Rename people to crowd.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:53:32", 
-            "summary": "Crowd", 
-            "priority": 3, 
-            "created_time": "2012-03-09 18:34:55", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 17, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "N", 
-            "category": "C", 
-            "description": "Re-brand Django CMS with current site's styles.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:53:41", 
-            "summary": "Re-brand Django CMS", 
-            "priority": 4, 
-            "created_time": "2012-03-09 17:49:52", 
-            "owner": null
-        }
-    }, 
-    {
-        "pk": 16, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "F", 
-            "description": "1. Resolution\r\n2. Action Log\r\n3. Issue Linking\r\n4. Projects\r\n5. Milestones?\r\n6. Reassign\r\n7. Comments\r\n8. Attachments", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:53:47", 
-            "summary": "Ticket System Features", 
-            "priority": 0, 
-            "created_time": "2012-03-09 17:44:07", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 15, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "T", 
-            "description": "Refactor for loops in templates in the following format:\r\n\r\n{% for ... %}\r\n...\r\n{% empty %}\r\n...\r\n{% endfor %}", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:53:54", 
-            "summary": "Refactor For Loops", 
-            "priority": 1, 
-            "created_time": "2012-03-09 17:36:25", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "N", 
-            "category": "E", 
-            "description": "Using Python modules such as Haystack for searching larger sets of data.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:01", 
-            "summary": "Incorporate Search Engine", 
-            "priority": 4, 
-            "created_time": "2012-03-09 15:34:25", 
-            "owner": null
-        }
-    }, 
-    {
-        "pk": 13, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "N", 
-            "category": "F", 
-            "description": "Allow logging to database, and if cannot log into database, log to a log file instead.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:05", 
-            "summary": "Logging to Database", 
-            "priority": 3, 
-            "created_time": "2012-03-07 17:11:13", 
-            "owner": null
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "E", 
-            "description": "Make Typeahead and Datatable components bind to AJAX responses.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:09", 
-            "summary": "AJAX'ify", 
-            "priority": 2, 
-            "created_time": "2012-03-06 15:44:39", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "T", 
-            "description": "Encapsulate AJAX Form", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:16", 
-            "summary": "Encapsulate AJAX Form", 
-            "priority": 1, 
-            "created_time": "2012-03-06 15:43:33", 
-            "owner": 2
-        }
-    }, 
-    {
-        "pk": 10, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "N", 
-            "category": "C", 
-            "description": "Change the name and label color of priorities.\r\n\r\nBlocker\r\nCritical\r\nMajor\r\nNormal\r\nMinor\r\nTrivial", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:54:22", 
-            "summary": "Priority Name Change", 
-            "priority": 1, 
-            "created_time": "2012-03-04 06:43:16", 
-            "owner": null
         }
     }, 
     {
