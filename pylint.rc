@@ -56,7 +56,7 @@ zope=no
 
 # List of members which are set dynamically and missed by pylint inference
 # system, and so shouldn't trigger E0201 when accessed.
-generated-members=objects,DoesNotExist,id,pk,_meta,base_fields,context,status_code,content,fk,form,save_m2m,cleaned_data,_errors,request,fields,"[a-zA-Z]+_set","get_[a-zA-Z]+_display",get_display,get_display_range,entity,add_to_class
+generated-members=objects,DoesNotExist,id,pk,_meta,base_fields,context,status_code,content,fk,form,save_m2m,cleaned_data,_errors,request,fields,"[a-zA-Z]+_set","get_[a-zA-Z]+_display",get_display,get_display_range,entity,add_to_class,save
 
 # List of method names used to declare (i.e. assign) instance attributes
 defining-attr-methods=__init__,__new__,setUp
