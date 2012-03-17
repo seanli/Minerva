@@ -48,11 +48,14 @@
 			minLength: 3,
 			autoFocus: true,
 			delay: 100,
-            select: function(event, ui) {
-                $(this).val(ui.item.label);
-                $('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
-                return false;
-            },
+			focus: function(event, ui) {
+          return false;
+      },
+      select: function(event, ui) {
+          $(this).val(ui.item.label);
+          $('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
+          return false;
+      },
 		});
 	});
 
