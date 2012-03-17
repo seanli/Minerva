@@ -47,7 +47,7 @@
 	$(document).ready(function() {
 		$('#form-add-specialization input[name="name"]').autocomplete({
 			source : '/source_specialization/',
-			minLength : 3,
+			minLength : 2,
 			autoFocus : true,
 			delay : 100,
 			focus : function(event, ui) {
@@ -55,7 +55,7 @@
 			},
 			select : function(event, ui) {
 				$(this).val(ui.item.label);
-				$('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
+				$('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
 				return false;
 			},
 		});

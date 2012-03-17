@@ -25,10 +25,18 @@
 		  {% for key, value in grouped_sections.items %}
 			<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ key|date:"mY" }}">
 			  {% for section in value %}
-			  <h5>{{ section.course.title }}</h5>
-        <h6>Start Date: {{ section.start_date|date:"F, Y" }}</h6>
-        <h6>Duration: {{ section.get_duration_display }}</h6>
-        <div class="vertical-space"></div>
+			  <div class="well">
+			  <h4>{{ section.course.title }}</h4>
+			  <h6>{{ section.course.abbrev }}</h6>
+			  <div class="vertical-space"></div>
+			  <p><em>{{ section.course.description }}</em></p>
+			  <dl class="dl-horizontal">
+          <dt>Start Date:</dt>
+          <dd><h6>{{ section.start_date|date:"F, Y" }}</h6></dd>
+          <dt>Duration:</dt>
+          <dd><h6>{{ section.get_duration_display }}</h6></dd>
+        </dl>
+        </div>
 				{% endfor %}
 			</div>
 			{% endfor %}

@@ -41,4 +41,21 @@
 			window.location.reload();
 		}
 	}
+	
+	$(document).ready(function() {
+    $('#form-add-course input[name="title"]').autocomplete({
+      source : '/source_course/',
+      minLength : 2,
+      autoFocus : true,
+      delay : 100,
+      focus : function(event, ui) {
+        return false;
+      },
+      select : function(event, ui) {
+        $(this).val(ui.item.label);
+        $('#form-add-course input[name="course"]').attr('value', ui.item.value);
+        return false;
+      },
+    });
+  });
 </script>
