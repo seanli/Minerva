@@ -7,7 +7,7 @@ Required Python Modules:
 - Dajax (AJAX)
 - CreoleParser (Wiki Markup)
 - Pylint (Python Style Check)
-	- pylint --rcfile=pylint.rc .
+	- pylint --rcfile=Minerva/pylint.rc Minerva
 - Docutils (Documentation)
 - Django Debug Toolbar (Debugging)
 

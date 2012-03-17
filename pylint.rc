@@ -6,14 +6,17 @@ cache-size=500
 
 [MESSAGES CONTROL]
 # http://pylint-messages.wikidot.com/messages:[id]
-# C0111 Missing docstring
-# W0102 Dangerous default value %s as argument
-# W0232 Class has no __init__ method Used when a class has no __init__ method, neither its parent classes.
-# W0613 Unused argument %r Used when a function or method argument is not used.
-# W0702 No exception's type specified Used when an except clause doesn't specify exceptions type to catch.
-# F0401 Unable to import %r (%s)
-# E0611 No name %r in module %r
-disable=C0111,W0232,R0201,W0613,W0702,W0102,F0401,E0611
+# http://www.logilab.org/card/pylintfeatures
+# C0111: Missing docstring
+# W0102: Dangerous default value %s as argument
+# W0232: Class has no __init__ method Used when a class has no __init__ method, neither its parent classes.
+# W0613: Unused argument %r Used when a function or method argument is not used.
+# W0702: No exception's type specified Used when an except clause doesn't specify exceptions type to catch.
+# F0401: Unable to import %r (%s)
+# E0611: No name %r in module %r
+# E1002" Use super on an old style class
+# W0403" Relative import %r, should be %r
+disable=C0111,W0232,R0201,W0613,W0702,W0102,F0401,E0611,E1002,W0403
 
 [REPORTS]
 output-format=parseable
@@ -53,7 +56,7 @@ zope=no
 
 # List of members which are set dynamically and missed by pylint inference
 # system, and so shouldn't trigger E0201 when accessed.
-generated-members=objects,DoesNotExist,id,pk,_meta,base_fields,context,status_code,content,fk,form,save_m2m,"[a-zA-Z]+_set","get_[a-zA-Z]+_display",get_display,get_display_range,entity,add_to_class
+generated-members=objects,DoesNotExist,id,pk,_meta,base_fields,context,status_code,content,fk,form,save_m2m,cleaned_data,_errors,request,fields,"[a-zA-Z]+_set","get_[a-zA-Z]+_display",get_display,get_display_range,entity,add_to_class
 
 # List of method names used to declare (i.e. assign) instance attributes
 defining-attr-methods=__init__,__new__,setUp
