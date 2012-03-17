@@ -7,11 +7,35 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Homeroom</h1>
+	<h1>Homeroom</h1>
 </div>
-
 <div class="row-fluid">
-  {{ display|safe }}
+  {% include "modal/add-course.html" with form=form %}
+  <a data-toggle="modal" href="#add-course" class="btn btn-mini btn-primary"><i class="icon-plus icon-white"></i> Course </a>
+  <div class="vertical-space"></div>
+  <div class="vertical-space"></div>
+  {% if grouped_sections.items|length > 0 %}
+	<div class="tabbable tabs-left">
+		<ul class="nav nav-tabs">
+			{% for key, value in grouped_sections.items %}
+			<li{% if forloop.first %} class='active'{% endif %}><a href="#{{ key|date:"mY" }}" data-toggle="tab">{{ key|date:"F, Y" }}</a></li>
+			{% endfor %}
+		</ul>
+		<div class="tab-content">
+		  {% for key, value in grouped_sections.items %}
+			<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ key|date:"mY" }}">
+			  {% for section in value %}
+			  <h5>{{ section.course.title }}</h5>
+        <h6>Start Date: {{ section.start_date|date:"F, Y" }}</h6>
+        <h6>Duration: {{ section.get_duration_display }}</h6>
+        <div class="vertical-space"></div>
+				{% endfor %}
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	{% else %}
+	<p>You are not watching any course!</p>
+	{% endif %}
 </div>
-
 {% endblock %} 

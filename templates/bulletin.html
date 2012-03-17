@@ -39,12 +39,6 @@
       <div class="vertical-space"></div>
       <h4>Currently Taking</h4>
       <div class="vertical-space"></div>
-      {% for s in sections %} <h5>{{ s.section.course.title }}</h5>
-      <h6>Start Date: {{ s.section.start_date|date:"F, Y" }}</h6><h6>Duration: {{ s.section.get_duration_display }}</h6>
-      <div class="vertical-space"></div>
-      {% endfor %}
-      {% include "modal/add-course.html" with form=form %}
-      <a data-toggle="modal" href="#add-course" class="btn btn-primary">Add Course</a>
       {% endif %}
     </div>
   </div><!--/span-->

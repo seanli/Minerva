@@ -1,4 +1,5 @@
 {% load base_extra %}
+
 <div id="add-specialization" class="modal hide fade">
 	<div class="modal-header">
 		<a class="close" data-dismiss="modal">&times;</a>
@@ -22,8 +23,8 @@
 		<a href="#" class="btn" data-dismiss="modal">Close</a>
 	</div>
 </div>
-<script type="text/javascript" charset="utf-8">
 
+<script type="text/javascript" charset="utf-8">
 	function form_add_specialization() {
 		var form_id = 'form-add-specialization';
 		form_data = $('#' + form_id).serializeObject(true);
@@ -42,21 +43,21 @@
 		}
 	}
 
+
 	$(document).ready(function() {
 		$('#form-add-specialization input[name="name"]').autocomplete({
-			source: '/source_specialization/',
-			minLength: 3,
-			autoFocus: true,
-			delay: 100,
-			focus: function(event, ui) {
-          return false;
-      },
-      select: function(event, ui) {
-          $(this).val(ui.item.label);
-          $('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
-          return false;
-      },
+			source : '/source_specialization/',
+			minLength : 3,
+			autoFocus : true,
+			delay : 100,
+			focus : function(event, ui) {
+				return false;
+			},
+			select : function(event, ui) {
+				$(this).val(ui.item.label);
+				$('#form-add-specialization input[name="specialization_id"]').attr('value', ui.item.value);
+				return false;
+			},
 		});
 	});
-
 </script>

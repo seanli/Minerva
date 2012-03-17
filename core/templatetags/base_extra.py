@@ -3,7 +3,7 @@ from datetime import datetime
 from django.conf import settings
 from account.forms import EncouragementForm
 from backstage.forms import ReportForm
-
+from django.utils.datastructures import SortedDict
 
 register = template.Library()
 
@@ -29,6 +29,24 @@ def active(request, sub_urls):
             if '/%s/' % sub_url == request.path:
                 return "active"
     return ""
+
+
+@register.filter(name='sort')
+def structsort(value):
+    if isinstance(value, dict):
+        new_dict = SortedDict()
+        key_list = value.keys()
+        key_list.sort()
+        for key in key_list:
+            new_dict[key] = value[key]
+        return new_dict
+    elif isinstance(value, list):
+        new_list = list(value)
+        new_list.sort()
+        return new_list
+    else:
+        return value
+    structsort.is_safe = True
 
 
 @register.simple_tag
