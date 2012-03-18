@@ -42,4 +42,32 @@
       window.location.reload();
     }
   }
+  
+  $(document).ready(function() {
+    $('#form-add-skill input[name="name"]').autocomplete({
+      source : '/source_skill/',
+      minLength : 1,
+      autoFocus : true,
+      delay : 200,
+      focus : function(event, ui) {
+        return false;
+      },
+      select : function(event, ui) {
+        $(this).val(ui.item.label);
+        $('#form-add-skill input[name="skill"]').attr('value', ui.item.value);
+        return false;
+      },
+    }).data('autocomplete')._renderItem = function(ul, item) {
+      ul.addClass('typeahead dropdown-menu');
+      var label = item.label;
+      var text = RegExp.escape($('#form-add-skill input[name="name"]').val());
+      label = label.replace(new RegExp('(' + text + ')', 'ig'), function($1, match) {
+        return '<strong>' + match + '</strong>';
+      });
+      return $('<li></li>')
+        .data('item.autocomplete', item)
+        .append('<a>' + label + '</a>')
+        .appendTo(ul);
+    };
+  });
 </script>

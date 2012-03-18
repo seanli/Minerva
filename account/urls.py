@@ -8,4 +8,5 @@ urlpatterns = patterns('account.views',
     url(r'^crowd/$', 'crowd', name='crowd'),
     url(r'^crowd/(?P<username>\w+)/$', 'crowd'),
     url(r'^source_specialization/', 'source_specialization'),
+    url(r'^source_skill/', 'source_skill'),
 )

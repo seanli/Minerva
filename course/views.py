@@ -38,10 +38,11 @@ def source_course(request):
     json = []
     if 'term' in request.GET:
         term = request.GET['term']
-        courses = Course.objects.filter(Q(title__icontains=term) | Q(abbrev__icontains=term))
+        courses = Course.objects.filter(Q(title__icontains=term) | Q(abbrev__icontains=term))[:7]
         for course in courses:
             datum = {}
-            datum['label'] = '[%s] - %s' % (course.abbrev, course.title)
+            datum['title'] = course.title
+            datum['abbrev'] = course.abbrev
             datum['value'] = course.id
             json.append(datum)
     return HttpResponse(simplejson.dumps(json))

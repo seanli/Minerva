@@ -44,17 +44,28 @@
   $(document).ready(function() {
     $('#form-add-course input[name="title"]').autocomplete({
       source : '/source_course/',
-      minLength : 2,
+      minLength : 1,
       autoFocus : true,
-      delay : 100,
+      delay : 200,
       focus : function(event, ui) {
         return false;
       },
       select : function(event, ui) {
-        $(this).val(ui.item.label);
+        $(this).val(ui.item.title);
         $('#form-add-course input[name="course"]').attr('value', ui.item.value);
         return false;
       },
-    });
+    }).data('autocomplete')._renderItem = function(ul, item) {
+      ul.addClass('typeahead dropdown-menu');
+      var title = item.title;
+      var text = RegExp.escape($('#form-add-course input[name="title"]').val());
+      title = title.replace(new RegExp('(' + text + ')', 'ig'), function ($1, match) {
+        return '<strong>' + match + '</strong>'
+      });
+      return $('<li></li>')
+        .data('item.autocomplete', item)
+        .append('<a><h6>' + item.abbrev + '</h6>' + title + '</a>')
+        .appendTo(ul);
+    };
   });
 </script>

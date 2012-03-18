@@ -97,23 +97,17 @@ class AddSpecializationForm(StandardForm):
             else:
                 if self.profile.has_specialization(specialization):
                     raise forms.ValidationError('You have already added this specialization!')
-                else:
-                    data['specialization'] = specialization
                 return data
 
 
 class AddSkillForm(StandardForm):
 
-    name = forms.CharField(max_length=100, label='Skill')
+    name = forms.CharField(max_length=100, label='Skill', widget=forms.TextInput(attrs={'autocomplete': 'off'}))
+    skill = forms.ModelChoiceField(label='', queryset=Skill.objects, widget=forms.HiddenInput(), required=False)
 
     def __init__(self, *args, **kwargs):
-        try:
-            source = kwargs.pop('source')
-        except:
-            source = "[]"
         super(AddSkillForm, self).__init__(*args, **kwargs)
         self.profile = self.request.user.get_profile()
-        self.fields['name'].widget = forms.TextInput(attrs={'data-provide': 'typeahead', 'data-items': '7', 'autocomplete': 'off', 'data-source': source})
 
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
@@ -124,12 +118,10 @@ class AddSkillForm(StandardForm):
         if self._errors:
             return data
         else:
-            skill = Skill.get(data['name'])
+            skill = data['skill']
             if skill is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed skill!' % data['name'])
             else:
                 if self.profile.has_skill(skill):
                     raise forms.ValidationError('You have already added this skill!')
-                else:
-                    data['skill'] = skill
                 return data

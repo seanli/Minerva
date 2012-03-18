@@ -46,9 +46,9 @@
   $(document).ready(function() {
     $('#form-add-specialization input[name="name"]').autocomplete({
       source : '/source_specialization/',
-      minLength : 2,
+      minLength : 1,
       autoFocus : true,
-      delay : 100,
+      delay : 200,
       focus : function(event, ui) {
         return false;
       },
@@ -57,6 +57,17 @@
         $('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
         return false;
       },
-    });
+    }).data('autocomplete')._renderItem = function(ul, item) {
+      ul.addClass('typeahead dropdown-menu');
+      var label = item.label;
+      var text = RegExp.escape($('#form-add-specialization input[name="name"]').val());
+      label = label.replace(new RegExp('(' + text + ')', 'ig'), function ($1, match) {
+        return '<strong>' + match + '</strong>'
+      });
+      return $('<li></li>')
+        .data('item.autocomplete', item)
+        .append('<a>' + label + '</a>')
+        .appendTo(ul);
+    };
   });
 </script>

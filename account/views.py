@@ -60,19 +60,7 @@ def crowd(request, username=None):
         profile = user.get_profile()
 
         add_specialization_form = AddSpecializationForm(request=request)
-
-        source = ''
-        skills = Skill.objects.all()
-        last = len(skills) - 1
-        index = 0
-        for skill in skills:
-            if (index != last):
-                source += '"%s",' % (skill.name)
-            else:
-                source += '"%s"' % (skill.name)
-            index += 1
-        source = '[' + source + ']'
-        add_skill_form = AddSkillForm(request=request, source=source)
+        add_skill_form = AddSkillForm(request=request)
 
         context = {
             'viewing_user': user,
@@ -93,10 +81,25 @@ def source_specialization(request):
     json = []
     if 'term' in request.GET:
         term = request.GET['term']
-        specializations = Specialization.objects.filter(name__icontains=term)
+        specializations = Specialization.objects.filter(name__icontains=term)[:7]
         for specialization in specializations:
             datum = {}
             datum['label'] = specialization.name
             datum['value'] = specialization.id
             json.append(datum)
+    return HttpResponse(simplejson.dumps(json))
+
+
+@login_required
+def source_skill(request):
+    json = []
+    if 'term' in request.GET:
+        term = request.GET['term']
+        skills = Skill.objects.filter(name__icontains=term)[:7]
+        for skill in skills:
+            datum = {}
+            datum['label'] = skill.name
+            datum['value'] = skill.id
+            json.append(datum)
+        print json
     return HttpResponse(simplejson.dumps(json))
