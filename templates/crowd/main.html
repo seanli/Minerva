@@ -7,91 +7,90 @@
 
 {% block content %}
 <div class="page-header">
-	<div class="row-fluid">
-		<div class="span1">
-			<div class="thumbnail"><img src="http://placehold.it/100x100" alt="" />
-			</div>
-		</div>
-		<div class="span11">
-			<h1>{{ viewing_user.get_full_name }}</h1>
-			{% if profile.degree %} <h6>{{ profile.get_degree_display }} {{ profile.get_role_display }} from {{ profile.institute }}</h6>
-			{% else %} <h6>{{ profile.get_role_display }} from {{ profile.institute }}</h6>
-			{% endif %} <div class="vertical-space"></div>
-			<div class="row-fluid">
-				<ul class="thumbnails">
-					{% for b in badges %}
-					<li>
-						<a class="thumbnail" rel="popover" data-content="Obtained: {{ b.obtained }}<br />EXP: {{ b.exp }}<br />" data-original-title="{{ b.badge }}"> <img src="http://placehold.it/30x30" alt="" /> </a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-	</div>
+  <div class="row-fluid">
+    <div class="span1">
+      <div class="thumbnail"><img src="http://placehold.it/100x100" alt="" />
+      </div>
+    </div>
+    <div class="span11">
+      <h1>{{ viewing_user.get_full_name }}</h1>
+      {% if profile.degree %} <h6>{{ profile.get_degree_display }} {{ profile.get_role_display }} from {{ profile.institute }}</h6>
+      {% else %} <h6>{{ profile.get_role_display }} from {{ profile.institute }}</h6>
+      {% endif %} <div class="vertical-space"></div>
+      <div class="row-fluid">
+        <ul class="thumbnails">
+          {% for b in badges %}
+          <li>
+            <a class="thumbnail" rel="popover" data-content="Obtained: {{ b.obtained }}<br />EXP: {{ b.exp }}<br />" data-original-title="{{ b.badge }}"> <img src="http://placehold.it/30x30" alt="" /> </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="row-fluid">
-	<div class="span6">
-		<div class="row-fluid">
-			<div class="span6">
-				{% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
-				{% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
-				{% empty %} <h6>No Specialization Yet!</h6>
-				{% endfor %}
-				{% if viewing_user == user %} <div class="vertical-space"></div>
-				<a data-toggle="modal" href="#add-specialization" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Specialization </a>
-				{% endif %}
-				{% endwith %}
-			</div>
-			<div class="span6">
-				{% with skills=viewing_user.skill_set.all %} <h3>Skill{{ skills.count|pluralize }}:</h3>
-				{% for skill in skills %} <h6>{{ skill.name }}</h6>
-				{% empty %} <h6>No Skill Yet!</h6>
-				{% endfor %}
-				{% if viewing_user == user %} <div class="vertical-space"></div>
-				<a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
-				{% endif %}
-				{% endwith %}
-			</div>
-		</div>
-		<div class="vertical-space"></div>
-		<div class="row-fluid">
-			{% if profile.role = 'S' %} <h3>Encouragement{{ encouragements.count|pluralize }}:</h3>
-			<div class="vertical-space"></div>
-			{% if viewing_user != user %} <div class="vertical-space"></div>
-			<a data-toggle="modal" href="#encouragement" class="btn btn-mini btn-warning"><i class="icon-pencil icon-white"></i> Encouragement </a>
-			<div class="vertical-space"></div>
-			<div class="vertical-space"></div>
-			{% endif %}
-			{% for encouragement in encouragements %}
-			<blockquote>
-				<h6>{{ encouragement.sent_time }}</h6>
-				<p>
-					<i>"{{ encouragement.message }}"</i>
-				</p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url crowd %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
-			</blockquote>
-			{% empty %}
-			<h6>No Encouragement Yet!</h6>
-			{% endfor %}
-			{% endif %}
-		</div>
-	</div><!--/span-->
-	<div class="span6">
-		<div class="row-fluid">
-			<form class="form-search">
-				<input type="text" class="input-large">
-				<button type="submit" class="btn">
-					Search Anyone
-				</button>
-			</form>
-			<h3>Related:</h3>
-			<div class="vertical-space"></div>
-			{% for p in related %}
-			<div class="well">
-				<h5><a href="{% url crowd %}{{ p.user.username }}">{{ p }}</a></h5>
-			</div>
-			{% endfor %}
-		</div>
-	</div><!--/span-->
+  <div class="span6">
+    <div class="row-fluid">
+      <div class="span6">
+        {% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
+        {% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
+        {% empty %} <h6>No Specialization Yet!</h6>
+        {% endfor %}
+        {% if viewing_user == user %} <div class="vertical-space"></div>
+        <a data-toggle="modal" href="#add-specialization" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Specialization </a>
+        {% endif %}
+        {% endwith %}
+      </div>
+      <div class="span6">
+        {% with skills=viewing_user.skill_set.all %} <h3>Skill{{ skills.count|pluralize }}:</h3>
+        {% for skill in skills %} <h6>{{ skill.name }}</h6>
+        {% empty %} <h6>No Skill Yet!</h6>
+        {% endfor %}
+        {% if viewing_user == user %} <div class="vertical-space"></div>
+        <a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
+        {% endif %}
+        {% endwith %}
+      </div>
+    </div>
+    <div class="vertical-space"></div>
+    <div class="row-fluid">
+      {% if profile.role = 'S' %} <h3>Encouragement{{ encouragements.count|pluralize }}:</h3>
+      <div class="vertical-space"></div>
+      {% if viewing_user != user %} <div class="vertical-space"></div>
+      <a data-toggle="modal" href="#encouragement" class="btn btn-mini btn-warning"><i class="icon-pencil icon-white"></i> Encouragement </a>
+      <div class="vertical-space"></div>
+      <div class="vertical-space"></div>
+      {% endif %}
+      {% for encouragement in encouragements %}
+      <blockquote>
+        <h6>{{ encouragement.sent_time }}</h6>
+        <p>
+          <i>"{{ encouragement.message }}"</i>
+        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url crowd %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
+      </blockquote>
+      {% empty %} <h6>No Encouragement Yet!</h6>
+      {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="span6">
+    <div class="row-fluid">
+      <form class="form-search">
+        <input type="text" class="input-large">
+        <button type="submit" class="btn">
+          Search Anyone
+        </button>
+      </form>
+      <h3>Related:</h3>
+      <div class="vertical-space"></div>
+      {% for p in related %}
+      <div class="well">
+        <h5><a href="{% url crowd %}{{ p.user.username }}">{{ p }}</a></h5>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 {% include "modal/add-specialization.html" %}

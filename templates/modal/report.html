@@ -28,21 +28,21 @@
 </div>
 
 <script type="text/javascript" charset="utf-8">
-	function form_report() {
-		var form_id = 'form-report';
-		form_data = $('#' + form_id).serializeObject(true);
-		$('#send-report-button').button('loading');
-		Dajaxice.backstage.form_report(Dajax.process, {
-			'form_data' : form_data,
-			'form_id' : form_id
-		});
-	}
+  function form_report() {
+    var form_id = 'form-report';
+    form_data = $('#' + form_id).serializeObject(true);
+    $('#send-report-button').button('loading');
+    Dajaxice.backstage.form_report(Dajax.process, {
+      'form_data' : form_data,
+      'form_id' : form_id
+    });
+  }
 
-	function form_report_callback(data) {
-		$('#send-report-button').button('reset');
-		if (data.status == 'OK') {
-			$('#form-report textarea').attr('value', '');
-			$('#report').modal('hide');
-		}
-	}
+  function form_report_callback(data) {
+    $('#send-report-button').button('reset');
+    if(data.status == 'OK') {
+      $('#form-report textarea').attr('value', '');
+      $('#report').modal('hide');
+    }
+  }
 </script>

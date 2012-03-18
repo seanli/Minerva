@@ -1,63 +1,62 @@
 {% load base_extra %}
 
 <div id="add-specialization" class="modal hide fade">
-	<div class="modal-header">
-		<a class="close" data-dismiss="modal">&times;</a>
-		<h3>Add Specialization</h3>
-	</div>
-	<div class="modal-body">
-		<form id="form-add-specialization" action="" method="post" class="form-vertical">
-			{% csrf_token %}
-			{% for field in add_specialization_form %}
-			<div id="form-add-specialization-{{ field.html_name }}" class="control-group">
-				{{ field.label_tag }}
-				<div class="controls">
-					{{ field }}<span class="help-inline"></span>
-				</div>
-			</div>
-			{% endfor %} <div id="form-add-specialization-error"></div>
-		</form>
-	</div>
-	<div class="modal-footer">
-		<a id="add-specialization-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_specialization();">Add</a>
-		<a href="#" class="btn" data-dismiss="modal">Close</a>
-	</div>
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">&times;</a>
+    <h3>Add Specialization</h3>
+  </div>
+  <div class="modal-body">
+    <form id="form-add-specialization" action="" method="post" class="form-vertical">
+      {% csrf_token %}
+      {% for field in add_specialization_form %}
+      <div id="form-add-specialization-{{ field.html_name }}" class="control-group">
+        {{ field.label_tag }}
+        <div class="controls">
+          {{ field }}<span class="help-inline"></span>
+        </div>
+      </div>
+      {% endfor %} <div id="form-add-specialization-error"></div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a id="add-specialization-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_specialization();">Add</a>
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+  </div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
-	function form_add_specialization() {
-		var form_id = 'form-add-specialization';
-		form_data = $('#' + form_id).serializeObject(true);
-		$('#add-specialization-button').button('loading');
-		Dajaxice.account.form_add_specialization(Dajax.process, {
-			'form_data' : form_data,
-			'form_id' : form_id
-		});
-	}
+  function form_add_specialization() {
+    var form_id = 'form-add-specialization';
+    form_data = $('#' + form_id).serializeObject(true);
+    $('#add-specialization-button').button('loading');
+    Dajaxice.account.form_add_specialization(Dajax.process, {
+      'form_data' : form_data,
+      'form_id' : form_id
+    });
+  }
 
-	function form_add_specialization_callback(data) {
-		$('#add-specialization-button').button('reset');
-		if (data.status == 'OK') {
-			$('#add-specialization').modal('hide');
-			window.location.reload();
-		}
-	}
+  function form_add_specialization_callback(data) {
+    $('#add-specialization-button').button('reset');
+    if(data.status == 'OK') {
+      $('#add-specialization').modal('hide');
+      window.location.reload();
+    }
+  }
 
-
-	$(document).ready(function() {
-		$('#form-add-specialization input[name="name"]').autocomplete({
-			source: '/source_specialization/',
-			minLength: 2,
-			autoFocus: true,
-			delay: 100,
-			focus: function(event, ui) {
-				return false;
-			},
-			select: function(event, ui) {
-				$(this).val(ui.item.label);
-				$('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
-				return false;
-			},
-		});
-	});
+  $(document).ready(function() {
+    $('#form-add-specialization input[name="name"]').autocomplete({
+      source : '/source_specialization/',
+      minLength : 2,
+      autoFocus : true,
+      delay : 100,
+      focus : function(event, ui) {
+        return false;
+      },
+      select : function(event, ui) {
+        $(this).val(ui.item.label);
+        $('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
+        return false;
+      },
+    });
+  });
 </script>

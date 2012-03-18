@@ -7,79 +7,83 @@
 {% block content %}
 
 <div class="page-header">
-	<h1>Homeroom</h1>
+  <h1>Homeroom</h1>
 </div>
 <div class="row-fluid">
-  {% include "modal/add-course.html" with form=form %}
+  {% include "modal/add-course.html" with form=form %} 
   <a data-toggle="modal" href="#add-course" class="btn btn-mini btn-primary"><i class="icon-plus icon-white"></i> Course </a>
   <div class="vertical-space"></div>
   <div class="vertical-space"></div>
   {% if grouped_sections.items|length > 0 %}
-	<div class="tabbable tabs-left">
-		<ul class="nav nav-tabs">
-			{% for key, value in grouped_sections.items %}
-			<li{% if forloop.first %} class='active'{% endif %}><a href="#{{ key|date:"mY" }}" data-toggle="tab">{{ key|date:"F, Y" }}</a></li>
-			{% endfor %}
-		</ul>
-		<div class="tab-content">
-		  {% for key, value in grouped_sections.items %}
-			<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ key|date:"mY" }}">
-			  {% for section in value %}
-			  <div class="section well">
-  		    <a section-id="{{ section.id }}" class="close hide">&times;</a>
-  			  <h4>{{ section.course.title }}</h4>
-  			  <h6>{{ section.course.abbrev }}</h6>
-  			  <div class="vertical-space"></div>
-  			  <p><em>{{ section.course.description }}</em></p>
-  			  <dl class="dl-horizontal">
+  <div class="tabbable tabs-left">
+    <ul class="nav nav-tabs">
+      {% for key, value in grouped_sections.items %}
+      <li{% if forloop.first %} class='active'{% endif %}>
+        <a href="#{{ key|date:"mY" }}" data-toggle="tab">{{ key|date:"F, Y" }}</a></li>
+        {% endfor %}
+    </ul>
+    <div class="tab-content">
+      {% for key, value in grouped_sections.items %}
+      <div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ key|date:"mY" }}">
+        {% for section in value %}
+        <div class="section well">
+          <a section-id="{{ section.id }}" class="close hide">&times;</a>
+          <h4>{{ section.course.title }}</h4>
+          <h6>{{ section.course.abbrev }}</h6>
+          <div class="vertical-space"></div>
+          <p>
+            <em>{{ section.course.description }}</em>
+          </p>
+          <dl class="dl-horizontal">
             <dt>Start Date:</dt>
             <dd>{{ section.start_date|date:"F, Y" }}</dd>
             <dt>Duration:</dt>
             <dd>{{ section.get_duration_display }}</dd>
           </dl>
         </div>
-				{% endfor %}
-			</div>
-			{% endfor %}
-		</div>
-	</div>
-	{% else %}
-	<p>You are not watching any course!</p>
-	{% endif %}
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% else %}
+  <p>
+    You are not watching any course!
+  </p>
+  {% endif %}
 </div>
 
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function() {
-    $('.section').hover(
-      function() {
-        $(this).find('.close').removeClass('hide');
-      },
-      function() {
-        $(this).find('.close').addClass('hide');
-      }
-    );
+    $('.section').hover(function() {
+      $(this).find('.close').removeClass('hide');
+    }, function() {
+      $(this).find('.close').addClass('hide');
+    });
     $('.section .close').click(function() {
       var elem = $(this);
       confirmModal({
-        heading: 'Unsubscribe Course',
-        message: 'Are you sure you want to unsubscribe from this course section?',
-        yes: 'Unsubscribe',
-        no: 'Cancel',
-        callback: function() {
+        heading : 'Unsubscribe Course',
+        message : 'Are you sure you want to unsubscribe from this course section?',
+        yes : 'Unsubscribe',
+        no : 'Cancel',
+        callback : function() {
           var section_id = elem.attr('section-id');
           var unsubscribe_section_callback = function(data) {
-            if (data.status == 'OK') {
+            if(data.status == 'OK') {
               var refresh = false;
-              if (elem.parent().siblings().size() <= 0) {
+              if(elem.parent().siblings().size() <= 0) {
                 refresh = true;
               }
               elem.parent().remove();
-              if (refresh) {
+              if(refresh) {
                 window.location.reload();
               }
             }
           };
-          Dajaxice.course.unsubscribe_section(unsubscribe_section_callback, {'section_id': section_id})
+          Dajaxice.course.unsubscribe_section(unsubscribe_section_callback, {
+            'section_id' : section_id
+          });
         }
       });
     });
