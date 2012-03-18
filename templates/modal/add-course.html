@@ -36,7 +36,6 @@
 	function form_add_course_callback(data) {
 		$('#add-course-button').button('reset');
 		if (data.status == 'OK') {
-			//$('#form-add-course input[type="text"]').attr('value', '');
 			$('#add-course').modal('hide');
 			window.location.reload();
 		}

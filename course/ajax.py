@@ -22,7 +22,6 @@ def form_add_course(request, form_data, form_id):
             section.save()
         profile = request.user.get_profile()
         profile.add_section(section)
-        # TODO: Adding new item will not update data-source
         dajax.add_data({'status': 'OK'}, 'form_add_course_callback')
     else:
         clear_validation(dajax, form, form_id)
