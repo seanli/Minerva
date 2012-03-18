@@ -13,7 +13,7 @@ DEGREE = (
     ('DC', 'Doctor'),
 )
 
-CATEGORY = (
+INSTITUTE_CATEGORY = (
     ('C', 'College'),
     ('U', 'University'),
 )
@@ -41,7 +41,7 @@ YEAR = (
 
 DURATION = (
     ('T', 'Academic Term'),
-    ('O', 'One Class'),
+    ('D', 'Drop In'),
     ('N', 'Never Ending')
 )
 

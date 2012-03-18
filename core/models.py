@@ -1,5 +1,5 @@
 from django.db import models
-from core.constants import CATEGORY
+from core.constants import INSTITUTE_CATEGORY
 
 
 class Country(models.Model):
@@ -32,7 +32,7 @@ class ProvinceState(models.Model):
 class Institute(models.Model):
 
     name = models.CharField(max_length=100)
-    category = models.CharField(max_length=1, choices=CATEGORY)
+    category = models.CharField(max_length=1, choices=INSTITUTE_CATEGORY)
     address = models.CharField(max_length=200)
     city = models.CharField(max_length=100)
     province_state = models.ForeignKey(ProvinceState, verbose_name='province/state')
