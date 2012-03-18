@@ -21,8 +21,10 @@ class LoginForm(StandardForm):
             username = data['emailname'].strip()
             password = data['password']
             user = auth.authenticate(username=username, password=password)
-            if user is None or not user.is_active:
+            if user is None:
                 raise forms.ValidationError('Email or password is invalid!')
+            elif not user.is_active:
+                raise forms.ValidationError('Account needs to be activated!')
             else:
                 data['user'] = user
             return data

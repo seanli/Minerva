@@ -44,6 +44,7 @@ class Profile(models.Model):
         user.set_password(password)
         user.first_name = first_name
         user.last_name = last_name
+        user.is_active = False
         user.save()
         profile = Profile()
         profile.user = user
