@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from datetime import datetime
 from core.models import Institute
 from core.constants import DURATION
 
@@ -12,21 +11,11 @@ class Course(models.Model):
     institute = models.ForeignKey(Institute)
     description = models.TextField(null=True, blank=True)
     difficulty = models.PositiveIntegerField(null=True, blank=True)
+    created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return "%s (%s)" % (self.title, self.abbrev)
-
-    @staticmethod
-    def exist(title, institute):
-        return Course.objects.filter(title=title, institute=institute).count() > 0
-
-    @staticmethod
-    def get(title, institute):
-        if Course.exist(title, institute):
-            return Course.objects.filter(title=title, institute=institute)[0]
-        else:
-            return None
 
     class Meta:
         db_table = 'mva_course'
@@ -68,7 +57,7 @@ class Review(models.Model):
     course = models.ForeignKey(Course)
     message = models.TextField()
     person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
-    sent_time = models.DateTimeField(default=datetime.now())
+    sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=False)
 
     def __unicode__(self):

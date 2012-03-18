@@ -81,7 +81,7 @@ def source_specialization(request):
     json = []
     if 'term' in request.GET:
         term = request.GET['term']
-        specializations = Specialization.objects.filter(name__icontains=term)[:7]
+        specializations = Specialization.objects.filter(name__icontains=term).order_by('name')[:7]
         for specialization in specializations:
             datum = {}
             datum['label'] = specialization.name
@@ -95,7 +95,7 @@ def source_skill(request):
     json = []
     if 'term' in request.GET:
         term = request.GET['term']
-        skills = Skill.objects.filter(name__icontains=term)[:7]
+        skills = Skill.objects.filter(name__icontains=term).order_by('name')[:7]
         for skill in skills:
             datum = {}
             datum['label'] = skill.name

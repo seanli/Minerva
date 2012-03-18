@@ -38,7 +38,7 @@ def source_course(request):
     json = []
     if 'term' in request.GET:
         term = request.GET['term']
-        courses = Course.objects.filter(Q(title__icontains=term) | Q(abbrev__icontains=term))[:7]
+        courses = Course.objects.filter(Q(title__icontains=term) | Q(abbrev__icontains=term)).order_by('title')[:7]
         for course in courses:
             datum = {}
             datum['title'] = course.title

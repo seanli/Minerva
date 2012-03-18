@@ -12,8 +12,8 @@ class Ticket(models.Model):
     status = models.CharField(max_length=1, choices=TICKET_STATUS, default='L')
     priority = models.PositiveIntegerField(choices=TICKET_PRIORITY, null=True, blank=True)
     category = models.CharField(max_length=1, choices=TICKET_CATEGORY, null=True, blank=True)
-    modified_time = models.DateTimeField(auto_now=True)
     created_time = models.DateTimeField(auto_now_add=True)
+    modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return '%s...' % self.summary[:10]

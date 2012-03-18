@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
-from datetime import datetime
 from core.models import Institute, ProvinceState
 from course.models import SectionAssign
 from core.constants import ROLE, DEGREE
@@ -102,21 +101,11 @@ class Specialization(models.Model):
 
     name = models.CharField(max_length=100, unique=True)
     user = models.ManyToManyField(User, through='SpecializationAssign')
+    created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return self.name
-
-    @staticmethod
-    def exist(name):
-        return Specialization.objects.filter(name=name).count() > 0
-
-    @staticmethod
-    def get(name):
-        if Specialization.exist(name):
-            return Specialization.objects.filter(name=name)[0]
-        else:
-            return None
 
     class Meta:
         db_table = 'mva_specialization'
@@ -141,21 +130,11 @@ class Skill(models.Model):
 
     name = models.CharField(max_length=100)
     user = models.ManyToManyField(User, through='SkillAssign')
+    created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return self.name
-
-    @staticmethod
-    def exist(name):
-        return Skill.objects.filter(name=name).count() > 0
-
-    @staticmethod
-    def get(name):
-        if Skill.exist(name):
-            return Skill.objects.filter(name=name)[0]
-        else:
-            return None
 
     class Meta:
         db_table = 'mva_skill'
@@ -233,7 +212,7 @@ class Encouragement(models.Model):
     person_to = models.ForeignKey(User, related_name="%(class)s_person_to", verbose_name='to')
     message = models.TextField()
     person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
-    sent_time = models.DateTimeField(default=datetime.now())
+    sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=False)
 
     def __unicode__(self):
@@ -248,7 +227,7 @@ class Feedback(models.Model):
     instructor = models.ForeignKey(User)
     message = models.TextField()
     person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
-    sent_time = models.DateTimeField(default=datetime.now())
+    sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=True)
 
     def __unicode__(self):
