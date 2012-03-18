@@ -61,16 +61,25 @@
     $('.section .close').click(function() {
       var elem = $(this);
       confirmModal({
-        heading: 'Unwatch Course',
-        message: 'Are you sure?',
+        heading: 'Unsubscribe Course',
+        message: 'Are you sure you want to unsubscribe from this course section?',
+        yes: 'Unsubscribe',
+        no: 'Cancel',
         callback: function() {
           var section_id = elem.attr('section-id');
-          var unwatch_section_callback = function(data) {
+          var unsubscribe_section_callback = function(data) {
             if (data.status == 'OK') {
+              var refresh = false;
+              if (elem.parent().siblings().size() <= 0) {
+                refresh = true;
+              }
               elem.parent().remove();
+              if (refresh) {
+                window.location.reload();
+              }
             }
           };
-          Dajaxice.course.unwatch_section(unwatch_section_callback, {'section_id': section_id})
+          Dajaxice.course.unsubscribe_section(unsubscribe_section_callback, {'section_id': section_id})
         }
       });
     });

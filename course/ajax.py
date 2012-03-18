@@ -32,7 +32,7 @@ def form_add_course(request, form_data, form_id):
 
 
 @dajaxice_register
-def unwatch_section(request, section_id):
+def unsubscribe_section(request, section_id):
     try:
         section = Section.objects.get(pk=section_id)
         user = request.user
