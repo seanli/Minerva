@@ -29,7 +29,7 @@
 	function form_encouragement() {
 		var form_id = 'form-encouragement';
 		// Set hidden field
-		$('#form-encouragement input[name="person_to"]').attr('value', '{{ current_user.id }}');
+		$('#form-encouragement input[name="person_to"]').attr('value', '{{ viewing_user.id }}');
 		form_data = $('#' + form_id).serializeObject(true);
 		$('#post-encouragement-button').button('loading');
 		Dajaxice.account.form_encouragement(Dajax.process, {
