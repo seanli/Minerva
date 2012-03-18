@@ -27,8 +27,8 @@ function confirmModal(options) {
   });
 };
 
-// Prevent form submission from pressing Enter key
 $(document).ready(function() {
+  // Prevent form submission from pressing Enter key
   $(window).keypress(function(e) {
     if (e.which == 13) {
       var $targ = $(e.target);
@@ -45,5 +45,18 @@ $(document).ready(function() {
         return false;
       }
     }
+  });
+  // Sticky element demo
+  $('.tooltip-demo').waypoint(function(event, direction) {
+    if (direction === 'down') {
+      elem_width = $(this).width();
+      $(this).addClass('sticky');
+      $(this).css('width', elem_width);
+    }
+    else {
+      $(this).removeClass('sticky');
+      $(this).removeAttr('style');
+    }
+    event.stopPropagation();
   });
 });
