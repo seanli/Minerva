@@ -58,5 +58,7 @@ $(document).ready(function() {
       $(this).removeAttr('style');
     }
     event.stopPropagation();
+  }, {
+    onlyOnScroll: true,
   });
 });
