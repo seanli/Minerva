@@ -57,6 +57,9 @@
         $('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
         return false;
       },
+      search : function(event, ui) {
+        $('#form-add-specialization input[name="specialization"]').attr('value', '');
+      },
     }).data('autocomplete')._renderItem = function(ul, item) {
       ul.addClass('typeahead dropdown-menu');
       var label = item.label;

@@ -55,6 +55,9 @@
         $('#form-add-course input[name="course"]').attr('value', ui.item.value);
         return false;
       },
+      search : function(event, ui) {
+        $('#form-add-course input[name="course"]').attr('value', '');
+      },
     }).data('autocomplete')._renderItem = function(ul, item) {
       ul.addClass('typeahead dropdown-menu');
       var title = item.title;
