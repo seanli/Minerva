@@ -8,114 +8,6 @@
         }
     }, 
     {
-        "pk": 3, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "mc", 
-            "first_name": "Michael", 
-            "last_name": "Chiang", 
-            "is_active": true, 
-            "is_superuser": false, 
-            "is_staff": false, 
-            "last_login": "2012-02-09 04:07:35", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$3908e$cf5dcf596fb9711b8eed65355225fe3c9b240c0e", 
-            "email": "michaelcutedoggy@hotmail.com", 
-            "date_joined": "2012-02-09 04:07:26"
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "schen", 
-            "first_name": "Stephen", 
-            "last_name": "Chen", 
-            "is_active": true, 
-            "is_superuser": false, 
-            "is_staff": false, 
-            "last_login": "2012-02-14 13:39:36", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$ab352$6f0a419a7877b90369fffc4d7e73137f70b56450", 
-            "email": "stephenchen0@gmail.com", 
-            "date_joined": "2012-02-14 13:39:29"
-        }
-    }, 
-    {
-        "pk": 7, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "sz", 
-            "first_name": "Stefan", 
-            "last_name": "Zinke-Allmang", 
-            "is_active": true, 
-            "is_superuser": false, 
-            "is_staff": false, 
-            "last_login": "2012-02-10 13:21:05", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$788f2$7e01dcf313bf9387aee12bfb1e6c0cf5cf34641e", 
-            "email": "yoda_sz@hotmail.com", 
-            "date_joined": "2012-02-10 13:20:52"
-        }
-    }, 
-    {
-        "pk": 6, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "yli", 
-            "first_name": "Yao", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": false, 
-            "is_staff": false, 
-            "last_login": "2012-02-10 01:13:29", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$e364d$cf14e938beaab821e6bdebb2198157cdc122cbe1", 
-            "email": "yao68li@gmail.com", 
-            "date_joined": "2012-02-10 01:13:18"
-        }
-    }, 
-    {
-        "pk": 10, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "meden", 
-            "first_name": "Michael", 
-            "last_name": "Eden", 
-            "is_active": true, 
-            "is_superuser": false, 
-            "is_staff": false, 
-            "last_login": "2012-03-01 02:55:01", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$c102b$83819b2f4521f69cf75c61ea7198f53fecf042f1", 
-            "email": "meden@uwaterloo.ca", 
-            "date_joined": "2012-02-29 23:12:45"
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "sling", 
-            "first_name": "Sam", 
-            "last_name": "Ling", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-03-08 22:58:03", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$726ff$f07ee13bc5f11d3e3656a5a943165800700fd901", 
-            "email": "mail@thling.com", 
-            "date_joined": "2012-02-13 21:32:45"
-        }
-    }, 
-    {
         "pk": 11, 
         "model": "auth.user", 
         "fields": {
@@ -134,6 +26,96 @@
         }
     }, 
     {
+        "pk": 3, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "mc", 
+            "first_name": "Michael", 
+            "last_name": "Chiang", 
+            "is_active": false, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-09 04:07:35", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$3908e$cf5dcf596fb9711b8eed65355225fe3c9b240c0e", 
+            "email": "michaelcutedoggy@hotmail.com", 
+            "date_joined": "2012-02-09 04:07:26"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "schen", 
+            "first_name": "Stephen", 
+            "last_name": "Chen", 
+            "is_active": false, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-14 13:39:36", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$ab352$6f0a419a7877b90369fffc4d7e73137f70b56450", 
+            "email": "stephenchen0@gmail.com", 
+            "date_joined": "2012-02-14 13:39:29"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sling", 
+            "first_name": "Sam", 
+            "last_name": "Ling", 
+            "is_active": false, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-03-08 22:58:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$726ff$f07ee13bc5f11d3e3656a5a943165800700fd901", 
+            "email": "mail@thling.com", 
+            "date_joined": "2012-02-13 21:32:45"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sz", 
+            "first_name": "Stefan", 
+            "last_name": "Zinke-Allmang", 
+            "is_active": false, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-10 13:21:05", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$788f2$7e01dcf313bf9387aee12bfb1e6c0cf5cf34641e", 
+            "email": "yoda_sz@hotmail.com", 
+            "date_joined": "2012-02-10 13:20:52"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "yli", 
+            "first_name": "Yao", 
+            "last_name": "Li", 
+            "is_active": false, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-02-10 01:13:29", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$e364d$cf14e938beaab821e6bdebb2198157cdc122cbe1", 
+            "email": "yao68li@gmail.com", 
+            "date_joined": "2012-02-10 01:13:18"
+        }
+    }, 
+    {
         "pk": 2, 
         "model": "auth.user", 
         "fields": {
@@ -143,12 +125,30 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-03-18 06:58:02", 
+            "last_login": "2012-03-18 17:17:40", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
             "email": "s67li@uwaterloo.ca", 
             "date_joined": "2012-02-08 00:12:47"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "meden", 
+            "first_name": "Michael", 
+            "last_name": "Eden", 
+            "is_active": false, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-03-18 17:17:18", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$c102b$83819b2f4521f69cf75c61ea7198f53fecf042f1", 
+            "email": "meden@uwaterloo.ca", 
+            "date_joined": "2012-02-29 23:12:45"
         }
     }, 
     {
