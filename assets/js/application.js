@@ -1,12 +1,4 @@
 ! function($) {
-  $(function() {
-    // tooltip demo
-    $('.tooltip-demo.well').tooltip({
-      selector : "a[rel=tooltip]"
-    })
-    // Popover
-    $("a[rel=popover]").popover()
-  })
   /* Update datepicker plugin so that MM-DD-YYYY format is used. */
   $.extend($.fn.datepicker.defaults, {
     parse : function(string) {

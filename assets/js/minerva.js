@@ -61,4 +61,8 @@ $(document).ready(function() {
   }, {
     onlyOnScroll: true,
   });
+  // Tooltip demo
+  $('.tooltip-demo').tooltip({
+    selector : "a[rel=tooltip]",
+  });
 });
