@@ -40,7 +40,7 @@
 
 	function form_encouragement_callback(data) {
 		$('#post-encouragement-button').button('reset');
-		if(data.status == 'OK') {
+		if (data.status == 'OK') {
 			$('#encouragement').modal('hide');
 			window.location.reload();
 		}

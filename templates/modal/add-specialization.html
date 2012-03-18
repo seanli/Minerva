@@ -37,7 +37,7 @@
 
 	function form_add_specialization_callback(data) {
 		$('#add-specialization-button').button('reset');
-		if(data.status == 'OK') {
+		if (data.status == 'OK') {
 			$('#add-specialization').modal('hide');
 			window.location.reload();
 		}
@@ -46,14 +46,14 @@
 
 	$(document).ready(function() {
 		$('#form-add-specialization input[name="name"]').autocomplete({
-			source : '/source_specialization/',
-			minLength : 2,
-			autoFocus : true,
-			delay : 100,
-			focus : function(event, ui) {
+			source: '/source_specialization/',
+			minLength: 2,
+			autoFocus: true,
+			delay: 100,
+			focus: function(event, ui) {
 				return false;
 			},
-			select : function(event, ui) {
+			select: function(event, ui) {
 				$(this).val(ui.item.label);
 				$('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
 				return false;

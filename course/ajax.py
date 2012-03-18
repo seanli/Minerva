@@ -1,7 +1,8 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
+from django.utils import simplejson
 from course.forms import AddCourseForm
-from course.models import Section
+from course.models import Section, SectionAssign
 from core.ajax import clear_validation, show_validation
 
 
@@ -28,3 +29,16 @@ def form_add_course(request, form_data, form_id):
         show_validation(dajax, form, form_id)
         dajax.add_data({'status': 'INVALID'}, 'form_add_course_callback')
     return dajax.json()
+
+
+@dajaxice_register
+def unwatch_section(request, section_id):
+    try:
+        section = Section.objects.get(pk=section_id)
+        user = request.user
+        assign = SectionAssign.objects.get(user=user, section=section)
+        assign.delete()
+        status = 'OK'
+    except:
+        status = 'INVALID'
+    return simplejson.dumps({'status': status})

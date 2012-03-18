@@ -35,7 +35,7 @@
 
 	function form_add_course_callback(data) {
 		$('#add-course-button').button('reset');
-		if(data.status == 'OK') {
+		if (data.status == 'OK') {
 			//$('#form-add-course input[type="text"]').attr('value', '');
 			$('#add-course').modal('hide');
 			window.location.reload();
@@ -44,14 +44,14 @@
 	
 	$(document).ready(function() {
     $('#form-add-course input[name="title"]').autocomplete({
-      source : '/source_course/',
-      minLength : 2,
-      autoFocus : true,
-      delay : 100,
-      focus : function(event, ui) {
+      source: '/source_course/',
+      minLength: 2,
+      autoFocus: true,
+      delay: 100,
+      focus: function(event, ui) {
         return false;
       },
-      select : function(event, ui) {
+      select: function(event, ui) {
         $(this).val(ui.item.label);
         $('#form-add-course input[name="course"]').attr('value', ui.item.value);
         return false;

@@ -40,7 +40,7 @@
 
 	function form_report_callback(data) {
 		$('#send-report-button').button('reset');
-		if(data.status == 'OK') {
+		if (data.status == 'OK') {
 			$('#form-report textarea').attr('value', '');
 			$('#report').modal('hide');
 		}

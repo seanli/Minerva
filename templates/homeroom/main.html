@@ -25,17 +25,18 @@
 		  {% for key, value in grouped_sections.items %}
 			<div class="tab-pane{% if forloop.first %} active{% endif %}" id="{{ key|date:"mY" }}">
 			  {% for section in value %}
-			  <div class="well">
-			  <h4>{{ section.course.title }}</h4>
-			  <h6>{{ section.course.abbrev }}</h6>
-			  <div class="vertical-space"></div>
-			  <p><em>{{ section.course.description }}</em></p>
-			  <dl class="dl-horizontal">
-          <dt>Start Date:</dt>
-          <dd>{{ section.start_date|date:"F, Y" }}</dd>
-          <dt>Duration:</dt>
-          <dd>{{ section.get_duration_display }}</dd>
-        </dl>
+			  <div class="section well">
+  		    <a section-id="{{ section.id }}" class="close hide">&times;</a>
+  			  <h4>{{ section.course.title }}</h4>
+  			  <h6>{{ section.course.abbrev }}</h6>
+  			  <div class="vertical-space"></div>
+  			  <p><em>{{ section.course.description }}</em></p>
+  			  <dl class="dl-horizontal">
+            <dt>Start Date:</dt>
+            <dd>{{ section.start_date|date:"F, Y" }}</dd>
+            <dt>Duration:</dt>
+            <dd>{{ section.get_duration_display }}</dd>
+          </dl>
         </div>
 				{% endfor %}
 			</div>
@@ -46,4 +47,34 @@
 	<p>You are not watching any course!</p>
 	{% endif %}
 </div>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('.section').hover(
+      function() {
+        $(this).find('.close').removeClass('hide');
+      },
+      function() {
+        $(this).find('.close').addClass('hide');
+      }
+    );
+    $('.section .close').click(function() {
+      var elem = $(this);
+      confirmModal({
+        heading: 'Unwatch Course',
+        message: 'Are you sure?',
+        callback: function() {
+          var section_id = elem.attr('section-id');
+          var unwatch_section_callback = function(data) {
+            if (data.status == 'OK') {
+              elem.parent().remove();
+            }
+          };
+          Dajaxice.course.unwatch_section(unwatch_section_callback, {'section_id': section_id})
+        }
+      });
+    });
+  });
+</script>
+
 {% endblock %} 
