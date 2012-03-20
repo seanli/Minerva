@@ -52,19 +52,7 @@ $(document).ready(function() {
     }
   });
   // Sticky element demo
-  $('.tooltip-demo').waypoint(function(event, direction) {
-    if(direction === 'down') {
-      elem_width = $(this).width();
-      $(this).addClass('sticky');
-      $(this).css('width', elem_width);
-    } else {
-      $(this).removeClass('sticky');
-      $(this).removeAttr('style');
-    }
-    event.stopPropagation();
-  }, {
-    onlyOnScroll : true,
-  });
+  $('.tooltip-demo').sticky();
   // Tooltip demo
   $('.tooltip-demo').tooltip({
     selector : "a[rel=tooltip]",
