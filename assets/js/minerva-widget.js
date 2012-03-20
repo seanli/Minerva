@@ -39,3 +39,31 @@
     });
   };
 })(jQuery);
+
+// Auto-complate elements (extends JQuery UI Autocomplete)
+(function($) {
+  $.fn.auto_complete = function(options) {
+    var defaults = {
+      minLength : 1,
+      autoFocus : true,
+      delay : 200,
+      focus : function(event, ui) {
+        return false;
+      },
+      // source : 'url...'
+      // select : function(event, ui) { ... }
+      // search : function(event, ui) { ... }
+      // render : function(ul, item) { ... }
+      render : null,
+    };
+    var options = $.extend({}, defaults, options);
+    return this.each(function(i) {
+      var $this = $(this);
+      if(options.render != null) {
+        $this.autocomplete(options).data('autocomplete')._renderItem = options.render;
+      } else {
+        $this.autocomplete(options);
+      }
+    });
+  };
+})(jQuery);

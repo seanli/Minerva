@@ -1,29 +1,27 @@
 {% load base_extra %}
-
 <div id="add-specialization" class="modal hide fade">
-  <div class="modal-header">
-    <a class="close" data-dismiss="modal">&times;</a>
-    <h3>Add Specialization</h3>
-  </div>
-  <div class="modal-body">
-    <form id="form-add-specialization" action="" method="post" class="form-vertical">
-      {% csrf_token %}
-      {% for field in add_specialization_form %}
-      <div id="form-add-specialization-{{ field.html_name }}" class="control-group">
-        {{ field.label_tag }}
-        <div class="controls">
-          {{ field }}<span class="help-inline"></span>
-        </div>
-      </div>
-      {% endfor %} <div id="form-add-specialization-error"></div>
-    </form>
-  </div>
-  <div class="modal-footer">
-    <a id="add-specialization-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_specialization();">Add</a>
-    <a href="#" class="btn" data-dismiss="modal">Close</a>
-  </div>
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+        <h3>Add Specialization</h3>
+    </div>
+    <div class="modal-body">
+        <form id="form-add-specialization" action="" method="post" class="form-vertical">
+            {% csrf_token %}
+            {% for field in add_specialization_form %}
+            <div id="form-add-specialization-{{ field.html_name }}" class="control-group">
+                {{ field.label_tag }}
+                <div class="controls">
+                    {{ field }}<span class="help-inline"></span>
+                </div>
+            </div>
+            {% endfor %} <div id="form-add-specialization-error"></div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <a id="add-specialization-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_specialization();">Add</a>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+    </div>
 </div>
-
 <script type="text/javascript" charset="utf-8">
   function form_add_specialization() {
     var form_id = 'form-add-specialization';
@@ -44,14 +42,8 @@
   }
 
   $(document).ready(function() {
-    $('#form-add-specialization input[name="name"]').autocomplete({
+    $('#form-add-specialization input[name="name"]').auto_complete({
       source : '/source_specialization/',
-      minLength : 1,
-      autoFocus : true,
-      delay : 200,
-      focus : function(event, ui) {
-        return false;
-      },
       select : function(event, ui) {
         $(this).val(ui.item.label);
         $('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);
@@ -60,17 +52,16 @@
       search : function(event, ui) {
         $('#form-add-specialization input[name="specialization"]').attr('value', '');
       },
-    }).data('autocomplete')._renderItem = function(ul, item) {
-      ul.addClass('typeahead dropdown-menu');
-      var label = item.label;
-      var text = RegExp.escape($('#form-add-specialization input[name="name"]').val());
-      label = label.replace(new RegExp('(' + text + ')', 'ig'), function ($1, match) {
-        return '<strong>' + match + '</strong>'
-      });
-      return $('<li></li>')
-        .data('item.autocomplete', item)
-        .append('<a>' + label + '</a>')
-        .appendTo(ul);
-    };
+      render : function(ul, item) {
+        ul.addClass('typeahead dropdown-menu');
+        var label = item.label;
+        var text = RegExp.escape($('#form-add-specialization input[name="name"]').val());
+        label = label.replace(new RegExp('(' + text + ')', 'ig'), function($1, match) {
+          return '<strong>' + match + '</strong>'
+        });
+        return $('<li></li>').data('item.autocomplete', item).append('<a>' + label + '</a>').appendTo(ul);
+      },
+    });
   });
+
 </script>
