@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.contrib.sessions.models import Session
 from core.models import (Country, ProvinceState, 
     Institute, Specialization, Badge, Encouragement,
     Feedback, Skill)
@@ -16,6 +17,7 @@ class SkillAdmin(admin.ModelAdmin):
     search_fields = ['name']
 
 
+admin.site.register(Session)
 admin.site.register(Specialization, SpecializationAdmin)
 admin.site.register(Badge)
 admin.site.register(Encouragement)

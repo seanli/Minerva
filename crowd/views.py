@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
-from crowd.forms import AddSpecializationForm, AddSkillForm
+from crowd.forms import AddSpecializationForm, AddSkillForm, EncouragementForm
 from account.models import Profile
 from core.models import BadgeAssign, Encouragement
 
@@ -22,6 +22,7 @@ def crowd(request, username=None):
 
         add_specialization_form = AddSpecializationForm(request=request)
         add_skill_form = AddSkillForm(request=request)
+        encouragement_form = EncouragementForm(request=request)
 
         context = {
             'viewing_user': user,
@@ -30,7 +31,8 @@ def crowd(request, username=None):
             'encouragements': Encouragement.objects.filter(person_to=user).order_by('-sent_time'),
             'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id),
             'add_specialization_form': add_specialization_form,
-            'add_skill_form': add_skill_form
+            'add_skill_form': add_skill_form,
+            'encouragement_form': encouragement_form,
         }
         return render_to_response('crowd/main.html', context, context_instance=RequestContext(request))
     else:

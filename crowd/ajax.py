@@ -1,7 +1,7 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.contrib.auth.decorators import login_required
-from crowd.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
+from Minerva.crowd.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
 from core.models import Encouragement
 from core.ajax import clear_validation, show_validation
 from datetime import datetime
@@ -11,7 +11,7 @@ from datetime import datetime
 @login_required
 def form_encouragement(request, form_data, form_id):
     dajax = Dajax()
-    form = EncouragementForm(form_data)
+    form = EncouragementForm(form_data, request=request)
     if form.is_valid():
         clear_validation(dajax, form, form_id)
         data = form.cleaned_data

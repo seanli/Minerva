@@ -1,7 +1,6 @@
 from django import template
 from datetime import datetime
 from django.conf import settings
-from crowd.forms import EncouragementForm
 from backstage.forms import ReportForm
 from django.utils.datastructures import SortedDict
 
@@ -62,15 +61,4 @@ def report_form(parser, token):
 class ReportFormNode(template.Node):
     def render(self, context):
         context['report_form'] = ReportForm()
-        return ''
-
-
-@register.tag
-def encouragement_form(parser, token):
-    return EncouragementFormNode()
-
-
-class EncouragementFormNode(template.Node):
-    def render(self, context):
-        context['encouragement_form'] = EncouragementForm()
         return ''
