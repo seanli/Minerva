@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+{% load webdesign %}
+
+{% block title %}{% brand_name %} - Bulletin{% endblock %}
+
+{% block content %}
+<script type="text/javascript" charset="utf-8">
+	function my_js_callback(data) {
+		alert(data.message);
+	}
+        
+	var barval = 0;
+	function update_bar() {
+		if(barval < 100)
+			barval += 10;
+		else
+			barval = 0;
+		$('.progress .bar').attr("style", "width:" + barval + "%");
+	}
+</script>
+<div class="page-header">
+  <h1>Temporary Playground</h1>
+</div>
+<div class="alert fade in">
+  <a class="close" data-dismiss="alert" href="#">&times;</a>
+  <strong>Note:</strong> this page is for testing purpose only. The public release version will be completely different.
+</div>
+<div class="row-fluid">
+  <div class="span4">
+    <div class="row-fluid">
+      {% if user.is_authenticated %} <h2>Wall of Fame</h2>
+      {% lorem 1 p %} <div class="vertical-space"></div>
+      <div class="tooltip-demo well">
+        Tight pants next level keffiyeh <a href="#" rel="tooltip" data-original-title="first tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel="tooltip" data-original-title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A <a href="#" rel="tooltip" title="Another one here too">really ironic</a> artisan whatever keytar, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="span4">
+    <div class="row-fluid">
+      {% if user.is_authenticated %} <h2>Recommendations</h2>
+      <div class="vertical-space"></div>
+      <div class="btn-group" data-toggle="buttons-radio">
+        <button class="btn btn-mini active">J</button>
+        <button class="btn btn-mini">F</button>
+        <button class="btn btn-mini">M</button>
+        <button class="btn btn-mini">A</button>
+        <button class="btn btn-mini">M</button>
+        <button class="btn btn-mini">J</button>
+        <button class="btn btn-mini">J</button>
+        <button class="btn btn-mini">A</button>
+        <button class="btn btn-mini">S</button>
+        <button class="btn btn-mini">O</button>
+        <button class="btn btn-mini">N</button>
+        <button class="btn btn-mini">D</button>
+      </div>
+      <div class="vertical-space"></div>
+      <input type="text" data-provide="typeahead" data-items="7" data-source='["test", "C", "C++", "C+++"]' />
+      {% endif %}
+    </div>
+  </div>
+  <div class="span4">
+    <div class="row-fluid">
+      {% if user.is_authenticated %} <h2>Notifications</h2>
+      <a class="btn btn-primary" onclick="Dajaxice.core.helloworld(my_js_callback);"> AJAX Test </a>
+      <div class="vertical-space"></div>
+      <div class="progress">
+        <div class="bar" style="width: 0%;"></div>
+      </div>
+      <a class="btn btn-small btn-success" onclick="update_bar()"><i class="icon-arrow-up icon-white"></i> Progress Bar Demo</a>
+      <div class="vertical-space"></div>
+      {% lorem 10 p %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

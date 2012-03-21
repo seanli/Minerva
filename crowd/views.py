@@ -24,16 +24,15 @@ def crowd(request, username=None):
         add_skill_form = AddSkillForm(request=request)
         encouragement_form = EncouragementForm(request=request)
 
-        context = {
-            'viewing_user': user,
-            'profile': profile,
-            'badges': BadgeAssign.objects.filter(user=user),
-            'encouragements': Encouragement.objects.filter(person_to=user).order_by('-sent_time'),
-            'related': Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id),
-            'add_specialization_form': add_specialization_form,
-            'add_skill_form': add_skill_form,
-            'encouragement_form': encouragement_form,
-        }
-        return render_to_response('crowd/main.html', context, context_instance=RequestContext(request))
+        context = RequestContext(request)
+        context['viewing_user'] = user
+        context['profile'] = profile
+        context['badges'] = BadgeAssign.objects.filter(user=user)
+        context['encouragements'] = Encouragement.objects.filter(person_to=user).order_by('-sent_time')
+        context['related'] = Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id)
+        context['add_specialization_form'] = add_specialization_form
+        context['add_skill_form'] = add_skill_form
+        context['encouragement_form'] = encouragement_form
+        return render_to_response('crowd/main.html', context)
     else:
         return HttpResponse('User Not Found!')

@@ -20,8 +20,10 @@ def login(request):
     else:
         form = LoginForm()
     referrer = get_referrer(request)
-    return render_to_response('account/login.html',
-        {'form': form, 'referrer': referrer}, context_instance=RequestContext(request))
+    context = RequestContext(request)
+    context['form'] = form
+    context['referrer'] = referrer
+    return render_to_response('account/login.html', context)
 
 
 def logout(request):
@@ -40,5 +42,6 @@ def signup(request):
             return HttpResponseRedirect(reverse('login'))
     else:
         form = SignupForm()
-    return render_to_response('account/signup.html',
-        {'form': form}, context_instance=RequestContext(request))
+    context = RequestContext(request)
+    context['form'] = form
+    return render_to_response('account/signup.html', context)

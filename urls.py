@@ -16,10 +16,8 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'views.home', name='home'),
     # url(r'^Minerva/', include('foo.urls')),
-    # Home Page
-    url(r'^bulletin/', 'core.views.bulletin', name='bulletin'),
-    url(r'^$', 'core.views.bulletin', name='home'),
     # Import URLs
+    url(r'', include('bulletin.urls')),
     url(r'', include('account.urls')),
     url(r'', include('homeroom.urls')),
     url(r'', include('crowd.urls')),

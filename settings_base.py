@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'backstage',
     'course',
     'account',
+    'bulletin',
     'homeroom',
     'crowd',
     'data',

@@ -10,18 +10,18 @@ from core.decorators import staff_required
 @login_required
 @staff_required
 def dashboard(request):
-    return render_to_response('backstage/dashboard.html', context_instance=RequestContext(request))
+    context = RequestContext(request)
+    return render_to_response('backstage/dashboard.html', context)
 
 
 @login_required
 @staff_required
 def tickets(request, ticket_id=None):
+    context = RequestContext(request)
     if ticket_id is None:
         ticket_list = Ticket.objects.all()
-        context = {
-            'tickets': ticket_list,
-        }
-        return render_to_response('backstage/tickets.html', context, context_instance=RequestContext(request))
+        context['tickets'] = ticket_list
+        return render_to_response('backstage/tickets.html', context)
     else:
         try:
             ticket = Ticket.objects.get(id=ticket_id)
@@ -34,10 +34,8 @@ def tickets(request, ticket_id=None):
                     form.save()
             else:
                 form = TicketForm(instance=ticket)
-            context = {
-                'ticket': ticket,
-                'form': form,
-            }
-            return render_to_response('backstage/tickets_detail.html', context, context_instance=RequestContext(request))
+            context['ticket'] = ticket
+            context['form'] = form
+            return render_to_response('backstage/tickets_detail.html', context)
         else:
             return HttpResponse('Ticket Not Found!')
