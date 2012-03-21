@@ -6,7 +6,6 @@ from django.core.exceptions import ValidationError
 from core.models import (Institute, ProvinceState, 
     SpecializationAssign, SkillAssign)
 from course.models import SectionAssign
-    
 from core.constants import ROLE, DEGREE
 from core.utilities import unique_username
 

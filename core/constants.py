@@ -3,7 +3,6 @@
 ROLE = (
     ('S', 'Student'),
     ('I', 'Instructor'),
-    ('T', 'Tutor'),
 )
 
 DEGREE = (
