@@ -113,6 +113,7 @@ INSTALLED_APPS = (
     'backstage',
     'course',
     'account',
+    'homeroom',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (

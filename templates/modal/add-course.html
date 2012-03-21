@@ -26,7 +26,7 @@
     var form_id = 'form-add-course';
     form_data = $('#' + form_id).serializeObject(true);
     $('#add-course-button').button('loading');
-    Dajaxice.course.form_add_course(Dajax.process, {
+    Dajaxice.homeroom.form_add_course(Dajax.process, {
       'form_data' : form_data,
       'form_id' : form_id
     });

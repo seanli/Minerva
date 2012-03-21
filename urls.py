@@ -16,14 +16,19 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'views.home', name='home'),
     # url(r'^Minerva/', include('foo.urls')),
+    # Home Page
     url(r'^bulletin/', 'core.views.bulletin', name='bulletin'),
     url(r'^$', 'core.views.bulletin', name='home'),
+    # Import URLs
     url(r'', include('account.urls')),
-    url(r'', include('course.urls')),
+    url(r'', include('homeroom.urls')),
     url(r'', include('backstage.urls')),
+    # Admin URLs
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    # AJAX URLs
     url(r'^%s/' % settings.DAJAXICE_MEDIA_PREFIX, include('dajaxice.urls')),
 )
 
+# Static File URLs
 urlpatterns += staticfiles_urlpatterns()
