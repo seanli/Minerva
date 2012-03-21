@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
-from account.models import (Profile, Contact, Specialization,
-    SpecializationAssign, Badge, BadgeAssign,
-    Encouragement, Feedback, Skill, SkillAssign)
+from core.models import (SpecializationAssign, BadgeAssign,
+    Encouragement, Feedback, SkillAssign)
+from account.models import Profile, Contact
 from course.models import Section, SectionAssign
 
 
@@ -54,18 +54,6 @@ class SectionAssignInline(admin.TabularInline):
     extra = 1
 
 
-class SpecializationAdmin(admin.ModelAdmin):
-    list_display = ('name', 'modified_time',)
-    list_filter = ('modified_time',)
-    search_fields = ['name']
-
-
-class SkillAdmin(admin.ModelAdmin):
-    list_display = ('name', 'modified_time',)
-    list_filter = ('modified_time',)
-    search_fields = ['name']
-
-
 class CustomUserAdmin(UserAdmin):
     inlines = [ProfileInline, ContactInline, SpecializationAssignInline, SkillAssignInline, BadgeAssignInline, SectionAssignInline, EncouragementInline, FeedbackInline]
     list_display = ('username', 'email', 'first_name', 'last_name', 'user_role', 'user_institute', 'last_login')
@@ -77,8 +65,3 @@ class CustomUserAdmin(UserAdmin):
 admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(Contact)
-admin.site.register(Specialization, SpecializationAdmin)
-admin.site.register(Badge)
-admin.site.register(Encouragement)
-admin.site.register(Feedback)
-admin.site.register(Skill, SkillAdmin)

@@ -3,8 +3,10 @@ from django.contrib.auth.models import User
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
-from core.models import Institute, ProvinceState
+from core.models import (Institute, ProvinceState, 
+    SpecializationAssign, SkillAssign)
 from course.models import SectionAssign
+    
 from core.constants import ROLE, DEGREE
 from core.utilities import unique_username
 
@@ -98,64 +100,6 @@ user_institute.short_description = 'Institute'
 User.add_to_class('user_institute', user_institute)
 
 
-class Specialization(models.Model):
-
-    name = models.CharField(max_length=100, unique=True)
-    user = models.ManyToManyField(User, through='SpecializationAssign')
-    created_time = models.DateTimeField(auto_now_add=True)
-    modified_time = models.DateTimeField(auto_now=True)
-
-    def __unicode__(self):
-        return self.name
-
-    class Meta:
-        db_table = 'mva_specialization'
-
-
-class SpecializationAssign(models.Model):
-
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    specialization = models.ForeignKey(Specialization, related_name="%(class)s_specialization")
-
-    def __unicode__(self):
-        return "%s : %s" % (self.user, self.specialization)
-
-    class Meta:
-        db_table = 'mva_specialization_assign'
-        verbose_name = 'specialization assignment'
-        verbose_name_plural = 'specialization assignments'
-        unique_together = ("user", "specialization")
-
-
-class Skill(models.Model):
-
-    name = models.CharField(max_length=100)
-    user = models.ManyToManyField(User, through='SkillAssign')
-    created_time = models.DateTimeField(auto_now_add=True)
-    modified_time = models.DateTimeField(auto_now=True)
-
-    def __unicode__(self):
-        return self.name
-
-    class Meta:
-        db_table = 'mva_skill'
-
-
-class SkillAssign(models.Model):
-
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    skill = models.ForeignKey(Skill, related_name="%(class)s_skill")
-
-    def __unicode__(self):
-        return "%s : %s" % (self.user, self.skill)
-
-    class Meta:
-        db_table = 'mva_skill_assign'
-        verbose_name = 'skill assignment'
-        verbose_name_plural = 'skill assignments'
-        unique_together = ("user", "skill")
-
-
 class Contact(models.Model):
 
     label = models.CharField(max_length=100)
@@ -172,67 +116,3 @@ class Contact(models.Model):
 
     class Meta:
         db_table = 'mva_contact'
-
-
-class Badge(models.Model):
-
-    label = models.CharField(max_length=100)
-    prev_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_prev_lvl", verbose_name='previous level')
-    req_exp = models.PositiveIntegerField(default=0, verbose_name='requirement EXP')
-    next_exp = models.PositiveIntegerField(default=0, verbose_name='next level EXP')
-    next_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_next_lvl", verbose_name='next level')
-    user = models.ManyToManyField(User, through='BadgeAssign')
-    # picture = models.ImageField(null=True, blank=True)
-
-    def __unicode__(self):
-        return self.label
-
-    class Meta:
-        db_table = 'mva_badge'
-
-
-class BadgeAssign(models.Model):
-
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    badge = models.ForeignKey(Badge, related_name="%(class)s_badge")
-    obtained = models.BooleanField(default=False)
-    exp = models.PositiveIntegerField(default=0, verbose_name='EXP')
-
-    def __unicode__(self):
-        return "%s : %s" % (self.user, self.badge)
-
-    class Meta:
-        db_table = 'mva_badge_assign'
-        verbose_name = 'badge assignment'
-        verbose_name_plural = 'badge assignments'
-        unique_together = ("user", "badge")
-
-
-class Encouragement(models.Model):
-
-    person_to = models.ForeignKey(User, related_name="%(class)s_person_to", verbose_name='to')
-    message = models.TextField()
-    person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
-    sent_time = models.DateTimeField(auto_now_add=True)
-    anonymous = models.BooleanField(default=False)
-
-    def __unicode__(self):
-        return "To %s: %s..." % (self.person_to, self.message[:10])
-
-    class Meta:
-        db_table = 'mva_encouragement'
-
-
-class Feedback(models.Model):
-
-    instructor = models.ForeignKey(User)
-    message = models.TextField()
-    person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
-    sent_time = models.DateTimeField(auto_now_add=True)
-    anonymous = models.BooleanField(default=True)
-
-    def __unicode__(self):
-        return "To %s: %s..." % (self.instructor, self.message[:10])
-
-    class Meta:
-        db_table = 'mva_feedback'

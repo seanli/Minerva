@@ -3,9 +3,8 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from core.forms import StandardForm
 from core.utilities import titlecase
-from core.models import Institute
+from core.models import Institute, Specialization, Skill
 from core.constants import ROLE
-from account.models import Specialization, Skill
 
 
 class LoginForm(StandardForm):

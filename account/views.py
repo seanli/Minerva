@@ -6,7 +6,8 @@ from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
 from account.forms import LoginForm, SignupForm, AddSpecializationForm, AddSkillForm
-from account.models import Profile, BadgeAssign, Encouragement, Specialization, Skill
+from account.models import Profile
+from core.models import BadgeAssign, Encouragement, Specialization, Skill
 from core.utilities import get_referrer, set_referrer
 from django.utils import simplejson
 
@@ -101,5 +102,4 @@ def source_skill(request):
             datum['label'] = skill.name
             datum['value'] = skill.id
             json.append(datum)
-        print json
     return HttpResponse(simplejson.dumps(json))
