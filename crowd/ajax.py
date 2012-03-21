@@ -1,7 +1,7 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.contrib.auth.decorators import login_required
-from account.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
+from crowd.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
 from core.models import Encouragement
 from core.ajax import clear_validation, show_validation
 from datetime import datetime

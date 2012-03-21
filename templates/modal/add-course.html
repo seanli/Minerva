@@ -42,7 +42,7 @@
 
   $(document).ready(function() {
     $('#form-add-course input[name="title"]').auto_complete({
-      source : '/source_course/',
+      source : '/autocomplete_course/',
       select : function(event, ui) {
         $(this).val(ui.item.title);
         $('#form-add-course input[name="course"]').attr('value', ui.item.value);

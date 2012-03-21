@@ -1,7 +1,7 @@
 from django import template
 from datetime import datetime
 from django.conf import settings
-from account.forms import EncouragementForm
+from crowd.forms import EncouragementForm
 from backstage.forms import ReportForm
 from django.utils.datastructures import SortedDict
 

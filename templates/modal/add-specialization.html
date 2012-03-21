@@ -27,7 +27,7 @@
     var form_id = 'form-add-specialization';
     form_data = $('#' + form_id).serializeObject(true);
     $('#add-specialization-button').button('loading');
-    Dajaxice.account.form_add_specialization(Dajax.process, {
+    Dajaxice.crowd.form_add_specialization(Dajax.process, {
       'form_data' : form_data,
       'form_id' : form_id
     });
@@ -43,7 +43,7 @@
 
   $(document).ready(function() {
     $('#form-add-specialization input[name="name"]').auto_complete({
-      source : '/source_specialization/',
+      source : '/autocomplete_specialization/',
       select : function(event, ui) {
         $(this).val(ui.item.label);
         $('#form-add-specialization input[name="specialization"]').attr('value', ui.item.value);

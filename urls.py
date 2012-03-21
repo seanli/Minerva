@@ -22,7 +22,9 @@ urlpatterns = patterns('',
     # Import URLs
     url(r'', include('account.urls')),
     url(r'', include('homeroom.urls')),
+    url(r'', include('crowd.urls')),
     url(r'', include('backstage.urls')),
+    url(r'', include('data.urls')),
     # Admin URLs
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),

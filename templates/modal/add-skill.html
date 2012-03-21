@@ -27,7 +27,7 @@
     var form_id = 'form-add-skill';
     form_data = $('#' + form_id).serializeObject(true);
     $('#add-skill-button').button('loading');
-    Dajaxice.account.form_add_skill(Dajax.process, {
+    Dajaxice.crowd.form_add_skill(Dajax.process, {
       'form_data' : form_data,
       'form_id' : form_id
     });
@@ -43,7 +43,7 @@
 
   $(document).ready(function() {
     $('#form-add-skill input[name="name"]').auto_complete({
-      source : '/source_skill/',
+      source : '/autocomplete_skill/',
       select : function(event, ui) {
         $(this).val(ui.item.label);
         $('#form-add-skill input[name="skill"]').attr('value', ui.item.value);

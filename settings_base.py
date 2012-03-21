@@ -114,6 +114,8 @@ INSTALLED_APPS = (
     'course',
     'account',
     'homeroom',
+    'crowd',
+    'data',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
