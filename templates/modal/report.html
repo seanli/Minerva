@@ -22,21 +22,12 @@
     </form>
   </div>
   <div class="modal-footer">
-    <a id="send-report-button" class="btn btn-danger" data-loading-text="Sending..." onclick="form_report();">Send Report</a>
+    <a id="send-report-button" class="btn btn-danger" data-loading-text="Sending...">Send Report</a>
     <a href="#" class="btn" data-dismiss="modal">Close</a>
   </div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
-  function form_report() {
-    var form_id = 'form-report';
-    form_data = $('#' + form_id).serializeObject(true);
-    $('#send-report-button').button('loading');
-    Dajaxice.backstage.form_report(Dajax.process, {
-      'form_data' : form_data,
-      'form_id' : form_id
-    });
-  }
 
   function form_report_callback(data) {
     $('#send-report-button').button('reset');
@@ -45,4 +36,17 @@
       $('#report').modal('hide');
     }
   }
+
+  $(document).ready(function() {
+
+    $('#form-report').ajax_form({
+      trigger : $('#send-report-button'),
+      preSubmit : function() {
+        $('#send-report-button').button('loading');
+      },
+      appView : 'backstage.form_report',
+    });
+
+  });
+
 </script>

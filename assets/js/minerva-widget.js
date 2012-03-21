@@ -67,3 +67,31 @@
     });
   };
 })(jQuery);
+
+// AJAX forms
+(function($) {
+  $.fn.ajax_form = function(options) {
+    var defaults = {
+      preSubmit : function() {},
+      trigger : null, // Button element which triggers submit
+      appView : '', // The Dajax view called in the format: app.view
+      // Callback function is separately declared and called using Dajax mechanism
+    };
+    var options = $.extend({}, defaults, options);
+    return this.each(function(i) {
+      var $this = $(this);
+      var $trigger = options.trigger;
+      $trigger.click(function() {
+        var form_id = $this.attr('id');
+        // Calls the preSubmit function
+        options.preSubmit();
+        var form_data = $this.serializeObject(true);
+        var appView = options.appView.split('.');
+        Dajaxice[appView[0]][appView[1]](Dajax.process, {
+          'form_data' : form_data,
+          'form_id' : form_id
+        });
+      });
+    });
+  };
+})(jQuery);

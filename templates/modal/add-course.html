@@ -17,20 +17,11 @@
         </form>
     </div>
     <div class="modal-footer">
-        <a id="add-course-button" class="btn btn-primary" data-loading-text="Adding..." onclick="form_add_course();">Add Course</a>
+        <a id="add-course-button" class="btn btn-primary" data-loading-text="Adding...">Add Course</a>
         <a href="#" class="btn" data-dismiss="modal">Close</a>
     </div>
 </div>
 <script type="text/javascript" charset="utf-8">
-  function form_add_course() {
-    var form_id = 'form-add-course';
-    form_data = $('#' + form_id).serializeObject(true);
-    $('#add-course-button').button('loading');
-    Dajaxice.homeroom.form_add_course(Dajax.process, {
-      'form_data' : form_data,
-      'form_id' : form_id
-    });
-  }
 
   function form_add_course_callback(data) {
     $('#add-course-button').button('reset');
@@ -41,6 +32,15 @@
   }
 
   $(document).ready(function() {
+
+    $('#form-add-course').ajax_form({
+      trigger : $('#add-course-button'),
+      preSubmit : function() {
+        $('#add-course-button').button('loading');
+      },
+      appView : 'homeroom.form_add_course',
+    });
+
     $('#form-add-course input[name="title"]').auto_complete({
       source : '/autocomplete_course/',
       select : function(event, ui) {
@@ -61,6 +61,7 @@
         return $('<li></li>').data('item.autocomplete', item).append('<a><h6>' + item.abbrev + '</h6>' + title + '</a>').appendTo(ul);
       },
     });
+
   });
 
 </script>
