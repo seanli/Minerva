@@ -47,6 +47,12 @@ $(document).ready(function() {
       }
     }
   });
+  // Setup Popovers
+  $("a[rel=popover]")
+    .popover()
+    .click(function(e) {
+      e.preventDefault()
+    })
   // Sticky element demo
   $('.tooltip-demo').sticky();
   // Tooltip demo
