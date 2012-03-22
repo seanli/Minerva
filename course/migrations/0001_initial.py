@@ -16,6 +16,7 @@ class Migration(SchemaMigration):
             ('institute', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['core.Institute'])),
             ('description', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
             ('difficulty', self.gf('django.db.models.fields.PositiveIntegerField')(null=True, blank=True)),
+            ('created_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
             ('modified_time', self.gf('django.db.models.fields.DateTimeField')(auto_now=True, blank=True)),
         ))
         db.send_create_signal('course', ['Course'])
@@ -27,14 +28,13 @@ class Migration(SchemaMigration):
         db.create_table('mva_section', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('course', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['course.Course'])),
-            ('first_day', self.gf('django.db.models.fields.DateField')()),
-            ('last_day', self.gf('django.db.models.fields.DateField')()),
-            ('instructor', self.gf('django.db.models.fields.related.ForeignKey')(related_name='section_instructor', to=orm['auth.User'])),
+            ('start_date', self.gf('django.db.models.fields.DateField')()),
+            ('duration', self.gf('django.db.models.fields.CharField')(default='T', max_length=1)),
         ))
         db.send_create_signal('course', ['Section'])
 
-        # Adding unique constraint on 'Section', fields ['course', 'first_day', 'last_day', 'instructor']
-        db.create_unique('mva_section', ['course_id', 'first_day', 'last_day', 'instructor_id'])
+        # Adding unique constraint on 'Section', fields ['course', 'start_date', 'duration']
+        db.create_unique('mva_section', ['course_id', 'start_date', 'duration'])
 
         # Adding model 'SectionAssign'
         db.create_table('mva_section_assign', (
@@ -53,7 +53,7 @@ class Migration(SchemaMigration):
             ('course', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['course.Course'])),
             ('message', self.gf('django.db.models.fields.TextField')()),
             ('person_from', self.gf('django.db.models.fields.related.ForeignKey')(related_name='review_person_from', to=orm['auth.User'])),
-            ('sent_time', self.gf('django.db.models.fields.DateTimeField')(default=datetime.datetime(2012, 3, 15, 11, 23, 40, 23000))),
+            ('sent_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
             ('anonymous', self.gf('django.db.models.fields.BooleanField')(default=False)),
         ))
         db.send_create_signal('course', ['Review'])
@@ -64,8 +64,8 @@ class Migration(SchemaMigration):
         # Removing unique constraint on 'SectionAssign', fields ['user', 'section']
         db.delete_unique('mva_section_assign', ['user_id', 'section_id'])
 
-        # Removing unique constraint on 'Section', fields ['course', 'first_day', 'last_day', 'instructor']
-        db.delete_unique('mva_section', ['course_id', 'first_day', 'last_day', 'instructor_id'])
+        # Removing unique constraint on 'Section', fields ['course', 'start_date', 'duration']
+        db.delete_unique('mva_section', ['course_id', 'start_date', 'duration'])
 
         # Removing unique constraint on 'Course', fields ['title', 'abbrev', 'institute']
         db.delete_unique('mva_course', ['title', 'abbrev', 'institute_id'])
@@ -145,6 +145,7 @@ class Migration(SchemaMigration):
         'course.course': {
             'Meta': {'unique_together': "(('title', 'abbrev', 'institute'),)", 'object_name': 'Course', 'db_table': "'mva_course'"},
             'abbrev': ('django.db.models.fields.CharField', [], {'max_length': '10', 'null': 'True', 'blank': 'True'}),
+            'created_time': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
             'description': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
             'difficulty': ('django.db.models.fields.PositiveIntegerField', [], {'null': 'True', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
@@ -159,15 +160,14 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'message': ('django.db.models.fields.TextField', [], {}),
             'person_from': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'review_person_from'", 'to': "orm['auth.User']"}),
-            'sent_time': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime(2012, 3, 15, 11, 23, 40, 23000)'})
+            'sent_time': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'})
         },
         'course.section': {
-            'Meta': {'unique_together': "(('course', 'first_day', 'last_day', 'instructor'),)", 'object_name': 'Section', 'db_table': "'mva_section'"},
+            'Meta': {'unique_together': "(('course', 'start_date', 'duration'),)", 'object_name': 'Section', 'db_table': "'mva_section'"},
             'course': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['course.Course']"}),
-            'first_day': ('django.db.models.fields.DateField', [], {}),
+            'duration': ('django.db.models.fields.CharField', [], {'default': "'T'", 'max_length': '1'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'instructor': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'section_instructor'", 'to': "orm['auth.User']"}),
-            'last_day': ('django.db.models.fields.DateField', [], {}),
+            'start_date': ('django.db.models.fields.DateField', [], {}),
             'user': ('django.db.models.fields.related.ManyToManyField', [], {'to': "orm['auth.User']", 'through': "orm['course.SectionAssign']", 'symmetrical': 'False'})
         },
         'course.sectionassign': {

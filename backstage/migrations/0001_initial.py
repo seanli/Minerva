@@ -14,9 +14,12 @@ class Migration(SchemaMigration):
             ('summary', self.gf('django.db.models.fields.CharField')(max_length=100)),
             ('reporter', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='ticket_reporter', null=True, to=orm['auth.User'])),
             ('owner', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='ticket_owner', null=True, to=orm['auth.User'])),
-            ('description', self.gf('django.db.models.fields.TextField')()),
-            ('priority', self.gf('django.db.models.fields.PositiveIntegerField')()),
-            ('type', self.gf('django.db.models.fields.CharField')(max_length=1)),
+            ('description', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
+            ('status', self.gf('django.db.models.fields.CharField')(default='L', max_length=1)),
+            ('priority', self.gf('django.db.models.fields.PositiveIntegerField')(null=True, blank=True)),
+            ('category', self.gf('django.db.models.fields.CharField')(max_length=1, null=True, blank=True)),
+            ('created_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
+            ('modified_time', self.gf('django.db.models.fields.DateTimeField')(auto_now=True, blank=True)),
         ))
         db.send_create_signal('backstage', ['Ticket'])
 
@@ -59,13 +62,16 @@ class Migration(SchemaMigration):
         },
         'backstage.ticket': {
             'Meta': {'object_name': 'Ticket', 'db_table': "'bsg_ticket'"},
-            'description': ('django.db.models.fields.TextField', [], {}),
+            'category': ('django.db.models.fields.CharField', [], {'max_length': '1', 'null': 'True', 'blank': 'True'}),
+            'created_time': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'description': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'modified_time': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
             'owner': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'ticket_owner'", 'null': 'True', 'to': "orm['auth.User']"}),
-            'priority': ('django.db.models.fields.PositiveIntegerField', [], {}),
+            'priority': ('django.db.models.fields.PositiveIntegerField', [], {'null': 'True', 'blank': 'True'}),
             'reporter': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'ticket_reporter'", 'null': 'True', 'to': "orm['auth.User']"}),
-            'summary': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
-            'type': ('django.db.models.fields.CharField', [], {'max_length': '1'})
+            'status': ('django.db.models.fields.CharField', [], {'default': "'L'", 'max_length': '1'}),
+            'summary': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
         'contenttypes.contenttype': {
             'Meta': {'ordering': "('name',)", 'unique_together': "(('app_label', 'model'),)", 'object_name': 'ContentType', 'db_table': "'django_content_type'"},
