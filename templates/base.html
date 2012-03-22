@@ -17,6 +17,7 @@
     <!-- Le styles -->
     {% compress css %}
     <link href="{{ STATIC_URL }}css/jquery.ui.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/prettify.css" rel="stylesheet" type="text/css">
     {% endcompress %}
     {% if debug %}
     <link href="{{ STATIC_URL }}less/minerva.less" rel="stylesheet/less" type="text/css">
@@ -66,6 +67,7 @@
     <script src="{{ STATIC_URL }}js/jquery.waypoints.min.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-datepicker.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-datatable.js"></script>
+    <script src="{{ STATIC_URL }}js/prettify.js"></script>
     <script src="{{ STATIC_URL }}js/minerva.js"></script>
     <script src="{{ STATIC_URL }}js/minerva-widget.js"></script>
     {% endcompress %}

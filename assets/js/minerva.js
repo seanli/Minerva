@@ -47,6 +47,8 @@ $(document).ready(function() {
       }
     }
   });
+  // Setup Prettify
+  prettyPrint();
   // Setup Popovers
   $("a[rel=popover]")
     .popover()
