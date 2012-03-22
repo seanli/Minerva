@@ -1,7 +1,6 @@
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
-from creoleparser import text2html
 from course.models import SectionAssign
 from django.utils.datastructures import SortedDict
 from homeroom.forms import AddCourseForm
@@ -24,7 +23,6 @@ def homeroom(request):
     form = AddCourseForm(request=request)
 
     context = RequestContext(request)
-    context['display'] = text2html("|=|=table|=header|\n|a|table|row|\n|b|table|row|")
     context['grouped_sections'] = grouped_sections
     context['form'] = form
     return render_to_response('homeroom/main.html', context)

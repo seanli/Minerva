@@ -20,3 +20,16 @@ class Ticket(models.Model):
 
     class Meta:
         db_table = 'bsg_ticket'
+
+
+class Wiki(models.Model):
+
+    title = models.CharField(max_length=100)
+    document = models.TextField()
+
+    def __unicode__(self):
+        return self.title
+
+    class Meta:
+        db_table = 'bsg_wiki'
+        verbose_name_plural = "wiki"

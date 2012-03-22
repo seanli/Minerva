@@ -11,8 +11,8 @@
     <li class="{% active request '(backstage/tickets)' %}">
       <a href="{% url backstage_tickets %}"><i class="icon-tag"></i> Tickets</a>
     </li>
-    <li>
-      <a href="#"><i class="icon-file"></i> Documents</a>
+    <li class="{% active request '(backstage/wiki)' %}">
+      <a href="{% url backstage_wiki %}"><i class="icon-file"></i> Wiki</a>
     </li>
     <li>
       <a href="/admin/" target="_blank"><i class="icon-th-list"></i> Admin</a>

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from backstage.models import Ticket
+from backstage.models import Ticket, Wiki
 
 
 class TicketAdmin(admin.ModelAdmin):
@@ -7,3 +7,4 @@ class TicketAdmin(admin.ModelAdmin):
     search_fields = ['summary', 'description']
 
 admin.site.register(Ticket, TicketAdmin)
+admin.site.register(Wiki)

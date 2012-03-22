@@ -26,6 +26,6 @@ class EmailAuthBackend(object):
             return User.objects.get(pk=user_id)
         except User.DoesNotExist:
             return None
-    
+
     supports_object_permissions = True
     supports_anonymous_user = True
