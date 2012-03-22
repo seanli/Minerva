@@ -52,6 +52,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    {% compress js %}
     <script src="{{ STATIC_URL }}js/jquery.dajax.core.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.serialize-object.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.datatable.js"></script>
@@ -70,6 +71,7 @@
     <script src="{{ STATIC_URL }}js/bootstrap-collapse.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-carousel.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
+    {% endcompress %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/minerva.js"></script>
     <script src="{{ STATIC_URL }}js/minerva-widget.js"></script>
