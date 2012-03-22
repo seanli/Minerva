@@ -4,7 +4,7 @@ from django.shortcuts import render_to_response
 from creoleparser import text2html
 from course.models import SectionAssign
 from django.utils.datastructures import SortedDict
-from course.forms import AddCourseForm
+from homeroom.forms import AddCourseForm
 
 
 @login_required

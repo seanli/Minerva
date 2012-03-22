@@ -1,7 +1,7 @@
 from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.utils import simplejson
-from course.forms import AddCourseForm
+from homeroom.forms import AddCourseForm
 from course.models import Section, SectionAssign
 from core.ajax import clear_validation, show_validation
 
