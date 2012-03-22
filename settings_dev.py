@@ -20,6 +20,8 @@ INTERNAL_IPS = ('127.0.0.1',)
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 
+COMPRESS_ENABLED = False
+
 # Django Debug Toolbar
 
 ENABLE_TOOLBAR = False

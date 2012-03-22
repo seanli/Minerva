@@ -17,3 +17,5 @@ DATABASES = {
 
 STATIC_ROOT = '/home/lisean/webapps/static/'
 STATIC_URL = 'http://mynodo.com/static/'
+
+COMPRESS_ENABLED = True

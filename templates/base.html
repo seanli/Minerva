@@ -33,6 +33,11 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Javascripts that will be used inline on a template -->
+    {% if debug %}
+    {% compress js %}
+    <script src="{{ STATIC_URL }}js/less.min.js"></script>
+    {% endcompress %}
+    {% endif %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/jquery.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.ui.min.js"></script>
@@ -65,11 +70,6 @@
     {% else %}
     {% compress js %}
     {% dajaxice_js_import 'js/dajaxice.core.js' %}
-    {% endcompress %}
-    {% endif %}
-    {% if debug %}
-    {% compress js %}
-    <script src="{{ STATIC_URL }}js/less.min.js"></script>
     {% endcompress %}
     {% endif %}
     {% if debug %}
