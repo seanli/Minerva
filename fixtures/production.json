@@ -71,7 +71,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-03-21 20:03:54", 
+            "last_login": "2012-03-22 03:11:47", 
             "groups": [], 
             "user_permissions": [], 
             "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
@@ -188,102 +188,6 @@
         }
     }, 
     {
-        "pk": "92004c843df585210b2f67172fc1998e", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-02 01:24:08", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "bc4e878f2444e43368dc17ed45d5b0d8", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-02 01:26:10", 
-            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
-        }
-    }, 
-    {
-        "pk": "e370ad805f5c5f004148cf21d5928a76", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-02 15:31:52", 
-            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
-        }
-    }, 
-    {
-        "pk": "575b38c007eb72191a0fd95965a07b36", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-02 19:50:57", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "5244fa755a06cefa2b676aad1482c253", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-02 20:44:22", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "8ee6d85c2e9c137c2e4621ff5ad3ce7f", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-03 03:39:55", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "2020a1bbbfed5193a077284617a552d8", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-03 11:40:19", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "fe83b20862f36cc25952274c0b1590e6", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-04 19:31:26", 
-            "session_data": "ZWQyMzcwY2Q1M2Q1MWNiYTUxMjNlNTBjMzIwNGI5MmMzMzMzNWQ5NzqAAn1xAS4=\n"
-        }
-    }, 
-    {
-        "pk": "5b92ba42b96045418482552c962260df", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-04 20:03:54", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "adb6e0731e3a6ede9ba92f2f97cccbd7", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-02 02:22:33", 
-            "session_data": "MDNlZDYwNmE5YmRkYmZlYjRlNjViYTA5YjNhOWM5M2YwNmJiMmNkODqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwt1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "90bf659d6c7f895f19fa4146b53751ab", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-01 17:22:11", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
-        "pk": "ecc1573485ee172f506dbe6221889428", 
-        "model": "sessions.session", 
-        "fields": {
-            "expire_date": "2012-04-01 18:30:43", 
-            "session_data": "YzMxNmY1NDJhOTc1ZWE3YTg5NTQ0MjcwZGRjZDMyOTA1YWFmNWMwNTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSFhY2NvdW50LmJhY2tlbmRzLkVtYWlsQXV0aEJhY2tlbmRxA1UNX2F1dGhf\ndXNlcl9pZHEESwJ1Lg==\n"
-        }
-    }, 
-    {
         "pk": 1, 
         "model": "sites.site", 
         "fields": {
@@ -292,114 +196,10 @@
         }
     }, 
     {
-        "pk": 85, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-03-21 19:43:32", 
-            "object_repr": "meden", 
-            "object_id": "10", 
-            "change_message": "Changed is_active.", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 84, 
-        "model": "admin.logentry", 
-        "fields": {
-            "action_flag": 2, 
-            "action_time": "2012-03-21 19:42:16", 
-            "object_repr": "pwang", 
-            "object_id": "12", 
-            "change_message": "Changed is_active. Changed institute for profile \"Paul Wang\".", 
-            "user": 2, 
-            "content_type": [
-                "auth", 
-                "user"
-            ]
-        }
-    }, 
-    {
-        "pk": 28, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-15 18:30:53", 
-            "app_name": "core", 
-            "migration": "0022_auto__del_sectionassign__del_unique_sectionassign_user_section__del_re"
-        }
-    }, 
-    {
-        "pk": 29, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-15 18:30:53", 
-            "app_name": "course", 
-            "migration": "0001_initial"
-        }
-    }, 
-    {
-        "pk": 20, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-01 04:10:50", 
-            "app_name": "backstage", 
-            "migration": "0001_initial"
-        }
-    }, 
-    {
-        "pk": 21, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-01 04:13:14", 
-            "app_name": "backstage", 
-            "migration": "0002_auto__chg_field_ticket_description__chg_field_ticket_priority__chg_fie"
-        }
-    }, 
-    {
-        "pk": 22, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-01 04:18:57", 
-            "app_name": "backstage", 
-            "migration": "0003_auto__add_field_ticket_modified_time__add_field_ticket_created_time"
-        }
-    }, 
-    {
-        "pk": 23, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-01 04:30:59", 
-            "app_name": "core", 
-            "migration": "0020_auto__del_report"
-        }
-    }, 
-    {
-        "pk": 24, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-01 04:56:36", 
-            "app_name": "core", 
-            "migration": "0021_auto__del_specializationassign__del_unique_specializationassign_user_s"
-        }
-    }, 
-    {
-        "pk": 25, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-01 04:56:37", 
-            "app_name": "account", 
-            "migration": "0001_initial"
-        }
-    }, 
-    {
         "pk": 1, 
         "model": "south.migrationhistory", 
         "fields": {
-            "applied": "2012-02-08 05:06:46", 
+            "applied": "2012-03-22 03:14:01", 
             "app_name": "core", 
             "migration": "0001_initial"
         }
@@ -408,243 +208,36 @@
         "pk": 2, 
         "model": "south.migrationhistory", 
         "fields": {
-            "applied": "2012-02-08 05:06:47", 
-            "app_name": "core", 
-            "migration": "0002_auto__add_feedback"
+            "applied": "2012-03-22 03:14:01", 
+            "app_name": "backstage", 
+            "migration": "0001_initial"
         }
     }, 
     {
         "pk": 3, 
         "model": "south.migrationhistory", 
         "fields": {
-            "applied": "2012-02-08 05:06:47", 
-            "app_name": "core", 
-            "migration": "0003_auto__add_field_section_first_day__add_field_section_last_day__add_fie"
+            "applied": "2012-03-22 03:14:01", 
+            "app_name": "course", 
+            "migration": "0001_initial"
         }
     }, 
     {
         "pk": 4, 
         "model": "south.migrationhistory", 
         "fields": {
-            "applied": "2012-02-08 05:06:47", 
-            "app_name": "core", 
-            "migration": "0004_auto__del_field_section_on_thurs__del_field_section_on_sat__del_field_"
+            "applied": "2012-03-22 03:14:01", 
+            "app_name": "account", 
+            "migration": "0001_initial"
         }
     }, 
     {
         "pk": 5, 
         "model": "south.migrationhistory", 
         "fields": {
-            "applied": "2012-02-08 05:06:47", 
-            "app_name": "core", 
-            "migration": "0005_auto__chg_field_profile_degree"
-        }
-    }, 
-    {
-        "pk": 6, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-08 05:06:47", 
-            "app_name": "core", 
-            "migration": "0006_auto__add_field_badge_req_exp__chg_field_badge_next_exp__add_field_bad"
-        }
-    }, 
-    {
-        "pk": 7, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-08 21:29:10", 
-            "app_name": "core", 
-            "migration": "0007_auto__del_faculty__del_facultyassign__del_unique_facultyassign_profile"
-        }
-    }, 
-    {
-        "pk": 8, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-08 21:29:10", 
-            "app_name": "core", 
-            "migration": "0008_auto__add_skill__add_skillassign__add_unique_skillassign_profile_skill"
-        }
-    }, 
-    {
-        "pk": 9, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-09 07:12:49", 
-            "app_name": "core", 
-            "migration": "0009_auto__chg_field_profile_degree"
-        }
-    }, 
-    {
-        "pk": 10, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-09 07:12:49", 
-            "app_name": "core", 
-            "migration": "0010_auto__del_unique_course_institute_abbrev_name__add_unique_course_insti"
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-10 06:47:15", 
-            "app_name": "core", 
-            "migration": "0011_auto__chg_field_course_abbrev__chg_field_provincestate_abbrev"
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-11 00:44:33", 
-            "app_name": "core", 
-            "migration": "0012_auto__add_unique_section_course_instructor_first_day_last_day"
-        }
-    }, 
-    {
-        "pk": 13, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-11 07:01:49", 
-            "app_name": "core", 
-            "migration": "0013_auto__add_report"
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-14 05:38:02", 
-            "app_name": "core", 
-            "migration": "0014_auto__add_unique_specialization_name"
-        }
-    }, 
-    {
-        "pk": 15, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-15 02:11:49", 
-            "app_name": "core", 
-            "migration": "0015_auto__del_field_course_name__add_field_course_title__del_unique_course"
-        }
-    }, 
-    {
-        "pk": 16, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-16 08:11:28", 
-            "app_name": "core", 
-            "migration": "0016_auto__del_unique_course_institute_title__add_unique_course_institute_a"
-        }
-    }, 
-    {
-        "pk": 17, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-16 08:37:41", 
-            "app_name": "core", 
-            "migration": "0017_auto__add_field_course_modified_time"
-        }
-    }, 
-    {
-        "pk": 18, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-16 09:00:33", 
-            "app_name": "core", 
-            "migration": "0018_auto__add_field_skill_modified_time__chg_field_course_modified_time__a"
-        }
-    }, 
-    {
-        "pk": 19, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-02-28 07:33:29", 
-            "app_name": "core", 
-            "migration": "0019_auto__del_field_specializationassign_profile__add_field_specialization"
-        }
-    }, 
-    {
-        "pk": 26, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-02 10:26:25", 
+            "applied": "2012-03-22 08:10:36", 
             "app_name": "backstage", 
-            "migration": "0004_auto__add_field_ticket_status"
-        }
-    }, 
-    {
-        "pk": 27, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-10 05:52:24", 
-            "app_name": "backstage", 
-            "migration": "0005_auto__del_field_ticket_type__add_field_ticket_category__chg_field_tick"
-        }
-    }, 
-    {
-        "pk": 30, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-16 00:35:18", 
-            "app_name": "course", 
-            "migration": "0002_auto__del_field_section_last_day__del_field_section_instructor__del_fi"
-        }
-    }, 
-    {
-        "pk": 31, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-16 00:37:48", 
-            "app_name": "course", 
-            "migration": "0003_auto__chg_field_section_duration"
-        }
-    }, 
-    {
-        "pk": 32, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-18 21:46:04", 
-            "app_name": "course", 
-            "migration": "0004_auto__add_field_course_created_time__chg_field_review_sent_time"
-        }
-    }, 
-    {
-        "pk": 33, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-18 21:46:04", 
-            "app_name": "account", 
-            "migration": "0002_auto__add_field_specialization_created_time__chg_field_encouragement_s"
-        }
-    }, 
-    {
-        "pk": 34, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-21 18:38:24", 
-            "app_name": "core", 
-            "migration": "0023_auto__add_specializationassign__add_unique_specializationassign_user_s"
-        }
-    }, 
-    {
-        "pk": 35, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-21 18:38:24", 
-            "app_name": "account", 
-            "migration": "0003_auto__del_specialization__del_encouragement__del_badge__del_specializa"
-        }
-    }, 
-    {
-        "pk": 36, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-22 00:39:15", 
-            "app_name": "account", 
-            "migration": "0004_auto__add_field_profile_grade__add_field_profile_grade_gauge"
+            "migration": "0002_auto__add_wiki"
         }
     }, 
     {
@@ -3910,6 +3503,22 @@
         }
     }, 
     {
+        "pk": 9, 
+        "model": "core.specializationassign", 
+        "fields": {
+            "user": 2, 
+            "specialization": 230
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.specializationassign", 
+        "fields": {
+            "user": 2, 
+            "specialization": 80
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "core.skill", 
         "fields": {
@@ -4103,21 +3712,6 @@
         }
     }, 
     {
-        "pk": 18, 
-        "model": "backstage.ticket", 
-        "fields": {
-            "status": "A", 
-            "category": "C", 
-            "description": "Rename people to crowd.", 
-            "reporter": 2, 
-            "modified_time": "2012-03-09 23:53:32", 
-            "summary": "Crowd", 
-            "priority": 3, 
-            "created_time": "2012-03-09 18:34:55", 
-            "owner": 2
-        }
-    }, 
-    {
         "pk": 17, 
         "model": "backstage.ticket", 
         "fields": {
@@ -4250,6 +3844,29 @@
             "priority": 5, 
             "created_time": "2012-03-14 17:39:46", 
             "owner": null
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "C", 
+            "category": "C", 
+            "description": "Rename people to crowd.", 
+            "reporter": 2, 
+            "modified_time": "2012-03-21 22:34:16", 
+            "summary": "Crowd", 
+            "priority": 3, 
+            "created_time": "2012-03-09 18:34:55", 
+            "owner": 2
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "backstage.wiki", 
+        "fields": {
+            "document": "=== Python Installers\r\n\r\n* Easy Install\r\n* Pip\r\n** ##pip install -r requirements.txt##\r\n** ##pip install --upgrade ...## \r\n** ##pip uninstall ...##\r\n\r\n=== Python Modules\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n** ##pylint --rcfile=Minerva/pylint.rc Minerva##\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Front-End Components\r\n\r\n* JQuery\r\n* JQuery UI\r\n* DataTables\r\n* WayPoints\r\n* Less\r\n** Compilers:\r\n*** WinLess (Windows)\r\n*** Crunch (Mac)\r\n*** SimpLess (Cross-Platform)\r\n* Bootstrap", 
+            "title": "Setting Up Environment"
         }
     }, 
     {
@@ -58863,6 +58480,15 @@
         }
     }, 
     {
+        "pk": 70, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 1849, 
+            "start_date": "2012-03-01"
+        }
+    }, 
+    {
         "pk": 22, 
         "model": "course.sectionassign", 
         "fields": {
@@ -58871,18 +58497,18 @@
         }
     }, 
     {
-        "pk": 23, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 67, 
-            "user": 2
-        }
-    }, 
-    {
         "pk": 25, 
         "model": "course.sectionassign", 
         "fields": {
             "section": 69, 
+            "user": 2
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 70, 
             "user": 2
         }
     }, 
@@ -59007,8 +58633,8 @@
             "institute": 1, 
             "tagline": "", 
             "influence": 0, 
-            "grade": 0, 
-            "grade_gauge": 29, 
+            "grade": 2, 
+            "grade_gauge": 27, 
             "birthday": "1990-10-06", 
             "role": "S", 
             "user": 2
