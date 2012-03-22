@@ -33,11 +33,6 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Javascripts that will be used inline on a template -->
-    {% if debug %}
-    {% compress js %}
-    <script src="{{ STATIC_URL }}js/less.min.js"></script>
-    {% endcompress %}
-    {% endif %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/jquery.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.ui.min.js"></script>
@@ -57,6 +52,13 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    {% if debug %}
+    {% dajaxice_js_import %}
+    {% else %}
+    {% compress js %}
+    {% dajaxice_js_import 'js/dajaxice.core.js' %}
+    {% endcompress %}
+    {% endif %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/jquery.dajax.core.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.serialize-object.js"></script>
@@ -67,13 +69,6 @@
     <script src="{{ STATIC_URL }}js/minerva.js"></script>
     <script src="{{ STATIC_URL }}js/minerva-widget.js"></script>
     {% endcompress %}
-    {% if debug %}
-    {% dajaxice_js_import %}
-    {% else %}
-    {% compress js %}
-    {% dajaxice_js_import 'js/dajaxice.core.js' %}
-    {% endcompress %}
-    {% endif %}
     {% if debug %}
     <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
@@ -90,6 +85,11 @@
     {% else %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    {% endcompress %}
+    {% endif %}
+    {% if debug %}
+    {% compress js %}
+    <script src="{{ STATIC_URL }}js/less.min.js"></script>
     {% endcompress %}
     {% endif %}
   </body>

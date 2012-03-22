@@ -7,13 +7,6 @@
 
 {% block content %}
 
-<script type="text/javascript" charset="utf-8">
-    function update_exp(data) {
-        $('#grade-box').html(data.grade);
-        $('#exp-box').html(data.exp);
-    }
-</script>
-
 <div class="page-header">
   <div class="row-fluid">
     <div class="span1">
@@ -42,6 +35,9 @@
     <div class="row-fluid">
       <h3>Schoolax Grade: <span id="grade-box">{{ profile.get_grade_display }}</span></h3>
       <h3>Gauge: <span id="exp-box">{{ profile.grade_gauge }}</span></h3>
+      <div id="grade-gauge" class="progress">
+        <div class="bar"></div>
+      </div>
       <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
       <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.minus_exp(update_exp);"> <i class="icon-minus icon-white"></i> EXP</a>
     </div>
@@ -106,6 +102,35 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+    function update_exp(data) {
+      $('#grade-box').html(data.grade);
+      $('#exp-box').html(data.exp);
+      render_gauge(data.exp);
+    }
+    
+    function render_gauge(value) {
+      var percentage = (value + 100) / 2;
+      $('#grade-gauge .bar').attr('style', 'width: ' + percentage + '%');
+      $('#grade-gauge').removeClass('progress-success');
+      $('#grade-gauge').removeClass('progress-error');
+      $('#grade-gauge').removeClass('progress-warning');
+      if(percentage >= 75) {
+          $('#grade-gauge').addClass('progress-success');
+      }
+      else if(percentage <= 25) {
+          $('#grade-gauge').addClass('progress-danger');
+      }
+      else {
+          $('#grade-gauge').addClass('progress-warning');
+      }
+    }
+
+    $(document).ready(function() {
+      render_gauge({{ profile.grade_gauge }});
+    });
+</script>
 
 {% include "modal/add-specialization.html" %}
 {% include "modal/add-skill.html" %}

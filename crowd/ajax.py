@@ -80,7 +80,7 @@ def form_add_skill(request, form_data, form_id):
 @dajaxice_register
 def plus_exp(request):
     profile = request.user.get_profile()
-    profile.increment_grade(33)
+    profile.increment_grade(10)
     return simplejson.dumps({
         'grade': profile.get_grade_display(),
         'exp': profile.grade_gauge,
@@ -90,7 +90,7 @@ def plus_exp(request):
 @dajaxice_register
 def minus_exp(request):
     profile = request.user.get_profile()
-    profile.increment_grade(-33)
+    profile.increment_grade(-10)
     return simplejson.dumps({
         'grade': profile.get_grade_display(),
         'exp': profile.grade_gauge,
