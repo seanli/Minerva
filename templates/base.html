@@ -30,36 +30,22 @@
     <link href="{{ STATIC_URL }}css/jquery.ui.ie.css" rel="stylesheet" type="text/css">
     {% endcompress %}
     <![endif]-->
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Javascript necessary for templates should be placed here -->
-    {% compress js %}
-    <script src="{{ STATIC_URL }}js/jquery.js"></script>
-    <script src="{{ STATIC_URL }}js/jquery.ui.min.js"></script>
-    {% endcompress %}
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
-    <link rel="apple-touch-icon" href="{{ STATIC_URL }}ico/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}ico/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}ico/apple-touch-icon-114x114.png">
-  </head>
-  <body>
-    {% include "navigation.html" %}
-    <div id="main" class="container-fluid">
-      {% block content %}{% endblock %}
-      {% include "footer.html" %}
-    </div>
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Le javascript -->
     {% if debug %}
-    {% dajaxice_js_import 'js/dajaxice.core.js' %}
+    {% dajaxice_js_import %}
     {% else %}
     {% compress js %}
     {% dajaxice_js_import 'js/dajaxice.core.js' %}
     {% endcompress %}
     {% endif %}
+    {% if debug %}
     {% compress js %}
+    <script src="{{ STATIC_URL }}js/less.min.js"></script>
+    {% endcompress %}
+    {% endif %}
+    {% compress js %}
+    <script src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.ui.min.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.dajax.core.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.serialize-object.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.datatable.js"></script>
@@ -81,10 +67,17 @@
     <script src="{{ STATIC_URL }}js/minerva.js"></script>
     <script src="{{ STATIC_URL }}js/minerva-widget.js"></script>
     {% endcompress %}
-    {% if debug %}
-    {% compress js %}
-    <script src="{{ STATIC_URL }}js/less.min.js"></script>
-    {% endcompress %}
-    {% endif %}
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ STATIC_URL }}ico/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}ico/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+    {% include "navigation.html" %}
+    <div id="main" class="container-fluid">
+      {% block content %}{% endblock %}
+      {% include "footer.html" %}
+    </div>
   </body>
 </html>
