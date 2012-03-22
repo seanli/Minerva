@@ -12,6 +12,26 @@ DEGREE = (
     ('DC', 'Doctor'),
 )
 
+GRADE = (
+    (8, 'SSS'),
+    (7, 'SS'),
+    (6, 'S'),
+    (5, 'A+'),
+    (4, 'A'),
+    (3, 'B+'),
+    (2, 'B'),
+    (1, 'C+'),
+    (0, 'C'),
+    (-1, 'C-'),
+    (-2, 'D'),
+    (-3, 'D-'),
+    (-4, 'F'),
+)
+
+GRADE_MAX = 8
+GRADE_MIN = -4
+GRADE_STEP = 100
+
 INSTITUTE_CATEGORY = (
     ('C', 'College'),
     ('U', 'University'),

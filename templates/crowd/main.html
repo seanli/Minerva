@@ -6,6 +6,14 @@
 {% block title %}{% brand_name %} - Crowd{% endblock %}
 
 {% block content %}
+
+<script type="text/javascript" charset="utf-8">
+    function update_exp(data) {
+        $('#grade-box').html(data.grade);
+        $('#exp-box').html(data.exp);
+    }
+</script>
+
 <div class="page-header">
   <div class="row-fluid">
     <div class="span1">
@@ -32,7 +40,13 @@
 <div class="row-fluid">
   <div class="span6">
     <div class="row-fluid">
-      <div class="span6">
+      <h3>Schoolax Grade: <span id="grade-box">{{ profile.get_grade_display }}</span></h3>
+      <h3>Gauge: <span id="exp-box">{{ profile.grade_gauge }}</span></h3>
+      <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
+      <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.minus_exp(update_exp);"> <i class="icon-minus icon-white"></i> EXP</a>
+    </div>
+    <div class="row-fluid">
+      <div class="span6">  
         {% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
         {% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
         {% empty %} <h6>No Specialization Yet!</h6>

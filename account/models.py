@@ -6,7 +6,8 @@ from django.core.exceptions import ValidationError
 from core.models import (Institute, ProvinceState, 
     SpecializationAssign, SkillAssign)
 from course.models import SectionAssign
-from core.constants import ROLE, DEGREE
+from core.constants import (ROLE, DEGREE, GRADE, 
+    GRADE_MAX, GRADE_MIN, GRADE_STEP)
 from core.utilities import unique_username
 
 
@@ -32,6 +33,8 @@ class Profile(models.Model):
     tagline = models.TextField(null=True, blank=True)
     institute = models.ForeignKey(Institute, null=True, blank=True)
     degree = models.CharField(max_length=2, choices=DEGREE, null=True, blank=True)
+    grade = models.IntegerField(choices=GRADE, default=0)
+    grade_gauge = models.IntegerField(default=0)
     influence = models.IntegerField(default=0)
 
     def __unicode__(self):
@@ -79,6 +82,26 @@ class Profile(models.Model):
 
     def has_section(self, section):
         return SectionAssign.objects.filter(section=section, user=self.user).count() > 0
+
+    def increment_grade(self, delta):
+        if delta >= 0 and self.grade < GRADE_MAX:
+            self.grade_gauge += delta
+            if self.grade_gauge >= GRADE_STEP:
+                self.grade += 1
+                self.grade_gauge -= GRADE_STEP
+                if self.grade >= GRADE_MAX:
+                    self.grade = GRADE_MAX
+                    self.grade_gauge = 0
+            self.save()
+        elif delta < 0 and self.grade > GRADE_MIN:
+            self.grade_gauge += delta
+            if self.grade_gauge <= -GRADE_STEP:
+                self.grade -= 1
+                self.grade_gauge += GRADE_STEP
+                if self.grade <= GRADE_MIN:
+                    self.grade = GRADE_MIN
+                    self.grade_gauge = 0
+            self.save()
 
     class Meta:
         db_table = 'mva_profile'

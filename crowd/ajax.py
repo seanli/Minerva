@@ -5,6 +5,7 @@ from Minerva.crowd.forms import EncouragementForm, AddSpecializationForm, AddSki
 from core.models import Encouragement
 from core.ajax import clear_validation, show_validation
 from datetime import datetime
+from django.utils import simplejson
 
 
 @dajaxice_register
@@ -74,3 +75,23 @@ def form_add_skill(request, form_data, form_id):
         show_validation(dajax, form, form_id)
         dajax.add_data({'status': 'INVALID'}, 'form_add_skill_callback')
     return dajax.json()
+
+
+@dajaxice_register
+def plus_exp(request):
+    profile = request.user.get_profile()
+    profile.increment_grade(33)
+    return simplejson.dumps({
+        'grade': profile.get_grade_display(),
+        'exp': profile.grade_gauge,
+    })
+
+
+@dajaxice_register
+def minus_exp(request):
+    profile = request.user.get_profile()
+    profile.increment_grade(-33)
+    return simplejson.dumps({
+        'grade': profile.get_grade_display(),
+        'exp': profile.grade_gauge,
+    })
