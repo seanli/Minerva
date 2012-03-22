@@ -1,4 +1,5 @@
 {% load dajaxice_templatetags %}
+{% load compress %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,29 +11,37 @@
     <!-- For mobile viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Prevents asset caching -->
-    <meta http-equiv="cache-control" content="no-cache">
+    <!--<meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="Sat, 6 Oct 1990 00:00:00 GMT">
-    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="robots" content="noindex, nofollow, noarchive">-->
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!-- Le styles -->
+    {% compress css %}
     <link href="{{ STATIC_URL }}css/jquery.ui.css" rel="stylesheet" type="text/css">
+    {% endcompress %}
     {% if debug %}
     <link href="{{ STATIC_URL }}less/minerva.less" rel="stylesheet/less" type="text/css">
     {% else %}
+    {% compress css %}
     <link href="{{ STATIC_URL }}css/minerva.css" rel="stylesheet" type="text/css">
+    {% endcompress %}
     {% endif %}
     <!--[if IE]>
+    {% compress css %}
     <link href="{{ STATIC_URL }}css/jquery.ui.ie.css" rel="stylesheet" type="text/css">
+    {% endcompress %}
     <![endif]-->
     <!-- Le javascript
     ================================================== -->
     <!-- Javascript necessary for templates should be placed here -->
+    {% compress js %}
     <script src="{{ STATIC_URL }}js/jquery.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.ui.min.js"></script>
+    {% endcompress %}
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="{{ STATIC_URL }}ico/favicon.ico">
     <link rel="apple-touch-icon" href="{{ STATIC_URL }}ico/apple-touch-icon.png">
@@ -48,7 +57,14 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    {% dajaxice_js_import %}
+    {% if debug %}
+    {% dajaxice_js_import 'js/dajaxice.core.js' %}
+    {% else %}
+    {% compress js %}
+    {% dajaxice_js_import 'js/dajaxice.core.js' %}
+    {% endcompress %}
+    {% endif %}
+    {% compress js %}
     <script src="{{ STATIC_URL }}js/jquery.dajax.core.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.serialize-object.js"></script>
     <script src="{{ STATIC_URL }}js/jquery.datatable.js"></script>
@@ -69,8 +85,11 @@
     <script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
     <script src="{{ STATIC_URL }}js/minerva.js"></script>
     <script src="{{ STATIC_URL }}js/minerva-widget.js"></script>
+    {% endcompress %}
     {% if debug %}
+    {% compress js %}
     <script src="{{ STATIC_URL }}js/less.min.js"></script>
+    {% endcompress %}
     {% endif %}
   </body>
 </html>

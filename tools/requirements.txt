@@ -4,6 +4,7 @@ south
 django-dajaxice
 django-dajax
 creoleparser
+django_compressor
 pylint
 docutils
 django-debug-toolbar

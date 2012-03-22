@@ -59,6 +59,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
@@ -106,6 +107,7 @@ INSTALLED_APPS = (
     'dajaxice',
     'dajax',
     'creoleparser',
+    'compressor',
     'core',
     'core.templatetags',
     'core.management',

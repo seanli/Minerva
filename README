@@ -6,6 +6,7 @@ Required Python Modules:
 - Dajaxice (AJAX)
 - Dajax (AJAX)
 - CreoleParser (Wiki Markup)
+- Django Compressor (CSS/JS)
 - Pylint (Python Style Check)
 	- pylint --rcfile=Minerva/pylint.rc Minerva
 - Docutils (Documentation)
