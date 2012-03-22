@@ -31,7 +31,7 @@ class FeedbackInline(admin.StackedInline):
 
 class SpecializationAssignInline(admin.TabularInline):
     model = SpecializationAssign
-    extra = 0
+    extra = 1
 
 
 class SkillAssignInline(admin.TabularInline):

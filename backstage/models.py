@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from core.models import WebFile
 from core.constants import (TICKET_PRIORITY, TICKET_CATEGORY, TICKET_STATUS)
 
 
@@ -26,6 +27,10 @@ class Wiki(models.Model):
 
     title = models.CharField(max_length=100)
     document = models.TextField()
+    attachment = models.ManyToManyField(WebFile, through='WikiAttachmentAssign')
+    author = models.ForeignKey(User, null=True, blank=True)
+    created_time = models.DateTimeField(auto_now_add=True)
+    modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
         return self.title
@@ -33,3 +38,21 @@ class Wiki(models.Model):
     class Meta:
         db_table = 'bsg_wiki'
         verbose_name_plural = "wiki"
+
+
+class WikiAttachmentAssign(models.Model):
+
+    wiki = models.ForeignKey(Wiki)
+    file = models.ForeignKey(WebFile)
+    uploader = models.ForeignKey(User)
+    created_time = models.DateTimeField(auto_now_add=True)
+    modified_time = models.DateTimeField(auto_now=True)
+
+    def __unicode__(self):
+        return "%s : %s" % (self.wiki, self.file)
+
+    class Meta:
+        db_table = 'mva_wiki_attachment_assign'
+        verbose_name = 'wiki attachment assignment'
+        verbose_name_plural = 'wiki attachment assignments'
+        unique_together = ("wiki", "file")

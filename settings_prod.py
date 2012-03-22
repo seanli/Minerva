@@ -15,7 +15,9 @@ DATABASES = {
     }
 }
 
-STATIC_ROOT = '/home/lisean/webapps/static/'
-STATIC_URL = 'http://mynodo.com/static/'
+STATIC_ROOT = '/home/lisean/webapps/minerva_static/'
+STATIC_URL = 'http://schoolax.com/static/'
+MEDIA_ROOT = '/home/lisean/webapps/minerva_media/'
+MEDIA_URL = 'http://schoolax.com/media/'
 
 COMPRESS_ENABLED = True

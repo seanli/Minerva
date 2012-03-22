@@ -7,6 +7,9 @@
 # Static Files #
 static/
 
+# Media Files #
+media/
+
 # Compiled Files #
 *.pyc
 

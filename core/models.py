@@ -166,3 +166,21 @@ class Feedback(models.Model):
 
     class Meta:
         db_table = 'mva_feedback'
+        
+
+class WebFile(models.Model):
+    
+    name = models.CharField(max_length=100)
+    file = models.FileField(upload_to='webfiles')
+    uploader = models.ForeignKey(User, null=True, blank=True)
+    created_time = models.DateTimeField(auto_now_add=True)
+    modified_time = models.DateTimeField(auto_now=True)
+    
+    def __unicode__(self):
+        return self.name
+    
+    class Meta:
+        db_table = 'mva_webfile'
+        verbose_name = 'web file'
+        verbose_name_plural = 'web files'
+    

@@ -15,7 +15,7 @@
   </div>
   <div class="span9">
     {% for w in wikis %}
-    <div class="well">
+    <div class="well well-small">
       <a href="{% url backstage_wiki %}{{ w.id }}"> {{ w.title }}</a>
     </div>
     {% endfor %}
