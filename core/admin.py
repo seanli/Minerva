@@ -1,5 +1,5 @@
 from django.contrib import admin
-from core.models import (Country, ProvinceState, 
+from core.models import (Country, ProvinceState,
     Institute, Specialization, Badge, Encouragement,
     Feedback, Skill)
 

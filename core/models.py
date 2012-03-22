@@ -44,7 +44,7 @@ class Institute(models.Model):
 
     class Meta:
         db_table = 'mva_institute'
-        
+
 
 class Specialization(models.Model):
 
