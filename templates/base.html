@@ -72,6 +72,7 @@
     <script src="{{ STATIC_URL }}js/less.min.js"></script>
     {% endcompress %}
     {% endif %}
+    {% if debug %}
     <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
@@ -86,5 +87,10 @@
     <script src="{{ STATIC_URL }}js/bootstrap-collapse.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-carousel.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-typeahead.js"></script>
+    {% else %}
+    {% compress js %}
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    {% endcompress %}
+    {% endif %}
   </body>
 </html>
