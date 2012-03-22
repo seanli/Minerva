@@ -52,12 +52,12 @@ def wiki(request, wiki_id=None):
         return render_to_response('backstage/wiki.html', context)
     else:
         try:
-            wiki = Wiki.objects.get(id=wiki_id)
+            wiki_obj = Wiki.objects.get(id=wiki_id)
         except Wiki.DoesNotExist:
-            wiki = None
-        if wiki is not None:
-            context['wiki'] = wiki
-            context['parsed'] = text2html(wiki.document)
+            wiki_obj = None
+        if wiki_obj is not None:
+            context['wiki'] = wiki_obj
+            context['parsed'] = text2html(wiki_obj.document)
             return render_to_response('backstage/wiki_detail.html', context)
         else:
             return HttpResponse('Wiki Not Found!')
