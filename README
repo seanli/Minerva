@@ -9,6 +9,8 @@ Required Python Modules:
 - Django Compressor (CSS/JS)
 - Pylint (Python Style Check)
 	- pylint --rcfile=Minerva/pylint.rc Minerva
+- PEP8 (Python Style Check)
+	- pep8 --repeat --ignore=E501 --exclude='migrations' .
 - Docutils (Documentation)
 - Django Debug Toolbar (Debugging)
 
