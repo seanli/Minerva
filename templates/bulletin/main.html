@@ -62,6 +62,12 @@
       <div class="vertical-space"></div>
       <div class="vertical-space"></div>
       <pre class="prettyprint linenums lang-sh">#!bin/bash<br />clear<br />echo "The script is here."<br />echo "Hi, $USER"<br />pylint --rcfile==pylint.rc .</pre>
+      <h3>String Similarity Test:</h3>
+      <h5>sotfwaer engieenring</h5>
+      <div class="vertical-space"></div>
+      {% for s in similarities %}
+      <p>{{ s.title }} : {{ s.similarity|percentage }}</p>
+      {% endfor %}
       {% endif %}
     </div>
   </div>

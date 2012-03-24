@@ -48,6 +48,11 @@ def structsort(value):
     structsort.is_safe = True
 
 
+@register.filter(name='percentage')
+def percentage(value):
+    return unicode(round(value * 100, 2)) + '%'
+
+
 @register.simple_tag
 def current_year():
     return unicode(datetime.now().year)
