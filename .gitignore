@@ -19,6 +19,9 @@ tools/src/
 # Compiled Files #
 *.pyc
 
+# Generated Files #
+schoolax/assets/js/dajaxice.core.js
+
 # Log Files #
 *.log
 
