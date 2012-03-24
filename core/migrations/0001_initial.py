@@ -1,13 +1,13 @@
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 import datetime
 from south.db import db
 from south.v2 import SchemaMigration
 from django.db import models
 
+
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        
         # Adding model 'Country'
         db.create_table('mva_country', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
@@ -122,9 +122,18 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal('core', ['Feedback'])
 
+        # Adding model 'WebFile'
+        db.create_table('mva_webfile', (
+            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('name', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('item', self.gf('django.db.models.fields.files.FileField')(max_length=100)),
+            ('uploader', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'], null=True, blank=True)),
+            ('created_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
+            ('modified_time', self.gf('django.db.models.fields.DateTimeField')(auto_now=True, blank=True)),
+        ))
+        db.send_create_signal('core', ['WebFile'])
 
     def backwards(self, orm):
-        
         # Removing unique constraint on 'BadgeAssign', fields ['user', 'badge']
         db.delete_unique('mva_badge_assign', ['user_id', 'badge_id'])
 
@@ -167,6 +176,8 @@ class Migration(SchemaMigration):
         # Deleting model 'Feedback'
         db.delete_table('mva_feedback')
 
+        # Deleting model 'WebFile'
+        db.delete_table('mva_webfile')
 
     models = {
         'auth.group': {
@@ -290,6 +301,15 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'specialization': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'specializationassign_specialization'", 'to': "orm['core.Specialization']"}),
             'user': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'specializationassign_user'", 'to': "orm['auth.User']"})
+        },
+        'core.webfile': {
+            'Meta': {'object_name': 'WebFile', 'db_table': "'mva_webfile'"},
+            'created_time': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'item': ('django.db.models.fields.files.FileField', [], {'max_length': '100'}),
+            'modified_time': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
+            'uploader': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['auth.User']", 'null': 'True', 'blank': 'True'})
         }
     }
 

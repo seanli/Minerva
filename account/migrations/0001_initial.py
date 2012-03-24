@@ -1,13 +1,13 @@
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 import datetime
 from south.db import db
 from south.v2 import SchemaMigration
 from django.db import models
 
+
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        
         # Adding model 'Profile'
         db.create_table('mva_profile', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
@@ -38,15 +38,12 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal('account', ['Contact'])
 
-
     def backwards(self, orm):
-        
         # Deleting model 'Profile'
         db.delete_table('mva_profile')
 
         # Deleting model 'Contact'
         db.delete_table('mva_contact')
-
 
     models = {
         'account.contact': {

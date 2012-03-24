@@ -1,13 +1,13 @@
-# encoding: utf-8
+# -*- coding: utf-8 -*-
 import datetime
 from south.db import db
 from south.v2 import SchemaMigration
 from django.db import models
 
+
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        
         # Adding model 'Course'
         db.create_table('mva_course', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
@@ -58,9 +58,7 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal('course', ['Review'])
 
-
     def backwards(self, orm):
-        
         # Removing unique constraint on 'SectionAssign', fields ['user', 'section']
         db.delete_unique('mva_section_assign', ['user_id', 'section_id'])
 
@@ -81,7 +79,6 @@ class Migration(SchemaMigration):
 
         # Deleting model 'Review'
         db.delete_table('mva_review')
-
 
     models = {
         'auth.group': {
