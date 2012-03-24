@@ -11,6 +11,7 @@ from creoleparser import text2html
 @login_required
 @staff_required
 def dashboard(request):
+    raise Exception('TEsta')
     context = RequestContext(request)
     return render_to_response('backstage/dashboard.html', context)
 

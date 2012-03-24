@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from core.models import WebFile
 from core.constants import (TICKET_PRIORITY, TICKET_CATEGORY, TICKET_STATUS)
+from datetime import datetime
 
 
 class Ticket(models.Model):
@@ -52,7 +53,26 @@ class WikiAttachmentAssign(models.Model):
         return '%s : %s' % (self.wiki, self.attachment)
 
     class Meta:
-        db_table = 'mva_wiki_attachment_assign'
+        db_table = 'bsg_wiki_attachment_assign'
         verbose_name = 'wiki attachment assignment'
         verbose_name_plural = 'wiki attachment assignments'
         unique_together = ('wiki', 'attachment')
+
+
+class LogMessage(models.Model):
+
+    logger_name = models.CharField(max_length=100, blank=True, null=True)
+    logged_time = models.DateTimeField(default=datetime.now())
+    level = models.CharField(max_length=10, blank=True, null=True)
+    file_path = models.CharField(max_length=255, blank=True, null=True)
+    function_name = models.CharField(max_length=255, blank=True, null=True)
+    line_number = models.PositiveIntegerField(blank=True, null=True)
+    message = models.TextField(blank=True, null=True)
+
+    def __unicode__(self):
+        return self.message[:10]
+
+    class Meta:
+        db_table = 'bsg_log_message'
+        verbose_name = 'log message'
+        verbose_name_plural = 'log messages'

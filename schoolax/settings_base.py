@@ -134,28 +134,33 @@ LOGGING = {
     },
     'handlers': {
         'file': {
-            'level': 'ERROR',
+            'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(PROJECT_ROOT, 'logs/minerva.log'),
             'maxBytes': '16777216',
             'formatter': 'verbose',
-        }
+        },
+         'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose'
+        },
     },
     'loggers': {
-        'django.request': {
+        'django': {
             'handlers': ['file'],
-            'level': 'ERROR',
-            'propagate': True,
+            'level': 'INFO',
+            #'propagate': True,
         },
         'minerva': {
             'handlers': ['file'],
-            'level': 'ERROR',
-            'propagate': True,
+            'level': 'INFO',
+            #'propagate': True,
         },
         'dajaxice': {
             'handlers': ['file'],
-            'level': 'ERROR',
-            'propagate': True,
+            'level': 'INFO',
+            #'propagate': True,
         },
     }
 }

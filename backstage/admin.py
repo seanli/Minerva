@@ -1,5 +1,6 @@
 from django.contrib import admin
-from backstage.models import Ticket, Wiki, WikiAttachmentAssign
+from backstage.models import (Ticket, Wiki,
+    WikiAttachmentAssign, LogMessage)
 
 
 class TicketAdmin(admin.ModelAdmin):
@@ -19,3 +20,4 @@ class WikiAdmin(admin.ModelAdmin):
 
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Wiki, WikiAdmin)
+admin.site.register(LogMessage)
