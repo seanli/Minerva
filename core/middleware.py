@@ -25,13 +25,17 @@ exception_logger.setLevel(logging.WARNING)
 exception_logger.addHandler(handler)
 exception_logger.propagate = True
 
+backup_logger = logging.getLogger('backup')
+
 
 class ExceptionMiddleware(object):
 
     def process_exception(self, request, exception):
-        message = "%s\n\n%s" % (_get_traceback(exception), repr(request))
-        minerva_logger.debug('DAFUQ')
-        exception_logger.error(message)
+        message = '%s\n\n%s' % (_get_traceback(exception), repr(request))
+        try:
+            exception_logger.error(message)
+        except:
+            backup_logger.error(message)
 
 
 def _get_traceback(self, exception=None):

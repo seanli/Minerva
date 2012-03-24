@@ -1,5 +1,6 @@
 from django.contrib.sessions.models import Session
 from django.contrib.admin.models import LogEntry
+from backstage.models import LogMessage
 from django.core.management.base import NoArgsCommand
 
 
@@ -20,3 +21,9 @@ class Command(NoArgsCommand):
             admin_log.delete()
             counter += 1
         print '%s admin log(s) deleted.' % counter
+        counter = 0
+        log_messages = LogMessage.objects.all()
+        for log_message in log_messages:
+            log_message.delete()
+            counter += 1
+        print '%s log message(s) deleted.' % counter
