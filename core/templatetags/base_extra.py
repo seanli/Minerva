@@ -26,8 +26,8 @@ def active(request, sub_urls):
                 return 'active'
         else:
             if '/%s/' % sub_url == request.path:
-                return "active"
-    return ""
+                return 'active'
+    return ''
 
 
 @register.filter(name='sort')

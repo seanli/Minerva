@@ -3,7 +3,7 @@ Required Python Modules:
 - Django (Web Framework)
 - Psycopg2 (PostgreSQL Driver)
 - South (Database Migration)
-- Whoosh (Search Engine Interface)
+- Whoosh (Search Engine)
 - Django Haystack (Search Engine Interface)
 - Django Dajaxice (AJAX)
 - Django Dajax (AJAX)

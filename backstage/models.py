@@ -7,8 +7,8 @@ from core.constants import (TICKET_PRIORITY, TICKET_CATEGORY, TICKET_STATUS)
 class Ticket(models.Model):
 
     summary = models.CharField(max_length=100)
-    reporter = models.ForeignKey(User, related_name="%(class)s_reporter", null=True, blank=True)
-    owner = models.ForeignKey(User, related_name="%(class)s_owner", null=True, blank=True)
+    reporter = models.ForeignKey(User, related_name='%(class)s_reporter', null=True, blank=True)
+    owner = models.ForeignKey(User, related_name='%(class)s_owner', null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     status = models.CharField(max_length=1, choices=TICKET_STATUS, default='L')
     priority = models.PositiveIntegerField(choices=TICKET_PRIORITY, null=True, blank=True)
@@ -37,22 +37,22 @@ class Wiki(models.Model):
 
     class Meta:
         db_table = 'bsg_wiki'
-        verbose_name_plural = "wiki"
+        verbose_name_plural = 'wiki'
 
 
 class WikiAttachmentAssign(models.Model):
 
     wiki = models.ForeignKey(Wiki)
-    file = models.ForeignKey(WebFile)
+    attachment = models.ForeignKey(WebFile)
     uploader = models.ForeignKey(User)
     created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
-        return "%s : %s" % (self.wiki, self.file)
+        return '%s : %s' % (self.wiki, self.attachment)
 
     class Meta:
         db_table = 'mva_wiki_attachment_assign'
         verbose_name = 'wiki attachment assignment'
         verbose_name_plural = 'wiki attachment assignments'
-        unique_together = ("wiki", "file")
+        unique_together = ('wiki', 'attachment')

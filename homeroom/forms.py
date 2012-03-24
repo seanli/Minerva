@@ -26,7 +26,7 @@ class AddCourseForm(StandardForm):
         #self.fields["instructor"].queryset = User.objects.filter(profile__role='I', profile__institute=self.profile.institute)
 
     def clean_title(self):
-        title = self.cleaned_data["title"].strip()
+        title = self.cleaned_data['title'].strip()
         return title
 
     def clean(self):

@@ -38,7 +38,7 @@ class Profile(models.Model):
     influence = models.IntegerField(default=0)
 
     def __unicode__(self):
-        return "%s" % (self.user.get_full_name())
+        return '%s' % (self.user.get_full_name())
 
     @staticmethod
     def register_user(email, password, first_name, last_name, institute, role):

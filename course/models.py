@@ -15,11 +15,11 @@ class Course(models.Model):
     modified_time = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
-        return "%s (%s)" % (self.title, self.abbrev)
+        return '%s (%s)' % (self.title, self.abbrev)
 
     class Meta:
         db_table = 'mva_course'
-        unique_together = ("title", "abbrev", "institute")
+        unique_together = ('title', 'abbrev', 'institute')
 
 
 class Section(models.Model):
@@ -30,38 +30,38 @@ class Section(models.Model):
     user = models.ManyToManyField(User, through='SectionAssign')
 
     def __unicode__(self):
-        return "%s [%s, %s]" % (self.course, unicode(self.start_date), self.get_duration_display())
+        return '%s [%s, %s]' % (self.course, unicode(self.start_date), self.get_duration_display())
 
     class Meta:
         db_table = 'mva_section'
-        unique_together = ("course", "start_date", "duration")
+        unique_together = ('course', 'start_date', 'duration')
 
 
 class SectionAssign(models.Model):
 
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    section = models.ForeignKey(Section, related_name="%(class)s_section")
+    user = models.ForeignKey(User, related_name='%(class)s_user')
+    section = models.ForeignKey(Section, related_name='%(class)s_section')
 
     def __unicode__(self):
-        return "%s : %s" % (self.user, self.section)
+        return '%s : %s' % (self.user, self.section)
 
     class Meta:
         db_table = 'mva_section_assign'
         verbose_name = 'section assignment'
         verbose_name_plural = 'section assignments'
-        unique_together = ("user", "section")
+        unique_together = ('user', 'section')
 
 
 class Review(models.Model):
 
     course = models.ForeignKey(Course)
     message = models.TextField()
-    person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
+    person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
     sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return "To %s: %s..." % (self.course, self.message[:10])
+        return 'To %s: %s...' % (self.course, self.message[:10])
 
     class Meta:
         db_table = 'mva_review'

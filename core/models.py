@@ -12,7 +12,7 @@ class Country(models.Model):
 
     class Meta:
         db_table = 'mva_country'
-        verbose_name_plural = "countries"
+        verbose_name_plural = 'countries'
 
 
 class ProvinceState(models.Model):
@@ -27,7 +27,7 @@ class ProvinceState(models.Model):
     class Meta:
         db_table = 'mva_province_state'
         verbose_name = 'province/state'
-        verbose_name_plural = "provinces/states"
+        verbose_name_plural = 'provinces/states'
 
 
 class Institute(models.Model):
@@ -62,17 +62,17 @@ class Specialization(models.Model):
 
 class SpecializationAssign(models.Model):
 
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    specialization = models.ForeignKey(Specialization, related_name="%(class)s_specialization")
+    user = models.ForeignKey(User, related_name='%(class)s_user')
+    specialization = models.ForeignKey(Specialization, related_name='%(class)s_specialization')
 
     def __unicode__(self):
-        return "%s : %s" % (self.user, self.specialization)
+        return '%s : %s' % (self.user, self.specialization)
 
     class Meta:
         db_table = 'mva_specialization_assign'
         verbose_name = 'specialization assignment'
         verbose_name_plural = 'specialization assignments'
-        unique_together = ("user", "specialization")
+        unique_together = ('user', 'specialization')
 
 
 class Skill(models.Model):
@@ -91,26 +91,26 @@ class Skill(models.Model):
 
 class SkillAssign(models.Model):
 
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    skill = models.ForeignKey(Skill, related_name="%(class)s_skill")
+    user = models.ForeignKey(User, related_name='%(class)s_user')
+    skill = models.ForeignKey(Skill, related_name='%(class)s_skill')
 
     def __unicode__(self):
-        return "%s : %s" % (self.user, self.skill)
+        return '%s : %s' % (self.user, self.skill)
 
     class Meta:
         db_table = 'mva_skill_assign'
         verbose_name = 'skill assignment'
         verbose_name_plural = 'skill assignments'
-        unique_together = ("user", "skill")
+        unique_together = ('user', 'skill')
 
 
 class Badge(models.Model):
 
     label = models.CharField(max_length=100)
-    prev_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_prev_lvl", verbose_name='previous level')
+    prev_lvl = models.OneToOneField('self', null=True, blank=True, related_name='%(class)s_prev_lvl', verbose_name='previous level')
     req_exp = models.PositiveIntegerField(default=0, verbose_name='requirement EXP')
     next_exp = models.PositiveIntegerField(default=0, verbose_name='next level EXP')
-    next_lvl = models.OneToOneField("self", null=True, blank=True, related_name="%(class)s_next_lvl", verbose_name='next level')
+    next_lvl = models.OneToOneField('self', null=True, blank=True, related_name='%(class)s_next_lvl', verbose_name='next level')
     user = models.ManyToManyField(User, through='BadgeAssign')
     # picture = models.ImageField(null=True, blank=True)
 
@@ -123,31 +123,31 @@ class Badge(models.Model):
 
 class BadgeAssign(models.Model):
 
-    user = models.ForeignKey(User, related_name="%(class)s_user")
-    badge = models.ForeignKey(Badge, related_name="%(class)s_badge")
+    user = models.ForeignKey(User, related_name='%(class)s_user')
+    badge = models.ForeignKey(Badge, related_name='%(class)s_badge')
     obtained = models.BooleanField(default=False)
     exp = models.PositiveIntegerField(default=0, verbose_name='EXP')
 
     def __unicode__(self):
-        return "%s : %s" % (self.user, self.badge)
+        return '%s : %s' % (self.user, self.badge)
 
     class Meta:
         db_table = 'mva_badge_assign'
         verbose_name = 'badge assignment'
         verbose_name_plural = 'badge assignments'
-        unique_together = ("user", "badge")
+        unique_together = ('user', 'badge')
 
 
 class Encouragement(models.Model):
 
-    person_to = models.ForeignKey(User, related_name="%(class)s_person_to", verbose_name='to')
+    person_to = models.ForeignKey(User, related_name='%(class)s_person_to', verbose_name='to')
     message = models.TextField()
-    person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
+    person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
     sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=False)
 
     def __unicode__(self):
-        return "To %s: %s..." % (self.person_to, self.message[:10])
+        return 'To %s: %s...' % (self.person_to, self.message[:10])
 
     class Meta:
         db_table = 'mva_encouragement'
@@ -157,12 +157,12 @@ class Feedback(models.Model):
 
     instructor = models.ForeignKey(User)
     message = models.TextField()
-    person_from = models.ForeignKey(User, related_name="%(class)s_person_from", verbose_name='from')
+    person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
     sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=True)
 
     def __unicode__(self):
-        return "To %s: %s..." % (self.instructor, self.message[:10])
+        return 'To %s: %s...' % (self.instructor, self.message[:10])
 
     class Meta:
         db_table = 'mva_feedback'
@@ -171,7 +171,7 @@ class Feedback(models.Model):
 class WebFile(models.Model):
 
     name = models.CharField(max_length=100)
-    file = models.FileField(upload_to='webfiles')
+    item = models.FileField(upload_to='webfiles')
     uploader = models.ForeignKey(User, null=True, blank=True)
     created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)

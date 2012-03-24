@@ -5,7 +5,7 @@ from django.core.management.base import NoArgsCommand
 
 class Command(NoArgsCommand):
 
-    help = "Cleans admin log entries and session data."
+    help = 'Cleans admin log entries and session data.'
 
     def handle_noargs(self, **options):
         sessions = Session.objects.all()
