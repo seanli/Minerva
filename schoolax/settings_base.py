@@ -60,6 +60,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'core.middleware.ExceptionMiddleware',
 )
 
 ROOT_URLCONF = '%s.urls' % PROJECT_DIR
@@ -134,33 +135,28 @@ LOGGING = {
     },
     'handlers': {
         'file': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(PROJECT_ROOT, 'logs/minerva.log'),
             'maxBytes': '16777216',
             'formatter': 'verbose',
         },
-         'console': {
-            'level': 'INFO',
-            'class': 'logging.StreamHandler',
-            'formatter': 'verbose'
-        },
     },
     'loggers': {
         'django': {
             'handlers': ['file'],
-            'level': 'INFO',
-            #'propagate': True,
+            'level': 'WARNING',
+            'propagate': True,
         },
         'minerva': {
             'handlers': ['file'],
-            'level': 'INFO',
-            #'propagate': True,
+            'level': 'DEBUG',
+            'propagate': True,
         },
         'dajaxice': {
             'handlers': ['file'],
-            'level': 'INFO',
-            #'propagate': True,
+            'level': 'WARNING',
+            'propagate': True,
         },
     }
 }

@@ -18,6 +18,10 @@ class WikiAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'created_time', 'modified_time')
 
 
+class LogMessageAdmin(admin.ModelAdmin):
+    list_display = ('logger_name', 'level', 'logged_time', 'message',)
+
+
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Wiki, WikiAdmin)
-admin.site.register(LogMessage)
+admin.site.register(LogMessage, LogMessageAdmin)

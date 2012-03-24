@@ -1,6 +1,5 @@
 from django import template
 from datetime import datetime
-from django.conf import settings
 from django.utils.datastructures import SortedDict
 
 
@@ -46,14 +45,6 @@ def structsort(value):
 @register.filter(name='percentage')
 def percentage(value):
     return unicode(round(value * 100, 2)) + '%'
-
-
-@register.simple_tag
-def get_setting(name):
-    try:
-        return settings.__getattr__(name)
-    except AttributeError:
-        return ''
 
 
 @register.simple_tag

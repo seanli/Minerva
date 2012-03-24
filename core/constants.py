@@ -1,3 +1,5 @@
+import logging
+
 # Site Core
 
 ROLE = (
@@ -89,4 +91,13 @@ TICKET_STATUS = (
     ('A', 'Assigned'),
     ('C', 'Closed'),
     ('R', 'Reopened'),
+)
+
+LOG_LEVEL = (
+    (logging.FATAL, 'Fatal'),
+    (logging.CRITICAL, 'Critical'),
+    (logging.ERROR, 'Error'),
+    (logging.WARNING, 'Warning'),
+    (logging.INFO, 'Info'),
+    (logging.DEBUG, 'Debug'),
 )
