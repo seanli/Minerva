@@ -9,7 +9,11 @@ function confirm_modal(options) {
   };
   var options = $.extend(defaults, options);
 
-  var html = '<div class="modal fade" id="confirm-modal"><div class="modal-header"><a class="close" data-dismiss="modal">&times;</a>' + '<h3>#Heading#</h3></div><div class="modal-body">' + '#Message#</div><div class="modal-footer">' + '<a href="#" class="btn btn-danger" id="confirm-yes">#Yes#</a>' + '<a href="#" class="btn" data-dismiss="modal">#No#</a></div></div>';
+  var html = '<div class="modal fade" id="confirm-modal"><div class="modal-header"><a class="close" data-dismiss="modal">&times;</a>' + 
+    '<h3>#Heading#</h3></div><div class="modal-body">' + 
+    '#Message#</div><div class="modal-footer">' + 
+    '<a href="#" class="btn btn-danger" id="confirm-yes">#Yes#</a>' + 
+    '<a href="#" class="btn" data-dismiss="modal">#No#</a></div></div>';
   html = html.replace('#Heading#', options.heading).replace('#Message#', options.message).replace('#Yes#', options.yes).replace('#No#', options.no);
   $('body').append(html);
   $('#confirm-modal').modal('show');
