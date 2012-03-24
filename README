@@ -3,6 +3,7 @@ Required Python Modules:
 - Django (Web Framework)
 - Psycopg2 (PostgreSQL Driver)
 - South (Database Migration)
+- Haystack (Search Engine)
 - Dajaxice (AJAX)
 - Dajax (AJAX)
 - CreoleParser (Wiki Markup)

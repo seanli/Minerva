@@ -95,6 +95,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.webdesign',
     'south',
+    'haystack',
     'dajaxice',
     'dajax',
     'creoleparser',
@@ -166,6 +167,15 @@ LOGGING = {
 AUTH_PROFILE_MODULE = 'account.Profile'
 AUTHENTICATION_BACKENDS = ('account.backends.EmailAuthBackend',)
 LOGIN_URL = '/login/'
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(PROJECT_ROOT, 'indexes'),
+        'INCLUDE_SPELLING': True,
+    },
+}
+
 
 DAJAXICE_MEDIA_PREFIX = 'dajaxice'
 DAJAXICE_JS_DOCSTRINGS = True
