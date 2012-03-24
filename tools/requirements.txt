@@ -1,7 +1,7 @@
 django
 psycopg2
 south
-haystack
+django-haystack
 django-dajaxice
 django-dajax
 creoleparser
