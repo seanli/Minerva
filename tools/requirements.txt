@@ -1,7 +1,8 @@
 django
 psycopg2
 south
-django-haystack=2.0.0beta
+# django-haystack
+-e git://github.com/toastdriven/django-haystack.git#egg=django-haystack
 django-dajaxice
 django-dajax
 creoleparser

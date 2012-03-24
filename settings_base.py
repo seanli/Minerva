@@ -168,8 +168,6 @@ AUTH_PROFILE_MODULE = 'account.Profile'
 AUTHENTICATION_BACKENDS = ('account.backends.EmailAuthBackend',)
 LOGIN_URL = '/login/'
 
-HAYSTACK_SITECONF = '%s.search_sites' % PROJECT_DIR
-
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
@@ -177,7 +175,6 @@ HAYSTACK_CONNECTIONS = {
         'INCLUDE_SPELLING': True,
     },
 }
-
 
 DAJAXICE_MEDIA_PREFIX = 'dajaxice'
 DAJAXICE_JS_DOCSTRINGS = True
