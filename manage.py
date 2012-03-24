@@ -3,9 +3,7 @@
 import os
 import sys
 
-website = 'schoolax'
-
 if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', '%s.settings' % website)
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'schoolax.settings')
     from django.core.management import execute_from_command_line
     execute_from_command_line(sys.argv)

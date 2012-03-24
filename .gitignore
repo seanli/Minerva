@@ -13,6 +13,9 @@ media/
 # Index Files #
 indexes/
 
+# Install Files #
+tools/src/
+
 # Compiled Files #
 *.pyc
 

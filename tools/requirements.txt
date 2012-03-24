@@ -9,5 +9,6 @@ django-dajax
 creoleparser
 django_compressor
 pylint
+pep8
 docutils
 django-debug-toolbar
