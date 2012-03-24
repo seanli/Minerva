@@ -19,7 +19,7 @@
     <link href="{{ STATIC_URL }}css/jquery.ui.css" rel="stylesheet" type="text/css">
     <link href="{{ STATIC_URL }}css/prettify.css" rel="stylesheet" type="text/css">
     {% endcompress %}
-    {% if debug %}
+    {% if DEBUG %}
     <link href="{{ STATIC_URL }}less/minerva.less" rel="stylesheet/less" type="text/css">
     {% else %}
     {% compress css %}
@@ -53,7 +53,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    {% if debug %}
+    {% if DEBUG %}
     {% dajaxice_js_import %}
     {% else %}
     {% compress js %}
@@ -71,7 +71,7 @@
     <script src="{{ STATIC_URL }}js/minerva.js"></script>
     <script src="{{ STATIC_URL }}js/minerva-widget.js"></script>
     {% endcompress %}
-    {% if debug %}
+    {% if DEBUG %}
     <script src="{{ STATIC_URL }}js/bootstrap-transition.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-alert.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap-modal.js"></script>
@@ -89,7 +89,7 @@
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     {% endcompress %}
     {% endif %}
-    {% if debug %}
+    {% if DEBUG %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/less.min.js"></script>
     {% endcompress %}

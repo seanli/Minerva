@@ -1,15 +1,10 @@
 from django import template
 from datetime import datetime
 from django.conf import settings
-from backstage.forms import ReportForm
 from django.utils.datastructures import SortedDict
 
+
 register = template.Library()
-
-
-@register.simple_tag
-def brand_name():
-    return settings.BRAND_NAME
 
 
 @register.simple_tag
@@ -54,16 +49,13 @@ def percentage(value):
 
 
 @register.simple_tag
+def get_setting(name):
+    try:
+        return settings.__getattr__(name)
+    except AttributeError:
+        return ''
+
+
+@register.simple_tag
 def current_year():
     return unicode(datetime.now().year)
-
-
-@register.tag
-def report_form(parser, token):
-    return ReportFormNode()
-
-
-class ReportFormNode(template.Node):
-    def render(self, context):
-        context['report_form'] = ReportForm()
-        return ''

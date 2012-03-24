@@ -10,7 +10,6 @@
   <div class="modal-body">
     <form id="form-report" action="" method="post" class="form-vertical">
       {% csrf_token %}
-      {% report_form %}
       {% for field in report_form %}
       <div id="form-report-{{ field.html_name }}" class="control-group">
         {{ field.label_tag }}
