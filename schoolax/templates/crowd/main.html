@@ -38,8 +38,10 @@
       <div id="grade-gauge" class="progress">
         <div class="bar"></div>
       </div>
+      {% if viewing_user == user %}
       <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
       <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.minus_exp(update_exp);"> <i class="icon-minus icon-white"></i> EXP</a>
+      {% endif %}
     </div>
     <div class="row-fluid">
       <div class="span6">  
@@ -116,10 +118,10 @@
       $('#grade-gauge').removeClass('progress-success');
       $('#grade-gauge').removeClass('progress-error');
       $('#grade-gauge').removeClass('progress-warning');
-      if(percentage >= 75) {
+      if(percentage >= 66) {
           $('#grade-gauge').addClass('progress-success');
       }
-      else if(percentage <= 25) {
+      else if(percentage <= 33) {
           $('#grade-gauge').addClass('progress-danger');
       }
       else {

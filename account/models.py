@@ -84,23 +84,23 @@ class Profile(models.Model):
         return SectionAssign.objects.filter(section=section, user=self.user).count() > 0
 
     def increment_grade(self, delta):
-        if delta >= 0 and self.grade < GRADE_MAX:
+        if delta >= 0:
             self.grade_gauge += delta
             if self.grade_gauge >= GRADE_STEP:
                 self.grade += 1
                 self.grade_gauge -= GRADE_STEP
                 if self.grade >= GRADE_MAX:
                     self.grade = GRADE_MAX
-                    self.grade_gauge = 0
+                    self.grade_gauge = 100
             self.save()
-        elif delta < 0 and self.grade > GRADE_MIN:
+        elif delta < 0:
             self.grade_gauge += delta
             if self.grade_gauge <= -GRADE_STEP:
                 self.grade -= 1
                 self.grade_gauge += GRADE_STEP
                 if self.grade <= GRADE_MIN:
                     self.grade = GRADE_MIN
-                    self.grade_gauge = 0
+                    self.grade_gauge = -100
             self.save()
 
     class Meta:
