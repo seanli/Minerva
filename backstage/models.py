@@ -75,7 +75,7 @@ class LogMessage(models.Model):
     request = models.TextField(blank=True, null=True)
 
     def __unicode__(self):
-        return '%s[%s] - %s' % (self.logger_name, self.level, unicode(self.logged_time))
+        return '%s[%s] - %s' % (self.logger_name, self.get_level_display(), unicode(self.logged_time))
 
     class Meta:
         db_table = 'bsg_log_message'
