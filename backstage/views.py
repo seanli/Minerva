@@ -1,11 +1,14 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
+from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from django.template import RequestContext
-from backstage.models import Ticket, Wiki
+from backstage.models import Ticket, Wiki, LogMessage
 from backstage.forms import TicketForm
 from core.decorators import staff_required
 from creoleparser import text2html
+from datetime import datetime
+import logging
 
 
 @login_required
@@ -61,3 +64,26 @@ def wiki(request, wiki_id=None):
             return render_to_response('backstage/wiki_detail.html', context)
         else:
             return HttpResponse('Wiki Not Found!')
+
+
+@csrf_exempt
+def onerror(request):
+    if request.method != 'POST':
+        ret = HttpResponse(content='POST Only', status=400)
+    else:
+        message = request.POST['message']
+        line_number = request.POST['line_number']
+        url = request.POST['url']
+        log_message = LogMessage()
+        log_message.logged_time = datetime.now()
+        log_message.logger_name = 'client'
+        log_message.level = logging.ERROR
+        log_message.line_number = line_number
+        log_message.message = message
+        log_message.uri_path = url
+        log_message.request = request
+        if request.user.is_authenticated():
+            log_message.user = request.user
+        log_message.save()
+        ret = HttpResponse(content='Success', status=201)
+    return ret

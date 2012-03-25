@@ -65,4 +65,22 @@ $(document).ready(function() {
   $('.tooltip-demo').tooltip({
     selector : "a[rel=tooltip]",
   });
+  // Javascript error logging
+  var prevOnError = window.onerror;
+  window.onerror = function(errorMsg, url, lineNumber) {
+    if(typeof(jQuery) != 'undefined') {
+      jQuery.ajax({ url: '/onerror/',
+        type: 'POST',
+        data: {
+          message: errorMsg,
+          line_number: lineNumber,
+          url: url
+        }
+      });
+    }
+    if(prevOnError) {
+      return prevOnError(errorMsg, url, lineNumber);
+    }
+    return false;
+  }
 });

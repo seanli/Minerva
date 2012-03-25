@@ -8,4 +8,5 @@ urlpatterns = patterns('backstage.views',
     url(r'^backstage/wiki/(?P<wiki_id>\d+)/$', 'wiki'),
     url(r'^backstage/dashboard/$', 'dashboard', name='backstage_dashboard'),
     url(r'^backstage/$', 'dashboard', name='backstage'),
+    url(r'^onerror/$', 'onerror'),
 )
