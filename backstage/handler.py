@@ -1,8 +1,14 @@
+import sys
+import traceback
 import logging
 from backstage.models import LogMessage
 
 
 class DBLogHandler(logging.Handler):
+
+    def __init__(self, request=None):
+        logging.Handler.__init__(self)
+        self.request = request
 
     def emit(self, record):
         log_message = LogMessage()
@@ -15,4 +21,15 @@ class DBLogHandler(logging.Handler):
             log_message.message = record.message
         else:
             log_message.message = record.msg
+        log_message.traceback = self.get_traceback()
+        if self.request is not None:
+            abs_uri = self.request.build_absolute_uri(self.request.get_full_path())
+            log_message.uri_path = abs_uri
+            log_message.request = self.request
+            if self.request.user.is_authenticated():
+                log_message.user = self.request.user
         log_message.save()
+
+    def get_traceback(self):
+        exc_type, exc_value, exc_tb = sys.exc_info()
+        return '\n'.join(traceback.format_exception(exc_type, exc_value, exc_tb))

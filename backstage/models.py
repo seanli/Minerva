@@ -69,6 +69,10 @@ class LogMessage(models.Model):
     function_name = models.CharField(max_length=255, blank=True, null=True)
     line_number = models.PositiveIntegerField(blank=True, null=True)
     message = models.TextField(blank=True, null=True)
+    traceback = models.TextField(blank=True, null=True)
+    uri_path = models.CharField(max_length=255, blank=True, null=True)
+    user = models.ForeignKey(User, blank=True, null=True)
+    request = models.TextField(blank=True, null=True)
 
     def __unicode__(self):
         return '%s[%s] - %s' % (self.logger_name, self.level, unicode(self.logged_time))
