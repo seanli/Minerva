@@ -1,22 +1,29 @@
 #!/bin/bash
 
-echo 'Pylint: account'
+echo 'Checking: account'
 pylint --rcfile=tools/pylint.rc account
-echo 'Pylint: backstage'
+pep8 --repeat --ignore=E501 --exclude='migrations' account
+echo 'Checking: backstage'
 pylint --rcfile=tools/pylint.rc backstage
-echo 'Pylint: bulletin'
+pep8 --repeat --ignore=E501 --exclude='migrations' backstage
+echo 'Checking: bulletin'
 pylint --rcfile=tools/pylint.rc bulletin
-echo 'Pylint: core'
+pep8 --repeat --ignore=E501 --exclude='migrations' bulletin
+echo 'Checking: core'
 pylint --rcfile=tools/pylint.rc core
-echo 'Pylint: course'
+pep8 --repeat --ignore=E501 --exclude='migrations' core
+echo 'Checking: course'
 pylint --rcfile=tools/pylint.rc course
-echo 'Pylint: crowd'
+pep8 --repeat --ignore=E501 --exclude='migrations' course
+echo 'Checking: crowd'
 pylint --rcfile=tools/pylint.rc crowd
-echo 'Pylint: data'
+pep8 --repeat --ignore=E501 --exclude='migrations' crowd
+echo 'Checking: data'
 pylint --rcfile=tools/pylint.rc data
-echo 'Pylint: homeroom'
+pep8 --repeat --ignore=E501 --exclude='migrations' data
+echo 'Checking: homeroom'
 pylint --rcfile=tools/pylint.rc homeroom
-echo 'Pylint: schoolax'
+pep8 --repeat --ignore=E501 --exclude='migrations' homeroom
+echo 'Checking: schoolax'
 pylint --rcfile=tools/pylint.rc schoolax
-echo 'PEP8'
-pep8 --repeat --ignore=E501 --exclude='migrations' .
+pep8 --repeat --ignore=E501 --exclude='migrations' schoolax

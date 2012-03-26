@@ -1,7 +1,7 @@
 [MASTER]
 profile=no
 persistent=yes
-ignore=migrations,settings.py,settings_dev.py,settings_prod.py,settings_base.py
+ignore=migrations,settings.py,settings_dev.py,settings_qa.py,settings_prod.py,settings_base.py
 cache-size=500
 
 [MESSAGES CONTROL]
