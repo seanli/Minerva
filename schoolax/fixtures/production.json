@@ -44,42 +44,6 @@
         }
     }, 
     {
-        "pk": 11, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "gli", 
-            "first_name": "Guanjun", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-03-23T21:56:33.726", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$7ddcd$704dcc0ff4398b53a0bf7ab660eb8ddaa3bf18c2", 
-            "email": "liguanjun@hotmail.com", 
-            "date_joined": "2012-03-17T21:30:47"
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "sli", 
-            "first_name": "Sean", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-03-23T21:56:51.270", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "sha1$f1753$aeafeb0bfbbd7bbbc079d7a3b53850f354100933", 
-            "email": "s67li@uwaterloo.ca", 
-            "date_joined": "2012-02-08T00:12:47"
-        }
-    }, 
-    {
         "pk": 12, 
         "model": "auth.user", 
         "fields": {
@@ -188,11 +152,47 @@
         }
     }, 
     {
+        "pk": 11, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "gli", 
+            "first_name": "Guanjun", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-03-24T20:22:15.535", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$kMxuWk5WcIA9$GDYSVzFzyOqvx/QtVmoyPTcS03flzN205KWvpDtpEJw=", 
+            "email": "liguanjun@hotmail.com", 
+            "date_joined": "2012-03-17T21:30:47"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sli", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-03-24T20:50:32.886", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08T00:12:47"
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "sites.site", 
         "fields": {
-            "domain": "www.mynodo.com", 
-            "name": "Mynodo"
+            "domain": "www.schoolax.com", 
+            "name": "Schoolax"
         }
     }, 
     {
@@ -301,6 +301,42 @@
             "applied": "2012-03-24T16:07:49.438", 
             "app_name": "backstage", 
             "migration": "0007_auto__chg_field_logmessage_level"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-25T01:42:38.677", 
+            "app_name": "backstage", 
+            "migration": "0002_auto__add_field_logmessage_traceback__add_field_logmessage_request"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-25T01:42:38.781", 
+            "app_name": "backstage", 
+            "migration": "0003_auto__add_field_logmessage_uri_path__add_field_logmessage_user"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-25T01:42:38.805", 
+            "app_name": "backstage", 
+            "migration": "0004_auto__add_field_logmessage_session"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-03-25T01:42:38.888", 
+            "app_name": "backstage", 
+            "migration": "0005_auto__del_field_logmessage_session"
         }
     }, 
     {
@@ -3743,6 +3779,19 @@
         }
     }, 
     {
+        "pk": 1, 
+        "model": "core.webfile", 
+        "fields": {
+            "created_time": "2012-03-24T20:17:12.779", 
+            "item": "webfiles/\u5bf9\u4f60\u7684\u7231.mp3", 
+            "modified_time": "2012-03-24T20:17:12.779", 
+            "name": "Test", 
+            "uploader": [
+                "sli"
+            ]
+        }
+    }, 
+    {
         "pk": 9, 
         "model": "backstage.ticket", 
         "fields": {
@@ -5766,6 +5815,32 @@
         }
     }, 
     {
+        "pk": 704, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Examines the evolving form and function of Canada's dispersed and nucleated settlements. Considers the role of local economic development in stimulating change. ", 
+            "title": "Settlements of Rural Canada", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "GEOG 340", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 4110, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Special Topics in Theoretical Condensed Matter Physics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PHYS 733", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3790, 
         "model": "course.course", 
         "fields": {
@@ -6234,19 +6309,6 @@
         }
     }, 
     {
-        "pk": 704, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Examines the evolving form and function of Canada's dispersed and nucleated settlements. Considers the role of local economic development in stimulating change. ", 
-            "title": "Settlements of Rural Canada", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "GEOG 340", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 1474, 
         "model": "course.course", 
         "fields": {
@@ -6607,19 +6669,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PMATH 966", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 4110, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Special Topics in Theoretical Condensed Matter Physics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PHYS 733", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -7677,6 +7726,32 @@
         }
     }, 
     {
+        "pk": 3878, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Advanced Research Topics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CS 798", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2129, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A detailed study of selected aspects of 21st-century French literature.", 
+            "title": "21st-Century French Literature", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 367", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3387, 
         "model": "course.course", 
         "fields": {
@@ -8219,19 +8294,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ACTSC 621", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3878, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Advanced Research Topics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CS 798", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -8834,6 +8896,19 @@
         }
     }, 
     {
+        "pk": 97, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This second professional communications course builds on the skills acquired in PHARM 127, with increased focus on providing opportunities for students to practice and hone their skill. Student assignments focus on writing, presentation and patient interviewing skills. [Offered: S]", 
+            "title": "Professional Communication Skills in Pharmacy Practice 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PHARM 128", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 70, 
         "model": "course.course", 
         "fields": {
@@ -9068,6 +9143,32 @@
         }
     }, 
     {
+        "pk": 98, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course is designed to help students develop the core communication skills required for success in a career in Pharmacy. This is a foundational course where key concepts are introduced and students have opportunities to practice the skills they are acquiring. [Offered: W]", 
+            "title": "Professional Communication Skills in Pharmacy Practice 1", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PHARM 127", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2130, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A continuation of FR 363A. ", 
+            "title": "20th-Century French Literature", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 363B", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 84, 
         "model": "course.course", 
         "fields": {
@@ -9276,28 +9377,15 @@
         }
     }, 
     {
-        "pk": 97, 
+        "pk": 165, 
         "model": "course.course", 
         "fields": {
-            "description": "This second professional communications course builds on the skills acquired in PHARM 127, with increased focus on providing opportunities for students to practice and hone their skill. Student assignments focus on writing, presentation and patient interviewing skills. [Offered: S]", 
-            "title": "Professional Communication Skills in Pharmacy Practice 2", 
+            "description": "Bacterial physiology and genetics, normal flora, bacteria, chlamydiae, rickettsiae, fungi, viruses, parasites and related diseases.", 
+            "title": "Medical Microbiology", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "PHARM 128", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 98, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course is designed to help students develop the core communication skills required for success in a career in Pharmacy. This is a foundational course where key concepts are introduced and students have opportunities to practice the skills they are acquiring. [Offered: W]", 
-            "title": "Professional Communication Skills in Pharmacy Practice 1", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PHARM 127", 
+            "abbrev": "OPTOM 105", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -9558,6 +9646,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "OPTOM 458", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2131, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A continuation of FR 354A. ", 
+            "title": "19th-Century French Literature", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 354B", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -10173,19 +10274,6 @@
         }
     }, 
     {
-        "pk": 165, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Bacterial physiology and genetics, normal flora, bacteria, chlamydiae, rickettsiae, fungi, viruses, parasites and related diseases.", 
-            "title": "Medical Microbiology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "OPTOM 105", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 166, 
         "model": "course.course", 
         "fields": {
@@ -10637,6 +10725,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "EARTH 231", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3090, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Scottish History Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 762", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -11239,6 +11340,32 @@
         }
     }, 
     {
+        "pk": 277, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A general interest field course usually of one week duration. Courses sponsored by Ontario Universities at other times of the year also qualify. ", 
+            "title": "Field Course 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 498A", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3744, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Readings in Global Environment", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "GGOV 629", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 253, 
         "model": "course.course", 
         "fields": {
@@ -11590,15 +11717,15 @@
         }
     }, 
     {
-        "pk": 277, 
+        "pk": 2132, 
         "model": "course.course", 
         "fields": {
-            "description": "A general interest field course usually of one week duration. Courses sponsored by Ontario Universities at other times of the year also qualify. ", 
-            "title": "Field Course 2", 
+            "description": "Introduction to the theories and practices of French-English/English-French translation.", 
+            "title": "Introduction to Translation", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "BIOL 498A", 
+            "abbrev": "FR 353", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -11833,6 +11960,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "BIOL 473", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3091, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Community Studies Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 763", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -12383,6 +12523,19 @@
         }
     }, 
     {
+        "pk": 359, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Introduction to the biology of bacterial and archaeal organisms. Topics include cell structure and function, methods of cultivation, genetics, phylogeny and taxonomy, and metabolic and genetic diversity. ", 
+            "title": "Fundamentals of Microbiology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 140", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 336, 
         "model": "course.course", 
         "fields": {
@@ -12669,19 +12822,6 @@
         }
     }, 
     {
-        "pk": 359, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Introduction to the biology of bacterial and archaeal organisms. Topics include cell structure and function, methods of cultivation, genetics, phylogeny and taxonomy, and metabolic and genetic diversity. ", 
-            "title": "Fundamentals of Microbiology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 140", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 2989, 
         "model": "course.course", 
         "fields": {
@@ -12691,6 +12831,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ENGL 760", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3092, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Early Modern European History Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 764", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -13280,6 +13433,19 @@
         }
     }, 
     {
+        "pk": 1049, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Aqueous inorganic chemistry. Structure and nomenclature of organic compounds. Physical properties of nonaqueous phase organics. Chemical reactions. Chemistry of surface and groundwater. Labs alternate weeks. [Offered: W]", 
+            "title": "Environmental Chemistry", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ENVE 275", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 410, 
         "model": "course.course", 
         "fields": {
@@ -13605,6 +13771,19 @@
         }
     }, 
     {
+        "pk": 3093, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Modern European History Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 765", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 434, 
         "model": "course.course", 
         "fields": {
@@ -13878,6 +14057,19 @@
         }
     }, 
     {
+        "pk": 494, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An introduction to contemporary user interfaces, including the basics of human-computer interaction, the user interface design/evaluation process, the event abstraction, user interface components, specification of user interfaces, and the architectures within which user interfaces are developed. Implementation and evaluation of a typical user interface is considered. ", 
+            "title": "User Interfaces", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CS 349", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 454, 
         "model": "course.course", 
         "fields": {
@@ -14138,6 +14330,19 @@
         }
     }, 
     {
+        "pk": 3094, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Gender, Women and Family Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 766", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 474, 
         "model": "course.course", 
         "fields": {
@@ -14372,15 +14577,15 @@
         }
     }, 
     {
-        "pk": 494, 
+        "pk": 562, 
         "model": "course.course", 
         "fields": {
-            "description": "An introduction to contemporary user interfaces, including the basics of human-computer interaction, the user interface design/evaluation process, the event abstraction, user interface components, specification of user interfaces, and the architectures within which user interfaces are developed. Implementation and evaluation of a typical user interface is considered. ", 
-            "title": "User Interfaces", 
+            "description": "An applications-oriented course that illustrates how various mathematical models and methods of optimization can be used to solve problems arising in business, industry and science. [Offered: W,S]", 
+            "title": "Deterministic OR Models (Non-Specialist Level)", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "CS 349", 
+            "abbrev": "CO 327", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -14615,6 +14820,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "CS 115", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1411, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The specific social problems discussed will vary but will include problems of well-being, problems of inequality and power, and problems related to modernization.", 
+            "title": "Social Problems", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "SOC 102", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -15113,19 +15331,6 @@
         }
     }, 
     {
-        "pk": 562, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An applications-oriented course that illustrates how various mathematical models and methods of optimization can be used to solve problems arising in business, industry and science. [Offered: W,S]", 
-            "title": "Deterministic OR Models (Non-Specialist Level)", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CO 327", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 563, 
         "model": "course.course", 
         "fields": {
@@ -15360,6 +15565,19 @@
         }
     }, 
     {
+        "pk": 1151, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Structural steel members. Limit states design, loads, materials. Design of tension and compression members, beams and beam-columns. Plate girders. Connections. Fatigue. [Offered: S]", 
+            "title": "Structural Steel Design", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CIVE 413", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 579, 
         "model": "course.course", 
         "fields": {
@@ -15590,6 +15808,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "CS 371", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 701, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Examines retail location at both the inter and intra-urban scales. Emphasis is placed on the underlying processes that give rise to retail structure, techniques of site selection and public sector involvement in retail location.", 
+            "title": "Retail Location", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "GEOG 353", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -15906,6 +16137,19 @@
         }
     }, 
     {
+        "pk": 2133, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Intensive development of writing skills through a study of stylistics and advanced composition.", 
+            "title": "French Language 3: Module 1", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 351", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 621, 
         "model": "course.course", 
         "fields": {
@@ -16127,15 +16371,15 @@
         }
     }, 
     {
-        "pk": 1151, 
+        "pk": 3095, 
         "model": "course.course", 
         "fields": {
-            "description": "Structural steel members. Limit states design, loads, materials. Design of tension and compression members, beams and beam-columns. Plate girders. Connections. Fatigue. [Offered: S]", 
-            "title": "Structural Steel Design", 
+            "description": "", 
+            "title": "Race, Class, Imperialism and Slavery Minor Area Seminar", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "CIVE 413", 
+            "abbrev": "HIST 767", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -16595,6 +16839,32 @@
         }
     }, 
     {
+        "pk": 702, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Reviews selected theories, methods, and terminology related to economic, behavioural, institutional and decision-making aspects of resources and environmental problems. ", 
+            "title": "Resources Management", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "GEOG 356", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3096, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "United States Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 768", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 678, 
         "model": "course.course", 
         "fields": {
@@ -16855,28 +17125,15 @@
         }
     }, 
     {
-        "pk": 701, 
+        "pk": 2134, 
         "model": "course.course", 
         "fields": {
-            "description": "Examines retail location at both the inter and intra-urban scales. Emphasis is placed on the underlying processes that give rise to retail structure, techniques of site selection and public sector involvement in retail location.", 
-            "title": "Retail Location", 
+            "description": "Intensive development of writing skills through a study of stylistics and advanced composition.", 
+            "title": "French Language 3: Module 2", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "GEOG 353", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 702, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Reviews selected theories, methods, and terminology related to economic, behavioural, institutional and decision-making aspects of resources and environmental problems. ", 
-            "title": "Resources Management", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "GEOG 356", 
+            "abbrev": "FR 352", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -17141,6 +17398,19 @@
         }
     }, 
     {
+        "pk": 1694, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An examination of the policy-making process in liberal democratic societies, and an evaluation of the tools employed by policy analysts to understand that process.", 
+            "title": "Public Policy", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PSCI 334", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 725, 
         "model": "course.course", 
         "fields": {
@@ -17401,6 +17671,19 @@
         }
     }, 
     {
+        "pk": 3097, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "International  Relations Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 769", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 746, 
         "model": "course.course", 
         "fields": {
@@ -17635,6 +17918,19 @@
         }
     }, 
     {
+        "pk": 3098, 
+        "model": "course.course", 
+        "fields": {
+            "description": "", 
+            "title": "Science, Medicine and Technology Minor Area Seminar", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 770", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 764, 
         "model": "course.course", 
         "fields": {
@@ -17826,6 +18122,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ENBUS 407", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 796, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Newtonian and Eulerian formulation of particle and rigid body kinematics and dynamics. Energy (Lagrangian and Hamiltonian) formulations of particle and rigid body dynamics; generalized coordinates, generalized forces, holonomic constraints, Lagrange multipliers. [Offered: F]", 
+            "title": "Advanced Dynamics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "SYDE 553", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -18047,19 +18356,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "SYDE 556", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 796, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Newtonian and Eulerian formulation of particle and rigid body kinematics and dynamics. Energy (Lagrangian and Hamiltonian) formulations of particle and rigid body dynamics; generalized coordinates, generalized forces, holonomic constraints, Lagrange multipliers. [Offered: F]", 
-            "title": "Advanced Dynamics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "SYDE 553", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -18493,6 +18789,19 @@
         }
     }, 
     {
+        "pk": 1866, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Advanced composition, translation, and grammar with intensive analysis of selected passages.", 
+            "title": "Senior Latin Composition, Grammar and Reading", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "LAT 451", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 829, 
         "model": "course.course", 
         "fields": {
@@ -18766,6 +19075,19 @@
         }
     }, 
     {
+        "pk": 1867, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Composition, translation and grammar with intensive analysis of selected passages.", 
+            "title": "Latin Composition, Grammar and Reading", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "LAT 351", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 856, 
         "model": "course.course", 
         "fields": {
@@ -18931,6 +19253,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "NE 489", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 904, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Ordinary differential equations with constant coefficients. Boundary value problems and applications to quantum mechanics. Laplace transforms, Fourier series and applications. Numerical solution of ordinary differential equations. [Offered: F]", 
+            "title": "Advanced Calculus 1 for Nanotechnology Engineering", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "MATH 211N", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -19126,6 +19461,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "NE 336", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 954, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Introduction to heat transfer mechanisms. The formulation and solution of steady and transient heat conduction. Radiant heat transfer including exchange laws and view factors. Introductory convective heat transfer. [Offered: F, W]", 
+            "title": "Heat Transfer 1", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ME 353", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -19351,19 +19699,6 @@
         }
     }, 
     {
-        "pk": 904, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Ordinary differential equations with constant coefficients. Boundary value problems and applications to quantum mechanics. Laplace transforms, Fourier series and applications. Numerical solution of ordinary differential equations. [Offered: F]", 
-            "title": "Advanced Calculus 1 for Nanotechnology Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "MATH 211N", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 905, 
         "model": "course.course", 
         "fields": {
@@ -19585,6 +19920,32 @@
         }
     }, 
     {
+        "pk": 955, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Emphasis on applications of thermodynamics to flow processes. Real fluids, evaluation of state functions of real fluids. Non-reacting mixtures, reacting mixtures, equilibrium considerations. [Offered: W, S]", 
+            "title": "Thermodynamics 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ME 354", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2641, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Integration of topics from AFM 201 and AFM 361 with an emphasis on basic planning with the use of corporate reorganizations, partnerships and trusts.", 
+            "title": "Taxation 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "AFM 461", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 978, 
         "model": "course.course", 
         "fields": {
@@ -19763,6 +20124,32 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ME 563", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 956, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Basic equations of two-dimensional flow, potential flow, exact viscous solutions. Introduction to lubrication, boundary layers, turbulence, and compressible flow. Turbomachinery fundamentals and applications. Selected advanced topics. [Offered: F, W]", 
+            "title": "Fluid Mechanics 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ME 362", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1640, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Intensive drill in the fundamentals of grammar, comprehension and speaking. Some reading, translation and composition. The language laboratory is used as an integral part of the course. ", 
+            "title": "Introduction to Portuguese 1", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PORT 101", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -20144,45 +20531,6 @@
         }
     }, 
     {
-        "pk": 954, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Introduction to heat transfer mechanisms. The formulation and solution of steady and transient heat conduction. Radiant heat transfer including exchange laws and view factors. Introductory convective heat transfer. [Offered: F, W]", 
-            "title": "Heat Transfer 1", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ME 353", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 955, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Emphasis on applications of thermodynamics to flow processes. Real fluids, evaluation of state functions of real fluids. Non-reacting mixtures, reacting mixtures, equilibrium considerations. [Offered: W, S]", 
-            "title": "Thermodynamics 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ME 354", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 956, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Basic equations of two-dimensional flow, potential flow, exact viscous solutions. Introduction to lubrication, boundary layers, turbulence, and compressible flow. Turbomachinery fundamentals and applications. Selected advanced topics. [Offered: F, W]", 
-            "title": "Fluid Mechanics 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ME 362", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 957, 
         "model": "course.course", 
         "fields": {
@@ -20404,6 +20752,19 @@
         }
     }, 
     {
+        "pk": 1107, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Introduction, basic concepts, process management, interprocess communication and synchronization, memory management, file systems, resource management, interrupt handling, concurrent programming. [Offered: W, S, the last Spring offering is Spring 2011]", 
+            "title": "Real-time Operating Systems", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ECE 354", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 977, 
         "model": "course.course", 
         "fields": {
@@ -20599,19 +20960,6 @@
         }
     }, 
     {
-        "pk": 1107, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Introduction, basic concepts, process management, interprocess communication and synchronization, memory management, file systems, resource management, interrupt handling, concurrent programming. [Offered: W, S, the last Spring offering is Spring 2011]", 
-            "title": "Real-time Operating Systems", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ECE 354", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 1024, 
         "model": "course.course", 
         "fields": {
@@ -20790,6 +21138,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PSYCH 121R", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1642, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Honours Political Science students wishing to undertake a senior honours essay in their fourth year should consult the Department's Undergraduate Officer.", 
+            "title": "Special Honours Essay", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PSCI 499B", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -21002,15 +21363,15 @@
         }
     }, 
     {
-        "pk": 1049, 
+        "pk": 2125, 
         "model": "course.course", 
         "fields": {
-            "description": "Aqueous inorganic chemistry. Structure and nomenclature of organic compounds. Physical properties of nonaqueous phase organics. Chemical reactions. Chemistry of surface and groundwater. Labs alternate weeks. [Offered: W]", 
-            "title": "Environmental Chemistry", 
+            "description": "A continuation of FR 393A. ", 
+            "title": "French Civilization, 20th-Century French History", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "ENVE 275", 
+            "abbrev": "FR 393B", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -21193,6 +21554,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "GENE 21D", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1085, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Design of analog circuits such as current sources and mirrors, differential, low-noise and feedback amplifiers, mixers and oscillators; applications of these circuits in areas such as A/D and D/A conversion and receiver front-end will be covered. [Offered: W]", 
+            "title": "Analog Integrated Circuits", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ECE 439", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -21600,6 +21974,19 @@
         }
     }, 
     {
+        "pk": 1869, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The course introduces and investigates Latin inscriptions as evidence for the Latin language and Roman political, religious, legal, social and economic history.", 
+            "title": "Latin Epigraphy", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "LAT 421", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1069, 
         "model": "course.course", 
         "fields": {
@@ -21791,19 +22178,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ECE 438", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1085, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Design of analog circuits such as current sources and mirrors, differential, low-noise and feedback amplifiers, mixers and oscillators; applications of these circuits in areas such as A/D and D/A conversion and receiver front-end will be covered. [Offered: W]", 
-            "title": "Analog Integrated Circuits", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ECE 439", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -22025,6 +22399,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ECE 209", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1435, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This seminar allows students to integrate their knowledge in the domain of sexuality, marriage, and family ethics. Topics reflect current issues from a theoretical and research perspective.", 
+            "title": "Seminar in Sexuality, Marriage, and Family Ethics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "SMF 490", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -22727,6 +23114,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "CIVE 313", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2122, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An area in Linguistics of particular interest to the instructor and the students will be chosen.", 
+            "title": "Topics in Linguistics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 403", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -23849,6 +24249,19 @@
         }
     }, 
     {
+        "pk": 1522, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course examines various cults and new religious movements (e.g., Scientology, Krishna Consciousness, Neo-paganism) and places them within the context of our sociological knowledge of their emergence, who joins and why, and other issues. ", 
+            "title": "Cults and New Religious Movements", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "SOC 262", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1246, 
         "model": "course.course", 
         "fields": {
@@ -24356,6 +24769,19 @@
         }
     }, 
     {
+        "pk": 1523, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An examination of the coverage of religion in print journalism, news broadcasting, and radio and television documentaries. Topics include secular versus confessional coverage, the politics of religious reportage, televangelism, cults, and current ethical issues. ", 
+            "title": "Religion and the Media", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "RS 273", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1317, 
         "model": "course.course", 
         "fields": {
@@ -24612,6 +25038,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "SPAN 305W", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1363, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Using a symbolic interactionist approach, this course examines central features of urban community life. Particular attention is given to the corporate, commercial, consumptive and communications aspects of urban society as well as residential practices and street life.", 
+            "title": "Urban Life and Culture", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "SOC 365", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -25158,19 +25597,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "SMF 494", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1363, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Using a symbolic interactionist approach, this course examines central features of urban community life. Particular attention is given to the corporate, commercial, consumptive and communications aspects of urban society as well as residential practices and street life.", 
-            "title": "Urban Life and Culture", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "SOC 365", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -25743,32 +26169,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "SOC 200", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1411, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The specific social problems discussed will vary but will include problems of well-being, problems of inequality and power, and problems related to modernization.", 
-            "title": "Social Problems", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "SOC 102", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1435, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This seminar allows students to integrate their knowledge in the domain of sexuality, marriage, and family ethics. Topics reflect current issues from a theoretical and research perspective.", 
-            "title": "Seminar in Sexuality, Marriage, and Family Ethics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "SMF 490", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -26722,6 +27122,19 @@
         }
     }, 
     {
+        "pk": 1637, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An examination and evaluation of selected topics dealing with human information processing such as attention, memory, pattern recognition, consciousness, language, dyslexia, decision making, and problem solving.", 
+            "title": "Cognitive Processes", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 207", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1491, 
         "model": "course.course", 
         "fields": {
@@ -27021,28 +27434,15 @@
         }
     }, 
     {
-        "pk": 1522, 
+        "pk": 1997, 
         "model": "course.course", 
         "fields": {
-            "description": "This course examines various cults and new religious movements (e.g., Scientology, Krishna Consciousness, Neo-paganism) and places them within the context of our sociological knowledge of their emergence, who joins and why, and other issues. ", 
-            "title": "Cults and New Religious Movements", 
+            "description": "A focus on social and economic determinants of Irish History from the Penal Era to the 19th century struggle for Catholic emancipation and the Great Famine. ", 
+            "title": "Ireland Before the Famine", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "SOC 262", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1523, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An examination of the coverage of religion in print journalism, news broadcasting, and radio and television documentaries. Topics include secular versus confessional coverage, the politics of religious reportage, televangelism, cults, and current ethical issues. ", 
-            "title": "Religion and the Media", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "RS 273", 
+            "abbrev": "HIST 371", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -27892,6 +28292,19 @@
         }
     }, 
     {
+        "pk": 1638, 
+        "model": "course.course", 
+        "fields": {
+            "description": "A course designed to introduce the student to current research and theory concerning children's social, cognitive, and physical development from infancy through childhood to early adolescence.", 
+            "title": "Developmental Psychology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 211", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1593, 
         "model": "course.course", 
         "fields": {
@@ -28451,58 +28864,6 @@
         }
     }, 
     {
-        "pk": 1637, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An examination and evaluation of selected topics dealing with human information processing such as attention, memory, pattern recognition, consciousness, language, dyslexia, decision making, and problem solving.", 
-            "title": "Cognitive Processes", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 207", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1638, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A course designed to introduce the student to current research and theory concerning children's social, cognitive, and physical development from infancy through childhood to early adolescence.", 
-            "title": "Developmental Psychology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PSYCH 211", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1640, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Intensive drill in the fundamentals of grammar, comprehension and speaking. Some reading, translation and composition. The language laboratory is used as an integral part of the course. ", 
-            "title": "Introduction to Portuguese 1", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PORT 101", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1642, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Honours Political Science students wishing to undertake a senior honours essay in their fourth year should consult the Department's Undergraduate Officer.", 
-            "title": "Special Honours Essay", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PSCI 499B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 1643, 
         "model": "course.course", 
         "fields": {
@@ -28798,6 +29159,32 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PHIL 465", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 1693, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Examination of conflict within societies and various ways in which conflict is eased or worsened through the sharing of power. Emphasis will be on pluralism, corporatism, consociationalism, and federalism.", 
+            "title": "Power Sharing in Divided Societies", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PSCI 351", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2021, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Western Europe since the end of World War II. Focus will be on the Cold War, political and social movements.", 
+            "title": "Western Europe Since 1945", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 264", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -29110,45 +29497,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PSCI 355", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2125, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of FR 393A. ", 
-            "title": "French Civilization, 20th-Century French History", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 393B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1693, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Examination of conflict within societies and various ways in which conflict is eased or worsened through the sharing of power. Emphasis will be on pluralism, corporatism, consociationalism, and federalism.", 
-            "title": "Power Sharing in Divided Societies", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PSCI 351", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1694, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An examination of the policy-making process in liberal democratic societies, and an evaluation of the tools employed by policy analysts to understand that process.", 
-            "title": "Public Policy", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PSCI 334", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -30154,6 +30502,19 @@
         }
     }, 
     {
+        "pk": 1922, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course strengthens writing skills in Italian with emphasis on technological vocabulary, composition, business terminology, and correspondence.", 
+            "title": "Italian for Business and Technology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ITAL 255", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1789, 
         "model": "course.course", 
         "fields": {
@@ -31129,71 +31490,6 @@
         }
     }, 
     {
-        "pk": 1866, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Advanced composition, translation, and grammar with intensive analysis of selected passages.", 
-            "title": "Senior Latin Composition, Grammar and Reading", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "LAT 451", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1867, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Composition, translation and grammar with intensive analysis of selected passages.", 
-            "title": "Latin Composition, Grammar and Reading", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "LAT 351", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1869, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The course introduces and investigates Latin inscriptions as evidence for the Latin language and Roman political, religious, legal, social and economic history.", 
-            "title": "Latin Epigraphy", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "LAT 421", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2122, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An area in Linguistics of particular interest to the instructor and the students will be chosen.", 
-            "title": "Topics in Linguistics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 403", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1997, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A focus on social and economic determinants of Irish History from the Penal Era to the 19th century struggle for Catholic emancipation and the Great Famine. ", 
-            "title": "Ireland Before the Famine", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 371", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 1870, 
         "model": "course.course", 
         "fields": {
@@ -31506,19 +31802,6 @@
         }
     }, 
     {
-        "pk": 2021, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Western Europe since the end of World War II. Focus will be on the Cold War, political and social movements.", 
-            "title": "Western Europe Since 1945", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 264", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 1896, 
         "model": "course.course", 
         "fields": {
@@ -31827,19 +32110,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ITALST 311", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 1922, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course strengthens writing skills in Italian with emphasis on technological vocabulary, composition, business terminology, and correspondence.", 
-            "title": "Italian for Business and Technology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ITAL 255", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -32702,6 +32972,19 @@
         }
     }, 
     {
+        "pk": 2017, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course examines the Soviet experience during World War II. It will consider such themes as the impact of totalitarian state systems and radical ideologies on the war; racial genocide; the wartime economy; resistance and collaboration; relations with the Western Allies; and the specific problems of a multiethnic state at war.", 
+            "title": "The USSR and World War II: The Great Patriotic War", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 278", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 1992, 
         "model": "course.course", 
         "fields": {
@@ -33014,15 +33297,15 @@
         }
     }, 
     {
-        "pk": 2017, 
+        "pk": 2118, 
         "model": "course.course", 
         "fields": {
-            "description": "This course examines the Soviet experience during World War II. It will consider such themes as the impact of totalitarian state systems and radical ideologies on the war; racial genocide; the wartime economy; resistance and collaboration; relations with the Western Allies; and the specific problems of a multiethnic state at war.", 
-            "title": "The USSR and World War II: The Great Patriotic War", 
+            "description": "A continuation of FR 424A. ", 
+            "title": "16th-Century French Literature", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "HIST 278", 
+            "abbrev": "FR 424B", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -33612,6 +33895,32 @@
         }
     }, 
     {
+        "pk": 2119, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Intensive study of French composition, style and grammar.", 
+            "title": "French Language 4B", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 452", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2120, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An introduction to French literature of the Middle Ages through the study of representative texts. ", 
+            "title": "Medieval French Literature", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 410B", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2062, 
         "model": "course.course", 
         "fields": {
@@ -33946,6 +34255,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "GER 396", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2127, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course will examine, from a historical and sociolinguistic perspective, the long-standing rivalry of our country's two official languages, the origins of their relationship, and the socio-political and linguistic implications of bilingualism.", 
+            "title": "Languages in Contact: The History of French-English Bilingualism", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "FR 373", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -34336,136 +34658,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "FR 473", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2118, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of FR 424A. ", 
-            "title": "16th-Century French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 424B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2119, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Intensive study of French composition, style and grammar.", 
-            "title": "French Language 4B", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 452", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2120, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An introduction to French literature of the Middle Ages through the study of representative texts. ", 
-            "title": "Medieval French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 410B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2127, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will examine, from a historical and sociolinguistic perspective, the long-standing rivalry of our country's two official languages, the origins of their relationship, and the socio-political and linguistic implications of bilingualism.", 
-            "title": "Languages in Contact: The History of French-English Bilingualism", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 373", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2129, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A detailed study of selected aspects of 21st-century French literature.", 
-            "title": "21st-Century French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 367", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2130, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of FR 363A. ", 
-            "title": "20th-Century French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 363B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2131, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of FR 354A. ", 
-            "title": "19th-Century French Literature", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 354B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2132, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Introduction to the theories and practices of French-English/English-French translation.", 
-            "title": "Introduction to Translation", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 353", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2133, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Intensive development of writing skills through a study of stylistics and advanced composition.", 
-            "title": "French Language 3: Module 1", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 351", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2134, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Intensive development of writing skills through a study of stylistics and advanced composition.", 
-            "title": "French Language 3: Module 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "FR 352", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -35796,6 +35988,19 @@
         }
     }, 
     {
+        "pk": 2302, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An introduction to the theorizing of literary and non-literary texts. Emphasizing contemporary theories, the course will focus on the text, the reader, and culture.", 
+            "title": "Criticism 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ENGL 251B", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2249, 
         "model": "course.course", 
         "fields": {
@@ -36429,19 +36634,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ENGL 290", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2302, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An introduction to the theorizing of literary and non-literary texts. Emphasizing contemporary theories, the course will focus on the text, the reader, and culture.", 
-            "title": "Criticism 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ENGL 251B", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -37096,6 +37288,19 @@
         }
     }, 
     {
+        "pk": 2380, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The course considers a number of topics in microeconomics. Possible topics include decision theory, the analysis of uncertainty, principal-agent problems, game and information theory, social choice theory and the coordination of economic activity through prices, quantities, command and coercion.", 
+            "title": "Microeconomic Theory 3", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ECON 401", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2365, 
         "model": "course.course", 
         "fields": {
@@ -37313,19 +37518,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ECON 402", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2380, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The course considers a number of topics in microeconomics. Possible topics include decision theory, the analysis of uncertainty, principal-agent problems, game and information theory, social choice theory and the coordination of economic activity through prices, quantities, command and coercion.", 
-            "title": "Microeconomic Theory 3", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ECON 401", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -40099,6 +40291,19 @@
         }
     }, 
     {
+        "pk": 2640, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course builds on the theory of financial management developed in AFM 271/371 by using cases to illustrate a variety of corporate financial decisions.", 
+            "title": "Cases in Corporate Finance", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "AFM 471", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2615, 
         "model": "course.course", 
         "fields": {
@@ -40368,32 +40573,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "AFM 472", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2640, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course builds on the theory of financial management developed in AFM 271/371 by using cases to illustrate a variety of corporate financial decisions.", 
-            "title": "Cases in Corporate Finance", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "AFM 471", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2641, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Integration of topics from AFM 201 and AFM 361 with an emphasis on basic planning with the use of corporate reorganizations, partnerships and trusts.", 
-            "title": "Taxation 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "AFM 461", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -40918,6 +41097,19 @@
         }
     }, 
     {
+        "pk": 2703, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course involves an unpaid practical experience for students in Honours Therapeutic Recreation. The supervisor must be approved by the Department of Recreation and Leisure Studies Practicum committee prior to registering for the course. The practicum will require 105 hours interspersed over 1 academic term (15 weeks). The course will be offered on a credit/no credit basis.", 
+            "title": "Applied Practicum in Therapeutic Recreation", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "REC 253", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2684, 
         "model": "course.course", 
         "fields": {
@@ -41148,19 +41340,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "REC 270", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2703, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course involves an unpaid practical experience for students in Honours Therapeutic Recreation. The supervisor must be approved by the Department of Recreation and Leisure Studies Practicum committee prior to registering for the course. The practicum will require 105 hours interspersed over 1 academic term (15 weeks). The course will be offered on a credit/no credit basis.", 
-            "title": "Applied Practicum in Therapeutic Recreation", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "REC 253", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -41434,6 +41613,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "KIN 453", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3277, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course is designed to enhance the students' abilities to apply knowledge of accounting principles, theories, and practices through the use of multi-dimensional case studies.", 
+            "title": "Public Accounting Practice", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ACC 610", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -42543,6 +42735,19 @@
         }
     }, 
     {
+        "pk": 2832, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This survey course will be team-taught by members of the collaborative program, and will serve to introduce students to major subareas of ongoing behavioural neuroscience research at Waterloo. Topics will include cognitive psychopathology, apraxia, topics in visual neuroscience, early experience and brain development, cognitive electrophysiology, human locomotion, neuropathology of schizophrenia, object recognition, hemispheric specialization, motor control and psychoneuroimmunology.", 
+            "title": "Fundamentals of Behavioural Neuroscience", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PSYCH 677A", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2800, 
         "model": "course.course", 
         "fields": {
@@ -42777,6 +42982,32 @@
         }
     }, 
     {
+        "pk": 3392, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Various courses dealing with selected topics in biochemical engineering, biotechnology, tissue engineering, food engineering, waste treatment technology and microbial engineering.", 
+            "title": "Special Topics in Biochemical Engineering", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CHE 760", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2903, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This seminar course will focus on research related to gender and leisure.  This will include examination of the effect of gender on leisure meanings, constraints and participation, and the effect of leisure activities on gender relations.  Particular attention will be given to gender and feminist theory and to the intersections between paid work,  unpaid work, family and leisure.", 
+            "title": "Seminar in Gender and Leisure", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "REC 608", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2821, 
         "model": "course.course", 
         "fields": {
@@ -42946,28 +43177,15 @@
         }
     }, 
     {
-        "pk": 2832, 
+        "pk": 3785, 
         "model": "course.course", 
         "fields": {
-            "description": "This survey course will be team-taught by members of the collaborative program, and will serve to introduce students to major subareas of ongoing behavioural neuroscience research at Waterloo. Topics will include cognitive psychopathology, apraxia, topics in visual neuroscience, early experience and brain development, cognitive electrophysiology, human locomotion, neuropathology of schizophrenia, object recognition, hemispheric specialization, motor control and psychoneuroimmunology.", 
-            "title": "Fundamentals of Behavioural Neuroscience", 
+            "description": "Advanced examination of theories, methods and processes of urban, regional and environmental planning through intensive examination of selected planning problems. Restricted to Planning PhD students.", 
+            "title": "PhD Research Forum 1", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "PSYCH 677A", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3392, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Various courses dealing with selected topics in biochemical engineering, biotechnology, tissue engineering, food engineering, waste treatment technology and microbial engineering.", 
-            "title": "Special Topics in Biochemical Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CHE 760", 
+            "abbrev": "PLAN 801", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -43141,6 +43359,19 @@
         }
     }, 
     {
+        "pk": 2875, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Mathematical and computer modelling of first and second order passive and active biological systems; neuron, muscle and diffusion models. Biological feedback control systems: control of posture, gait and tracking tasks. Signal processing; analog and digital filtering, harmonic analyses, impulse response, convolution.", 
+            "title": "Biological Deterministic Modelling and Signal Processing", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "KIN 631G", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2848, 
         "model": "course.course", 
         "fields": {
@@ -43306,6 +43537,32 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PHS 641", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 2877, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The course will provide a comprehensive examination of topics related to human neuroscience as it broadly relates to movement.  These topics include the central nervous system control of human movement, sensorimotor control systems and modulation, attention, psychological factors that influence emotional and behavioral adaptation to chronic illnesses, prehension, movement sequencing, limb gesturing, tool use, gait and posture.", 
+            "title": "Human Neuroscience Theory", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "KIN 653", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3279, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course will address key elements of enterprise IT architecture such as networks, data bases, enterprise software, business processes and organizational structures. (Course offering will be internet-based.)", 
+            "title": "Enterprise IT Architecture and Configuration Management", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ACC 620", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -43492,28 +43749,15 @@
         }
     }, 
     {
-        "pk": 2875, 
+        "pk": 545, 
         "model": "course.course", 
         "fields": {
-            "description": "Mathematical and computer modelling of first and second order passive and active biological systems; neuron, muscle and diffusion models. Biological feedback control systems: control of posture, gait and tracking tasks. Signal processing; analog and digital filtering, harmonic analyses, impulse response, convolution.", 
-            "title": "Biological Deterministic Modelling and Signal Processing", 
+            "description": "Formulation of problems as integer linear programs. Solution by branch-and-bound and cutting plane algorithms. Introduction to the theory of valid inequalities and polyhedral combinatorics.", 
+            "title": "Integer Programming", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "KIN 631G", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2877, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The course will provide a comprehensive examination of topics related to human neuroscience as it broadly relates to movement.  These topics include the central nervous system control of human movement, sensorimotor control systems and modulation, attention, psychological factors that influence emotional and behavioral adaptation to chronic illnesses, prehension, movement sequencing, limb gesturing, tool use, gait and posture.", 
-            "title": "Human Neuroscience Theory", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "KIN 653", 
+            "abbrev": "CO 452", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -43774,19 +44018,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "CHE 770", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2903, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This seminar course will focus on research related to gender and leisure.  This will include examination of the effect of gender on leisure meanings, constraints and participation, and the effect of leisure activities on gender relations.  Particular attention will be given to gender and feminist theory and to the intersections between paid work,  unpaid work, family and leisure.", 
-            "title": "Seminar in Gender and Leisure", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "REC 608", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -44233,6 +44464,19 @@
         }
     }, 
     {
+        "pk": 2948, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Tacitus Annals I-VI provide a fascinating insight into how the most famous of Latin historians viewed the early years of the Roman Empire.  On the way, Tacitus' descriptions of members of the imperial family, Roman commanders, barbarian chieftains, eastern kings, and even the self-serving Senate are drawn with firm strokes and a superbly concentrated economy.", 
+            "title": "Studies in Tacitus Annals I-VI", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "LAT 635", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2937, 
         "model": "course.course", 
         "fields": {
@@ -44411,19 +44655,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "GRK 632", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 2948, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Tacitus Annals I-VI provide a fascinating insight into how the most famous of Latin historians viewed the early years of the Roman Empire.  On the way, Tacitus' descriptions of members of the imperial family, Roman commanders, barbarian chieftains, eastern kings, and even the self-serving Senate are drawn with firm strokes and a superbly concentrated economy.", 
-            "title": "Studies in Tacitus Annals I-VI", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "LAT 635", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -44974,6 +45205,19 @@
         }
     }, 
     {
+        "pk": 620, 
+        "model": "course.course", 
+        "fields": {
+            "description": "These courses allow for additions to the program on a short-term basis, and for the development of future permanent courses.", 
+            "title": "Special Topics in Planning", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PLAN 474", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3008, 
         "model": "course.course", 
         "fields": {
@@ -45299,6 +45543,19 @@
         }
     }, 
     {
+        "pk": 3086, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Major field seminars meet biweekly throughout the Fall and Winter terms for discussion of a reading list of 50 books selected by the instructor.  During the subsequent Spring term major field participants read a further 50 books selected by the instructor in consultation with each participant's supervisor.", 
+            "title": "World History Major Field", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "HIST 727", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3057, 
         "model": "course.course", 
         "fields": {
@@ -45572,19 +45829,6 @@
         }
     }, 
     {
-        "pk": 3086, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Major field seminars meet biweekly throughout the Fall and Winter terms for discussion of a reading list of 50 books selected by the instructor.  During the subsequent Spring term major field participants read a further 50 books selected by the instructor in consultation with each participant's supervisor.", 
-            "title": "World History Major Field", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 727", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 3088, 
         "model": "course.course", 
         "fields": {
@@ -45607,123 +45851,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "HIST 761", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3090, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Scottish History Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 762", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3091, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Community Studies Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 763", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3092, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Early Modern European History Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 764", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3093, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Modern European History Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 765", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3094, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Gender, Women and Family Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 766", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3095, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Race, Class, Imperialism and Slavery Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 767", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3096, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "United States Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 768", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3097, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "International  Relations Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 769", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3098, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Science, Medicine and Technology Minor Area Seminar", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "HIST 770", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -46144,6 +46271,19 @@
         }
     }, 
     {
+        "pk": 3280, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course will address the principles of reliable systems including availability, security, integrity and maintainability risks and control practices that can contribute to system reliability. (Course offerings will be internet-based.)", 
+            "title": "System Reliability Principles and Criteria", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ACC 621", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3145, 
         "model": "course.course", 
         "fields": {
@@ -46365,6 +46505,19 @@
         }
     }, 
     {
+        "pk": 3970, 
+        "model": "course.course", 
+        "fields": {
+            "description": "An advanced study of the physiological processes used by animals to respond to changes in environmental conditions. The study will focus on adaptation strategies used by animals to changes in temperature and other rate controlling environmental factors.", 
+            "title": "Environmental Animal Physiology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 605", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3164, 
         "model": "course.course", 
         "fields": {
@@ -46530,6 +46683,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PSYCH 621A", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3281, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course will address the features and related implementation issues of electronic commerce systems, including order processing, payment, fulfillment, integration with other entity systems and related issues of management, performance measurement and control. (Course offerings will be internet-based.)", 
+            "title": "Electronic Commerce", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ACC 622", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -46712,6 +46878,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PSYCH 635", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3283, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course will cover the principles, leading management approaches and technologies to ensuring security of systems and information. (Course offering will be internet-based.)", 
+            "title": "IT Security", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ACC 624", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -46937,19 +47116,6 @@
         }
     }, 
     {
-        "pk": 3277, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course is designed to enhance the students' abilities to apply knowledge of accounting principles, theories, and practices through the use of multi-dimensional case studies.", 
-            "title": "Public Accounting Practice", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ACC 610", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 3208, 
         "model": "course.course", 
         "fields": {
@@ -47167,6 +47333,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PSYCH 803", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3971, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Team taught by faculty of the Aquatic Ecology Group, fundamental and emerging topics will be examined through literature review, seminar discussions and summary papers.", 
+            "title": "Advanced Aquatic Ecology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 606", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -47752,58 +47931,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ACC 604", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3279, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will address key elements of enterprise IT architecture such as networks, data bases, enterprise software, business processes and organizational structures. (Course offering will be internet-based.)", 
-            "title": "Enterprise IT Architecture and Configuration Management", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ACC 620", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3280, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will address the principles of reliable systems including availability, security, integrity and maintainability risks and control practices that can contribute to system reliability. (Course offerings will be internet-based.)", 
-            "title": "System Reliability Principles and Criteria", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ACC 621", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3281, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will address the features and related implementation issues of electronic commerce systems, including order processing, payment, fulfillment, integration with other entity systems and related issues of management, performance measurement and control. (Course offerings will be internet-based.)", 
-            "title": "Electronic Commerce", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ACC 622", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3283, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will cover the principles, leading management approaches and technologies to ensuring security of systems and information. (Course offering will be internet-based.)", 
-            "title": "IT Security", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ACC 624", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -48471,6 +48598,19 @@
         }
     }, 
     {
+        "pk": 3360, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Examines the role of accounting information in assisting entrepreneurs.  By analysing and presenting financial statements of local technology companies, students develop proficiencies in understanding and interpreting financial statement information.  Attention is also directed to the role played by management accounting information played in supporting key start-up decisions, value-creating organization strategies, operational tactics and performance measurement.", 
+            "title": "Essential Accounting for Entrepreneurs", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BET 605", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3347, 
         "model": "course.course", 
         "fields": {
@@ -48636,19 +48776,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "BET 604", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3360, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Examines the role of accounting information in assisting entrepreneurs.  By analysing and presenting financial statements of local technology companies, students develop proficiencies in understanding and interpreting financial statement information.  Attention is also directed to the role played by management accounting information played in supporting key start-up decisions, value-creating organization strategies, operational tactics and performance measurement.", 
-            "title": "Essential Accounting for Entrepreneurs", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BET 605", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -49407,6 +49534,19 @@
         }
     }, 
     {
+        "pk": 3446, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course is designed to help students understand the fundamental principles and practical methods of geotechnical earthquake engineering. This course will present basic concepts of vibratory motion, dynamics, seismology, earthquakes, and strong ground motion, and introduces procedures of deterministic and probabilistic seismic hazard analysis. Basic concepts of wave propagation are used to develop procedures for ground response analysis and to provide insight into such important problems as local site effects, seismic slope stability, and seismic design of retaining structures.", 
+            "title": "Geotechnical Earthquake Engineering", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CIVE 753", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3435, 
         "model": "course.course", 
         "fields": {
@@ -49559,19 +49699,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "CIVE 752", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3446, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course is designed to help students understand the fundamental principles and practical methods of geotechnical earthquake engineering. This course will present basic concepts of vibratory motion, dynamics, seismology, earthquakes, and strong ground motion, and introduces procedures of deterministic and probabilistic seismic hazard analysis. Basic concepts of wave propagation are used to develop procedures for ground response analysis and to provide insight into such important problems as local site effects, seismic slope stability, and seismic design of retaining structures.", 
-            "title": "Geotechnical Earthquake Engineering", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CIVE 753", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -49741,6 +49868,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "CIVE 779", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 459, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Review and extension of differential calculus for functions of one variable. Multivariable differential calculus. Partial derivatives, the Chain Rule, maxima and minima and Lagrange multipliers. Introduction to matrix algebra. [Offered: W]", 
+            "title": "Mathematics for Accounting", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "MATH 109", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -50131,6 +50271,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ECE 647", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3523, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The application of formal test methods based on the structural and behavioural properties of software systems at the unit integration, and system testing levels; for conventional and object-oriented implementations. Related Background: Prior knowledge of a programming language and a certain maturity in compilers, operating systems, abstract data structures, object-oriented and programming skills.", 
+            "title": "Software Testing", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ECE 755", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -50538,32 +50691,6 @@
         }
     }, 
     {
-        "pk": 3523, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The application of formal test methods based on the structural and behavioural properties of software systems at the unit integration, and system testing levels; for conventional and object-oriented implementations. Related Background: Prior knowledge of a programming language and a certain maturity in compilers, operating systems, abstract data structures, object-oriented and programming skills.", 
-            "title": "Software Testing", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ECE 755", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3785, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Advanced examination of theories, methods and processes of urban, regional and environmental planning through intensive examination of selected planning problems. Restricted to Planning PhD students.", 
-            "title": "PhD Research Forum 1", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PLAN 801", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 3525, 
         "model": "course.course", 
         "fields": {
@@ -50681,6 +50808,32 @@
         }
     }, 
     {
+        "pk": 3542, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Understand the basic definitions and concepts associated with power systems analysis.  Discuss in detail techniques and tools for power system analysis, with a practical perspecitve.  The course will cover short circuit power flow, stability concepts including voltage, oscillatory, transcient and frequency stability.", 
+            "title": "Power System Analysis", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ECE 6613PD", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3592, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Cartesian tensor forms of basic equations; vorticity; Reynolds number effects; ideal, irrotational flow, some exact viscous solutions. Selection of topics from: boundary layer theory with heat and mass transfer; slow viscous flows and lubrication; hydrodynamic stability of laminar flows; special topics.", 
+            "title": "Advanced Fluid Mechanics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ME 662", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3535, 
         "model": "course.course", 
         "fields": {
@@ -50794,19 +50947,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ECE 6612PD", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3542, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Understand the basic definitions and concepts associated with power systems analysis.  Discuss in detail techniques and tools for power system analysis, with a practical perspecitve.  The course will cover short circuit power flow, stability concepts including voltage, oscillatory, transcient and frequency stability.", 
-            "title": "Power System Analysis", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "ECE 6613PD", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -51370,15 +51510,15 @@
         }
     }, 
     {
-        "pk": 3592, 
+        "pk": 497, 
         "model": "course.course", 
         "fields": {
-            "description": "Cartesian tensor forms of basic equations; vorticity; Reynolds number effects; ideal, irrotational flow, some exact viscous solutions. Selection of topics from: boundary layer theory with heat and mass transfer; slow viscous flows and lubrication; hydrodynamic stability of laminar flows; special topics.", 
-            "title": "Advanced Fluid Mechanics", 
+            "description": "A user-oriented approach to the management of large collections of data. Methods used for the storage, selection and presentation of data. Common database management systems. ", 
+            "title": "Computer Applications in Business: Databases", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "ME 662", 
+            "abbrev": "CS 338", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -51665,6 +51805,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "ME 742", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3656, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course provides an opportunity for the student to independently engage in the respected tradition of the Architectural Competition.  The competition entry and accompanying research paper must focus on the use of architectural precedents as the basis for the creation of typologically based propositions.  Submission to the external competition is mandatory, the timing and detailed requirements of which will determine the personalized academic requirements for this course.", 
+            "title": "Competitions in Architecture", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "ARCH 686", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -52202,15 +52355,15 @@
         }
     }, 
     {
-        "pk": 3656, 
+        "pk": 3668, 
         "model": "course.course", 
         "fields": {
-            "description": "This course provides an opportunity for the student to independently engage in the respected tradition of the Architectural Competition.  The competition entry and accompanying research paper must focus on the use of architectural precedents as the basis for the creation of typologically based propositions.  Submission to the external competition is mandatory, the timing and detailed requirements of which will determine the personalized academic requirements for this course.", 
-            "title": "Competitions in Architecture", 
+            "description": "This course introduces the fundamental concepts for computer vision which include: sensing and image formation; early processing; image segmentation, region, growing and tracking 2-D and 3-D shape analysis and synthesis; recognition and location of objects in a 3-D environment; automated visual inspection; robotic vision.", 
+            "title": "Computer Vision", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "ARCH 686", 
+            "abbrev": "SYDE 677", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -52371,15 +52524,15 @@
         }
     }, 
     {
-        "pk": 3668, 
+        "pk": 4214, 
         "model": "course.course", 
         "fields": {
-            "description": "This course introduces the fundamental concepts for computer vision which include: sensing and image formation; early processing; image segmentation, region, growing and tracking 2-D and 3-D shape analysis and synthesis; recognition and location of objects in a 3-D environment; automated visual inspection; robotic vision.", 
-            "title": "Computer Vision", 
+            "description": "A continuation of PHYS 460A. ", 
+            "title": "Advanced Laboratory 2", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "SYDE 677", 
+            "abbrev": "PHYS 460B", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -52839,6 +52992,32 @@
         }
     }, 
     {
+        "pk": 3739, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This practicum course provides students with the opportunity to apply concepts and theories from other courses and their own reading to a better understanding of the functioning of some aspect of the tourism sector.  The practicum will be administered under the supervision of a faculty member and will also involve the production of an appropriate academic report.", 
+            "title": "Practicum in Tourism", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "TOUR 609", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 516, 
+        "model": "course.course", 
+        "fields": {
+            "description": "See the course offerings list on the Computational Mathematics website for topics available. ", 
+            "title": "Advanced Topics in Computational Mathematics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CM 498", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3722, 
         "model": "course.course", 
         "fields": {
@@ -53073,19 +53252,6 @@
         }
     }, 
     {
-        "pk": 3739, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This practicum course provides students with the opportunity to apply concepts and theories from other courses and their own reading to a better understanding of the functioning of some aspect of the tourism sector.  The practicum will be administered under the supervision of a faculty member and will also involve the production of an appropriate academic report.", 
-            "title": "Practicum in Tourism", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "TOUR 609", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 3740, 
         "model": "course.course", 
         "fields": {
@@ -53108,19 +53274,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "GGOV 628", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3744, 
-        "model": "course.course", 
-        "fields": {
-            "description": "", 
-            "title": "Readings in Global Environment", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "GGOV 629", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -53333,6 +53486,19 @@
         }
     }, 
     {
+        "pk": 3791, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Introduction to basic algorithms and techniques for numerical computing.  Error analysis, interpolation (including splines), numerical differentiation and integration, numerical linear algebra (including methods for linear systems, eigenvalue problems, and the singular value decomposition), root finding for nonlinear equations and systems, numerical ordinary differential equations, and approximation methods (including least squares, orthogonal polynomials, and Fourier transforms).", 
+            "title": "Numerical Analysis", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "CS 670", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3761, 
         "model": "course.course", 
         "fields": {
@@ -53463,15 +53629,15 @@
         }
     }, 
     {
-        "pk": 3791, 
+        "pk": 3972, 
         "model": "course.course", 
         "fields": {
-            "description": "Introduction to basic algorithms and techniques for numerical computing.  Error analysis, interpolation (including splines), numerical differentiation and integration, numerical linear algebra (including methods for linear systems, eigenvalue problems, and the singular value decomposition), root finding for nonlinear equations and systems, numerical ordinary differential equations, and approximation methods (including least squares, orthogonal polynomials, and Fourier transforms).", 
-            "title": "Numerical Analysis", 
+            "description": "Genetic aspects of the control of gene expression in bacteria, bacteriophages and (or) eukaryotes will be stressed. Recently published works will serve as the focal points for discussion. The specific content of any one set of topics to be analyzed in a particular term will be determined in consultation with the participants.", 
+            "title": "Advanced Molecular Genetics", 
             "institute": 1, 
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
-            "abbrev": "CS 670", 
+            "abbrev": "BIOL 608", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -53853,6 +54019,19 @@
         }
     }, 
     {
+        "pk": 3964, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Design of medical studies including cohort designs, case-control studies and clinical trials. Measures of association in epidemiological studies. Analysis of data from cohort studies, clinical trials and case-control studies. Other topics such as multiplicity in clinical trials, group randomized designs, sequential and group sequential procedures as time permits. Use of a statistical package (e.g. SAS or S-Plus) to analyze medical data.", 
+            "title": "Introduction  to Biostatistics and Epidemiology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "STAT 937", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3810, 
         "model": "course.course", 
         "fields": {
@@ -54230,6 +54409,32 @@
         }
     }, 
     {
+        "pk": 3965, 
+        "model": "course.course", 
+        "fields": {
+            "description": "This course will cover some of the basic tools of a statistical consultant. Topics will include the use of statistical packages, problem-solving techniques, discussion of common statistical consulting problems, effective communication of statistical concepts and management of consulting sessions.", 
+            "title": "Statistical Consulting", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "STAT 938", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3967, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Topics of current interest", 
+            "title": "Topics in Biostatistics", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "STAT 947", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3851, 
         "model": "course.course", 
         "fields": {
@@ -54447,6 +54652,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PHYS 603", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3968, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The literature and methods of Fisheries Biology. Examination and discussion of selected topics of interest to the class. Emphasis will be primarily, but not exclusively on the ecology, habitats, and management issues related to temperature freshwater fish.", 
+            "title": "Fisheries Biology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 602", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -54737,6 +54955,19 @@
         }
     }, 
     {
+        "pk": 3969, 
+        "model": "course.course", 
+        "fields": {
+            "description": "The theoretical and technological aspects of growing cells from multicellular organisms in vitro and the use of these cell cultures in cell biology, biotechnology, cancer research, developmental biology, immunology and toxicology. Specific topics will include tissue dissociation, media, contamination, microscopic examination, cell storage, cell fusion, heterokaryons, reconstituted cells, hybrids, hybridomas, and the introduction of macromolecules into cells. The stress on specific topics might change from year to year.", 
+            "title": "Animal Cells in Culture", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 604", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 3896, 
         "model": "course.course", 
         "fields": {
@@ -54902,6 +55133,19 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "PHYS 604", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 3988, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Discussion of current advances in selected topics in immunology. The areas to be covered will include cell-mediated immunity, humoral immunity, comparative immunology, and other topics of current interest.", 
+            "title": "Advanced Immunology", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "BIOL 636", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -55149,123 +55393,6 @@
             "modified_time": "2012-03-18T16:52:10.706", 
             "difficulty": null, 
             "abbrev": "STAT 929", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3964, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Design of medical studies including cohort designs, case-control studies and clinical trials. Measures of association in epidemiological studies. Analysis of data from cohort studies, clinical trials and case-control studies. Other topics such as multiplicity in clinical trials, group randomized designs, sequential and group sequential procedures as time permits. Use of a statistical package (e.g. SAS or S-Plus) to analyze medical data.", 
-            "title": "Introduction  to Biostatistics and Epidemiology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "STAT 937", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3965, 
-        "model": "course.course", 
-        "fields": {
-            "description": "This course will cover some of the basic tools of a statistical consultant. Topics will include the use of statistical packages, problem-solving techniques, discussion of common statistical consulting problems, effective communication of statistical concepts and management of consulting sessions.", 
-            "title": "Statistical Consulting", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "STAT 938", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3967, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Topics of current interest", 
-            "title": "Topics in Biostatistics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "STAT 947", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3968, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The literature and methods of Fisheries Biology. Examination and discussion of selected topics of interest to the class. Emphasis will be primarily, but not exclusively on the ecology, habitats, and management issues related to temperature freshwater fish.", 
-            "title": "Fisheries Biology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 602", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3969, 
-        "model": "course.course", 
-        "fields": {
-            "description": "The theoretical and technological aspects of growing cells from multicellular organisms in vitro and the use of these cell cultures in cell biology, biotechnology, cancer research, developmental biology, immunology and toxicology. Specific topics will include tissue dissociation, media, contamination, microscopic examination, cell storage, cell fusion, heterokaryons, reconstituted cells, hybrids, hybridomas, and the introduction of macromolecules into cells. The stress on specific topics might change from year to year.", 
-            "title": "Animal Cells in Culture", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 604", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3970, 
-        "model": "course.course", 
-        "fields": {
-            "description": "An advanced study of the physiological processes used by animals to respond to changes in environmental conditions. The study will focus on adaptation strategies used by animals to changes in temperature and other rate controlling environmental factors.", 
-            "title": "Environmental Animal Physiology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 605", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3971, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Team taught by faculty of the Aquatic Ecology Group, fundamental and emerging topics will be examined through literature review, seminar discussions and summary papers.", 
-            "title": "Advanced Aquatic Ecology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 606", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3972, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Genetic aspects of the control of gene expression in bacteria, bacteriophages and (or) eukaryotes will be stressed. Recently published works will serve as the focal points for discussion. The specific content of any one set of topics to be analyzed in a particular term will be determined in consultation with the participants.", 
-            "title": "Advanced Molecular Genetics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 608", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 3988, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Discussion of current advances in selected topics in immunology. The areas to be covered will include cell-mediated immunity, humoral immunity, comparative immunology, and other topics of current interest.", 
-            "title": "Advanced Immunology", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "BIOL 636", 
             "created_time": "2012-03-18T00:00:00"
         }
     }, 
@@ -58208,6 +58335,45 @@
         }
     }, 
     {
+        "pk": 388, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Planning sample surveys; simple random sampling; stratified sampling. Observational and experimental studies. Blocking, randomization, factorial designs. Analysis of variance. Applications of design principles. [Offered: F]", 
+            "title": "Sampling and Experimental Design (Non-Specialist Level)", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "STAT 322", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 418, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Groups, permutation groups, subgroups, homomorphisms, symmetry groups in 2 and 3 dimensions, direct products, Polya-Burnside enumeration. ", 
+            "title": "Introduction to Group Theory with Applications", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "PMATH 336", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
+        "pk": 439, 
+        "model": "course.course", 
+        "fields": {
+            "description": "Vector spaces. Linear transformations and matrices. Inner products. Eigenvalues and eigenvectors. Diagonalization. Applications. [Offered: F,S]", 
+            "title": "Applied Linear Algebra 2", 
+            "institute": 1, 
+            "modified_time": "2012-03-18T16:52:10.706", 
+            "difficulty": null, 
+            "abbrev": "MATH 225", 
+            "created_time": "2012-03-18T00:00:00"
+        }
+    }, 
+    {
         "pk": 2929, 
         "model": "course.course", 
         "fields": {
@@ -58520,123 +58686,6 @@
         }
     }, 
     {
-        "pk": 388, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Planning sample surveys; simple random sampling; stratified sampling. Observational and experimental studies. Blocking, randomization, factorial designs. Analysis of variance. Applications of design principles. [Offered: F]", 
-            "title": "Sampling and Experimental Design (Non-Specialist Level)", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "STAT 322", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 418, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Groups, permutation groups, subgroups, homomorphisms, symmetry groups in 2 and 3 dimensions, direct products, Polya-Burnside enumeration. ", 
-            "title": "Introduction to Group Theory with Applications", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PMATH 336", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 439, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Vector spaces. Linear transformations and matrices. Inner products. Eigenvalues and eigenvectors. Diagonalization. Applications. [Offered: F,S]", 
-            "title": "Applied Linear Algebra 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "MATH 225", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 459, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Review and extension of differential calculus for functions of one variable. Multivariable differential calculus. Partial derivatives, the Chain Rule, maxima and minima and Lagrange multipliers. Introduction to matrix algebra. [Offered: W]", 
-            "title": "Mathematics for Accounting", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "MATH 109", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 497, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A user-oriented approach to the management of large collections of data. Methods used for the storage, selection and presentation of data. Common database management systems. ", 
-            "title": "Computer Applications in Business: Databases", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CS 338", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 4214, 
-        "model": "course.course", 
-        "fields": {
-            "description": "A continuation of PHYS 460A. ", 
-            "title": "Advanced Laboratory 2", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PHYS 460B", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 516, 
-        "model": "course.course", 
-        "fields": {
-            "description": "See the course offerings list on the Computational Mathematics website for topics available. ", 
-            "title": "Advanced Topics in Computational Mathematics", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CM 498", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 545, 
-        "model": "course.course", 
-        "fields": {
-            "description": "Formulation of problems as integer linear programs. Solution by branch-and-bound and cutting plane algorithms. Introduction to the theory of valid inequalities and polyhedral combinatorics.", 
-            "title": "Integer Programming", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "CO 452", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
-        "pk": 620, 
-        "model": "course.course", 
-        "fields": {
-            "description": "These courses allow for additions to the program on a short-term basis, and for the development of future permanent courses.", 
-            "title": "Special Topics in Planning", 
-            "institute": 1, 
-            "modified_time": "2012-03-18T16:52:10.706", 
-            "difficulty": null, 
-            "abbrev": "PLAN 474", 
-            "created_time": "2012-03-18T00:00:00"
-        }
-    }, 
-    {
         "pk": 66, 
         "model": "course.section", 
         "fields": {
@@ -58709,20 +58758,28 @@
         }
     }, 
     {
+        "pk": 74, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 750, 
+            "start_date": "2012-03-01"
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3938, 
+            "start_date": "2012-03-01"
+        }
+    }, 
+    {
         "pk": 22, 
         "model": "course.sectionassign", 
         "fields": {
             "section": 66, 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
-        "pk": 25, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 69, 
             "user": [
                 "sli"
             ]
@@ -58745,6 +58802,16 @@
             "section": 73, 
             "user": [
                 "gli"
+            ]
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 75, 
+            "user": [
+                "sli"
             ]
         }
     }, 
@@ -58875,24 +58942,6 @@
         }
     }, 
     {
-        "pk": 2, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": "", 
-            "degree": "UG", 
-            "institute": 1, 
-            "tagline": "", 
-            "influence": 0, 
-            "grade": 6, 
-            "grade_gauge": 40, 
-            "birthday": "1990-10-06", 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
         "pk": 10, 
         "model": "account.profile", 
         "fields": {
@@ -58925,6 +58974,24 @@
             "role": "S", 
             "user": [
                 "pwang"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 3, 
+            "grade_gauge": -40, 
+            "birthday": "1990-10-06", 
+            "role": "S", 
+            "user": [
+                "sli"
             ]
         }
     }
