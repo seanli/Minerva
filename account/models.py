@@ -84,24 +84,20 @@ class Profile(models.Model):
         return SectionAssign.objects.filter(section=section, user=self.user).count() > 0
 
     def increment_grade(self, delta):
-        if delta >= 0:
-            self.grade_gauge += delta
-            if self.grade_gauge >= GRADE_STEP:
-                self.grade += 1
-                self.grade_gauge -= GRADE_STEP
-                if self.grade >= GRADE_MAX:
-                    self.grade = GRADE_MAX
-                    self.grade_gauge = 100
-            self.save()
-        elif delta < 0:
-            self.grade_gauge += delta
-            if self.grade_gauge <= -GRADE_STEP:
-                self.grade -= 1
-                self.grade_gauge += GRADE_STEP
-                if self.grade <= GRADE_MIN:
-                    self.grade = GRADE_MIN
-                    self.grade_gauge = -100
-            self.save()
+        self.grade_gauge += delta
+        if self.grade_gauge >= GRADE_STEP:
+            self.grade += 1
+            self.grade_gauge -= GRADE_STEP
+            if self.grade >= GRADE_MAX:
+                self.grade = GRADE_MAX
+                self.grade_gauge = 100
+        elif self.grade_gauge <= -GRADE_STEP:
+            self.grade -= 1
+            self.grade_gauge += GRADE_STEP
+            if self.grade <= GRADE_MIN:
+                self.grade = GRADE_MIN
+                self.grade_gauge = -100
+        self.save()
 
     class Meta:
         db_table = 'mva_profile'
