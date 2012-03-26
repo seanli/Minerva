@@ -1,6 +1,6 @@
 from settings_base import *
 
-ENVIRONMENT = 'Dev'
+ENVIRONMENT = 'DEV'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
