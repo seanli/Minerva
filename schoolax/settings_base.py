@@ -115,6 +115,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 TEMPLATE_VISIBLE_SETTINGS = (
     'DEBUG',
     'BRAND_NAME',
+    'ENVIRONMENT',
 )
 
 # A sample logging configuration. The only tangible logging

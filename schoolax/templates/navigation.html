@@ -4,7 +4,7 @@
   <div class="navbar-inner">
     <div class="container-fluid">
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-      <a class="brand" href="{% url home %}">{{ BRAND_NAME }}</a>
+      <a class="brand" href="{% url home %}">{{ BRAND_NAME }}{% if ENVIRONMENT == 'QA' %} QA{% endif %}</a>
       <div class="nav-collapse">
         <ul class="nav">
           {% if user.is_authenticated %}

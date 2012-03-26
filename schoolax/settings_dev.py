@@ -1,5 +1,7 @@
 from settings_base import *
 
+ENVIRONMENT = 'Dev'
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 DAJAXICE_DEBUG = DEBUG

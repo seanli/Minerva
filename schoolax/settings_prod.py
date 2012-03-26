@@ -1,5 +1,7 @@
 from settings_base import *
 
+ENVIRONMENT = 'PROD'
+
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 DAJAXICE_DEBUG = DEBUG
