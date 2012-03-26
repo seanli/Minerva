@@ -15,6 +15,7 @@ indexes/
 
 # Install Files #
 tools/src/
+tools/build/
 
 # Compiled Files #
 *.pyc
