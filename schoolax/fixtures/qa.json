@@ -179,12 +179,30 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-03-26T16:15:51.891", 
+            "last_login": "2012-03-26T16:52:40.647", 
             "groups": [], 
             "user_permissions": [], 
             "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
             "email": "s67li@uwaterloo.ca", 
             "date_joined": "2012-02-08T00:12:47"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "Admin", 
+            "last_name": "Schoolax", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-03-26T16:52:03", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Lgo6foEb7neN$ZeTa0uMRHFc4wXnf5sCnlmSRxYWnvIs+Nx08I1W+ijY=", 
+            "email": "admin@schoolax.com", 
+            "date_joined": "2012-03-26T16:52:03"
         }
     }, 
     {
@@ -58992,6 +59010,24 @@
             "role": "S", 
             "user": [
                 "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": [
+                "admin"
             ]
         }
     }
