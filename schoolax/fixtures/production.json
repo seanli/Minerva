@@ -179,30 +179,12 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-03-26T15:46:09.380", 
+            "last_login": "2012-03-26T16:15:51.891", 
             "groups": [], 
             "user_permissions": [], 
             "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
             "email": "s67li@uwaterloo.ca", 
             "date_joined": "2012-02-08T00:12:47"
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "admin", 
-            "first_name": "Admin", 
-            "last_name": "Schoolax", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-03-26T15:51:27.099", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$hhX3U4kJrBs4$rb2hktRsM6G8VwO2y1IXsvdlcN1Lwt3yDPC5SzYwU54=", 
-            "email": "admin@schoolax.com", 
-            "date_joined": "2012-03-26T15:45:52"
         }
     }, 
     {
@@ -4121,11 +4103,11 @@
         "model": "backstage.wiki", 
         "fields": {
             "created_time": "2012-03-22T00:00:00", 
-            "document": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata production## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n\r\n=== Front-End Components\r\n\r\n* JQuery\r\n* JQuery UI\r\n* DataTables\r\n* WayPoints\r\n* Less\r\n** Compilers:\r\n*** WinLess (Windows)\r\n*** Crunch (Mac)\r\n*** SimpLess (Cross-Platform)\r\n* Bootstrap", 
+            "document": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata base## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.\r\n\r\n=== Front-End Components\r\n\r\n* JQuery\r\n* JQuery UI\r\n* DataTables\r\n* WayPoints\r\n* Less\r\n** Compilers:\r\n*** WinLess (Windows)\r\n*** Crunch (Mac)\r\n*** SimpLess (Cross-Platform)\r\n* Bootstrap", 
             "author": [
                 "sli"
             ], 
-            "modified_time": "2012-03-26T15:44:21.288", 
+            "modified_time": "2012-03-26T16:15:03.300", 
             "title": "Setting Up Environment"
         }
     }, 
@@ -59010,24 +58992,6 @@
             "role": "S", 
             "user": [
                 "sli"
-            ]
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": null, 
-            "degree": null, 
-            "institute": 1, 
-            "tagline": null, 
-            "influence": 0, 
-            "grade": 0, 
-            "grade_gauge": 0, 
-            "birthday": null, 
-            "role": "S", 
-            "user": [
-                "admin"
             ]
         }
     }
