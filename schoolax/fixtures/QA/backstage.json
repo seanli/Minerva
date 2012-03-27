@@ -1,0 +1,365 @@
+[
+    {
+        "pk": 9, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "C", 
+            "description": "Rename badge to emblem.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:27Z", 
+            "summary": "Emblem", 
+            "priority": 4, 
+            "created_time": "2012-03-02T19:23:42Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "F", 
+            "description": "Implement the Documents feature in Backstage.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:34Z", 
+            "summary": "Backstage Documents", 
+            "priority": 0, 
+            "created_time": "2012-03-02T10:41:41Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "R", 
+            "category": "C", 
+            "description": "Please improve the mobile version of the website.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:40Z", 
+            "summary": "Mobile Version", 
+            "priority": 1, 
+            "created_time": "2012-03-02T00:29:56Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "C", 
+            "category": "F", 
+            "description": "Add feature to indicate a ticket's status.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:48Z", 
+            "summary": "Ticket Status", 
+            "priority": 1, 
+            "created_time": "2012-03-01T23:48:30Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "C", 
+            "description": "Re-brand Django CMS with current site's styles.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:53:41Z", 
+            "summary": "Re-brand Django CMS", 
+            "priority": 4, 
+            "created_time": "2012-03-09T23:49:52Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "F", 
+            "description": "1. Resolution\r\n2. Action Log\r\n3. Issue Linking\r\n4. Projects\r\n5. Milestones?\r\n6. Reassign\r\n7. Comments\r\n8. Attachments", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:53:47Z", 
+            "summary": "Ticket System Features", 
+            "priority": 0, 
+            "created_time": "2012-03-09T23:44:07Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "Refactor for loops in templates in the following format:\r\n\r\n{% for ... %}\r\n...\r\n{% empty %}\r\n...\r\n{% endfor %}", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:53:54Z", 
+            "summary": "Refactor For Loops", 
+            "priority": 1, 
+            "created_time": "2012-03-09T23:36:25Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "E", 
+            "description": "Using Python modules such as Haystack for searching larger sets of data.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:01Z", 
+            "summary": "Incorporate Search Engine", 
+            "priority": 4, 
+            "created_time": "2012-03-09T21:34:25Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "F", 
+            "description": "Allow logging to database, and if cannot log into database, log to a log file instead.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:05Z", 
+            "summary": "Logging to Database", 
+            "priority": 3, 
+            "created_time": "2012-03-07T23:11:13Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "E", 
+            "description": "Make Typeahead and Datatable components bind to AJAX responses.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:09Z", 
+            "summary": "AJAX'ify", 
+            "priority": 2, 
+            "created_time": "2012-03-06T21:44:39Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "Encapsulate AJAX Form", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:16Z", 
+            "summary": "Encapsulate AJAX Form", 
+            "priority": 1, 
+            "created_time": "2012-03-06T21:43:33Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "N", 
+            "category": "C", 
+            "description": "Change the name and label color of priorities.\r\n\r\nBlocker\r\nCritical\r\nMajor\r\nNormal\r\nMinor\r\nTrivial", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-10T05:54:22Z", 
+            "summary": "Priority Name Change", 
+            "priority": 1, 
+            "created_time": "2012-03-04T12:43:16Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "L", 
+            "category": "C", 
+            "description": "Homeroom", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-18T03:30:45.391Z", 
+            "summary": "Homeroom", 
+            "priority": 5, 
+            "created_time": "2012-03-14T22:39:46.653Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "C", 
+            "category": "C", 
+            "description": "Rename people to crowd.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-22T03:34:16.513Z", 
+            "summary": "Crowd", 
+            "priority": 3, 
+            "created_time": "2012-03-10T00:34:55Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "T", 
+            "description": "import datetime\r\n\r\nclass User(models.Model):\r\n    created     = models.DateTimeField(editable=False)\r\n    modified    = models.DateTimeField()\r\n\r\n    def save(self, *args, **kwargs):\r\n        ''' On save, update timestamps '''\r\n        if not self.id:\r\n            self.created = datetime.datetime.today()\r\n        self.modified = datetime.datetime.today()\r\n        super(User, self).save(*args, **kwargs)", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-23T00:20:05.783Z", 
+            "summary": "Take-out Auto Now (Add)", 
+            "priority": 2, 
+            "created_time": "2012-03-23T00:20:05.783Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "L", 
+            "category": null, 
+            "description": "Web File Encryption", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-23T17:38:11.447Z", 
+            "summary": "Web File Encryption", 
+            "priority": null, 
+            "created_time": "2012-03-23T17:38:11.447Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "L", 
+            "category": null, 
+            "description": "Development Framework", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-24T11:10:42.410Z", 
+            "summary": "Development Framework", 
+            "priority": null, 
+            "created_time": "2012-03-24T11:10:42.410Z", 
+            "owner": null
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "backstage.wiki", 
+        "fields": {
+            "created_time": "2012-03-22T05:00:00Z", 
+            "document": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata base## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.", 
+            "author": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-26T23:36:49.077Z", 
+            "title": "Setting Up Environment"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "backstage.wiki", 
+        "fields": {
+            "created_time": "2012-03-26T23:04:31.143Z", 
+            "document": "=== Basic Commands ===\r\n\r\nCheckout project repository:\r\n{{{\r\ngit clone git@github.com:Elesant/Minerva.git\r\n}}}\r\n\r\nHere's the basic workflow for implementing features and debugging:\r\n{{{\r\n# Get newest version of code\r\ngit pull\r\n# Create and switch to the branch\r\ngit checkout -b <branch-name> master\r\n# Add modified files\r\ngit add <file or directory>\r\n# Remove modified files\r\ngit rm <file>\r\n# List files that are changed\r\ngit status\r\n# Local check-in the code\r\ngit commit -m \"Comments.\" -a\r\n# Switch back to master\r\ngit checkout master\r\n# Get changes from master\r\ngit pull\r\n# Squash will turn this into a single commit\r\ngit merge --squash <branch-name>\r\n# Delete the branch\r\ngit branch -d <branch-name>\r\n# Push your code changes to master\r\ngit push\r\n}}}\r\n\r\n=== More Commands ===\r\n\r\nTemporarily undo your local change (but save them):\r\n{{{\r\ngit stash\r\n}}}\r\n\r\nRestore your local changes:\r\n{{{ \r\ngit stash apply\r\n}}}\r\n\r\nShow history, Branch, switch and list branches:\r\n{{{\r\ngit log\r\ngit branch <branch>\r\ngit checkout <branch>\r\ngit branch -a\r\n}}}\r\n\r\n=== Advanced Commands ===\r\n\r\n{{{\r\nreflog\r\ncherry-pick\r\nrebase \r\nclean -dfx\r\nreset --hard\r\n}}}\r\n\r\n=== Git GUI ===\r\n\r\n* [[http://sourceforge.net/projects/qgit/|QGit]] (Linux)\r\n* [[http://gitx.frim.nl/index.html|GitX]] / [[http://mac.github.com/|Github App]] (Mac)\r\n* [[http://code.google.com/p/msysgit/downloads/list|msysGit]] / [[http://code.google.com/p/tortoisegit/downloads/list|TortoiseGit]] (Windows)", 
+            "author": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-26T23:36:12.015Z", 
+            "title": "Git Tutorial"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "backstage.wiki", 
+        "fields": {
+            "created_time": "2012-03-27T00:11:48.367Z", 
+            "document": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //crowd// - code related to the Crowd component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].", 
+            "author": [
+                "sli"
+            ], 
+            "modified_time": "2012-03-27T01:13:25.666Z", 
+            "title": "Development Process"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "backstage.logmessage", 
+        "fields": {
+            "line_number": 142, 
+            "level": 30, 
+            "user": null, 
+            "traceback": "Traceback (most recent call last):\n\n  File \"/home/lisean/webapps/minerva_qa/lib/python2.7/django/core/handlers/base.py\", line 101, in get_response\n    request.path_info)\n\n  File \"/home/lisean/webapps/minerva_qa/lib/python2.7/django/core/urlresolvers.py\", line 315, in resolve\n    raise Resolver404({'tried': tried, 'path': new_path})\n\nResolver404: {'path': u'favicon.ico', 'tried': [[<RegexURLResolver <module 'bulletin.urls' from '/home/lisean/webapps/minerva_qa/Minerva/bulletin/urls.pyc'> (None:None) >, <RegexURLPattern bulletin ^bulletin/>], [<RegexURLResolver <module 'bulletin.urls' from '/home/lisean/webapps/minerva_qa/Minerva/bulletin/urls.pyc'> (None:None) >, <RegexURLPattern home ^$>], [<RegexURLResolver <module 'account.urls' from '/home/lisean/webapps/minerva_qa/Minerva/account/urls.pyc'> (None:None) >, <RegexURLPattern login ^login/>], [<RegexURLResolver <module 'account.urls' from '/home/lisean/webapps/minerva_qa/Minerva/account/urls.pyc'> (None:None) >, <RegexURLPattern logout ^logout/$>], [<RegexURLResolver <module 'account.urls' from '/home/lisean/webapps/minerva_qa/Minerva/account/urls.pyc'> (None:None) >, <RegexURLPattern signup ^signup/$>], [<RegexURLResolver <module 'homeroom.urls' from '/home/lisean/webapps/minerva_qa/Minerva/homeroom/urls.pyc'> (None:None) >, <RegexURLPattern homeroom ^homeroom/$>], [<RegexURLResolver <module 'crowd.urls' from '/home/lisean/webapps/minerva_qa/Minerva/crowd/urls.pyc'> (None:None) >, <RegexURLPattern crowd ^crowd/$>], [<RegexURLResolver <module 'crowd.urls' from '/home/lisean/webapps/minerva_qa/Minerva/crowd/urls.pyc'> (None:None) >, <RegexURLPattern None ^crowd/(?P<username>\\w+)/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern backstage_tickets ^backstage/tickets/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern None ^backstage/tickets/(?P<ticket_id>\\d+)/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern backstage_wiki ^backstage/wiki/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern None ^backstage/wiki/(?P<wiki_id>\\d+)/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern backstage_dashboard ^backstage/dashboard/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern backstage ^backstage/$>], [<RegexURLResolver <module 'backstage.urls' from '/home/lisean/webapps/minerva_qa/Minerva/backstage/urls.pyc'> (None:None) >, <RegexURLPattern None ^onerror/$>], [<RegexURLResolver <module 'data.urls' from '/home/lisean/webapps/minerva_qa/Minerva/data/urls.pyc'> (None:None) >, <RegexURLPattern None ^autocomplete_course/>], [<RegexURLResolver <module 'data.urls' from '/home/lisean/webapps/minerva_qa/Minerva/data/urls.pyc'> (None:None) >, <RegexURLPattern None ^autocomplete_specialization/>], [<RegexURLResolver <module 'data.urls' from '/home/lisean/webapps/minerva_qa/Minerva/data/urls.pyc'> (None:None) >, <RegexURLPattern None ^autocomplete_skill/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/lisean/webapps/minerva_qa/lib/python2.7/django/contrib/admindocs/urls.pyc'> (None:None) ^admin/doc/>], [<RegexURLResolver [<RegexURLPattern index ^$>, <RegexURLPattern logout ^logout/$>, <RegexURLPattern password_change ^password_change/$>, <RegexURLPattern password_change_done ^password_change/done/$>, <RegexURLPattern jsi18n ^jsi18n/$>, <RegexURLPattern None ^r/(?P<content_type_id>\\d+)/(?P<object_id>.+)/$>, <RegexURLPattern app_list ^(?P<app_label>\\w+)/$>, <RegexURLResolver [<RegexURLPattern None ^(\\d+)/password/$>, <RegexURLPattern auth_user_changelist ^$>, <RegexURLPattern auth_user_add ^add/$>, <RegexURLPattern auth_user_history ^(.+)/history/$>, <RegexURLPattern auth_user_delete ^(.+)/delete/$>, <RegexURLPattern auth_user_change ^(.+)/$>] (None:None) ^auth/user/>, <RegexURLResolver [<RegexURLPattern core_provincestate_changelist ^$>, <RegexURLPattern core_provincestate_add ^add/$>, <RegexURLPattern core_provincestate_history ^(.+)/history/$>, <RegexURLPattern core_provincestate_delete ^(.+)/delete/$>, <RegexURLPattern core_provincestate_change ^(.+)/$>] (None:None) ^core/provincestate/>, <RegexURLResolver [<RegexURLPattern auth_group_changelist ^$>, <RegexURLPattern auth_group_add ^add/$>, <RegexURLPattern auth_group_history ^(.+)/history/$>, <RegexURLPattern auth_group_delete ^(.+)/delete/$>, <RegexURLPattern auth_group_change ^(.+)/$>] (None:None) ^auth/group/>, <RegexURLResolver [<RegexURLPattern core_feedback_changelist ^$>, <RegexURLPattern core_feedback_add ^add/$>, <RegexURLPattern core_feedback_history ^(.+)/history/$>, <RegexURLPattern core_feedback_delete ^(.+)/delete/$>, <RegexURLPattern core_feedback_change ^(.+)/$>] (None:None) ^core/feedback/>, <RegexURLResolver [<RegexURLPattern core_institute_changelist ^$>, <RegexURLPattern core_institute_add ^add/$>, <RegexURLPattern core_institute_history ^(.+)/history/$>, <RegexURLPattern core_institute_delete ^(.+)/delete/$>, <RegexURLPattern core_institute_change ^(.+)/$>] (None:None) ^core/institute/>, <RegexURLResolver [<RegexURLPattern sites_site_changelist ^$>, <RegexURLPattern sites_site_add ^add/$>, <RegexURLPattern sites_site_history ^(.+)/history/$>, <RegexURLPattern sites_site_delete ^(.+)/delete/$>, <RegexURLPattern sites_site_change ^(.+)/$>] (None:None) ^sites/site/>, <RegexURLResolver [<RegexURLPattern core_badge_changelist ^$>, <RegexURLPattern core_badge_add ^add/$>, <RegexURLPattern core_badge_history ^(.+)/history/$>, <RegexURLPattern core_badge_delete ^(.+)/delete/$>, <RegexURLPattern core_badge_change ^(.+)/$>] (None:None) ^core/badge/>, <RegexURLResolver [<RegexURLPattern account_contact_changelist ^$>, <RegexURLPattern account_contact_add ^add/$>, <RegexURLPattern account_contact_history ^(.+)/history/$>, <RegexURLPattern account_contact_delete ^(.+)/delete/$>, <RegexURLPattern account_contact_change ^(.+)/$>] (None:None) ^account/contact/>, <RegexURLResolver [<RegexURLPattern course_section_changelist ^$>, <RegexURLPattern course_section_add ^add/$>, <RegexURLPattern course_section_history ^(.+)/history/$>, <RegexURLPattern course_section_delete ^(.+)/delete/$>, <RegexURLPattern course_section_change ^(.+)/$>] (None:None) ^course/section/>, <RegexURLResolver [<RegexURLPattern core_country_changelist ^$>, <RegexURLPattern core_country_add ^add/$>, <RegexURLPattern core_country_history ^(.+)/history/$>, <RegexURLPattern core_country_delete ^(.+)/delete/$>, <RegexURLPattern core_country_change ^(.+)/$>] (None:None) ^core/country/>, <RegexURLResolver [<RegexURLPattern core_webfile_changelist ^$>, <RegexURLPattern core_webfile_add ^add/$>, <RegexURLPattern core_webfile_history ^(.+)/history/$>, <RegexURLPattern core_webfile_delete ^(.+)/delete/$>, <RegexURLPattern core_webfile_change ^(.+)/$>] (None:None) ^core/webfile/>, <RegexURLResolver [<RegexURLPattern core_encouragement_changelist ^$>, <RegexURLPattern core_encouragement_add ^add/$>, <RegexURLPattern core_encouragement_history ^(.+)/history/$>, <RegexURLPattern core_encouragement_delete ^(.+)/delete/$>, <RegexURLPattern core_encouragement_change ^(.+)/$>] (None:None) ^core/encouragement/>, <RegexURLResolver [<RegexURLPattern core_specialization_changelist ^$>, <RegexURLPattern core_specialization_add ^add/$>, <RegexURLPattern core_specialization_history ^(.+)/history/$>, <RegexURLPattern core_specialization_delete ^(.+)/delete/$>, <RegexURLPattern core_specialization_change ^(.+)/$>] (None:None) ^core/specialization/>, <RegexURLResolver [<RegexURLPattern course_review_changelist ^$>, <RegexURLPattern course_review_add ^add/$>, <RegexURLPattern course_review_history ^(.+)/history/$>, <RegexURLPattern course_review_delete ^(.+)/delete/$>, <RegexURLPattern course_review_change ^(.+)/$>] (None:None) ^course/review/>, <RegexURLResolver [<RegexURLPattern course_course_changelist ^$>, <RegexURLPattern course_course_add ^add/$>, <RegexURLPattern course_course_history ^(.+)/history/$>, <RegexURLPattern course_course_delete ^(.+)/delete/$>, <RegexURLPattern course_course_change ^(.+)/$>] (None:None) ^course/course/>, <RegexURLResolver [<RegexURLPattern backstage_wiki_changelist ^$>, <RegexURLPattern backstage_wiki_add ^add/$>, <RegexURLPattern backstage_wiki_history ^(.+)/history/$>, <RegexURLPattern backstage_wiki_delete ^(.+)/delete/$>, <RegexURLPattern backstage_wiki_change ^(.+)/$>] (None:None) ^backstage/wiki/>, <RegexURLResolver [<RegexURLPattern core_skill_changelist ^$>, <RegexURLPattern core_skill_add ^add/$>, <RegexURLPattern core_skill_history ^(.+)/history/$>, <RegexURLPattern core_skill_delete ^(.+)/delete/$>, <RegexURLPattern core_skill_change ^(.+)/$>] (None:None) ^core/skill/>, <RegexURLResolver [<RegexURLPattern backstage_logmessage_changelist ^$>, <RegexURLPattern backstage_logmessage_add ^add/$>, <RegexURLPattern backstage_logmessage_history ^(.+)/history/$>, <RegexURLPattern backstage_logmessage_delete ^(.+)/delete/$>, <RegexURLPattern backstage_logmessage_change ^(.+)/$>] (None:None) ^backstage/logmessage/>, <RegexURLResolver [<RegexURLPattern backstage_ticket_changelist ^$>, <RegexURLPattern backstage_ticket_add ^add/$>, <RegexURLPattern backstage_ticket_history ^(.+)/history/$>, <RegexURLPattern backstage_ticket_delete ^(.+)/delete/$>, <RegexURLPattern backstage_ticket_change ^(.+)/$>] (None:None) ^backstage/ticket/>] (admin:admin) ^admin/>], [<RegexURLResolver <module 'dajaxice.urls' from '/home/lisean/lib/python2.7/django_dajaxice-0.2-py2.7.egg/dajaxice/urls.pyc'> (None:None) ^dajaxice/>]]}\n", 
+            "request": null, 
+            "uri_path": null, 
+            "logger_name": "django.request", 
+            "message": "Not Found: /favicon.ico", 
+            "logged_time": "2012-03-26T23:19:08.669Z", 
+            "file_path": "/home/lisean/webapps/minerva_qa/lib/python2.7/django/core/handlers/base.py", 
+            "function_name": "get_response"
+        }
+    }
+]
