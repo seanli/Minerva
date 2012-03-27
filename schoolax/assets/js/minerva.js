@@ -27,6 +27,27 @@ function confirm_modal(options) {
   });
 };
 
+// Raise a message modal dialog
+function message_modal(options) {
+  var defaults = {
+    heading : 'Message Heading',
+    message : 'This is the actual message.',
+    ok : 'OK',
+  };
+  var options = $.extend(defaults, options);
+
+  var html = '<div class="modal fade" id="message-modal"><div class="modal-header"><a class="close" data-dismiss="modal">&times;</a>' + 
+    '<h3>#Heading#</h3></div><div class="modal-body">' + 
+    '#Message#</div><div class="modal-footer">' + 
+    '<a href="#" class="btn btn-primary" data-dismiss="modal">#OK#</a></div></div>';
+  html = html.replace('#Heading#', options.heading).replace('#Message#', options.message).replace('#OK#', options.ok);
+  $('body').append(html);
+  $('#message-modal').modal('show');
+  $('#message-modal').on('hidden', function() {
+    $(this).remove();
+  });
+};
+
 // Escapes regex characters
 RegExp.escape = function(text) {
   return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");

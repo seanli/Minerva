@@ -37,9 +37,44 @@ class Wiki(models.Model):
     def __unicode__(self):
         return self.title
 
+    def save(self, user=None, *args, **kwargs):
+        try:
+            old_version = Wiki.objects.get(id=self.id)
+        except Wiki.DoesNotExist:
+            old_version = None
+        super(Wiki, self).save(*args, **kwargs)
+        if old_version != None and (self.document != old_version.document or self.title != old_version.title):
+            revision_history = WikiRevisionHistory()
+            revision_history.wiki = self
+            revision_history.title_from = old_version.title
+            revision_history.title_to = self.title
+            revision_history.document_from = old_version.document
+            revision_history.document_to = self.document
+            revision_history.modified_by = user
+            revision_history.save()
+
     class Meta:
         db_table = 'bsg_wiki'
         verbose_name_plural = 'wiki'
+
+
+class WikiRevisionHistory(models.Model):
+
+    wiki = models.ForeignKey(Wiki)
+    title_from = models.CharField(max_length=100)
+    title_to = models.CharField(max_length=100)
+    document_from = models.TextField()
+    document_to = models.TextField()
+    modified_by = models.ForeignKey(User, null=True, blank=True)
+    created_time = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return '%s: %s' % (self.wiki, unicode(self.created_time))
+
+    class Meta:
+        db_table = 'bsg_wiki_revision_history'
+        verbose_name = 'wiki revision history'
+        verbose_name_plural = 'wiki revision histories'
 
 
 class WikiAttachmentAssign(models.Model):

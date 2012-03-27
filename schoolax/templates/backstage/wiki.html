@@ -14,6 +14,8 @@
     {% include "backstage/sidebar.html" %}
   </div>
   <div class="span9">
+    <a href="/backstage/wiki_edit" class="btn btn-primary btn-small">Create</a>
+    <div class="vertical-space"></div><div class="vertical-space"></div>
     {% for w in wikis %}
     <div class="well well-small">
       <a href="{% url backstage_wiki %}{{ w.id }}"> {{ w.title }}</a>
