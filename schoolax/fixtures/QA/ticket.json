@@ -9,10 +9,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:27Z", 
+            "modified_time": "2012-03-09T21:54:27", 
             "summary": "Emblem", 
             "priority": 4, 
-            "created_time": "2012-03-02T19:23:42Z", 
+            "created_time": "2012-03-02T11:23:42", 
             "owner": [
                 "sli"
             ]
@@ -28,10 +28,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:34Z", 
+            "modified_time": "2012-03-09T21:54:34", 
             "summary": "Backstage Documents", 
             "priority": 0, 
-            "created_time": "2012-03-02T10:41:41Z", 
+            "created_time": "2012-03-02T02:41:41", 
             "owner": null
         }
     }, 
@@ -45,10 +45,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:40Z", 
+            "modified_time": "2012-03-09T21:54:40", 
             "summary": "Mobile Version", 
             "priority": 1, 
-            "created_time": "2012-03-02T00:29:56Z", 
+            "created_time": "2012-03-01T16:29:56", 
             "owner": [
                 "sli"
             ]
@@ -64,10 +64,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:48Z", 
+            "modified_time": "2012-03-09T21:54:48", 
             "summary": "Ticket Status", 
             "priority": 1, 
-            "created_time": "2012-03-01T23:48:30Z", 
+            "created_time": "2012-03-01T15:48:30", 
             "owner": [
                 "sli"
             ]
@@ -83,10 +83,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:53:41Z", 
+            "modified_time": "2012-03-09T21:53:41", 
             "summary": "Re-brand Django CMS", 
             "priority": 4, 
-            "created_time": "2012-03-09T23:49:52Z", 
+            "created_time": "2012-03-09T15:49:52", 
             "owner": null
         }
     }, 
@@ -100,10 +100,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:53:47Z", 
+            "modified_time": "2012-03-09T21:53:47", 
             "summary": "Ticket System Features", 
             "priority": 0, 
-            "created_time": "2012-03-09T23:44:07Z", 
+            "created_time": "2012-03-09T15:44:07", 
             "owner": [
                 "sli"
             ]
@@ -119,10 +119,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:53:54Z", 
+            "modified_time": "2012-03-09T21:53:54", 
             "summary": "Refactor For Loops", 
             "priority": 1, 
-            "created_time": "2012-03-09T23:36:25Z", 
+            "created_time": "2012-03-09T15:36:25", 
             "owner": [
                 "sli"
             ]
@@ -138,10 +138,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:01Z", 
+            "modified_time": "2012-03-09T21:54:01", 
             "summary": "Incorporate Search Engine", 
             "priority": 4, 
-            "created_time": "2012-03-09T21:34:25Z", 
+            "created_time": "2012-03-09T13:34:25", 
             "owner": null
         }
     }, 
@@ -155,10 +155,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:05Z", 
+            "modified_time": "2012-03-09T21:54:05", 
             "summary": "Logging to Database", 
             "priority": 3, 
-            "created_time": "2012-03-07T23:11:13Z", 
+            "created_time": "2012-03-07T15:11:13", 
             "owner": null
         }
     }, 
@@ -172,10 +172,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:09Z", 
+            "modified_time": "2012-03-09T21:54:09", 
             "summary": "AJAX'ify", 
             "priority": 2, 
-            "created_time": "2012-03-06T21:44:39Z", 
+            "created_time": "2012-03-06T13:44:39", 
             "owner": [
                 "sli"
             ]
@@ -191,10 +191,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:16Z", 
+            "modified_time": "2012-03-09T21:54:16", 
             "summary": "Encapsulate AJAX Form", 
             "priority": 1, 
-            "created_time": "2012-03-06T21:43:33Z", 
+            "created_time": "2012-03-06T13:43:33", 
             "owner": [
                 "sli"
             ]
@@ -210,10 +210,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-10T05:54:22Z", 
+            "modified_time": "2012-03-09T21:54:22", 
             "summary": "Priority Name Change", 
             "priority": 1, 
-            "created_time": "2012-03-04T12:43:16Z", 
+            "created_time": "2012-03-04T04:43:16", 
             "owner": null
         }
     }, 
@@ -227,10 +227,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-18T03:30:45.391Z", 
+            "modified_time": "2012-03-17T20:30:45.391", 
             "summary": "Homeroom", 
             "priority": 5, 
-            "created_time": "2012-03-14T22:39:46.653Z", 
+            "created_time": "2012-03-14T15:39:46.653", 
             "owner": null
         }
     }, 
@@ -244,10 +244,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-22T03:34:16.513Z", 
+            "modified_time": "2012-03-21T20:34:16.513", 
             "summary": "Crowd", 
             "priority": 3, 
-            "created_time": "2012-03-10T00:34:55Z", 
+            "created_time": "2012-03-09T16:34:55", 
             "owner": [
                 "sli"
             ]
@@ -263,10 +263,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-23T00:20:05.783Z", 
+            "modified_time": "2012-03-22T17:20:05.783", 
             "summary": "Take-out Auto Now (Add)", 
             "priority": 2, 
-            "created_time": "2012-03-23T00:20:05.783Z", 
+            "created_time": "2012-03-22T17:20:05.783", 
             "owner": [
                 "sli"
             ]
@@ -282,10 +282,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-23T17:38:11.447Z", 
+            "modified_time": "2012-03-23T10:38:11.447", 
             "summary": "Web File Encryption", 
             "priority": null, 
-            "created_time": "2012-03-23T17:38:11.447Z", 
+            "created_time": "2012-03-23T10:38:11.447", 
             "owner": null
         }
     }, 
@@ -299,10 +299,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-24T11:10:42.410Z", 
+            "modified_time": "2012-03-24T04:10:42.410", 
             "summary": "Development Framework", 
             "priority": null, 
-            "created_time": "2012-03-24T11:10:42.410Z", 
+            "created_time": "2012-03-24T04:10:42.410", 
             "owner": null
         }
     }
