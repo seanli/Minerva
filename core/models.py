@@ -145,6 +145,7 @@ class Encouragement(models.Model):
     person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
     sent_time = models.DateTimeField(auto_now_add=True)
     anonymous = models.BooleanField(default=False)
+    #approved = models.BooleanField(default=False)
 
     def __unicode__(self):
         return 'To %s: %s...' % (self.person_to, self.message[:10])
