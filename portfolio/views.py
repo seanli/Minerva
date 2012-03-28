@@ -3,13 +3,13 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.template import RequestContext
 from django.shortcuts import render_to_response
-from crowd.forms import AddSpecializationForm, AddSkillForm, EncouragementForm
+from portfolio.forms import AddSpecializationForm, AddSkillForm, EncouragementForm
 from account.models import Profile
 from core.models import BadgeAssign, Encouragement
 
 
 @login_required
-def crowd(request, username=None):
+def portfolio(request, username=None):
     if username == None:
         user = request.user
     else:
@@ -33,6 +33,6 @@ def crowd(request, username=None):
         context['add_specialization_form'] = add_specialization_form
         context['add_skill_form'] = add_skill_form
         context['encouragement_form'] = encouragement_form
-        return render_to_response('crowd/main.html', context)
+        return render_to_response('portfolio/main.html', context)
     else:
         return HttpResponse('User Not Found!')

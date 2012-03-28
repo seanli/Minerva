@@ -39,8 +39,8 @@
         <div class="bar"></div>
       </div>
       {% if viewing_user == user %}
-      <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
-      <a class="btn btn-primary btn-mini" onclick="Dajaxice.crowd.minus_exp(update_exp);"> <i class="icon-minus icon-white"></i> EXP</a>
+      <a class="btn btn-primary btn-mini" onclick="Dajaxice.portfolio.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
+      <a class="btn btn-primary btn-mini" onclick="Dajaxice.portfolio.minus_exp(update_exp);"> <i class="icon-minus icon-white"></i> EXP</a>
       {% endif %}
     </div>
     <div class="row-fluid">
@@ -79,7 +79,7 @@
         <h6>{{ encouragement.sent_time }}</h6>
         <p>
           <i>"{{ encouragement.message }}"</i>
-        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url crowd %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
+        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url portfolio %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
       </blockquote>
       {% empty %} <h6>No Encouragement Yet!</h6>
       {% endfor %}
@@ -98,7 +98,7 @@
       <div class="vertical-space"></div>
       {% for p in related %}
       <div class="well">
-        <h5><a href="{% url crowd %}{{ p.user.username }}">{{ p }}</a></h5>
+        <h5><a href="{% url portfolio %}{{ p.user.username }}">{{ p }}</a></h5>
       </div>
       {% endfor %}
     </div>

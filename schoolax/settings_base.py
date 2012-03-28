@@ -96,7 +96,7 @@ INSTALLED_APPS = (
     'account',
     'bulletin',
     'homeroom',
-    'crowd',
+    'portfolio',
     'data',
 )
 

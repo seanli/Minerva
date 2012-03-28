@@ -15,9 +15,9 @@ pep8 --repeat --ignore=E501 --exclude='migrations' core
 echo 'Checking: course'
 pylint --rcfile=tools/pylint.rc course
 pep8 --repeat --ignore=E501 --exclude='migrations' course
-echo 'Checking: crowd'
-pylint --rcfile=tools/pylint.rc crowd
-pep8 --repeat --ignore=E501 --exclude='migrations' crowd
+echo 'Checking: portfolio'
+pylint --rcfile=tools/pylint.rc portfolio
+pep8 --repeat --ignore=E501 --exclude='migrations' portfolio
 echo 'Checking: data'
 pylint --rcfile=tools/pylint.rc data
 pep8 --repeat --ignore=E501 --exclude='migrations' data
