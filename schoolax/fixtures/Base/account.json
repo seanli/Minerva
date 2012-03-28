@@ -1,0 +1,20 @@
+[
+    {
+        "pk": 19, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": [
+                "admin"
+            ]
+        }
+    }
+]
