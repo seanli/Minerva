@@ -12,8 +12,8 @@ DATABASES = {
         'NAME': 'minerva',
         'USER': 'minerva_admin',
         'PASSWORD': '1990106',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': '',
+        'PORT': '',
     }
 }
 

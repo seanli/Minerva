@@ -16,3 +16,7 @@ if HOST_NAME in PROD_HOSTS:
         from settings_prod import *
 else:
     from settings_dev import *
+
+# You can add a settings_extra.py file for additional personal configurations
+if os.path.isfile(os.path.join(PROJECT_ROOT, 'settings_extra.py')):
+    from settings_extra import *

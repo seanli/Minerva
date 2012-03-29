@@ -20,51 +20,19 @@ fixture_collection_dir = '../schoolax/%sfixtures/%s' % (directory, fixture_colle
 if not os.path.exists(fixture_collection_dir):
     os.mkdir(fixture_collection_dir)
 
-json_name = 'all'
-result = os.system(pre_command + '--exclude=contenttypes --exclude=auth.Permission > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
+fixture_commands = [
+    ('all', '--exclude=contenttypes --exclude=auth.Permission'),
+    ('account', 'account'),
+    ('backstage', 'backstage'),
+    ('core', 'core'),
+    ('course', 'course'),
+    ('ticket', 'backstage.Ticket'),
+    ('wiki', 'backstage.Wiki'),
+]
 
-json_name = 'account'
-result = os.system(pre_command + 'account > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
-
-json_name = 'backstage'
-result = os.system(pre_command + 'backstage > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
-    
-json_name = 'core'
-result = os.system(pre_command + 'core > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
-    
-json_name = 'course'
-result = os.system(pre_command + 'course > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
-
-json_name = 'ticket'
-result = os.system(pre_command + 'backstage.Ticket > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
-    
-json_name = 'wiki'
-result = os.system(pre_command + 'backstage.Wiki > %s/%s.json' % (fixture_collection_dir, json_name))
-if result == 0:
-    print 'Fixture: %s.json is generated.' % json_name
-else:
-    print 'Fixture: %s.json generation failed.' % json_name
+for cmd in fixture_commands:
+    result = os.system(pre_command + '%s > %s/%s.json' % (cmd[1], fixture_collection_dir, cmd[0]))
+    if result == 0:
+        print 'Fixture: %s.json is generated.' % cmd[0]
+    else:
+        print 'Fixture: %s.json generation failed.' % cmd[0]
