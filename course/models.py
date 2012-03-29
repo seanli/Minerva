@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from core.models import Institute
+from core.abstract_models import SentContent
 from core.constants import DURATION
 
 
@@ -52,13 +53,9 @@ class SectionAssign(models.Model):
         unique_together = ('user', 'section')
 
 
-class Review(models.Model):
+class Review(SentContent):
 
     course = models.ForeignKey(Course)
-    message = models.TextField()
-    person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
-    sent_time = models.DateTimeField(auto_now_add=True)
-    anonymous = models.BooleanField(default=False)
 
     def __unicode__(self):
         return 'To %s: %s...' % (self.course, self.message[:10])

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from core.abstract_models import SentContent
 from core.constants import INSTITUTE_CATEGORY
 
 
@@ -138,13 +139,9 @@ class BadgeAssign(models.Model):
         unique_together = ('user', 'badge')
 
 
-class Encouragement(models.Model):
+class Encouragement(SentContent):
 
     person_to = models.ForeignKey(User, related_name='%(class)s_person_to', verbose_name='to')
-    message = models.TextField()
-    person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
-    sent_time = models.DateTimeField(auto_now_add=True)
-    anonymous = models.BooleanField(default=False)
     #approved = models.BooleanField(default=False)
 
     def __unicode__(self):
@@ -154,13 +151,9 @@ class Encouragement(models.Model):
         db_table = 'mva_encouragement'
 
 
-class Feedback(models.Model):
+class Feedback(SentContent):
 
     instructor = models.ForeignKey(User)
-    message = models.TextField()
-    person_from = models.ForeignKey(User, related_name='%(class)s_person_from', verbose_name='from')
-    sent_time = models.DateTimeField(auto_now_add=True)
-    anonymous = models.BooleanField(default=True)
 
     def __unicode__(self):
         return 'To %s: %s...' % (self.instructor, self.message[:10])

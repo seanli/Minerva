@@ -1,7 +1,7 @@
 [MASTER]
 profile=no
 persistent=yes
-ignore=migrations,settings.py,settings_dev.py,settings_qa.py,settings_prod.py,settings_base.py
+ignore=migrations,settings_qa.py,settings_prod.py,settings_dev.py,settings.py
 cache-size=500
 
 [MESSAGES CONTROL]
@@ -14,9 +14,10 @@ cache-size=500
 # W0702: No exception's type specified Used when an except clause doesn't specify exceptions type to catch.
 # F0401: Unable to import %r (%s)
 # E0611: No name %r in module %r
-# E1002" Use super on an old style class
-# W0403" Relative import %r, should be %r
-disable=C0111,W0232,R0201,W0613,W0702,W0102,F0401,E0611,E1002,W0403
+# E1002: Use super on an old style class
+# W0403: Relative import %r, should be %r
+# I0011: Locally disabling %s
+disable=C0111,W0232,R0201,W0613,W0702,W0102,F0401,E0611,E1002,W0403,I0011
 
 [REPORTS]
 output-format=parseable

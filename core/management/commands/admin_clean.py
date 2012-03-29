@@ -1,7 +1,5 @@
-from django.contrib.sessions.models import Session
-from django.contrib.admin.models import LogEntry
-from backstage.models import LogMessage
 from django.core.management.base import NoArgsCommand
+from core.management.commands.utilities import class_clean
 
 
 class Command(NoArgsCommand):
@@ -9,21 +7,6 @@ class Command(NoArgsCommand):
     help = 'Cleans admin log entries and session data.'
 
     def handle_noargs(self, **options):
-        sessions = Session.objects.all()
-        counter = 0
-        for session in sessions:
-            session.delete()
-            counter += 1
-        print '%s session(s) deleted.' % counter
-        counter = 0
-        admin_logs = LogEntry.objects.all()
-        for admin_log in admin_logs:
-            admin_log.delete()
-            counter += 1
-        print '%s admin log(s) deleted.' % counter
-        counter = 0
-        log_messages = LogMessage.objects.all()
-        for log_message in log_messages:
-            log_message.delete()
-            counter += 1
-        print '%s log message(s) deleted.' % counter
+        classes = ['Session', 'LogEntry', 'LogMessage']
+        # Cleans data
+        class_clean(classes)

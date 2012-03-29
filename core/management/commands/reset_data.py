@@ -1,11 +1,8 @@
-from django.contrib.sessions.models import Session
-from django.contrib.admin.models import LogEntry
-from backstage.models import LogMessage, Wiki, Ticket
-from core.models import Badge, Institute
-from course.models import Section, Review
 from account.models import Profile
-from django.contrib.auth.models import User, Group
+from core.models import Institute
+from django.contrib.auth.models import User
 from django.core.management.base import NoArgsCommand
+from core.management.commands.utilities import class_clean
 
 
 class Command(NoArgsCommand):
@@ -13,12 +10,11 @@ class Command(NoArgsCommand):
     help = 'Resets database with essential data.'
 
     def handle_noargs(self, **options):
-        users = User.objects.all()
-        counter = 0
-        for user in users:
-            user.delete()
-            counter += 1
-        print '%s user(s) deleted.' % counter
+        classes = ['User', 'Group', 'Wiki', 'Ticket', 'Badge', 'Section',
+            'Review', 'Session', 'LogEntry', 'LogMessage']
+        # Cleans data
+        class_clean(classes)
+        # Creates superuser
         user = User()
         user.username = 'admin'
         user.email = 'admin@schoolax.com'
@@ -34,58 +30,6 @@ class Command(NoArgsCommand):
         profile.institute = Institute.objects.get(name='University of Waterloo')
         profile.role = 'S'
         profile.save()
-        print 'Superuser created.'
-        groups = Group.objects.all()
-        counter = 0
-        for group in groups:
-            group.delete()
-            counter += 1
-        print '%s group(s) deleted.' % counter
-        wikis = Wiki.objects.all()
-        counter = 0
-        for wiki in wikis:
-            wiki.delete()
-            counter += 1
-        print '%s wiki(s) deleted.' % counter
-        tickets = Ticket.objects.all()
-        counter = 0
-        for ticket in tickets:
-            ticket.delete()
-            counter += 1
-        print '%s ticket(s) deleted.' % counter
-        badges = Badge.objects.all()
-        counter = 0
-        for badge in badges:
-            badge.delete()
-            counter += 1
-        print '%s badges(s) deleted.' % counter
-        sections = Section.objects.all()
-        counter = 0
-        for section in sections:
-            section.delete()
-            counter += 1
-        print '%s section(s) deleted.' % counter
-        reviews = Review.objects.all()
-        counter = 0
-        for review in reviews:
-            review.delete()
-            counter += 1
-        print '%s review(s) deleted.' % counter
-        sessions = Session.objects.all()
-        counter = 0
-        for session in sessions:
-            session.delete()
-            counter += 1
-        print '%s session(s) deleted.' % counter
-        counter = 0
-        admin_logs = LogEntry.objects.all()
-        for admin_log in admin_logs:
-            admin_log.delete()
-            counter += 1
-        print '%s admin log(s) deleted.' % counter
-        counter = 0
-        log_messages = LogMessage.objects.all()
-        for log_message in log_messages:
-            log_message.delete()
-            counter += 1
-        print '%s log message(s) deleted.' % counter
+        print 'Superuser is created.'
+        print 'Email: admin@schoolax.com'
+        print 'Password: 1990106'
