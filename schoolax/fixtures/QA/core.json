@@ -182,3051 +182,3051 @@
         "pk": 3, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Aboriginal Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 4, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Accounting", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 5, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Acting", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 6, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Advertising", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 7, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "African Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 8, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Agriculture", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 9, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "American Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 10, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Anatomy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 11, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Animal Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 12, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Anthropology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 13, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Anthropology - Biological", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 14, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Anthropology - Cultural", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 15, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Anthropology - Linguistic", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 16, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Arab Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 17, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Archaeology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 18, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Architecture", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 19, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Architecture - Conservation", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 20, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Architecture - Urban Design", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 21, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Art History", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 22, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Artificial Intelligence", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 23, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Arts Administration (Music, Theatre)", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 25, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Astronomy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 26, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Atmospheric Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 27, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Aviation", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 28, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Behavioural Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 29, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biochemistry", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 30, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Bioinformatics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 31, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 32, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Cell", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 33, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Computational", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 34, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Conservation", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 35, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Developmental", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 36, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Evolutionary", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 37, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Human", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 38, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Marine/Freshwater", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 39, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Microbiology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 40, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biology - Molecular", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 41, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Biotechnology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 42, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Botany", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 43, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Buddhism", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 44, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Business", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 45, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Business Informatics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 46, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Business Languages (French/German/Spanish)", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 47, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Canadian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 48, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Caribbean Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 49, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Celtic Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 50, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Chemistry", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 51, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Chemistry - Computational", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 52, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Chemistry - Geochemistry", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 53, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Child/Youth Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 54, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Chinese Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 55, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Christianity", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 56, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Classics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 57, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Cognitive Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 58, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Combinatorics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 59, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Commerce", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 60, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Communication", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 61, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computational Finance", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 62, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computational Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 63, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computer Communications (Networks)", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 64, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computer Game Development", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 65, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computer Graphics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 66, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computer Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 67, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computer Security", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 68, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computers & Society", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 69, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Computing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 70, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Concurrent Education / Arts Programs", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 71, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Concurrent Education / Physical Education & Health Programs", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 72, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Concurrent Education / Science Programs", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 73, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Creative Arts", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 74, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Creative Writing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 75, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Criminal Justice", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 76, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Criminology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 77, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Croatian/Serbian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 78, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Cultural Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 80, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Dance", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 81, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Design - Environmental", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 82, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Design - Fashion", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 83, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Design - Graphic", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 84, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Design - Industrial", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 85, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Design - Interior", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 86, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Design - Textile", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 87, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Development Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 88, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Drama", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 89, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Drawing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 90, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Early Childhood Education", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 91, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Earth Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 92, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "East Asian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 93, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "East European Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 94, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Ecology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 95, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 96, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Agricultural", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 97, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Development", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 98, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Entrepreneurial", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 99, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Environmental", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 100, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Financial", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 101, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - International", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 102, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Managerial", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 103, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Economics - Mathematical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 104, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Emergency Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 105, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Aerospace/Aeronautical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 106, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Architectural", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 107, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Automotive Systems", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 108, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Bioengineering", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 109, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Chemical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 110, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Civil", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 111, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Communication", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 112, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Computer", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 113, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Electrical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 114, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Electronic", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 115, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Environmental", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 116, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Geological/Mining", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 117, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Industrial", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 118, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Integrated", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 119, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 120, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Materials", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 121, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Mechanical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 122, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Mechatronics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 123, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Network", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 124, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Nuclear", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 125, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Process", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 126, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Software", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 127, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Structural", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 128, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering - Systems", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 129, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Engineering Physics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 130, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "English as a Second Language", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 131, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "English Language/Literature", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 132, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Entrepreneurship", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 133, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Environmental Ethics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 134, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Environmental Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 136, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Estonian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 137, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Ethics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 138, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "European Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 139, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Family & Consumer Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 140, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Family & Social Services", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 141, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Film", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 142, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Finance", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 143, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Fine Arts", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 144, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Finnish Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 145, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "First Nations Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 146, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Food Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 147, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Forensics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 24, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "(General) Arts", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 135, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Environmental Science/Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 79, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Curatorial/Museum Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 148, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Forestry", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 149, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "French Language/Literature", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 150, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "French Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 151, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Genetics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 152, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geographic Information Systems / Geoinformatics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 153, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 154, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography - Economic", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 155, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography - Environmental", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 156, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography - Human", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 157, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography - Physical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 158, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography - Regional", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 159, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geography - Urban", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 160, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 161, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geomatics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 162, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Geosciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 163, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "German Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 164, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Gerontology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 165, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Globalization Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 166, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Greek Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 167, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Health Informatics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 169, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "History", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 170, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "History - Economic", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 171, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "History of Science & Technology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 172, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Horticulture", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 173, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Hospitality Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 174, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Housing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 175, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Human Resources", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 176, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Human Services Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 177, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Human-Computer Interaction", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 178, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Humanities", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 179, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Hungarian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 180, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Hydrology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 181, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Illustration", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 182, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Immunology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 183, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Indigenous Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 184, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Individualized Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 185, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Industrial & Labour Relations", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 186, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Information Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 187, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Information Security", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 188, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Information Systems", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 189, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Information Technology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 190, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Interdisciplinary Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 191, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "International Affairs", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 192, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "International Relations", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 193, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "International Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 194, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Italian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 195, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Japanese Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 196, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Jewellery", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 197, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Jewish Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 198, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Journalism", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 200, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Landscape Architecture", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 201, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Language Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 202, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Latin", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 203, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Latin American Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 204, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Law", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 205, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Leadership", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 206, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Life Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 207, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Linguistics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 208, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Literary Theory", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 209, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Logic", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 210, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 211, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Management Information Systems", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 212, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Manufacturing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 213, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Marketing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 214, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Mass Media", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 215, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Materials Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 216, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Mathematics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 217, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Mathematics - Applied", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 218, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Mathematics - Computational", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 219, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Media Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 220, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Medical Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 221, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Medical Technology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 222, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Medieval Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 223, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Mediterranean Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 224, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Mental Health", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 225, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Middle Eastern Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 226, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Midwifery", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 227, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Military Leadership", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 228, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Military Strategy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 229, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Modern Languages", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 230, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 231, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music Composition", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 232, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music Education", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 233, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music History", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 234, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music Performance", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 235, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music Theory", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 236, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Music Therapy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 237, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Musicology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 240, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Native Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 241, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Natural Resource Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 242, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Natural Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 243, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Near Eastern Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 244, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Neuroscience", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 245, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "North American Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 247, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Nursing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 248, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Nutrition", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 249, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Oenology & Viticulture", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 250, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Ophthalmology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 251, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Organizational Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 252, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Painting", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 253, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Palaeontology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 254, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Parks & Recreation Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 255, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Pathology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 256, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Peace/Conflict Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 257, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Pharmacy/Pharmacology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 258, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Philosophy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 259, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Photography", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 260, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physical Education", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 261, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 262, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Applied", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 263, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Astrophysics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 264, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Biophysics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 265, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Chemical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 266, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Computational", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 267, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Geophysics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 268, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Mathematical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 269, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Medical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 270, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Quantum", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 271, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physics - Theoretical", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 272, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Physiology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 273, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Planetary Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 274, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Plant Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 275, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Police Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 277, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Polish Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 278, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Political Economy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 279, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Political Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 280, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Portuguese Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 281, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Printmaking", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 282, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 283, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology - Applied", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 284, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology - Cognitive", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 285, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology - Developmental", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 286, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology - Evolutionary", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 287, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology - Neuropsychology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 288, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Psychology - Sport", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 289, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Public Administration", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 290, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Public Affairs", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 291, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Public Health", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 292, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Public Policy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 293, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Public Relations", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 294, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Radio", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 295, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Radiology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 296, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Real Estate", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 297, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Rehabilitation Medicine", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 298, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Religion", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 299, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Retail Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 300, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Risk Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 246, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Northern/Polar Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 168, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Health Sciences/Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 239, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Native Language / Anishinaabemowin", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 199, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Kinesiology / Human Kinetics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 238, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Nanoscience / Nanotechnology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 301, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Roman Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 302, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Russian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 303, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Science & Technology Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 305, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Scientific Computing", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 306, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sculpture", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 307, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Second-Language Teaching", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 308, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Semiotics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 309, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sexuality Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 310, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Slavic Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 311, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Social Demography", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 312, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Social Inequality", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 313, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Social Policy", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 314, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Social Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 315, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Social Work", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 316, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sociology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 317, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sociology - Rural/Urban", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 318, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "South Asian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 319, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Space Sciences", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 320, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Spanish Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 321, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Speech Communications", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 322, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sport Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 324, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sports Medicine", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 325, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Statistics", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 326, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Studio Art", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 327, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sustainable Development", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 328, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Television", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 329, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Theatre", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 330, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Theology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 331, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Toxicology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 332, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Translation", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 333, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Travel & Tourism", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 334, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Ukrainian Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 335, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Urban Planning", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 336, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Urban Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 337, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Visual Arts", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 338, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Visual Communication", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 339, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Women's Studies", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 340, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Yiddish", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 341, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Zoology", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 276, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Policy Studies/Analysis", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 304, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "(General) Science", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
         "pk": 323, 
         "model": "core.specialization", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Sports Administration/Management", 
-            "modified_time": "2012-03-18T14:52:59.084"
+            "modified_time": "2012-03-18T21:52:59.084Z"
         }
     }, 
     {
@@ -3303,63 +3303,63 @@
         "pk": 1, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Django", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
         "pk": 2, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Python", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
         "pk": 3, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "PHP", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
         "pk": 4, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Hardware", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
         "pk": 6, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Saxophone", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
         "pk": 7, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "Guitar", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
         "pk": 5, 
         "model": "core.skill", 
         "fields": {
-            "created_time": "2012-03-17T22:00:00", 
+            "created_time": "2012-03-18T05:00:00Z", 
             "name": "C#", 
-            "modified_time": "2012-03-18T14:52:49.282"
+            "modified_time": "2012-03-18T21:52:49.282Z"
         }
     }, 
     {
@@ -3423,6 +3423,16 @@
         }
     }, 
     {
+        "pk": 9, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 1, 
+            "user": [
+                "admin"
+            ]
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "core.badge", 
         "fields": {
@@ -3445,16 +3455,31 @@
                 "sli"
             ], 
             "anonymous": true, 
-            "sent_time": "2012-03-21T11:39:15.530"
+            "sent_time": "2012-03-21T18:39:15.530Z"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.encouragement", 
+        "fields": {
+            "person_to": [
+                "schen"
+            ], 
+            "message": "Test.", 
+            "person_from": [
+                "sli"
+            ], 
+            "anonymous": false, 
+            "sent_time": "2012-03-29T21:41:21.421Z"
         }
     }, 
     {
         "pk": 1, 
         "model": "core.webfile", 
         "fields": {
-            "created_time": "2012-03-24T18:17:12.779", 
+            "created_time": "2012-03-25T01:17:12.779Z", 
             "item": "webfiles/\u5bf9\u4f60\u7684\u7231.mp3", 
-            "modified_time": "2012-03-24T18:17:12.779", 
+            "modified_time": "2012-03-25T01:17:12.779Z", 
             "name": "Test", 
             "uploader": [
                 "sli"

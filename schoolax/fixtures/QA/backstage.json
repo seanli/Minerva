@@ -9,10 +9,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:27", 
+            "modified_time": "2012-03-10T05:54:27Z", 
             "summary": "Emblem", 
             "priority": 4, 
-            "created_time": "2012-03-02T11:23:42", 
+            "created_time": "2012-03-02T19:23:42Z", 
             "owner": [
                 "sli"
             ]
@@ -28,10 +28,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:34", 
+            "modified_time": "2012-03-10T05:54:34Z", 
             "summary": "Backstage Documents", 
             "priority": 0, 
-            "created_time": "2012-03-02T02:41:41", 
+            "created_time": "2012-03-02T10:41:41Z", 
             "owner": null
         }
     }, 
@@ -45,10 +45,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:40", 
+            "modified_time": "2012-03-10T05:54:40Z", 
             "summary": "Mobile Version", 
             "priority": 1, 
-            "created_time": "2012-03-01T16:29:56", 
+            "created_time": "2012-03-02T00:29:56Z", 
             "owner": [
                 "sli"
             ]
@@ -64,10 +64,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:48", 
+            "modified_time": "2012-03-10T05:54:48Z", 
             "summary": "Ticket Status", 
             "priority": 1, 
-            "created_time": "2012-03-01T15:48:30", 
+            "created_time": "2012-03-01T23:48:30Z", 
             "owner": [
                 "sli"
             ]
@@ -83,10 +83,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:53:41", 
+            "modified_time": "2012-03-10T05:53:41Z", 
             "summary": "Re-brand Django CMS", 
             "priority": 4, 
-            "created_time": "2012-03-09T15:49:52", 
+            "created_time": "2012-03-09T23:49:52Z", 
             "owner": null
         }
     }, 
@@ -100,10 +100,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:53:47", 
+            "modified_time": "2012-03-10T05:53:47Z", 
             "summary": "Ticket System Features", 
             "priority": 0, 
-            "created_time": "2012-03-09T15:44:07", 
+            "created_time": "2012-03-09T23:44:07Z", 
             "owner": [
                 "sli"
             ]
@@ -119,10 +119,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:53:54", 
+            "modified_time": "2012-03-10T05:53:54Z", 
             "summary": "Refactor For Loops", 
             "priority": 1, 
-            "created_time": "2012-03-09T15:36:25", 
+            "created_time": "2012-03-09T23:36:25Z", 
             "owner": [
                 "sli"
             ]
@@ -138,10 +138,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:01", 
+            "modified_time": "2012-03-10T05:54:01Z", 
             "summary": "Incorporate Search Engine", 
             "priority": 4, 
-            "created_time": "2012-03-09T13:34:25", 
+            "created_time": "2012-03-09T21:34:25Z", 
             "owner": null
         }
     }, 
@@ -155,10 +155,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:05", 
+            "modified_time": "2012-03-10T05:54:05Z", 
             "summary": "Logging to Database", 
             "priority": 3, 
-            "created_time": "2012-03-07T15:11:13", 
+            "created_time": "2012-03-07T23:11:13Z", 
             "owner": null
         }
     }, 
@@ -172,10 +172,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:09", 
+            "modified_time": "2012-03-10T05:54:09Z", 
             "summary": "AJAX'ify", 
             "priority": 2, 
-            "created_time": "2012-03-06T13:44:39", 
+            "created_time": "2012-03-06T21:44:39Z", 
             "owner": [
                 "sli"
             ]
@@ -191,10 +191,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:16", 
+            "modified_time": "2012-03-10T05:54:16Z", 
             "summary": "Encapsulate AJAX Form", 
             "priority": 1, 
-            "created_time": "2012-03-06T13:43:33", 
+            "created_time": "2012-03-06T21:43:33Z", 
             "owner": [
                 "sli"
             ]
@@ -210,10 +210,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-09T21:54:22", 
+            "modified_time": "2012-03-10T05:54:22Z", 
             "summary": "Priority Name Change", 
             "priority": 1, 
-            "created_time": "2012-03-04T04:43:16", 
+            "created_time": "2012-03-04T12:43:16Z", 
             "owner": null
         }
     }, 
@@ -227,10 +227,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-17T20:30:45.391", 
+            "modified_time": "2012-03-18T03:30:45.391Z", 
             "summary": "Homeroom", 
             "priority": 5, 
-            "created_time": "2012-03-14T15:39:46.653", 
+            "created_time": "2012-03-14T22:39:46.653Z", 
             "owner": null
         }
     }, 
@@ -244,10 +244,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-21T20:34:16.513", 
+            "modified_time": "2012-03-22T03:34:16.513Z", 
             "summary": "Crowd", 
             "priority": 3, 
-            "created_time": "2012-03-09T16:34:55", 
+            "created_time": "2012-03-10T00:34:55Z", 
             "owner": [
                 "sli"
             ]
@@ -263,10 +263,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-22T17:20:05.783", 
+            "modified_time": "2012-03-23T00:20:05.783Z", 
             "summary": "Take-out Auto Now (Add)", 
             "priority": 2, 
-            "created_time": "2012-03-22T17:20:05.783", 
+            "created_time": "2012-03-23T00:20:05.783Z", 
             "owner": [
                 "sli"
             ]
@@ -282,10 +282,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-23T10:38:11.447", 
+            "modified_time": "2012-03-23T17:38:11.447Z", 
             "summary": "Web File Encryption", 
             "priority": null, 
-            "created_time": "2012-03-23T10:38:11.447", 
+            "created_time": "2012-03-23T17:38:11.447Z", 
             "owner": null
         }
     }, 
@@ -299,10 +299,10 @@
             "reporter": [
                 "sli"
             ], 
-            "modified_time": "2012-03-24T04:10:42.410", 
+            "modified_time": "2012-03-24T11:10:42.410Z", 
             "summary": "Development Framework", 
             "priority": null, 
-            "created_time": "2012-03-24T04:10:42.410", 
+            "created_time": "2012-03-24T11:10:42.410Z", 
             "owner": null
         }
     }, 
@@ -310,12 +310,12 @@
         "pk": 1, 
         "model": "backstage.wiki", 
         "fields": {
-            "created_time": "2012-03-21T22:00:00", 
+            "created_time": "2012-03-22T05:00:00Z", 
             "document": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# If your //Server Groups// on the left panel is empty, click //File->Add Server// and create a new server with any name and set //Host// to //localhost// and leave //Port// at //5432// and input your password specified during PostgreSQL installation.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata QA/all## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.", 
             "author": [
                 "sli"
             ], 
-            "modified_time": "2012-03-26T21:39:24.404", 
+            "modified_time": "2012-03-27T04:39:24.404Z", 
             "title": "Setting Up Environment"
         }
     }, 
@@ -323,12 +323,12 @@
         "pk": 2, 
         "model": "backstage.wiki", 
         "fields": {
-            "created_time": "2012-03-26T16:04:31.143", 
+            "created_time": "2012-03-26T23:04:31.143Z", 
             "document": "=== Basic Commands ===\r\n\r\nCheckout project repository:\r\n{{{\r\ngit clone git@github.com:Elesant/Minerva.git\r\n}}}\r\n\r\nHere's the basic workflow for implementing features and debugging:\r\n{{{\r\n# Get newest version of code\r\ngit pull\r\n# Create and switch to the branch\r\ngit checkout -b <branch-name> master\r\n# Add modified files\r\ngit add <file or directory>\r\n# Remove modified files\r\ngit rm <file>\r\n# List files that are changed\r\ngit status\r\n# Local check-in the code\r\ngit commit -m \"Comments.\" -a\r\n# Switch back to master\r\ngit checkout master\r\n# Get changes from master\r\ngit pull\r\n# Squash will turn this into a single commit\r\ngit merge --squash <branch-name>\r\n# Delete the branch\r\ngit branch -d <branch-name>\r\n# Push your code changes to master\r\ngit push\r\n}}}\r\n\r\n=== More Commands ===\r\n\r\nTemporarily undo your local change (but save them):\r\n{{{\r\ngit stash\r\n}}}\r\n\r\nRestore your local changes:\r\n{{{ \r\ngit stash apply\r\n}}}\r\n\r\nShow history, Branch, switch and list branches:\r\n{{{\r\ngit log\r\ngit branch <branch>\r\ngit checkout <branch>\r\ngit branch -a\r\n}}}\r\n\r\n=== Advanced Commands ===\r\n\r\n{{{\r\nreflog\r\ncherry-pick\r\nrebase \r\nclean -dfx\r\nreset --hard\r\n}}}\r\n\r\n=== Git GUI ===\r\n\r\n* [[http://sourceforge.net/projects/qgit/|QGit]] (Linux)\r\n* [[http://gitx.frim.nl/index.html|GitX]] / [[http://mac.github.com/|Github App]] (Mac)\r\n* [[http://code.google.com/p/msysgit/downloads/list|msysGit]] / [[http://code.google.com/p/tortoisegit/downloads/list|TortoiseGit]] (Windows)", 
             "author": [
                 "sli"
             ], 
-            "modified_time": "2012-03-26T16:36:12.015", 
+            "modified_time": "2012-03-26T23:36:12.015Z", 
             "title": "Git Tutorial"
         }
     }, 
@@ -336,12 +336,12 @@
         "pk": 3, 
         "model": "backstage.wiki", 
         "fields": {
-            "created_time": "2012-03-26T17:11:48.367", 
+            "created_time": "2012-03-27T00:11:48.367Z", 
             "document": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //portfolio// - code related to the Portfolio component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
             "author": [
                 "sli"
             ], 
-            "modified_time": "2012-03-27T20:58:33.345", 
+            "modified_time": "2012-03-28T03:58:33.345Z", 
             "title": "Development Process"
         }
     }, 
@@ -356,7 +356,7 @@
             "document_from": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //crowd// - code related to the Crowd component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css folder//.", 
             "document_to": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //crowd// - code related to the Crowd component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
             "title_from": "Development Process", 
-            "created_time": "2012-03-27T01:46:31.326", 
+            "created_time": "2012-03-27T08:46:31.326Z", 
             "title_to": "Development Process"
         }
     }, 
@@ -371,7 +371,7 @@
             "document_from": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //crowd// - code related to the Crowd component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
             "document_to": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //portfolio// - code related to the Portfolio component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
             "title_from": "Development Process", 
-            "created_time": "2012-03-27T20:58:33.462", 
+            "created_time": "2012-03-28T03:58:33.462Z", 
             "title_to": "Development Process"
         }
     }
