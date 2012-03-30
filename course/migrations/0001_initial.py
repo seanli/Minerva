@@ -50,11 +50,11 @@ class Migration(SchemaMigration):
         # Adding model 'Review'
         db.create_table('mva_review', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('course', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['course.Course'])),
             ('message', self.gf('django.db.models.fields.TextField')()),
             ('person_from', self.gf('django.db.models.fields.related.ForeignKey')(related_name='review_person_from', to=orm['auth.User'])),
             ('sent_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
             ('anonymous', self.gf('django.db.models.fields.BooleanField')(default=False)),
+            ('course', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['course.Course'])),
         ))
         db.send_create_signal('course', ['Review'])
 

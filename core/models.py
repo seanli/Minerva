@@ -142,10 +142,14 @@ class BadgeAssign(models.Model):
 class Encouragement(SentContent):
 
     person_to = models.ForeignKey(User, related_name='%(class)s_person_to', verbose_name='to')
-    #approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=False)
 
     def __unicode__(self):
         return 'To %s: %s...' % (self.person_to, self.message[:10])
+    
+    def approve(self, approve=True):
+        self.approved = approve
+        self.save()
 
     class Meta:
         db_table = 'mva_encouragement'

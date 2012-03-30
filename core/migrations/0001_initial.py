@@ -103,22 +103,23 @@ class Migration(SchemaMigration):
         # Adding model 'Encouragement'
         db.create_table('mva_encouragement', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('person_to', self.gf('django.db.models.fields.related.ForeignKey')(related_name='encouragement_person_to', to=orm['auth.User'])),
             ('message', self.gf('django.db.models.fields.TextField')()),
             ('person_from', self.gf('django.db.models.fields.related.ForeignKey')(related_name='encouragement_person_from', to=orm['auth.User'])),
             ('sent_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
             ('anonymous', self.gf('django.db.models.fields.BooleanField')(default=False)),
+            ('person_to', self.gf('django.db.models.fields.related.ForeignKey')(related_name='encouragement_person_to', to=orm['auth.User'])),
+            ('approved', self.gf('django.db.models.fields.BooleanField')(default=False)),
         ))
         db.send_create_signal('core', ['Encouragement'])
 
         # Adding model 'Feedback'
         db.create_table('mva_feedback', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('instructor', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
             ('message', self.gf('django.db.models.fields.TextField')()),
             ('person_from', self.gf('django.db.models.fields.related.ForeignKey')(related_name='feedback_person_from', to=orm['auth.User'])),
             ('sent_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
-            ('anonymous', self.gf('django.db.models.fields.BooleanField')(default=True)),
+            ('anonymous', self.gf('django.db.models.fields.BooleanField')(default=False)),
+            ('instructor', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'])),
         ))
         db.send_create_signal('core', ['Feedback'])
 
@@ -242,6 +243,7 @@ class Migration(SchemaMigration):
         'core.encouragement': {
             'Meta': {'object_name': 'Encouragement', 'db_table': "'mva_encouragement'"},
             'anonymous': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
+            'approved': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'message': ('django.db.models.fields.TextField', [], {}),
             'person_from': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'encouragement_person_from'", 'to': "orm['auth.User']"}),
@@ -250,7 +252,7 @@ class Migration(SchemaMigration):
         },
         'core.feedback': {
             'Meta': {'object_name': 'Feedback', 'db_table': "'mva_feedback'"},
-            'anonymous': ('django.db.models.fields.BooleanField', [], {'default': 'True'}),
+            'anonymous': ('django.db.models.fields.BooleanField', [], {'default': 'False'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'instructor': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['auth.User']"}),
             'message': ('django.db.models.fields.TextField', [], {}),

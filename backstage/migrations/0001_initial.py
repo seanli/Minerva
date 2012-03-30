@@ -34,6 +34,19 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal('backstage', ['Wiki'])
 
+        # Adding model 'WikiRevisionHistory'
+        db.create_table('bsg_wiki_revision_history', (
+            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('wiki', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['backstage.Wiki'])),
+            ('title_from', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('title_to', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('document_from', self.gf('django.db.models.fields.TextField')()),
+            ('document_to', self.gf('django.db.models.fields.TextField')()),
+            ('modified_by', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'], null=True, blank=True)),
+            ('created_time', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
+        ))
+        db.send_create_signal('backstage', ['WikiRevisionHistory'])
+
         # Adding model 'WikiAttachmentAssign'
         db.create_table('bsg_wiki_attachment_assign', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
@@ -52,12 +65,16 @@ class Migration(SchemaMigration):
         db.create_table('bsg_log_message', (
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('logger_name', self.gf('django.db.models.fields.CharField')(max_length=100, null=True, blank=True)),
-            ('logged_time', self.gf('django.db.models.fields.DateTimeField')(default=datetime.datetime(2012, 3, 24, 0, 0))),
+            ('logged_time', self.gf('django.db.models.fields.DateTimeField')(default=datetime.datetime(2012, 3, 30, 0, 0))),
             ('level', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
             ('file_path', self.gf('django.db.models.fields.CharField')(max_length=255, null=True, blank=True)),
             ('function_name', self.gf('django.db.models.fields.CharField')(max_length=255, null=True, blank=True)),
             ('line_number', self.gf('django.db.models.fields.PositiveIntegerField')(null=True, blank=True)),
             ('message', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
+            ('traceback', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
+            ('uri_path', self.gf('django.db.models.fields.CharField')(max_length=255, null=True, blank=True)),
+            ('user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auth.User'], null=True, blank=True)),
+            ('request', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
         ))
         db.send_create_signal('backstage', ['LogMessage'])
 
@@ -70,6 +87,9 @@ class Migration(SchemaMigration):
 
         # Deleting model 'Wiki'
         db.delete_table('bsg_wiki')
+
+        # Deleting model 'WikiRevisionHistory'
+        db.delete_table('bsg_wiki_revision_history')
 
         # Deleting model 'WikiAttachmentAssign'
         db.delete_table('bsg_wiki_attachment_assign')
@@ -114,9 +134,13 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'level': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
             'line_number': ('django.db.models.fields.PositiveIntegerField', [], {'null': 'True', 'blank': 'True'}),
-            'logged_time': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime(2012, 3, 24, 0, 0)'}),
+            'logged_time': ('django.db.models.fields.DateTimeField', [], {'default': 'datetime.datetime(2012, 3, 30, 0, 0)'}),
             'logger_name': ('django.db.models.fields.CharField', [], {'max_length': '100', 'null': 'True', 'blank': 'True'}),
-            'message': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'})
+            'message': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
+            'request': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
+            'traceback': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
+            'uri_path': ('django.db.models.fields.CharField', [], {'max_length': '255', 'null': 'True', 'blank': 'True'}),
+            'user': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['auth.User']", 'null': 'True', 'blank': 'True'})
         },
         'backstage.ticket': {
             'Meta': {'object_name': 'Ticket', 'db_table': "'bsg_ticket'"},
@@ -148,6 +172,17 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'modified_time': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
             'uploader': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['auth.User']"}),
+            'wiki': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['backstage.Wiki']"})
+        },
+        'backstage.wikirevisionhistory': {
+            'Meta': {'object_name': 'WikiRevisionHistory', 'db_table': "'bsg_wiki_revision_history'"},
+            'created_time': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'document_from': ('django.db.models.fields.TextField', [], {}),
+            'document_to': ('django.db.models.fields.TextField', [], {}),
+            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'modified_by': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['auth.User']", 'null': 'True', 'blank': 'True'}),
+            'title_from': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
+            'title_to': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'wiki': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['backstage.Wiki']"})
         },
         'contenttypes.contenttype': {
