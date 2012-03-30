@@ -6,7 +6,6 @@
 {% block title %}{{ BRAND_NAME }} - Portfolio{% endblock %}
 
 {% block content %}
-
 <div class="page-header">
   <div class="row-fluid">
     <div class="span1">
@@ -38,13 +37,12 @@
       <div id="grade-gauge" class="progress">
         <div class="bar"></div>
       </div>
-      {% if viewing_user == user %}
-      <a class="btn btn-primary btn-mini" onclick="Dajaxice.portfolio.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
+      {% if viewing_user == user %} <a class="btn btn-primary btn-mini" onclick="Dajaxice.portfolio.plus_exp(update_exp);"> <i class="icon-plus icon-white"></i> EXP</a>
       <a class="btn btn-primary btn-mini" onclick="Dajaxice.portfolio.minus_exp(update_exp);"> <i class="icon-minus icon-white"></i> EXP</a>
       {% endif %}
     </div>
     <div class="row-fluid">
-      <div class="span6">  
+      <div class="span6">
         {% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
         {% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
         {% empty %} <h6>No Specialization Yet!</h6>
@@ -67,14 +65,14 @@
     </div>
     <div class="vertical-space"></div>
     <div class="row-fluid">
-      {% if profile.role = 'S' %} <h3>Encouragement{{ encouragements.count|pluralize }}:</h3>
+      {% if profile.role = 'S' %} <h3>Encouragement{{ encouragements_approved.count|pluralize }}:</h3>
       <div class="vertical-space"></div>
       {% if viewing_user != user %} <div class="vertical-space"></div>
       <a data-toggle="modal" href="#encouragement" class="btn btn-mini btn-warning"><i class="icon-pencil icon-white"></i> Encouragement </a>
       <div class="vertical-space"></div>
       <div class="vertical-space"></div>
       {% endif %}
-      {% for encouragement in encouragements %}
+      {% for encouragement in encouragements_approved %}
       <blockquote>
         <h6>{{ encouragement.sent_time }}</h6>
         <p>
@@ -82,6 +80,23 @@
         </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url portfolio %}{{ encouragement.person_from.user.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
       </blockquote>
       {% empty %} <h6>No Encouragement Yet!</h6>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="row-fluid">
+      {% if profile.role = 'S' and viewing_user == user  %} <h3>To Be Approved:</h3>
+      <div class="vertical-space"></div>
+      {% for encouragement in encouragements_unapproved %}
+      <blockquote encouragement-id="{{ encouragement.id }}" class="encouragement">
+        <h6>{{ encouragement.sent_time }}</h6>
+        <p>
+          <i>"{{ encouragement.message }}"</i>
+        </p>
+        <div class="vertical-space"></div>
+        <a class="btn btn-mini btn-success btn-approve hide"> Approve </a>
+        <a class="btn btn-mini btn-danger btn-remove hide"> Remove </a>
+      </blockquote>
+      {% empty %} <h6>No New Encouragements!</h6>
       {% endfor %}
       {% endif %}
     </div>
@@ -104,36 +119,66 @@
     </div>
   </div>
 </div>
-
 <script type="text/javascript" charset="utf-8">
-    function update_exp(data) {
-      $('#grade-box').html(data.grade);
-      $('#exp-box').html(data.exp);
-      render_gauge(data.exp);
-    }
-    
-    function render_gauge(value) {
-      var percentage = (value + 100) / 2;
-      $('#grade-gauge .bar').attr('style', 'width: ' + percentage + '%');
-      $('#grade-gauge').removeClass('progress-success');
-      $('#grade-gauge').removeClass('progress-error');
-      $('#grade-gauge').removeClass('progress-warning');
-      if(percentage >= 66) {
-          $('#grade-gauge').addClass('progress-success');
-      }
-      else if(percentage <= 33) {
-          $('#grade-gauge').addClass('progress-danger');
-      }
-      else {
-          $('#grade-gauge').addClass('progress-warning');
-      }
-    }
+  function update_exp(data) {
+    $('#grade-box').html(data.grade);
+    $('#exp-box').html(data.exp);
+    render_gauge(data.exp);
+  }
 
-    $(document).ready(function() {
-      render_gauge({{ profile.grade_gauge }});
+  function render_gauge(value) {
+    var percentage = (value + 100) / 2;
+    $('#grade-gauge .bar').attr('style', 'width: ' + percentage + '%');
+    $('#grade-gauge').removeClass('progress-success');
+    $('#grade-gauge').removeClass('progress-error');
+    $('#grade-gauge').removeClass('progress-warning');
+    if(percentage >= 66) {
+      $('#grade-gauge').addClass('progress-success');
+    } else if(percentage <= 33) {
+      $('#grade-gauge').addClass('progress-danger');
+    } else {
+      $('#grade-gauge').addClass('progress-warning');
+    }
+  }
+
+
+  $(document).ready(function() {
+    render_gauge({{ profile.grade_gauge }});
+    $('.encouragement').hover(function() {
+      $(this).find('.btn-approve').removeClass('hide');
+      $(this).find('.btn-remove').removeClass('hide');
+    }, function() {
+      $(this).find('.btn-approve').addClass('hide');
+      $(this).find('.btn-remove').addClass('hide');
     });
+    $('.encouragement .btn-approve').click(function() {
+      var elem = $(this)
+      var encouragement_id = elem.parent().attr('encouragement-id');
+      var approve_encouragement_callback = function(data) {
+        if(data.status == 'OK') {
+          window.location.reload();
+        }
+      };
+      Dajaxice.portfolio.approve_encouragement(approve_encouragement_callback, {
+        'encouragement_id' : encouragement_id,
+        'approve' : true,
+      });
+    });
+    $('.encouragement .btn-remove').click(function() {
+      var elem = $(this);
+      var encouragement_id = elem.parent().attr('encouragement-id');
+      var disapprove_encouragement_callback = function(data) {
+        if(data.status == 'OK') {
+          elem.parent().remove();
+        }
+      };
+      Dajaxice.portfolio.approve_encouragement(disapprove_encouragement_callback, {
+        'encouragement_id' : encouragement_id,
+        'approve' : false,
+      });
+    });
+  });
 </script>
-
 {% include "modal/add-specialization.html" %}
 {% include "modal/add-skill.html" %}
 {% include "modal/encouragement.html" %}

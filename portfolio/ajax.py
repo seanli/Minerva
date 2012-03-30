@@ -78,6 +78,19 @@ def form_add_skill(request, form_data, form_id):
 
 
 @dajaxice_register
+def approve_encouragement(request, encouragement_id, approve):
+    status = 'OK'
+    try:
+        encouragement = Encouragement.objects.get(pk=encouragement_id)
+        if encouragement.person_to != request.user:
+            status = 'INVALID'
+    except Encouragement.DoesNotExist:
+        status = 'INVALID'
+    encouragement.approve(approve)
+    return simplejson.dumps({'status': status})
+
+
+@dajaxice_register
 def plus_exp(request):
     profile = request.user.get_profile()
     profile.increment_grade(20)

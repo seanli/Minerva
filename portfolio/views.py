@@ -28,7 +28,8 @@ def portfolio(request, username=None):
         context['viewing_user'] = user
         context['profile'] = profile
         context['badges'] = BadgeAssign.objects.filter(user=user)
-        context['encouragements'] = Encouragement.objects.filter(person_to=user).order_by('-sent_time')
+        context['encouragements_unapproved'] = Encouragement.objects.filter(person_to=user, approved=False).order_by('-sent_time')
+        context['encouragements_approved'] = Encouragement.objects.filter(person_to=user, approved=True).order_by('-sent_time')
         context['related'] = Profile.objects.filter(institute=profile.institute, role='S').exclude(id=request.user.profile.id).exclude(id=profile.id)
         context['add_specialization_form'] = add_specialization_form
         context['add_skill_form'] = add_skill_form

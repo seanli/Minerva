@@ -146,10 +146,13 @@ class Encouragement(SentContent):
 
     def __unicode__(self):
         return 'To %s: %s...' % (self.person_to, self.message[:10])
-    
+
     def approve(self, approve=True):
-        self.approved = approve
-        self.save()
+        if approve:
+            self.approved = approve
+            self.save()
+        else:
+            self.delete()
 
     class Meta:
         db_table = 'mva_encouragement'
