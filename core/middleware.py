@@ -22,7 +22,7 @@ backup_logger = logging.getLogger('backup')
 class ExceptionMiddleware(object):
 
     def process_exception(self, request, exception):
-        exception_db_handler = DBLogHandler(request=request,)
+        exception_db_handler = DBLogHandler(request=request)
         exception_logger = logging.getLogger('exception')
         exception_logger.setLevel(logging.WARNING)
         exception_logger.addHandler(exception_db_handler)
