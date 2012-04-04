@@ -34,6 +34,14 @@ GRADE_MAX = 8
 GRADE_MIN = -4
 GRADE_STEP = 100
 
+SKILL_RATING = (
+    (1, 'Novice'),
+    (2, 'Familiar'),
+    (3, 'Average'),
+    (4, 'Expert'),
+    (5, 'Guru')
+)
+
 INSTITUTE_CATEGORY = (
     ('C', 'College'),
     ('U', 'University'),

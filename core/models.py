@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from core.abstract_models import SentContent
-from core.constants import INSTITUTE_CATEGORY
+from core.constants import INSTITUTE_CATEGORY, SKILL_RATING
 
 
 class Country(models.Model):
@@ -94,6 +94,7 @@ class SkillAssign(models.Model):
 
     user = models.ForeignKey(User, related_name='%(class)s_user')
     skill = models.ForeignKey(Skill, related_name='%(class)s_skill')
+    rating = models.ManyToManyField(User, through='SkillRating')
 
     def __unicode__(self):
         return '%s : %s' % (self.user, self.skill)
@@ -103,6 +104,22 @@ class SkillAssign(models.Model):
         verbose_name = 'skill assignment'
         verbose_name_plural = 'skill assignments'
         unique_together = ('user', 'skill')
+
+
+class SkillRating(models.Model):
+
+    rater = models.ForeignKey(User, related_name='%(class)s_rater')
+    skill_assign = models.ForeignKey(SkillAssign)
+    value = models.PositiveIntegerField(default=3, choices=SKILL_RATING)
+
+    def __unicode__(self):
+        return '%s -> %s = %s' % (self.rater, self.skill_assign, self.value)
+
+    class Meta:
+        db_table = 'mva_skill_rating'
+        verbose_name = 'skill rating'
+        verbose_name_plural = 'skill ratings'
+        unique_together = ('rater', 'skill_assign')
 
 
 class Badge(models.Model):

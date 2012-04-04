@@ -53,14 +53,17 @@
         {% endwith %}
       </div>
       <div class="span6">
-        {% with skills=viewing_user.skill_set.all %} <h3>Skill{{ skills.count|pluralize }}:</h3>
-        {% for skill in skills %} <h6>{{ skill.name }}</h6>
-        {% empty %} <h6>No Skill Yet!</h6>
+        <h3>Skill{{ skills_data.count|pluralize }}:</h3>
+        {% for skill_data in skills_data %}
+        <h5>{{ skill_data.skill.name }}</h5>
+        <h6>Average Rating: {{ skill_data.average_rating }}</h6>
+        <h6>Total Ratings: {{ skill_data.total_ratings }}</h6>
+        {% empty %}
+        <h6>No Skill Yet!</h6>
         {% endfor %}
         {% if viewing_user == user %} <div class="vertical-space"></div>
         <a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
         {% endif %}
-        {% endwith %}
       </div>
     </div>
     <div class="vertical-space"></div>

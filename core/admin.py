@@ -1,7 +1,7 @@
 from django.contrib import admin
 from core.models import (Country, ProvinceState,
     Institute, Specialization, Badge, Encouragement,
-    Feedback, Skill, WebFile)
+    Feedback, Skill, SkillRating, WebFile)
 
 
 class SpecializationAdmin(admin.ModelAdmin):
@@ -21,6 +21,7 @@ admin.site.register(Badge)
 admin.site.register(Encouragement)
 admin.site.register(Feedback)
 admin.site.register(Skill, SkillAdmin)
+admin.site.register(SkillRating)
 admin.site.register(Country)
 admin.site.register(ProvinceState)
 admin.site.register(Institute)
