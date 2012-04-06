@@ -27,7 +27,7 @@ def portfolio(request, username=None):
             rating_sum = sum([rating.value for rating in user_skill.skillrating_set.all()])
             total_ratings = user_skill.skillrating_set.count()
             if total_ratings > 0:
-                skill_data['average_rating'] = rating_sum / float(total_ratings)
+                skill_data['average_rating'] = round(rating_sum / float(total_ratings), 2)
             else:
                 skill_data['average_rating'] = 0
             skill_data['total_ratings'] = total_ratings
