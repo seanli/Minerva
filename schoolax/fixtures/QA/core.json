@@ -3447,30 +3447,80 @@
         "pk": 2, 
         "model": "core.encouragement", 
         "fields": {
+            "sent_time": "2012-03-21T18:39:15.530Z", 
             "person_to": [
                 "sz"
             ], 
-            "message": "God of Code.", 
             "person_from": [
                 "sli"
             ], 
             "anonymous": true, 
-            "sent_time": "2012-03-21T18:39:15.530Z"
+            "message": "God of Code.", 
+            "approved": false
         }
     }, 
     {
         "pk": 3, 
         "model": "core.encouragement", 
         "fields": {
+            "sent_time": "2012-03-29T21:41:21.421Z", 
             "person_to": [
                 "schen"
             ], 
-            "message": "Test.", 
             "person_from": [
                 "sli"
             ], 
             "anonymous": false, 
-            "sent_time": "2012-03-29T21:41:21.421Z"
+            "message": "Test.", 
+            "approved": false
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-03-30T21:22:11.420Z", 
+            "person_to": [
+                "sli"
+            ], 
+            "person_from": [
+                "admin"
+            ], 
+            "anonymous": true, 
+            "message": "Godly Coder.", 
+            "approved": true
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-04-01T01:16:05.718Z", 
+            "person_to": [
+                "gli"
+            ], 
+            "person_from": [
+                "sli"
+            ], 
+            "anonymous": false, 
+            "message": "Coolest father!", 
+            "approved": true
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-04-02T09:43:18.566Z", 
+            "person_to": [
+                "swang"
+            ], 
+            "person_from": [
+                "sli"
+            ], 
+            "anonymous": false, 
+            "message": "Makes great animations!", 
+            "approved": false
         }
     }, 
     {
