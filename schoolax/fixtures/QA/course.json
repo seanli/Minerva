@@ -54673,6 +54673,15 @@
         }
     }, 
     {
+        "pk": 77, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3021, 
+            "start_date": "2012-04-01"
+        }
+    }, 
+    {
         "pk": 22, 
         "model": "course.sectionassign", 
         "fields": {

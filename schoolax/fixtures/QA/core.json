@@ -3434,6 +3434,39 @@
     }, 
     {
         "pk": 1, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 6, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 3
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 8, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 7, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 4
+        }
+    }, 
+    {
+        "pk": 1, 
         "model": "core.badge", 
         "fields": {
             "next_lvl": null, 

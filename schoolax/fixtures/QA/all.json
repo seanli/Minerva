@@ -215,7 +215,7 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-04-06T08:47:19.823Z", 
+            "last_login": "2012-04-08T08:03:50.180Z", 
             "groups": [], 
             "user_permissions": [], 
             "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
@@ -3761,6 +3761,39 @@
             "user": [
                 "admin"
             ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 6, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 3
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 8, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 7, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 4
         }
     }, 
     {
@@ -59157,6 +59190,15 @@
         }
     }, 
     {
+        "pk": 77, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3021, 
+            "start_date": "2012-04-01"
+        }
+    }, 
+    {
         "pk": 22, 
         "model": "course.sectionassign", 
         "fields": {
@@ -59377,24 +59419,6 @@
         }
     }, 
     {
-        "pk": 2, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": "", 
-            "degree": "UG", 
-            "institute": 1, 
-            "tagline": "", 
-            "influence": 0, 
-            "grade": 8, 
-            "grade_gauge": 60, 
-            "birthday": "1990-10-06", 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
         "pk": 15, 
         "model": "account.profile", 
         "fields": {
@@ -59409,6 +59433,24 @@
             "role": "S", 
             "user": [
                 "swang"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 8, 
+            "grade_gauge": -60, 
+            "birthday": "1990-10-06", 
+            "role": "S", 
+            "user": [
+                "sli"
             ]
         }
     }
