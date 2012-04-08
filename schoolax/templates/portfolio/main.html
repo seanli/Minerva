@@ -42,7 +42,7 @@
       {% endif %}
     </div>
     <div class="row-fluid">
-      <div class="span6">
+      <div class="span12">
         {% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
         {% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
         {% empty %} <h6>No Specialization Yet!</h6>
@@ -52,10 +52,12 @@
         {% endif %}
         {% endwith %}
       </div>
-      <div class="span6">
+    </div>
+    <div class="row-fluid">
+      <div class="span12">
         <h3>Skill{{ skills_data|length|pluralize }}:</h3>
         {% for skill_data in skills_data %}
-        <div skill-assign-id="{{ skill_data.skill.id }}" class="skill">
+        <div skill-assign-id="{{ skill_data.id }}" class="skill">
           <h5>{{ skill_data.skill.name }}</h5>
           <h6>Average Rating: {{ skill_data.average_rating }}</h6>
           <h6>Total Ratings: {{ skill_data.total_ratings }}</h6>
@@ -63,11 +65,11 @@
             <div class="bar"></div>
           </div>
           <div class="btn-group" data-toggle="buttons-radio">
-            <button class="btn btn-mini {% active_rating 1 skill_data.average_rating %}">1</button>
-            <button class="btn btn-mini {% active_rating 2 skill_data.average_rating %}">2</button>
-            <button class="btn btn-mini {% active_rating 3 skill_data.average_rating %}">3</button>
-            <button class="btn btn-mini {% active_rating 4 skill_data.average_rating %}">4</button>
-            <button class="btn btn-mini {% active_rating 5 skill_data.average_rating %}">5</button>
+            <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 skill_data.skill_rating %}">{% rating_display 1 %}</button>
+            <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 skill_data.skill_rating %}">{% rating_display 2 %}</button>
+            <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 skill_data.skill_rating %}">{% rating_display 3 %}</button>
+            <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 skill_data.skill_rating %}">{% rating_display 4 %}</button>
+            <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 skill_data.skill_rating %}">{% rating_display 5 %}</button>
           </div>
         </div>
         {% empty %}
@@ -175,7 +177,7 @@
       $(this).find('.btn-remove').addClass('hide');
     });
     $('.encouragement .btn-approve').click(function() {
-      var elem = $(this)
+      var elem = $(this);
       var encouragement_id = elem.parent().attr('encouragement-id');
       var approve_encouragement_callback = function(data) {
         if(data.status == 'OK') {
@@ -198,6 +200,20 @@
       Dajaxice.portfolio.approve_encouragement(disapprove_encouragement_callback, {
         'encouragement_id' : encouragement_id,
         'approve' : false,
+      });
+    });
+    $('.btn-rate').click(function() {
+      var elem = $(this);
+      var skill_assign_id = elem.parents('.skill').attr('skill-assign-id');
+      var rating = parseInt(elem.attr('rating'));
+      var rate_skill_callback = function(data) {
+        if(data.status == 'OK') {
+          window.location.reload();
+        }
+      };
+      Dajaxice.portfolio.rate_skill(rate_skill_callback, {
+        'skill_assign_id' : skill_assign_id,
+        'rating' : rating,
       });
     });
   });

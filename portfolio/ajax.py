@@ -2,7 +2,7 @@ from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.contrib.auth.decorators import login_required
 from portfolio.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
-from core.models import Encouragement, SkillAssign, SkillRating
+from core.models import Encouragement, SkillAssign
 from core.ajax import clear_validation, show_validation
 from datetime import datetime
 from django.utils import simplejson
@@ -78,10 +78,12 @@ def form_add_skill(request, form_data, form_id):
 
 
 @dajaxice_register
+@login_required
 def approve_encouragement(request, encouragement_id, approve):
     status = 'OK'
     try:
         encouragement = Encouragement.objects.get(pk=encouragement_id)
+        # Ensure a user is approving his/her own encouragements
         if encouragement.person_to != request.user:
             status = 'INVALID'
     except Encouragement.DoesNotExist:
@@ -91,22 +93,20 @@ def approve_encouragement(request, encouragement_id, approve):
 
 
 @dajaxice_register
+@login_required
 def rate_skill(request, skill_assign_id, rating):
     status = 'OK'
     user = request.user
     try:
         skill_assign = SkillAssign.objects.get(id=skill_assign_id)
+        user.rate_skill(skill_assign, rating)
     except SkillAssign.DoesNotExist:
         status = 'INVALID'
-    skill_rating = SkillRating()
-    skill_rating.rater = user
-    skill_rating.skill_assign = skill_assign
-    skill_rating.value = rating
-    skill_rating.save()
     return simplejson.dumps({'status': status})
 
 
 @dajaxice_register
+@login_required
 def plus_exp(request):
     profile = request.user.get_profile()
     profile.increment_grade(20)
@@ -117,6 +117,7 @@ def plus_exp(request):
 
 
 @dajaxice_register
+@login_required
 def minus_exp(request):
     profile = request.user.get_profile()
     profile.increment_grade(-20)

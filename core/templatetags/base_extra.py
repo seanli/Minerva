@@ -1,6 +1,7 @@
 from django import template
 from datetime import datetime
 from django.utils.datastructures import SortedDict
+from core.constants import SKILL_RATING
 
 
 register = template.Library()
@@ -25,11 +26,16 @@ def active(request, sub_urls):
 
 
 @register.simple_tag
-def active_rating(widget_rating, skill_rating):
+def user_rating(widget_rating, skill_rating):
     if widget_rating == int(skill_rating):
         return 'active'
     else:
         return ''
+
+
+@register.simple_tag
+def rating_display(rating):
+    return dict(SKILL_RATING)[rating]
 
 
 @register.filter(name='sort')

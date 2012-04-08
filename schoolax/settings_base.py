@@ -94,6 +94,7 @@ INSTALLED_APPS = (
     'backstage',
     'course',
     'account',
+    'account.user_extension',
     'bulletin',
     'homeroom',
     'portfolio',
