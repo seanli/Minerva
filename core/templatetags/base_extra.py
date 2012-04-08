@@ -24,6 +24,14 @@ def active(request, sub_urls):
     return ''
 
 
+@register.simple_tag
+def active_rating(widget_rating, skill_rating):
+    if widget_rating == int(skill_rating):
+        return 'active'
+    else:
+        return ''
+
+
 @register.filter(name='sort')
 def structsort(value):
     if isinstance(value, dict):

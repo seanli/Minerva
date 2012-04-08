@@ -2,7 +2,7 @@ from dajax.core import Dajax
 from dajaxice.decorators import dajaxice_register
 from django.contrib.auth.decorators import login_required
 from portfolio.forms import EncouragementForm, AddSpecializationForm, AddSkillForm
-from core.models import Encouragement
+from core.models import Encouragement, SkillAssign, SkillRating
 from core.ajax import clear_validation, show_validation
 from datetime import datetime
 from django.utils import simplejson
@@ -87,6 +87,22 @@ def approve_encouragement(request, encouragement_id, approve):
     except Encouragement.DoesNotExist:
         status = 'INVALID'
     encouragement.approve(approve)
+    return simplejson.dumps({'status': status})
+
+
+@dajaxice_register
+def rate_skill(request, skill_assign_id, rating):
+    status = 'OK'
+    user = request.user
+    try:
+        skill_assign = SkillAssign.objects.get(id=skill_assign_id)
+    except SkillAssign.DoesNotExist:
+        status = 'INVALID'
+    skill_rating = SkillRating()
+    skill_rating.rater = user
+    skill_rating.skill_assign = skill_assign
+    skill_rating.value = rating
+    skill_rating.save()
     return simplejson.dumps({'status': status})
 
 

@@ -3,7 +3,7 @@
 {% load base_extra %}
 {% load webdesign %}
 
-{% block title %}{{ BRAND_NAME }} - Portfolio{% endblock %}
+{% block title %}{{ SITE_NAME }} - Portfolio{% endblock %}
 
 {% block content %}
 <div class="page-header">
@@ -55,9 +55,21 @@
       <div class="span6">
         <h3>Skill{{ skills_data|length|pluralize }}:</h3>
         {% for skill_data in skills_data %}
-        <h5>{{ skill_data.skill.name }}</h5>
-        <h6>Average Rating: {{ skill_data.average_rating }}</h6>
-        <h6>Total Ratings: {{ skill_data.total_ratings }}</h6>
+        <div skill-assign-id="{{ skill_data.skill.id }}" class="skill">
+          <h5>{{ skill_data.skill.name }}</h5>
+          <h6>Average Rating: {{ skill_data.average_rating }}</h6>
+          <h6>Total Ratings: {{ skill_data.total_ratings }}</h6>
+          <div class="skill-rating-bar progress" rating="{{ skill_data.average_rating }}">
+            <div class="bar"></div>
+          </div>
+          <div class="btn-group" data-toggle="buttons-radio">
+            <button class="btn btn-mini {% active_rating 1 skill_data.average_rating %}">1</button>
+            <button class="btn btn-mini {% active_rating 2 skill_data.average_rating %}">2</button>
+            <button class="btn btn-mini {% active_rating 3 skill_data.average_rating %}">3</button>
+            <button class="btn btn-mini {% active_rating 4 skill_data.average_rating %}">4</button>
+            <button class="btn btn-mini {% active_rating 5 skill_data.average_rating %}">5</button>
+          </div>
+        </div>
         {% empty %}
         <h6>No Skill Yet!</h6>
         {% endfor %}
@@ -144,9 +156,17 @@
     }
   }
 
-
+  function render_skill_rating() {
+    $('.skill-rating-bar').each(function(i) {
+      var average_rating = parseFloat($(this).attr('rating'));
+      var adjusted_rating = average_rating * 20;
+      $(this).find('.bar').attr('style', 'width: ' + adjusted_rating + '%');
+    });
+  }
+  
   $(document).ready(function() {
     render_gauge({{ profile.grade_gauge }});
+    render_skill_rating();
     $('.encouragement').hover(function() {
       $(this).find('.btn-approve').removeClass('hide');
       $(this).find('.btn-remove').removeClass('hide');

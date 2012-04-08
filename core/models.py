@@ -110,7 +110,7 @@ class SkillRating(models.Model):
 
     rater = models.ForeignKey(User, related_name='%(class)s_rater')
     skill_assign = models.ForeignKey(SkillAssign)
-    value = models.PositiveIntegerField(default=3, choices=SKILL_RATING)
+    value = models.PositiveIntegerField(default=0, choices=SKILL_RATING)
 
     def __unicode__(self):
         return '%s -> %s = %s' % (self.rater, self.skill_assign, self.value)

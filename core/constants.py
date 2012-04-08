@@ -35,6 +35,7 @@ GRADE_MIN = -4
 GRADE_STEP = 100
 
 SKILL_RATING = (
+    (0, 'Not Rated'),
     (1, 'Novice'),
     (2, 'Familiar'),
     (3, 'Average'),
