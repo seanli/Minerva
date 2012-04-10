@@ -5,13 +5,13 @@
     <li class="nav-header">
       Backstage
     </li>
-    <li class="{% active request '^backstage/$' %}">
+    <li class="{% active request '^(/backstage/|/backstage/dashboard.*)$' %}">
       <a href="{% url backstage_dashboard %}"><i class="icon-home"></i> Dashboard</a>
     </li>
-    <li class="{% active request '(backstage/tickets)' %}">
+    <li class="{% active request '^/backstage/tickets.*$' %}">
       <a href="{% url backstage_tickets %}"><i class="icon-tag"></i> Tickets</a>
     </li>
-    <li class="{% active request '(backstage/wiki)' %}">
+    <li class="{% active request '^/backstage/wiki.*$' %}">
       <a href="{% url backstage_wiki %}"><i class="icon-file"></i> Wiki</a>
     </li>
     <li>
