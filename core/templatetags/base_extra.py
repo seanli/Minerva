@@ -1,3 +1,4 @@
+import re
 from django import template
 from datetime import datetime
 from django.utils.datastructures import SortedDict
@@ -8,20 +9,9 @@ register = template.Library()
 
 
 @register.simple_tag
-def active(request, sub_urls):
-    # Sub-URLs are joined by '|'
-    sub_urls_list = sub_urls.split('|')
-    for sub_url in sub_urls_list:
-        # Special case for home page
-        if sub_url == 'bulletin' and request.path == '/':
-            return 'active'
-        # Contains comparison is trigger by brackets
-        if '(' in sub_url and ')' in sub_url:
-            if sub_url[1:-1] in request.path:
-                return 'active'
-        else:
-            if '/%s/' % sub_url == request.path:
-                return 'active'
+def active(request, pattern):
+    if re.search(pattern, request.path):
+        return 'active'
     return ''
 
 

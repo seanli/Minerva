@@ -1,5 +1,6 @@
 from django.contrib import admin
-from course.models import (Course, Section, SectionAssign, Review)
+from course.models import (Course, Section, SectionAssign,
+    Review, CourseRating)
 
 
 class ReviewInline(admin.StackedInline):
@@ -25,5 +26,6 @@ class CourseAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Course, CourseAdmin)
+admin.site.register(CourseRating)
 admin.site.register(Section)
 admin.site.register(Review)

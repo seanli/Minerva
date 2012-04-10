@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Course{% endblock %}
+
+{% block content %}
+
+<div class="row-fluid">
+  <div class="page-header">
+    <h1>{{ course.title }}</h1>
+    <h6>{{ course.abbrev }}</h6>
+  </div>
+  <h3>Description:</h3>
+  <p>{{ course.description }}</p>
+</div>
+
+{% endblock %} 

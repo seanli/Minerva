@@ -43,6 +43,33 @@ SKILL_RATING = (
     (5, 'Guru')
 )
 
+COURSE_INTERESTING_RATING = (
+    (0, 'Not Rated'),
+    (1, 'Lowest'),
+    (2, 'Low'),
+    (3, 'Average'),
+    (4, 'High'),
+    (5, 'Highest')
+)
+
+COURSE_PRACTICAL_RATING = (
+    (0, 'Not Rated'),
+    (1, 'Lowest'),
+    (2, 'Low'),
+    (3, 'Average'),
+    (4, 'High'),
+    (5, 'Highest')
+)
+
+COURSE_DIFFICULT_RATING = (
+    (0, 'Not Rated'),
+    (1, 'Lowest'),
+    (2, 'Low'),
+    (3, 'Average'),
+    (4, 'High'),
+    (5, 'Highest')
+)
+
 INSTITUTE_CATEGORY = (
     ('C', 'College'),
     ('U', 'University'),

@@ -28,7 +28,7 @@
         {% for section in value %}
         <div class="section well">
           <a section-id="{{ section.id }}" class="close hide">&times;</a>
-          <h4>{{ section.course.title }}</h4>
+          <h4><a href="{% url courses %}{{ section.course.id }}">{{ section.course.title }}</a></h4>
           <h6>{{ section.course.abbrev }}</h6>
           <div class="vertical-space"></div>
           <p>

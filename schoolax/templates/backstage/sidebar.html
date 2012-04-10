@@ -5,7 +5,7 @@
     <li class="nav-header">
       Backstage
     </li>
-    <li class="{% active request 'backstage|backstage/dashboard' %}">
+    <li class="{% active request '^backstage/$' %}">
       <a href="{% url backstage_dashboard %}"><i class="icon-home"></i> Dashboard</a>
     </li>
     <li class="{% active request '(backstage/tickets)' %}">

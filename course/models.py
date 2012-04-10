@@ -2,7 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from core.models import Institute
 from core.abstract_models import SentContent
-from core.constants import DURATION
+from core.constants import (DURATION, COURSE_INTERESTING_RATING,
+    COURSE_PRACTICAL_RATING, COURSE_DIFFICULT_RATING)
 
 
 class Course(models.Model):
@@ -21,6 +22,24 @@ class Course(models.Model):
     class Meta:
         db_table = 'mva_course'
         unique_together = ('title', 'abbrev', 'institute')
+
+
+class CourseRating(models.Model):
+
+    rater = models.ForeignKey(User, related_name='%(class)s_rater')
+    course = models.ForeignKey(Course)
+    interesting_value = models.PositiveIntegerField(default=0, choices=COURSE_INTERESTING_RATING)
+    practical_value = models.PositiveIntegerField(default=0, choices=COURSE_PRACTICAL_RATING)
+    difficult_value = models.PositiveIntegerField(default=0, choices=COURSE_DIFFICULT_RATING)
+
+    def __unicode__(self):
+        return '%s -> %s = %s, %s, %s' % (self.rater, self.course, self.interesting_value, self.practical_value, self.difficult_value)
+
+    class Meta:
+        db_table = 'mva_course_rating'
+        verbose_name = 'course rating'
+        verbose_name_plural = 'course ratings'
+        unique_together = ('rater', 'course')
 
 
 class Section(models.Model):
