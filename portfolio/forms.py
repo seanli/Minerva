@@ -22,7 +22,7 @@ class AddSpecializationForm(StandardForm):
 
     def __init__(self, *args, **kwargs):
         super(AddSpecializationForm, self).__init__(*args, **kwargs)
-        self.profile = self.request.user.get_profile()
+        self.user = self.request.user
 
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
@@ -37,7 +37,7 @@ class AddSpecializationForm(StandardForm):
             if specialization is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed specialization!' % data['name'])
             else:
-                if self.profile.has_specialization(specialization):
+                if self.user.has_specialization(specialization):
                     raise forms.ValidationError('You have already added this specialization!')
                 return data
 
@@ -49,7 +49,7 @@ class AddSkillForm(StandardForm):
 
     def __init__(self, *args, **kwargs):
         super(AddSkillForm, self).__init__(*args, **kwargs)
-        self.profile = self.request.user.get_profile()
+        self.user = self.request.user
 
     def clean_name(self):
         name = self.cleaned_data['name'].strip()
@@ -64,6 +64,6 @@ class AddSkillForm(StandardForm):
             if skill is None:
                 raise forms.ValidationError('<strong>%s</strong> is not a listed skill!' % data['name'])
             else:
-                if self.profile.has_skill(skill):
+                if self.user.has_skill(skill):
                     raise forms.ValidationError('You have already added this skill!')
                 return data

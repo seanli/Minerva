@@ -65,15 +65,24 @@
             <div class="bar"></div>
           </div>
           <div class="btn-group" data-toggle="buttons-radio">
-            <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 skill_data.skill_rating %}">{% rating_display 1 %}</button>
-            <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 skill_data.skill_rating %}">{% rating_display 2 %}</button>
-            <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 skill_data.skill_rating %}">{% rating_display 3 %}</button>
-            <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 skill_data.skill_rating %}">{% rating_display 4 %}</button>
-            <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 skill_data.skill_rating %}">{% rating_display 5 %}</button>
+            <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 skill_data.skill_rating %}">
+              {% rating_display 1 %}
+            </button>
+            <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 skill_data.skill_rating %}">
+              {% rating_display 2 %}
+            </button>
+            <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 skill_data.skill_rating %}">
+              {% rating_display 3 %}
+            </button>
+            <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 skill_data.skill_rating %}">
+              {% rating_display 4 %}
+            </button>
+            <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 skill_data.skill_rating %}">
+              {% rating_display 5 %}
+            </button>
           </div>
         </div>
-        {% empty %}
-        <h6>No Skill Yet!</h6>
+        {% empty %} <h6>No Skill Yet!</h6>
         {% endfor %}
         {% if viewing_user == user %} <div class="vertical-space"></div>
         <a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
@@ -136,6 +145,7 @@
     </div>
   </div>
 </div>
+
 <script type="text/javascript" charset="utf-8">
   function update_exp(data) {
     $('#grade-box').html(data.grade);
@@ -218,6 +228,7 @@
     });
   });
 </script>
+
 {% include "modal/add-specialization.html" %}
 {% include "modal/add-skill.html" %}
 {% include "modal/encouragement.html" %}

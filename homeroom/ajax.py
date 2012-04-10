@@ -20,8 +20,8 @@ def form_add_course(request, form_data, form_id):
             section.start_date = data['start_date']
             section.duration = data['duration']
             section.save()
-        profile = request.user.get_profile()
-        profile.add_section(section)
+        user = request.user
+        user.add_section(section)
         dajax.add_data({'status': 'OK'}, 'form_add_course_callback')
     else:
         clear_validation(dajax, form, form_id)

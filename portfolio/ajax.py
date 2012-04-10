@@ -49,7 +49,7 @@ def form_add_specialization(request, form_data, form_id):
         data = form.cleaned_data
         specialization = data['specialization']
         user = request.user
-        user.get_profile().add_specialization(specialization)
+        user.add_specialization(specialization)
         dajax.add_data({'status': 'OK'}, 'form_add_specialization_callback')
     else:
         clear_validation(dajax, form, form_id)
@@ -68,7 +68,7 @@ def form_add_skill(request, form_data, form_id):
         data = form.cleaned_data
         skill = data['skill']
         user = request.user
-        user.get_profile().add_skill(skill)
+        user.add_skill(skill)
         dajax.add_data({'status': 'OK'}, 'form_add_skill_callback')
     else:
         clear_validation(dajax, form, form_id)

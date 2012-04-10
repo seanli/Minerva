@@ -1,5 +1,7 @@
 from django.contrib.auth.models import User
-from core.models import SkillRating
+from core.models import (SkillRating, SpecializationAssign,
+    SkillAssign)
+from course.models import SectionAssign
 
 
 # Adding functions to User class
@@ -15,6 +17,45 @@ def user_institute(self):
 user_institute.allow_tags = True
 user_institute.short_description = 'Institute'
 User.add_to_class('user_institute', user_institute)
+
+
+def add_specialization(self, specialization):
+    assign = SpecializationAssign()
+    assign.specialization = specialization
+    assign.user = self
+    assign.save()
+User.add_to_class('add_specialization', add_specialization)
+
+
+def has_specialization(self, specialization):
+    return SpecializationAssign.objects.filter(specialization=specialization, user=self).count() > 0
+User.add_to_class('has_specialization', has_specialization)
+
+
+def add_skill(self, skill):
+    assign = SkillAssign()
+    assign.skill = skill
+    assign.user = self
+    assign.save()
+User.add_to_class('add_skill', add_skill)
+
+
+def has_skill(self, skill):
+    return SkillAssign.objects.filter(skill=skill, user=self).count() > 0
+User.add_to_class('has_skill', has_skill)
+
+
+def add_section(self, section):
+    assign = SectionAssign()
+    assign.section = section
+    assign.user = self
+    assign.save()
+User.add_to_class('add_section', add_section)
+
+
+def has_section(self, section):
+    return SectionAssign.objects.filter(section=section, user=self).count() > 0
+User.add_to_class('has_section', has_section)
 
 
 def rate_skill(self, skill_assign, rating):

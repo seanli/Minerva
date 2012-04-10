@@ -22,7 +22,7 @@ class AddCourseForm(StandardForm):
 
     def __init__(self, *args, **kwargs):
         super(AddCourseForm, self).__init__(*args, **kwargs)
-        self.profile = self.request.user.get_profile()
+        self.user = self.request.user
         #self.fields["instructor"].queryset = User.objects.filter(profile__role='I', profile__institute=self.profile.institute)
 
     def clean_title(self):
@@ -34,7 +34,7 @@ class AddCourseForm(StandardForm):
         if self._errors:
             return data
         else:
-            institute = self.profile.institute
+            institute = self.user.get_profile().institute
             course = data['course']
             if course is None:
                 raise forms.ValidationError('<strong>%s</strong> for <strong>%s</strong> is not a registered course!' % (data['title'], institute))
@@ -45,6 +45,6 @@ class AddCourseForm(StandardForm):
                     data['section'] = section
                 except Section.DoesNotExist:
                     section = None
-                if section != None and self.profile.has_section(section):
+                if section != None and self.user.has_section(section):
                     raise forms.ValidationError('You are already registered in this course section!')
                 return data

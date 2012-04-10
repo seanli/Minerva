@@ -3,9 +3,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
-from core.models import (Institute, ProvinceState,
-    SpecializationAssign, SkillAssign)
-from course.models import SectionAssign
+from core.models import Institute, ProvinceState
 from core.constants import (ROLE, DEGREE, GRADE,
     GRADE_MAX, GRADE_MIN, GRADE_STEP)
 from core.utilities import unique_username
@@ -55,33 +53,6 @@ class Profile(models.Model):
         profile.institute = institute
         profile.role = role
         profile.save()
-
-    def add_specialization(self, specialization):
-        assign = SpecializationAssign()
-        assign.specialization = specialization
-        assign.user = self.user
-        assign.save()
-
-    def has_specialization(self, specialization):
-        return SpecializationAssign.objects.filter(specialization=specialization, user=self.user).count() > 0
-
-    def add_skill(self, skill):
-        assign = SkillAssign()
-        assign.skill = skill
-        assign.user = self.user
-        assign.save()
-
-    def has_skill(self, skill):
-        return SkillAssign.objects.filter(skill=skill, user=self.user).count() > 0
-
-    def add_section(self, section):
-        assign = SectionAssign()
-        assign.section = section
-        assign.user = self.user
-        assign.save()
-
-    def has_section(self, section):
-        return SectionAssign.objects.filter(section=section, user=self.user).count() > 0
 
     def increment_grade(self, delta):
         self.grade_gauge += delta
