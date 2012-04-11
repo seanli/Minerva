@@ -78,7 +78,7 @@ class SpecializationAssign(models.Model):
 
 class Skill(models.Model):
 
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     user = models.ManyToManyField(User, through='SkillAssign')
     created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)

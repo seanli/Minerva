@@ -25,6 +25,7 @@ fixture_commands = [
     ('account', 'account'),
     ('backstage', 'backstage'),
     ('core', 'core'),
+    ('skill', 'core.Skill'),
     ('course', 'course'),
     ('ticket', 'backstage.Ticket'),
     ('wiki', 'backstage.Wiki'),

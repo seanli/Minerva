@@ -180,6 +180,6 @@ HAYSTACK_CONNECTIONS = {
 DAJAXICE_MEDIA_PREFIX = 'dajaxice'
 DAJAXICE_JS_DOCSTRINGS = True
 
-COMMANDS_ROOT = os.path.join(PROJECT_ROOT, 'core/management/commands/'),
+COMMANDS_ROOT = os.path.join(PROJECT_ROOT, '../core/management/commands/'),
 
 SITE_NAME = 'Schoolax'

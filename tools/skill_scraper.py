@@ -1,21 +1,15 @@
 import itertools
 import random
 import urllib
-import time
 from django.utils import simplejson
 
-depth = 3
+depth = 2
 crawl_list = list(itertools.permutations(list('abcdefghijklmnopqrstuvwxyz'), depth))
 random.shuffle(crawl_list)
 total = len(crawl_list) * depth
 skills = []
 counter = 0
 for crawl in crawl_list:
-    one_out_of_chance = 100000
-    wait_factor = random.randint(0, one_out_of_chance)
-    if wait_factor == one_out_of_chance:
-        wait_time = random.randint(0, 0)
-        time.sleep(wait_time)
     conn = urllib.urlopen("http://www.linkedin.com/ta/skill?query=%s" % ''.join(crawl))
     resp = conn.read()
     conn.close()
