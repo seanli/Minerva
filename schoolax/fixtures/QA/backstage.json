@@ -307,6 +307,25 @@
         }
     }, 
     {
+        "pk": 23, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "A", 
+            "category": "F", 
+            "description": "Configure the Haystack logger.", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-04-11T00:27:58.555Z", 
+            "summary": "Haystack Logger", 
+            "priority": 3, 
+            "created_time": "2012-04-11T00:27:58.555Z", 
+            "owner": [
+                "sli"
+            ]
+        }
+    }, 
+    {
         "pk": 2, 
         "model": "backstage.wiki", 
         "fields": {

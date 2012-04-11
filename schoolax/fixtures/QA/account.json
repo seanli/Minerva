@@ -90,24 +90,6 @@
         }
     }, 
     {
-        "pk": 13, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": null, 
-            "degree": null, 
-            "institute": 1, 
-            "tagline": null, 
-            "influence": 0, 
-            "grade": 0, 
-            "grade_gauge": 0, 
-            "birthday": null, 
-            "role": "S", 
-            "user": [
-                "s1ling"
-            ]
-        }
-    }, 
-    {
         "pk": 11, 
         "model": "account.profile", 
         "fields": {
@@ -180,6 +162,24 @@
         }
     }, 
     {
+        "pk": 16, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": [
+                "zzhong"
+            ]
+        }
+    }, 
+    {
         "pk": 15, 
         "model": "account.profile", 
         "fields": {
@@ -206,8 +206,8 @@
             "institute": 1, 
             "tagline": "", 
             "influence": 0, 
-            "grade": 8, 
-            "grade_gauge": -60, 
+            "grade": 7, 
+            "grade_gauge": 0, 
             "birthday": "1990-10-06", 
             "role": "S", 
             "user": [
