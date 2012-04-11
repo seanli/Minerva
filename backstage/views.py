@@ -44,6 +44,21 @@ def tickets(request, ticket_id=None):
             return render_to_response('backstage/tickets_detail.html', context)
         else:
             return HttpResponse('Ticket Not Found!')
+@login_required
+@staff_required
+def tickets_create(request, ticket_id=None):
+    context = RequestContext(request)
+    if request.method == 'POST':
+        form = TicketForm(request.POST)  
+        if request.POST.get('Save'):
+            if form.is_valid():
+                summary=form.cleaned_data['summary']
+                description=form.cleaned_data['description']
+                form.save()
+            return render_to_response('backstage/Thank_you.html',context) 
+    else: form = TicketForm()
+    context['form'] = form
+    return render_to_response('backstage/tickets_create.html', context)
 
 
 @login_required

@@ -13,7 +13,6 @@ class ReportForm(StandardForm):
 
 
 class TicketForm(StandardModelForm):
-
     class Meta:
         model = Ticket
 
