@@ -14,11 +14,12 @@
     {% include "backstage/sidebar.html" %}
   </div>
   <div class="span9">
-  	<button type="button" onclick="window.open('/backstage/tickets_create')" >Add Ticket!</button> 
+  	<a class="btn btn-primary" href="/backstage/tickets_create/">Add Ticket!</a>
+  	<div class="vertical-space"></div> 
     <table id="datatable-ticket" class="table table-bordered">
       <thead>
         <tr>
-          <th>Ticket  </th>
+          <th>Ticket</th>
           <th>Priority</th>
           <th>Category</th>
           <th>Status</th>
