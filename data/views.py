@@ -40,7 +40,7 @@ def autocomplete_skill(request):
     json = []
     if 'term' in request.GET:
         term = request.GET['term']
-        skills = Skill.objects.filter(name__icontains=term).order_by('name')[:7]
+        skills = Skill.objects.filter(name__istartswith=term).order_by('name')[:10]
         for skill in skills:
             datum = {}
             datum['label'] = skill.name
