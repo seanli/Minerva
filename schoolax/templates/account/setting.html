@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ user.first_name }} - Setting{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>setting</h1>
+</div>
+<div class="row-fluid">
+  <div class="span3">
+    {% include "account/sidebar.html" %}
+  </div>
+  <div class="span9">
+   <form action="" method="post" class="form-horizontal">
+    {% csrf_token %}
+    <legend>
+      change password
+    </legend>
+    <div class="control-group{% if form.password_old.errors %} error{% endif %}">
+    	<label for="id_{{ form.password_old.name }}" class="control-label"> old password </label>
+    	<div class="controls">
+        	{{ form.password_old }}<span class="help-inline">{{ form.password_old.errors|safe }}</span>
+    	</div>
+    </div>
+    <div class="control-group{% if form.password.errors %} error{% endif %}">
+      <label for="id_{{ form.password.name }}" class="control-label"> {{ form.password.label }} </label>
+      <div class="controls">
+        {{ form.password }}<span class="help-inline">{{ form.password.errors|safe }}</span>
+      </div>
+    </div>
+    <div class="control-group{% if form.password_conf.errors %} error{% endif %}">
+      <label for="id_{{ form.password_conf.name }}" class="control-label"> {{ form.password_conf.label }} </label>
+      <div class="controls">
+        {{ form.password_conf }}<span class="help-inline">{{ form.password_conf.errors|safe }}</span>
+      </div>
+    </div>
+    {% if form.non_field_errors %}
+    <div class="alert alert-error">
+      {{ form.non_field_errors|safe }}
+    </div>
+    {% endif %}
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">
+        submit
+      </button>
+      <button type="reset" class="btn">
+        Cancel
+      </button>
+    </div>
+   </form>
+  </div>
+</div>
+{% endblock %}
