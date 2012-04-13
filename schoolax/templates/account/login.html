@@ -17,14 +17,7 @@
         <strong>Congratulations!</strong> You are signed up. Now you can login here.
       </div>
       {% endif %}
-      {% for field in form %}
-      <div class="control-group{% if field.errors %} error{% endif %}">
-        <label for="id_{{ field.name }}" class="control-label"> {{ field.label }} </label>
-        <div class="controls">
-          {{ field }}<span class="help-inline">{{ field.errors|safe }}</span>
-        </div>
-      </div>
-      {% endfor %}
+      {{ form.as_standard }}
       {% if form.non_field_errors %}
       <div class="alert alert-error">
         {{ form.non_field_errors|safe }}

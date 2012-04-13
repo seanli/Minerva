@@ -7,14 +7,7 @@
     <div class="modal-body">
         <form id="form-add-specialization" action="" method="post" class="form-vertical">
             {% csrf_token %}
-            {% for field in add_specialization_form %}
-            <div id="form-add-specialization-{{ field.html_name }}" class="control-group">
-                {{ field.label_tag }}
-                <div class="controls">
-                    {{ field }}<span class="help-inline"></span>
-                </div>
-            </div>
-            {% endfor %} <div id="form-add-specialization-error"></div>
+            {{ add_specialization_form.as_standard_ajax }}
         </form>
     </div>
     <div class="modal-footer">

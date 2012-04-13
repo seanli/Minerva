@@ -7,11 +7,11 @@ from core.ajax import clear_validation, show_validation
 
 
 @dajaxice_register
-def form_add_course(request, form_data, form_id):
+def form_add_course(request, form_data):
     dajax = Dajax()
     form = AddCourseForm(form_data, request=request)
     if form.is_valid():
-        clear_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
         data = form.cleaned_data
         section = data.get('section', '')
         if section == '':
@@ -24,8 +24,8 @@ def form_add_course(request, form_data, form_id):
         user.add_section(section)
         dajax.add_data({'status': 'OK'}, 'form_add_course_callback')
     else:
-        clear_validation(dajax, form, form_id)
-        show_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
+        show_validation(dajax, form)
         dajax.add_data({'status': 'INVALID'}, 'form_add_course_callback')
     return dajax.json()
 

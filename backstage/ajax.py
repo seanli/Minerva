@@ -6,11 +6,11 @@ from core.ajax import clear_validation, show_validation
 
 
 @dajaxice_register
-def form_report(request, form_data, form_id):
+def form_report(request, form_data):
     dajax = Dajax()
     form = ReportForm(form_data)
     if form.is_valid():
-        clear_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
         data = form.cleaned_data
         message = data['message']
         report = Ticket()
@@ -21,7 +21,7 @@ def form_report(request, form_data, form_id):
         report.save()
         dajax.add_data({'status': 'OK'}, 'form_report_callback')
     else:
-        clear_validation(dajax, form, form_id)
-        show_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
+        show_validation(dajax, form)
         dajax.add_data({'status': 'INVALID'}, 'form_report_callback')
     return dajax.json()

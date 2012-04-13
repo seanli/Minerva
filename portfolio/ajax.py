@@ -10,11 +10,11 @@ from django.utils import simplejson
 
 @dajaxice_register
 @login_required
-def form_encouragement(request, form_data, form_id):
+def form_encouragement(request, form_data):
     dajax = Dajax()
     form = EncouragementForm(form_data, request=request)
     if form.is_valid():
-        clear_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
         data = form.cleaned_data
         message = data['message']
         person_to = data['person_to']
@@ -29,50 +29,50 @@ def form_encouragement(request, form_data, form_id):
             encouragement.save()
             dajax.add_data({'status': 'OK'}, 'form_encouragement_callback')
         else:
-            clear_validation(dajax, form, form_id)
-            show_validation(dajax, form, form_id)
+            clear_validation(dajax, form)
+            show_validation(dajax, form)
             dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
     else:
-        clear_validation(dajax, form, form_id)
-        show_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
+        show_validation(dajax, form)
         dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
     return dajax.json()
 
 
 @dajaxice_register
 @login_required
-def form_add_specialization(request, form_data, form_id):
+def form_add_specialization(request, form_data):
     dajax = Dajax()
     form = AddSpecializationForm(form_data, request=request)
     if form.is_valid():
-        clear_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
         data = form.cleaned_data
         specialization = data['specialization']
         user = request.user
         user.add_specialization(specialization)
         dajax.add_data({'status': 'OK'}, 'form_add_specialization_callback')
     else:
-        clear_validation(dajax, form, form_id)
-        show_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
+        show_validation(dajax, form)
         dajax.add_data({'status': 'INVALID'}, 'form_add_specialization_callback')
     return dajax.json()
 
 
 @dajaxice_register
 @login_required
-def form_add_skill(request, form_data, form_id):
+def form_add_skill(request, form_data):
     dajax = Dajax()
     form = AddSkillForm(form_data, request=request)
     if form.is_valid():
-        clear_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
         data = form.cleaned_data
         skill = data['skill']
         user = request.user
         user.add_skill(skill)
         dajax.add_data({'status': 'OK'}, 'form_add_skill_callback')
     else:
-        clear_validation(dajax, form, form_id)
-        show_validation(dajax, form, form_id)
+        clear_validation(dajax, form)
+        show_validation(dajax, form)
         dajax.add_data({'status': 'INVALID'}, 'form_add_skill_callback')
     return dajax.json()
 

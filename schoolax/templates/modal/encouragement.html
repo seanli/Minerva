@@ -8,14 +8,7 @@
   <div class="modal-body">
     <form id="form-encouragement" action="" method="post" class="form-vertical">
       {% csrf_token %}
-      {% for field in encouragement_form %}
-      <div id="form-encouragement-{{ field.html_name }}" class="control-group">
-        {{ field.label_tag }}
-        <div class="controls">
-          {{ field }}<span class="help-inline"></span>
-        </div>
-      </div>
-      {% endfor %} <div id="form-encouragement-error"></div>
+      {{ encouragement_form.as_standard_ajax }}
     </form>
   </div>
   <div class="modal-footer">

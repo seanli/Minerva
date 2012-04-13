@@ -82,14 +82,12 @@
       var $this = $(this);
       var $trigger = options.trigger;
       $trigger.click(function() {
-        var form_id = $this.attr('id');
         // Calls the preSubmit function
         options.preSubmit();
         var form_data = $this.serializeObject(true);
         var appView = options.appView.split('.');
         Dajaxice[appView[0]][appView[1]](Dajax.process, {
-          'form_data' : form_data,
-          'form_id' : form_id
+          'form_data' : form_data
         });
       });
     });
