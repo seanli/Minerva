@@ -15,6 +15,10 @@ class DivErrorList(ErrorList):
         return u'<div class="errorlist">%s</div>' % u''.join([u'<div class="error">%s</div>' % e for e in self])
 
 
+def make_row_name(form, name):
+    return form.__class__.__name__ + '-' + name
+
+
 def as_standard(self):
     output = []
     for name, _ in self.fields.items():
@@ -29,7 +33,7 @@ def as_standard(self):
         output.append(control_group)
     return mark_safe(u'\n'.join(output))
 
-            
+
 def as_standard_ajax(self):
     output = []
     for name, _ in self.fields.items():
@@ -37,12 +41,12 @@ def as_standard_ajax(self):
         control_group = '<div row="%s" class="control-group">%s</div>'
         label = '<label for="id_%s" class="control-label">%s</label>' % (name, name_field.label)
         control = '<div class="controls">%s<span class="help-inline"></span></div>' % (name_field)
-        control_group = control_group % (name_field.html_name, label + control)
+        control_group = control_group % (make_row_name(self, name_field.html_name), label + control)
         output.append(control_group)
-    output.append('<div row="error"></div>')
+    output.append('<div row="%s"></div>' % make_row_name(self, 'error'))
     return mark_safe(u'\n'.join(output))
 
-    
+
 class StandardForm(forms.Form):
 
     def __init__(self, *args, **kwargs):
