@@ -16,8 +16,12 @@ def active(request, pattern):
 
 
 @register.simple_tag
-def user_rating(widget_rating, skill_rating):
-    if widget_rating == int(skill_rating):
+def user_rating(widget_rating, rating):
+    try:
+        adjusted_rating = int(rating)
+    except ValueError:
+        adjusted_rating = 0
+    if widget_rating == adjusted_rating:
         return 'active'
     else:
         return ''

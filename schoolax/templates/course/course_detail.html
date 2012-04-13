@@ -13,6 +13,117 @@
   </div>
   <h3>Description:</h3>
   <p>{{ course.description }}</p>
+  <div class="vertical-space"></div>
+  <h6>Average Interesting Rating: {{ course_data.interesting_average_rating }}</h6>
+  <h6>Total Interesting Ratings: {{ course_data.interesting_total_ratings }}</h6>
+  <div class="course-rating-bar progress" rating="{{ course_data.interesting_average_rating }}">
+    <div class="bar"></div>
+  </div>
+  <div course-id="{{ course.id }}" class="btn-group course-rating interesting-course-rating" data-toggle="buttons-radio">
+    <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.interesting_value %}">
+      1
+    </button>
+    <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.interesting_value %}">
+      2
+    </button>
+    <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.interesting_value %}">
+      3
+    </button>
+    <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.interesting_value %}">
+      4
+    </button>
+    <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.interesting_value %}">
+      5
+    </button>
+  </div>
+  <div class="vertical-space"></div>
+  <h6>Average Practical Rating: {{ course_data.practical_average_rating }}</h6>
+  <h6>Total Practical Ratings: {{ course_data.practical_total_ratings }}</h6>
+  <div class="course-rating-bar progress" rating="{{ course_data.practical_average_rating }}">
+    <div class="bar"></div>
+  </div>
+  <div course-id="{{ course.id }}" class="btn-group course-rating practical-course-rating" data-toggle="buttons-radio">
+    <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.practical_value %}">
+      1
+    </button>
+    <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.practical_value %}">
+      2
+    </button>
+    <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.practical_value %}">
+      3
+    </button>
+    <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.practical_value %}">
+      4
+    </button>
+    <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.practical_value %}">
+      5
+    </button>
+  </div>
+  <div class="vertical-space"></div>
+  <h6>Average Difficult Rating: {{ course_data.difficult_average_rating }}</h6>
+  <h6>Total Difficult Ratings: {{ course_data.difficult_total_ratings }}</h6>
+  <div class="course-rating-bar progress" rating="{{ course_data.difficult_average_rating }}">
+    <div class="bar"></div>
+  </div>
+  <div course-id="{{ course.id }}" class="btn-group course-rating difficult-course-rating" data-toggle="buttons-radio">
+    <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.difficult_value %}">
+      1
+    </button>
+    <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.difficult_value %}">
+      2
+    </button>
+    <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.difficult_value %}">
+      3
+    </button>
+    <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.difficult_value %}">
+      4
+    </button>
+    <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.interesting_value %}">
+      5
+    </button>
+  </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+  function render_course_rating() {
+    $('.course-rating-bar ').each(function(i) {
+      var average_rating = parseFloat($(this).attr('rating'));
+      var adjusted_rating = average_rating * 20;
+      $(this).find('.bar').attr('style', 'width: ' + adjusted_rating + '%');
+    });
+  }
+  
+  $(document).ready(function() {
+    render_course_rating();
+    $('.btn-rate').click(function() {
+      var elem = $(this);
+      var rating_set = elem.parents('.course-rating');
+      var is_interesting = rating_set.hasClass('interesting-course-rating');
+      var is_practical = rating_set.hasClass('practical-course-rating');
+      var is_difficult = rating_set.hasClass('difficult-course-rating');
+      var course_id = rating_set.attr('course-id');
+      var interesting_rating = null;
+      if(is_interesting)
+        interesting_rating = parseInt(elem.attr('rating'));
+      var practical_rating = null;
+      if(is_practical)
+        practical_rating = parseInt(elem.attr('rating'));
+      var difficult_rating = null;
+      if(is_difficult)
+        difficult_rating = parseInt(elem.attr('rating'));  
+      var rate_course_callback = function(data) {
+        if(data.status == 'OK') {
+          window.location.reload();
+        }
+      };
+      Dajaxice.course.rate_course(rate_course_callback, {
+        'course_id' : course_id,
+        'interesting_rating' : interesting_rating,
+        'practical_rating' : practical_rating,
+        'difficult_rating' : difficult_rating
+      });
+    });
+  });
+</script>
 
 {% endblock %} 

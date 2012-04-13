@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from core.models import (SkillRating, SpecializationAssign,
     SkillAssign)
-from course.models import SectionAssign
+from course.models import CourseRating, SectionAssign
 
 
 # Adding functions to User class
@@ -68,3 +68,20 @@ def rate_skill(self, skill_assign, rating):
     skill_rating.value = rating
     skill_rating.save()
 User.add_to_class('rate_skill', rate_skill)
+
+
+def rate_course(self, course, interesting_rating=None, practical_rating=None, difficult_rating=None):
+    try:
+        course_rating = CourseRating.objects.get(rater=self, course=course)
+    except CourseRating.DoesNotExist:
+        course_rating = CourseRating()
+        course_rating.rater = self
+        course_rating.course = course
+    if interesting_rating is not None:
+        course_rating.interesting_value = interesting_rating
+    if practical_rating is not None:
+        course_rating.practical_value = practical_rating
+    if difficult_rating is not None:
+        course_rating.difficult_value = difficult_rating
+    course_rating.save()
+User.add_to_class('rate_course', rate_course)
