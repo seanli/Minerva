@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Class{% endblock %}
+
+{% block content %}
+
+<div class="row-fluid">
+  <div class="page-header">
+    <h1><a href="{% url courses %}{{ section.course.id }}">{{ section.course.title }}</a></h1>
+    <h6>{{ section.course.abbrev }} - {{ section.course.institute.name }}</h6>
+  </div>
+  <h3>Description:</h3>
+  <p>{{ section.course.description }}</p>
+  <h3>Details:</h3>
+  <dl class="dl-horizontal">
+    <dt>Start Date:</dt>
+    <dd>{{ section.start_date|date:"F, Y" }}</dd>
+    <dt>Duration:</dt>
+    <dd>{{ section.get_duration_display }}</dd>
+  </dl>
+  <h3>In This Class:</h3>
+  {% for classmate in classmates %}
+  <h5><a href="{% url portfolio %}{{ classmate.username }}">{{ classmate.get_full_name }}</a></h5>
+  {% endfor %}
+</div>
+
+{% endblock %}
