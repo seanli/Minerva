@@ -30859,6 +30859,16 @@
         }
     }, 
     {
+        "pk": 12, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 29010, 
+            "user": [
+                "gli"
+            ]
+        }
+    }, 
+    {
         "pk": 8, 
         "model": "core.skillrating", 
         "fields": {
@@ -30866,7 +30876,18 @@
             "rater": [
                 "sli"
             ], 
-            "value": 5
+            "value": 4
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 12, 
+            "rater": [
+                "gli"
+            ], 
+            "value": 2
         }
     }, 
     {

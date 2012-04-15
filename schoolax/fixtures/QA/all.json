@@ -116,24 +116,6 @@
         }
     }, 
     {
-        "pk": 11, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "gli", 
-            "first_name": "Guanjun", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-04-01T01:17:12.454Z", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$kMxuWk5WcIA9$GDYSVzFzyOqvx/QtVmoyPTcS03flzN205KWvpDtpEJw=", 
-            "email": "liguanjun@hotmail.com", 
-            "date_joined": "2012-03-18T02:30:47Z"
-        }
-    }, 
-    {
         "pk": 17, 
         "model": "auth.user", 
         "fields": {
@@ -170,24 +152,6 @@
         }
     }, 
     {
-        "pk": 12, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "pwang", 
-            "first_name": "Paul", 
-            "last_name": "Wang", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-04-13T04:25:35Z", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$7Uq9GkPu2i90$7uGdprNe+/Hb1jTGZ5Sh6xl2OvPlCr7MxHpO2VTg5Z0=", 
-            "email": "st85368@gmail.com", 
-            "date_joined": "2012-03-19T06:26:10Z"
-        }
-    }, 
-    {
         "pk": 15, 
         "model": "auth.user", 
         "fields": {
@@ -215,12 +179,48 @@
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-04-14T22:49:00.529Z", 
+            "last_login": "2012-04-15T00:09:41.914Z", 
             "groups": [], 
             "user_permissions": [], 
             "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
             "email": "s67li@uwaterloo.ca", 
             "date_joined": "2012-02-08T06:12:47Z"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "pwang", 
+            "first_name": "Paul", 
+            "last_name": "Wang", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-15T00:14:00.443Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$7Uq9GkPu2i90$7uGdprNe+/Hb1jTGZ5Sh6xl2OvPlCr7MxHpO2VTg5Z0=", 
+            "email": "st85368@gmail.com", 
+            "date_joined": "2012-03-19T06:26:10Z"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "gli", 
+            "first_name": "Guanjun", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-15T00:25:39.022Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$kMxuWk5WcIA9$GDYSVzFzyOqvx/QtVmoyPTcS03flzN205KWvpDtpEJw=", 
+            "email": "liguanjun@hotmail.com", 
+            "date_joined": "2012-03-18T02:30:47Z"
         }
     }, 
     {
@@ -31226,6 +31226,16 @@
         }
     }, 
     {
+        "pk": 12, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 29010, 
+            "user": [
+                "gli"
+            ]
+        }
+    }, 
+    {
         "pk": 8, 
         "model": "core.skillrating", 
         "fields": {
@@ -31233,7 +31243,18 @@
             "rater": [
                 "sli"
             ], 
-            "value": 5
+            "value": 4
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 12, 
+            "rater": [
+                "gli"
+            ], 
+            "value": 2
         }
     }, 
     {
@@ -86589,6 +86610,32 @@
         }
     }, 
     {
+        "pk": 4, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 2, 
+            "course": 3855, 
+            "difficult_value": 5, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 3
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 1, 
+            "course": 3855, 
+            "difficult_value": 1, 
+            "rater": [
+                "gli"
+            ], 
+            "interesting_value": 1
+        }
+    }, 
+    {
         "pk": 66, 
         "model": "course.section", 
         "fields": {
@@ -86697,6 +86744,24 @@
         }
     }, 
     {
+        "pk": 78, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 512, 
+            "start_date": "2012-04-01"
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3855, 
+            "start_date": "2012-04-01"
+        }
+    }, 
+    {
         "pk": 22, 
         "model": "course.sectionassign", 
         "fields": {
@@ -86743,6 +86808,36 @@
             "section": 66, 
             "user": [
                 "pwang"
+            ]
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 78, 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 79, 
+            "user": [
+                "gli"
+            ]
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 79, 
+            "user": [
+                "sli"
             ]
         }
     }, 
