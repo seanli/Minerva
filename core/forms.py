@@ -21,28 +21,35 @@ def make_row_name(form, name):
 
 def as_standard(self):
     output = []
-    for name, _ in self.fields.items():
+    for name, field in self.fields.items():
         name_field = self[name]
-        if name_field.errors:
-            control_group = '<div class="control-group error">%s</div>'
+        if field.__class__ == GenericField or name_field.is_hidden:
+            output.append(unicode(name_field))
         else:
-            control_group = '<div class="control-group">%s</div>'
-        label = '<label for="id_%s" class="control-label">%s</label>' % (name, name_field.label)
-        control = '<div class="controls">%s<span class="help-inline">%s</span></div>' % (name_field, name_field.errors)
-        control_group = control_group % (label + control)
-        output.append(control_group)
+            if name_field.errors:
+                control_group = '<div class="control-group error">%s</div>'
+            else:
+                control_group = '<div class="control-group">%s</div>'
+            label = '<label for="id_%s" class="control-label">%s</label>' % (name, name_field.label)
+            control = '<div class="controls">%s<span class="help-inline">%s</span></div>' % (name_field, name_field.errors)
+            control_group = control_group % (label + control)
+            output.append(control_group)
+    print output
     return mark_safe(u'\n'.join(output))
 
 
 def as_standard_ajax(self):
     output = []
-    for name, _ in self.fields.items():
+    for name, field in self.fields.items():
         name_field = self[name]
-        control_group = '<div row="%s" class="control-group">%s</div>'
-        label = '<label for="id_%s" class="control-label">%s</label>' % (name, name_field.label)
-        control = '<div class="controls">%s<span class="help-inline"></span></div>' % (name_field)
-        control_group = control_group % (make_row_name(self, name_field.html_name), label + control)
-        output.append(control_group)
+        if field.__class__ == GenericField or name_field.is_hidden:
+            output.append(unicode(name_field))
+        else:
+            control_group = '<div row="%s" class="control-group">%s</div>'
+            label = '<label for="id_%s" class="control-label">%s</label>' % (name, name_field.label)
+            control = '<div class="controls">%s<span class="help-inline"></span></div>' % (name_field)
+            control_group = control_group % (make_row_name(self, name_field.html_name), label + control)
+            output.append(control_group)
     output.append('<div row="%s"></div>' % make_row_name(self, 'error'))
     return mark_safe(u'\n'.join(output))
 
@@ -77,3 +84,27 @@ class StandardModelForm(ModelForm):
 
 StandardModelForm.as_standard = as_standard
 StandardModelForm.as_standard_ajax = as_standard_ajax
+
+
+class GenericField(forms.Field):
+
+    def __init__(self, required=False, widget=None):
+        super(GenericField, self).__init__(required, widget)
+
+
+class LegendWidget(forms.Widget):
+
+    def __init__(self, attrs=None):
+        default_attrs = {'display': 'Legend'}
+        if attrs:
+            default_attrs.update(attrs)
+        super(LegendWidget, self).__init__(default_attrs)
+
+    def __unicode__(self):
+        return self.render()
+
+    def render(self, name, value, attrs=None):
+        if value is None:
+            value = ''
+        final_attrs = self.build_attrs(attrs, name=name)
+        return mark_safe('<legend>%s</legend>' % final_attrs['display'])

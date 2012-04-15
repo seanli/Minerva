@@ -134,6 +134,60 @@
         }
     }, 
     {
+        "pk": 17, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "s1li", 
+            "first_name": "Shang", 
+            "last_name": "Li", 
+            "is_active": false, 
+            "is_superuser": false, 
+            "is_staff": false, 
+            "last_login": "2012-04-13T21:40:21.955Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$iNOF4w72XbZd$tTMm7+QL4BFTAdKBaaXmkukK9JwTWW7gTAZ6j3ww6fs=", 
+            "email": "sli@uwaterloo.ca", 
+            "date_joined": "2012-04-13T21:40:21.955Z"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "admin", 
+            "first_name": "Admin", 
+            "last_name": "Schoolax", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-14T22:48:23.211Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Lgo6foEb7neN$ZeTa0uMRHFc4wXnf5sCnlmSRxYWnvIs+Nx08I1W+ijY=", 
+            "email": "admin@schoolax.com", 
+            "date_joined": "2012-03-26T21:52:03Z"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "pwang", 
+            "first_name": "Paul", 
+            "last_name": "Wang", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-13T04:25:35Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$7Uq9GkPu2i90$7uGdprNe+/Hb1jTGZ5Sh6xl2OvPlCr7MxHpO2VTg5Z0=", 
+            "email": "st85368@gmail.com", 
+            "date_joined": "2012-03-19T06:26:10Z"
+        }
+    }, 
+    {
         "pk": 15, 
         "model": "auth.user", 
         "fields": {
@@ -152,39 +206,21 @@
         }
     }, 
     {
-        "pk": 14, 
+        "pk": 2, 
         "model": "auth.user", 
         "fields": {
-            "username": "admin", 
-            "first_name": "Admin", 
-            "last_name": "Schoolax", 
+            "username": "sli", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
             "is_active": true, 
             "is_superuser": true, 
             "is_staff": true, 
-            "last_login": "2012-04-08T08:17:35.390Z", 
+            "last_login": "2012-04-14T22:49:00.529Z", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$Lgo6foEb7neN$ZeTa0uMRHFc4wXnf5sCnlmSRxYWnvIs+Nx08I1W+ijY=", 
-            "email": "admin@schoolax.com", 
-            "date_joined": "2012-03-26T21:52:03Z"
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "pwang", 
-            "first_name": "Paul", 
-            "last_name": "Wang", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-04-10T01:42:00.965Z", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$7Uq9GkPu2i90$7uGdprNe+/Hb1jTGZ5Sh6xl2OvPlCr7MxHpO2VTg5Z0=", 
-            "email": "st85368@gmail.com", 
-            "date_joined": "2012-03-19T06:26:10Z"
+            "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08T06:12:47Z"
         }
     }, 
     {
@@ -203,24 +239,6 @@
             "password": "pbkdf2_sha256$10000$rkyjP0uCLDEl$iREIjakkcRXofSdT11NIhtk+2xqW2sC+mi9l2zoDGfM=", 
             "email": "zhengkenzhong@gmail.com", 
             "date_joined": "2012-04-11T00:48:07Z"
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "sli", 
-            "first_name": "Sean", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-04-11T03:03:58.215Z", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
-            "email": "s67li@uwaterloo.ca", 
-            "date_joined": "2012-02-08T06:12:47Z"
         }
     }, 
     {
@@ -31195,6 +31213,27 @@
             "created_time": "2012-04-11T06:51:53.832Z", 
             "name": "Continuous Improvement", 
             "modified_time": "2012-04-11T06:51:53.832Z"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28009, 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 11, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
         }
     }, 
     {
@@ -86511,6 +86550,45 @@
         }
     }, 
     {
+        "pk": 2, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 2, 
+            "course": 1279, 
+            "difficult_value": 3, 
+            "rater": [
+                "pwang"
+            ], 
+            "interesting_value": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 5, 
+            "course": 1279, 
+            "difficult_value": 2, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 3, 
+            "course": 1849, 
+            "difficult_value": 1, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 5
+        }
+    }, 
+    {
         "pk": 66, 
         "model": "course.section", 
         "fields": {
@@ -86659,6 +86737,16 @@
         }
     }, 
     {
+        "pk": 34, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 66, 
+            "user": [
+                "pwang"
+            ]
+        }
+    }, 
+    {
         "pk": 7, 
         "model": "account.profile", 
         "fields": {
@@ -86785,24 +86873,6 @@
         }
     }, 
     {
-        "pk": 12, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": "", 
-            "degree": null, 
-            "institute": 1, 
-            "tagline": "", 
-            "influence": 0, 
-            "grade": 2, 
-            "grade_gauge": 0, 
-            "birthday": null, 
-            "role": "S", 
-            "user": [
-                "pwang"
-            ]
-        }
-    }, 
-    {
         "pk": 14, 
         "model": "account.profile", 
         "fields": {
@@ -86839,6 +86909,24 @@
         }
     }, 
     {
+        "pk": 17, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": [
+                "s1li"
+            ]
+        }
+    }, 
+    {
         "pk": 15, 
         "model": "account.profile", 
         "fields": {
@@ -86865,12 +86953,30 @@
             "institute": 1, 
             "tagline": "", 
             "influence": 0, 
-            "grade": 7, 
-            "grade_gauge": 0, 
+            "grade": 1, 
+            "grade_gauge": -20, 
             "birthday": "1990-10-06", 
             "role": "S", 
             "user": [
                 "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 2, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "role": "S", 
+            "user": [
+                "pwang"
             ]
         }
     }

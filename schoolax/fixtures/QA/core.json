@@ -30849,6 +30849,27 @@
         }
     }, 
     {
+        "pk": 11, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28009, 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 11, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "core.badge", 
         "fields": {

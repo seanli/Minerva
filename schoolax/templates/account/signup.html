@@ -11,54 +11,7 @@
 <div class="row-fluid">
   <form action="" method="post" class="form-horizontal">
     {% csrf_token %}
-    <legend>
-      Personal Detail
-    </legend>
-    <div class="control-group{% if form.first_name.errors %} error{% endif %}">
-      <label for="id_{{ form.first_name.name }}" class="control-label"> {{ form.first_name.label }} </label>
-      <div class="controls">
-        {{ form.first_name }}<span class="help-inline">{{ form.first_name.errors|safe }}</span>
-      </div>
-    </div>
-    <div class="control-group{% if form.last_name.errors %} error{% endif %}">
-      <label for="id_{{ form.last_name.name }}" class="control-label"> {{ form.last_name.label }} </label>
-      <div class="controls">
-        {{ form.last_name }}<span class="help-inline">{{ form.last_name.errors|safe }}</span>
-      </div>
-    </div>
-    <div class="control-group{% if form.institute.errors %} error{% endif %}">
-      <label for="id_{{ form.institute.name }}" class="control-label"> {{ form.institute.label }} </label>
-      <div class="controls">
-        {{ form.institute }}<span class="help-inline">{{ form.institute.errors|safe }}</span>
-      </div>
-    </div>
-    <div class="control-group{% if form.role.errors %} error{% endif %}">
-      <label for="id_{{ form.role.name }}" class="control-label"> {{ form.role.label }} </label>
-      <div class="controls">
-        {{ form.role }}<span class="help-inline">{{ form.role.errors|safe }}</span>
-      </div>
-    </div>
-    <legend>
-      Login Credential
-    </legend>
-    <div class="control-group{% if form.email.errors %} error{% endif %}">
-      <label for="id_{{ form.email.name }}" class="control-label"> {{ form.email.label }} </label>
-      <div class="controls">
-        {{ form.email }}<span class="help-inline">{{ form.email.errors|safe }}</span>
-      </div>
-    </div>
-    <div class="control-group{% if form.password.errors %} error{% endif %}">
-      <label for="id_{{ form.password.name }}" class="control-label"> {{ form.password.label }} </label>
-      <div class="controls">
-        {{ form.password }}<span class="help-inline">{{ form.password.errors|safe }}</span>
-      </div>
-    </div>
-    <div class="control-group{% if form.password_conf.errors %} error{% endif %}">
-      <label for="id_{{ form.password_conf.name }}" class="control-label"> {{ form.password_conf.label }} </label>
-      <div class="controls">
-        {{ form.password_conf }}<span class="help-inline">{{ form.password_conf.errors|safe }}</span>
-      </div>
-    </div>
+    {{ form.as_standard }}
     {% if form.non_field_errors %}
     <div class="alert alert-error">
       {{ form.non_field_errors|safe }}
