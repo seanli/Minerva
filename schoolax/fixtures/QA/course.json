@@ -54574,6 +54574,45 @@
         }
     }, 
     {
+        "pk": 2, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 2, 
+            "course": 1279, 
+            "difficult_value": 3, 
+            "rater": [
+                "pwang"
+            ], 
+            "interesting_value": 3
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 5, 
+            "course": 1279, 
+            "difficult_value": 2, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 4
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 3, 
+            "course": 1849, 
+            "difficult_value": 1, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 5
+        }
+    }, 
+    {
         "pk": 66, 
         "model": "course.section", 
         "fields": {
@@ -54718,6 +54757,16 @@
             "section": 76, 
             "user": [
                 "admin"
+            ]
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 66, 
+            "user": [
+                "pwang"
             ]
         }
     }
