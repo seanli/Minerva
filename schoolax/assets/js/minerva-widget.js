@@ -74,7 +74,7 @@
     var defaults = {
       preSubmit : function() {},
       trigger : null, // Button element which triggers submit
-      appView : '', // The Dajax view called in the format: app.view
+      appFunction : '', // The Dajax view called in the format: app.ajax.function
       // Callback function is separately declared and called using Dajax mechanism
     };
     var options = $.extend({}, defaults, options);
@@ -85,8 +85,8 @@
         // Calls the preSubmit function
         options.preSubmit();
         var form_data = $this.serializeObject(true);
-        var appView = options.appView.split('.');
-        Dajaxice[appView[0]][appView[1]](Dajax.process, {
+        var appFunction = options.appFunction.split('.');
+        Dajaxice[appFunction[0]][appFunction[1]](Dajax.process, {
           'form_data' : form_data
         });
       });

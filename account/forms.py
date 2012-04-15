@@ -66,6 +66,7 @@ class SignupForm(StandardForm):
 
 
 class SettingForm(StandardForm):
+
     password_old = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Old Password')
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')
     password_conf = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Confirm Password')
