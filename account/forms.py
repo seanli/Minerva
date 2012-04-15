@@ -63,20 +63,17 @@ class SignupForm(StandardForm):
     def clean_last_name(self):
         last_name = titlecase(self.cleaned_data['last_name'].strip())
         return last_name
+
+
 class SettingForm(StandardForm):
     password_old = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Old Password')
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')
     password_conf = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Confirm Password')
-    
-    def set_password(self):
-        self.request.user.set_password(self.cleaned_data['password'])
-        self.request.user.save()
-    
+
     def clean_password_old(self):
         if not self.request.user.check_password(self.cleaned_data['password_old']):
-            raise forms.ValidationError('Incorrect Password!')
-        
-    
+            raise forms.ValidationError('Incorrect password!')
+
     def clean_password_conf(self):
         password = self.cleaned_data['password']
         password_conf = self.cleaned_data['password_conf']

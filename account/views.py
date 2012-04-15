@@ -3,8 +3,6 @@ from django.http import HttpResponseRedirect
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
-from django.contrib.auth.models import User
-from django.contrib.auth.hashers import check_password
 from account.forms import LoginForm, SignupForm, SettingForm
 from account.models import Profile
 from core.utilities import get_referrer, set_referrer
@@ -47,14 +45,18 @@ def signup(request):
     context = RequestContext(request)
     context['form'] = form
     return render_to_response('account/signup.html', context)
-def setting(request):
+
+
+def settings(request):
+    user = request.user
     if request.method == 'POST':
-        form = SettingForm(request.POST,request=request)
+        form = SettingForm(request.POST, request=request)
         if form.is_valid():
             data = form.cleaned_data
-            form.set_password()
+            user.set_password(data['password'])
+            user.save()
     else:
         form = SettingForm()
     context = RequestContext(request)
     context['form'] = form
-    return render_to_response('account/setting.html', context)
+    return render_to_response('account/settings.html', context)
