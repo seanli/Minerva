@@ -24,6 +24,15 @@ MEDIA_URL = '/media/'
 
 COMPRESS_ENABLED = False
 
+# Render CSS Using LESS (Slower)
+
+USE_LESS = False
+
+if USE_LESS:
+    TEMPLATE_VISIBLE_SETTINGS += (
+        'USE_LESS',
+    )
+
 # Swap User Feature
 
 SWAP_USER = True

@@ -19,7 +19,7 @@
     <link href="{{ STATIC_URL }}css/jquery.ui.css" rel="stylesheet" type="text/css">
     <link href="{{ STATIC_URL }}css/prettify.css" rel="stylesheet" type="text/css">
     {% endcompress %}
-    {% if DEBUG %}
+    {% if USE_LESS %}
     <link href="{{ STATIC_URL }}less/minerva.less" rel="stylesheet/less" type="text/css">
     {% else %}
     {% compress css %}
@@ -89,7 +89,7 @@
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     {% endcompress %}
     {% endif %}
-    {% if DEBUG %}
+    {% if USE_LESS %}
     {% compress js %}
     <script src="{{ STATIC_URL }}js/less.min.js"></script>
     {% endcompress %}
