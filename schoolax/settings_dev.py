@@ -28,6 +28,11 @@ COMPRESS_ENABLED = False
 
 SWAP_USER = True
 
+if SWAP_USER:
+    TEMPLATE_VISIBLE_SETTINGS += (
+        'SWAP_USER',
+    )
+
 # Django Debug Toolbar
 
 ENABLE_TOOLBAR = False
