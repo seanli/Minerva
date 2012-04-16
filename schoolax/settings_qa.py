@@ -22,13 +22,4 @@ STATIC_URL = 'http://schoolax.com/static/'
 MEDIA_ROOT = '/home/lisean/webapps/minerva_media/'
 MEDIA_URL = 'http://schoolax.com/media/'
 
-HAYSTACK_CONNECTIONS = {
-    'default': {
-        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
-        'URL': 'http://qa.schoolax.com/solr/',
-        'TIMEOUT': 60 * 5,
-        'INCLUDE_SPELLING': True,
-    },
-}
-
 COMPRESS_ENABLED = True
