@@ -1,6 +1,6 @@
 from django.conf import settings as django_settings
-from django.core.exceptions import ImproperlyConfigured
 from backstage.forms import ReportForm
+import logging
 
 
 def settings(request):
@@ -12,8 +12,10 @@ def settings(request):
         try:
             context[attr] = getattr(django_settings, attr)
         except AttributeError:
+            context[attr] = None
             msg = 'TEMPLATE_VISIBLE_SETTINGS: "%s" does not exist.' % format(attr)
-            raise ImproperlyConfigured(msg)
+            exception_logger = logging.getLogger('minerva')
+            exception_logger.warning(msg)
     return context
 
 
