@@ -118,6 +118,7 @@ TEMPLATE_VISIBLE_SETTINGS = (
     'DEBUG',
     'SITE_NAME',
     'ENVIRONMENT',
+    'SWAP_USER',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -24,6 +24,10 @@ MEDIA_URL = '/media/'
 
 COMPRESS_ENABLED = False
 
+# Swap User Feature
+
+SWAP_USER = True
+
 # Django Debug Toolbar
 
 ENABLE_TOOLBAR = False
