@@ -1,36 +1,41 @@
 {% extends "base.html" %}
 
 {% load base_extra %}
+{% load humanize %}
 
 {% block title %}{{ SITE_NAME }} - Class{% endblock %}
 
 {% block content %}
 
+<div class="page-header">
+  <h1><a href="{% url courses %}{{ section.course.id }}">{{ section.course.title }}</a></h1>
+  <h6>{{ section.course.abbrev }} - {{ section.course.institute.name }}</h6>
+</div>
 <div class="row-fluid">
-  <div class="page-header">
-    <h1><a href="{% url courses %}{{ section.course.id }}">{{ section.course.title }}</a></h1>
-    <h6>{{ section.course.abbrev }} - {{ section.course.institute.name }}</h6>
+  <div class="span9">
+    <h3>Whiteboard:</h3>
+    {% include "modal/add-whiteboard-post.html" with form=post_form %}
+    <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-primary"><i class="icon-pencil icon-white"></i> Write </a>
+    <div class="vertical-space"></div>
+    {% for post in posts %}
+    <div class="well well-small">
+      <h6>{{ post.created_time|naturaltime }}</h6>
+      <h4>{{ post.author.get_full_name }}:</h4>
+      <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
   </div>
-  <h3>Description:</h3>
-  <p>{{ section.course.description }}</p>
-  <h3>Details:</h3>
-  <dl class="dl-horizontal">
-    <dt>Start Date:</dt>
-    <dd>{{ section.start_date|date:"F, Y" }}</dd>
-    <dt>Duration:</dt>
-    <dd>{{ section.get_duration_display }}</dd>
-  </dl>
-  <h3>In This Class:</h3>
-  {% for classmate in classmates %}
-  <h5><a href="{% url portfolio %}{{ classmate.username }}">{{ classmate.get_full_name }}</a></h5>
-  {% endfor %}
-  <h3>Whiteboard:</h3>
-  {% include "modal/add-whiteboard-post.html" with form=post_form %}
-  <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-primary"><i class="icon-pencil icon-white"></i> Write </a>
-  <div class="vertical-space"></div>
-  {% for post in posts %}
-  <div class="well well-small">{{ post.content }}</div>
-  {% endfor %}
+  <div class="span3">
+  	<h3>Details:</h3>
+  	<h5>Start Date:</h5>
+  	<h6>{{ section.start_date|date:"F, Y" }}</h6>
+  	<h5>Duration:</h5>
+  	<h6>{{ section.get_duration_display }}</h6>
+  	<h3>In This Class:</h3>
+    {% for classmate in classmates %}
+    <h5><a href="{% url portfolio %}{{ classmate.username }}">{{ classmate.get_full_name }}</a></h5>
+    {% endfor %}
+  </div>
 </div>
 
 {% endblock %}

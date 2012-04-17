@@ -38,7 +38,7 @@ def class_section(request, section_id=None):
         section_obj = None
     if section_obj is not None:
         classmates = [assign.user for assign in SectionAssign.objects.filter(section=section_obj)]
-        posts = WhiteboardPost.objects.filter(section=section_obj)
+        posts = WhiteboardPost.objects.filter(section=section_obj).order_by('-created_time')
         context['section'] = section_obj
         context['classmates'] = classmates
         context['posts'] = posts
