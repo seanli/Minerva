@@ -6,7 +6,7 @@ from django.core.exceptions import ValidationError
 from core.models import Institute, ProvinceState
 from core.constants import (DEGREE, GRADE,
     GRADE_MAX, GRADE_MIN, GRADE_STEP)
-from core.utilities import unique_username
+from core.utilities import generate_username
 
 
 @receiver(pre_save, sender=User)
@@ -40,7 +40,7 @@ class Profile(models.Model):
     @staticmethod
     def register_user(email, password, first_name, last_name, institute):
         user = User()
-        user.username = unique_username(first_name, last_name)
+        user.username = generate_username()
         user.email = email
         user.set_password(password)
         user.first_name = first_name

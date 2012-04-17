@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+import random
 
 
 def titlecase(text):
@@ -11,15 +12,20 @@ def titlecase(text):
     return merged
 
 
-def unique_username(first_name, last_name):
-    counter = 1
-    combined = (first_name.lower()[:1] + last_name.lower())[:30]
-    user = User.objects.filter(username=combined)
+def generate_random_string(min_length, max_length):
+    ret = ''.join([random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789') for _ in range(max_length)])
+    return ret[:random.randint(min_length, max_length)]
+
+
+def generate_username():
+    min_length = 6
+    max_length = 30
+    random_string = generate_random_string(min_length, max_length)
+    user = User.objects.filter(username=random_string)
     while user:
-        combined = (first_name.lower()[:1] + unicode(counter) + last_name.lower())[:30]
-        user = User.objects.filter(username=combined)
-        counter += 1
-    return combined
+        random_string = generate_random_string(min_length, max_length)
+        user = User.objects.filter(username=random_string)
+    return random_string
 
 
 def set_referrer(request, referrer):
