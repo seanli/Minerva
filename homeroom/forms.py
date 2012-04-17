@@ -48,3 +48,13 @@ class AddCourseForm(StandardForm):
                 if section != None and self.user.has_section(section):
                     raise forms.ValidationError('You are already registered in this course section!')
                 return data
+
+
+class AddWhiteboardPostForm(StandardForm):
+
+    content = forms.CharField(label='Please Write Below...', widget=forms.Textarea(attrs={'style': 'width:98%;resize:vertical'}))
+    section = forms.ModelChoiceField(queryset=Section.objects, widget=forms.HiddenInput())
+
+    def clean_content(self):
+        content = self.cleaned_data['content'].strip()
+        return content

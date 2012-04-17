@@ -12,6 +12,7 @@ def clear_validation(dajax, form):
 
 
 def show_validation(dajax, form):
+    clear_validation(dajax, form)
     for field, error in form.errors.items():
         if field != '__all__':
             dajax.add_css_class('div[row="%s"].control-group' % make_row_name(form, field), 'error')

@@ -24,6 +24,13 @@
   {% for classmate in classmates %}
   <h5><a href="{% url portfolio %}{{ classmate.username }}">{{ classmate.get_full_name }}</a></h5>
   {% endfor %}
+  <h3>Whiteboard:</h3>
+  {% include "modal/add-whiteboard-post.html" with form=post_form %}
+  <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-primary"><i class="icon-pencil icon-white"></i> Write </a>
+  <div class="vertical-space"></div>
+  {% for post in posts %}
+  <div class="well well-small">{{ post.content }}</div>
+  {% endfor %}
 </div>
 
 {% endblock %}

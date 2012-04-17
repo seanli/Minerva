@@ -64,6 +64,7 @@ DEBUG_TOOLBAR_PANELS = (
     'debug_toolbar.panels.logger.LoggingPanel',
 )
 
+
 def toolbar_callback(request):
     return ENABLE_TOOLBAR
 

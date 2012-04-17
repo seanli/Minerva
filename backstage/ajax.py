@@ -8,6 +8,7 @@ from core.ajax import clear_validation, show_validation
 @dajaxice_register
 def form_report(request, form_data):
     dajax = Dajax()
+    callback = 'form_report_callback'
     form = ReportForm(form_data)
     if form.is_valid():
         clear_validation(dajax, form)
@@ -19,9 +20,8 @@ def form_report(request, form_data):
         if request.user.is_authenticated():
             report.reporter = request.user
         report.save()
-        dajax.add_data({'status': 'OK'}, 'form_report_callback')
+        dajax.add_data({'status': 'OK'}, callback)
     else:
-        clear_validation(dajax, form)
         show_validation(dajax, form)
-        dajax.add_data({'status': 'INVALID'}, 'form_report_callback')
+        dajax.add_data({'status': 'INVALID'}, callback)
     return dajax.json()

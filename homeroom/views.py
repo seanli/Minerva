@@ -2,9 +2,9 @@ from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
-from course.models import SectionAssign, Section
+from course.models import SectionAssign, Section, WhiteboardPost
 from django.utils.datastructures import SortedDict
-from homeroom.forms import AddCourseForm
+from homeroom.forms import AddCourseForm, AddWhiteboardPostForm
 
 
 @login_required
@@ -38,8 +38,11 @@ def class_section(request, section_id=None):
         section_obj = None
     if section_obj is not None:
         classmates = [assign.user for assign in SectionAssign.objects.filter(section=section_obj)]
+        posts = WhiteboardPost.objects.filter(section=section_obj)
         context['section'] = section_obj
         context['classmates'] = classmates
+        context['posts'] = posts
+        context['post_form'] = AddWhiteboardPostForm(request=request)
         return render_to_response('homeroom/class.html', context)
     else:
         return HttpResponse('Section Not Found!')

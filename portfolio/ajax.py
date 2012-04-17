@@ -12,6 +12,7 @@ from django.utils import simplejson
 @login_required
 def form_encouragement(request, form_data):
     dajax = Dajax()
+    callback = 'form_encouragement_callback'
     form = EncouragementForm(form_data, request=request)
     if form.is_valid():
         clear_validation(dajax, form)
@@ -27,15 +28,13 @@ def form_encouragement(request, form_data):
             encouragement.anonymous = anonymous
             encouragement.sent_time = datetime.now()
             encouragement.save()
-            dajax.add_data({'status': 'OK'}, 'form_encouragement_callback')
+            dajax.add_data({'status': 'OK'}, callback)
         else:
-            clear_validation(dajax, form)
             show_validation(dajax, form)
-            dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
+            dajax.add_data({'status': 'INVALID'}, callback)
     else:
-        clear_validation(dajax, form)
         show_validation(dajax, form)
-        dajax.add_data({'status': 'INVALID'}, 'form_encouragement_callback')
+        dajax.add_data({'status': 'INVALID'}, callback)
     return dajax.json()
 
 
@@ -43,6 +42,7 @@ def form_encouragement(request, form_data):
 @login_required
 def form_add_specialization(request, form_data):
     dajax = Dajax()
+    callback = 'form_add_specialization_callback'
     form = AddSpecializationForm(form_data, request=request)
     if form.is_valid():
         clear_validation(dajax, form)
@@ -50,11 +50,10 @@ def form_add_specialization(request, form_data):
         specialization = data['specialization']
         user = request.user
         user.add_specialization(specialization)
-        dajax.add_data({'status': 'OK'}, 'form_add_specialization_callback')
+        dajax.add_data({'status': 'OK'}, callback)
     else:
-        clear_validation(dajax, form)
         show_validation(dajax, form)
-        dajax.add_data({'status': 'INVALID'}, 'form_add_specialization_callback')
+        dajax.add_data({'status': 'INVALID'}, callback)
     return dajax.json()
 
 
@@ -62,6 +61,7 @@ def form_add_specialization(request, form_data):
 @login_required
 def form_add_skill(request, form_data):
     dajax = Dajax()
+    callback = 'form_add_skill_callback'
     form = AddSkillForm(form_data, request=request)
     if form.is_valid():
         clear_validation(dajax, form)
@@ -69,11 +69,10 @@ def form_add_skill(request, form_data):
         skill = data['skill']
         user = request.user
         user.add_skill(skill)
-        dajax.add_data({'status': 'OK'}, 'form_add_skill_callback')
+        dajax.add_data({'status': 'OK'}, callback)
     else:
-        clear_validation(dajax, form)
         show_validation(dajax, form)
-        dajax.add_data({'status': 'INVALID'}, 'form_add_skill_callback')
+        dajax.add_data({'status': 'INVALID'}, callback)
     return dajax.json()
 
 

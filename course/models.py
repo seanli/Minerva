@@ -81,3 +81,31 @@ class Review(SentContent):
 
     class Meta:
         db_table = 'mva_review'
+
+
+class WhiteboardPost(models.Model):
+
+    section = models.ForeignKey(Section)
+    author = models.ForeignKey(User)
+    content = models.TextField()
+    created_time = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return '%s -> %s: %s' % (self.author, self.section, self.content[:10])
+
+    class Meta:
+        db_table = 'mva_whiteboard_post'
+
+
+class WhiteboardComment(models.Model):
+
+    post = models.ForeignKey(WhiteboardPost)
+    author = models.ForeignKey(User)
+    content = models.TextField()
+    created_time = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return '%s -> %s: %s' % (self.author, self.post.id, self.content[:10])
+
+    class Meta:
+        db_table = 'mva_whiteboard_comment'

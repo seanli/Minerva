@@ -8,7 +8,7 @@ class EncouragementForm(StandardForm):
 
     message = forms.CharField(label='Please Write Your Encouragement Below...', widget=forms.Textarea(attrs={'style': 'width:98%;resize:vertical'}))
     anonymous = forms.BooleanField(label='Anonymous?', required=False, initial=False)
-    person_to = forms.ModelChoiceField(label='', queryset=User.objects, widget=forms.HiddenInput())
+    person_to = forms.ModelChoiceField(queryset=User.objects, widget=forms.HiddenInput())
 
     def clean_message(self):
         message = self.cleaned_data['message'].strip()
