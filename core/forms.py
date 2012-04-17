@@ -34,7 +34,6 @@ def as_standard(self):
             control = '<div class="controls">%s<span class="help-inline">%s</span></div>' % (name_field, name_field.errors)
             control_group = control_group % (label + control)
             output.append(control_group)
-    print output
     return mark_safe(u'\n'.join(output))
 
 
