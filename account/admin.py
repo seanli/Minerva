@@ -56,9 +56,9 @@ class SectionAssignInline(admin.TabularInline):
 
 class CustomUserAdmin(UserAdmin):
     inlines = [ProfileInline, ContactInline, SpecializationAssignInline, SkillAssignInline, BadgeAssignInline, SectionAssignInline, EncouragementInline, FeedbackInline]
-    list_display = ('username', 'email', 'first_name', 'last_name', 'user_role', 'user_institute', 'last_login')
+    list_display = ('username', 'email', 'first_name', 'last_name', 'user_institute', 'last_login')
     list_filter = ()
-    list_filter = ('is_staff', 'is_superuser', 'is_active', 'profile__role', 'profile__institute', 'last_login')
+    list_filter = ('is_staff', 'is_superuser', 'is_active', 'profile__institute', 'last_login')
     filter_horizontal = ['groups', 'user_permissions']
 
 

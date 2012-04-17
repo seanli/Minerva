@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 from core.forms import StandardForm, GenericField, LegendWidget
 from core.utilities import titlecase
 from core.models import Institute
-from core.constants import ROLE
 
 
 class LoginForm(StandardForm):
@@ -35,7 +34,6 @@ class SignupForm(StandardForm):
     first_name = forms.CharField(max_length=30, label='First Name')
     last_name = forms.CharField(max_length=30, label='Last Name')
     institute = forms.ModelChoiceField(queryset=Institute.objects, empty_label=None, label='Institute')
-    role = forms.ChoiceField(choices=ROLE, label='Who are you?')
     login_credential = GenericField(widget=LegendWidget(attrs={'display': 'Login Credential'}))
     email = forms.EmailField(max_length=75, label='Email')
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')

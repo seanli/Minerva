@@ -6,12 +6,6 @@ from course.models import CourseRating, SectionAssign
 
 # Adding functions to User class
 
-def user_role(self):
-    return self.get_profile().get_role_display()
-user_role.short_description = 'Role'
-User.add_to_class('user_role', user_role)
-
-
 def user_institute(self):
     return '<a href="/admin/core/institute/%s/" target="_blank">%s</a>' % (self.get_profile().institute.id, self.get_profile().institute)
 user_institute.allow_tags = True

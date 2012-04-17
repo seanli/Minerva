@@ -13,8 +13,13 @@ class WikiAttachmentAssignInline(admin.TabularInline):
     extra = 1
 
 
+class WikiRevisionHistoryInline(admin.StackedInline):
+    model = WikiRevisionHistory
+    extra = 0
+
+
 class WikiAdmin(admin.ModelAdmin):
-    inlines = [WikiAttachmentAssignInline]
+    inlines = [WikiAttachmentAssignInline, WikiRevisionHistoryInline]
     list_display = ('title', 'author', 'created_time', 'modified_time')
 
 
@@ -24,5 +29,4 @@ class LogMessageAdmin(admin.ModelAdmin):
 
 admin.site.register(Ticket, TicketAdmin)
 admin.site.register(Wiki, WikiAdmin)
-admin.site.register(WikiRevisionHistory)
 admin.site.register(LogMessage, LogMessageAdmin)

@@ -37,7 +37,7 @@ def signup(request):
         if form.is_valid():
             data = form.cleaned_data
             Profile.register_user(email=data['email'], password=data['password'], first_name=data['first_name'],
-                last_name=data['last_name'], institute=data['institute'], role=data['role'])
+                last_name=data['last_name'], institute=data['institute'])
             set_referrer(request, 'signup')
             return HttpResponseRedirect(reverse('login'))
     else:

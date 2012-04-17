@@ -4,7 +4,7 @@ from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.core.exceptions import ValidationError
 from core.models import Institute, ProvinceState
-from core.constants import (ROLE, DEGREE, GRADE,
+from core.constants import (DEGREE, GRADE,
     GRADE_MAX, GRADE_MIN, GRADE_STEP)
 from core.utilities import unique_username
 
@@ -25,7 +25,6 @@ class Profile(models.Model):
     ''' Extends the Django User '''
 
     user = models.OneToOneField(User)
-    role = models.CharField(max_length=1, choices=ROLE)
     middle_name = models.CharField(max_length=100, null=True, blank=True)
     birthday = models.DateField(null=True, blank=True)
     tagline = models.TextField(null=True, blank=True)
@@ -39,7 +38,7 @@ class Profile(models.Model):
         return '%s' % (self.user.get_full_name())
 
     @staticmethod
-    def register_user(email, password, first_name, last_name, institute, role):
+    def register_user(email, password, first_name, last_name, institute):
         user = User()
         user.username = unique_username(first_name, last_name)
         user.email = email
@@ -51,7 +50,6 @@ class Profile(models.Model):
         profile = Profile()
         profile.user = user
         profile.institute = institute
-        profile.role = role
         profile.save()
 
     def increment_grade(self, delta):

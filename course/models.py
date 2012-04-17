@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from core.models import Institute
 from core.abstract_models import SentContent
 from core.constants import (DURATION, COURSE_INTERESTING_RATING,
-    COURSE_PRACTICAL_RATING, COURSE_DIFFICULT_RATING)
+    COURSE_PRACTICAL_RATING, COURSE_DIFFICULT_RATING, SECTION_ROLE)
 
 
 class Course(models.Model):
@@ -12,7 +12,6 @@ class Course(models.Model):
     abbrev = models.CharField(max_length=10, verbose_name='abbreviation', null=True, blank=True)
     institute = models.ForeignKey(Institute)
     description = models.TextField(null=True, blank=True)
-    difficulty = models.PositiveIntegerField(null=True, blank=True)
     created_time = models.DateTimeField(auto_now_add=True)
     modified_time = models.DateTimeField(auto_now=True)
 
@@ -61,9 +60,10 @@ class SectionAssign(models.Model):
 
     user = models.ForeignKey(User, related_name='%(class)s_user')
     section = models.ForeignKey(Section, related_name='%(class)s_section')
+    role = models.CharField(max_length=1, default='S', choices=SECTION_ROLE)
 
     def __unicode__(self):
-        return '%s : %s' % (self.user, self.section)
+        return '(%s | %s) : %s' % (self.user, self.section, self.role)
 
     class Meta:
         db_table = 'mva_section_assign'

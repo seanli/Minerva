@@ -2,11 +2,6 @@ import logging
 
 # Site Core
 
-ROLE = (
-    ('S', 'Student'),
-    ('I', 'Instructor'),
-)
-
 DEGREE = (
     ('UG', 'Undergraduate'),
     ('BA', 'Bachelor'),
@@ -100,6 +95,12 @@ DURATION = (
     ('T', 'Academic Term'),
     ('D', 'Drop In'),
     ('N', 'Never Ending')
+)
+
+SECTION_ROLE = (
+    ('S', 'Student'),
+    ('I', 'Instructor'),
+    ('T', 'Tutor'),
 )
 
 # Backstage
