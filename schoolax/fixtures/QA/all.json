@@ -170,24 +170,6 @@
         }
     }, 
     {
-        "pk": 2, 
-        "model": "auth.user", 
-        "fields": {
-            "username": "sli", 
-            "first_name": "Sean", 
-            "last_name": "Li", 
-            "is_active": true, 
-            "is_superuser": true, 
-            "is_staff": true, 
-            "last_login": "2012-04-15T00:09:41.914Z", 
-            "groups": [], 
-            "user_permissions": [], 
-            "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
-            "email": "s67li@uwaterloo.ca", 
-            "date_joined": "2012-02-08T06:12:47Z"
-        }
-    }, 
-    {
         "pk": 12, 
         "model": "auth.user", 
         "fields": {
@@ -221,6 +203,24 @@
             "password": "pbkdf2_sha256$10000$kMxuWk5WcIA9$GDYSVzFzyOqvx/QtVmoyPTcS03flzN205KWvpDtpEJw=", 
             "email": "liguanjun@hotmail.com", 
             "date_joined": "2012-03-18T02:30:47Z"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "sli", 
+            "first_name": "Sean", 
+            "last_name": "Li", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-04-17T18:05:19.923Z", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "pbkdf2_sha256$10000$Dx30kIqcOrj1$ocBl8dpPwSP0yhgpfMeZdJjko2gLAaTRbk3YoSL6li0=", 
+            "email": "s67li@uwaterloo.ca", 
+            "date_joined": "2012-02-08T06:12:47Z"
         }
     }, 
     {
@@ -286,51 +286,6 @@
         }
     }, 
     {
-        "pk": 13, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-25T06:42:38.677Z", 
-            "app_name": "backstage", 
-            "migration": "0002_auto__add_field_logmessage_traceback__add_field_logmessage_request"
-        }
-    }, 
-    {
-        "pk": 14, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-25T06:42:38.781Z", 
-            "app_name": "backstage", 
-            "migration": "0003_auto__add_field_logmessage_uri_path__add_field_logmessage_user"
-        }
-    }, 
-    {
-        "pk": 15, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-25T06:42:38.805Z", 
-            "app_name": "backstage", 
-            "migration": "0004_auto__add_field_logmessage_session"
-        }
-    }, 
-    {
-        "pk": 16, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-25T06:42:38.888Z", 
-            "app_name": "backstage", 
-            "migration": "0005_auto__del_field_logmessage_session"
-        }
-    }, 
-    {
-        "pk": 17, 
-        "model": "south.migrationhistory", 
-        "fields": {
-            "applied": "2012-03-27T08:34:19.130Z", 
-            "app_name": "backstage", 
-            "migration": "0006_auto__add_wikirevisionhistory"
-        }
-    }, 
-    {
         "pk": 18, 
         "model": "south.migrationhistory", 
         "fields": {
@@ -364,6 +319,24 @@
             "applied": "2012-04-11T06:58:10.394Z", 
             "app_name": "core", 
             "migration": "0004_auto__add_unique_skill_name"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-17T18:59:03.722Z", 
+            "app_name": "course", 
+            "migration": "0003_auto__add_whiteboardcomment__add_whiteboardpost"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "south.migrationhistory", 
+        "fields": {
+            "applied": "2012-04-17T18:59:03.763Z", 
+            "app_name": "course", 
+            "migration": "0004_whiteboard_rename"
         }
     }, 
     {
@@ -31236,17 +31209,6 @@
         }
     }, 
     {
-        "pk": 8, 
-        "model": "core.skillrating", 
-        "fields": {
-            "skill_assign": 11, 
-            "rater": [
-                "sli"
-            ], 
-            "value": 4
-        }
-    }, 
-    {
         "pk": 9, 
         "model": "core.skillrating", 
         "fields": {
@@ -31255,6 +31217,28 @@
                 "gli"
             ], 
             "value": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 11, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 12, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
         }
     }, 
     {
@@ -31701,29 +31685,29 @@
         }
     }, 
     {
-        "pk": 3, 
-        "model": "backstage.wiki", 
-        "fields": {
-            "created_time": "2012-03-27T00:11:48.367Z", 
-            "document": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //portfolio// - code related to the Portfolio component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
-            "author": [
-                "sli"
-            ], 
-            "modified_time": "2012-03-28T03:58:33.345Z", 
-            "title": "Development Process"
-        }
-    }, 
-    {
         "pk": 1, 
         "model": "backstage.wiki", 
         "fields": {
             "created_time": "2012-03-22T05:00:00Z", 
-            "document": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# If your //Server Groups// on the left panel is empty, click //File->Add Server// and create a new server with any name and set //Host// to //localhost// and leave //Port// at //5432// and input your password specified during PostgreSQL installation.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata QA/all## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.\r\n\r\n=== Troubleshooting\r\n\r\n==== PostgreSQL on Ubuntu\r\n\r\n##sudo apt-get install postgresql phppgadmin pgadmin3##\r\n\r\n==== Cannot Login to pgAdmin\r\n\r\n{{{\r\nsudo -u postgres createuser --superuser any_user_name\r\nsudo -u postgres psql\r\npostgres=# \\password any_user_name\r\n}}}\r\nNow you can set a new password for //any_user_name//.\r\n\r\n==== Error Installing psycopg2 Python Module\r\n\r\n##sudo apt-get install python-dev libpq-dev##\r\n\r\n==== Permission Denied Errors\r\n\r\nRun commands with //sudo//.\r\n\r\n==== Database on Different Host & Port\r\n\r\nIf error related to database authentication failure occurs, you can add a new setting file named //settings_extra.py// to override your database configuration, such as //HOST// and //PORT//. \r\n{{{\r\n# settings_extra.py\r\nfrom settings import *\r\n\r\nDATABASES['default']['HOST'] = 'your database host'\r\nDATABASES['default']['PORT'] = 'your database port'\r\n}}}", 
+            "document": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# If your //Server Groups// on the left panel is empty, click //File->Add Server// and create a new server with any name and set //Host// to //localhost// and leave //Port// at //5432// and input your password specified during PostgreSQL installation.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata QA/all## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.\r\n\r\n=== Troubleshooting\r\n\r\n==== PostgreSQL on Ubuntu\r\n\r\n##sudo apt-get install postgresql phppgadmin pgadmin3##\r\n\r\n==== Cannot Login to pgAdmin\r\n\r\n{{{\r\nsudo -u postgres createuser --superuser any_user_name\r\nsudo -u postgres psql\r\npostgres=# \\password any_user_name\r\n}}}\r\nNow you can set a new password for //any_user_name//.\r\n\r\n==== Error Installing psycopg2 Python Module\r\n\r\n##sudo apt-get install python-dev libpq-dev##\r\n\r\n==== Permission Denied Errors\r\n\r\nRun commands with //sudo//.\r\n\r\n==== Database on Different Host & Port\r\n\r\nIf error related to database authentication failure occurs, you can add a new setting file named //settings_extra.py// to override your database configuration, such as //HOST// and //PORT//. \r\n{{{\r\n# settings_extra.py\r\nfrom settings import *\r\n\r\nDATABASES['default']['HOST'] = 'your database host'\r\nDATABASES['default']['PORT'] = 'your database port'\r\n}}}\r\n\r\n=== Customized Settings Example\r\n\r\n{{{\r\n# Create a settings_extra.py under the same directory as the rest of the settings files\r\n\r\nfrom settings import *\r\n\r\nDATABASES['default']['PORT'] = '1337'\r\nSWAP_USER = False\r\nENABLE_TOOLBAR = True\r\n\r\ndef toolbar_callback(request):\r\n    return ENABLE_TOOLBAR\r\n\r\nDEBUG_TOOLBAR_CONFIG = {\r\n    'INTERCEPT_REDIRECTS': True,\r\n    'SHOW_TOOLBAR_CALLBACK': toolbar_callback,\r\n    'ENABLE_STACKTRACES': True,\r\n}\r\n}}}", 
             "author": [
                 "sli"
             ], 
-            "modified_time": "2012-04-06T08:48:04.484Z", 
+            "modified_time": "2012-04-16T18:54:19.306Z", 
             "title": "Setting Up Environment"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "backstage.wiki", 
+        "fields": {
+            "created_time": "2012-03-27T00:11:48.367Z", 
+            "document": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //portfolio// - code related to the Portfolio component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* To rename a database table:\r\n{{{\r\npython manage.py schemamigration yourapp rename_foo_to_bar --empty\r\n\r\n# Inside the generated migration file\r\nclass Migration(SchemaMigration):\r\n    def forwards(self, orm):\r\n        db.rename_table('yourapp_foo', 'yourapp_bar')\r\n    def backwards(self, orm):\r\n        db.rename_table('yourapp_bar','yourapp_foo') \r\n}}}\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
+            "author": [
+                "sli"
+            ], 
+            "modified_time": "2012-04-17T18:06:43.042Z", 
+            "title": "Development Process"
         }
     }, 
     {
@@ -31994,6 +31978,36 @@
             "title_from": "Setting Up Environment", 
             "created_time": "2012-04-06T08:48:04.486Z", 
             "title_to": "Setting Up Environment"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "backstage.wikirevisionhistory", 
+        "fields": {
+            "wiki": 1, 
+            "modified_by": [
+                "sli"
+            ], 
+            "document_from": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# If your //Server Groups// on the left panel is empty, click //File->Add Server// and create a new server with any name and set //Host// to //localhost// and leave //Port// at //5432// and input your password specified during PostgreSQL installation.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata QA/all## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.\r\n\r\n=== Troubleshooting\r\n\r\n==== PostgreSQL on Ubuntu\r\n\r\n##sudo apt-get install postgresql phppgadmin pgadmin3##\r\n\r\n==== Cannot Login to pgAdmin\r\n\r\n{{{\r\nsudo -u postgres createuser --superuser any_user_name\r\nsudo -u postgres psql\r\npostgres=# \\password any_user_name\r\n}}}\r\nNow you can set a new password for //any_user_name//.\r\n\r\n==== Error Installing psycopg2 Python Module\r\n\r\n##sudo apt-get install python-dev libpq-dev##\r\n\r\n==== Permission Denied Errors\r\n\r\nRun commands with //sudo//.\r\n\r\n==== Database on Different Host & Port\r\n\r\nIf error related to database authentication failure occurs, you can add a new setting file named //settings_extra.py// to override your database configuration, such as //HOST// and //PORT//. \r\n{{{\r\n# settings_extra.py\r\nfrom settings import *\r\n\r\nDATABASES['default']['HOST'] = 'your database host'\r\nDATABASES['default']['PORT'] = 'your database port'\r\n}}}", 
+            "document_to": "=== Install Python\r\n\r\n# Type //python// in command prompt / terminal to see if Python is already installed.\r\n# If not, download [[http://www.python.org/download/|Python version 2.7.x]] for your corresponding operating system.\r\n# If you are on Windows, you might have to add //path\\to\\python// and //path\\to\\python\\Scripts// to your system's Path environment variable if they are not there.\r\n** Search //environment// in the search box in Start menu, and then click on //Edit the system environment variables//.\r\n** Under //System variables//, click to edit //Path//.\r\n** Paths are separated by //;//.\r\n# Now type //python// in the command prompt, if you entered the Python shell, you have successfully set up Python and can type //quit()// to exit the shell.\r\n\r\n=== Setup Git Project\r\n\r\n# Register a [[https://github.com/|Github]] account and contact administrators for Git repository collaborator permissions.\r\n# If you are using Windows, you can download the latest version of Git including Bash console from [[http://code.google.com/p/msysgit/downloads/list|here]]. Git should be installed by default for Mac and Linux.\r\n# Follow these [[http://help.github.com/win-set-up-git/|instructions]] to set up your SSH key with Github.\r\n# In command prompt, go to the directory where you want to place the project repository.\r\n# Type ##git clone git@github.com:Elesant/Minerva.git##.\r\n# Now you have the source code for the Minerva project.\r\n\r\n=== Setup Database\r\n\r\n# Download and install [[http://www.postgresql.org/download/|PostgreSQL]] for your corresponding operating system.\r\n# Open the management console //pgAdmin III//.\r\n# If your //Server Groups// on the left panel is empty, click //File->Add Server// and create a new server with any name and set //Host// to //localhost// and leave //Port// at //5432// and input your password specified during PostgreSQL installation.\r\n# Right click on //Login Roles// on the left panel and click on //New Login Role//.\r\n# In //Properties// tab, set //Role name// to //minerva_admin// and //password// to //1990106// (twice for the two fields). Ignore the rest of the fields.\r\n# In //Role privileges// tab, check all the fields and click //OK//.\r\n# Right click on //Databases// on the left panel and click on //New Database//.\r\n# In //Properties// tab, set //Name// to //minerva// and //Owner// to the just created role //minerva_admin// and click //OK//.\r\n\r\n\r\n=== Install Python Modules\r\n\r\n# Download [[http://pypi.python.org/pypi/pip#downloads|Pip]].\r\n# Go to the downloaded Pip directory and type //python setup.py install//.\r\n# Go to the project directory //Minerva/tools//.\r\n# Type ##pip install -r requirements.txt## to install all required Python modules.\r\n** Type ##pip install --upgrade -r requirements.txt## to upgrade existing modules.\r\n** Type ##pip uninstall -r requirements.txt## to uninstall existing modules.\r\n# In the rare cases, if any of the installations fail, you will have to hunt down the individual modules on the Internet and install manually.\r\n\r\n==== Python Module List\r\n\r\n* Django (Web Framework)\r\n* Psycopg2 (PostgreSQL Driver)\r\n* South (Database Migration)\r\n* Whoosh (Search Engine)\r\n* Django Haystack (Search Engine Interface)\r\n* Dajaxice (AJAX)\r\n* Dajax (AJAX)\r\n* CreoleParser (Wiki Markup)\r\n* Django Compressor (CSS/JS)\r\n* Pylint (Python Style Check)\r\n* PEP8 (Python Style Check)\r\n* Docutils (Documentation)\r\n* Django Debug Toolbar (Debugging)\r\n\r\n=== Setup Database Schema & Data\r\n\r\n# Type ##python manage.py syncdb## in the project's main directory to setup necessary schema. Say //no// if asked to create a superuser.\r\n# Type ##python manage.py migrate## to setup the project's necessary schema.\r\n# Type ##python manage.py loaddata QA/all## to load the database with data.\r\n\r\n=== Start Development Server\r\n\r\n# Type ##python manage.py runserver## to start the development server.\r\n# Go to //127.0.0.1:8000// in your browser.\r\n# If no error occurs, you are set! However, if an error occurs, it will have to be resolved through debugging. If a Python module appears to be missing, you will have to download it and set it up manually. If any problem persists, feel free to contact administrators.\r\n# You can now login to superuser with credential name //admin@schoolax.com// and password //1990106//.\r\n\r\n=== Troubleshooting\r\n\r\n==== PostgreSQL on Ubuntu\r\n\r\n##sudo apt-get install postgresql phppgadmin pgadmin3##\r\n\r\n==== Cannot Login to pgAdmin\r\n\r\n{{{\r\nsudo -u postgres createuser --superuser any_user_name\r\nsudo -u postgres psql\r\npostgres=# \\password any_user_name\r\n}}}\r\nNow you can set a new password for //any_user_name//.\r\n\r\n==== Error Installing psycopg2 Python Module\r\n\r\n##sudo apt-get install python-dev libpq-dev##\r\n\r\n==== Permission Denied Errors\r\n\r\nRun commands with //sudo//.\r\n\r\n==== Database on Different Host & Port\r\n\r\nIf error related to database authentication failure occurs, you can add a new setting file named //settings_extra.py// to override your database configuration, such as //HOST// and //PORT//. \r\n{{{\r\n# settings_extra.py\r\nfrom settings import *\r\n\r\nDATABASES['default']['HOST'] = 'your database host'\r\nDATABASES['default']['PORT'] = 'your database port'\r\n}}}\r\n\r\n=== Customized Settings Example\r\n\r\n{{{\r\n# Create a settings_extra.py under the same directory as the rest of the settings files\r\n\r\nfrom settings import *\r\n\r\nDATABASES['default']['PORT'] = '1337'\r\nSWAP_USER = False\r\nENABLE_TOOLBAR = True\r\n\r\ndef toolbar_callback(request):\r\n    return ENABLE_TOOLBAR\r\n\r\nDEBUG_TOOLBAR_CONFIG = {\r\n    'INTERCEPT_REDIRECTS': True,\r\n    'SHOW_TOOLBAR_CALLBACK': toolbar_callback,\r\n    'ENABLE_STACKTRACES': True,\r\n}\r\n}}}", 
+            "title_from": "Setting Up Environment", 
+            "created_time": "2012-04-16T18:54:19.331Z", 
+            "title_to": "Setting Up Environment"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "backstage.wikirevisionhistory", 
+        "fields": {
+            "wiki": 3, 
+            "modified_by": [
+                "sli"
+            ], 
+            "document_from": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //portfolio// - code related to the Portfolio component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
+            "document_to": "=== Get Prepared\r\n\r\n* Try out the [[https://docs.djangoproject.com/en/1.4/|Django]] tutorials.\r\n* The website front end is based on [[http://twitter.github.com/bootstrap/|Bootstrap]].\r\n* The CSS is generated from [[http://lesscss.org/|LESS]] files.\r\n* Acquire basic knowledge of [[http://docs.jquery.com/Tutorials|JQuery]].\r\n* Awesome examples of the [[http://www.dajaxproject.com/|AJAX framework]] we are using.\r\n\r\n=== Project Overview\r\n\r\n* //bulletin// - code related to the Bulletin component\r\n* //portfolio// - code related to the Portfolio component\r\n* //data// - views which return only data instead of pages\r\n* //homeroom// - code related to the Crowd component\r\n* //account// - code related to an user account, including authentication and registration\r\n* //backstage// - code related to the Backstage component\r\n* //core// - fundamental code required by other components\r\n** //management// - where custom Django management commands go\r\n** //templatetags// - where template tags/filters go\r\n* //course// - code related to course information\r\n* //schoolax// - main website\r\n** //assets// - website's static files\r\n** //fixtures// - partial or complete database dumps\r\n** //templates// - HTML templates which get displayed\r\n\r\n=== Changes to Models\r\n\r\n* If a change to a model which may affect the database schema is made, we will have to utilize South to migrate the schema and data.\r\n* Pull the latest version of the code (VERY IMPORTANT), so we do not get migration conflicts.\r\n* Type ##python manage.py migrate## to synchronize the database to the latest version.\r\n* Type ##python manage.py schemamigration [the app which the model is in] --auto##.\r\n* Define any required default values.\r\n* Type ##python manage.py migrate## again.\r\n* If no error occurs, you can now commit and push your code along with the generated migration Python files.\r\n* To rename a database table:\r\n{{{\r\npython manage.py schemamigration yourapp rename_foo_to_bar --empty\r\n\r\n# Inside the generated migration file\r\nclass Migration(SchemaMigration):\r\n    def forwards(self, orm):\r\n        db.rename_table('yourapp_foo', 'yourapp_bar')\r\n    def backwards(self, orm):\r\n        db.rename_table('yourapp_bar','yourapp_foo') \r\n}}}\r\n* Any other usage can refer to the [[http://south.aeracode.org/docs/index.html|South documentation]].\r\n\r\n=== Dump Data Fixture\r\n\r\n* Go to project directory //Minerva/tools//.\r\n* Type ##python dumpdata.py##.\r\n* Input a fixture collection name when prompted.\r\n* Wait till the JSON data files are generated.\r\n\r\n=== Search Engine\r\n\r\n* We are currently using the Whoosh search engine.\r\n* Type ##python manage.py rebuild_index## to rebuild search index.\r\n* Type ##python manage.py update_index## to update search index.\r\n\r\n=== Generate CSS Files\r\n\r\n* We are using the LESS framework, which needs to be compiled to prepare the CSS files for non-development environments, using LESS compilers.\r\n** [[http://winless.org/|WinLess]] (Windows)\r\n** [[http://crunchapp.net/|Crunch]] (Mac)\r\n** [[http://wearekiss.com/simpless|SimpLess]] (Cross-Platform)\r\n* After installing the LESS compiler, just compile the //minerva.less// file and put the generated //minerva.css// file into the //assets/css// folder.", 
+            "title_from": "Development Process", 
+            "created_time": "2012-04-17T18:06:43.066Z", 
+            "title_to": "Development Process"
         }
     }, 
     {
@@ -86584,10 +86598,23 @@
         }
     }, 
     {
+        "pk": 6, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 3, 
+            "course": 512, 
+            "difficult_value": 2, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 4
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "course.courserating", 
         "fields": {
-            "practical_value": 5, 
+            "practical_value": 4, 
             "course": 1279, 
             "difficult_value": 2, 
             "rater": [
@@ -86610,19 +86637,6 @@
         }
     }, 
     {
-        "pk": 4, 
-        "model": "course.courserating", 
-        "fields": {
-            "practical_value": 2, 
-            "course": 3855, 
-            "difficult_value": 5, 
-            "rater": [
-                "sli"
-            ], 
-            "interesting_value": 3
-        }
-    }, 
-    {
         "pk": 5, 
         "model": "course.courserating", 
         "fields": {
@@ -86631,6 +86645,19 @@
             "difficult_value": 1, 
             "rater": [
                 "gli"
+            ], 
+            "interesting_value": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 3, 
+            "course": 3855, 
+            "difficult_value": 5, 
+            "rater": [
+                "sli"
             ], 
             "interesting_value": 1
         }
@@ -86842,6 +86869,42 @@
         }
     }, 
     {
+        "pk": 1, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Test", 
+            "created_time": "2012-04-17T18:59:16.418Z", 
+            "section": 66, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Coolness.", 
+            "created_time": "2012-04-17T19:32:12.932Z", 
+            "section": 70, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Cool white board.", 
+            "created_time": "2012-04-17T20:22:30.322Z", 
+            "section": 79, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
         "pk": 7, 
         "model": "account.profile", 
         "fields": {
@@ -87022,6 +87085,24 @@
         }
     }, 
     {
+        "pk": 2, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 8, 
+            "grade_gauge": 100, 
+            "birthday": "1990-10-06", 
+            "role": "S", 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
         "pk": 15, 
         "model": "account.profile", 
         "fields": {
@@ -87036,24 +87117,6 @@
             "role": "S", 
             "user": [
                 "swang"
-            ]
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": "", 
-            "degree": "UG", 
-            "institute": 1, 
-            "tagline": "", 
-            "influence": 0, 
-            "grade": 1, 
-            "grade_gauge": -20, 
-            "birthday": "1990-10-06", 
-            "role": "S", 
-            "user": [
-                "sli"
             ]
         }
     }, 

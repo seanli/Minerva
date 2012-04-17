@@ -54587,10 +54587,23 @@
         }
     }, 
     {
+        "pk": 6, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 3, 
+            "course": 512, 
+            "difficult_value": 2, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 4
+        }
+    }, 
+    {
         "pk": 1, 
         "model": "course.courserating", 
         "fields": {
-            "practical_value": 5, 
+            "practical_value": 4, 
             "course": 1279, 
             "difficult_value": 2, 
             "rater": [
@@ -54613,19 +54626,6 @@
         }
     }, 
     {
-        "pk": 4, 
-        "model": "course.courserating", 
-        "fields": {
-            "practical_value": 2, 
-            "course": 3855, 
-            "difficult_value": 5, 
-            "rater": [
-                "sli"
-            ], 
-            "interesting_value": 3
-        }
-    }, 
-    {
         "pk": 5, 
         "model": "course.courserating", 
         "fields": {
@@ -54634,6 +54634,19 @@
             "difficult_value": 1, 
             "rater": [
                 "gli"
+            ], 
+            "interesting_value": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 3, 
+            "course": 3855, 
+            "difficult_value": 5, 
+            "rater": [
+                "sli"
             ], 
             "interesting_value": 1
         }
@@ -54840,6 +54853,42 @@
         "fields": {
             "section": 79, 
             "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Test", 
+            "created_time": "2012-04-17T18:59:16.418Z", 
+            "section": 66, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Coolness.", 
+            "created_time": "2012-04-17T19:32:12.932Z", 
+            "section": 70, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Cool white board.", 
+            "created_time": "2012-04-17T20:22:30.322Z", 
+            "section": 79, 
+            "author": [
                 "sli"
             ]
         }

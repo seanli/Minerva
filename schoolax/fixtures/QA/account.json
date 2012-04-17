@@ -180,6 +180,24 @@
         }
     }, 
     {
+        "pk": 2, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 8, 
+            "grade_gauge": 100, 
+            "birthday": "1990-10-06", 
+            "role": "S", 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
         "pk": 15, 
         "model": "account.profile", 
         "fields": {
@@ -194,24 +212,6 @@
             "role": "S", 
             "user": [
                 "swang"
-            ]
-        }
-    }, 
-    {
-        "pk": 2, 
-        "model": "account.profile", 
-        "fields": {
-            "middle_name": "", 
-            "degree": "UG", 
-            "institute": 1, 
-            "tagline": "", 
-            "influence": 0, 
-            "grade": 1, 
-            "grade_gauge": -20, 
-            "birthday": "1990-10-06", 
-            "role": "S", 
-            "user": [
-                "sli"
             ]
         }
     }, 

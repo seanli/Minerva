@@ -30869,17 +30869,6 @@
         }
     }, 
     {
-        "pk": 8, 
-        "model": "core.skillrating", 
-        "fields": {
-            "skill_assign": 11, 
-            "rater": [
-                "sli"
-            ], 
-            "value": 4
-        }
-    }, 
-    {
         "pk": 9, 
         "model": "core.skillrating", 
         "fields": {
@@ -30888,6 +30877,28 @@
                 "gli"
             ], 
             "value": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 11, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.skillrating", 
+        "fields": {
+            "skill_assign": 12, 
+            "rater": [
+                "sli"
+            ], 
+            "value": 5
         }
     }, 
     {
