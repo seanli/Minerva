@@ -7,15 +7,15 @@
       <div class="nav-collapse">
         <ul class="nav">
           {% if user.is_authenticated %}
-          <li class="{% active request '^(/bulletin.*|/)$' %}">
-            <a href="{% url bulletin %}"><i class="icon-list-alt icon-white"></i> Bulletin</a>
-          </li>
-          <li class="{% active request '^/portfolio.*$' %}">
-            <a href="{% url portfolio %}"><i class="icon-user icon-white"></i> Portfolio</a>
-          </li>
-          <li class="{% active request '^(/homeroom.*|/courses.*)$' %}">
+          <li class="{% active request '^(/homeroom.*|/courses.*|/)$' %}">
             <a href="{% url homeroom %}"><i class="icon-home icon-white"></i> Homeroom</a>
           </li>
+          <li class="{% active request '^/portfolio.*$' %}">
+            <a href="{% url portfolio %}"><i class="icon-user icon-white"></i> Portfolio <span style="color: #555;">[Test]</span></a>
+          </li>
+          <!--<li class="{% active request '^(/bulletin.*|/)$' %}">
+            <a href="{% url bulletin %}"><i class="icon-list-alt icon-white"></i> Bulletin</a>
+          </li>-->
           {% if user.is_staff %} <li class="divider-vertical"></li>
           <li class="{% active request '^/backstage.*$' %}">
             <a href="{% url backstage %}"><i class="icon-leaf icon-white"></i> Backstage</a>
