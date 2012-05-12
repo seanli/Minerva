@@ -1,0 +1,14 @@
+django
+psycopg2
+south
+whoosh
+# django-haystack
+-e git://github.com/toastdriven/django-haystack.git#egg=django-haystack
+django-dajaxice
+django-dajax
+creoleparser
+django_compressor
+pylint
+pep8
+docutils
+django-debug-toolbar
