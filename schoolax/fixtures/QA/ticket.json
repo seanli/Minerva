@@ -324,5 +324,22 @@
                 "sli"
             ]
         }
+    }, 
+    {
+        "pk": 24, 
+        "model": "backstage.ticket", 
+        "fields": {
+            "status": "L", 
+            "category": null, 
+            "description": "Test", 
+            "reporter": [
+                "sli"
+            ], 
+            "modified_time": "2012-05-11T16:33:52.787Z", 
+            "summary": "Test", 
+            "priority": null, 
+            "created_time": "2012-05-11T16:33:52.787Z", 
+            "owner": null
+        }
     }
 ]

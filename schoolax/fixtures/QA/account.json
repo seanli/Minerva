@@ -11,7 +11,6 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "sz"
             ]
@@ -29,7 +28,6 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "yli"
             ]
@@ -47,7 +45,6 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "sling"
             ]
@@ -65,7 +62,6 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "schen"
             ]
@@ -83,7 +79,6 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": "2012-02-09", 
-            "role": "S", 
             "user": [
                 "mc"
             ]
@@ -101,7 +96,6 @@
             "grade": 8, 
             "grade_gauge": -60, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "gli"
             ]
@@ -119,7 +113,6 @@
             "grade": -4, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "I", 
             "user": [
                 "meden"
             ]
@@ -137,7 +130,6 @@
             "grade": 4, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "admin"
             ]
@@ -155,7 +147,6 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "zzhong"
             ]
@@ -173,27 +164,42 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "s1li"
             ]
         }
     }, 
     {
-        "pk": 2, 
+        "pk": 19, 
         "model": "account.profile", 
         "fields": {
-            "middle_name": "", 
-            "degree": "UG", 
+            "middle_name": null, 
+            "degree": null, 
             "institute": 1, 
-            "tagline": "", 
+            "tagline": null, 
             "influence": 0, 
-            "grade": 8, 
-            "grade_gauge": 100, 
-            "birthday": "1990-10-06", 
-            "role": "S", 
+            "grade": -4, 
+            "grade_gauge": 80, 
+            "birthday": null, 
             "user": [
-                "sli"
+                "mGjcKKVETlTSdZGnx6"
+            ]
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "user": [
+                "yZbHPJgj8s2QT4RCKoz0L"
             ]
         }
     }, 
@@ -209,9 +215,59 @@
             "grade": 0, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "swang"
+            ]
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": 0, 
+            "birthday": null, 
+            "user": [
+                "4nImU1dnE4xD4P"
+            ]
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": null, 
+            "degree": null, 
+            "institute": 1, 
+            "tagline": null, 
+            "influence": 0, 
+            "grade": 0, 
+            "grade_gauge": -40, 
+            "birthday": null, 
+            "user": [
+                "QnsjKAJf"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "account.profile", 
+        "fields": {
+            "middle_name": "", 
+            "degree": "UG", 
+            "institute": 1, 
+            "tagline": "", 
+            "influence": 0, 
+            "grade": 6, 
+            "grade_gauge": -40, 
+            "birthday": "1990-10-06", 
+            "user": [
+                "sli"
             ]
         }
     }, 
@@ -227,7 +283,6 @@
             "grade": 2, 
             "grade_gauge": 0, 
             "birthday": null, 
-            "role": "S", 
             "user": [
                 "pwang"
             ]
