@@ -9,9 +9,9 @@ register = template.Library()
 
 
 @register.simple_tag
-def active(request, pattern):
+def active(request, pattern, klass='active'):
     if re.search(pattern, request.path):
-        return 'active'
+        return klass
     return ''
 
 
