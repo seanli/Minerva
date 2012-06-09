@@ -5,6 +5,7 @@ from django.shortcuts import render_to_response
 from django.core.urlresolvers import reverse
 from account.forms import LoginForm, SignupForm, SettingForm
 from account.models import Profile
+from core.models import Institute
 from core.utilities import get_referrer, set_referrer
 
 
@@ -37,7 +38,7 @@ def signup(request):
         if form.is_valid():
             data = form.cleaned_data
             Profile.register_user(email=data['email'], password=data['password'], first_name=data['first_name'],
-                last_name=data['last_name'], institute=data['institute'])
+                last_name=data['last_name'], institute=Institute.objects.get(name='University of Waterloo'))
             set_referrer(request, 'signup')
             return HttpResponseRedirect(reverse('login'))
     else:

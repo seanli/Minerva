@@ -2,29 +2,77 @@
 
 {% load base_extra %}
 
-{% block title %}{{ SITE_NAME }} - Signup{% endblock %}
+{% block title %}{{ SITE_NAME }} - Sign Up{% endblock %}
 
 {% block content %}
-<div class="page-header">
-  <h1>Signup</h1>
-</div>
-<div class="row-fluid">
-  <form action="" method="post" class="form-horizontal">
-    {% csrf_token %}
-    {{ form.as_standard }}
-    {% if form.non_field_errors %}
-    <div class="alert alert-error">
-      {{ form.non_field_errors|safe }}
+
+<form action="" method="post" class="register">
+
+  {% csrf_token %}
+
+  <h1>Create Your Account</h1>      
+      
+  <!--<div class="login-social">
+    <p>Sign in using social network:</p>
+    <div class="twitter">
+      <a href="#" class="btn_1">Login with Twitter</a>        
     </div>
-    {% endif %}
-    <div class="form-actions">
-      <button type="submit" class="btn btn-primary">
-        Signup
-      </button>
-      <button type="reset" class="btn">
-        Cancel
-      </button>
+    <div class="fb">
+      <a href="#" class="btn_2">Login with Facebook</a>        
     </div>
-  </form>
+  </div>-->
+
+  <div class="login-fields">
+
+	<p>Create your free account:</p>
+
+    <div class="field">
+      <label for="id_first_name">First Name:</label>
+      <input type="text" id="id_first_name" name="first_name" placeholder="First Name" class="login" />
+    </div>
+    
+    <div class="field">
+      <label for="id_last_name">Last Name:</label>  
+      <input type="text" id="id_last_name" name="last_name" placeholder="Last Name" class="login" />
+    </div>
+    
+    
+    <div class="field">
+      <label for="id_email">Email Address:</label>
+      <input type="text" id="id_email" name="email" placeholder="Email" class="login" />
+    </div>
+    
+    <div class="field">
+      <label for="id_password">Password:</label>
+      <input type="password" id="id_password" name="password" placeholder="Password" class="login" />
+    </div>
+    
+    <div class="field">
+      <label for="id_password_conf">Confirm Password:</label>
+      <input type="password" id="id_password_conf" name="password_conf" placeholder="Confirm Password" class="login" />
+    </div>
+    
+  </div>
+  
+  <div class="login-actions">
+    
+    <span class="login-checkbox">
+      <input id="Field" name="Field" type="checkbox" class="field login-checkbox" value="First Choice" tabindex="4" />
+      <label class="choice" for="Field">I have read and agree with the Terms of Use.</label>
+    </span>
+              
+    <button class="button btn btn-primary btn-large">Register</button>
+
+  </div>
+  
+</form>
+
+{% endblock %}
+
+{% block extra %}
+
+<div class="login-extra">
+  Already have an account? <a href="{% url login %}">Login</a>
 </div>
+
 {% endblock %}

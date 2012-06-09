@@ -1,0 +1,93 @@
+{% load base_extra %}
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="{% url home %}">{{ SITE_NAME }}{% if ENVIRONMENT != 'PROD' %} {{ ENVIRONMENT }}{% endif %}</a>    
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+          {% if user.is_authenticated %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="icon-user"></i> 
+              {{ user.get_full_name }}
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url settings %}"><i class="icon-cog"></i> Settings</a></li>
+              <li><a href="#"><i class="icon-book"></i> Manual</a></li>
+              <li><a href="#"><i class="icon-question-sign"></i> Support</a></li>
+              <li class="divider"></li>
+              <li><a href="{% url logout %}"><i class="icon-off"></i> Logout</a></li>
+            </ul>
+          </li>
+          {% else %}
+          <li class=""><a href="{% url login %}" class="">Sign In</a></li>
+          <li class=""><a href="{% url signup %}" class="">Create an Account</a></li>
+          {% endif %}
+        </ul>
+        {% if user.is_authenticated and SWAP_USER %}
+        <form class="navbar-search pull-right">
+		  <input id="swap-user" type="text" class="search-query" placeholder="User Swap Tool">
+		</form>
+		{% endif %}
+      </div>
+    </div>
+  </div
+</div>
+
+{% if user.is_authenticated %}
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li class="{% active request '^(/homeroom.*|/courses.*|/)$' %}">
+          <a href="{% url homeroom %}">
+            <i class="icon-home"></i>
+            <span>Homeroom</span>
+          </a>              
+        </li>
+        <li class="{% active request '^/portfolio.*$' %}">
+          <a href="{% url portfolio %}">
+            <i class="icon-user"></i>
+            <span>Portfolio</span>
+          </a>              
+        </li>
+        {% if user.is_staff %}
+          <li class="{% active request '^/backstage.*$' %}">
+            <a href="{% url backstage %}">
+              <i class="icon-leaf icon-white"></i>
+              <span>Backstage</span>
+            </a>
+          </li>
+      	{% endif %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+  {% if user.is_authenticated and SWAP_USER %}
+  $('#swap-user').keypress(function(e) {
+    if(e.which == 13) {
+      var username = $('#swap-user').val()
+      var swap_user_callback = function(data) {
+        if(data.status == 'OK') {
+          window.location.reload();
+        }
+      };
+      Dajaxice.account.swap_user(swap_user_callback, {
+        'username' : username
+      });
+    }
+  });
+  {% endif %}
+});
+</script>

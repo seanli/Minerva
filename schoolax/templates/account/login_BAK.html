@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Login{% endblock %}
+
+{% block content %}
+<div class="row-fluid">
+  <div class="span6">
+    <div class="page-header">
+      <h1>Login</h1>
+    </div>
+    <form action="" method="post" class="form-horizontal">
+      {% csrf_token %}
+      {% if referrer == "signup" %}
+      <div class="alert alert-success">
+        <strong>Congratulations!</strong> You are signed up. Now you can login here.
+      </div>
+      {% endif %}
+      {{ form.as_standard }}
+      {% if form.non_field_errors %}
+      <div class="alert alert-error">
+        {{ form.non_field_errors|safe }}
+      </div>
+      {% endif %}
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">
+          Login
+        </button>
+        <button type="reset" class="btn">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="span6">
+    <div class="hero-unit">
+      <h1>{{ SITE_NAME }}&trade;</h1>
+      <p>
+        Simple. Useful. Motivational. Revolutionary. A platform with specific goals of enhancing the academic experience of college and university students world-wide.
+      </p>
+      <p>
+        <a href="{% url signup %}" class="btn btn-success btn-large">Join Now!</a>
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

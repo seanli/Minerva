@@ -33,7 +33,7 @@ class SignupForm(StandardForm):
     personal_detail = GenericField(widget=LegendWidget(attrs={'display': 'Personal Detail'}))
     first_name = forms.CharField(max_length=30, label='First Name')
     last_name = forms.CharField(max_length=30, label='Last Name')
-    institute = forms.ModelChoiceField(queryset=Institute.objects, empty_label=None, label='Institute')
+    # institute = forms.ModelChoiceField(queryset=Institute.objects, empty_label=None, label='Institute')
     login_credential = GenericField(widget=LegendWidget(attrs={'display': 'Login Credential'}))
     email = forms.EmailField(max_length=75, label='Email')
     password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')

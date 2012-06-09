@@ -2,47 +2,51 @@
 
 {% load base_extra %}
 
-{% block title %}{{ SITE_NAME }} - Login{% endblock %}
+{% block title %}{{ SITE_NAME }} - Sign In{% endblock %}
 
 {% block content %}
-<div class="row-fluid">
-  <div class="span6">
-    <div class="page-header">
-      <h1>Login</h1>
+
+<form action="" method="post">
+
+  {% csrf_token %}
+
+  <h1>Sign In</h1>    
+  
+  <div class="login-fields">
+    <p>Sign in using your registered account:</p>
+    <div class="field">
+      <label for="emailname">Username:</label>
+      <input type="text" id="id_emailname" name="emailname" placeholder="Username / E-mail" class="login username-field" />
     </div>
-    <form action="" method="post" class="form-horizontal">
-      {% csrf_token %}
-      {% if referrer == "signup" %}
-      <div class="alert alert-success">
-        <strong>Congratulations!</strong> You are signed up. Now you can login here.
-      </div>
-      {% endif %}
-      {{ form.as_standard }}
-      {% if form.non_field_errors %}
-      <div class="alert alert-error">
-        {{ form.non_field_errors|safe }}
-      </div>
-      {% endif %}
-      <div class="form-actions">
-        <button type="submit" class="btn btn-primary">
-          Login
-        </button>
-        <button type="reset" class="btn">
-          Cancel
-        </button>
-      </div>
-    </form>
-  </div>
-  <div class="span6">
-    <div class="hero-unit">
-      <h1>{{ SITE_NAME }}&trade;</h1>
-      <p>
-        Simple. Useful. Motivational. Revolutionary. A platform with specific goals of enhancing the academic experience of college and university students world-wide.
-      </p>
-      <p>
-        <a href="{% url signup %}" class="btn btn-success btn-large">Join Now!</a>
-      </p>
+    <div class="field">
+      <label for="password">Password:</label>
+      <input type="password" id="id_password" name="password" placeholder="Password" class="login password-field"/>
     </div>
   </div>
+  
+  <div class="login-actions">
+    <a href="#">Forgotten Your Password?</a>
+    <button class="button btn btn-warning btn-large">Sign In</button>
+  </div>
+  
+  <!--<div class="login-social">
+    <p>Sign in using social network:</p>
+    <div class="twitter">
+      <a href="#" class="btn_1">Login with Twitter</a>        
+    </div>
+    <div class="fb">
+      <a href="#" class="btn_2">Login with Facebook</a>        
+    </div>
+  </div>-->
+
+</form>
+
+{% endblock %}
+
+{% block extra %}
+
+<div class="login-extra">
+  Don't have an account? <a href="{% url signup %}">Sign Up</a>
 </div>
+
 {% endblock %}
