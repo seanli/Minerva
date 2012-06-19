@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Homeroom{% endblock %}
+
+{% block content %}
+
+<style>
+.keyword {
+  background-color: yellow;
+}
+</style>
+
+<div class="row">
+  <div class="span8">
+    <div class="widget">
+      <div class="widget-header">
+        <i class="icon-search"></i>
+        <h3>Course Lookup</h3>
+      </div>
+      <div class="widget-content">
+        <form method="post" class="faq-search">
+          {% csrf_token %}
+          <input type="text" name="course-search" placeholder="Search by course name, number, description or keywords!">
+        </form>
+        {% if request.POST %}
+          {% for course in courses %}
+            <div class="course-search-result well">
+              <h4><a href="{% url courses %}{{ course.object.id }}">{{ course.object.title }}</a></h4>
+              <h6>{{ course.object.abbrev }}</h6>
+              <p>{{ course.highlight|safe }}</p>
+              <a data-toggle="modal" href="#add-course" class="btn btn-mini btn-success btn-subscribe hide"> <i class="icon-plus icon-white"></i> Subscribe </a>
+            </div>
+          {% empty %}
+          <p>Sorry! no course is found. Did you mean <a class="did-you-mean" href="#">{{ suggestion }}</a>?</p>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="span4">
+    <div class="widget widget-box">
+      <div class="widget-header">
+        <i class="icon-bookmark"></i>
+        <h3>Subscriptions</h3>     
+      </div>
+      <div class="widget-content">
+        {% for section in sections %}
+        <div class="section well">
+          <a section-id="{{ section.id }}" class="close hide">&times;</a>
+          <h4><a href="/homeroom/class/{{ section.id }}">{{ section.course.title }}</a></h4>
+          <h6>{{ section.course.abbrev }}</h6>
+          <strong>Start Date:</strong>
+          {{ section.start_date|date:"F, Y" }}<br />
+          <strong>Duration:</strong>
+          {{ section.get_duration_display }}
+        </div>
+        {% empty %}
+        <p>You are not subscribed in any course!</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "modal/add-course.html" with form=form %} 
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function() {
+    $('.did-you-mean').click(function() {
+      var text = $(this).text();
+      $('input[name="course-search"]').val(text);
+      $('.faq-search').submit();
+    });
+    $('.section').hover(function() {
+      $(this).find('.close').removeClass('hide');
+    }, function() {
+      $(this).find('.close').addClass('hide');
+    });
+    $('.section .close').click(function() {
+      var elem = $(this);
+      confirm_modal({
+        heading : 'Unsubscribe Course',
+        message : '<div class="alert">Are you sure you want to <strong>unsubscribe</strong> from this course section?</div>',
+        yes : 'Unsubscribe',
+        no : 'Cancel',
+        callback : function() {
+          var section_id = elem.attr('section-id');
+          var unsubscribe_section_callback = function(data) {
+            if(data.status == 'OK') {
+              var refresh = false;
+              if(elem.parent().siblings().size() <= 0) {
+                refresh = true;
+              }
+              elem.parent().remove();
+              if(refresh) {
+                window.location.reload();
+              }
+            }
+          };
+          Dajaxice.homeroom.unsubscribe_section(unsubscribe_section_callback, {
+            'section_id' : section_id
+          });
+        }
+      });
+    });
+    $('.course-search-result').hover(function() {
+      $(this).find('.btn-subscribe').removeClass('hide');
+    }, function() {
+      $(this).find('.btn-subscribe').addClass('hide');
+    });
+  });
+</script>
+
+{% endblock %}

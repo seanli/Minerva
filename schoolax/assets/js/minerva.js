@@ -74,7 +74,7 @@ RegExp.escape = function(text) {
 
 $(document).ready(function() {
   // Prevent form submission from pressing Enter key
-  $(window).keypress(function(e) {
+  /*$(window).keypress(function(e) {
     if(e.which == 13) {
       var $targ = $(e.target);
       if(!$targ.is("textarea") && !$targ.is(":button,:submit")) {
@@ -90,7 +90,7 @@ $(document).ready(function() {
         return false;
       }
     }
-  });
+  });*/
   // Setup Prettify
   prettyPrint();
   // Setup Popovers

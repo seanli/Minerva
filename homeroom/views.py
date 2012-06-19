@@ -2,31 +2,50 @@ from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
-from course.models import SectionAssign, Section, WhiteboardPost
+from course.models import Course, SectionAssign, Section, WhiteboardPost
 from django.utils.datastructures import SortedDict
 from homeroom.forms import AddCourseForm, AddWhiteboardPostForm
+from haystack.query import SearchQuerySet
+from haystack.utils import Highlighter
 
 
 @login_required
 def homeroom(request):
     user = request.user
-    sections = [assign.section for assign in SectionAssign.objects.filter(user=user).order_by('-section__start_date')]
-    grouped_sections = SortedDict()
-    for section in sections:
-        start_date = section.start_date
-        if start_date not in grouped_sections:
-            grouped_sections[start_date] = [section]
-        else:
-            grouped_sections[start_date].append(section)
-    for key, value in grouped_sections.items():
-        grouped_sections[key] = sorted(value, key=lambda s: s.course.title)
-
-    form = AddCourseForm(request=request)
-
     context = RequestContext(request)
-    context['grouped_sections'] = grouped_sections
+    if request.method == 'POST':
+        query = request.POST['course-search']
+        results = SearchQuerySet().autocomplete(text=query).models(Course)[:10]
+        highlighter = Highlighter(query, html_tag='span', css_class='keyword')
+        courses = []
+        for result in results:
+            course = {}
+            course['object'] = result.object
+            course['highlight'] = highlighter.highlight(result.text)
+            courses.append(course)
+        #courses = Course.objects.filter(institute=user.get_profile().institute, title__icontains=query)
+        suggestion = SearchQuerySet().spelling_suggestion(query)
+        context['courses'] = courses
+        context['suggestion'] = suggestion
+    '''else:
+        sections = [assign.section for assign in SectionAssign.objects.filter(user=user).order_by('-section__start_date')]
+        grouped_sections = SortedDict()
+        for section in sections:
+            start_date = section.start_date
+            if start_date not in grouped_sections:
+                grouped_sections[start_date] = [section]
+            else:
+                grouped_sections[start_date].append(section)
+        for key, value in grouped_sections.items():
+            grouped_sections[key] = sorted(value, key=lambda s: s.course.title)
+        form = AddCourseForm(request=request)
+        context['grouped_sections'] = grouped_sections
+        context['form'] = form'''
+    sections = [assign.section for assign in SectionAssign.objects.filter(user=user).order_by('-section__start_date')]
+    form = AddCourseForm(request=request)
+    context['sections'] = sections
     context['form'] = form
-    return render_to_response('homeroom/main.html', context)
+    return render_to_response('homeroom/index.html', context)
 
 
 @login_required

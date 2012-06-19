@@ -1,17 +1,13 @@
 from haystack import indexes
 from course.models import Course
-from core.models import Skill
 
 
 class CourseIndex(indexes.SearchIndex, indexes.Indexable):
-    text = indexes.CharField(document=True, model_attr='title')
+    text = indexes.CharField(document=True, use_template=True)
 
     def get_model(self):
         return Course
 
-
-class SkillIndex(indexes.SearchIndex, indexes.Indexable):
-    text = indexes.CharField(document=True, model_attr='name')
-
-    def get_model(self):
-        return Skill
+    def index_queryset(self):
+        """ Used when the entire index for model is updated. """
+        return self.get_model().objects.all()
