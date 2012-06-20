@@ -12,7 +12,7 @@ static/
 media/
 
 # Index Files #
-indexes/
+schoolax/indexes/
 
 # Setting Files #
 settings_extra.py
