@@ -1,13 +1,13 @@
 <div id="add-course" class="modal hide fade">
     <div class="modal-header">
         <a class="close" data-dismiss="modal">&times;</a>
-        <h3>Add Course</h3>
+        <h3 class="course-title">Add Course</h3>
     </div>
     <div class="modal-body">
-        <form id="form-add-course" action="" method="post" class="form-horizontal">
-            {% csrf_token %}
-            {{ form.as_standard_ajax }}
-        </form>
+      <form id="form-add-course" action="" method="post" class="form-horizontal">
+        {% csrf_token %}
+        {{ form.as_standard_ajax }}
+      </form>
     </div>
     <div class="modal-footer">
         <a id="add-course-button" class="btn btn-primary" data-loading-text="Adding...">Add Course</a>

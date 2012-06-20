@@ -11,7 +11,7 @@ class AddCourseForm(StandardForm):
         def label_from_instance(self, obj):
             return obj.get_full_name()'''
 
-    title = forms.CharField(max_length=100, label='Course Title', widget=forms.TextInput(attrs={'autocomplete': 'off'}))
+    #title = forms.CharField(max_length=100, label='Course Title', widget=forms.TextInput(attrs={'autocomplete': 'off'}))
     start_month = forms.ChoiceField(label='Start Month', initial=datetime.today().month, choices=MONTH)
     start_year = forms.ChoiceField(label='Start Year', initial=0, choices=YEAR)
     duration = forms.ChoiceField(label='Duration', choices=DURATION)
@@ -25,19 +25,18 @@ class AddCourseForm(StandardForm):
         self.user = self.request.user
         #self.fields["instructor"].queryset = User.objects.filter(profile__role='I', profile__institute=self.profile.institute)
 
-    def clean_title(self):
+    '''def clean_title(self):
         title = self.cleaned_data['title'].strip()
-        return title
+        return title'''
 
     def clean(self):
         data = self.cleaned_data
         if self._errors:
             return data
         else:
-            institute = self.user.get_profile().institute
             course = data['course']
             if course is None:
-                raise forms.ValidationError('<strong>%s</strong> for <strong>%s</strong> is not a registered course!' % (data['title'], institute))
+                raise forms.ValidationError('No course is selected!')
             else:
                 data['start_date'] = date(datetime.today().year + int(data['start_year']), int(data['start_month']), 1)
                 try:

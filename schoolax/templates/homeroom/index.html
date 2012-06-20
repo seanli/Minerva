@@ -26,8 +26,8 @@
         </form>
         {% if request.POST %}
           {% for course in courses %}
-            <div class="course-search-result well">
-              <h4><a href="{% url courses %}{{ course.object.id }}">{{ course.object.title }}</a></h4>
+            <div course-id="{{ course.object.id }}" class="course-search-result well">
+              <h4><a class="title" href="{% url courses %}{{ course.object.id }}">{{ course.object.title }}</a></h4>
               <h6>{{ course.object.abbrev }}</h6>
               <p>{{ course.highlight|safe }}</p>
               <a data-toggle="modal" href="#add-course" class="btn btn-mini btn-success btn-subscribe hide"> <i class="icon-plus icon-white"></i> Subscribe </a>
@@ -72,6 +72,12 @@
       var text = $(this).text();
       $('input[name="course-search"]').val(text);
       $('.faq-search').submit();
+    });
+    $('.btn-subscribe').click(function() {
+      var course_id = $(this).parent('.course-search-result').attr('course-id');
+      var course_title = $(this).parent('.course-search-result').find('a.title').text();
+      $('#form-add-course input[name="course"]').attr('value', course_id);
+      $('h3.course-title').text(course_title);
     });
     $('.section').hover(function() {
       $(this).find('.close').removeClass('hide');

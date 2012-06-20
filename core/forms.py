@@ -53,6 +53,29 @@ def as_standard_ajax(self):
     return mark_safe(u'\n'.join(output))
 
 
+def as_landing(self):
+    output = []
+    errors = []
+    for name, field in self.fields.items():
+        name_field = self[name]
+        if field.__class__ == GenericField or name_field.is_hidden:
+            output.append(unicode(name_field))
+        else:
+            if name_field.errors:
+                field_group = '<div class="field error">%s</div>'
+            else:
+                field_group = '<div class="field">%s</div>'
+            label = '<label for="id_%s">%s</label>' % (name, name_field.label)
+            field = '%s' % name_field
+            if name_field.errors:
+                errors.append(name_field.errors)
+            field_group = field_group % (label + field)
+            output.append(field_group)
+    if len(errors) > 0:
+        output.append('div class="error">%s</div>' % u'<br />'.join(errors))
+    return mark_safe(u'\n'.join(output))
+
+
 class StandardForm(forms.Form):
 
     def __init__(self, *args, **kwargs):
@@ -67,6 +90,7 @@ class StandardForm(forms.Form):
 
 StandardForm.as_standard = as_standard
 StandardForm.as_standard_ajax = as_standard_ajax
+StandardForm.as_landing = as_landing
 
 
 class StandardModelForm(ModelForm):
