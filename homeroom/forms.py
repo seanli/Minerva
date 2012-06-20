@@ -25,10 +25,6 @@ class AddCourseForm(StandardForm):
         self.user = self.request.user
         #self.fields["instructor"].queryset = User.objects.filter(profile__role='I', profile__institute=self.profile.institute)
 
-    '''def clean_title(self):
-        title = self.cleaned_data['title'].strip()
-        return title'''
-
     def clean(self):
         data = self.cleaned_data
         if self._errors:

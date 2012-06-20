@@ -26,32 +26,13 @@
 
 	<p>Create your free account:</p>
 
-    <div class="field">
-      <label for="id_first_name">First Name:</label>
-      <input type="text" id="id_first_name" name="first_name" placeholder="First Name" class="login" />
+    {{ form.as_landing }}
+    <!--{% if form.non_field_errors %}
+    <div class="alert alert-error">
+      {{ form.non_field_errors|safe }}
     </div>
-    
-    <div class="field">
-      <label for="id_last_name">Last Name:</label>  
-      <input type="text" id="id_last_name" name="last_name" placeholder="Last Name" class="login" />
-    </div>
-    
-    
-    <div class="field">
-      <label for="id_email">Email Address:</label>
-      <input type="text" id="id_email" name="email" placeholder="Email" class="login" />
-    </div>
-    
-    <div class="field">
-      <label for="id_password">Password:</label>
-      <input type="password" id="id_password" name="password" placeholder="Password" class="login" />
-    </div>
-    
-    <div class="field">
-      <label for="id_password_conf">Confirm Password:</label>
-      <input type="password" id="id_password_conf" name="password_conf" placeholder="Confirm Password" class="login" />
-    </div>
-    
+    {% endif %}-->
+
   </div>
   
   <div class="login-actions">

@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from course.models import Course, SectionAssign, Section, WhiteboardPost
-from django.utils.datastructures import SortedDict
+# from django.utils.datastructures import SortedDict
 from homeroom.forms import AddCourseForm, AddWhiteboardPostForm
 from haystack.query import SearchQuerySet
 from haystack.utils import Highlighter

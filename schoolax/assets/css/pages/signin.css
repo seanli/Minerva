@@ -45,6 +45,16 @@ body{ background: url(../../img/body-bg.png); color:#838383; font: 13px/1.7em 'O
 	margin-bottom: 1.25em;
 }
 
+.login-fields .field.error>label,.login-fields .field.error .help-block,.login-fields .field.error .help-inline{color:#b94a48;}
+.login-fields .field.error input,.login-fields .field.error select,.login-fields .field.error textarea{color:#b94a48;border-color:#b94a48;}.login-fields .field.error input:focus,.login-fields .field.error select:focus,.login-fields .field.error textarea:focus{border-color:#953b39;-webkit-box-shadow:0 0 6px #d59392;-moz-box-shadow:0 0 6px #d59392;box-shadow:0 0 6px #d59392;}
+.login-fields .field.error .input-prepend .add-on,.login-fields .field.error .input-append .add-on{color:#b94a48;background-color:#f2dede;border-color:#b94a48;}
+.login-fields .field.error input::-webkit-input-placeholder, .login-fields .field.error textarea::-webkit-input-placeholder {
+  color:#b94a48;
+}
+.login-fields .field.error input:-moz-placeholder, .login-fields .field.error textarea:-moz-placeholder {
+  color:#b94a48;
+}
+
 .login-fields label {
 	display: none;
 }
@@ -61,12 +71,14 @@ body{ background: url(../../img/body-bg.png); color:#838383; font: 13px/1.7em 'O
 	box-shadow: inset 2px 2px 4px #f1f1f1;
 }
 
-.username-field { background: url(../../img/signin/user.png) no-repeat; }
+.login-fields .field .username-field { background: url(../../img/signin/user.png) no-repeat; }
 
-.password-field { background: url(../../img/signin/password.png) no-repeat; }
+.login-fields .field .password-field { background: url(../../img/signin/password.png) no-repeat; }
 
 
+.login-fields .field.error .username-field { background: url(../../img/signin/user_error.png) no-repeat; }
 
+.login-fields .field.error .password-field { background: url(../../img/signin/password_error.png) no-repeat; }
 
 .login-actions {
 	float: left;

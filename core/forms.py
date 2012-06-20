@@ -66,13 +66,15 @@ def as_landing(self):
             else:
                 field_group = '<div class="field">%s</div>'
             label = '<label for="id_%s">%s</label>' % (name, name_field.label)
-            field = '%s' % name_field
             if name_field.errors:
-                errors.append(name_field.errors)
-            field_group = field_group % (label + field)
+                field_input = '%s<span class="help-inline">%s</span>' % (name_field, name_field.errors)
+            else:
+                field_input = '%s' % (name_field)
+            field_group = field_group % (label + field_input)
             output.append(field_group)
     if len(errors) > 0:
         output.append('div class="error">%s</div>' % u'<br />'.join(errors))
+    print output
     return mark_safe(u'\n'.join(output))
 
 

@@ -1,9 +1,8 @@
 from django import forms
 from django.contrib import auth
 from django.contrib.auth.models import User
-from core.forms import StandardForm, GenericField, LegendWidget
+from core.forms import StandardForm
 from core.utilities import titlecase
-from core.models import Institute
 
 
 class LoginForm(StandardForm):
@@ -30,14 +29,14 @@ class LoginForm(StandardForm):
 
 class SignupForm(StandardForm):
 
-    personal_detail = GenericField(widget=LegendWidget(attrs={'display': 'Personal Detail'}))
-    first_name = forms.CharField(max_length=30, label='First Name')
-    last_name = forms.CharField(max_length=30, label='Last Name')
+    # personal_detail = GenericField(widget=LegendWidget(attrs={'display': 'Personal Detail'}))
+    first_name = forms.CharField(max_length=30, label='First Name', widget=forms.TextInput(attrs={'placeholder': 'First Name', 'class': 'login'}))
+    last_name = forms.CharField(max_length=30, label='Last Name', widget=forms.TextInput(attrs={'placeholder': 'Last Name', 'class': 'login'}))
     # institute = forms.ModelChoiceField(queryset=Institute.objects, empty_label=None, label='Institute')
-    login_credential = GenericField(widget=LegendWidget(attrs={'display': 'Login Credential'}))
-    email = forms.EmailField(max_length=75, label='Email')
-    password = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Password')
-    password_conf = forms.CharField(max_length=128, widget=forms.PasswordInput, label='Confirm Password')
+    # login_credential = GenericField(widget=LegendWidget(attrs={'display': 'Login Credential'}))
+    email = forms.EmailField(max_length=75, label='Email', widget=forms.TextInput(attrs={'placeholder': 'Email', 'class': 'login'}))
+    password = forms.CharField(max_length=128, label='Password', widget=forms.PasswordInput(attrs={'placeholder': 'Password', 'class': 'login'}))
+    password_conf = forms.CharField(max_length=128, label='Confirm Password', widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password', 'class': 'login'}))
 
     def clean_email(self):
         email = self.cleaned_data['email'].lower().strip()

@@ -107,25 +107,36 @@ $(document).ready(function() {
   });
 });
 
-/*$('[placeholder]').focus(function() {
-  var input = $(this);
-  if (input.val() == input.attr('placeholder')) {
-    input.val('');
-    input.removeClass('placeholder');
+// Cross-platform placeholder
+/* <![CDATA[ */
+$(function() {
+  var input = document.createElement("input");
+    if(('placeholder' in input)==false) { 
+    $('[placeholder]').focus(function() {
+      var i = $(this);
+      if(i.val() == i.attr('placeholder')) {
+        i.val('').removeClass('placeholder');
+        if(i.hasClass('password')) {
+          i.removeClass('password');
+          this.type='password';
+        }     
+      }
+    }).blur(function() {
+      var i = $(this);  
+      if(i.val() == '' || i.val() == i.attr('placeholder')) {
+        if(this.type=='password') {
+          i.addClass('password');
+          this.type='text';
+        }
+        i.addClass('placeholder').val(i.attr('placeholder'));
+      }
+    }).blur().parents('form').submit(function() {
+      $(this).find('[placeholder]').each(function() {
+        var i = $(this);
+        if(i.val() == i.attr('placeholder'))
+          i.val('');
+      })
+    });
   }
-}).blur(function() {
-  var input = $(this);
-  if (input.val() == '' || input.val() == input.attr('placeholder')) {
-    input.addClass('placeholder');
-    input.val(input.attr('placeholder'));
-  }
-}).blur();
-
-$('[placeholder]').parents('form').submit(function() {
-  $(this).find('[placeholder]').each(function() {
-    var input = $(this);
-    if (input.val() == input.attr('placeholder')) {
-      input.val('');
-    }
-  })
-});*/
+});
+/* ]]> */
