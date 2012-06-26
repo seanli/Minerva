@@ -61,6 +61,18 @@
             <span>Portfolio</span>
           </a>              
         </li>
+        <li class="{% active request '^/bulletin.*$' %}">
+          <a href="#">
+            <i class="icon-list-alt"></i>
+            <span>Bulletin</span>
+          </a>              
+        </li>
+        <li class="{% active request '^/marketplace.*$' %}">
+          <a href="#">
+            <i class="icon-shopping-cart"></i>
+            <span>Marketplace</span>
+          </a>              
+        </li>
         {% if user.is_staff %}
           <li class="{% active request '^/backstage.*$' %}">
             <a href="{% url backstage %}">
