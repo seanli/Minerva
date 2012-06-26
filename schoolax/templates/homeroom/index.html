@@ -33,7 +33,11 @@
               <a data-toggle="modal" href="#add-course" class="btn btn-mini btn-success btn-subscribe hide"> <i class="icon-plus icon-white"></i> Subscribe </a>
             </div>
           {% empty %}
+          {% if suggestion %}
           <p>Sorry! no course is found. Did you mean <a class="did-you-mean" href="#">{{ suggestion }}</a>?</p>
+          {% else %}
+          <p>Sorry! no course is found. Please refine your search criteria!</p>
+          {% endif %}
           {% endfor %}
         {% endif %}
       </div>

@@ -17,7 +17,8 @@ def user_pre_save(sender, **kwargs):
     email = kwargs['instance'].email
     username = kwargs['instance'].username
     if sender.objects.filter(email=email).exclude(username=username).count() and email:
-        raise ValidationError('User email needs to be unique')
+        # raise ValidationError('User email needs to be unique')
+        pass
 
 
 class Profile(models.Model):

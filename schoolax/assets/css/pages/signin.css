@@ -219,10 +219,6 @@ span.login-checkbox > input[type='checkbox']:checked + label {
 	margin-bottom: 0;
 }
 
-.register .btn {
-	margin-top: 1em;
-}
-
 .register .login-fields input {
 	width: 299px;
 	padding-left: 6px;
