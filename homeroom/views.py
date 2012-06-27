@@ -24,7 +24,7 @@ def homeroom(request):
             course['highlight'] = highlighter.highlight(result.text)
             courses.append(course)
         #courses = Course.objects.filter(institute=user.get_profile().institute, title__icontains=query)
-        suggestion = SearchQuerySet().spelling_suggestion(query)
+        suggestion = None #SearchQuerySet().spelling_suggestion(query)
         context['courses'] = courses
         context['suggestion'] = suggestion
     '''else:
