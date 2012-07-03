@@ -6,81 +6,106 @@
 
 {% block content %}
 
-<div class="row-fluid">
-  <div class="page-header">
-    <h1>{{ course.title }}</h1>
-    <h6>{{ course.abbrev }} - {{ course.institute.name }}</h6>
+<div class="row">
+  <div class="span8">
+    <div class="widget">
+      <div class="widget-header">
+        <i class="icon-book"></i>
+        <h3>{{ course.title }}</h3>
+      </div>
+      <div class="widget-content">
+        <div class="row-fluid">
+          <div class="span6">
+            <h5>Course Number:</h5>
+            <h6>{{ course.abbrev }}</h6>
+            <h5>Institute:</h5>
+            <h6>{{ course.institute.name }}</h6>
+          </div>
+          <div class="span6">
+            <h3>Description:</h3>
+            <p>{{ course.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <h3>Description:</h3>
-  <p>{{ course.description }}</p>
-  <div class="vertical-space"></div>
-  <h6>Average Interesting Rating: {{ course_data.interesting_average_rating }}</h6>
-  <h6>Total Interesting Ratings: {{ course_data.interesting_total_ratings }}</h6>
-  <div class="course-rating-bar progress" rating="{{ course_data.interesting_average_rating }}">
-    <div class="bar"></div>
-  </div>
-  <div course-id="{{ course.id }}" class="btn-group course-rating interesting-course-rating" data-toggle="buttons-radio">
-    <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.interesting_value %}">
-      1
-    </button>
-    <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.interesting_value %}">
-      2
-    </button>
-    <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.interesting_value %}">
-      3
-    </button>
-    <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.interesting_value %}">
-      4
-    </button>
-    <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.interesting_value %}">
-      5
-    </button>
-  </div>
-  <div class="vertical-space"></div>
-  <h6>Average Practical Rating: {{ course_data.practical_average_rating }}</h6>
-  <h6>Total Practical Ratings: {{ course_data.practical_total_ratings }}</h6>
-  <div class="course-rating-bar progress" rating="{{ course_data.practical_average_rating }}">
-    <div class="bar"></div>
-  </div>
-  <div course-id="{{ course.id }}" class="btn-group course-rating practical-course-rating" data-toggle="buttons-radio">
-    <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.practical_value %}">
-      1
-    </button>
-    <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.practical_value %}">
-      2
-    </button>
-    <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.practical_value %}">
-      3
-    </button>
-    <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.practical_value %}">
-      4
-    </button>
-    <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.practical_value %}">
-      5
-    </button>
-  </div>
-  <div class="vertical-space"></div>
-  <h6>Average Difficult Rating: {{ course_data.difficult_average_rating }}</h6>
-  <h6>Total Difficult Ratings: {{ course_data.difficult_total_ratings }}</h6>
-  <div class="course-rating-bar progress" rating="{{ course_data.difficult_average_rating }}">
-    <div class="bar"></div>
-  </div>
-  <div course-id="{{ course.id }}" class="btn-group course-rating difficult-course-rating" data-toggle="buttons-radio">
-    <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.difficult_value %}">
-      1
-    </button>
-    <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.difficult_value %}">
-      2
-    </button>
-    <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.difficult_value %}">
-      3
-    </button>
-    <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.difficult_value %}">
-      4
-    </button>
-    <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.difficult_value %}">
-      5
-    </button>
+  <div class="span4">
+    <div class="widget">
+      <div class="widget-header">
+        <i class="icon-star"></i>
+        <h3>Course Rating</h3>
+      </div>
+      <div class="widget-content">
+        <h6>Average Interesting Rating: {{ course_data.interesting_average_rating }}</h6>
+        <h6>Total Interesting Ratings: {{ course_data.interesting_total_ratings }}</h6>
+        <div class="course-rating-bar progress" rating="{{ course_data.interesting_average_rating }}">
+          <div class="bar"></div>
+        </div>
+        <div course-id="{{ course.id }}" class="btn-group course-rating interesting-course-rating" data-toggle="buttons-radio">
+          <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.interesting_value %}">
+            1
+          </button>
+          <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.interesting_value %}">
+            2
+          </button>
+          <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.interesting_value %}">
+            3
+          </button>
+          <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.interesting_value %}">
+            4
+          </button>
+          <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.interesting_value %}">
+            5
+          </button>
+        </div>
+        <div class="vertical-space"></div>
+        <h6>Average Practical Rating: {{ course_data.practical_average_rating }}</h6>
+        <h6>Total Practical Ratings: {{ course_data.practical_total_ratings }}</h6>
+        <div class="course-rating-bar progress" rating="{{ course_data.practical_average_rating }}">
+          <div class="bar"></div>
+        </div>
+        <div course-id="{{ course.id }}" class="btn-group course-rating practical-course-rating" data-toggle="buttons-radio">
+          <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.practical_value %}">
+            1
+          </button>
+          <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.practical_value %}">
+            2
+          </button>
+          <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.practical_value %}">
+            3
+          </button>
+          <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.practical_value %}">
+            4
+          </button>
+          <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.practical_value %}">
+            5
+          </button>
+        </div>
+        <div class="vertical-space"></div>
+        <h6>Average Difficult Rating: {{ course_data.difficult_average_rating }}</h6>
+        <h6>Total Difficult Ratings: {{ course_data.difficult_total_ratings }}</h6>
+        <div class="course-rating-bar progress" rating="{{ course_data.difficult_average_rating }}">
+          <div class="bar"></div>
+        </div>
+        <div course-id="{{ course.id }}" class="btn-group course-rating difficult-course-rating" data-toggle="buttons-radio">
+          <button rating="1" class="btn-rate btn btn-mini {% user_rating 1 course_data.user_course_rating.difficult_value %}">
+            1
+          </button>
+          <button rating="2" class="btn-rate btn btn-mini {% user_rating 2 course_data.user_course_rating.difficult_value %}">
+            2
+          </button>
+          <button rating="3" class="btn-rate btn btn-mini {% user_rating 3 course_data.user_course_rating.difficult_value %}">
+            3
+          </button>
+          <button rating="4" class="btn-rate btn btn-mini {% user_rating 4 course_data.user_course_rating.difficult_value %}">
+            4
+          </button>
+          <button rating="5" class="btn-rate btn btn-mini {% user_rating 5 course_data.user_course_rating.difficult_value %}">
+            5
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

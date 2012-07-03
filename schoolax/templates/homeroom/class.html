@@ -7,34 +7,75 @@
 
 {% block content %}
 
-<div class="page-header">
-  <h1><a href="{% url courses %}{{ section.course.id }}">{{ section.course.title }}</a></h1>
-  <h6>{{ section.course.abbrev }} - {{ section.course.institute.name }}</h6>
-</div>
-<div class="row-fluid">
-  <div class="span9">
-    <h3>Whiteboard:</h3>
-    {% include "modal/add-whiteboard-post.html" with form=post_form %}
-    <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-primary"><i class="icon-pencil icon-white"></i> Write </a>
-    <div class="vertical-space"></div>
-    {% for post in posts %}
-    <div class="well well-small">
-      <h6>{{ post.created_time|naturaltime }}</h6>
-      <h4>{{ post.author.get_full_name }}:</h4>
-      <p>{{ post.content }}</p>
+<div class="row">
+  <div class="span8">
+    <div class="widget">
+      <div class="widget-header">
+        <i class="icon-pencil"></i>
+        <h3>Whiteboard</h3>
+      </div>
+      <div class="widget-content">
+        {% include "modal/add-whiteboard-post.html" with form=post_form %}
+        <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-success"><i class="icon-pencil icon-white"></i> Write </a>
+        <div class="vertical-space"></div>
+        {% for post in posts %}
+        <div class="well well-small">
+          <h6>{{ post.created_time|naturaltime }}</h6>
+          <h4>{{ post.author.get_full_name }}:</h4>
+          <p>{{ post.content }}</p>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
   </div>
-  <div class="span3">
-  	<h3>Details:</h3>
-  	<h5>Start Date:</h5>
-  	<h6>{{ section.start_date|date:"F, Y" }}</h6>
-  	<h5>Duration:</h5>
-  	<h6>{{ section.get_duration_display }}</h6>
-  	<h3>In This Class:</h3>
-    {% for classmate in classmates %}
-    <h5><a href="{% url portfolio %}{{ classmate.username }}">{{ classmate.get_full_name }}</a></h5>
-    {% endfor %}
+  <div class="span4">
+    <div class="widget">
+      <div class="widget-header">
+        <i class="icon-tag"></i>
+        <h3>Class Tag</h3>
+      </div>
+      <div class="widget-content">
+        <div class="row-fluid">
+          <div class="span12">
+            <h3><a href="{% url courses %}{{ section.course.id }}">{{ section.course.title }}</a></h3>
+            <hr />
+            <h5>Course Number:</h5>
+            <h6>{{ section.course.abbrev }}</h6>
+            <h5>Institute:</h5>
+            <h6>{{ section.course.institute.name }}</h6>
+            <h5>Start Date:</h5>
+            <h6>{{ section.start_date|date:"F, Y" }}</h6>
+            <h5>Duration:</h5>
+            <h6>{{ section.get_duration_display }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="widget big-stats-container"> 
+      <div class="widget-content">
+        <div id="big_stats" class="cf">
+          <div class="stat">                
+            <h4>Subscribers</h4>
+            <span class="value">{{ classmates|length }}</span>               
+          </div> <!-- .stat -->
+          <div class="stat">                
+            <h4>In Class</h4>
+            <span class="value">{{ classmates|length }}</span>               
+          </div> <!-- .stat -->
+        </div>
+      </div> <!-- /widget-content -->
+    </div>
+    <div class="widget">
+      <div class="widget-header">
+        <i class="icon-user"></i>
+        <h3>In This Class</h3>
+      </div>
+      <div class="widget-content">
+        {% for classmate in classmates %}
+        <h5><a href="{% url portfolio %}{{ classmate.username }}">{{ classmate.get_full_name }}</a></h5>
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
 
