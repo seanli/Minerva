@@ -1,0 +1,65 @@
+// Bootstrap
+@import "bootstrap.less";
+
+// Components
+@import "datepicker.less";
+@import "datatable.less";
+@import "backstage.less";
+
+.text-inset() {
+  text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+}
+
+.vertical-space {
+  height: @gridGutterWidth / 4;
+}
+
+.white-text {
+  color: white;
+}
+
+// Page Frame
+body {
+  padding-top: @navbarHeight;
+  padding-bottom: @navbarHeight;
+  background-color: @white;
+  //background-image: url("../img/paper.png");
+}
+#main.container-fluid {
+  margin-top: 20px;
+  padding: 0px @gridGutterWidth @gridGutterWidth @gridGutterWidth;
+  background-color: @white;
+}
+#header.container-fluid {
+  background-color: #109450;
+  //background-image: url("../img/bg.jpg");
+  #gradient > .radial(#109450, #109450);
+  border-bottom: thick solid #295C42;
+  .box-shadow(0 10px 10px fade(@grayLight, 50%));
+  a.brand {
+    font-size: 30px;
+    line-height: 50px;
+    color: #109450;
+    text-decoration: none;
+    .text-inset();
+  }
+  .btn {
+    margin-top: 7px;
+    .label {
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+.navbar {
+  .box-shadow(0 10px 25px fade(@gray, 50%));
+}
+
+// Utilities
+.sticky {
+  position: fixed;
+  top: 60px;
+}
+
+// Responsive UI (Last Line)
+@import "responsive.less";
