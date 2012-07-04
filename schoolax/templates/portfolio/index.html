@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Portfolio{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="span8">
+    <div class="widget">
+		  <div class="widget-header">
+		    <i class="icon-list-alt"></i>
+		    <h3>Portfolio</h3>
+		  </div>
+	  	<div class="widget-content">
+		  	<h1>{{ viewing_user.get_full_name }}</h1>
+		  	{% if profile.degree %} <h6>{{ profile.get_degree_display }} from {{ profile.institute }}</h6>
+	  		{% else %} <h6>from {{ profile.institute }}</h6>
+	  		{% endif %}
+  			<hr />
+  			<div class="row-fluid">
+  		  	<div class="span6">
+	  		  	{% with specializations=viewing_user.specialization_set.all %} <h3>Specialization{{ specializations.count|pluralize }}:</h3>
+		        {% for specialization in specializations %} <h6>{{ specialization.name }}</h6>
+		        {% empty %} <h6>No Specialization Yet!</h6>
+		        {% endfor %}
+		        {% if viewing_user == user %} <div class="vertical-space"></div>
+		        <a data-toggle="modal" href="#add-specialization" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Specialization </a>
+		        {% endif %}
+		        {% endwith %}
+  		  	</div>
+  		  	<div class="span6">
+  		  		{% with skills=viewing_user.skill_set.all %} <h3>Skill{{ skills.count|pluralize }}:</h3>
+		        {% for skill in skills %} <h6>{{ skill.name }}</h6>
+		        {% empty %} <h6>No Skill Yet!</h6>
+		        {% endfor %}
+		        {% if viewing_user == user %} <div class="vertical-space"></div>
+		        <a data-toggle="modal" href="#add-skill" class="btn btn-mini btn-info"><i class="icon-plus icon-white"></i> Skill </a>
+		        {% endif %}
+		        {% endwith %}
+  		  	</div>
+    		</div>
+	  	</div>
+		</div>
+  </div>
+  <div class="span4">
+    <div class="widget">
+		  <div class="widget-header">
+		    <i class="icon-th-large"></i>
+		    <h3>Badges</h3>
+		  </div>
+		  <div class="widget-content">
+		  	<h1>Coming Soon!</h1>
+		  </div>
+		</div>
+		<div class="widget">
+		  <div class="widget-header">
+		    <i class="icon-thumbs-up"></i>
+		    <h3>Encouragement{{ encouragements_approved.count|pluralize }}</h3>
+		  </div>
+		  <div class="widget-content">
+		  	<div class="row-fluid">
+		      {% if viewing_user != user %} <div class="vertical-space"></div>
+		      <a data-toggle="modal" href="#encouragement" class="btn btn-mini btn-warning"><i class="icon-pencil icon-white"></i> Encouragement </a>
+		      <div class="vertical-space"></div>
+		      <div class="vertical-space"></div>
+		      {% endif %}
+		      {% for encouragement in encouragements_approved %}
+			      <blockquote>
+			        <h6>{{ encouragement.sent_time }}</h6>
+			        <p>
+			          <i>"{{ encouragement.message }}"</i>
+			        </p><small>{% if encouragement.anonymous %} Anonymous {% else %} <a href="{% url portfolio %}{{ encouragement.person_from.username }}">{{ encouragement.person_from.get_full_name }}</a>{% endif %}</small>
+			      </blockquote>
+		      {% empty %} <h6>No Encouragement Yet!</h6>
+		      {% endfor %}
+    		</div>
+    		<hr />
+		    <div class="row-fluid">
+		      {% if viewing_user == user %} <h3>To Be Approved:</h3>
+		      <div class="vertical-space"></div>
+		      {% for encouragement in encouragements_unapproved %}
+		      <blockquote encouragement-id="{{ encouragement.id }}" class="encouragement">
+		        <h6>{{ encouragement.sent_time }}</h6>
+		        <p>
+		          <i>"{{ encouragement.message }}"</i>
+		        </p>
+		        <div class="vertical-space"></div>
+		        <a class="btn btn-mini btn-success btn-approve hide"> Approve </a>
+		        <a class="btn btn-mini btn-danger btn-remove hide"> Remove </a>
+		      </blockquote>
+		      {% empty %} <h6>No New Encouragements!</h6>
+		      {% endfor %}
+		      {% endif %}
+		    </div>
+			</div>
+  	</div>
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  
+  $(document).ready(function() {
+    $('.encouragement').hover(function() {
+      $(this).find('.btn-approve').removeClass('hide');
+      $(this).find('.btn-remove').removeClass('hide');
+    }, function() {
+      $(this).find('.btn-approve').addClass('hide');
+      $(this).find('.btn-remove').addClass('hide');
+    });
+    $('.encouragement .btn-approve').click(function() {
+      var elem = $(this);
+      var encouragement_id = elem.parent().attr('encouragement-id');
+      var approve_encouragement_callback = function(data) {
+        if(data.status == 'OK') {
+          window.location.reload();
+        }
+      };
+      Dajaxice.portfolio.approve_encouragement(approve_encouragement_callback, {
+        'encouragement_id' : encouragement_id,
+        'approve' : true,
+      });
+    });
+    $('.encouragement .btn-remove').click(function() {
+      var elem = $(this);
+      var encouragement_id = elem.parent().attr('encouragement-id');
+      var disapprove_encouragement_callback = function(data) {
+        if(data.status == 'OK') {
+          elem.parent().remove();
+        }
+      };
+      Dajaxice.portfolio.approve_encouragement(disapprove_encouragement_callback, {
+        'encouragement_id' : encouragement_id,
+        'approve' : false,
+      });
+    });
+  });
+
+</script>
+
+{% include "modal/add-specialization.html" %}
+{% include "modal/add-skill.html" %}
+{% include "modal/encouragement.html" %}
+
+{% endblock %}

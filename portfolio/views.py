@@ -55,6 +55,6 @@ def portfolio(request, username=None):
         context['add_specialization_form'] = add_specialization_form
         context['add_skill_form'] = add_skill_form
         context['encouragement_form'] = encouragement_form
-        return render_to_response('portfolio/main.html', context)
+        return render_to_response('portfolio/index.html', context)
     else:
         return HttpResponse('User Not Found!')

@@ -22,7 +22,7 @@
       <div class="widget-content">
         <form method="post" class="faq-search">
           {% csrf_token %}
-          <input type="text" name="course-search" placeholder="Search by course name, number, description or keywords!">
+      	  <input type="text" name="course-search" placeholder="Search by course name, number, description or keywords!">
         </form>
         {% if request.POST %}
           {% for course in courses %}

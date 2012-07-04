@@ -16,8 +16,8 @@
       </div>
       <div class="widget-content">
         {% include "modal/add-whiteboard-post.html" with form=post_form %}
-        <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-success"><i class="icon-pencil icon-white"></i> Write </a>
-        <div class="vertical-space"></div>
+        <a data-toggle="modal" href="#whiteboard-post" class="btn btn-mini btn-success"><i class="icon-plus icon-white"></i> Write </a>
+        <hr />
         {% for post in posts %}
         <div class="well well-small">
           <h6>{{ post.created_time|naturaltime }}</h6>
