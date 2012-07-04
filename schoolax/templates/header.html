@@ -62,16 +62,16 @@
           </a>              
         </li>
         <li class="{% active request '^/bulletin.*$' %}">
-          <a href="#">
+          <a href="{% url bulletin %}">
             <i class="icon-list-alt"></i>
             <span>Bulletin</span>
           </a>              
         </li>
         <li class="{% active request '^/marketplace.*$' %}">
-          <a href="#">
+          <a href="#" rel="popover" data-placement="bottom" data-content="Sorry! This feature is still under development." data-original-title="Coming Soon...">
             <i class="icon-shopping-cart"></i>
             <span>Marketplace</span>
-          </a>              
+          </a>
         </li>
         {% if user.is_staff %}
           <li class="{% active request '^/backstage.*$' %}">

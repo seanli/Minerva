@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% load base_extra %}
+
+{% block title %}{{ SITE_NAME }} - Bulletin{% endblock %}
+
+{% block content %}
+
+<div class="row">
+	<div class="span6">
+		<div class="widget">
+			<div class="widget-content">
+				<div class="row-fluid">
+			    <div class="span2">
+			      <a href="http://www.facebook.com/aznally" target="_blank" class="thumbnail">
+	            <img src="{{ STATIC_URL }}img/Asian_Alliance.jpg" alt="" />
+	          </a>
+			    </div>
+			    <div class="span10">
+			      <h1>Asian Alliance</h1>
+			      <h5>Upcoming Event this Friday, June 22nd!</h5>
+			    </div>
+		  	</div>
+		  	<hr />
+		  	<div class="row-fluid">
+		  		<div class="alert alert-warning">
+		  			<h3>Asian Alliance is featuring their first organized event!</h3>
+		  		</div>
+		  		<a href="http://www.facebook.com/aznally" target="_blank" class="thumbnail">
+	          <img src="{{ STATIC_URL }}img/Asian_Glow.jpg" alt="" />
+	        </a>
+		  	</div>
+			</div>
+		</div>
+	</div>
+	<div class="span6">
+		<div class="widget">
+      <div class="widget-header">
+        <i class="icon-music"></i>
+        <h3>Campus Clubs</h3>
+      </div>
+      <div class="widget-content">
+      	<ul class="news-items">
+					<li>
+						<div class="news-item-detail">										
+							<a href="http://uwaterlootwsa.blogspot.ca/p/about-us.html" target="_blank" class="news-item-title">Taiwanese Student Association (TWSA)</a>
+							<p class="news-item-preview">
+								Our mission is to provide a supportive group for students of Taiwanese background; as well as provide an inclusive environment for all UW students regardless of background, who would like to learn more about Taiwanese culture and lifestyles.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="news-item-detail">										
+							<a href="http://uwhiphop.wix.com/uwhh#!about/c5a2" target="_blank" class="news-item-title">University of Waterloo HipHop Club (UWHH)</a>
+							<p class="news-item-preview">
+								The purpose of The University of Waterloo Hip Hop Club is to provide a fun, social environment where students can learn hip hop dance. Members of the club have the opportunity to grow as dancers by being exposed to different styles of hip hop dance, while meeting others who are passionate about dance. Practices help members to develop balance, coordination, strength and confidence.
+							</p>
+						</div>
+					</li>
+				</ul>
+      </div>
+		</div>
+		<div class="widget">
+      <div class="widget-header">
+        <i class="icon-glass"></i>
+        <h3>Campus Food</h3>
+      </div>
+      <div class="widget-content">
+      	<div class="row-fluid">
+			    <div class="span2">
+			      <a href="#" class="thumbnail">
+	            <img src="{{ STATIC_URL }}img/Campus_Bubble.jpg" alt="" />
+	          </a>
+			    </div>
+			    <div class="span10">
+			      <h1>Campus Bubble</h1>
+			      <h5>Located in SLC First Floor!</h5>
+			      <h5>Mon. - Thur. 10am - 10pm, Fri. 10am - 5pm</h5>
+			    </div>
+		  	</div>
+      </div>
+		</div>
+		<div class="widget">
+      <div class="widget-header">
+        <i class="icon-star-empty"></i>
+        <h3>Most Influential</h3>
+      </div>
+      <div class="widget-content">
+      	<div class="row-fluid">
+			    <div class="span2">
+			      <a href="http://www.lisean.com" target="_blank" class="thumbnail">
+	            <img src="http://lisean.com/static/img/portrait.jpg" alt="" />
+	          </a>
+			    </div>
+			    <div class="span10">
+			      <h1>Sean Li</h1>
+			      <h5>Founded Schoolax Inc.!</h5>
+			      <a href="http://www.lisean.com" target="_blank"><h5>Visit My Website!</h5></a>
+			    </div>
+		  	</div>
+      </div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

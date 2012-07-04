@@ -5,8 +5,5 @@ from django.template import RequestContext
 
 @login_required
 def bulletin(request):
-    #results = SearchQuerySet().autocomplete(text='software').models(Course)
-    #suggestion = SearchQuerySet().spelling_suggestion('algorithasm')
-    #print suggestion
     context = RequestContext(request)
-    return render_to_response('bulletin/main.html', context)
+    return render_to_response('bulletin/index.html', context)
