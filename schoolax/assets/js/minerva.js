@@ -91,9 +91,11 @@ $(document).ready(function() {
       }
     }
   });*/
-  // Setup Prettify
+  // Prevent textbox autocomplete
+  $("input[type=text]").attr("autocomplete", "off");
+  // Setup prettify
   prettyPrint();
-  // Setup Popovers
+  // Setup popovers
   $("a[rel=popover]")
     .popover()
     .click(function(e) {
