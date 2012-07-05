@@ -25,11 +25,16 @@
 @font-face {
     font-family: 'FontAwesome';
     src: url('../font/fontawesome-webfont.eot');
-    src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+    src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), 
+	    url('../font/fontawesome-webfont.woff') format('woff'), 
+	    url('../font/fontawesome-webfont.ttf') format('truetype'), 
+	    url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), 
+	    url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-/* sprites.less reset */
+
+/* Sprites.less reset */
 [class^="icon-"], [class*=" icon-"] {
     display: inline;
     width: auto;
@@ -43,6 +48,7 @@
 li[class^="icon-"], li[class*=" icon-"] {
     display: block;
 }
+
 /*  Font Awesome styles
     ------------------------------------------------------- */
 [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -56,13 +62,14 @@ a [class^="icon-"], a [class*=" icon-"] {
     display: inline-block;
     text-decoration: inherit;
 }
-/* makes the font 33% larger relative to the icon container */
+
+/* Makes the font 33% larger relative to the icon container */
 .icon-large:before {
     vertical-align: top;
     font-size: 1.3333333333333333em;
 }
 .btn [class^="icon-"], .btn [class*=" icon-"] {
-    /* keeps button heights with and without icons the same */
+    /* Keeps button heights with and without icons the same */
     line-height: .9em;
 }
 li [class^="icon-"], li [class*=" icon-"] {
@@ -85,6 +92,7 @@ li[class^="icon-"]:before, li[class*=" icon-"]:before {
 li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
     text-indent: -1.3333333333333333em;
 }
+
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 .icon-glass:before              { content: "\f000"; }

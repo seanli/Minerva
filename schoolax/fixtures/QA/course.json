@@ -50402,19 +50402,6 @@
         }
     }, 
     {
-        "pk": 1, 
-        "model": "course.courserating", 
-        "fields": {
-            "practical_value": 4, 
-            "course": 1279, 
-            "difficult_value": 2, 
-            "rater": [
-                "sli"
-            ], 
-            "interesting_value": 4
-        }
-    }, 
-    {
         "pk": 5, 
         "model": "course.courserating", 
         "fields": {
@@ -50480,6 +50467,45 @@
         }
     }, 
     {
+        "pk": 10, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 1, 
+            "course": 383, 
+            "difficult_value": 5, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 5
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 5, 
+            "course": 2664, 
+            "difficult_value": 5, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 2
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 0, 
+            "course": 3648, 
+            "difficult_value": 0, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 3
+        }
+    }, 
+    {
         "pk": 4, 
         "model": "course.courserating", 
         "fields": {
@@ -50490,6 +50516,32 @@
                 "sli"
             ], 
             "interesting_value": 1
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 2, 
+            "course": 478, 
+            "difficult_value": 4, 
+            "rater": [
+                "sling"
+            ], 
+            "interesting_value": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "course.courserating", 
+        "fields": {
+            "practical_value": 2, 
+            "course": 1279, 
+            "difficult_value": 1, 
+            "rater": [
+                "sli"
+            ], 
+            "interesting_value": 3
         }
     }, 
     {
@@ -50664,25 +50716,165 @@
         }
     }, 
     {
-        "pk": 22, 
-        "model": "course.sectionassign", 
+        "pk": 85, 
+        "model": "course.section", 
         "fields": {
-            "section": 66, 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
+            "duration": "T", 
+            "course": 383, 
+            "start_date": "2012-05-01"
         }
     }, 
     {
-        "pk": 26, 
-        "model": "course.sectionassign", 
+        "pk": 86, 
+        "model": "course.section", 
         "fields": {
-            "section": 70, 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
+            "duration": "T", 
+            "course": 1279, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 852, 
+            "start_date": "2012-05-01"
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3843, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 510, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 2843, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 1702, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3229, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 526, 
+            "start_date": "2012-05-01"
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 3648, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 2664, 
+            "start_date": "2012-06-01"
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 478, 
+            "start_date": "2012-05-01"
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 495, 
+            "start_date": "2012-05-01"
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 472, 
+            "start_date": "2012-05-01"
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 2343, 
+            "start_date": "2012-05-01"
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 505, 
+            "start_date": "2012-07-01"
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 2343, 
+            "start_date": "2012-07-01"
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "course.section", 
+        "fields": {
+            "duration": "T", 
+            "course": 478, 
+            "start_date": "2012-07-01"
         }
     }, 
     {
@@ -50719,17 +50911,6 @@
         }
     }, 
     {
-        "pk": 35, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 78, 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
         "pk": 36, 
         "model": "course.sectionassign", 
         "fields": {
@@ -50737,17 +50918,6 @@
             "role": "S", 
             "user": [
                 "gli"
-            ]
-        }
-    }, 
-    {
-        "pk": 37, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 79, 
-            "role": "S", 
-            "user": [
-                "sli"
             ]
         }
     }, 
@@ -50763,17 +50933,6 @@
         }
     }, 
     {
-        "pk": 40, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 67, 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
         "pk": 42, 
         "model": "course.sectionassign", 
         "fields": {
@@ -50785,17 +50944,6 @@
         }
     }, 
     {
-        "pk": 43, 
-        "model": "course.sectionassign", 
-        "fields": {
-            "section": 83, 
-            "role": "S", 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
         "pk": 44, 
         "model": "course.sectionassign", 
         "fields": {
@@ -50803,6 +50951,116 @@
             "role": "S", 
             "user": [
                 "mGjcKKVETlTSdZGnx6"
+            ]
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 87, 
+            "role": "S", 
+            "user": [
+                "xGi0DNqUqex"
+            ]
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 67, 
+            "role": "S", 
+            "user": [
+                "xGi0DNqUqex"
+            ]
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 66, 
+            "role": "S", 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 93, 
+            "role": "S", 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 95, 
+            "role": "S", 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 96, 
+            "role": "S", 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 97, 
+            "role": "S", 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 98, 
+            "role": "S", 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 99, 
+            "role": "S", 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "course.sectionassign", 
+        "fields": {
+            "section": 96, 
+            "role": "S", 
+            "user": [
+                "sling"
             ]
         }
     }, 
@@ -50947,6 +51205,126 @@
             "section": 83, 
             "author": [
                 "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Coolstar", 
+            "created_time": "2012-06-20T17:04:25.059Z", 
+            "section": 87, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Hey all", 
+            "created_time": "2012-06-27T20:25:19.990Z", 
+            "section": 66, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "hi", 
+            "created_time": "2012-06-29T23:46:57.441Z", 
+            "section": 93, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Don't forget your assignment this Friday!", 
+            "created_time": "2012-07-03T18:43:13.236Z", 
+            "section": 95, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Don't forget your assignment this Friday!", 
+            "created_time": "2012-07-03T18:43:13.359Z", 
+            "section": 95, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Sup guys!", 
+            "created_time": "2012-07-04T04:04:46.482Z", 
+            "section": 96, 
+            "author": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Hey Sam, I'm now in this class too!", 
+            "created_time": "2012-07-04T04:08:47.484Z", 
+            "section": 96, 
+            "author": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "Hello!", 
+            "created_time": "2012-07-04T04:18:40.839Z", 
+            "section": 97, 
+            "author": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": "awesomeness, we should build a network switch together!", 
+            "created_time": "2012-07-04T04:19:27.331Z", 
+            "section": 96, 
+            "author": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "course.whiteboardpost", 
+        "fields": {
+            "content": ".", 
+            "created_time": "2012-07-04T16:34:23.021Z", 
+            "section": 66, 
+            "author": [
+                "pwang"
             ]
         }
     }

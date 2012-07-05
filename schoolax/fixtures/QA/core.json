@@ -3234,7 +3234,7 @@
         "model": "core.specializationassign", 
         "fields": {
             "user": [
-                "sling"
+                "slingold"
             ], 
             "specialization": 126
         }
@@ -3244,7 +3244,7 @@
         "model": "core.specializationassign", 
         "fields": {
             "user": [
-                "sling"
+                "slingold"
             ], 
             "specialization": 231
         }
@@ -3280,36 +3280,6 @@
         }
     }, 
     {
-        "pk": 10, 
-        "model": "core.specializationassign", 
-        "fields": {
-            "user": [
-                "sli"
-            ], 
-            "specialization": 80
-        }
-    }, 
-    {
-        "pk": 11, 
-        "model": "core.specializationassign", 
-        "fields": {
-            "user": [
-                "sli"
-            ], 
-            "specialization": 234
-        }
-    }, 
-    {
-        "pk": 12, 
-        "model": "core.specializationassign", 
-        "fields": {
-            "user": [
-                "sli"
-            ], 
-            "specialization": 257
-        }
-    }, 
-    {
         "pk": 13, 
         "model": "core.specializationassign", 
         "fields": {
@@ -3340,13 +3310,33 @@
         }
     }, 
     {
-        "pk": 16, 
+        "pk": 17, 
         "model": "core.specializationassign", 
         "fields": {
             "user": [
-                "sli"
+                "sling"
             ], 
-            "specialization": 309
+            "specialization": 66
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "core.specializationassign", 
+        "fields": {
+            "user": [
+                "sling"
+            ], 
+            "specialization": 95
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "core.specializationassign", 
+        "fields": {
+            "user": [
+                "pwang"
+            ], 
+            "specialization": 4
         }
     }, 
     {
@@ -30919,22 +30909,112 @@
         }
     }, 
     {
-        "pk": 13, 
-        "model": "core.skillassign", 
-        "fields": {
-            "skill": 30186, 
-            "user": [
-                "sli"
-            ]
-        }
-    }, 
-    {
         "pk": 14, 
         "model": "core.skillassign", 
         "fields": {
             "skill": 30631, 
             "user": [
                 "QnsjKAJf"
+            ]
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28503, 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 29985, 
+            "user": [
+                "sli"
+            ]
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 30116, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28853, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 30545, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28462, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 30631, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28503, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 29891, 
+            "user": [
+                "sling"
+            ]
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "core.skillassign", 
+        "fields": {
+            "skill": 28421, 
+            "user": [
+                "pwang"
             ]
         }
     }, 
@@ -30990,7 +31070,7 @@
             "rater": [
                 "sli"
             ], 
-            "value": 5
+            "value": 3
         }
     }, 
     {
@@ -31114,6 +31194,134 @@
             "anonymous": true, 
             "message": "Morgana.", 
             "approved": true
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:41:00.320Z", 
+            "person_to": [
+                "slingold"
+            ], 
+            "person_from": [
+                "3feTxPzHlm7gY14klzfevjFZy2lINI"
+            ], 
+            "anonymous": false, 
+            "message": "Hey Sam, you have been really nice!", 
+            "approved": false
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:42:05.038Z", 
+            "person_to": [
+                "slingold"
+            ], 
+            "person_from": [
+                "3feTxPzHlm7gY14klzfevjFZy2lINI"
+            ], 
+            "anonymous": true, 
+            "message": "Hi!", 
+            "approved": false
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:45:15.856Z", 
+            "person_to": [
+                "sling"
+            ], 
+            "person_from": [
+                "3feTxPzHlm7gY14klzfevjFZy2lINI"
+            ], 
+            "anonymous": false, 
+            "message": "Hi good work!", 
+            "approved": true
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:20:19.288Z", 
+            "person_to": [
+                "sli"
+            ], 
+            "person_from": [
+                "sling"
+            ], 
+            "anonymous": false, 
+            "message": "Genius entrepreneur!", 
+            "approved": true
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:49:12.867Z", 
+            "person_to": [
+                "slingold"
+            ], 
+            "person_from": [
+                "sling"
+            ], 
+            "anonymous": false, 
+            "message": "Hi!", 
+            "approved": false
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:56:26.323Z", 
+            "person_to": [
+                "sling"
+            ], 
+            "person_from": [
+                "3feTxPzHlm7gY14klzfevjFZy2lINI"
+            ], 
+            "anonymous": false, 
+            "message": "Hey, another recognition from Samuel!", 
+            "approved": true
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T04:57:07.267Z", 
+            "person_to": [
+                "sling"
+            ], 
+            "person_from": [
+                "3feTxPzHlm7gY14klzfevjFZy2lINI"
+            ], 
+            "anonymous": false, 
+            "message": "Great job!", 
+            "approved": true
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "core.encouragement", 
+        "fields": {
+            "sent_time": "2012-07-04T05:00:29.163Z", 
+            "person_to": [
+                "gli"
+            ], 
+            "person_from": [
+                "sling"
+            ], 
+            "anonymous": false, 
+            "message": "Coolest uncle!", 
+            "approved": false
         }
     }, 
     {
