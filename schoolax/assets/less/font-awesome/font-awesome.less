@@ -22,12 +22,12 @@
 
     */
 
-@fontAwesomePath: '../../../font';
+@fontAwesomePath: '{{ STATIC_URL }}font';
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url('@{fontAwesomePath}/fontawesome-webfont.eot'),
-    url('@{fontAwesomePath}/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+  src: url('@{fontAwesomePath}/fontawesome-webfont.eot');
+  src: url('@{fontAwesomePath}/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
     url('@{fontAwesomePath}/fontawesome-webfont.woff') format('woff'),
     url('@{fontAwesomePath}/fontawesome-webfont.ttf') format('truetype'),
     url('@{fontAwesomePath}/fontawesome-webfont.svg#FontAwesome') format('svg'),
