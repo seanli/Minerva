@@ -22,4 +22,4 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
 MEDIA_URL = '/media/'
 
-COMPRESS_ENABLED = True
+COMPRESS_ENABLED = False
