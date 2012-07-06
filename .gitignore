@@ -25,7 +25,7 @@ tools/build/
 *.pyc
 
 # Generated Files #
-schoolax/assets/js/dajaxice.core.js
+# schoolax/assets/js/dajaxice.core.js
 
 # Log Files #
 *.log
