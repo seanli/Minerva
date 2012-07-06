@@ -18,8 +18,8 @@ DATABASES = {
 }
 
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
-STATIC_URL = '/static/'
+STATIC_URL = 'http://schoolax.herokuapp.com/static/'
 MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_URL = 'http://schoolax.herokuapp.com//media/'
 
-COMPRESS_ENABLED = False
+COMPRESS_ENABLED = True
