@@ -3,6 +3,7 @@ import socket
 
 PROD_HOSTS = (
     'web330.webfaction.com',
+    'f573d464-26db-4433-9ede-00a506f3141d',
 )
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
