@@ -7,6 +7,8 @@ from account.forms import LoginForm, SignupForm, SettingForm
 from account.models import Profile
 from core.models import Institute
 from core.utilities import get_referrer, set_referrer
+from django.conf import settings as config_settings
+import urllib
 
 
 def login(request):
@@ -61,3 +63,15 @@ def settings(request):
     context = RequestContext(request)
     context['form'] = form
     return render_to_response('account/settings.html', context)
+
+
+def facebook_login(request):
+    login_link = 'https://www.facebook.com/dialog/oauth?' + urllib.urlencode(
+        {
+            'client_id': config_settings.FACEBOOK_APP_ID,
+            'redirect_uri': config_settings.FACEBOOK_REDIRECT_URI,
+            'response_type': 'token',
+            'scope': 'email'
+        }
+    )
+    return HttpResponseRedirect(login_link)
