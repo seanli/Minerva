@@ -23,24 +23,11 @@ def homeroom(request):
             course['object'] = result.object
             course['highlight'] = highlighter.highlight(result.text)
             courses.append(course)
-        #courses = Course.objects.filter(institute=user.get_profile().institute, title__icontains=query)
-        suggestion = None #SearchQuerySet().spelling_suggestion(query)
+        # courses = Course.objects.filter(institute=user.get_profile().institute, title__icontains=query)
+        suggestion = None
+        # suggestion = SearchQuerySet().spelling_suggestion(query)
         context['courses'] = courses
         context['suggestion'] = suggestion
-    '''else:
-        sections = [assign.section for assign in SectionAssign.objects.filter(user=user).order_by('-section__start_date')]
-        grouped_sections = SortedDict()
-        for section in sections:
-            start_date = section.start_date
-            if start_date not in grouped_sections:
-                grouped_sections[start_date] = [section]
-            else:
-                grouped_sections[start_date].append(section)
-        for key, value in grouped_sections.items():
-            grouped_sections[key] = sorted(value, key=lambda s: s.course.title)
-        form = AddCourseForm(request=request)
-        context['grouped_sections'] = grouped_sections
-        context['form'] = form'''
     sections = [assign.section for assign in SectionAssign.objects.filter(user=user).order_by('-section__start_date')]
     form = AddCourseForm(request=request)
     context['sections'] = sections

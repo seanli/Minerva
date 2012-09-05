@@ -11,7 +11,7 @@ from core.models import BadgeAssign, Encouragement, SkillAssign, SkillRating
 @login_required
 def portfolio(request, username=None):
     user = request.user
-    if username == None:
+    if username is None:
         viewing_user = user
     else:
         try:

@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import pre_save
 from django.dispatch import receiver
-from django.core.exceptions import ValidationError
+# from django.core.exceptions import ValidationError
 from core.models import Institute, ProvinceState
 from core.constants import (DEGREE, GRADE,
     GRADE_MAX, GRADE_MIN, GRADE_STEP)

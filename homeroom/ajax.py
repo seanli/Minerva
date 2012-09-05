@@ -17,7 +17,7 @@ def form_add_course(request, form_data):
         clear_validation(dajax, form)
         data = form.cleaned_data
         section = data.get('section', None)
-        if section == None:
+        if section is None:
             section = Section()
             section.course = data['course']
             section.start_date = data['start_date']

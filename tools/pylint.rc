@@ -1,7 +1,7 @@
 [MASTER]
 profile=no
 persistent=yes
-ignore=migrations,settings_qa.py,settings_prod.py,settings_dev.py,settings_extra.py,settings.py
+ignore=migrations,settings_qa.py,settings_prod.py,settings_dev.py,settings_extra.py,settings_heroku.py,settings.py
 cache-size=500
 
 [MESSAGES CONTROL]

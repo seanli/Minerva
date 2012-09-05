@@ -43,7 +43,7 @@ class Wiki(models.Model):
         except Wiki.DoesNotExist:
             old_version = None
         super(Wiki, self).save(*args, **kwargs)
-        if old_version != None and (self.document != old_version.document or self.title != old_version.title):
+        if old_version is not None and (self.document != old_version.document or self.title != old_version.title):
             revision_history = WikiRevisionHistory()
             revision_history.wiki = self
             revision_history.title_from = old_version.title

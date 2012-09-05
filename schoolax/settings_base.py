@@ -187,4 +187,4 @@ SITE_NAME = 'Schoolax'
 
 FACEBOOK_APP_ID = '423471701024992'
 FACEBOOK_APP_SECRET = '6ea1e9a766e2a2d8fafac35739ebb284'
-FACEBOOK_REDIRECT_URI = 'http://schoolax.com/' 
+FACEBOOK_REDIRECT_URI = 'http://schoolax.com/'

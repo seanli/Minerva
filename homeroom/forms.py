@@ -40,7 +40,7 @@ class AddCourseForm(StandardForm):
                     data['section'] = section
                 except Section.DoesNotExist:
                     section = None
-                if section != None and self.user.has_section(section):
+                if section is not None and self.user.has_section(section):
                     raise forms.ValidationError('You are already registered in this course section!')
                 return data
 
